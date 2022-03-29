@@ -2,9 +2,9 @@
 title: Pozzo di vetrina
 description: Il vetrina Live Search restituisce dinamicamente prodotti e miniature consigliati.
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
+source-git-commit: 10cea4389d685ce0e26b083872b13a1cd19ba2af
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -30,3 +30,15 @@ Per produrre risultati altamente mirati, controlla l&#39;insieme di [ricercabile
 * `categories`
 
 ![Pover di Live Search](assets/storefront-search-as-you-type.png)
+
+## Dimensioni pagina del puntatore
+
+La dimensione della pagina del popover determina quante righe di prodotti completati automaticamente possono essere restituite. In precedenza, le dimensioni della pagina venivano codificate in sei righe. Tuttavia, `page_size` ora è un&#39;impostazione che può essere configurata dal *Amministratore*. Durante l&#39;installazione di Live Search, il `page_size` il valore cambia nel valore corrente del [Ricerca nel catalogo](https://docs.magento.com/user-guide/configuration/catalog/catalog.html#catalog-search) - `Autocomplete Limit` impostazione.
+
+Per impostazione predefinita, il valore Ricerca nel catalogo - Limite di completamento automatico è impostato su otto righe. Per modificare le dimensioni della pagina del puntatore, procedi come segue:
+
+1. Sulla *Amministratore* barra laterale, vai a **Negozi** > Impostazioni > **Configurazione**.
+1. Nel pannello a sinistra, espandi **Catalogo** e scegli **Catalogo** dall’elenco delle impostazioni.
+1. Espandi la *Ricerca nel catalogo* sezione .
+1. Imposta la **Limite completamento automatico** al numero di righe che si desidera consentire nel pover.
+1. Al termine, fai clic su **Salva configurazione**.

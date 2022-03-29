@@ -2,9 +2,9 @@
 title: Note sulla versione di Live Search
 description: Informazioni aggiornate sulla versione di Live Search da Adobe Commerce.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 8fea8145e624b57278b9373246e8c4249472a03d
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '653'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,19 @@ Queste note sulla versione descrivono le versioni più recenti di [!DNL Live Sea
 * ![Nuovo](../assets/new.svg) - Nuove funzioni
 * ![Correzione](../assets/fix.svg) - Correzioni e miglioramenti
 * ![Bug](../assets/bug.svg) - Problemi noti
+
+## [!DNL Live Search] 2,0
+
+* Compatibile con Adobe Commerce (EE): 2.4.x
+* Compatibile con Adobe Commerce per Cloud (ECE): 2.4.x
+* Stabilità: Stabile
+
+* ![Nuovo](../assets/new.svg) - Il numero di righe disponibili nel [pover di vetrina](quick-tour.md) può essere configurato da *Amministratore*.
+* ![Nuovo](../assets/new.svg) - Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) compatibilità per Live Search.
+* ![Nuovo](../assets/new.svg) - Il processo di installazione di Live Search viene aggiornato con modifiche avanzate del processo.
+* ![Correzione](../assets/fix.svg) - [Ricerca avanzata](https://docs.magento.com/user-guide/catalog/search-advanced.html) collegamento rimosso dal piè di pagina della vetrina.
+* ![Bug](../assets/bug.svg) - I seguenti attributi di prodotto non sono supportati da [API GraphQL di Magento](https://devdocs.magento.com/guides/v2.4/graphql) se utilizzato in relazione alla versione beta di PWA: `description`, `name`, `short_description`
+* ![Bug](../assets/bug.svg) - La versione beta di PWA per Live Search non supporta [gestione degli eventi](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 
 ## [!DNL Live Search] 1.3.1
 
@@ -47,7 +60,7 @@ Queste note sulla versione descrivono le versioni più recenti di [!DNL Live Sea
 * Stabilità: Stabile
 
 * ![Nuovo](../assets/new.svg) - Vetrina [palude](storefront-popover.md) visualizza i prodotti consigliati e le miniature dei risultati di ricerca principali come query di tipo shoppers nella casella di ricerca.
-* ![Nuovo](../assets/new.svg) - La sessione Commerce Admin rimane aperta durante periodi prolungati di inattività della tastiera
+* ![Nuovo](../assets/new.svg) - Commercio *Amministratore* la sessione rimane aperta durante lunghi periodi di inattività della tastiera
 * ![Nuovo](../assets/new.svg) - [!DNL Live Search] viene automaticamente attivato dopo l&#39;onboarding
 * ![Correzione](../assets/fix.svg) - Il tempo di indicizzazione iniziale è inferiore a un&#39;ora
 * ![Correzione](../assets/fix.svg) - Aggiornamenti incrementali dei prodotti in tempo reale (dopo l&#39;installazione e la configurazione)

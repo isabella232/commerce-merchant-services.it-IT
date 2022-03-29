@@ -3,20 +3,22 @@ user-guide-title: Guida a Live Search
 user-guide-description: Questa guida fornisce istruzioni dettagliate sull’utilizzo di Live Search da Adobe Commerce.
 breadcrumb-title: Guida a Live Search
 hide: true
-source-git-commit: b4310f95a038022e377158bca77f5fa9eaf05078
+source-git-commit: 2e375aac4edb1f5d8e57096d8b399801f3a3e5f3
 workflow-type: tm+mt
-source-wordcount: '82'
+source-wordcount: '90'
 ht-degree: 2%
 
 ---
 
 # Live Search per Commerce {#live-search}
 
-- [Guida a Live Search](overview.md)
-- Introduzione {#getting-started}
-   - [Installa](install.md)
-   - [Note sulla versione](release-notes.md)
-- Live Search Storefront{#live-search-storefront}
+- [Panoramica della guida](guide-overview.md)
+- [Introduzione alla Live Search](overview.md)
+- [Note sulla versione](release-notes.md)
+- Ricerca in tempo reale integrata {#onboard}
+   - [Panoramica sull’onboarding](onboarding-overview.md)
+   - [Installa Live Search](install.md)
+- Live Search Storefront {#live-search-storefront}
    - [Presentazione rapida](quick-tour.md)
    - [Pozzo di vetrina](storefront-popover.md)
    - [Stile degli elementi del popover](storefront-popover-styling.md)
