@@ -2,8 +2,7 @@
 user-guide-title: Guida a Live Search
 user-guide-description: Questa guida fornisce istruzioni dettagliate sull’utilizzo di Live Search da Adobe Commerce.
 breadcrumb-title: Guida a Live Search
-hide: true
-source-git-commit: 2e375aac4edb1f5d8e57096d8b399801f3a3e5f3
+source-git-commit: 93f7157135ae3eb1adb880752585565b8bfd9fbb
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 2%
