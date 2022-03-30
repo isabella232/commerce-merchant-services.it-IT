@@ -1,9 +1,9 @@
 ---
 title: Panoramica
 description: '"[!DNL Product Recommendations] sono un potente strumento di marketing che puoi utilizzare per aumentare le conversioni, incrementare i ricavi e stimolare l''impegno degli acquirenti."'
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -31,18 +31,3 @@ I consigli sui prodotti consentono di:
 - Scegli tra nove tipi di consigli intelligenti distinti in base alle seguenti aree: basato su articoli, basato su popolarità, tendenze e similarità
 - Utilizza i dati comportamentali per personalizzare i consigli in tutto il percorso di vetrina dell’acquirente
 - Misura le metriche chiave rilevanti per ogni raccomandazione per comprendere l’impatto delle raccomandazioni
-
-- [Onboarding](onboarding.md)
-Completa l’installazione e la configurazione dei consigli sui prodotti.
-
-- [Area di lavoro](workspace.md)
-Scopri come aggirare l’area di lavoro dei consigli. Creazione e modifica di consigli.
-
-- [Tipi](type.md)
-Scopri i consigli che puoi distribuire su varie pagine del sito.
-
-- [Filtri](filters.md)
-Definisci condizioni che includono o escludono i prodotti dall’utilizzo come consigli.
-
-- [Posizionamento ed etichette](placement.md)
-Scopri dove puoi inserire consigli su varie pagine del sito e suggerimenti per le etichette utilizzate di frequente per ciascun tipo di raccomandazione.

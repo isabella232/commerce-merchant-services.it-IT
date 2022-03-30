@@ -1,9 +1,9 @@
 ---
 title: Posizionamento ed etichette
 description: Scopri dove puoi inserire consigli su varie pagine del sito e suggerimenti per le etichette utilizzate di frequente per ciascun tipo di raccomandazione.
-source-git-commit: 4ec8acf6795cd451df48fbfba12e8635c180bf79
+source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,11 @@ ht-degree: 0%
 
 Con così tanti tipi di consigli tra cui scegliere, quali utilizzare in ogni pagina? Se non sai da dove iniziare, prova quanto segue:
 
-|Home page|`Recommended for you`| |Pagina di prodotto|`Viewed this, viewed that`| |Carrello|`Bought this, bought that`|
+| Pagina | Tipo di raccomandazione |
+|---|---|
+| Home page | `Recommended for you` |
+| Pagina di prodotto | `Viewed this, viewed that` |
+| Carrello | `Bought this, bought that` |
 
 Puoi tenere traccia delle [metriche](workspace.md) e, se necessario, regolare. Ricordate che la sperimentazione è la chiave.
 
