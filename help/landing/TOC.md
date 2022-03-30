@@ -1,8 +1,8 @@
 ---
 user-guide-title: Servizi per Adobe Commerce
-user-guide-description: Documentazione e risorse per i servizi in hosting che forniscono funzionalità estese ad Adobe Commerce e Magenti Open Source.
+user-guide-description: Documentazione e risorse per i servizi in hosting che forniscono funzionalità estese ad Adobe Commerce e Magento Open Source.
 title: Servizi per Adobe Commerce
-source-git-commit: 2f64ddf30cb9bcd5d2d05b37fbe601f9bfe8e84b
+source-git-commit: 9f74aa4ff7b2e4b5dc085c1a62d6e4b468678ac5
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 - [Servizi per Adobe Commerce](home.md)
 - [Connettore servizi](https://docs.magento.com/user-guide/system/saas.html)
 - [Sincronizzazione catalogo](https://docs.magento.com/user-guide/system/catalog-sync.html)
-- [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html)
+- [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html)
 - [[!DNL Product Recommendations]](https://docs.magento.com/user-guide/recommendations/overview.html)
 - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html)
 - [[!DNL Amazon Sales Channel]](https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html)
