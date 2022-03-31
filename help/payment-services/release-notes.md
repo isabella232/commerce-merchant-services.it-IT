@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] Note sulla versione"'
 description: Consulta le note sulla versione per informazioni su tutti [!DNL Payment Services] versioni.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 5f731eca49b6f59bbeb7190e0026eb05f2d1a99b
+source-git-commit: 93a10d91a2dc92db530074d7fc2dfd4f31a9488d
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '569'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Queste note sulla versione descrivono la versione iniziale di [!DNL Payment Serv
 
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-2127 --> [[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) è ora compatibile con Adobe Commerce e con le versioni da 2.4.0 a 2.4.4 di Magenti Open Source.
 
-![Nuovo](../assets/new.svg)<!-- Issue PAY-2682 --> La [!DNL Payment Services] L&#39;estensione per Adobe Commerce e Magenti Open Source è disponibile per i commercianti canadesi. I commercianti possono visualizzare la configurazione dei pagamenti in [Francese](overview.md?lang=fr) o [Inglese](overview.md?lang=en).
+![Nuovo](../assets/new.svg)<!-- Issue PAY-2682 --> La [!DNL Payment Services] L&#39;estensione per Adobe Commerce e Magenti Open Source è disponibile per i commercianti canadesi. I commercianti possono visualizzare la configurazione dei pagamenti in [Francese](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr) o [Inglese](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=en).
 
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-2681 --> [!DNL Payment Services] supporta [Dollaro canadese (CAD)](overview.md#accepted-credit-cards-and-currencies) con carta di credito e Paypal. Gli acquirenti possono avere un&#39;esperienza di acquisto nella loro lingua preferita, a seconda delle impostazioni internazionali del negozio in cui fanno acquisti.
 
@@ -51,7 +51,7 @@ Queste note sulla versione descrivono la versione iniziale di [!DNL Payment Serv
 
 ![Problema noto](../assets/bug.svg)<!-- Issue PAY-2475 --> [Conto sandbox PayPal](https://support.magento.com/hc/en-us/articles/4406954952461) per [!DNL Payment Services] non può essere verificato se l&#39;account viene creato durante l&#39;onboarding.
 
-![Problema noto](../assets/bug.svg)<!-- Issue PAY-2842 --> [Test della carta di credito non riuscito](https://support.magento.com/hc/en-us/articles/4406954952461) con PayPal durante l&#39;elaborazione dei pagamenti in un ambiente Sandbox.
+![Problema noto](../assets/bug.svg)<!-- Issue PAY-2842 --> [Test della carta di credito non riuscito](https://support.magento.com/hc/en-us/articles/5201041963917) con PayPal durante l&#39;elaborazione dei pagamenti in un ambiente Sandbox.
 
 ## v1.0.0
 
