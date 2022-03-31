@@ -2,9 +2,9 @@
 title: Installa Live Search
 description: Scopri come installare, aggiornare e disinstallare Live Search da Adobe Commerce.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: b6aca1b78fae6d8c43ca47307aa1c63dbdc1c36a
+source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1199'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ In questo scenario, le operazioni di vetrina vengono interrotte mentre il [!DNL 
 
 1. Configura le [Chiavi API](#configure-api-keys) e verifica che i dati del catalogo siano [sincronizzato](#synchronize-catalog-data) con [!DNL Live Search] servizi.
 
-1. Per rendere i facet disponibili come filtri nella vetrina, aggiungi [facet](https://docs.magento.com/user-guide/live-search/facets-add.html) è necessario, secondo il [requisiti](https://docs.magento.com/user-guide/live-search/facets.html).
+1. Per rendere i facet disponibili come filtri nella vetrina, aggiungi [facet](facets-add.md) è necessario, secondo il [requisiti](facets.md).
 
    Dovresti essere in grado di aggiungere facet dopo `cron` esegue i feed degli attributi ed esporta i metadati degli attributi.
 
@@ -123,7 +123,7 @@ In questo scenario, [!DNL Elasticsearch] gestisce temporaneamente le richieste d
 
 1. Configura le [Chiavi API](#configure-api-keys) e verifica che i dati del catalogo siano [sincronizzato](#synchronize-catalog-data) con [!DNL Live Search] servizi.
 
-1. Per rendere i facet disponibili come filtri nella vetrina, aggiungi [facet](https://docs.magento.com/user-guide/live-search/facets-add.html) è necessario, secondo il [requisiti](https://docs.magento.com/user-guide/live-search/facets.html).
+1. Per rendere i facet disponibili come filtri nella vetrina, aggiungi [facet](facets-add.md) è necessario, secondo il [requisiti](facets.md).
 
    Dovresti essere in grado di aggiungere facet dopo `cron` esegue i feed di prodotto e attributo ed esporta i metadati degli attributi in [!DNL Live Search] servizi.
 
@@ -177,7 +177,7 @@ Per ulteriore assistenza, consulta [[!DNL Live Search] catalogo non sincronizzat
 
 ### Aggiornamenti futuri dei prodotti
 
-Dopo la sincronizzazione iniziale, possono essere necessari fino a quindici minuti perché gli aggiornamenti incrementali dei prodotti siano disponibili per la ricerca in vetrina. Per ulteriori informazioni, vai a [Aggiornamenti dei prodotti in streaming](https://devdocs.magento.com/live-search/indexing.html).
+Dopo la sincronizzazione iniziale, possono essere necessari fino a quindici minuti perché gli aggiornamenti incrementali dei prodotti siano disponibili per la ricerca in vetrina. Per ulteriori informazioni, vai a [Aggiornamenti dei prodotti in streaming](indexing.md).
 
 ## Verificare la connessione {#test-connection}
 

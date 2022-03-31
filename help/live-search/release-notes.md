@@ -2,9 +2,9 @@
 title: Note sulla versione di Live Search
 description: Informazioni aggiornate sulla versione di Live Search da Adobe Commerce.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 8fea8145e624b57278b9373246e8c4249472a03d
+source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '648'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ Queste note sulla versione descrivono le versioni più recenti di [!DNL Live Sea
 * Compatibile con Adobe Commerce per Cloud (ECE): 2.4.x
 * Stabilità: Stabile
 
-* ![Nuovo](../assets/new.svg) - [Prestazioni](https://docs.magento.com/user-guide/live-search/performance.html) il dashboard di reporting fornisce informazioni approfondite sui termini di ricerca utilizzati dagli acquirenti.
+* ![Nuovo](../assets/new.svg) - [Prestazioni](performance.md) il dashboard di reporting fornisce informazioni approfondite sui termini di ricerca utilizzati dagli acquirenti.
 * ![Nuovo](../assets/new.svg) - [!DNL Live Search] [SDK per eventi Storefront](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) fornisce l’accesso a un livello di dati comune con servizi di pubblicazione degli eventi e di abbonamento e metriche.
 * ![Correzione](../assets/fix.svg) - [Pozzo di vetrina](https://devdocs.magento.com/live-search/storefront-popover.html) ha `active` per `.search-autocomplete` contenitore che controlla la visibilità.
 * ![Correzione](../assets/fix.svg) - Nella vetrina, [Termini di ricerca](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) il collegamento a piè di pagina viene rimosso e la relativa cache è disabilitata per [!DNL Live Search] installazioni.
