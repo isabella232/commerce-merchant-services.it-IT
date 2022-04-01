@@ -2,7 +2,7 @@
 title: Stile degli elementi del popover
 description: Note tecniche sulla personalizzazione del punto di vetrina Live Search.
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Il componente principale del `.livesearch.popover-container` è `.search-autocom
 .search-autocomplete          /* not visible */
 ```
 
-Per ulteriori informazioni sullo stile degli elementi della vetrina, consulta [Fogli di stile a cascata (CSS)](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-topics/css-overview.html) in [Guida per gli sviluppatori Frontend](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html).
+Per ulteriori informazioni sullo stile degli elementi della vetrina, consulta [Fogli di stile a cascata (CSS)](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-topics/css-overview.html) in [Guida per gli sviluppatori di Frontend](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html).
 
 ## Selettori di classe
 

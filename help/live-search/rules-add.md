@@ -2,9 +2,9 @@
 title: Aggiungi regole
 description: Scopri come creare regole di Live Search.
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1284'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,8 @@ Una regola può avere fino a 10 condizioni. L’operatore logico che unisce due 
    * All - Tutti gli operatori logici nella regola sono impostati su `AND` e i risultati vengono visualizzati nel riquadro test.
 
    La *Corrispondenza* determina l&#39;operatore logico utilizzato per unire più condizioni. Modifica della *Corrispondenza* l’impostazione modifica tutti gli operatori logici nella regola. Non è possibile combinare `AND` e `OR` nella stessa regola.
-In questo esempio, invece di cercare &quot;pantaloni di yoga&quot;, ci sono due query separate che cercano &quot;yoga&quot; o &quot;pantaloni&quot;. Questa regola è meno specifica e verrà attivata più spesso nella vetrina rispetto all’altra.
+
+   In questo esempio, invece di cercare &quot;pantaloni di yoga&quot;, ci sono due query separate che cercano &quot;yoga&quot; o &quot;pantaloni&quot;. Questa regola è meno specifica e verrà attivata più spesso nella vetrina rispetto all’altra.
 
    ![Regole - Corrispondenza](assets/rules-match.png)
 
@@ -74,10 +75,11 @@ In questo esempio, invece di cercare &quot;pantaloni di yoga&quot;, ci sono due 
 
 ## Passaggio 3: Aggiungi eventi
 
-Gli eventi sono azioni che modificano i risultati della ricerca quando le condizioni sono soddisfatte. Una singola regola può contenere fino a venticinque eventi.
+Gli eventi sono azioni che modificano i risultati della ricerca quando le condizioni sono soddisfatte. Una singola regola può contenere fino a 25 eventi.
 
 1. Sotto *Eventi*, scegli **Evento** da eseguire quando sono soddisfatte le condizioni associate.
-Ad esempio, scegli `Pin a product`. Quindi, inserisci il nome del prodotto da fissare. Se hai bisogno di aiuto, puoi trovare il nome nel riquadro di test.
+
+   Ad esempio, scegli `Pin a product`. Quindi, inserisci il nome del prodotto da fissare. Se hai bisogno di aiuto, puoi trovare il nome nel riquadro di test.
 Quindi, inserisci il *Posizione* dove deve apparire il prodotto bloccato. Il prodotto viene spostato nella nuova posizione nel riquadro di test e contrassegnato con un *Fessura* badge anteprima.
 
    ![Regole - Corrispondenza](assets/rule-event-pin-product.png)
@@ -108,8 +110,11 @@ Le informazioni immesse in questo campo vengono visualizzate nella sezione [Dett
 
 ## Passaggio 6: Salva e pubblica
 
-Al termine, fai clic su **Salva e pubblica**.
-La regola viene aggiunta all&#39;elenco nell&#39;area di lavoro regole. Anche se le regole attive entrano in vigore immediatamente, potrebbero essere necessari fino a quindici minuti perché i risultati delle query memorizzate nella cache vengano aggiornati.
+1. Al termine, fai clic su **Salva e pubblica**.
+
+   La regola viene aggiunta all&#39;elenco nell&#39;area di lavoro regole.
+
+1. Sebbene le regole attive diventino immediatamente attive, potrebbe essere necessario attendere fino a 15 minuti prima che i risultati della query memorizzata nella cache vengano aggiornati.
 
 ## Descrizioni dei campi
 

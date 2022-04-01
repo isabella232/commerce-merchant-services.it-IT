@@ -2,7 +2,7 @@
 title: Aggiungi facet
 description: Scopri come aggiungere attributi di prodotto filtrabili come facet Live Search.
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Il facet viene aggiunto nella parte inferiore del *Facet dinamici* e *Pubblicare
 
 ## Passaggio 2: Modifica proprietà facet (facoltativo)
 
-1. Per modificare le proprietà del facet, fai clic su **Altro** (![Altro selettore](assets/btn-more.png) nella colonna a destra.
+1. Per modificare le proprietà del facet, fai clic su **Altro** (![Altro selettore](assets/btn-more.png)) nella colonna a destra.
 1. Scegliere **Modifica**. Quindi, regola le seguenti proprietà in base alle esigenze.
 
    * Etichetta - ([Senza testa](facets-type.md) Solo) Immettere l&#39;etichetta del facet che si desidera utilizzare.

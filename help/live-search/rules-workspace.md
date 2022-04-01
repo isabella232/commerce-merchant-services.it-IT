@@ -2,9 +2,9 @@
 title: Area di lavoro regole
 description: Scopri come aggirare l’area di lavoro delle regole di Live Search.
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ Dal pannello Visualizza dettagli puoi effettuare una delle seguenti operazioni:
 
 | Controllo | Descrizione |
 |--- |--- |
-| Aggiungi regola | Apre la [editor di regole]({% link live-search/rules-add.md %}). |
+| Aggiungi regola | Apre la [editor di regole](rules-add.md). |
 | Stato | Filtra l’elenco delle regole per stato. Opzioni: Tutto, Attivo, Inattivo, Pianificato |
 | ![Selettore colonna](assets/btn-show-hide-columns.png) | Specifica le colonne visibili nella griglia. Opzioni: Ultimo aggiornamento, Data di inizio, Data di fine, Stato |
 | Ricerca | Cerca una regola per nome completo o per corrispondenza parziale. |

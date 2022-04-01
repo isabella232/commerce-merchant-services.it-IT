@@ -2,7 +2,7 @@
 title: Gestisci facet
 description: Scopri come gestire i facet esistenti di Live Search.
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%
@@ -56,19 +56,19 @@ Le modifiche verranno visualizzate nella vetrina solo dopo la loro pubblicazione
 
 Il pin cambia colore quando viene fatto clic su e viene utilizzato per spostare il facet in *Facet bloccate* o *Facet dinamici* sezione .
 
-1. Per fissare un facet nella parte superiore del *Filtri* elenco, trova il facet nel *Facet dinamici* e fai clic sul pin grigio (![Selettore pin](assets/btn-pin-gray.png).
+1. Per fissare un facet nella parte superiore del *Filtri* elenco, trova il facet nel *Facet dinamici* e fai clic sul pin grigio (![Selettore pin](assets/btn-pin-gray.png)).
 Il perno diventa blu e il facet si sposta *Facet bloccate* sezione .
-1. Per sbloccare un facet, trova il facet nel *Facet bloccate* e fai clic sul pin blu (![Selettore pin](assets/btn-pin-blue.png).
+1. Per sbloccare un facet, trova il facet nel *Facet bloccate* e fai clic sul pin blu (![Selettore pin](assets/btn-pin-blue.png)).
 Il perno diventa grigio e il facet si sposta verso il *Facet dinamici* sezione .
 
    ![Facet fissi e dinamici](assets/facets-pinned-unpinned.png)
 
 ## Sposta facet bloccato
 
-L’ordine dei facet bloccati può essere modificato spostando la riga in una posizione diversa. I facet bloccati hanno un *Sposta* icona (![Selettore di spostamento](assets/btn-move.png) all&#39;inizio della riga. A differenza dei facet bloccati, i facet dinamici non possono essere spostati.
+L’ordine dei facet bloccati può essere modificato spostando la riga in una posizione diversa. I facet bloccati hanno un *Sposta* icona (![Selettore di spostamento](assets/btn-move.png)) all’inizio della riga. A differenza dei facet bloccati, i facet dinamici non possono essere spostati.
 
 1. Trova il facet nel *Facet bloccate* sezione dell&#39;elenco.
-1. Utilizza la **Sposta** (![Selettore di spostamento](assets/btn-move.png) per trascinare la riga in una nuova posizione *Facet bloccate* sezione .
+1. Utilizza la **Sposta** (![Selettore di spostamento](assets/btn-move.png)) per trascinare la riga in una nuova posizione *Facet bloccate* sezione .
 Dopo la pubblicazione delle modifiche, i facet riordinati vengono visualizzati nella vetrina *Filtri* elenco.
 
 ## Elimina facet

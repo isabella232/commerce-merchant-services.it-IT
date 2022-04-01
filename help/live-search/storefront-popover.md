@@ -2,9 +2,9 @@
 title: Pozzo di vetrina
 description: Il vetrina Live Search restituisce dinamicamente prodotti e miniature consigliati.
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 10cea4389d685ce0e26b083872b13a1cd19ba2af
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Quando [!DNL Live Search] è [installato](install.md), un pover appare nella vet
 
 >[!NOTE]
 >
->La [!DNL Live Search] il pover vetrina è disponibile solo per i negozi che utilizzano *Luma* tema o un tema personalizzato basato su *Luma*. La *Luma* il tema è incluso nel [!DNL Commerce] dati di esempio. Il pover non supporta il *Vuoto* tema. Vedi [Utilizzo di un tema modificato](#working-with-modified-theme) per ulteriori informazioni.
+>La [!DNL Live Search] il pover vetrina è disponibile solo per i negozi che utilizzano *Luma* tema o un tema personalizzato basato su *Luma*. La *Luma* il tema è incluso nel [!DNL Commerce] dati di esempio. Il pover non supporta il *Vuoto* tema. Vedi [Stile degli elementi del popover](storefront-popover-styling.md) per saperne di più.
 
 ## Attributi ricercabili
 

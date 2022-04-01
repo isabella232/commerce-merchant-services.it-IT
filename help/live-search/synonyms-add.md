@@ -2,9 +2,9 @@
 title: Aggiungi sinonimi
 description: Aggiungi i sinonimi di Live Search per migliorare la risposta alle richieste di ricerca.
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
@@ -63,8 +63,8 @@ L&#39;insieme dei sinonimi viene visualizzato nell&#39;elenco con una freccia a 
 
 ## Passaggio 3: Pubblicare le modifiche
 
-Al termine dei sinonimi, fai clic su **Pubblicare le modifiche**.
-Gli aggiornamenti possono richiedere fino a due ore per essere disponibili nella vetrina.
+1. Al termine dei sinonimi, fai clic su **Pubblicare le modifiche**.
+1. Attendi fino a due ore perché gli aggiornamenti siano disponibili nella vetrina.
 
 ![Pubblicare le modifiche](assets/synonym-publish.png)
 
