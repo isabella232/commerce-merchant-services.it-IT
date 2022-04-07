@@ -4,9 +4,9 @@ description: Collega l’istanza con [!DNL Payment Services] completando alcuni 
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
@@ -59,3 +59,4 @@ Per informazioni su come creare o accedere alle chiavi API, vedi [Credenziali AP
 * [Risolvere i problemi [!DNL Payment Services] installazione](https://support.magento.com/hc/en-us/articles/4406603542541)
 * [Account sandbox PayPal non verificato](https://support.magento.com/hc/en-us/articles/4406954952461)
 * [Ritardato [!DNL Payment Services] dati del report](https://support.magento.com/hc/en-us/articles/4406114741517)
+* [Il test della carta di credito non riesce con PayPal durante l&#39;elaborazione dei pagamenti in un ambiente Sandbox](https://support.magento.com/hc/en-us/articles/5201041963917)

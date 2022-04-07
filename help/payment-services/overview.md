@@ -4,9 +4,9 @@ description: Scopri come installare e utilizzare [!DNL Payment Services] come so
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
-source-git-commit: 5f731eca49b6f59bbeb7190e0026eb05f2d1a99b
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '415'
 ht-degree: 0%
 
 ---
@@ -36,13 +36,14 @@ Questa soluzione di pagamento consente di ridurre i costi operativi, aumentare i
 [!DNL Payment Services] è il tuo unico punto vendita per il pagamento online (dal regolamento e rimborsi al pagamento). Fornisce potenti strumenti per darti le informazioni e il controllo necessari per creare la migliore esperienza per i tuoi acquirenti.
 
 * [**Onboarding**](onboard.md)- Il processo ti guida attraverso l’iscrizione commerciale, la configurazione tecnica, le adesioni, la configurazione dell’ambiente sandbox e l’abilitazione dei pagamenti live.
-* [**Pagamento**](configure-admin.md)- Utilizza metodi di pagamento locali e regionali pertinenti per soddisfare al meglio i tuoi clienti.
+* [**Pagamento**](configure-dashboard.md)- Utilizza metodi di pagamento locali e regionali pertinenti per soddisfare al meglio i tuoi clienti.
+* [**Opzioni di pagamento**](payments-options.md)- Imposta le opzioni di pagamento per personalizzare i metodi disponibili per i clienti store (o multistore).
 * **Reporting finanziario della gestione dei flussi di cassa**—Sincronizza [dati di pagamento](order-payment-status.md) con gli ordini di ottenere la piena trasparenza del volume trattato, del saldo dei pagamenti e [reporting a livello di transazione](payouts.md) per la riconciliazione finanziaria.
 * **Prezzo trasparente**—I prezzi sono chiari e anticipati; quello che vedi è quello che ottieni.
 
 ## Disponibilità
 
-[!DNL Payment Services] è disponibile per Adobe Commerce e Magenti Open Source. La [!DNL Payment Services] L&#39;estensione è ora compatibile con le versioni da 2.4.0 a 2.4.3-p1 di Adobe Commerce.
+[!DNL Payment Services] è disponibile per Adobe Commerce e Magenti Open Source. La [!DNL Payment Services] L&#39;estensione è ora compatibile con Adobe Commerce versione 2.4.x.
 
 Vedi [Criterio del ciclo di vita](https://devdocs.magento.com/release/lifecycle-policy.html){target=&quot;_blank&quot;} e [[!DNL Payment Services] note sulla versione](release-notes.md) pagine per ulteriori informazioni specifiche sulla versione e sulla versione.
 

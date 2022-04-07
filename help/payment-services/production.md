@@ -2,9 +2,9 @@
 title: Abilita [!DNL Payment Services] per la produzione
 description: Completare il processo di onboarding abilitando [!DNL Payment Services] per la produzione.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '692'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,17 @@ Vedi [Configurare i servizi di pagamento](configure-admin.md) per ulteriori info
 
 ## Richiesta di diritto di pagamento da Adobe
 
-Per abilitare l&#39;onboarding live, è necessario richiedere l&#39;adesione ai pagamenti da [Adobe](https://business.adobe.com/resources/payment-services.html).
+Per abilitare l’onboarding in diretta, è necessario richiedere l’adesione ai pagamenti dall’Adobe:
+
+1. Sulla _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. Fai clic su **[!UICONTROL Get Live Payments]** nel tuo [!DNL Payment Services] dashboard.
+
+   ![Richiedere diritti](assets/request-entitlements.png)
+
+1. Compila il modulo.
+1. Un membro del team di vendita ti contatterà.
+
+In alternativa, puoi richiedere diritti all’aiuto pagamenti da Adobe all’indirizzo [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
 
 >[!IMPORTANT]
 >
