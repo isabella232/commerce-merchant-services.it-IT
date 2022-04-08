@@ -2,9 +2,9 @@
 title: Risoluzione dei problemi relativi al [!DNL Express Checkout]
 description: Risolvere gli errori e i problemi noti che possono verificarsi durante l'utilizzo del [!DNL Express Checkout] per l'estensione Adobe Commerce.
 exl-id: a379ff81-360d-4cb9-a123-47e8cbc0cdbd
-source-git-commit: 163dd5260908b4ea3a8bfbcfdb834531d1603734
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -95,9 +95,9 @@ In genere, Adobe Commerce può essere configurato per supportare fino a 20 righe
 
 È presente un problema noto per [!DNL Express Checkout].
 
-Quando si abilita la `Enable terms and conditions` casella di controllo e [accesso con un account Bolt](https://help.bolt.com/shoppers/guides/checkout/log-in/), la casella di controllo non viene visualizzata.
+Quando si abilita la `Enable terms and conditions` in Admin e accedi con un [!DNL Bolt] il conto `Enable terms and conditions` la casella di controllo non viene visualizzata durante il pagamento. Fai riferimento a [accedere](https://help.bolt.com/shoppers/account/login-dashboard/) [!DNL Bolt] per ulteriori informazioni.
 
-Vedi [termini e condizioni](https://docs.magento.com/user-guide/sales/terms-and-conditions.html) per ulteriori informazioni.
+Vedi [termini e condizioni](https://docs.magento.com/user-guide/sales/terms-and-conditions.html) per ulteriori informazioni sulla configurazione amministratore.
 
 ## Comportamento imprevisto quando `Display Billing Address On` è impostato su `payment page`
 
@@ -105,7 +105,7 @@ Vedi [termini e condizioni](https://docs.magento.com/user-guide/sales/terms-and-
 
 Se imposti la `Display Billing Address On` parametro a `payment page` e [accesso con un account Bolt](https://help.bolt.com/shoppers/guides/checkout/log-in/) quando controlli la `My billing and shipping address are the same` casella di controllo:
 
-![Stesso indirizzo](../assets/checked-address.png)
+![Stesso indirizzo](assets/checked-address.png)
 
 Display dei pulsanti di scelta `use existing card`.
 
@@ -119,4 +119,4 @@ Fai riferimento a [traduzione e localizzazione](https://devdocs.magento.com/guid
 
 ## Assistenza
 
-Per ulteriori informazioni o domande, contatta il supporto Adobe Commerce.
+Per assistenza, contatta il supporto Adobe Commerce.

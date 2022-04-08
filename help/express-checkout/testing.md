@@ -2,9 +2,9 @@
 title: Verifica [!DNL Express Checkout] per estensione Adobe Commerce
 description: La verifica e la convalida garantiscono che [!DNL Express Checkout] l'estensione funziona come previsto.
 exl-id: 308f39e1-e2f6-40d8-b876-0f9013effed3
-source-git-commit: d8302d2d652b4e2380cc862183e58cbd2cca831b
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Verifica [!DNL Express Checkout] in un ambiente sandbox è un passaggio di conva
 
 ### Utilizzo dell’account sandbox
 
-Quando verifichi e convalidi la sandbox devi utilizzare un numero di carta di credito falso e un [sandbox](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} account mercante in Bolt, in modo da non creare costi reali per un conto della carta di credito esistente.
+Quando verifichi e convalidi la sandbox devi utilizzare un numero di carta di credito falso e un [sandbox](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} account commerciale in [!DNL Bolt], in modo da non creare spese reali per un conto della carta di credito esistente.
 
 ## Test in produzione
 
@@ -48,7 +48,7 @@ Completa il pagamento dall’archivio seguendo questi passaggi:
 
 1. Vai alla vetrina e inserisci gli oggetti desiderati nel carrello.
 1. Procedi al pagamento.
-1. Inserisci un indirizzo e-mail associato a un account Bullt quando richiesto.
+1. Immettere un indirizzo e-mail associato a un [!DNL Bolt] Account quando richiesto.
 1. Inserisci la Password una tantum (OTP, One-Time Password) inviata all’indirizzo e-mail dell’account.
 1. Seleziona il dashboard dell’ambiente:
 

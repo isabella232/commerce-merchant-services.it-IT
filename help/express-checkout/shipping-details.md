@@ -1,18 +1,18 @@
 ---
-title: '"[!DNL Express Checkout] metodi di pagamento compatibili"'
-description: Panoramica del flusso di cassa in Adobe Commerce.
+title: '"[!DNL Express Checkout] dati di spedizione"'
+description: Panoramica del flusso dei dettagli di spedizione nel [!DNL Express Checkout] estensione per Adobe Commerce.
 exl-id: 60faef08-7083-4175-93f2-086aa54b1614
-source-git-commit: f52bd11e4872f4a1621382f5528e2e477b2e9e48
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# [!DNL Express Checkout] metodi di pagamento compatibili
+# [!DNL Express Checkout] dettagli di spedizione
 
 >[!IMPORTANT]
 >
 > Questa funzione è disponibile solo per gli utenti del programma Early Adopter (EAP) e non è ancora accessibile per tutti i clienti. Attualmente limitato ai clienti statunitensi. Per assistenza e domande, contatta il supporto Adobe Commerce.
 
-Controlla la [Indirizzo di spedizione del bullone](https://help.bolt.com/shoppers/guides/checkout/update-shipping-address) per ulteriori informazioni su come impostare un indirizzo di spedizione con Bolt.
+Consulta la sezione [informazioni per gli sviluppatori](../express-checkout/developer.md) argomento per ulteriori informazioni sui punti di estensione quando si inseriscono i dettagli di spedizione.

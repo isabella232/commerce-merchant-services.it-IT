@@ -2,9 +2,9 @@
 title: A bordo [!DNL Express Checkout] per estensione Adobe Commerce
 description: Scopri come [!DNL Express Checkout] potrebbe trarre vantaggio dalla tua istanza di Adobe Commerce e da come effettuare l'onboarding e la configurazione dell'estensione.
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: d8302d2d652b4e2380cc862183e58cbd2cca831b
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -18,24 +18,24 @@ ht-degree: 0%
 Per iniziare a utilizzare [!DNL Express Checkout] per l’estensione Adobe Commerce devi completare alcuni passaggi onboarding per collegare la tua istanza alla nostra funzionalità di pagamento.
 
 1. [Ottieni estensione](#get-extension).
-1. [Crea un account commerciale di produzione o sandbox con Bolt](#create-account-with-bolt). Fornisci tutte le informazioni necessarie per verificare la tua identità.
-1. [Fornisci la chiave API univoca e la chiave pubblicabile generate in Bolt](#obtain-api-credentials).
-1. [Configurare un provider di pagamento nel conto Bolt](#configure-payment-providers).
+1. [Crea un account commerciale di produzione o sandbox con [!DNL Bolt]](#create-account-with-bolt). Fornisci tutte le informazioni necessarie per verificare la tua identità.
+1. [Fornisci la chiave API univoca e la chiave pubblicabile generate in [!DNL Bolt]](#obtain-api-credentials).
+1. [Imposta un provider di pagamento nel [!DNL Bolt] account](#configure-payment-providers).
 1. [Imposta il menu a discesa Abilita su Sì](#enable-extension) per attivare l&#39;estensione.
 1. [Definire le impostazioni del servizio](#complete-admin-configuration) per configurare [!DNL Express Checkout] estensione.
 1. [Fai clic sul pulsante Salva configurazione](#enable-live-express-checkout) per abilitare l&#39;estensione.
 
 >[!NOTE]
 >
-> Se non configuri i tuoi account Bolt (passaggio 2 precedente) non puoi impostare gli ambienti sandbox o di produzione.
+> Se non si configura il [!DNL Bolt] account (passaggio 2 precedente) non è possibile configurare gli ambienti sandbox o di produzione.
 
 ## Prerequisiti
 
-Per utilizzare il [!DNL Express Checkout], per Bolt deve essere disponibile quanto segue:
+Per utilizzare il [!DNL Express Checkout], è necessario disporre delle seguenti opzioni [!DNL Bolt]:
 
 - Provider di pagamenti supportati
-- Conto del commerciante e della produzione in Bolt
-- API e chiave pubblicabile generate in Bolt
+- Conto del commerciante e della produzione in [!DNL Bolt]
+- API e chiave pubblicabile generata in [!DNL Bolt]
 
 Fai riferimento a [prerequisiti](../express-checkout/prerequisites.md) per ulteriori informazioni.
 
@@ -47,18 +47,18 @@ Consulta la sezione [installare](../express-checkout/install.md) per informazion
 
 ## Crea account con bullone
 
-Prima di configurare la [!DNL Express Checkout] nell’amministratore di Adobe Commerce è necessario creare un [produzione](https://merchant.bolt.com/register){target=&quot;_blank&quot;} e [sandbox](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} account commerciale in Bolt. Fornisci tutti i dettagli richiesti per creare un account in Bolt.
+Prima di configurare la [!DNL Express Checkout] nell’amministratore di Adobe Commerce è necessario creare un [sandbox](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} e [produzione](https://merchant.bolt.com/register){target=&quot;_blank&quot;} account commerciale in [!DNL Bolt]. Fornisci tutti i dettagli richiesti per creare un account in [!DNL Bolt].
 
 Fai riferimento a [verificare e convalidare](../express-checkout/testing.md) per ulteriori informazioni.
 
 ## Ottenere le credenziali API
 
-Per utilizzare [!DNL Express Checkout] sono necessarie chiavi univoche di bullone. Per ottenere le seguenti chiavi API, vai a **Sviluppatori** > **API** > **Chiavi** in **Bolt Dashboard Merchant**.
+Per utilizzare [!DNL Express Checkout] richiede [!DNL Bolt] chiavi univoche. Per ottenere le seguenti chiavi API, vai a **Sviluppatori** > **API** > **Chiavi** in **Bolt Dashboard Merchant**.
 
-- Chiave API: Una chiave privata utilizzata dal back-end per interagire con le API Bolt.
-- Chiave pubblicabile: Chiave utilizzata dal front-end per interagire con le API Bolt.
+- Chiave API: Una chiave privata utilizzata dal back end per interagire con [!DNL Bolt] API.
+- Chiave pubblicabile: Chiave utilizzata dal front-end per interagire con [!DNL Bolt] API.
 
-Consulta la sezione [Dettagli dell’ambiente di bullone](https://help.bolt.com/developers/references/environment-details/#about-keys)Pagina {target=&quot;_blank&quot;} per informazioni sulle chiavi API e pubblicabili per [!DNL Express Checkout] estensione.
+Consulta la sezione [[!DNL Bolt] dettagli dell&#39;ambiente](https://help.bolt.com/developers/references/environment-details/#about-keys)Pagina {target=&quot;_blank&quot;} per informazioni sulle chiavi API e pubblicabili per [!DNL Express Checkout] estensione.
 
 >[!CAUTION]
 >
@@ -66,16 +66,20 @@ Consulta la sezione [Dettagli dell’ambiente di bullone](https://help.bolt.com/
 
 ## Configurare i provider di pagamento
 
-Per collegare il provider di servizi di pagamento segui i passaggi descritti nel [configurazione del processore](https://help.bolt.com/integrations/adobe-express-checkout/set-up/){target=&quot;_blank&quot;} pagina di Bolt per sviluppatori.
+Per collegare il provider di servizi di pagamento segui i passaggi descritti nel [configurazione del processore](https://help.bolt.com/integrations/adobe-express-checkout/set-up/)Sviluppatore {target=&quot;_blank&quot;} [!DNL Bolt] pagina.
 
 ## Abilita estensione
 
 1. Sulla _Amministratore_ barra laterale, passare a **Negozi** > **Configurazione** > **Pagamento** per accedere alla pagina di configurazione dell’amministratore di checkout .
 
-![Pagamento espresso](../assets/admin-view.png)
+   ![Pagamento espresso](assets/admin-view.png)
 
 1. In [!DNL Express Checkout] visualizzazione, set **Abilita** a `Yes`.
-1. Selezionare il metodo (Produzione o Sandbox) da utilizzare.
+1. Selezionare il metodo (Sandbox o Production) da utilizzare.
+
+   - Sandbox a scopo di test e sviluppo
+   - Produzione per elaborare le transazioni con il processore di pagamento live
+
 1. Convalida le credenziali dopo aver fornito le tue API e chiavi Pubblicabili univoche.
 
 >[!CAUTION]
@@ -101,6 +105,6 @@ Per abilitare [!DNL Express Checkout] per l&#39;estensione Adobe Commerce:
 
 ## Assistenza
 
-Il processo di onboarding è progettato per guidarti attraverso i passaggi necessari per la configurazione e l&#39;abilitazione di tutti [!DNL Express Checkout] funzionalità. Per assistenza e domande, contatta il supporto Adobe Commerce.
+Il processo di onboarding è progettato per guidarti attraverso i passaggi necessari per la configurazione e l&#39;abilitazione di tutti [!DNL Express Checkout] funzionalità. Per assistenza, contatta il supporto Adobe Commerce.
 
 Fai riferimento a [verificare e convalidare](../express-checkout/testing.md) per ulteriori informazioni.
