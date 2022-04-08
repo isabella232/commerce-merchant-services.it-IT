@@ -2,7 +2,7 @@
 title: '''[!DNL Express Checkout] per informazioni per sviluppatori di Adobe Commerce"'
 description: '''[!DNL Express Checkout] informazioni per gli sviluppatori."'
 exl-id: 8926eda4-b4de-4938-a86c-b095616f61f6
-source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
+source-git-commit: 46d5cae4e55a2983a2dc8c442cf5530803be65af
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Utilizza i punti di estensione per personalizzare [!DNL Express Checkout].
 
 Utilizzando i punti di estensione, puoi effettuare personalizzazioni senza modificare effettivamente i componenti core nel codice dell&#39;applicazione.
 
-### Passaggio dei dettagli di spedizione
+## Passaggio dei dettagli di spedizione
 
 Un punto di estensione può essere utilizzato per personalizzare la navigazione dei passaggi automatizzata dopo l&#39;accesso con [!DNL Bolt].
 
