@@ -2,9 +2,9 @@
 title: Note tecniche su facet
 description: Note tecniche sull’utilizzo dei facet Live Search.
 exl-id: 37982610-0ff7-48b7-b088-be7d2eff8a57
-source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
+source-git-commit: e53fb13b98684757b8081b2e19dd33d925e8ce5d
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '114'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,3 @@ L&#39;aggregazione dei facet viene eseguita come segue se la vetrina ha tre face
 * `categories` aggregazione - Aggregati `categories`, si applica `color` e `price` filtri, ma non `categories` filtro.
 * `color` aggregazione - Aggregati `color`, si applica `price` e `categories` filtri, ma non `color` filtro.
 * `price` aggregazione - Aggregati `price`, si applica `color` e `categories` filtri, ma non `price` filtro.
-
-## Valori attributo predefiniti
-
-I seguenti attributi di prodotto hanno alcuni [proprietà della vetrina](https://docs.magento.com/user-guide/stores/attributes-product.html) che sono abilitati per impostazione predefinita.
-
-| Proprietà | Storefront, proprietà | Attributo |
-|---|---|---|
-| Ordinabile | Utilizzato per l’ordinamento nell’elenco dei prodotti | `price` |
-| Ricerca | Usa nella ricerca | `price` <br />`sku`<br />`name` |
-| FilterableInSearch | Utilizzo in Navigazione a livelli - Filtrabile (con risultati) | `price`<br />`visibility`<br />`category_name` |

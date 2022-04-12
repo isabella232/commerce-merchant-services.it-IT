@@ -2,14 +2,14 @@
 title: Stile degli elementi del popover
 description: Note tecniche sulla personalizzazione del punto di vetrina Live Search.
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: 479bf3fba776f47942a0ac8419abbae5553339f0
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 0%
 
 ---
 
-# Stile degli elementi pover
+# Stile degli elementi del popover
 
 La [pover di vetrina](storefront-popover.md) visualizza sempre il prodotto `name` e `price`e la selezione dei campi non è configurabile. Tuttavia, gli elementi del pover possono essere formattati utilizzando le classi CSS. Ad esempio, nelle dichiarazioni seguenti viene modificato il colore di sfondo del contenitore e del piè di pagina.
 

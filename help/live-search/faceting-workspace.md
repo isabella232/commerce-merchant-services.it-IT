@@ -2,14 +2,14 @@
 title: Area di lavoro di visualizzazione
 description: Scopri come aggirare l’area di lavoro dei facet di Live Search.
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: a8943e56cc074a96d3f9e1009b76fa589b76a8a4
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
 
 ---
 
-# Area di lavoro di targeting
+# Area di lavoro di visualizzazione
 
 La [!DNL Live Search] workspace elenca tutti i facet attualmente disponibili e fornisce l’accesso agli strumenti necessari per impostare e gestire i facet. I facet bloccati vengono visualizzati per primi nell’elenco dei facet esistenti, seguiti dai facet dinamici. L’elenco può essere filtrato per mostrare tutti i facet, o solo quelli che sono bloccati o dinamici.
 

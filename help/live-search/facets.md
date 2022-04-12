@@ -2,16 +2,16 @@
 title: Facet
 description: I facet Live Search utilizzano più dimensioni di valori di attributo come criteri di ricerca.
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 554b07c233da2af2ca2d9aacf56bdfe09dc67cd3
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
 
 # Facet
 
-Faceting è un metodo di filtro ad alte prestazioni che utilizza più dimensioni di valori di attributo come criteri di ricerca. La ricerca sfaccettata è simile, ma notevolmente &quot;più intelligente&quot; rispetto allo standard [navigazione a strati](https://docs.magento.com/user-guide/catalog/navigation-layered.html). L’elenco dei filtri disponibili è determinato dalla [attributi filtrabili](https://docs.magento.com/user-guide/catalog/navigation-layered-filterable-attributes.html) dei prodotti restituiti nei risultati della ricerca. È possibile configurare fino a 100 facet con [!DNL Live Search].
+Faceting è un metodo di filtro ad alte prestazioni che utilizza più dimensioni di valori di attributo come criteri di ricerca. La ricerca sfaccettata è simile, ma notevolmente &quot;più intelligente&quot; rispetto allo standard [navigazione a strati](https://docs.magento.com/user-guide/catalog/navigation-layered.html). L’elenco dei filtri disponibili è determinato dalla [attributi filtrabili](https://docs.magento.com/user-guide/catalog/navigation-layered-filterable-attributes.html) dei prodotti restituiti nei risultati della ricerca.
 
 ![Risultati ricerca filtrati](assets/storefront-search-results-run.png)
 
@@ -19,11 +19,24 @@ Faceting è un metodo di filtro ad alte prestazioni che utilizza più dimensioni
 
 I requisiti degli attributi di categoria e prodotto per la facet sono simili agli attributi filtrabili utilizzati per la navigazione a livelli. Le proprietà storefront di ciascun attributo devono essere impostate su `filterable (with results)`.
 
+* È possibile configurare fino a 100 attributi come facet con [!DNL Live Search].
+* [!DNL Live Search] indicizza fino a 300 attributi come filtrabili/ricercabili/ordinabili e visibili nella ricerca.
+
 | Impostazione | Descrizione |
 |--- |--- |
 | [Impostazioni di visualizzazione delle categorie](https://docs.magento.com/user-guide/catalog/categories-display-settings.html) | Ancoraggio - `Yes` |
 | [Proprietà attributo](https://docs.magento.com/user-guide/stores/attribute-product-create.html) | [Tipo di ingresso catalogo](https://docs.magento.com/user-guide/stores/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
 | Proprietà dell&#39;area di archiviazione attributi | Utilizzo nella navigazione a livelli - `Filterable (with results)` |
+
+## Valori attributo predefiniti
+
+I seguenti attributi di prodotto hanno [proprietà della vetrina](https://docs.magento.com/user-guide/stores/attributes-product.html) utilizzati da [!DNL Live Search] e abilitata per impostazione predefinita.
+
+| Proprietà | Storefront, proprietà | Attributo |
+|---|---|---|
+| Ordinabile | Utilizzato per l’ordinamento nell’elenco dei prodotti | `price` |
+| Ricerca | Usa nella ricerca | `price` <br />`sku`<br />`name` |
+| FilterableInSearch | Utilizzo in Navigazione a livelli - Filtrabile (con risultati) | `price`<br />`visibility`<br />`category_name` |
 
 ## Proprietà attributo non di sistema predefinite
 
