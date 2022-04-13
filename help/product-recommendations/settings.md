@@ -1,9 +1,10 @@
 ---
 title: Impostazioni
 description: Scopri come modificare l’origine del [!DNL Product Recommendations] e come abilitare i consigli visivi.
-source-git-commit: 8c85d26474e371d30b76499f312553a07e329a80
+exl-id: 8c074e11-e0cb-4d55-b646-30279c79bbc2
+source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
@@ -51,7 +52,7 @@ Per modificare l’origine dei dati dei consigli di prodotto, scegli lo spazio d
 
 1. Nella sezione Origine Recommendations, fai clic su **Modifica configurazione**.
 
-1. Segui le istruzioni per configurare un nuovo [Commerce Service].
+1. Segui le istruzioni per configurare un nuovo [[!DNL Commerce] servizio](/help/landing/saas.md).
 
 ## Abilitare i consigli visivi
 

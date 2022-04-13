@@ -1,9 +1,10 @@
 ---
 title: Verifica raccolta eventi
 description: Scopri come verificare che i dati comportamentali vengano inviati ad Adobe Commerce.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
+source-git-commit: 7d9cef7a81196921b465ccf2dcd58d98b66d6598
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -22,6 +23,9 @@ Per garantire che il file JS dell&#39;agente di raccolta eventi sia in fase di c
 1. Ricarica la pagina.
 1. Dovresti vedere `ds.js` o `ds.min.js` in **Nome** colonna.
 
+![Raccoglitore eventi JS](assets/filter-ds.png)
+_Raccoglitore eventi JS_
+
 Per garantire che gli eventi vengano attivati sulle pagine del sito (home page, product, checkout e così via):
 
 1. Assicurati di disabilitare gli ad blocker sul tuo browser e di accettare i cookie sul sito.
@@ -29,6 +33,9 @@ Per garantire che gli eventi vengano attivati sulle pagine del sito (home page, 
 1. Scegli la **Rete** scheda e filtro per `tp2`.
 1. Ricarica la pagina.
 1. Dovresti visualizzare le chiamate in `tp2` in **Nome** colonna.
+
+![Eventi di attivazione](assets/filter-tp2.png)
+_Verifica che gli eventi siano attivati_
 
 ## Verifica tramite estensione Snowplow Chrome
 
@@ -46,7 +53,8 @@ Installa il [Estensione Snowplow Analytics Debugger per Chrome](https://chrome.g
 
 1. Verifica che [ID spazio dati SaaS](https://docs.magento.com/user-guide/configuration/services/saas.html) è impostato correttamente.
 
-In caso di problemi nella verifica della raccolta e dell’invio degli eventi ad Adobe Commerce, [contattare il supporto](https://support.magento.com/hc/en-us).
+![Filtro Snowplow](assets/snowplow-filter.png)
+_Filtro per arcobaleno_
 
 >[!NOTE]
 >
