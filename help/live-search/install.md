@@ -2,7 +2,7 @@
 title: Installa Live Search
 description: Scopri come installare, aggiornare e disinstallare Live Search da Adobe Commerce.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 27adb528c0c805478516dd9669237b971d0efc95
+source-git-commit: 26d841f8a47f4b9067974234c94d4441be6733ea
 workflow-type: tm+mt
 source-wordcount: '1245'
 ht-degree: 0%
@@ -48,7 +48,7 @@ In questo scenario, le operazioni di vetrina vengono interrotte mentre il [!DNL 
 1. Per scaricare i `live-search` esegui quanto segue dalla riga di comando:
 
    ```bash
-   composer require magento/DNL live-search
+   composer require magento/live-search
    ```
 
    Per ulteriori informazioni, consulta l’elenco di [!DNL Live Search] [dipendenze](#dependencies) catturati da [!DNL Composer].
