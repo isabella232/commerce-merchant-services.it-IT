@@ -2,9 +2,9 @@
 title: Aggiungi facet
 description: Scopri come aggiungere attributi di prodotto filtrabili come facet Live Search.
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: 966b15e6cb8c839c39575a3ad25a6b460201330b
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Il facet viene aggiunto nella parte inferiore del *Facet dinamici* e *Pubblicare
    * Etichetta - ([Senza testa](facets-type.md) Solo) Immettere l&#39;etichetta del facet che si desidera utilizzare.
    * Seleziona tipo - Il *Seleziona tipo* utilizzato per tutti [!DNL Commerce] vetrine è `single select`. Per implementazioni headless, `multi-select` il tipo può essere assegnato con un operatore logico (`or` o `and`) per determinare il set di prodotti restituiti.
    * Tipo di ordinamento - I facet sono ordinati alfabeticamente per tutti [!DNL Commerce] vetrine. Per le implementazioni headless, i facet possono essere ordinati in ordine alfabetico o per conteggio. Opzioni: Alfabetico, conteggio (solo senza testa)
-   * Valore massimo: immetti il numero massimo di valori di facet visualizzati nella vetrina. Voci valide: 0 - 10
+   * Valore massimo: immetti il numero massimo di valori di facet visualizzati nella vetrina. Voci valide: 0 - 30; Predefinito: 8
 
 1. Al termine, fai clic su **Salva**.
 
@@ -70,7 +70,7 @@ Se il facet non è disponibile dopo due ore, vedi [Verifica esportazione](instal
 | Etichetta | ([Senza testa](facets-type.md) Solo) [etichetta del facet](facets-type.md) che è visibile nella vetrina può essere modificato per coerenza con il tuo marchio. |
 | Seleziona tipo | Visualizza la [metodo di selezione](facets-type.md) associato all’attributo del prodotto. Tutti i facet nel [!DNL Commerce] le vetrine sono `Single select` solo. Supporto anche delle implementazioni headless `Multi-select` con gli operatori logici `OR` e `AND`. |
 | Tipo di ordinamento | Il metodo utilizzato per [sort](facets-type.md) sfaccettature. Tutto [!DNL Commerce] vetrine che ordinano facet solo alfabeticamente. Le implementazioni headless possono anche essere ordinate per `Count`. Opzioni:<br />Alfabetico - Ordina i facet in ordine alfabetico.<br />Conteggio - (solo senza intestazione) Ordina i facet in base al numero di corrispondenze trovate. |
-| Valore massimo | Il numero massimo di valori che possono essere visualizzati nella vetrina per ciascun facet. I facet che rappresentano un intervallo di valori sono distribuiti in modo uniforme. Predefinito: 8 |
+| Valore massimo | Il numero massimo di valori che possono essere visualizzati nella vetrina per ciascun facet. I facet che rappresentano un intervallo di valori sono distribuiti in modo uniforme. Voci valide: 0 - 30; Predefinito: 8 |
 
 ### Controlli
 
