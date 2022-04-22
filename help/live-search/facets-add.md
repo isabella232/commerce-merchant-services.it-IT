@@ -2,7 +2,7 @@
 title: Aggiungi facet
 description: Scopri come aggiungere attributi di prodotto filtrabili come facet Live Search.
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 966b15e6cb8c839c39575a3ad25a6b460201330b
+source-git-commit: f31c76404315a9fe142bf0c72ff9999c4a87365d
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -54,8 +54,8 @@ Il facet viene aggiunto nella parte inferiore del *Facet dinamici* e *Pubblicare
 
    ![Area di lavoro di targeting](assets/facet-edit.png)
 
-1. Per fissare il facet alla parte superiore del *Filtri* fare clic sulla puntina grigia (![Selettore pin](assets/btn-pin-gray.png).
-1. Per modificare l’ordine del facet bloccato, fai clic sul pulsante **Sposta** (![Selettore di spostamento](assets/btn-move.png) e trascina la riga in una nuova posizione *Facet bloccate* sezione .
+1. Per fissare il facet alla parte superiore del *Filtri* fare clic sulla puntina grigia (![Selettore pin](assets/btn-pin-gray.png)).
+1. Per modificare l’ordine del facet bloccato, fai clic sul pulsante **Sposta** (![Selettore di spostamento](assets/btn-move.png)) e trascina la riga in una nuova posizione nel *Facet bloccate* sezione .
 
 ## Passaggio 3: Pubblicare le modifiche
 

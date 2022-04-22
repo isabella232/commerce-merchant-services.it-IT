@@ -2,9 +2,9 @@
 title: Panoramica sull’onboarding
 description: Flusso di onboarding di Live Search, requisiti di sistema, limiti e limitazioni
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: f33f02fa15b6250970bda3302d3403b6fcec5786
+source-git-commit: f2934746c327528d5d52f2ae356afe303ff9b81b
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,7 @@ Al momento, il [!DNL Live Search] l’API di ricerca/categoria ha i seguenti lim
 
 ### Versione beta di PWA
 
+* L’attuale implementazione beta PWA di Live Search richiede più tempo di elaborazione per restituire i risultati della ricerca rispetto a Live Search con la vetrina Commerce nativa.
 * Versione beta di PWA per [!DNL Live Search] non supporta [gestione degli eventi](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 * I seguenti attributi di prodotto non sono supportati da GraphQL quando utilizzati in relazione alla versione beta di [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
 
@@ -55,3 +56,5 @@ Al momento, il [!DNL Live Search] l’API di ricerca/categoria ha i seguenti lim
 * [Gruppi di prezzi personalizzati](https://docs.magento.com/user-guide/catalog/product-price-group.html)
 * Più posizioni di inventario utilizzate da [MCOM](https://docs.magento.com/user-guide/mcom.html) o altre estensioni OMS
 * [Funzionalità B2B integrate](https://business.adobe.com/products/magento/b2b-ecommerce.html)
+* I prezzi dei prodotti non includono [imposta sul valore aggiunto](https://docs.magento.com/user-guide/tax/vat.html) (IVA).
+* I prodotti esauriti vengono visualizzati nei risultati di ricerca indipendentemente dal [Opzioni stock](https://docs.magento.com/user-guide/catalog/inventory-options-global.html) configurazione.
