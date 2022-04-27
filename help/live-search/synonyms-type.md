@@ -2,9 +2,9 @@
 title: Tipi di sinonimi
 description: I sinonimi di Live Search unidirezionale e bidirezionale espandono la definizione di parole chiave.
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
+source-git-commit: c8fd75f68ed0def18f6f89adc777244057c5d79d
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '402'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ I sinonimi bidirezionali hanno lo stesso significato e restituiscono gli stessi 
 
 ## unidirezionale
 
-Un sinonimo di senso unico è un sottoinsieme di una parola chiave, ma con un significato più specifico. Per esempio, capris e pantaloncini sono pantaloni, ma non tutti i pantaloni sono di capris o pantaloncini. Una ricerca di pantaloni include capris e pantaloncini. Tuttavia, una ricerca per i pantaloncini non restituirà capris.
+Un sinonimo di senso unico è un sottoinsieme di una parola chiave, ma con un significato più specifico. Per esempio, capris e pantaloncini sono pantaloni, ma non tutti i pantaloni sono di capris o pantaloncini. Una ricerca di pantaloni include capris e pantaloncini. Tuttavia, una ricerca per i pantaloncini non restituisce i capri.
 
 **felpa** ![Selettore unidirezionale](assets/btn-one-way.png) felpa
 **pantaloni** ![Selettore unidirezionale](assets/btn-one-way.png) caprioli ![Selettore multiplo unidirezionale](assets/btn-multiple-one-way.png) pantaloni a base di vitello ![Selettore multiplo unidirezionale](assets/btn-multiple-one-way.png) pedalò
@@ -31,6 +31,14 @@ Un sinonimo di senso unico è un sottoinsieme di una parola chiave, ma con un si
 
 Tieni presente le seguenti best practice per ottenere il massimo dai sinonimi di Live Search.
 
-Non è necessario definire sinonimo sia di forma singolare che plurale una parola. Se nel catalogo è presente una combinazione di termini singolari e plurali, Ricerca troverà il set corretto di prodotti. Ad esempio, se utilizzi la parola &quot;pant&quot; nel nome del prodotto e un acquirente cerca &quot;pantaloni&quot;, viene restituito il set corretto di prodotti e viene offerta come suggerimento la singola parola &quot;pant&quot;. Il termine singolare &quot;pant&quot; è spesso utilizzato nell&#39;industria della moda e a volte nel commercio al dettaglio, anche se la forma plurale &quot;pantaloni&quot; è più comunemente utilizzato in alcune aree. (La parola &quot;pant&quot; tecnicamente si riferisce alla parte di un indumento che copre una gamba, che è il motivo per cui hai bisogno di un &quot;paio di pantaloni&quot; per coprire entrambe le gambe.)
+### Mappatura delle parole chiave
+
+Questa tecnica utilizza attributi di prodotto ricercabili, anziché sinonimi, per creare associazioni basate su parole chiave tra i prodotti. Di conseguenza, un prodotto mappato può essere visualizzato nei risultati di ricerca di un altro prodotto. Per ulteriori informazioni, consulta [Risultati ricerca](https://docs.magento.com/user-guide/catalog/search-results.html).
+
+### Uso del singolare e plurale
+
+Non è necessario definire sia le forme singolari che plurali di una parola come sinonimo. Se nel catalogo è presente una combinazione di termini singolari e plurali, Ricerca trova il set corretto di prodotti. Ad esempio, se utilizzi la parola &quot;pant&quot; nel nome del prodotto e un acquirente cerca &quot;pantaloni&quot;, viene restituito il set corretto di prodotti e viene offerta come suggerimento la singola parola &quot;pant&quot;. Il termine singolare &quot;pant&quot; è spesso utilizzato nell&#39;industria della moda e a volte nel commercio al dettaglio, anche se la forma plurale &quot;pantaloni&quot; è più comunemente utilizzato in alcune aree. (La parola &quot;pant&quot; tecnicamente si riferisce alla parte di un indumento che copre una gamba, che è il motivo per cui hai bisogno di un &quot;paio di pantaloni&quot; per coprire entrambe le gambe.)
+
+### Coerenza
 
 Assicurati di essere coerente con il modo in cui la terminologia viene utilizzata nel catalogo. Tieni presente che potrebbero esserci differenze di utilizzo a livello regionale e talvolta anche all’interno di un settore.
