@@ -4,9 +4,9 @@ description: Dopo l'installazione, è possibile configurare [!DNL Payment Servic
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ Puoi abilitare e configurare le opzioni di pagamento dei pulsanti avanzati PayPa
 
 ### [!DNL PayPal Smart Buttons] Opzioni di stile
 
-| Campo | [Ambito]({% collegamento configuration/scope.md %}) | Descrizione |
+| Campo | Ambito | Descrizione |
 |--- |--- |--- |
 | [!UICONTROL Layout] | Visualizzazione store | Definire lo stile del layout per i pulsanti Paypal Smart. Opzioni: [!UICONTROL Vertical] / [!UICONTROL Horizontal] |
 | [!UICONTROL Color] | Visualizzazione store | Definire il colore dei pulsanti avanzati Paypal. Opzioni: [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black] |

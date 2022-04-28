@@ -3,9 +3,10 @@ title: Configura nel dashboard
 description: Dopo l'installazione, è possibile configurare [!DNL Payment Services] nel dashboard.
 role: Admin, User
 level: Intermediate
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+exl-id: 015c5c8c-8184-45c1-932a-f4365ddf5a30
+source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -97,4 +98,4 @@ Puoi anche configurare le _[!UICONTROL Button style]_opzioni dei pulsanti intell
 1. Per salvare le modifiche, fai clic su **[!UICONTROL Save]** in alto a destra nella pagina.
 1. Passa a **[!UICONTROL System]** > **[!UICONTROL Cache Management]** e fai clic su **[!UICONTROL Flush Cache]** per aggiornare tutte le cache non valide.
 
-Puoi configurare [!DNL PayPal Smart Buttons] nell’amministratore o nel dashboard. Vedi [Configurazione [!DNL PayPal Smart Buttons style]](configure-admin.md#configure-paypal-smart-button-styling) per ulteriori informazioni.
+Puoi configurare [!DNL PayPal Smart Buttons] nell’amministratore o nel dashboard. Vedi [Guida allo stile dei pulsanti di PayPal](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) per ulteriori informazioni.
