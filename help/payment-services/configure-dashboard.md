@@ -4,9 +4,9 @@ description: Dopo l'installazione, è possibile configurare [!DNL Payment Servic
 role: Admin, User
 level: Intermediate
 exl-id: 015c5c8c-8184-45c1-932a-f4365ddf5a30
-source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
+source-git-commit: 44e97a0299e980656aef557eb5c2bac9b6443452
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,8 @@ Consulta la sezione [[!UICONTROL General] sezione impostazioni](#general-setting
 
 1. Per salvare le modifiche, fai clic su **[!UICONTROL Save]** in alto a destra nella pagina.
 
+   Se tenti di allontanarti da questa visualizzazione senza salvare le modifiche, viene visualizzato un modale che richiede di ignorare le modifiche, continuare a modificare o salvare le modifiche.
+
 1. Passa a **[!UICONTROL System]** > **[!UICONTROL Cache Management]** e fai clic su **[!UICONTROL Flush Cache]** per aggiornare tutte le cache non valide.
 
 ### Campi carta di credito
@@ -63,6 +65,9 @@ Vedi [Opzioni di pagamento](payments-options.md#paypal-smart-buttons) per ulteri
 1. A [imposta l&#39;azione di pagamento](production.md#set-payment-services-as-payment-method), set **[!UICONTROL Payment action]** a `Authorize` o `Authorize and Capture`.
 1. Per **[!UICONTROL Debug Mode]**, attiva il selettore per attivare la modalità di debug.
 1. Per salvare le modifiche, fai clic su **[!UICONTROL Save]** in alto a destra nella pagina.
+
+   Se tenti di allontanarti da questa visualizzazione senza salvare le modifiche, viene visualizzato un modale che richiede di ignorare le modifiche, continuare a modificare o salvare le modifiche.
+
 1. Passa a **[!UICONTROL System]** > **[!UICONTROL Cache Management]** e fai clic su **[!UICONTROL Flush Cache]** per aggiornare tutte le cache non valide.
 
 ### Pulsanti smart PayPal
@@ -83,6 +88,9 @@ Puoi abilitare le opzioni di pagamento dei pulsanti intelligenti PayPal all&#39;
 1. Per modificare la variabile [Messaggi di pagamento in un secondo momento](payments-options.md#pay-later-button) (se desiderato), attiva/disattiva la **[!UICONTROL Display Pay Later message]** opzione .
 1. Per abilitare la modalità di debug, fai clic su **[!UICONTROL Debug Mode]**,
 1. Per salvare le modifiche, fai clic su **[!UICONTROL Save]** in alto a destra nella pagina.
+
+   Se tenti di allontanarti da questa visualizzazione senza salvare le modifiche, viene visualizzato un modale che richiede di ignorare le modifiche, continuare a modificare o salvare le modifiche.
+
 1. Passa a **[!UICONTROL System]** > **[!UICONTROL Cache Management]** e fai clic su **[!UICONTROL Flush Cache]** per aggiornare tutte le cache non valide.
 
 ### Stile pulsante
@@ -96,6 +104,9 @@ Puoi anche configurare le _[!UICONTROL Button style]_opzioni dei pulsanti intell
 1. Per abilitare il selettore dell’altezza del pulsante, fai clic su **[!UICONTROL Responsive button height]**.
 1. Per modificare il **[!UICONTROL Label]**, seleziona l’opzione di etichetta desiderata.
 1. Per salvare le modifiche, fai clic su **[!UICONTROL Save]** in alto a destra nella pagina.
+
+   Se tenti di allontanarti da questa visualizzazione senza salvare le modifiche, viene visualizzato un modale che richiede di ignorare le modifiche, continuare a modificare o salvare le modifiche.
+
 1. Passa a **[!UICONTROL System]** > **[!UICONTROL Cache Management]** e fai clic su **[!UICONTROL Flush Cache]** per aggiornare tutte le cache non valide.
 
 Puoi configurare [!DNL PayPal Smart Buttons] nell’amministratore o nel dashboard. Vedi [Guida allo stile dei pulsanti di PayPal](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) per ulteriori informazioni.
