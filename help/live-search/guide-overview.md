@@ -2,9 +2,9 @@
 title: Panoramica della guida alla ricerca live
 description: Live Search di Adobe Commerce offre un'esperienza di ricerca rapida, super-rilevante e intuitiva.
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: 9d1637efdfde60f7b94c4fa60b369225b799bc83
+source-git-commit: 5f83b72c18490a6829ef30064f75c5d963bd93be
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -32,3 +32,9 @@ Se hai bisogno di informazioni o hai domande che non sono incluse in questa guid
 
 [Centro assistenza](https://support.magento.com/hc/en-us) - Consulta gli articoli per la risoluzione dei problemi relativi a Live Search.
 [Biglietti di supporto](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) - Inviare un biglietto per ricevere ulteriore assistenza.
+
+Prima di inviare un ticket di supporto, esegui quanto segue dalla riga di comando per controllare la versione di Live Search attualmente installata:
+
+```bash
+composer show magento/module-live-search | grep version
+```
