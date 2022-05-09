@@ -2,9 +2,9 @@
 title: Configurare la sandbox di prova
 description: Utilizzare un account sandbox PayPal per utilizzare [!DNL Payment Services] in modalità di prova.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Per ripristinare l’account sandbox:
 Per completare l’onboarding della sandbox:
 
 1. Passa a [Pagina Account sviluppatore PayPal](https://developer.paypal.com/developer/accounts/).
-1. Fai clic su **[!UICONTROL Log in to Dashboard]** e accedi con le tue credenziali esistenti all&#39;account PayPal Developers o fai clic su **Iscriviti** per creare un account.
+1. Fai clic su **[!UICONTROL Log in to Home]** e accedi con le tue credenziali esistenti all&#39;account PayPal Developers o fai clic su **Iscriviti** per creare un account.
 1. Crea un account sandbox PayPal:
    1. Vai a _[!UICONTROL SANDBOX]_>**[!UICONTROL Accounts]**.
    1. Clic **[!UICONTROL Create account]**.
@@ -42,7 +42,7 @@ Per completare l’onboarding della sandbox:
 
    Questa opzione è visibile se non hai ancora completato l’onboarding della sandbox per [!DNL Payment Services].
 
-   Un ID commerciante sandbox viene generato automaticamente e popolato nel [configurazione](configure-admin.md). Non modificare o modificare questo ID.
+   Un ID commerciante sandbox viene generato automaticamente e popolato nel [impostazioni](settings.md). Non modificare o modificare questo ID.
 
    Ti viene presentata una finestra PayPal per la connessione di un account PayPal per iniziare ad accettare pagamenti.
 
@@ -59,7 +59,7 @@ Quando l&#39;onboarding della sandbox PayPal è approvato, dovresti vedere una n
 
 >[!IMPORTANT]
 >
->Se revochi il consenso a [!DNL Payment Services] per Adobe Commerce e Magento Open Source per l&#39;elaborazione dei pagamenti (nelle impostazioni del tuo account PayPal), gli ordini nel tuo negozio non possono essere elaborati da [!DNL Payment Services].
+>Se revochi il consenso a [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] per l&#39;elaborazione dei pagamenti (nelle impostazioni del tuo account PayPal), gli ordini nel tuo negozio non possono essere elaborati da [!DNL Payment Services].
 
 ## Abilita il numero di telefono del contatto
 

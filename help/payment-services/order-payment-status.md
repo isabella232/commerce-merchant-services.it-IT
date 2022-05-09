@@ -4,22 +4,22 @@ description: Utilizza il rapporto sullo stato del pagamento dell'ordine per aver
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: cd1c735e9b3be0d75019e0987c84899f9aa66951
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '1184'
+source-wordcount: '1174'
 ht-degree: 0%
 
 ---
 
 # Report stato del pagamento dell&#39;ordine
 
-[!DNL Payment Services] per Adobe Commerce e Magenti Open Source offre rapporti completi che consentono di ottenere una visione chiara degli ordini e dei pagamenti del tuo negozio.
+[!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] offre un reporting completo per ottenere una visione chiara degli ordini e dei pagamenti del tuo negozio.
 
 ![Visualizzazione rapporti finanziari](assets/reports-view.png)
 
 Il rapporto sullo stato del pagamento dell&#39;ordine ti aiuta a capire facilmente dove si trova un ordine specifico all&#39;interno del flusso di processo dell&#39;ordine al contante. Questo rapporto ti consente di visualizzare rapidamente lo stato dei pagamenti degli ordini e di identificare eventuali problemi potenziali.
 
-Non è necessario aprire più visualizzazioni per incrociare manualmente ordini e pagamenti con riferimenti incrociati. [!DNL Payment Services] per Adobe Commerce e Magenti Open Source ti consente di ottenere una panoramica degli ordini e dei pagamenti, il tutto all&#39;interno del rapporto sullo stato del pagamento dell&#39;ordine.
+Non è necessario aprire più visualizzazioni per incrociare manualmente ordini e pagamenti con riferimenti incrociati. [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] consente di ottenere una panoramica degli ordini e dei pagamenti, il tutto all&#39;interno del rapporto sullo stato del pagamento dell&#39;ordine.
 
 Vedere gli stati di pagamento, gli stati di fatturazione e spedizione, gli stati di rimborso, gli stati di controversia e altro ancora all&#39;interno di questo rapporto nell&#39;Amministratore.
 

@@ -4,9 +4,9 @@ description: Dopo l'installazione, è possibile configurare [!DNL Payment Servic
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 Puoi personalizzare [!DNL Payment Services] per soddisfare le tue esigenze con opzioni di configurazione utili nell’amministratore.
 
-Quando si configura [!DNL Payment Services] per Adobe Commerce e Magenti Open Source nell’amministratore, tali configurazioni si applicano solo all’ambiente impostato in [!UICONTROL Method] campo [!UICONTROL General Configuration]. Qualsiasi modifica apportata nei campi di configurazione è indipendente dal passaggio alla [!UICONTROL Method] selezione (selection) - se si cambia il metodo, le selezioni non vengono reimpostate.
+Quando si configura [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] in Admin, tali configurazioni si applicano solo all’ambiente impostato in _[!UICONTROL Method]_campo_[!UICONTROL General Configuration]_. Qualsiasi modifica apportata nei campi di configurazione è indipendente dal passaggio alla _[!UICONTROL Method]_selezione (selection) - se si cambia il metodo, le selezioni non vengono reimpostate.
 
 Consulta la sezione [[!UICONTROL General Configuration] sezione](#general-configuration) per ulteriori informazioni.
 
 ## Configurazione generale
 
-È possibile attivare [!DNL Payment Services] per il tuo negozio e abilita il test sandbox o i pagamenti live nel [!UICONTROL General Configuration] sezione .
+È possibile attivare [!DNL Payment Services] per il tuo negozio e abilita il test sandbox o i pagamenti live nel _[!UICONTROL General Configuration]_sezione .
 
 1. Sulla _Amministratore_ barra laterale, vai a **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. Nel pannello a sinistra, espandi **[!UICONTROL Sales]** e scegli **[!UICONTROL Payment Methods]**.
@@ -35,7 +35,7 @@ Consulta la sezione [[!UICONTROL General Configuration] sezione](#general-config
 
    >[!WARNING]
    >
-   >Le [!UICONTROL Sandbox Merchant ID] e [!UICONTROL Production Merchant ID] sono generati automaticamente e presenti nei rispettivi campi al termine dell’onboarding per la sandbox e/o la produzione. Non rimuovere o modificare questi ID.
+   >Le _[!UICONTROL Sandbox Merchant ID]_e_[!UICONTROL Production Merchant ID]_ sono generati automaticamente e presenti nei rispettivi campi al termine dell’onboarding per la sandbox e/o la produzione. Non rimuovere o modificare questi ID.
 
 1. Fai clic su **[!UICONTROL Save Config]** per salvare le modifiche.
 

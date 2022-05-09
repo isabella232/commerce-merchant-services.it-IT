@@ -2,9 +2,9 @@
 title: Collegare l'istanza
 description: Collega la tua istanza Commerce utilizzando una chiave API e una chiave privata e specifica lo spazio dati nella configurazione.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Per informazioni su come generare una chiave API per gli ambienti sandbox o di p
 
 ### Chiave API Commerce e chiave privata
 
-Alcune funzioni di Adobe Commerce e Magento Open Source sono implementate come SaaS (software as a service), noto come Commerce Services. Per utilizzare questi servizi, devi collegare la tua istanza Commerce a questi servizi utilizzando una chiave API e una chiave privata e specificare lo spazio dati desiderato nel [configurazione](https://docs.magento.com/user-guide/configuration/services/saas.html){target=&quot;_blank&quot;}.
+Alcuni [!DNL Adobe Commerce] e [!DNL Magento Open Source] Le funzioni sono distribuite come SaaS (software as a service), noto come Commerce Services. Per utilizzare questi servizi, devi collegare la tua istanza Commerce a questi servizi utilizzando una chiave API e una chiave privata e specificare lo spazio dati desiderato nel [configurazione](https://docs.magento.com/user-guide/configuration/services/saas.html){target=&quot;_blank&quot;}.
 
 Quando crei un account Commerce identificato da un MageID, puoi generare una chiave API Commerce e una chiave privata. Per utilizzare Commerce Services, ad esempio [!DNL Payment Services], [!DNL Product Recommendations]oppure [!DNL Live Search], il titolare della licenza deve generare tali chiavi per superare la convalida dell&#39;adesione. Queste chiavi possono quindi essere passate al team di integrazione dei sistemi o di sviluppo che gestisce i progetti e gli ambienti per conto del titolare della licenza. Se sei un integratore di soluzioni, hai anche il diritto di utilizzare questi servizi per le tue esigenze. In tal caso, il firmatario del contratto con il partner Commerce dovrebbe generare le chiavi.
 
@@ -67,8 +67,8 @@ La stessa chiave API può essere utilizzata tra le istanze, ma ogni istanza deve
 
 Quando crei un progetto SaaS, Commerce genera uno o più spazi dati SaaS a seconda della licenza Commerce:
 
-* Adobe Commerce - Uno spazio dati di produzione; due aree dati di prova
-* Magento Open Source - uno spazio dati di produzione; nessuna verifica degli spazi dati
+* [!DNL Adobe Commerce] - uno spazio dati di produzione; due aree dati di prova
+* [!DNL Magento Open Source] - uno spazio dati di produzione; nessuna verifica degli spazi dati
 
 ### Configurare il progetto SaaS
 

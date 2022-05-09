@@ -2,18 +2,18 @@
 title: Crea un ordine con [!DNL Payment Services]
 description: L’amministratore offre la possibilità di eseguire un ordine utilizzando [!DNL Payment Services] direttamente dall’amministratore da un commerciante per i suoi clienti che hanno bisogno di assistenza.
 exl-id: 1542a33f-9c01-4c36-bbce-bfa3107fbeb8
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Crea un ordine con [!DNL Payment Services]
 
-Puoi personalizzare [!DNL Payment Services] in base alle tue esigenze utilizzando le opzioni di configurazione in Admin.
+Puoi personalizzare i Servizi di pagamento in base alle tue esigenze utilizzando [[!DNL Payment Services] impostazioni](settings.md).
 
-[!DNL Payment Services] per Adobe Commerce e Magenti Open Source consente di eseguire un ordine direttamente dall’amministratore da un commerciante per i suoi clienti che necessitano di assistenza. La **[!UICONTROL Create New Order]** il modulo include tutte le informazioni necessarie per completare il normale processo di pagamento, compresi i campi in hosting con le informazioni sulla carta di credito. Vedi [Creazione di un ordine](https://docs.magento.com/user-guide/customers/customer-account-create-order.html){target=&quot;_blank&quot;} per informazioni dettagliate sui passaggi richiesti.
+[!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] consente di eseguire un ordine direttamente dall’amministratore da un commerciante per i suoi clienti che hanno bisogno di assistenza. La **[!UICONTROL Create New Order]** il modulo include tutte le informazioni necessarie per completare il normale processo di pagamento, compresi i campi in hosting con le informazioni sulla carta di credito. Vedi [Creazione di un ordine](https://docs.magento.com/user-guide/customers/customer-account-create-order.html){target=&quot;_blank&quot;} per informazioni dettagliate sui passaggi richiesti.
 
 ## Campi della carta di credito ospitata
 

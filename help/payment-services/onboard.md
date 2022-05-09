@@ -4,16 +4,16 @@ description: Collega l’istanza con [!DNL Payment Services] completando alcuni 
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Onboard [!DNL Payment Services]
 
-Per iniziare a utilizzare [!DNL Payment Services] per Adobe Commerce e Magenti Open Source, devi completare alcuni passaggi di onboarding per collegare la tua istanza alla funzionalità pagamenti.
+Per iniziare a utilizzare [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source], devi completare alcuni passaggi di onboarding per collegare la tua istanza alla funzionalità pagamenti.
 
 ## Flusso di onboarding
 
@@ -23,7 +23,7 @@ Questo diagramma di flusso onboarding mostra il processo generale di onboarding 
 
 Dopo aver completato l&#39;onboarding per i pagamenti sandbox o live, il reporting finanziario è accessibile da [!DNL Payment Services] nell&#39;amministratore.
 
-Se i pagamenti sandbox e live sono entrambi onboarded e abilitati, puoi facilmente passare da una modalità all’altra [!DNL Payment Services] a casa.
+Se i pagamenti sandbox e live sono entrambi onboarded e abilitati, puoi facilmente passare da una modalità all’altra [!DNL Payment Services] Casa.
 
 ## Prerequisiti
 

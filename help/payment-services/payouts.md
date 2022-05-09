@@ -4,22 +4,22 @@ description: Utilizzare il rapporto Pagamenti per garantire la piena trasparenza
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: aff1a43fedab473b84d02068a7d3fbd33b4fe093
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Rapporto Pagamenti
 
-[!DNL Payment Services] per Adobe Commerce e Magenti Open Source offre rapporti completi che consentono di ottenere una visione chiara degli ordini e dei pagamenti del tuo negozio.
+[!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] offre un reporting completo per ottenere una visione chiara degli ordini e dei pagamenti del tuo negozio.
 
 ![Visualizzazione rapporti finanziari](assets/reports-view.png)
 
 Il rapporto Pagamenti mostra immediatamente informazioni complete sui pagamenti, consentendo la piena trasparenza sull&#39;importo del pagamento, sul volume elaborato e sulla generazione di rapporti dettagliati a livello di transazione per la riconciliazione finanziaria.
 
-Non è necessario aprire più dashboard o viste per eseguire riferimenti incrociati a ordini e pagamenti o per riconciliare account. [!DNL Payment Services] per Adobe Commerce e Magenti Open Source consente di eseguire tutte queste azioni da un&#39;unica posizione (rapporto Pagamenti) in modo da poter visualizzare e gestire i pagamenti in modo efficiente.
+Non è necessario aprire più visualizzazioni per eseguire riferimenti incrociati a ordini e pagamenti o per eseguire la quadratura dei conti. [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] consente di eseguire tutte queste azioni da un&#39;unica posizione (rapporto Pagamenti) in modo da poter visualizzare e gestire i pagamenti in modo efficiente.
 
 Vedi ID di ordine e transazione commerciali collegati, importi delle transazioni, metodo di pagamento per transazione e altro ancora, tutto all&#39;interno del rapporto Pagamenti in Amministratore.
 
@@ -45,7 +45,7 @@ Se _[!UICONTROL Live]_è l’origine dati selezionata, puoi visualizzare le info
 
 Le selezioni dell’origine dati funzionano come segue:
 
-* Se non disponi di archivi in modalità Live, la selezione dell’origine dati viene impostata automaticamente su [!UICONTROL Sandbox]_.
+* Se non disponi di archivi in modalità Live, la selezione dell’origine dati viene impostata automaticamente su _[!UICONTROL Sandbox]_.
 * Se hai degli archivi (uno o più) in modalità Live, la selezione dell&#39;origine dati viene impostata automaticamente su _[!UICONTROL Live]_.
 * Le esportazioni dei rapporti rispettano sempre la selezione dell’origine dati.
 

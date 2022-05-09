@@ -2,7 +2,7 @@
 title: Test e convalida
 description: Il test e la convalida garantiscono che [!DNL Payment Services] funziona come previsto e fornisce le migliori opzioni di pagamento per i clienti
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Test e convalida
 
-Prima di esporre [!DNL Payment Services] per Adobe Commerce e il Magento Open Source ai tuoi acquirenti, è buona idea testare nel tuo ambiente sandbox _e_ in produzione. Il test e la convalida garantiscono che [!DNL Payment Services] funziona come previsto e offre le migliori opzioni di pagamento per il tuo negozio e clienti.
+Prima di esporre [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] per i tuoi clienti, è una buona idea testare nel tuo ambiente sandbox _e_ in produzione. Il test e la convalida garantiscono che [!DNL Payment Services] funziona come previsto e offre le migliori opzioni di pagamento per il tuo negozio e clienti.
 
 ## Test in ambiente sandbox
 
