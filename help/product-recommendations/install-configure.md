@@ -1,16 +1,17 @@
 ---
 title: Installazione e configurazione
 description: Scopri come installare, aggiornare e disinstallare [!DNL Product Recommendations].
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
+source-git-commit: b06d5000263b7ee09608a4a8510d76e9f4bdb809
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
 
 # Installazione e configurazione
 
-Distribuzione [!DNL Product Recommendations] per la vetrina e l’amministratore richiede l’installazione del modulo e la configurazione del connettore Commerce Services. Man mano che vengono rilasciati gli aggiornamenti, puoi facilmente aggiornare l’installazione con la versione più recente.
+Distribuzione [!DNL Product Recommendations] per la vetrina e l’amministratore richiede l’installazione del modulo e la configurazione del [Connettore Commerce Services](../landing/saas.md). Man mano che vengono rilasciati gli aggiornamenti, puoi facilmente aggiornare l’installazione con la versione più recente.
 
 - [Installa](#install)
 - [Configura](#configure)
@@ -47,11 +48,11 @@ composer require magento/module-visual-product-recommendations
 
 ## Configura [!DNL Product Recommendations] {#configure}
 
-Dopo aver installato `magento/product-recommendations` modulo, devi configurare il [Connettore Commerce Services](https://docs.magento.com/user-guide/configuration/services/saas.html) specificando la chiave API e selezionando uno spazio dati SaaS.
+Dopo aver installato `magento/product-recommendations` modulo, devi configurare il [Connettore Commerce Services](https://docs.magento.com/user-guide/configuration/services/saas.html) specificando le chiavi API e selezionando uno spazio dati SaaS.
 
 Per verificare che l’esportazione del catalogo sia corretta, verifica che la [cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) l&#39;occupazione e [indicizzatori](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) sono in esecuzione e `Product Feed` indexer impostato su `Update by Schedule`.
 
-Quando si effettua un collegamento a Commerce Services tramite la chiave API e si specifica lo spazio dati SaaS, la sincronizzazione del catalogo viene avviata e [verifica](verify.md) che i dati comportamentali vengono inviati alla tua vetrina.
+Quando ti colleghi correttamente a Commerce Services tramite le chiavi API e specifichi lo spazio dati SaaS, inizia la sincronizzazione del catalogo. È quindi possibile [verify](verify.md) che i dati comportamentali vengono inviati alla tua vetrina.
 
 ## Aggiorna il tuo [!DNL Product Recommendations] installazione {#update}
 
