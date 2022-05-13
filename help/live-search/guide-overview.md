@@ -2,9 +2,9 @@
 title: Panoramica della guida alla ricerca live
 description: Live Search di Adobe Commerce offre un'esperienza di ricerca rapida, super-rilevante e intuitiva.
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: 5f83b72c18490a6829ef30064f75c5d963bd93be
+source-git-commit: 2676c363182d0b7cb02d15d1093066b1ad4e7b87
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Live Search offre tre aree per gli amministratori:
 
-* Storefront: Utilizza lo stile CSS per personalizzare il punto di visualizzazione della vetrina.
+* Storefront: Utilizza lo stile CSS per personalizzare [!DNL storefront popover].
 * Amministratore: Utilizza questa area per accedere alla configurazione e alla configurazione.
 * Interfaccia della riga di comando: Utilizza questo strumento per eseguire attività di installazione e configurazione di back-end.
 

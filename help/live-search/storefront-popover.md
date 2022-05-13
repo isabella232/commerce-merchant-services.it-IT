@@ -2,22 +2,22 @@
 title: Pozzo di vetrina
 description: Il vetrina Live Search restituisce dinamicamente prodotti e miniature consigliati.
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: 65126f10574801f7ea8d0a863e9bb512dca13f39
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Pozzo di vetrina
+# [!DNL Storefront Popover]
 
-Quando [!DNL Live Search] è [installato](install.md), un pover appare nella vetrina quando gli acquirenti digitano nel [Ricerca](https://docs.magento.com/user-guide/catalog/search-quick.html) scatola. Per ogni carattere digitato, il puntatore viene aggiornato con prodotti consigliati e immagini in miniatura dei risultati di ricerca principali.
+Quando [!DNL Live Search] è [installato](install.md), [!DNL popover] appare nella vetrina quando i consumatori digitano nel [Ricerca](https://docs.magento.com/user-guide/catalog/search-quick.html) scatola. Per ogni carattere digitato, il [!DNL popover] viene aggiornato con prodotti consigliati e immagini in miniatura dei risultati di ricerca principali.
 
 [!DNL Live Search] restituisce risultati per una query di due caratteri o più. Per una corrispondenza parziale, il numero massimo di caratteri per parola è 20. Il numero di caratteri in una query &quot;search as you type&quot; non è configurabile.
 
 >[!NOTE]
 >
->La [!DNL Live Search] il pover vetrina è disponibile solo per i negozi che utilizzano *Luma* tema o un tema personalizzato basato su *Luma*. La *Luma* il tema è incluso nel [!DNL Commerce] dati di esempio. Il pover non supporta il *Vuoto* tema. Vedi [Stile degli elementi del popover](storefront-popover-styling.md) per saperne di più.
+>La [!DNL Live Search] [!DNL storefront popover] è disponibile solo per i negozi che utilizzano *Luma* tema o un tema personalizzato basato su *Luma*. La *Luma* il tema è incluso nel [!DNL Commerce] dati di esempio. La [!DNL popover] non supporta la *Vuoto* tema. Vedi [Stile [!DNL Popover] Elementi](storefront-popover-styling.md) per saperne di più.
 
 ## Attributi ricercabili
 
@@ -29,16 +29,16 @@ Per produrre risultati altamente mirati, controlla l&#39;insieme di [ricercabile
 * `name`
 * `categories`
 
-![Pover di Live Search](assets/storefront-search-as-you-type.png)
+[[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
-## Dimensioni pagina del puntatore
+## [!DNL Popover] dimensioni pagina
 
-La dimensione della pagina del popover determina quante righe di prodotti completati automaticamente possono essere restituite. In precedenza, le dimensioni della pagina venivano codificate in sei righe. Tuttavia, `page_size` ora è un&#39;impostazione che può essere configurata dal *Amministratore*. Durante l&#39;installazione di Live Search, il `page_size` il valore cambia nel valore corrente del [Ricerca nel catalogo](https://docs.magento.com/user-guide/configuration/catalog/catalog.html#catalog-search) - `Autocomplete Limit` impostazione.
+Dimensioni della pagina [!DNL popover] determina quante righe di prodotti con completamento automatico possono essere restituite. In precedenza, le dimensioni della pagina venivano codificate in sei righe. Tuttavia, `page_size` ora è un&#39;impostazione che può essere configurata dal *Amministratore*. Durante l&#39;installazione di Live Search, il `page_size` il valore cambia nel valore corrente del [Ricerca nel catalogo](https://docs.magento.com/user-guide/configuration/catalog/catalog.html#catalog-search) - `Autocomplete Limit` impostazione.
 
-Per impostazione predefinita, il valore Ricerca nel catalogo - Limite di completamento automatico è impostato su otto righe. Per modificare le dimensioni della pagina del puntatore, procedi come segue:
+Per impostazione predefinita, il valore Ricerca nel catalogo - Limite di completamento automatico è impostato su otto righe. Per modificare le dimensioni della pagina [!DNL popover], procedi come segue:
 
 1. Sulla *Amministratore* barra laterale, vai a **Negozi** > Impostazioni > **Configurazione**.
 1. Nel pannello a sinistra, espandi **Catalogo** e scegli **Catalogo** dall’elenco delle impostazioni.
 1. Espandi la *Ricerca nel catalogo* sezione .
-1. Imposta la **Limite completamento automatico** al numero di righe che si desidera consentire nel pover.
+1. Imposta la **Limite completamento automatico** al numero di righe che desideri consentire nel [!DNL popover].
 1. Al termine, fai clic su **Salva configurazione**.

@@ -2,16 +2,16 @@
 title: Stile degli elementi del popover
 description: Note tecniche sulla personalizzazione del punto di vetrina Live Search.
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: 479bf3fba776f47942a0ac8419abbae5553339f0
+source-git-commit: 65126f10574801f7ea8d0a863e9bb512dca13f39
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Stile degli elementi del popover
+# Stile [!DNL Popover] Elementi
 
-La [pover di vetrina](storefront-popover.md) visualizza sempre il prodotto `name` e `price`e la selezione dei campi non è configurabile. Tuttavia, gli elementi del pover possono essere formattati utilizzando le classi CSS. Ad esempio, nelle dichiarazioni seguenti viene modificato il colore di sfondo del contenitore e del piè di pagina.
+La [[!DNL storefront popover]](storefront-popover.md) visualizza sempre il prodotto `name` e `price`e la selezione dei campi non è configurabile. Tuttavia, [!DNL popover] Gli elementi possono essere formattati utilizzando le classi CSS. Ad esempio, le dichiarazioni seguenti cambiano il colore di sfondo del [!DNL popover] contenitore e piè di pagina.
 
 ```css
 .livesearch.popover-container {
@@ -25,7 +25,7 @@ La [pover di vetrina](storefront-popover.md) visualizza sempre il prodotto `name
 
 ## Visibilità dei contenitori
 
-Il componente principale del `.livesearch.popover-container` è `.search-autocomplete`.  La `.active` Classe indica la visibilità del contenitore. La `.active` La classe viene aggiunta in modo condizionale quando il puntatore è aperto.
+Il componente principale del `.livesearch.popover-container` è `.search-autocomplete`.  La `.active` Classe indica la visibilità del contenitore. La `.active` viene aggiunta in modo condizionale quando la [!DNL popover] è aperto.
 
 ```css
 .search-autocomplete.active   /* visible */
@@ -36,7 +36,7 @@ Per ulteriori informazioni sullo stile degli elementi della vetrina, consulta [F
 
 ## Selettori di classe
 
-I seguenti selettori di classe possono essere utilizzati per assegnare uno stile agli elementi contenitore, suggerimento e prodotto nel browser.
+I seguenti selettori di classe possono essere utilizzati per assegnare uno stile al contenitore, ai suggerimenti e agli elementi di prodotto nel [!DNL popover].
 
 * `.livesearch.popover-container`
 * `.livesearch.view-all-footer`
@@ -52,7 +52,7 @@ I seguenti selettori di classe possono essere utilizzati per assegnare uno stile
 
 `.livesearch.popover-container`
 
-![Contenitore di pover](assets/livesearch-popover-container.png)
+![[!DNL Popover] container](assets/livesearch-popover-container.png)
 
 `.livesearch.view-all-footer`
 
@@ -85,7 +85,7 @@ I seguenti selettori di classe possono essere utilizzati per assegnare uno stile
 
 ## Utilizzo di un tema modificato {#working-with-modified-theme}
 
-Il pover della vetrina può essere utilizzato con un [tema](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/themes/theme-overview.html) che eredita i file richiesti da *Luma*. La `top.search` bloccare `header-wrapper` del `Magento_Search` Impossibile modificare il modulo.
+La [!DNL storefront popover] può essere utilizzato con un [tema](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/themes/theme-overview.html) che eredita i file richiesti da *Luma*. La `top.search` bloccare `header-wrapper` del `Magento_Search` Impossibile modificare il modulo.
 
 ```html
 <referenceContainer name="header-wrapper">
@@ -97,9 +97,9 @@ Il pover della vetrina può essere utilizzato con un [tema](https://devdocs.mage
 </referenceContainer>
 ```
 
-## Disattivazione del pover
+## Disabilitazione della [!DNL popover]
 
-Per disabilitare il popover e ripristinare lo standard [Ricerca rapida](https://docs.magento.com/user-guide/catalog/search-quick.html) , immetti il comando seguente:
+Per disabilitare la funzione [!DNL popover] e ripristinare lo standard [Ricerca rapida](https://docs.magento.com/user-guide/catalog/search-quick.html) , immetti il comando seguente:
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover
