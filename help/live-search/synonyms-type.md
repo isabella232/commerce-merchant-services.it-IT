@@ -2,9 +2,9 @@
 title: Tipi di sinonimi
 description: I sinonimi di Live Search unidirezionale e bidirezionale espandono la definizione di parole chiave.
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: c8fd75f68ed0def18f6f89adc777244057c5d79d
+source-git-commit: 7c3b7ff9e892521108dfec3f308db795e3ab42f9
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,10 @@ Tieni presente le seguenti best practice per ottenere il massimo dai sinonimi di
 ### Mappatura delle parole chiave
 
 Questa tecnica utilizza attributi di prodotto ricercabili, anziché sinonimi, per creare associazioni basate su parole chiave tra i prodotti. Di conseguenza, un prodotto mappato può essere visualizzato nei risultati di ricerca di un altro prodotto. Per ulteriori informazioni, consulta [Risultati ricerca](https://docs.magento.com/user-guide/catalog/search-results.html).
+
+### Usa parole singole
+
+Se un termine sinonimo contiene più parole, lo spazio vuoto tra le parole le fa sì che siano trattate come sinonimi separati. Ad esempio, se definisci &quot;tempo&quot; come sinonimo di &quot;orologio&quot;, le parole &quot;tempo&quot; e &quot;pezzo&quot; vengono trattate come sinonimi separati.
 
 ### Uso del singolare e plurale
 
