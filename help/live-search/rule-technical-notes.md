@@ -1,10 +1,10 @@
 ---
-title: Note tecniche sulla regola
-description: Note tecniche sull’utilizzo delle regole di Live Search.
+title: '"Note tecniche della regola"'
+description: '"Note tecniche sull''utilizzo [!DNL Live Search] regole."'
 exl-id: 24ff6a19-f7cd-42f7-b466-fc18f9091504
-source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '92'
+source-wordcount: '90'
 ht-degree: 0%
 
 ---

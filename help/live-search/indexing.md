@@ -1,10 +1,10 @@
 ---
-title: Indicizzazione Live Search
-description: Scopri come Live Search indicizza le proprietà degli attributi del prodotto
+title: '"[!DNL Live Search] Indicizzazione"'
+description: '"Scopri come [!DNL Live Search] indicizza le proprietà degli attributi del prodotto."'
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 8cc10feccda91fc1d9ead35f9b2b1e8ea19d4c95
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
-title: Pozzo di vetrina
-description: Il vetrina Live Search restituisce dinamicamente prodotti e miniature consigliati.
+title: '"[!DNL Storefront Popover]"'
+description: '"Il [!DNL Live Search storefront popover] restituisce dinamicamente prodotti e miniature consigliati."'
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 65126f10574801f7ea8d0a863e9bb512dca13f39
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
-title: Tipi di facet
-description: I facet Live Search sono dinamici e vengono visualizzati nell’elenco dei filtri se pertinente.
+title: '"Tipi di sfaccettature"'
+description: '"[!DNL Live Search] i facet sono dinamici e vengono visualizzati nell’elenco Filtri se pertinente."'
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
