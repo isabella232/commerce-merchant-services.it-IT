@@ -2,9 +2,9 @@
 title: Risoluzione dei problemi relativi al [!DNL Express Checkout]
 description: Risolvere gli errori e i problemi noti che possono verificarsi durante l'utilizzo del [!DNL Express Checkout] per l'estensione Adobe Commerce.
 exl-id: a379ff81-360d-4cb9-a123-47e8cbc0cdbd
-source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
+source-git-commit: bd9541c5e4810085ab85206b2ecca21e66800a2f
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
@@ -117,6 +117,10 @@ Adobe Commerce consente di localizzare il negozio per più aree geografiche e me
 
 Fai riferimento a [traduzione e localizzazione](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html) per ulteriori informazioni.
 
+## Svuotare la cache
+
+1. Passa a **[!UICONTROL System]** > **[!UICONTROL Cache Management]** e fai clic su **[!UICONTROL Flush Cache]** per aggiornare tutte le cache non valide.
+
 ## Assistenza
 
-Per assistenza, contatta il supporto Adobe Commerce.
+Contatto [!DNL Adobe Commerce] team di progettazione attraverso lo Slack assegnato [Canale dei programmi Adobe Beta](http://adobe-beta-programs.slack.com/) per qualsiasi assistenza.
