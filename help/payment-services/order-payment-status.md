@@ -4,9 +4,9 @@ description: Utilizza il rapporto sullo stato del pagamento dell'ordine per aver
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1268'
 ht-degree: 0%
 
 ---
@@ -92,6 +92,16 @@ Dalla visualizzazione del rapporto sullo stato del pagamento dell&#39;ordine, è
 1. Fai clic sul pulsante **[!UICONTROL Order dates]** filtro selettore calendario.
 1. Scegli l’intervallo di date applicabile.
 1. Visualizza gli stati di pagamento dell&#39;ordine per le date specificate nella griglia.
+
+## Mostra e nascondi colonne
+
+Il rapporto Stato pagamento ordine mostra tutte le colonne di informazioni disponibili per impostazione predefinita. È tuttavia possibile personalizzare le colonne visualizzate nel rapporto.
+
+1. Sulla _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. Fai clic sul pulsante _Impostazioni colonna_ icona (![icona delle impostazioni colonna](assets/column-settings.png)).
+1. Per personalizzare le colonne visualizzate nel rapporto, selezionare o deselezionare le colonne nell’elenco.
+
+   Il rapporto sullo stato del pagamento dell&#39;ordine mostrerà immediatamente tutte le modifiche apportate nel menu Impostazioni colonna. Le preferenze della colonna vengono salvate e rimangono attive se ci si allontana dalla visualizzazione del rapporto.
 
 ## Visualizzare gli stati
 

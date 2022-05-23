@@ -4,9 +4,9 @@ description: Utilizzare il rapporto Pagamenti per garantire la piena trasparenza
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,16 @@ Nella visualizzazione Pagamenti è possibile personalizzare l&#39;intervallo tem
 1. Fare clic sul filtro del selettore del calendario delle date delle transazioni.
 1. Scegli l’intervallo di date applicabile.
 1. Visualizza gli stati dei pagamenti nella griglia per le date specificate.
+
+## Mostra e nascondi colonne
+
+Il rapporto Pagamenti mostra per impostazione predefinita la maggior parte delle colonne di informazioni disponibili. È tuttavia possibile personalizzare le colonne visualizzate nel rapporto.
+
+1. Sulla _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Payouts]**.
+1. Fai clic sul pulsante _Impostazioni colonna_ icona (![icona delle impostazioni colonna](assets/column-settings.png)).
+1. Per personalizzare le colonne visualizzate nel rapporto, selezionare o deselezionare le colonne nell’elenco.
+
+   Il rapporto Pagamenti mostrerà immediatamente tutte le modifiche apportate nel menu Impostazioni colonna. Le preferenze della colonna vengono salvate e rimangono attive se ci si allontana dalla visualizzazione del rapporto.
 
 ## Scarica transazioni
 
