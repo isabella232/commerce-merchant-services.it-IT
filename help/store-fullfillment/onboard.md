@@ -3,7 +3,7 @@ title: A bordo "[!DNL Store Fulfillment]"
 description: Collega la tua istanza Commerce a [!DNL Store Fulfillment Manager] per completare alcune fasi di onboarding.
 role: User, Admin
 level: Intermediate
-source-git-commit: 24639b75d3c629856fbb8fc74e7eb072d4197815
+source-git-commit: f3148d575088fff3b4178f3c03e9d45ce461fbe2
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 1%
@@ -37,7 +37,7 @@ Dopo aver completato l’onboarding, configura e gestisci la soluzione dall’am
 
 ## Prerequisiti
 
-* **Informazioni sull’account Commerce**- Download e installazione [!DNL Channel Manager] richiede un [Account Commerce](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. È necessario un ID account e le credenziali con accesso Proprietario o Amministratore al [!DNL Adobe Commerce] o [!DNL Magento Open Source] istanza.
+* **Informazioni sull’account Commerce**-Installazione [!DNL Store Fulfillment by Walmart Technologies] richiede un [Account Commerce](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. È necessario un ID account e le credenziali con accesso Proprietario o Amministratore al [!DNL Adobe Commerce] o [!DNL Magento Open Source] istanza.
 
 * Per [!DNL Adobe Commerce] nei progetti di infrastruttura cloud, i programmi di installazione del software devono avere i seguenti accessi [!DNL Commerce] istanza:
 
@@ -47,7 +47,7 @@ Dopo aver completato l’onboarding, configura e gestisci la soluzione dall’am
 
       Vedi [Gestire l’accesso utente](https://devdocs.magento.com/cloud/project/user-admin.html).
 
-* **Accesso all&#39;archivio software Store Fulfillment di Walmart Technologies per installare la soluzione Store Fulfillment sulla tua istanza Adobe Commerce**- Il rappresentante del tuo account cliente può fornire accesso al file di installazione dell&#39;estensione.
+* **Accesso all&#39;archivio software Store Fulfillment di Walmart Technologies (file .zip) per installare la soluzione Store Fulfillment sulla tua istanza Adobe Commerce**- Il rappresentante del tuo account cliente può fornire accesso al file di installazione dell&#39;estensione.
 
 * **Esperienza con Compositore e[!DNL Commerce CLI]** -Vedi [Installazione generale CLI](https://devdocs.magento.com/extensions/install/){target=&quot;_blank&quot;} per informazioni sull&#39;utilizzo di questi strumenti per installare e gestire le estensioni in [!DNL Adobe Commerce] e [!DNL Magento Open Source] piattaforme.
 
