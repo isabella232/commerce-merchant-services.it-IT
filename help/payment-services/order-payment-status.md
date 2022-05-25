@@ -4,9 +4,9 @@ description: Utilizza il rapporto sullo stato del pagamento dell'ordine per aver
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
+source-git-commit: fde5844ad6c602708f9a5ad76ce8c9b5547dba76
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1359'
 ht-degree: 0%
 
 ---
@@ -122,6 +122,18 @@ La visualizzazione del rapporto sullo stato del pagamento dell&#39;ordine mostra
 
    I dati del rapporto sullo stato del pagamento dell&#39;ordine vengono aggiornati, e *[!UICONTROL Update complete]* viene visualizzata una conferma e le informazioni più recenti sono presenti nella griglia.
 
+## Visualizza controversie
+
+È possibile visualizzare eventuali controversie sugli ordini del negozio e accedere al Centro di risoluzione PayPal per intervenire su di essi, dall&#39;interno del rapporto sullo stato del pagamento dell&#39;ordine.
+
+1. Sulla _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. Passa a **[!UICONTROL Disputes column]**.
+1. Visualizza eventuali controversie per un ordine specifico e visualizza [lo stato della controversia](#order-payment-status-information).
+1. Fai clic sul collegamento ID controversia (a partire da _PP-D_) per passare al [Centro di risoluzione PayPal](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
+1. Adottare, se necessario, le misure adeguate per la controversia.
+
+   Per ordinare le controversie in base allo stato, fare clic sull&#39;intestazione della colonna Dispute.
+
 ## Download degli stati di pagamento dell&#39;ordine
 
 È possibile scaricare un file .csv con tutti gli stati visibili nella griglia di visualizzazione dello stato del pagamento dell&#39;ordine, sia che si visualizzino i 30 giorni di stato predefiniti o un arco temporale personalizzato.
@@ -171,7 +183,7 @@ I rapporti sullo stato del pagamento degli ordini includono le seguenti informaz
 | [!UICONTROL Refund Status] | Stato del rimborso su un ordine (ad esempio informazioni provenienti da restituzioni, RMA e note di credito)—   *[!UICONTROL Requires refund]*, *[!UICONTROL Refund requested]*, *[!UICONTROL Refunded]*, *[!UICONTROL Refund failed]* oppure *[!UICONTROL Voided]* |
 | [!UICONTROL Refund Amount] | Importo totale rimborsato per un ordine |
 | [!UICONTROL Cur] | Tipo di valuta dell&#39;importo rimborsato per un ordine |
-| [!UICONTROL Dispute Status] | Status di qualsiasi controversia su un ordine (informazioni da controversie e commissioni)—*[!UICONTROL New]*, *[!UICONTROL Representment]*, *[!UICONTROL Accepted]*, *[!UICONTROL Pre-arbitration received]*, *[!UICONTROL Arbitration]* oppure *[!UICONTROL Arbitration received]* |
+| [!UICONTROL Disputes] | Status di qualsiasi controversia su un ordine (informazioni da controversie e commissioni)—*[!UICONTROL Open]*, *[!UICONTROL Waiting for buyer response]*, *[!UICONTROL Waiting for seller response]*, *[!UICONTROL Under review]*, *[!UICONTROL Resolved]* oppure *[!UICONTROL Other]* |
 | [!UICONTROL Payment Method] | Metodo di pagamento utilizzato nella transazione Commerce per un ordine |
 | [!UICONTROL Website] | Sito Web da cui è stato effettuato l&#39;ordine |
 | [!UICONTROL Store] | Archivio da cui è stato effettuato l&#39;ordine |
