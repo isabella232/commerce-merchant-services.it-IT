@@ -4,9 +4,9 @@ description: '"Scopri come [!DNL Store Fulfillment for Adobe Commerce by Walmart
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 26d0ddbcbe648b336d527788668caef1f8e688ed
+source-git-commit: 33d8ed57f5a4b8419bd30375a1fb5bec6be37a5e
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Store Fulfillment offre anche un flusso di lavoro di evasione end-to-end che aiu
 
 ## Estensione Store Fulfillation
 
-L’estensione Store Fulfillment si integra con Adobe Commerce per consentirti di gestire la configurazione per le operazioni Adobe Commerce e le interfacce cliente dall’amministratore.
+Supporta e migliora le funzioni native di Adobe Commerce
 
 * Supporta la maggior parte dei tipi di prodotto: semplici, configurabili, raggruppati, raggruppati e virtuali
 
@@ -39,11 +39,11 @@ L’estensione Store Fulfillment si integra con Adobe Commerce per consentirti d
 
 * Si integra con i sistemi commerciali POS (POS) quali ERP, OMS e WMS) per la gestione dell&#39;inventario
 
-* Completamente compatibile con il tema Luma.
+* Completamente compatibile con il tema Luma
 
-* Fornisce il supporto GraphQL per vetrine headless e Venia.
+* Fornisce il supporto GraphQL per vetrine headless e Venia
 
-* Supporta l&#39;app Store Assist di Walmart Commerce Technology. Questa app invia ordini di ritiro direttamente al dispositivo portatile del tuo dipendente nel negozio giusto in modo che gli articoli possano essere scelti e rapidamente e accuratamente e consegnati ai clienti quando arrivano per il ritiro.
+* Supporta l&#39;app Store Assist di Walmart Commerce Technology. Questa app invia ordini di ritiro direttamente al dispositivo portatile del tuo dipendente nel negozio giusto in modo che gli articoli possano essere scelti e rapidamente e accuratamente selezionati, messi in scena e consegnati ai clienti al loro check-in.
 
 ## App Store Assist
 
@@ -61,7 +61,7 @@ L&#39;app Store Assist per dispositivi iOS e Android™ interagisce con la tecno
 
 La funzione Store Fulfillment migliora Adobe Commerce aggiungendo le seguenti funzionalità per fornire migliori esperienze di acquisto e flussi di lavoro di evasione semplificati:
 
-* **Selettore posizione store (SLS)**- Aggiunge opzioni di ritiro dello store, disponibilità di inventario e selettori dello store alle interfacce prodotto, carrello e checkout di Adobe Commerce.
+* **Selettore posizione store (SLS)**-Espone l&#39;opzione di ritiro del negozio, la disponibilità di inventario e il selettore del negozio sulle pagine del prodotto e del carrello oltre al pagamento nativo.
 
 * **Disponibilità del magazzino**- Aggiunge ad Adobe Commerce Inventory management opzioni di configurazione aggiuntive per i prodotti e per la configurazione globale, al fine di supportare l’allocazione delle scorte a livello di archivio per favorire la tempestiva implementazione locale.
 
