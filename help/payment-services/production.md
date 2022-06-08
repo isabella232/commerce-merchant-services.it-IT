@@ -2,9 +2,9 @@
 title: Abilita [!DNL Payment Services] per la produzione
 description: Completare il processo di onboarding abilitando [!DNL Payment Services] per la produzione.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 51722d7045ccb6ccfdc7ab5bd93d5ca46b52cf03
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '709'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Vedi [Configurare i servizi di pagamento](settings.md) per ulteriori informazion
 
    >[!IMPORTANT]
    >
-   >Se revochi il consenso a [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] per l&#39;elaborazione dei pagamenti (nelle impostazioni del tuo account PayPal), gli ordini nel tuo negozio non possono essere elaborati da [!DNL Payment Services].
+   >Se revochi il consenso a [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] per l&#39;elaborazione dei pagamenti (nelle impostazioni del tuo account PayPal), gli ordini nel tuo negozio non possono essere elaborati da [!DNL Payment Services]. Nella home di Payment Services viene visualizzato un avviso relativo al consenso revocato.
 
 ## Richiesta di diritto di pagamento da Adobe
 
@@ -115,7 +115,7 @@ Vedi [Configura nell’amministratore](configure-admin.md) per le opzioni di con
 
 >[!IMPORTANT]
 >
->Se revochi il consenso a [!DNL Payment Services] per l&#39;elaborazione dei pagamenti (nelle impostazioni del tuo account PayPal), gli ordini nel tuo negozio non possono essere elaborati da [!DNL Payment Services]. Se desideri riabilitare l’elaborazione dei pagamenti, devi completare nuovamente l’onboarding.
+>Se revochi il consenso a [!DNL Payment Services] per l&#39;elaborazione dei pagamenti (nelle impostazioni del tuo account PayPal), gli ordini nel tuo negozio non possono essere elaborati da [!DNL Payment Services]. Se desideri riabilitare l’elaborazione dei pagamenti, devi completare nuovamente l’onboarding. Nella home di Payment Services viene visualizzato un avviso relativo al consenso revocato.
 
 ## Test in produzione
 

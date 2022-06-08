@@ -2,9 +2,9 @@
 title: Configurare la sandbox di prova
 description: Utilizzare un account sandbox PayPal per utilizzare [!DNL Payment Services] in modalità di prova.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: e8d008d9a38cebde7772b7e3d70d2447631414fe
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Quando l&#39;onboarding della sandbox PayPal è approvato, dovresti vedere una n
 
 >[!IMPORTANT]
 >
->Se revochi il consenso a [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] per l&#39;elaborazione dei pagamenti (nelle impostazioni del tuo account PayPal), gli ordini nel tuo negozio non possono essere elaborati da [!DNL Payment Services].
+>Se revochi il consenso a [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] per l&#39;elaborazione dei pagamenti (nelle impostazioni del tuo account PayPal), gli ordini nel tuo negozio non possono essere elaborati da [!DNL Payment Services]. Nella home di Payment Services viene visualizzato un avviso relativo al consenso revocato. Per ignorare l’avviso, fai clic su **[!UICONTROL Do not show again]**.
 
 ## Abilita il numero di telefono del contatto
 
