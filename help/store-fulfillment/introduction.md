@@ -1,12 +1,12 @@
 ---
 title: '"Introduzione a [!DNL Store Fulfillment]"'
-description: '"Scopri come [!DNL Store Fulfillment for Adobe Commerce by Walmart Technologies] supporta l''acquisto online, il ritiro in negozio (BOPIS) per i clienti. Utilizza Store Assist mobile per semplificare l''esecuzione e l''elaborazione degli ordini BOPIS per i collaboratori del negozio e i clienti Commerce."'
+description: '"Scopri come [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] supporta l''acquisto online, il ritiro in negozio (BOPIS) per i clienti. Utilizza Store Assist mobile per semplificare l''esecuzione e l''elaborazione degli ordini BOPIS per i collaboratori del negozio e i clienti Commerce."'
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 33d8ed57f5a4b8419bd30375a1fb5bec6be37a5e
+source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies è una soluzione di evasione omnicanale avanzata che si integra con il tuo [!DNL Commerce] negozio per fornire un acquisto superiore online, raccogliere in negozio (BOPIS) esperienza cliente.
 
-![Store Fulfillement by Walmart Technologies Configurazione amministratore](assets/store-fulfillment-admin-home.png)
+![Adobe di configurazione dell&#39;amministratore della soluzione Store Fulfillment](assets/store-fulfillment-admin-home.png)
 
 Store Fulfillment offre anche un flusso di lavoro di evasione end-to-end che aiuta i commercianti a ridurre i costi aumentando al contempo i tassi di conversione, il valore medio dell&#39;ordine e i tassi di soddisfazione dei clienti. Questo flusso di lavoro fornisce:
 

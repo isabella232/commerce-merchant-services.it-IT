@@ -1,21 +1,21 @@
 ---
 title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] Panoramica della guida"'
-description: Informazioni complete sulle [!DNL Store Fulfillment] per gli amministratori di Adobe Commerce e Magenti Open Source, inclusi l'installazione e l'onboarding
+description: Informazioni complete sulle [!DNL Store Fulfillment] per gli amministratori di Adobe Commerce, inclusi l'installazione e l'onboarding
 seo-title: Adobe Commerce Store Fulfillment Guide
-seo-description: Describes how to use [!DNL Store Fulfillment by Walmart Technologies] services with Adobe Commerce or Magento Open Source.
+seo-description: Describes how to use [!DNL Store Fulfillment by Walmart Commerce Technologies] services with Adobe Commerce.
 exl-id: b4af273c-5176-4a67-a783-e0bb1740b3d8
-source-git-commit: 26d0ddbcbe648b336d527788668caef1f8e688ed
+source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '201'
 ht-degree: 0%
 
 ---
 
 # [!DNL Store Fulfillment] Panoramica della guida
 
-Questa guida è destinata agli amministratori di Adobe Commerce e Magenti Open Source. Include informazioni dettagliate sull&#39;installazione e l&#39;onboarding di [!DNL Store Fulfillment by Walmart Technologies], nonché la configurazione e la gestione dei servizi. Assume una comprensione di base della configurazione e della funzionalità principali di Commerce.
+Questa guida è destinata agli amministratori di Adobe Commerce. Include informazioni dettagliate sull&#39;installazione e l&#39;onboarding di [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies], nonché la configurazione e la gestione dei servizi. Si basa su una conoscenza di base della configurazione e delle funzionalità di base di Adobe Commerce.
 
-[!DNL Store Fulfillment] dispone di due aree per gli amministratori Commerce:
+[!DNL Store Fulfillment] dispone di due aree per gli amministratori di Adobe Commerce:
 
 * Amministratore: Utilizza questa area per accedere all’interfaccia utente di configurazione.
 * Interfaccia della riga di comando: Utilizza questo strumento per eseguire attività di installazione e configurazione di back-end.
@@ -23,16 +23,16 @@ Questa guida è destinata agli amministratori di Adobe Commerce e Magenti Open S
 Questa guida tratta i seguenti argomenti:
 
 * Tutto [!DNL Store Fulfillment]- attività specifiche eseguite nell’amministratore.
-* Tutto [!DNL Store Fulfillment]Attività specifiche eseguite utilizzando la riga di comando Commerce
+* Tutto [!DNL Store Fulfillment]Attività specifiche eseguite utilizzando la riga di comando Adobe Commerce
 
-Questa guida non descrive le funzionalità di base di Adobe Commerce e Magenti Open Source.
+Questa guida non descrive le funzionalità di base di Adobe Commerce.
 
 ## Documentazione aggiuntiva
 
 | Guida | Descrizione |
-|-----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| [Guida utente di Adobe Commerce 2.4](https://docs.magento.com/user-guide/) | Documentazione incentrata sul merchant per Adobe Commerce e Magenti Open Source |
-| [Guida per gli sviluppatori di Adobe Commerce 2.4](https://devdocs.magento.com/) | Documentazione incentrata sugli sviluppatori utilizzata per creare e personalizzare Adobe Commerce o Magento Open Source |
+|-----------------------------------------------------------------------|----------------------------------------------------------------------------|
+| [Guida utente di Adobe Commerce 2.4](https://docs.magento.com/user-guide/) | Documentazione incentrata sul merchant per entrambi Adobe Commerce |
+| [Guida per gli sviluppatori di Adobe Commerce 2.4](https://devdocs.magento.com/) | Documentazione incentrata sugli sviluppatori utilizzata per creare e personalizzare Adobe Commerce |
 
 ## Supporto
 
