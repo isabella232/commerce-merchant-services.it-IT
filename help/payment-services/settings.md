@@ -4,9 +4,9 @@ description: Dopo l'installazione, è possibile configurare [!DNL Payment Servic
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: b30c15ab808be4526424a4a3be19e3d0aedcc662
+source-git-commit: 724abe973094c1aa631ca34bd8096052fa1e9195
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,7 @@ Consulta la sezione [[!UICONTROL General] sezione impostazioni](#general-setting
    >
    >Le _[!UICONTROL Sandbox Merchant ID]_e_[!UICONTROL Production Merchant ID]_ sono generati automaticamente e presenti nei rispettivi campi al termine dell’onboarding per la sandbox e/o la produzione. Non rimuovere o modificare questi ID.
 
+1. Seleziona la vista Store nella **[!UICONTROL Scope]** menu a discesa, per il quale si desidera abilitare un metodo di pagamento.
 1. Per modificare le impostazioni predefinite per le funzioni di pagamento e la visualizzazione della vetrina, impostare le opzioni aggiuntive necessarie:
 
    - [Campi carta di credito](#credit-card-fields)
