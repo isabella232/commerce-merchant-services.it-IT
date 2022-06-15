@@ -1,15 +1,16 @@
 ---
-title: Processi in background
-description: '"Configura le pianificazioni per [!DNL Store Fulfillment] processi in background utilizzati nella sincronizzazione dei dati con i servizi di evasione"                   '
+title: Configurazione del processo in background
+description: '"Configura le pianificazioni per [!DNL Store Fulfillment] processi in background utilizzati nella sincronizzazione dei dati con i servizi di evasione."                   '
 role: User, Admin
 level: Intermediate
 exl-id: 742ae59e-77a0-4db6-b156-2992d4403be7
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '135'
 ht-degree: 0%
 
 ---
+
 
 # Configurazione del processo in background
 
@@ -19,9 +20,6 @@ I processi in background vengono gestiti tramite Adobe Commerce standard [Attivi
 
 ## Gestione delle attività pianificate per l&#39;esecuzione dello store
 
-Dall’amministratore, vai a **[!UICONTROL Stores > Configuration > Advanced > System > Cron (Scheduled Tasks)> Cron configuration options for group:store_fulfillment]**.
-
+Dall’amministratore, vai a **[!UICONTROL Stores > Configuration > Advanced > System > Cron (Scheduled Tasks) > Cron configuration options for group:store_fulfillment]**.
 
 Controlla la configurazione predefinita per i servizi Store Fulfillment. A seconda del volume di elaborazione dell&#39;ordine e della disponibilità delle risorse, potrebbe essere necessario modificare queste impostazioni.
-
-

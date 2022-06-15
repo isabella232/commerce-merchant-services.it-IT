@@ -1,27 +1,27 @@
 ---
-title: '"Archiviare flussi di lavoro di evasione di Assistenza"'
-description: '"Scopri i moduli Pick, Stage, Hand-Off e Orders disponibili nell’app Store Assist. Questi moduli consentono il flusso di lavoro di evasione dell''archivio end-to-end per gli ordini BOPIS. Gli associati al negozio utilizzano questi moduli per gestire e consegnare gli ordini di ritiro dal negozio ai clienti.'
+title: '"Flussi di lavoro di evasione di assistenza allo store"'
+description: '"Scopri i moduli Pick, Stage, Hand-Off e Orders disponibili nell’app Store Assist. Questi moduli consentono il flusso di lavoro di evasione dell''archivio end-to-end per gli ordini BOPIS. Gli associati al negozio utilizzano questi moduli per gestire e consegnare gli ordini di ritiro dal negozio ai clienti."'
 role: User
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '791'
 ht-degree: 0%
 
 ---
 
 
-# Archiviare flussi di lavoro di Assistenza
+# Flussi di lavoro di evasione degli aiuti per store
 
 L&#39;app Store Assist fornisce agli Store Associates quattro moduli per gestire il processo di evasione all&#39;interno del negozio per acquistare online, ritirare gli ordini nel negozio:
 
-**[Selezione](#pick-module)**- Ottieni la massima visibilità su tutti gli articoli ordinati e sugli strumenti per assicurarti che gli articoli giusti e le quantità corrette siano prelevati. I collaboratori dello store possono scegliere uno o più ordini contemporaneamente per una maggiore efficienza
+- **[Selezione](#pick-module)**- Ottieni la massima visibilità su tutti gli articoli ordinati e sugli strumenti per assicurarti che gli articoli giusti e le quantità corrette siano prelevati. I collaboratori dello store possono scegliere uno o più ordini contemporaneamente per una maggiore efficienza.
 
-**[Stage](#stage-module)**- Inserire una posizione in cui vengono ordinati gli ordini mentre i clienti stanno viaggiando verso il negozio in modo che i Store Associates possano trovarli facilmente per la consegna degli ordini
+- **[Stage](#stage-module)**- Inserire una posizione in cui vengono ordinati gli ordini mentre i clienti stanno viaggiando verso il negozio in modo che i Store Associates possano trovarli facilmente per la consegna degli ordini
 
-**[Mano](#hand-off)**- Ottieni notifiche in tempo reale dopo l&#39;arrivo dei clienti al negozio per ridurre al minimo i tempi di attesa e gli ordini di consegna
+- **[Mano](#hand-off-module)**- Ottieni notifiche in tempo reale dopo l&#39;arrivo dei clienti al negozio per ridurre al minimo i tempi di attesa e gli ordini di consegna
 
-**[Ordini](#orders-module)**- Visualizza un elenco di tutti gli ordini inseriti per un negozio in modo che tutti conoscano il numero di ordini e lo stato di ciascun ordine.
+- **[Ordini](#orders-module)**- Visualizza un elenco di tutti gli ordini inseriti per un negozio in modo che tutti conoscano il numero di ordini e lo stato di ciascun ordine.
 
 >[!NOTE]
 >

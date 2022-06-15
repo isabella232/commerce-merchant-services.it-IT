@@ -3,9 +3,9 @@ title: Collegare la soluzione Store Fulfillment
 description: Stabilisci le connessioni tra Adobe Commerce e la soluzione Store Fulfillment creando e autorizzando un'integrazione Adobe Commerce e aggiungendo le credenziali dell'account Store Fulfillment alla configurazione del servizio Adobe Commerce.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Per integrare Adobe Commerce con i servizi Store Fulfillment, crea un’integraz
 
 Dopo aver completato il modulo di assunzione, viene creato per voi un account Walmart Store Fulfillment. Quando saranno disponibili, riceverai le seguenti credenziali:
 
-- [!DNL Merchant I]D
+- [!DNL Merchant ID]
 - [!DNL Consumer ID]
 - [!DNL Consumer Secret]
 - [!DNL API Server URL]

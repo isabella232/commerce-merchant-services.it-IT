@@ -1,12 +1,12 @@
 ---
-title: Requisiti di servizio
-description: '"Requisiti per il provisioning e l''onboarding [!DNL Store Fulfillment Manager] service"'
+title: Requisiti del Negozio
+description: '"Requisiti per il provisioning e l''onboarding [!DNL Store Fulfillment solution]."'
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '231'
+ht-degree: 3%
 
 ---
 
@@ -40,7 +40,7 @@ Per requisiti dettagliati, consulta Adobe Commerce [Requisiti di sistema](https:
 
 Per implementare la soluzione Store Fulfillment, la tua azienda deve soddisfare i seguenti criteri minimi.
 
-* Solo per aziende basate negli Stati Uniti
+* Solo aziende basate negli Stati Uniti
 
 * Rivenditori B2C, produttori di CPG che vendono D2C o distributori che vendono D2C o a piccole imprese
 

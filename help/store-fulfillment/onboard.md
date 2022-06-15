@@ -1,9 +1,9 @@
 ---
 title: Panoramica sull'onboarding per i servizi di evasione dello store
-description: '"[!DNL Live Search] flusso di onboarding, requisiti di sistema, limiti e limitazioni"'
+description: '"[!DNL Live Search] flusso di onboarding, requisiti di sistema, limiti e limitazioni."'
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
@@ -26,9 +26,6 @@ Introduzione a [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Te
    |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
    | ![[!DNL Store Assist App Getting Started] visualizzazione su dispositivi mobili](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] su dispositivi mobili](assets/store-assist-orders-small.png) |
 
-
-
-
 ## Passaggi di provisioning
 
 - **Iscriviti a[!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies]**- Completa il modulo di registrazione su [business.adobe.com](https://business.adobe.com/resources/store-fulfillment.html)oppure contatta il tuo Adobe Commerce Account Manager per assistenza.
@@ -47,12 +44,11 @@ Introduzione a [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Te
 
 1. [Configurare l’estensione Store Fulfillment dall’amministratore di Adobe Commerce](service-config-settings-overview.md).
 
-1. [Collega [!DNL Store Fulfillment] utilizzando le credenziali di evasione dell&#39;archivio fornite all&#39;utente.](connect-set-up-service.md)
+1. [Collega [!DNL Store Fulfillment] servizio utilizzando le credenziali Store Fulfillment fornite all&#39;utente](connect-set-up-service.md).
 
-1. [Creare utenti e ruoli per l’app Store Assist](user-setup.md)
+1. [Creare utenti e ruoli per l’app Store Assist](user-setup.md).
 
-1. [Scarica Walmart’s [!DNL Store Assist] app per il dispositivo desiderato. L&#39;app è disponibile sia nell&#39;app store (iOS) che in Play Store (Android)](app-setup.md)
+1. [Scarica Walmart’s [!DNL Store Assist] app per il dispositivo desiderato. L&#39;app è disponibile sia nell&#39;app store (iOS) che in Play Store (Android)](app-setup.md).
 
 Dopo aver installato, configurato, completato l&#39;onboarding e aver accesso al [!DNL Store Assist] app, puoi [iniziare a creare ordini e test](test-and-deploy.md).
-
 

@@ -1,15 +1,16 @@
 ---
 title: E-mail di vendita
-description: Configura le impostazioni per i modelli e-mail transazionali per comunicare con i clienti e gli amministratori degli archivi durante il processo di ordine e evasione.
+description: Configura i modelli e-mail transazionali per la comunicazione con i clienti e gli amministratori di store durante il processo di evasione per gli ordini Store Pickup.
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 0%
 
 ---
+
 
 # E-mail di vendita
 

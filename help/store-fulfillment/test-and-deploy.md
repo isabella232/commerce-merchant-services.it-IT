@@ -3,7 +3,7 @@ title: Esecuzione del test e distribuzione dello store
 description: Piano di test per verificare la funzionalità Store Fulfillment. I test coprono l’API di sincronizzazione dell’inventario, il flusso di lavoro di evasione end-to-end per gli ordini annullati, la gestione degli utenti dell’app di evasione dell’archivio e l’esperienza di archiviazione dei clienti.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '2652'
 ht-degree: 0%
@@ -55,9 +55,6 @@ Questo piano di prova campione riguarda i seguenti settori funzionali:
 | Adobe Commerce Frontend | Tipi di prodotti | Cliente, Amministratore |
 | Pagamento senza frontiere</br>Modulo di archiviazione | Esperienza di check-in | Cliente, Amministratore |
 | App Store Assist | Ordine</br>Selezione</br>Stage</br>e Handoff | Associato store |
-
-
-
 
 ### Sincronizzazione API di Inventory
 
@@ -639,8 +636,6 @@ Questa sezione del piano di test tratta gli scenari per testare i flussi di lavo
 </tbody>
 </table>
 
-
-
 ## Distribuzione
 
 Dopo aver verificato che la soluzione sia stata configurata e testata in base alle specifiche, puoi distribuirla dalla fase di staging alla produzione.
@@ -650,7 +645,6 @@ L&#39;implementazione e il test variano a seconda dell&#39;infrastruttura e dell
 >[!TIP]
 >
 >Per le linee guida per la distribuzione, le liste di controllo e le best practice per Adobe Commerce sui progetti di infrastruttura cloud, consulta [Distribuzione dello store](https://devdocs.magento.com/cloud/live/stage-prod-live.html) nella documentazione per sviluppatori di Adobe Commerce.
-
 
 
 

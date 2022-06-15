@@ -1,14 +1,15 @@
 ---
 title: Configurazione generale
-description: Configurare le impostazioni generali per abilitare [!DNL Store Fulfillment] per il tuo negozio. Configura le impostazioni di estensione globale, le impostazioni di sistema per la registrazione, la sincronizzazione dei dati e la sicurezza. Fornisci dati chiave per abilitare l’integrazione tra Adobe Commerce e i servizi Store Fulfillment.
+description: '"Configurare le impostazioni generali per abilitare [!DNL Store Fulfillment] per il tuo negozio. Configura le impostazioni di estensione globale, le impostazioni di sistema per la registrazione, la sincronizzazione dei dati e la sicurezza. Fornisci dati chiave per abilitare l''integrazione tra Adobe Commerce e i servizi Store Fulfillment."'
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '2409'
+source-wordcount: '2413'
 ht-degree: 0%
 
 ---
+
 
 # Configurazione generale
 
@@ -18,27 +19,23 @@ L&#39;integrazione deve essere collegata al servizio Store Fulfillment. Inoltre,
 
 La configurazione generale per [!DNL Store Fulfillment] include le seguenti impostazioni di configurazione:
 
-- [Abilita l&#39;estensione](#enable-the-extension)
+- [Abilita la soluzione](#enable-the-store-fulfillment-solution)
 - [Gestire le credenziali dell&#39;account per connettersi ai servizi di evasione dell&#39;archivio](#account-credentials)
 - [Configurare la registrazione](#configure-logging)
-- [Impostare le opzioni per la gestione delle operazioni di [sincronizzazione ordine]](#order-synchronization)
+- [Impostare le opzioni per la gestione dell&#39;ordine e delle operazioni di sincronizzazione degli errori](#order-synchronization)
 - [Abilita opzioni di spedizione per l&#39;evasione del negozio](#enable-store-fullment-shipping-options)
 - [Configurare le impostazioni di sicurezza e autenticazione per l’app Store Fulfillment](#store-fulfillment-app)
 - [Imposta la disponibilità e la configurazione dei messaggi del metodo di consegna](#in-store-delivery-methods)
 
-
-## Abilita l&#39;estensione
+## Abilita la soluzione Store Fulfillment
 
 | **Campo** | **Descrizione** | **Ambito** | **Obbligatorio** |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
 | **[!UICONTROL Enabled]** | Abilita o disabilita la soluzione. Quando abilitato, configura e utilizza le funzionalità di Store Fulfillment e stabilisce la connessione tra i servizi Adobe Commerce Store e Store Fulfillment. Quando è disabilitata, tutte le funzioni di Store Fulfillment sono disabilitate e non vi è comunicazione tra Adobe Commerce e i servizi Store Fulfillment. Impossibile elaborare o ricevere le informazioni sull&#39;ordine. | Globale | Sì |
 
-
 Per completare questa configurazione, vedi **Negozi → Configurazione → Servizi → Store Fulfillment by Walmart Commerce Technologies**.
 
 ## Aggiungi credenziali account
-
-
 
 | **Campo** | **Descrizione** | **Ambito** | **Obbligatorio** |
 |----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
@@ -92,7 +89,6 @@ Configura le opzioni di spedizione Store Fulfillment che determinano la disponib
 
 ### Negozio di spedizione
 
-
 | **Campo** | **Descrizione** | **Ambito** | **Obbligatorio** |
 |---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
 | **[!UICONTROL Enable Ship To Store]** | L&#39;impostazione &quot;nave-to-store&quot; sfrutta le funzionalità esistenti di spedizione-to-store. Se utilizzi Inventory management o se puoi accettare e soddisfare gli ordini in posizioni commerciali senza inventario tramite trasferimenti di inventario store-to-store, imposta questa opzione su `Yes`.</br></br>Se non è possibile supportare l&#39;opzione di consegna al negozio o non si desidera offrirla, impostare su `No`. Se disabilitata, gli articoli nel catalogo con inventario zero per un negozio di merchant o quelli che si trovano al di sotto di tale posizione [!DNL Out of Stock Threshold], non sono offerte con opzioni di ritiro in negozio.</br></br>Si tratta di un’impostazione globale che può essere regolata in base alla posizione del commerciante. | Globale | No |
@@ -117,7 +113,6 @@ Configura le impostazioni per l’account utente dell’app di evasione archivio
 | **[!UICONTROL Lockout Time (minutes)]** | Numero di minuti per bloccare un account dopo un errore di accesso. | Globale | No |
 | **[!UICONTROL Force Password Change]** | Determina se è richiesta una modifica della password utente.</br></br>`Yes`: Richiedi all&#39;utente di cambiare la password dopo la configurazione dell&#39;account.</br>`No`: Consiglia all&#39;utente di cambiare la password dopo la configurazione dell&#39;account. | Globale | No |
 | **Durata della password** | Il numero di giorni in cui una password rimane valida prima della modifica della password richiesta. Lascia vuoto per disabilitare questa opzione. | Globale | No |
-
 
 ### Autenticazione a due fattori
 
@@ -150,7 +145,6 @@ In-store pickup, says its global setting, but scope is Website.  How do you conf
 | **Abilita ritocco urbano** | Attiva o disattiva l&#39;opzione di prelievo sul lato curvo durante il processo di pagamento per i clienti che scelgono il ritiro dal negozio.</br></br>Questa impostazione globale si applica a tutte le posizioni dei punti vendita al dettaglio. Quando abilitato, puoi disattivarlo in modo selettivo nella posizione del negozio. | Sito Web | No |
 
 Per informazioni dettagliate su come personalizzare i metodi di consegna nelle posizioni dei punti vendita al dettaglio selezionate, consulta **Configurazione punto vendita al dettaglio**.
-
 
 #### Configurazione del titolo del metodo di consegna
 
@@ -262,8 +256,3 @@ Per informazioni dettagliate su come personalizzare i metodi di consegna nelle p
 <td>No</td>
 </tr>
 </tbody></table>
-
-
-
-
-
