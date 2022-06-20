@@ -4,9 +4,9 @@ description: '"Scopri come [!DNL Store Fulfillment for Adobe Commerce by Walmart
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 87818d3a0eb8f0cb4bc9fac2aef3c56a2e620aaf
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
@@ -74,3 +74,8 @@ La funzione Store Fulfillment migliora Adobe Commerce aggiungendo le seguenti fu
 * **E-mail transazionali**- Estende le funzionalità di amministrazione di [!UICONTROL Sales Emails] per aggiungere modelli e-mail per acquisti online, preleva transazioni in negozio. I modelli supportano la comunicazione in tempo reale tra clienti e collaboratori dello store durante il processo di recupero degli ordini.
 
 * **Flessibilità**- Estensioni [!DNL Commerce] capacità di supportare scenari per l&#39;elaborazione di ordini arretrati, riduzioni di quantità e evasione parziale degli ordini, facilitando al contempo le cancellazioni e le note di credito necessarie per supportare questi scenari.
+
+>[!TIP]
+>
+> Per una breve dimostrazione della soluzione Store Fulfillment, vedi [Panoramica sull’evasione dell’archivio](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html) disponibile in _Video e Tutorials di Adobe Commerce_.
+
