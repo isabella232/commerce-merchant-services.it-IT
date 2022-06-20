@@ -2,9 +2,9 @@
 title: '"Tipi di sinonimi"'
 description: '"unidirezionale e bidirezionale [!DNL Live Search] i sinonimi espandono la definizione di parole chiave."'
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: cd1b40ffb350a87ea1317be82789f702922881b9
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,13 @@ Un sinonimo di senso unico è un sottoinsieme di una parola chiave, ma con un si
 
 Tieni presente le seguenti best practice per ottenere il massimo dai sinonimi di Live Search.
 
-### Mappatura delle parole chiave
+### Evitare &quot;stop words&quot;
 
-Questa tecnica utilizza attributi di prodotto ricercabili, anziché sinonimi, per creare associazioni basate su parole chiave tra i prodotti. Di conseguenza, un prodotto mappato può essere visualizzato nei risultati di ricerca di un altro prodotto. Per ulteriori informazioni, consulta [Risultati ricerca](https://docs.magento.com/user-guide/catalog/search-results.html).
+Live Search filtra le comuni &quot;parole di stop&quot; inglesi dai sinonimi, come:
+
+a, an, e, sono, come, at, be, ma, per, per, se, in, in, è, è, no, non, di, on, o, tale, il, loro, allora, là, questi, loro, questo, a, era, volontà, con
+
+Le parole di arresto non rendono i sinonimi più significativi, ma aumentano la quantità di dati da elaborare.
 
 ### Usa parole singole
 
@@ -46,3 +50,7 @@ Non è necessario definire sia le forme singolari che plurali di una parola come
 ### Coerenza
 
 Assicurati di essere coerente con il modo in cui la terminologia viene utilizzata nel catalogo. Tieni presente che potrebbero esserci differenze di utilizzo a livello regionale e talvolta anche all’interno di un settore.
+
+### Mappatura delle parole chiave
+
+Questa tecnica utilizza attributi di prodotto ricercabili, anziché sinonimi, per creare associazioni basate su parole chiave tra i prodotti. Di conseguenza, un prodotto mappato può essere visualizzato nei risultati di ricerca di un altro prodotto. Per ulteriori informazioni, consulta [Risultati ricerca](https://docs.magento.com/user-guide/catalog/search-results.html).
