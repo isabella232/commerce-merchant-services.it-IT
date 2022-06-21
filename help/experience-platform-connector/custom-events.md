@@ -1,7 +1,7 @@
 ---
 title: Creare eventi personalizzati
 description: Scopri come creare eventi personalizzati per collegare i dati di Adobe Commerce ad altri prodotti DX di Adobe.
-source-git-commit: f167002e1aa401d223f0830954ab09b66017476e
+source-git-commit: 1dd8f94e632bb98666ad252badf8420a014260fb
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 0%
@@ -42,7 +42,7 @@ In Experience Platform Edge:
 
 >[!NOTE]
 >
-> L’utilizzo di eventi personalizzati può influenzare i report OOTB Adobe Analytics.
+> L’utilizzo di eventi personalizzati può influire sui rapporti predefiniti di Adobe Analytics.
 
 ## Gestire le sostituzioni degli eventi (attributi personalizzati)
 
@@ -104,4 +104,4 @@ In Experience Platform Edge:
 
 >[!NOTE]
 >
-> La sostituzione di eventi con attributi personalizzati può influenzare i report OOTB Adobe Analytics.
+> La sostituzione di eventi con attributi personalizzati può influire sui rapporti predefiniti di Adobe Analytics.
