@@ -1,9 +1,10 @@
 ---
 title: Crea nuova raccomandazione
 description: Scopri come creare un’unità di raccomandazione del prodotto.
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
+source-git-commit: 1d2b4b8d85e5ccea1c4258869fbfd191a2e7987b
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
@@ -44,6 +45,14 @@ Quando attivate l&#39;unità di raccomandazione, Adobe Commerce inizia a [raccog
    _Nome e posizione della raccomandazione_
 
 1. In _Seleziona il tipo di raccomandazione_ specifica la sezione [tipo di raccomandazione](type.md) nella pagina selezionata. Per alcune pagine, il [placement](placement.md) Le raccomandazioni sono limitate a determinati tipi.
+
+   Alcuni tipi di consigli utilizzano i dati comportamentali degli acquirenti per [modelli di apprendimento automatico](behavioral-data.md) per generare consigli personalizzati. Per visualizzare l&#39;avanzamento del training di ciascun tipo di raccomandazione, in questa sezione viene visualizzata una misura di preparazione per ciascun tipo. Questi indicatori di preparazione sono calcolati sulla base di un paio di fattori:
+
+   - Dimensione del set di risultati sufficiente: Ci sono abbastanza risultati che vengono restituiti nella maggior parte degli scenari per evitare di utilizzare [consigli di backup](behavioral-data.md#backuprecs)?
+
+   - Varietà di set di risultati sufficiente: I prodotti restituiti rappresentano una varietà di prodotti del catalogo? L&#39;obiettivo con questo fattore è quello di evitare che una minoranza di prodotti sia gli unici articoli consigliati in tutto il sito.
+
+   In base ai fattori di cui sopra, viene calcolato e visualizzato un valore di preparazione. Un tipo di raccomandazione è considerato pronto per essere distribuito quando il suo valore di preparazione è pari o superiore al 75%. Un tipo di raccomandazione è considerato parzialmente pronto quando la sua disponibilità è almeno del 50%. Infine, un tipo di raccomandazione non è pronto per essere distribuito quando il suo valore di preparazione è inferiore al 50%.
 
 1. In _Etichetta della visualizzazione di Storefront_ nella sezione [etichetta](placement.md#recommendation-labels) che è visibile ai tuoi acquirenti, come &quot;Top seller&quot;.
 

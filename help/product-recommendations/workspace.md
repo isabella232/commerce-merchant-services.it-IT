@@ -1,9 +1,10 @@
 ---
 title: Area di lavoro
 description: Scopri come configurare, gestire e monitorare le prestazioni dei consigli di prodotto.
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
+source-git-commit: 9f1f05475b2d8401ec33272e3f12e3cc7285478d
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -101,5 +102,5 @@ Dalla pagina dei dettagli della raccomandazione, fate clic su **Crea**. Per ulte
 | Entrate | I ricavi generati dalla raccomandazione per l&#39;intervallo di tempo corrente. |
 | Entrate Lt | (Ricavi del ciclo di vita) I ricavi del ciclo di vita generati da una raccomandazione. |
 | Visualizzazione | La percentuale di unità di raccomandazione registrate per la visualizzazione. |
-| Ctr | (Percentuale clic registrato) La percentuale di impression unitarie per la raccomandazione che registra un clic. |
-| vCtr | (Percentuale clic registrato visualizzabile) La percentuale di impression visualizzabili per l&#39;unità di raccomandazione che registra un clic. |
+| Ctr | (Tasso di click-through) La percentuale di impression unitarie per la raccomandazione che registra un clic. |
+| vCtr | (Tasso di click-through visualizzabile) La percentuale di impression visualizzabili per l&#39;unità di raccomandazione che registra un clic. |

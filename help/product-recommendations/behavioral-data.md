@@ -1,9 +1,10 @@
 ---
 title: Dati comportamentali
 description: Scopri i dati comportamentali e quando puoi iniziare a usarli.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: d68a97b9-1497-4603-a72c-4aaaf6e048cb
+source-git-commit: 371ae21c97021912279381b5e32f953fe3b4f0dd
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -34,9 +35,11 @@ Altre variabili che possono influire sul tempo necessario alla formazione:
 - Alcuni tipi di consigli si allenano più velocemente di altri
 - Adobe Commerce ricalcola i dati comportamentali ogni quattro ore. Anche se è possibile distribuire tecnicamente le unità di raccomandazione in quel momento, è importante sapere che le raccomandazioni diventano più precise più a lungo vengono utilizzate sul sito.
 
+Per visualizzare l&#39;avanzamento del training di ciascun tipo di raccomandazione, l&#39; [creare un consiglio](create.md) In questa pagina vengono visualizzati gli indicatori di preparazione.
+
 Mentre i dati vengono raccolti sui modelli di produzione e apprendimento automatico vengono addestrati, è possibile implementare [altre attività](implementation-workflow.md) necessario per distribuire consigli alla vetrina. Al termine dei test e della configurazione dei consigli, i modelli di apprendimento automatico hanno raccolto e calcolato dati sufficienti per generare consigli rilevanti, consentendo così di distribuire i consigli sulla vetrina.
 
-## Raccomandazioni di backup
+## Raccomandazioni di backup {#backuprecs}
 
 Se i dati di input non sono sufficienti per fornire tutti gli elementi di raccomandazione richiesti in un&#39;unità, Adobe Commerce fornisce consigli di backup per popolare le unità di raccomandazione. Ad esempio, se distribuisci `Recommended for you` tipo di raccomandazione per la pagina principale, un nuovo acquirente sul sito non ha generato dati comportamentali sufficienti per consigliare accuratamente i prodotti personalizzati. In questo caso, Adobe Commerce superfici gli elementi in base alla `Most viewed` tipo di raccomandazione per l&#39;acquirente.
 
