@@ -2,9 +2,9 @@
 title: '"A bordo [!DNL Quick Checkout] per estensione Adobe Commerce"'
 description: '"Scopri come [!DNL Quick Checkout] potrebbe essere utile per la tua istanza Adobe Commerce e per come effettuare l’onboarding e la configurazione dell’estensione."'
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: a62c38adeb41812e91089716eb36c375b09595f4
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,8 @@ Per collegare il provider di servizi di pagamento segui i passaggi descritti nel
 
 ## Abilita estensione
 
-1. Sulla _Amministratore_ barra laterale, passare a **Negozi** > **Configurazione** > **Pagamento** per accedere alla pagina di configurazione dell’amministratore di checkout .
+1. Sulla _Amministratore_ barra laterale, vai a **Negozi** > _Impostazioni_ > **Configurazione**.
+1. Nel pannello a sinistra, espandi **Vendite** e seleziona **Pagamento**.
 
    ![Pagamento rapido](assets/admin-view.png)
 
