@@ -2,9 +2,9 @@
 title: Crea nuova raccomandazione
 description: Scopri come creare un’unità di raccomandazione del prodotto.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 1d2b4b8d85e5ccea1c4258869fbfd191a2e7987b
+source-git-commit: 5fa08429a97c9ed59a339a0eca268f99c1023b7e
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -41,8 +41,8 @@ Quando attivate l&#39;unità di raccomandazione, Adobe Commerce inizia a [raccog
 
    Potete creare fino a cinque unità di raccomandazione attive per ciascun tipo di pagina e fino a 25 per Page Builder. Il tipo di pagina è grigio Quando viene raggiunto il limite.
 
-   ![Nome raccomandazione](assets/create-recommendation.png)
-   _Nome e posizione della raccomandazione_
+   ![Nome e pagina della raccomandazione](assets/create-recommendation.png)
+   _Nome e posizione della pagina del consiglio_
 
 1. In _Seleziona il tipo di raccomandazione_ specifica la sezione [tipo di raccomandazione](type.md) nella pagina selezionata. Per alcune pagine, il [placement](placement.md) Le raccomandazioni sono limitate a determinati tipi.
 
@@ -54,10 +54,10 @@ Quando attivate l&#39;unità di raccomandazione, Adobe Commerce inizia a [raccog
 
    In base ai fattori di cui sopra, viene calcolato e visualizzato un valore di preparazione. Un tipo di raccomandazione è considerato pronto per essere distribuito quando il suo valore di preparazione è pari o superiore al 75%. Un tipo di raccomandazione è considerato parzialmente pronto quando la sua disponibilità è almeno del 50%. Infine, un tipo di raccomandazione non è pronto per essere distribuito quando il suo valore di preparazione è inferiore al 50%.
 
-1. In _Etichetta della visualizzazione di Storefront_ nella sezione [etichetta](placement.md#recommendation-labels) che è visibile ai tuoi acquirenti, come &quot;Top seller&quot;.
-
-   ![Nome raccomandazione](assets/create-recommendation-select-type.png)
+   ![Tipo di raccomandazione](assets/create-recommendation-select-type.png)
    _Tipo di raccomandazione_
+
+1. In _Etichetta della visualizzazione di Storefront_ nella sezione [etichetta](placement.md#recommendation-labels) che è visibile ai tuoi acquirenti, come &quot;Top seller&quot;.
 
 1. In _Scegliere il numero di prodotti_ utilizzate il cursore per specificare quanti prodotti visualizzare nell&#39;unità di raccomandazione.
 
@@ -72,12 +72,12 @@ Quando attivate l&#39;unità di raccomandazione, Adobe Commerce inizia a [raccog
 
    La _Scegli posizione_ visualizza tutte le raccomandazioni (se presenti) create per il tipo di pagina selezionato.
 
-   ![Nome raccomandazione](assets/create-recommendation-select-placement.png)
-   _Tipo di raccomandazione_
+   ![Ordine delle raccomandazioni](assets/create-recommendation-select-placement.png)
+   _Ordine dei consigli nella pagina_
 
 1. (Facoltativo) In _Filtri_ sezione [applica filtri](filters.md) per controllare quali prodotti vengono visualizzati nell&#39;unità di raccomandazione.
 
-   ![Nome raccomandazione](assets/create-recommendation-select-placement.png)
+   ![Filtri per consigli](assets/create-recommendation-filter-products.png)
    _Filtri di prodotto consigliati_
 
 1. Al termine, fai clic su una delle seguenti opzioni:
