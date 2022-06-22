@@ -2,9 +2,9 @@
 title: '"Pagina di pagamento"'
 description: '"Panoramica della pagina di pagamento in Adobe Commerce."'
 exl-id: afe3a93d-8aba-428e-ac9d-0be8d23ceb47
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: dc13c1e38c92341cfd3221a72e6568220b44690a
 workflow-type: tm+mt
-source-wordcount: '99'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -28,4 +28,4 @@ Predefinito, il pagamento è costituito da due passaggi:
 >
 > Al termine del primo passaggio, il checkout visualizza i totali di checkout e le informazioni corrispondenti sulla barra laterale.
 
-Fai riferimento a [flusso di cassa](../quick-checkout/onboarding.md) per ulteriori informazioni sul [!DNL Quick Checkout] flusso.
+Fai riferimento a [flusso di cassa](../quick-checkout/checkout-flow.md) per ulteriori informazioni sul [!DNL Quick Checkout] flusso.
