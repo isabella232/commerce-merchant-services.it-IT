@@ -4,9 +4,9 @@ description: '"Installa il [!DNL Store Fulfillment solution] per una vetrina Ado
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+source-git-commit: 66c4ca972004c43fa55795006b1511820ca9b514
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **Accesso all&#39;archivio Store Fulfillment dell&#39;archivio software Walmart Commerce Technologies (file .zip)**- Durante il processo di onboarding e abilitazione, collabora con il tuo Account Manager per accedere al file di installazione per l&#39;estensione Store Fulfillment.
 
-- **Informazioni sull’account Adobe Commerce**-Installazione [!DNL Channel Manager] richiede un [Account Commerce](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. È necessario un ID account e le credenziali con accesso Proprietario o Amministratore al [!DNL Adobe Commerce] progetto.
+- **Informazioni sull’account Adobe Commerce**-Installazione del [!DNL Store Fulfillment] una soluzione richiede [Account Commerce](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. È necessario un ID account e le credenziali con accesso Proprietario o Amministratore al [!DNL Adobe Commerce] progetto.
 
 - Per [!DNL Adobe Commerce] nei progetti di infrastruttura cloud, i programmi di installazione del software devono disporre dell’accesso amministratore al progetto Cloud. Vedi [Gestire l’accesso utente](https://devdocs.magento.com/cloud/project/user-admin.html).
 
