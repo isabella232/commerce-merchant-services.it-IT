@@ -4,7 +4,7 @@ description: Dopo l'installazione, è possibile configurare [!DNL Payment Servic
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 724abe973094c1aa631ca34bd8096052fa1e9195
+source-git-commit: aed9469d6acf638d86389cbf1c178fccd8d42759
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -65,6 +65,9 @@ Vedi [Opzioni di pagamento](payments-options.md#paypal-smart-buttons) per ulteri
 1. Per modificare il nome del metodo di pagamento visualizzato durante il pagamento, modificare il valore nel **[!UICONTROL Checkout title]** campo .
 1. A [imposta l&#39;azione di pagamento](production.md#set-payment-services-as-payment-method), interruttore **[!UICONTROL Payment action]** a `Authorize` o `Authorize and Capture`.
 1. Per abilitare la modalità di debug, attiva **[!UICONTROL Debug Mode]** selettore.
+
+   Quando si attiva la modalità di debug, ulteriori informazioni di debug sul pagamento della carta di credito vengono scritte nel `var/log/payment.log` file. Queste informazioni possono fornire ulteriori informazioni su un pagamento specifico per facilitare la risoluzione dei problemi.
+
 1. Clic **[!UICONTROL Save]**.
 
    Se tenti di allontanarti da questa visualizzazione senza salvare le modifiche, viene visualizzato un modale che richiede di ignorare le modifiche, continuare a modificare o salvare le modifiche.
@@ -88,6 +91,9 @@ Puoi abilitare e configurare le opzioni di pagamento dei pulsanti intelligenti P
 
 1. Per modificare la variabile [Messaggi di pagamento in un secondo momento](payments-options.md#pay-later-button), attiva/disattiva **[!UICONTROL Display Pay Later message]** opzione .
 1. Per abilitare la modalità di debug, attiva **[!UICONTROL Debug Mode]** selettore.
+
+   Quando si abilita la modalità di debug, ulteriori informazioni di debug sul pagamento PayPal vengono scritte nel `var/log/payment.log` file. Queste informazioni possono fornire ulteriori informazioni su un pagamento specifico per facilitare la risoluzione dei problemi.
+
 1. Clic **[!UICONTROL Save]**.
 
    Se tenti di allontanarti da questa visualizzazione senza salvare le modifiche, viene visualizzato un modale che richiede di ignorare le modifiche, continuare a modificare o salvare le modifiche.
