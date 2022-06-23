@@ -1,15 +1,15 @@
 ---
 title: Configurazione generale
-description: '"Configurare le impostazioni generali per abilitare [!DNL Store Fulfillment] per il tuo negozio. Configura le impostazioni di estensione globale, le impostazioni di sistema per la registrazione, la sincronizzazione dei dati e la sicurezza. Fornisci dati chiave per abilitare l''integrazione tra Adobe Commerce e i servizi Store Fulfillment."'
+description: Configurare le impostazioni generali per abilitare [!DNL Store Fulfillment] per il tuo negozio. Configura le impostazioni di estensione globale, le impostazioni di sistema per la registrazione, la sincronizzazione dei dati e la sicurezza. Fornisci dati chiave per abilitare l’integrazione tra Adobe Commerce e i servizi Store Fulfillment.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
 source-wordcount: '2413'
 ht-degree: 0%
 
 ---
-
 
 # Configurazione generale
 
@@ -33,7 +33,7 @@ La configurazione generale per [!DNL Store Fulfillment] include le seguenti impo
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
 | **[!UICONTROL Enabled]** | Abilita o disabilita la soluzione. Quando abilitato, configura e utilizza le funzionalità di Store Fulfillment e stabilisce la connessione tra i servizi Adobe Commerce Store e Store Fulfillment. Quando è disabilitata, tutte le funzioni di Store Fulfillment sono disabilitate e non vi è comunicazione tra Adobe Commerce e i servizi Store Fulfillment. Impossibile elaborare o ricevere le informazioni sull&#39;ordine. | Globale | Sì |
 
-Per completare questa configurazione, vedi **Negozi → Configurazione → Servizi → Store Fulfillment by Walmart Commerce Technologies**.
+Per completare questa configurazione, vedi **Negozi > Configurazione > Servizi > Store Fulfillment by Walmart Commerce Technologies**.
 
 ## Aggiungi credenziali account
 
@@ -69,7 +69,7 @@ Puoi visualizzare i dettagli sulle operazioni di sincronizzazione degli ordini d
 
 | **Campo** | **Descrizione** | **Ambito** | **Obbligatorio** |
 |-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------------|
-| **Errore critico di nuovo** | Specifica i tentativi per un&#39;operazione di sincronizzazione dei record dopo un errore critico.</br></br>Errori critici si verificano ogni volta che l&#39;integrazione non riceve una risposta positiva dal servizio di evasione. Ciò può verificarsi quando il servizio è inattivo o quando si verifica un errore nei dati dell’ordine che si inviano.</br></br>Una volta raggiunta la soglia per i tentativi, l’elemento rimane in una coda ma non viene elaborato di nuovo. Visualizza tutti gli elementi con errori da **[!UICONTROL System → Tools → Store Fulfillment Queue]** Gestione in Admin. Per risolvere i problemi relativi agli elementi che si verificano con regolarità, contatta il tuo Account Manager. | Globale | No |
+| **Errore critico di nuovo** | Specifica i tentativi per un&#39;operazione di sincronizzazione dei record dopo un errore critico.</br></br>Errori critici si verificano ogni volta che l&#39;integrazione non riceve una risposta positiva dal servizio di evasione. Ciò può verificarsi quando il servizio è inattivo o quando si verifica un errore nei dati dell’ordine che si inviano.</br></br>Una volta raggiunta la soglia per i tentativi, l’elemento rimane in una coda ma non viene elaborato di nuovo. Visualizza tutti gli elementi con errori da **[!UICONTROL System > Tools > Store Fulfillment Queue]** Gestione in Admin. Per risolvere i problemi relativi agli elementi che si verificano con regolarità, contatta il tuo Account Manager. | Globale | No |
 | **Abilita e-mail di notifica degli errori** | Abilitare le notifiche di errore per ricevere un messaggio e-mail quando la variabile [!UICONTROL Retry Critical Error Threshold] viene raggiunto per un ordine. La notifica include tutti i dettagli disponibili sull’errore. | Globale | No |
 | **Invia e-mail di notifica di errore a** | Elenco delimitato da virgole degli indirizzi e-mail dei destinatari per le notifiche di errore. | Globale | No |
 | **Modello e-mail eccezione di sincronizzazione ordine** | Specifica il modello e-mail utilizzato per avvisare i destinatari degli errori di sincronizzazione dell’ordine. Viene fornito un modello predefinito. Non supporta la personalizzazione. | Visualizzazione store | No |

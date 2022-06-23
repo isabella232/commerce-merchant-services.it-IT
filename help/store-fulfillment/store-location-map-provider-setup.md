@@ -3,13 +3,13 @@ title: Memorizzazione della posizione e configurazione del sistema di mappatura
 description: Configura un provider di distanza per supportare la mappatura della posizione dell'archivio nell'interfaccia utente di vetrina. Le soluzioni Store Fulfillment richiedono un provider a distanza per abilitare la ricerca nel negozio al dettaglio e altre funzionalità di mappatura e pianificazione per il flusso di lavoro di implementazione end-to-end.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: d09c4652-e2eb-49dc-8c42-2aa9b6be5d6b
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%
 
 ---
-
 
 # Impostazione di posizione e mappatura store
 
@@ -21,13 +21,13 @@ Durante il processo di configurazione, fornisci una chiave API Google per la pia
 
 Per configurare il provider di distanze:
 
-1. Da [!UICONTROL Stores > General] in Admin, aggiungi l’integrazione Google Maps per il tipo di contenuto Mappa .
+1. Da **[!UICONTROL Stores > General]** in Admin, aggiungi l’integrazione Google Maps per il tipo di contenuto Mappa .
 
    - Vai a **[!UICONTROL Stores > Configuration  > General > Content Management]**.
 
    - Aggiungi la chiave API Google a **[!UICONTROL Google Maps API Key]** campo .
 
-1. Da [!UICONTROL Stores > Inventory] in Admin, seleziona il provider di distanza per Store Fulfillment.
+1. Da **[!UICONTROL Stores > Inventory]** in Admin, seleziona il provider di distanza per Store Fulfillment.
 
    - Vai a **[!UICONTROL Stores > Configuration > Catalog > Inventory]**.
 

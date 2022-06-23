@@ -4,9 +4,9 @@ description: Imposta la [!DNL Store Assist] app per gestire i flussi di lavoro e
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 421c90f4c8bd687216cd48c72f30301a32115522
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ L&#39;app Store Assist richiede due tipi di configurazione:
 
    - **Notifiche di prelievo**- Specifica se inviare una notifica push per avviare il processo di prelievo dopo che un cliente ha effettuato un ordine.
 
-   - **Verifica notifiche**-Specifica se inviare una notifica push durante il processo di check-in per i prelievi degli ordini- dopo il check-in, dopo che il tempo di attesa del cliente supera un periodo di tempo specificato. In alternativa, disattiva la notifica.
+   - **Verifica notifiche**- Specifica se inviare una notifica push durante il processo di check-in per i prelievi degli ordini - dopo il check-in, dopo che il tempo di attesa del cliente supera un periodo di tempo specificato. In alternativa, disattiva la notifica.
 
    - **Processo a mano**- Abilita i processi facoltativi quando Store Associate consegna l&#39;ordine al cliente, ad esempio richiede una firma del cliente o richiede all&#39;associato di controllare l&#39;ID cliente.
 
@@ -67,7 +67,7 @@ Una volta completata la configurazione dell&#39;app Store Assist, Store Associat
 
 - Per effettuare l&#39;accesso, gli associati allo store richiedono le seguenti informazioni:
 
-   - Nome società associato al tuo account Store Assist
+   - **[!UICONTROL Company name]** associato all’account Store Assist
 
-   - Memorizza le credenziali dell&#39;account di Assistenza—nome utente e password per il loro account.
+   - **Memorizzare le credenziali dell&#39;account Assistenza**- credenziali nome utente e password per il loro account.
    Un amministratore di Adobe Commerce può creare un account utente e impostare le autorizzazioni per gli account utente di Assistenza agli archivi per le posizioni degli archivi che dispongono di [Ritocco nel negozio](merchant-store-configuration.md#pickup-location-configuration) nelle impostazioni di Admin Store.

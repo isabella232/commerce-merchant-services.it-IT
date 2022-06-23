@@ -3,13 +3,13 @@ title: Esecuzione del test e distribuzione dello store
 description: Piano di test per verificare la funzionalità Store Fulfillment. I test coprono l’API di sincronizzazione dell’inventario, il flusso di lavoro di evasione end-to-end per gli ordini annullati, la gestione degli utenti dell’app di evasione dell’archivio e l’esperienza di archiviazione dei clienti.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
 source-wordcount: '2652'
 ht-degree: 0%
 
 ---
-
 
 # Esecuzione di test e distribuisci store per Adobe Commerce
 
@@ -136,7 +136,6 @@ Questa sezione del piano di test include scenari per testare il flusso di lavoro
 </td>
 <td>
 <ul>
-<td>
 <li>Storico degli ordini aggiornato con <code>We refunded $X online. Transaction ID: transactionID</code> e <code>Received Cancel acknowledgment from the BOPIS solution.</code></li>
 <li>Lo stato dell'ordine è <code>Closed</code>. (Abbiamo impostato la REVISIONE DEI PAGAMENTI ora.)</li>
 <li>Nota di credito creata in Adobe Commerce. (Aspetta che il cron funzioni.)</li>
@@ -449,7 +448,7 @@ Questa sezione del piano di test copre l’esperienza di archiviazione per gli o
 
 - Contatto di ritiro alternativo: verifica il flusso di lavoro per l’aggiunta di un [!UICONTROL Alternate Pickup Contact] e selezionando una [!UICONTROL Preferred Contact] su ordini di ritiro dal negozio.
 
-- Modulo di archiviazione: verifica il flusso di lavoro per l’invio di una richiesta di archiviazione per gli ordini di ritiro dal negozio.
+- Modulo di archiviazione - Verifica il flusso di lavoro per l&#39;invio di una richiesta di archiviazione per gli ordini di ritiro dal negozio.
 
 **Aree funzionali:** Pagamento carrello, Modulo di pagamento per ordini di ritiro dal negozio</br>
 **Ruolo:** Amministratore, cliente, associato store</br>
@@ -566,7 +565,7 @@ Questa sezione del piano di test tratta gli scenari per testare i flussi di lavo
 </tr>
 <tr>
 <td>
-<strong>Singolo ordine percorso di raccolta felice, ritiro a bordo</strong></td>
+<strong>Selezione ordine singolo: percorso felice, ritiro curbside</strong></td>
 <td>Scegliere articoli singoli e multipli. Nessun nilpicks, e pick-up a bordo del marciapiede (con staging).
 </td>
 <td>
@@ -645,22 +644,3 @@ L&#39;implementazione e il test variano a seconda dell&#39;infrastruttura e dell
 >[!TIP]
 >
 >Per le linee guida per la distribuzione, le liste di controllo e le best practice per Adobe Commerce sui progetti di infrastruttura cloud, consulta [Distribuzione dello store](https://devdocs.magento.com/cloud/live/stage-prod-live.html) nella documentazione per sviluppatori di Adobe Commerce.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
