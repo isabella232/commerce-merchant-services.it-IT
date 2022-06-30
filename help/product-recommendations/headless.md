@@ -1,9 +1,10 @@
 ---
 title: Senza testa
 description: Scopri come integrare [!DNL Product Recommendations] in una vetrina senza testa.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
+source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Puoi eseguire entrambe queste azioni utilizzando gli SDK disponibili, come descr
 
 1. [Installa](install-configure.md) la [!DNL Product Recommendations] modulo .
 
-1. Installa e utilizza il [SDK per eventi Storefront](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) per attivare [eventi comportamentali](https://devdocs.magento.com/recommendations/events.html).
+1. Installa e utilizza il [SDK evento Adobe Commerce Storefront](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) per attivare [eventi comportamentali](https://devdocs.magento.com/recommendations/events.html).
 
    Eventi minimi richiesti da restituire [!DNL Product Recommendations] risultati:
 
@@ -43,7 +44,7 @@ Puoi eseguire entrambe queste azioni utilizzando gli SDK disponibili, come descr
    | `rec-click` | unità di raccomandazione |
    | `rec-add-to-cart-click` | recommendation-unit (se nel modello di consigli è presente un pulsante add to cart ) |
 
-1. Quando gli eventi vengono attivati, utilizza la variabile [Agente di raccolta eventi Storefront](https://devdocs.magento.com/shared-services/storefront-event-collector.html) per gestire gli eventi e inviarli ad Adobe Sensei.
+1. Quando gli eventi vengono attivati, utilizza la variabile [Raccoglitore eventi Adobe Commerce Storefront](https://devdocs.magento.com/shared-services/storefront-event-collector.html) per gestire gli eventi e inviarli ad Adobe Sensei.
 
 1. Una volta raccolti i dati comportamentali, puoi [creare](create.md) [!DNL Product Recommendations] nell&#39;amministratore.
 

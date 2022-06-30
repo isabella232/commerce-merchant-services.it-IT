@@ -1,7 +1,8 @@
 ---
 title: Creare eventi personalizzati
 description: Scopri come creare eventi personalizzati per collegare i dati di Adobe Commerce ad altri prodotti DX di Adobe.
-source-git-commit: 1dd8f94e632bb98666ad252badf8420a014260fb
+exl-id: 5a754106-c66a-4280-9896-6d065df8a841
+source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 0%
@@ -10,7 +11,7 @@ ht-degree: 0%
 
 # Creare eventi personalizzati
 
-È possibile estendere [piattaforma di eventi](events.md) creando eventi di vetrina personalizzati per raccogliere dati unici per il tuo settore. Quando crei e configuri un evento personalizzato, questo viene inviato al [Raccoglitore eventi Magento Storefront](https://www.npmjs.com/package/@adobe/magento-storefront-event-collector).
+È possibile estendere [piattaforma di eventi](events.md) creando eventi di vetrina personalizzati per raccogliere dati unici per il tuo settore. Quando crei e configuri un evento personalizzato, questo viene inviato al [Raccoglitore eventi Adobe Commerce](https://www.npmjs.com/package/@adobe/magento-storefront-event-collector).
 
 ## Gestire eventi personalizzati
 
