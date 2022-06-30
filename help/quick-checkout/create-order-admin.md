@@ -1,10 +1,11 @@
 ---
-title: '"Crea un ordine con [!DNL Quick Checkout] in Admin"'
-description: '"L’amministratore offre la possibilità di effettuare un ordine utilizzando [!DNL Quick Checkout] direttamente dall''amministratore da un commerciante per i suoi clienti che hanno bisogno di assistenza."'
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+title: Crea un ordine con [!DNL Quick Checkout] in Admin
+description: L’amministratore consente di effettuare un ordine utilizzando [!DNL Quick Checkout] direttamente dall’amministratore da un commerciante per i suoi clienti che hanno bisogno di assistenza.
+exl-id: 52cb8afb-fb23-468d-94b4-9f9142c54ce0
+source-git-commit: 01bb92d1de1f6a6da1d6326c0190eb7711274045
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '194'
+ht-degree: 1%
 
 ---
 
@@ -26,4 +27,4 @@ Quando effettua ordini per conto dell&#39;acquirente, il [!DNL Quick Checkout] v
 
 >[!IMPORTANT]
 >
-> Durante il programma Early Adopter (EAP) gli utenti non possono utilizzare l&#39;accesso OTP per compilare automaticamente i dettagli di spedizione e pagamento.
+> Gli utenti non possono utilizzare l&#39;accesso OTP per compilare automaticamente tutti i dettagli di spedizione e pagamento.
