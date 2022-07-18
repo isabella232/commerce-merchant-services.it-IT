@@ -4,9 +4,9 @@ description: Dopo l'installazione, è possibile configurare [!DNL Payment Servic
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: aed9469d6acf638d86389cbf1c178fccd8d42759
+source-git-commit: 7c02bb8dcb7b5daa68664bd12672ac389f84cfa1
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '688'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Consulta la sezione [[!UICONTROL General] sezione impostazioni](#general-setting
 1. Per modificare le impostazioni predefinite per le funzioni di pagamento e la visualizzazione della vetrina, impostare le opzioni aggiuntive necessarie:
 
    - [Campi carta di credito](#credit-card-fields)
-   - [Pulsanti smart PayPal](#paypal-smart-buttons)
+   - [Pulsanti di pagamento](#payment-buttons)
    - [Stile pulsante](#button-style)
 
 1. Clic **[!UICONTROL Save]**.
@@ -74,22 +74,22 @@ Vedi [Opzioni di pagamento](payments-options.md#paypal-smart-buttons) per ulteri
 
 1. Passa a **[!UICONTROL System]** > **[!UICONTROL Cache Management]** e fai clic su **[!UICONTROL Flush Cache]** per aggiornare tutte le cache non valide.
 
-### Pulsanti smart PayPal
+### Pulsanti di pagamento
 
 La [!DNL PayPal Smart Buttons] le opzioni di pagamento forniscono al cliente un processo di pagamento semplice, rapido e sicuro. Vedi [Opzioni di pagamento](payments-options.md#paypal-smart-buttons) per ulteriori informazioni.
 
-Puoi abilitare e configurare le opzioni di pagamento dei pulsanti intelligenti PayPal:
+È possibile abilitare e configurare i pulsanti di pagamento:
 
 1. Per modificare il nome del metodo di pagamento come mostrato durante il pagamento, modifica il valore nel **[!UICONTROL Checkout Title]** campo .
 1. A [imposta l&#39;azione di pagamento](production.md#set-payment-services-as-payment-method), interruttore **[!UICONTROL Payment action]** a `Authorize` o `Authorize and Capture`.
 1. Usa i selettori di attivazione/disattivazione [!DNL PayPal smart button] caratteristiche di visualizzazione:
-   - **[!UICONTROL Show buttons on product detail page]**
-   - **[!UICONTROL Show buttons in mini cart preview]**
-   - **[!UICONTROL Show buttons on cart page]**
-   - **[!UICONTROL PayPal Pay Later enabled]**
+   - **[!UICONTROL Show PayPal buttons on product detail page]**
+   - **[!UICONTROL Show PayPal buttons on mini cart preview]**
+   - **[!UICONTROL Show PayPal buttons on cart page]**
+   - **[!UICONTROL Show PayPal Pay Later button]**
    - **[!UICONTROL Show Venmo button]**
 
-1. Per modificare la variabile [Messaggi di pagamento in un secondo momento](payments-options.md#pay-later-button), attiva/disattiva **[!UICONTROL Display Pay Later message]** opzione .
+1. Per modificare la variabile [Messaggi di pagamento in un secondo momento](payments-options.md#pay-later-button), attiva/disattiva **[!UICONTROL Show PayPal Pay Later message]** opzione .
 1. Per abilitare la modalità di debug, attiva **[!UICONTROL Debug Mode]** selettore.
 
    Quando si abilita la modalità di debug, ulteriori informazioni di debug sul pagamento PayPal vengono scritte nel `var/log/payment.log` file. Queste informazioni possono fornire ulteriori informazioni su un pagamento specifico per facilitare la risoluzione dei problemi.
@@ -102,13 +102,13 @@ Puoi abilitare e configurare le opzioni di pagamento dei pulsanti intelligenti P
 
 #### Stile pulsante
 
-Puoi anche configurare le _[!UICONTROL Button style]_opzioni dei pulsanti intelligenti PayPal:
+Puoi anche configurare le _[!UICONTROL Button style]_opzioni dei pulsanti di pagamento:
 
 1. Per modificare la variabile **[!UICONTROL Layout]**, seleziona `Vertical` o `Horizontal`.
 
    >[!NOTE]
    >
-   > Se lo stile del pulsante è configurato come `Horizontal` e il tuo negozio è configurato per mostrare più pulsanti intelligenti PayPal, puoi visualizzare solo due pulsanti sulla pagina del prodotto, la pagina di pagamento e il mini carrello, e un pulsante visualizzato nel carrello.
+   > Se lo stile del pulsante è configurato come `Horizontal` e il tuo negozio è configurato per mostrare più pulsanti di pagamento, puoi visualizzare solo due pulsanti sulla pagina del prodotto, la pagina di pagamento e il mini carrello, e un pulsante visualizzato nel carrello.
 
 1. Per attivare la linea di graduazione in un layout orizzontale, attiva la **[!UICONTROL Show tagline]** selettore.
 1. Per modificare il **[!UICONTROL Color]**, seleziona l’opzione di colore desiderata.
