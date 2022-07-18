@@ -2,9 +2,9 @@
 title: Installare e configurare il connettore Adobe Experience Platform da Adobe Commerce
 description: Scopri come installare, configurare, aggiornare e disinstallare Adobe Experience Platform Connector da Adobe Commerce.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: b503c369f12696a2a791af77055a7b53000b827f
+source-git-commit: 334ee967ec2379a87acfc5fb427d7ada6fa25ee7
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
@@ -23,10 +23,10 @@ Prima di installare l&#39;estensione, [esaminare i prerequisiti](overview.md#pre
 
    Questo metapackage contiene i seguenti moduli ed estensioni:
 
-   * `module-platform-connector-admin` - Aggiorna l’interfaccia utente amministratore in modo da poter configurare l’ID di Datastream
+   * `module-platform-connector-admin` - Aggiorna l’interfaccia utente di amministrazione in modo da poter selezionare l’ID di Datastream per una specifica istanza di Adobe Commerce
    * `module-platform-connector` - Imposta il `ImsOrgId` e `datastreamId` in Adobe Commerce Storefront Event SDK
    * `data-services` - Fornisce il contesto dell&#39;attributo per gli eventi di vetrina. Ad esempio, quando si verifica un evento di pagamento, vengono incluse informazioni sul numero di elementi presenti nel carrello e sui dati degli attributi del prodotto per tali elementi.
-   * `commerce-services` - Collega l’istanza Adobe Commerce a [SaaS per Adobe Commerce](../landing/saas.md) utilizzo di sandbox e chiavi API di produzione e di Adobe Experience Platform tramite l’ID organizzazione IMS
+   * `services-id` - Collega l’istanza Adobe Commerce a [SaaS per Adobe Commerce](../landing/saas.md) utilizzo di sandbox e chiavi API di produzione e di Adobe Experience Platform per recuperare l’ID organizzazione IMS
 
 1. (Facoltativo) Per includere [!DNL Live Search] i dati, che comprendono eventi di ricerca, installano [[!DNL Live Search]](../live-search/install.md) estensione.
 
