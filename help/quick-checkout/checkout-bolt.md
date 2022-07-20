@@ -1,13 +1,13 @@
 ---
-title: '"Flusso di pagamento"'
-description: '"Panoramica del [!DNL Quick Checkout] flusso per un utente Bolt in Adobe Commerce."'
-source-git-commit: 01bb92d1de1f6a6da1d6326c0190eb7711274045
+title: Flusso di cassa
+description: Panoramica [!DNL Quick Checkout] flusso per un utente Bolt in Adobe Commerce.
+exl-id: 12f58b7e-1f86-4891-b225-9f4be82c2d5d
+source-git-commit: a95d2ed92c69feba03d1b84d44abf08c1d1b4029
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
-
 
 # Utenti ospiti
 
@@ -18,6 +18,9 @@ L’esperienza di pagamento per gli ospiti è diversa dall’esperienza utente A
 Se [!DNL Bolt] account trovato, gli acquirenti continuano con il loro [!DNL Quick Checkout] esperienza di pagamento diretta:
 
 1. Inserisci la Password una tantum (OTP) inviata a [!DNL Bolt] indirizzo e-mail o mobile dell’account, a seconda [preferenze dell&#39;utente nella [!DNL Bolt] account](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
+
+![Popup OTP](assets/pop-up.png)
+
 1. Una volta effettuato l&#39;accesso con il tuo [!DNL Bolt] account, i dettagli vengono aggiunti automaticamente:
 
    - Informazioni sulla spedizione
@@ -38,6 +41,6 @@ Se no [!DNL Bolt] viene trovato l&#39;account, gli acquirenti continuano con il 
 - Revisione del metodo di pagamento
 - Viene visualizzata una casella di controllo per la registrazione in [!DNL Bolt] per pagamenti più rapidi prima di effettuare l&#39;ordine. L&#39;acquirente può accettare i termini e le condizioni per creare le proprie [!DNL Bolt] conto.
 
-   ![Ricorda [!DNL Bolt]](assets/checked-bolt.png)
+   ![Ricorda [!DNL Bolt]](assets/checkbox-remember-bolt.png)
 
 - L’utente ospite inserisce l’ordine e può facoltativamente registrarsi in Adobe Commerce.
