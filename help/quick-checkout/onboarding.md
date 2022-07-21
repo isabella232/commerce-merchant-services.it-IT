@@ -2,9 +2,9 @@
 title: '"A bordo [!DNL Quick Checkout] per estensione Adobe Commerce"'
 description: '"Scopri come [!DNL Quick Checkout] potrebbe essere utile per la tua istanza Adobe Commerce e per come effettuare l’onboarding e la configurazione dell’estensione."'
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: ac55bf6354c8f5569ad83dc0ac2671b34c98d303
+source-git-commit: 0624ddc369ddedaaf9ae741831e0d5c5589ea4c2
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '684'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,12 @@ Per iniziare a utilizzare [!DNL Quick Checkout] per l’estensione Adobe Commerc
 
 1. [Ottieni estensione](#get-extension).
 1. [Crea un account commerciale di produzione o sandbox con [!DNL Bolt]](#create-account-with-bolt). Fornisci tutte le informazioni necessarie per verificare la tua identità.
-1. [Fornisci l&#39;univoco [!DNL API Key] e [!DNL Publishable Key] generato in [!DNL Bolt]](#obtain-api-credentials).
+1. [Fornisci l&#39;univoco [!DNL API Key] e [!DNL Publishable Key]](#obtain-api-credentials) generato in [!DNL Bolt].
 1. [Imposta un provider di pagamento nel [!DNL Bolt] account](#configure-payment-providers).
 1. [Imposta il menu a discesa Abilita su Sì](#enable-extension) per attivare l&#39;estensione.
 1. [Definire le impostazioni del servizio](#complete-admin-configuration) per configurare [!DNL Quick Checkout] estensione.
-1. [Fai clic sul pulsante Salva configurazione](#enable-live-quick-checkout) per abilitare l&#39;estensione.
+1. [Fai clic su Salva configurazione](#enable-live-quick-checkout) per abilitare l&#39;estensione.
+1. Cambia ambito in **Sito Web principale** e [fai clic su Configura URL di callback](#check-shopper-valid-account) pulsante .
 
 >[!NOTE]
 >
@@ -49,12 +50,15 @@ Fai riferimento a [verificare e convalidare](../quick-checkout/testing.md) per u
 
 ## Ottenere le credenziali API
 
-Per utilizzare [!DNL Quick Checkout] richiede [!DNL Bolt] chiavi univoche. Ottieni quanto segue [!DNL API keys] passando a **Sviluppatori** > **API** > **Chiavi** in **Bolt Dashboard Merchant**.
+Per utilizzare [!DNL Quick Checkout] richiede [!DNL Bolt] chiavi univoche e [!DNL signing secret]. Ottieni quanto segue [!DNL API keys] passando a **Sviluppatori** > **API** > **Chiavi** in **Bolt Dashboard Merchant**.
 
 - [!DNL API key]: Una chiave privata utilizzata dal back end per interagire con [!DNL Bolt] API.
 - [!DNL Publishable key]: Chiave utilizzata dal front-end per interagire con [!DNL Bolt] API.
+- [!DNL Signing secret]: Utilizzato per la verifica della firma sulle richieste ricevute da [!DNL Bolt].
 
-Consulta la sezione [[!DNL Bolt] dettagli dell&#39;ambiente](https://help.bolt.com/developers/references/environment-details/#about-keys)pagina {target=&quot;_blank&quot;} per informazioni su API e [!DNL Publishable keys] per [!DNL Quick Checkout] estensione.
+![Pagamento rapido](assets/account-credentials.png)
+
+Consulta la sezione [[!DNL Bolt] dettagli dell&#39;ambiente](https://help.bolt.com/developers/references/environment-details/#about-keys)pagina {target=&quot;_blank&quot;} per informazioni sulle chiavi e sui segreti di firma da [!DNL Bolt] per [!DNL Quick Checkout] estensione.
 
 >[!CAUTION]
 >
@@ -68,9 +72,6 @@ Per collegare il provider di servizi di pagamento segui i passaggi descritti nel
 
 1. Sulla _Amministratore_ barra laterale, vai a **Negozi** > _Impostazioni_ > **Configurazione**.
 1. Nel pannello a sinistra, espandi **Vendite** e seleziona **Pagamento**.
-
-   ![Pagamento rapido](assets/admin-view.png)
-
 1. In [!DNL Quick Checkout] visualizzazione, set **Abilita** a `Yes`.
 1. Selezionare il metodo (Sandbox o Production) da utilizzare.
 
@@ -79,9 +80,11 @@ Per collegare il provider di servizi di pagamento segui i passaggi descritti nel
 
 1. Convalida le credenziali dopo aver fornito l’API univoca e [!DNL Publishable keys].
 
+![Pagamento rapido](assets/extension-view.png)
+
 >[!CAUTION]
 >
-> Devi fornire un’API univoca e [!DNL Publishable keys] prima di abilitare l’estensione, in caso contrario i clienti visualizzeranno un modulo di pagamento e non saranno in grado di effettuare un ordine.
+> Devi fornire un’API univoca e [!DNL Publishable] prima di abilitare l’estensione, in caso contrario i clienti visualizzeranno un modulo di pagamento e non saranno in grado di effettuare un ordine.
 
 ## Configurazione amministratore completa
 
@@ -100,6 +103,19 @@ Per abilitare [!DNL Quick Checkout] per l&#39;estensione Adobe Commerce:
 
 1. Controlla che la [!UICONTROL Enable] è impostato su **Sì** per attivare l&#39;estensione.
 1. Fai clic su **Salva configurazione**.
+
+## Controlla l&#39;account valido dell&#39;acquirente
+
+Per verificare se l&#39;acquirente ha un [!DNL Bolt] account:
+
+1. Cambia l&#39;ambito in **Sito Web principale**.
+1. Fai clic sul pulsante **Configurare l’URL di callback** pulsante . Ciò consente [!DNL Bolt] per determinare se l&#39;acquirente ha un conto. Se lo fanno, appare il pop-up OTP.
+
+>[!CAUTION]
+>
+> Passare all&#39;ambito **Sito Web principale** assicura che sia impostato l’URL corretto. Ogni sito web può avere più domini.
+
+Consulta la sezione [Sito, archiviazione e visualizzazione ambito](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)Argomento {target=&quot;_blank&quot;} per ulteriori informazioni sugli ambiti in Adobe Commerce.
 
 ## Assistenza
 
