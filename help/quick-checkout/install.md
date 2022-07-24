@@ -2,9 +2,9 @@
 title: '"Installa il [!DNL Quick Checkout] per estensione Adobe Commerce"'
 description: '"Segui questi passaggi per installare [!DNL Quick Checkout] nel tuo progetto Adobe Commerce."'
 exl-id: e1dabc9a-0ab0-4f8d-98d3-7a32abbedcb8
-source-git-commit: dc13c1e38c92341cfd3221a72e6568220b44690a
+source-git-commit: d6cb5ae5437f78cacb0208269598896f5d8523d0
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ Esistono due modi per installare questa estensione: [Adobe Commerce su infrastru
 
 ## Aggiorna impostazione di stabilità minima
 
-Prima di installare l&#39;estensione, puoi modificare la variabile `minimum-stability` obbligo di `RC` (candidato per il rilascio) nel `composer.json` se desideri provare la versione di release candidate. È possibile utilizzare un IDE o un editor di testo preferito (come Visual Studio Code o Sublime Text).
+Prima di installare l&#39;estensione, assicurati che la `minimum-stability` nel campo `composer.json` file impostato su `"stable"`:
 
-Nel tuo `composer.json` file, modifica `"minimum-stability": "stable"` a `"minimum-stability": "RC"`.
+`"minimum-stability": "stable"`
 
 ## Installare l’estensione
 
