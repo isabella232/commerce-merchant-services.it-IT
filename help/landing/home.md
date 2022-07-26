@@ -5,7 +5,7 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: Documentazione
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 688cfa8eb7a871453c7a26a442ceb54ee78b2fd9
+source-git-commit: 39f7725105cb7773fd43f4b65fd9ea0c1c2182df
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%
@@ -64,13 +64,13 @@ Adobe fornisce una raccolta di servizi in hosting per aiutare i commercianti a s
     <em>Aumenta le vendite, raggiunge nuovi clienti, semplifica le operazioni di vendita e risparmia tempo integrando un catalogo di prodotti Adobe Commerce o Magento Open Source con il Marketplace Walmart. Consente agli amministratori dei negozi e al personale operativo di gestire le vendite, l'inventario e i prezzi dei prodotti di Walmart Marketplace in modo semplice dall'ambiente Commerce.</em>
     </br>
   </td>
-    <td valign="top">
-       <img alt="Evasione del negozio" src="assets/store-fulfillment-landing-graphic.png"/>
+  <td valign="top">
+    <img alt="Evasione del negozio" src="assets/store-fulfillment-landing-graphic.png"/>
     <div><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html">
     <strong>[!DNL Store Fulfillment]</strong></a>
     </div>
     <p>(Solo Adobe Commerce)<br><em>Offri un flusso di lavoro di acquisto online di qualità superiore, prendi in negozio (BOPIS) e massimizza la produttività dei dipendenti del negozio grazie a un flusso di lavoro di implementazione omnicanale end-to-end, compatibile con i dispositivi mobili.</em></p>
-    <br>
+    </br>
   </td>
 </tr>
 </table>
@@ -94,4 +94,3 @@ Di seguito sono riportate le modifiche recenti apportate alla documentazione:
 * È stato aggiunto il supporto B2B in [[!DNL Product Recommendations]](/help/product-recommendations/overview.md).
 * È stato aggiunto il [[!DNL Channel Manager User Guide]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html) per i clienti che desiderano gestire le vendite di Walmart Marketplace dalle loro [!DNL Commerce] istanza.
 * È stato aggiunto il [[!DNL Store Fulfillment User Guide]](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html) per i clienti che desiderano migliorare il proprio sistema di acquisto online, riprendere la customer experience in store (BOPIS) e fornire un flusso di lavoro di implementazione omnicanale compatibile mobile per il ritiro in negozio e curbside.
-
