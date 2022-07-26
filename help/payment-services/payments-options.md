@@ -2,9 +2,9 @@
 title: Opzioni di pagamento
 description: Impostare le opzioni di pagamento per personalizzare i metodi disponibili per i clienti del negozio.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 26735a191eab529bc3e8e7fc3d64295d345888d6
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 Con [!DNL Adobe Commerce] e [!DNL Magento Open Source] [!DNL Payment Services], hai a disposizione più opzioni di pagamento. Puoi configurare queste opzioni di pagamento tramite:
 
-* [Pagina principale](payments-home.md)
+* [Impostazioni home](payments-home.md)
 * [Configurazione archivio](configure-admin.md) (consigliato per le opzioni di pagamento legacy o per una configurazione multistore)
 
 Esistono diversi comportamenti per ogni metodo di pagamento a seconda della posizione nel processo di pagamento:
 
 * Pagina prodotto: la pagina prodotto per un elemento
-* Mini-carrello - Disponibile facendo clic sull&#39;icona del carrello quando un prodotto è stato aggiunto al carrello
+* Mini carrello - Disponibile facendo clic sull&#39;icona del carrello quando un prodotto è stato aggiunto al carrello
 * Carrello—Disponibile al clic di _Visualizza e modifica carrello_ dal mini-carrello
 * Visualizzazione Pagamento—Disponibile al clic di _Procedi all&#39;estrazione_ da mini carrello o carrello
 
@@ -31,31 +31,48 @@ Esistono diversi comportamenti per ogni metodo di pagamento a seconda della posi
 
 [!UICONTROL Credit Card Fields] fornire un pagamento semplice e sicuro per le modalità di pagamento con carta di credito o con carta di debito. Quando un acquirente effettua il Check-Out utilizzando i campi della carta di credito, immette il proprio nome, indirizzo di fatturazione e informazioni sulla carta di credito o di debito per effettuare l&#39;ordine. Le informazioni sui clienti vengono utilizzate in modo sicuro durante la sessione di acquisto per guidarle facilmente attraverso il flusso di cassa.
 
-Puoi configurare [!UICONTROL Credit Card Fields] nella configurazione dello store o nella home di Payment Services. Vedi [Configurazione [!DNL Payment Services]](settings.md#configure-credit-card-fields) per ulteriori informazioni.
+Puoi configurare [!UICONTROL Credit Card Fields] nella configurazione dello store o nella home di Payment Services. Vedi [Impostazioni](settings.md#credit-card-fields) per ulteriori informazioni.
 
 ## [!DNL PayPal Smart Buttons]
 
 [!DNL PayPal Smart Buttons], che utilizza PayPal per completare un acquisto, memorizza l&#39;indirizzo di spedizione dell&#39;acquirente, gli indirizzi di fatturazione e i dettagli di pagamento per un utilizzo successivo. Gli acquirenti possono utilizzare qualsiasi metodo di pagamento precedentemente memorizzato o offerto da PayPal.
 
-Puoi configurare [!DNL PayPal Smart Buttons] nella configurazione dello store o nella home di Payment Services.  Vedi [Configurazione [!DNL Payment Services]](settings.md#configure-paypal-smart-buttons) per ulteriori informazioni.
+![[!DNL PayPal Smart Buttons] options](assets/buttons-md.png)
 
-### Pulsante PayPal
+Puoi configurare [!UICONTROL PayPal Smart Buttons] nella configurazione dello store o nella home di Payment Services.  Vedi [Impostazioni](settings.md#payment-buttons) per ulteriori informazioni.
+
+### [!DNL PayPal] pulsante
 
 I clienti possono effettuare il check-out con facilità e sicurezza utilizzando il pulsante PayPal.
 
-Il pulsante PayPal è visibile dalla pagina del prodotto, dal mini-carrello, dal carrello e dalle viste per il pagamento.
+La [!DNL PayPal] è visibile dalla pagina del prodotto, dal mini-carrello, dal carrello e dalle viste per il pagamento.
 
-### Pulsante Venmo
+### [!DNL Venmo] pulsante
 
 I clienti possono effettuare il check-out utilizzando [Venmo](https://venmo.com/) pulsante .
 
-Il pulsante Venmo è visibile dalla pagina del prodotto, dal mini-carrello, dal carrello e dalle viste per il pagamento.
+La [!DNL Venmo] è visibile dalla pagina del prodotto, dal mini-carrello, dal carrello e dalle viste per il pagamento.
+
+### [!DNL Apple Pay] pulsante
+
+I clienti possono utilizzare l’ID touch sui propri dispositivi per utilizzare [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), che utilizza le credenziali di pagamento con carta di credito e di debito memorizzate sul dispositivo iOS o macOS.
+
+La [!DNL Apple Pay] è visibile dalla pagina del prodotto, dal mini-carrello, dal carrello e dalle viste per il pagamento.
 
 ### [!DNL Pay Later] pulsante
 
 Offri ai tuoi clienti pagamenti a breve termine, senza interessi e altre opzioni di finanziamento in modo che possano acquistare ora e pagare in seguito con il [!DNL Pay Later] pulsante .
 
-La [!DNL Pay Later] è visibile dalla pagina del prodotto, dal mini-carrello, dal carrello e dalle viste per il pagamento.
+La [!DNL Pay Later] è visibile dalla pagina del prodotto, dal mini-carrello, dal carrello e dalle viste per il pagamento:
+
+* **Quando un cliente seleziona un prodotto tra $ 30 e $ 600**, messaggi sotto PayPal e [!DNL Pay Later] pulsanti fornisce al cliente ulteriori informazioni [!DNL Pay in 4] opzione di pagamento. I clienti possono fare clic su **Ulteriori informazioni** per saperne di più su &quot;[!DNL Pay in 4]&quot; opzione _o_ fare clic sul testo &quot;O vedere 6 mesi di finanziamento speciale&quot; nella finestra a comparsa per informazioni e richiedere per l&#39;opzione Credito PayPal.
+* **Quando un cliente seleziona un prodotto o prodotti che superano $98,99**, messaggi sotto PayPal e [!DNL Pay Later] pulsanti offre ai clienti ulteriori informazioni sull&#39;opzione di pagamento PayPal Credit. I clienti possono fare clic su **Ulteriori informazioni** per conoscere e richiedere l&#39;opzione di credito PayPal, _o_ fai clic sul testo &quot;O vedi Pagare in 4&quot; nella finestra a comparsa per saperne di più [!DNL Pay in 4] opzione .
+
+   >[!NOTE]
+   >
+   >Gli importi sopra elencati sono soggetti a modifiche.
+
+Vedi [Impostazioni](settings.md#payment-buttons) per scoprire come disabilitare/abilitare il [!DNL Pay Later] messaggistica.
 
 Sono disponibili due opzioni di pagamento con [!DNL Pay Later] pulsante:
 
@@ -67,19 +84,6 @@ Sono disponibili due opzioni di pagamento con [!DNL Pay Later] pulsante:
 La [!DNL Pay Now] Questo pulsante è visibile nella finestra a comparsa PayPal quando un cliente fa clic su un pulsante di pagamento nella schermata dei pagamenti.
 
 Se l&#39;importo finale dell&#39;ordine non è ancora noto (ad esempio quando non si dispone ancora delle informazioni sull&#39;indirizzo di spedizione) e il cliente sta effettuando il check-out dalla pagina del prodotto, dal mini-carrello o dal carrello, un _Continua_ è invece disponibile. Quando un cliente fa clic su _Continua_, dopo aver confermato il metodo di pagamento, vengono indirizzati a una pagina di revisione dell&#39;ordine per raccogliere i dettagli necessari prima di completare l&#39;estrazione.
-
-## [!DNL Pay Later] messaggistica
-
-Per aiutare il cliente a identificarli come opzioni di pagamento potenziali, [!DNL Pay Later] i messaggi sono visibili nella pagina del prodotto, nel mini-carrello e nel carrello e durante il pagamento.
-
-* **Quando un cliente seleziona un prodotto tra $ 30 e $ 600**, messaggi sotto PayPal e [!DNL Pay Later] pulsanti offre al cliente ulteriori informazioni sull&#39;opzione di pagamento Paga in 4. I clienti possono fare clic su **Ulteriori informazioni** per saperne di più sull&#39;opzione &quot;Paga in 4&quot; _o_ fare clic sul testo &quot;O vedere 6 mesi di finanziamento speciale&quot; nella finestra a comparsa per informazioni e richiedere per l&#39;opzione Credito PayPal.
-* **Quando un cliente seleziona un prodotto o prodotti che superano $98,99**, messaggi sotto PayPal e [!DNL Pay Later] pulsanti offre ai clienti ulteriori informazioni sull&#39;opzione di pagamento PayPal Credit. I clienti possono fare clic su **Ulteriori informazioni** per informazioni e richiedere l&#39;opzione PayPal Credit _o_ fare clic sul testo &quot;O vedere Pagare in 4&quot; nella finestra a comparsa per saperne di più sull&#39;opzione Paga in 4.
-
-   >[!NOTE]
-   >
-   >Gli importi sopra elencati sono soggetti a modifiche.
-
-Vedi [Configura [!DNL Payment Services]](configure-admin.md#configure-paypal-smart-buttons) per scoprire come disabilitare o abilitare il [!DNL Pay Later] messaggistica.
 
 ## Ricalcolo ordine
 
