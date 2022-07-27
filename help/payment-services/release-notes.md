@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] Note sulla versione"'
 description: Consulta le note sulla versione per informazioni su tutti [!DNL Payment Services] versioni.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 169593cdf069f9ee95be5bcff3783cc8cfc82c3f
+source-git-commit: 78f17e82a820a8be73c6abc0ef25d1bb240ea238
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,8 @@ _29 giugno 2022_
 ### Aggiornamenti al servizio in hosting
 
 Queste note sulla versione descrivono le modifiche alle funzioni e le correzioni che si sono verificate e sono state rilasciate al di fuori delle regolari versioni delle funzioni con controllo delle versioni, tra l’attuale versione v1.2.0 e la precedente versione 1.1.0 per il servizio in hosting.
+
+![Nuovo](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay è ora disponibile come pulsante Smart PayPal. Questo [opzione di pagamento](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) consente ai clienti di utilizzare l&#39;ID touch sui propri dispositivi per utilizzare Apple Pay, che utilizza le credenziali di pagamento con carta di credito e di debito memorizzate sui propri dispositivi iOS o macOS.
 
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-1720 --> Le controversie per gli ordini degli store sono ora disponibili in [Rapporto sullo stato del pagamento dell&#39;ordine](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). Puoi accedere direttamente al Centro di risoluzione PayPal da [!DNL Payment Services] di agire sulle controversie.
 
