@@ -2,9 +2,9 @@
 title: '"[!DNL Live Search] Indicizzazione"'
 description: '"Scopri come [!DNL Live Search] indicizza le proprietà degli attributi del prodotto."'
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 2835209ad881db388894c5b1da213312436d3550
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Le proprietà dell’attributo di prodotto (metadati) determinano il modo in cui un attributo può essere utilizzato nel catalogo, il suo aspetto e il suo comportamento nell’archivio e i dati inclusi nelle operazioni di trasferimento dei dati. L&#39;ambito dei metadati degli attributi è `website/store/store view`.
 
-La [!DNL Live Search] L’API consente a un client di ordinare in base a qualsiasi attributo di prodotto con la [vetrina, proprietà](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` impostato su `Yes` nell’amministratore di Adobe Commerce.
+La [!DNL Live Search] L’API consente a un client di ordinare in base a qualsiasi attributo di prodotto con la [vetrina, proprietà](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` impostato su `Yes` nell’amministratore di Adobe Commerce. Quando abilitato, `Search Weight` e `Visible in Advanced Search` può essere impostato per l&#39;attributo .
 
 >[!NOTE]
 >
