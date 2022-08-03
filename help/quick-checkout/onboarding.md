@@ -2,9 +2,9 @@
 title: '"A bordo [!DNL Quick Checkout] per estensione Adobe Commerce"'
 description: '"Scopri come [!DNL Quick Checkout] potrebbe essere utile per la tua istanza Adobe Commerce e per come effettuare l’onboarding e la configurazione dell’estensione."'
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 0624ddc369ddedaaf9ae741831e0d5c5589ea4c2
+source-git-commit: 70f7772765dd66c8db779d29d4b661edb7d0c64a
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Per utilizzare [!DNL Quick Checkout] richiede [!DNL Bolt] chiavi univoche e [!DN
 - [!DNL Publishable key]: Chiave utilizzata dal front-end per interagire con [!DNL Bolt] API.
 - [!DNL Signing secret]: Utilizzato per la verifica della firma sulle richieste ricevute da [!DNL Bolt].
 
-![Pagamento rapido](assets/account-credentials.png)
+   ![Pagamento rapido](assets/account-credentials.png)
 
 Consulta la sezione [[!DNL Bolt] dettagli dell&#39;ambiente](https://help.bolt.com/developers/references/environment-details/#about-keys)pagina {target=&quot;_blank&quot;} per informazioni sulle chiavi e sui segreti di firma da [!DNL Bolt] per [!DNL Quick Checkout] estensione.
 
@@ -73,6 +73,13 @@ Per collegare il provider di servizi di pagamento segui i passaggi descritti nel
 1. Sulla _Amministratore_ barra laterale, vai a **Negozi** > _Impostazioni_ > **Configurazione**.
 1. Nel pannello a sinistra, espandi **Vendite** e seleziona **Pagamento**.
 1. In [!DNL Quick Checkout] visualizzazione, set **Abilita** a `Yes`.
+
+![Pagamento rapido](assets/quick-checkout-view-no-enable.png)
+
+>[!CAUTION]
+>
+> I campi di estrazione rapida sono visibili solo quando **Abilita** è impostato su `Yes`.
+
 1. Selezionare il metodo (Sandbox o Production) da utilizzare.
 
    - Sandbox a scopo di test e sviluppo
@@ -80,7 +87,7 @@ Per collegare il provider di servizi di pagamento segui i passaggi descritti nel
 
 1. Convalida le credenziali dopo aver fornito l’API univoca e [!DNL Publishable keys].
 
-![Pagamento rapido](assets/extension-view.png)
+![Pagamento rapido](assets/quick-checkout-main-view.png)
 
 >[!CAUTION]
 >
