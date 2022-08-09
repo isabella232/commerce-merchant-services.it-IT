@@ -2,9 +2,9 @@
 title: '"[!DNL Live Search] Note sulla versione"'
 description: '"Informazioni sulla versione più recente per [!DNL Live Search] da Adobe Commerce."'
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 097f8af7a1e3e904c69d3a7fe52cb0db5b1b4c23
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '858'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,29 @@ Queste note sulla versione descrivono le versioni più recenti di [!DNL Live Sea
 * ![Nuovo](../assets/new.svg) - Nuove funzioni
 * ![Correzione](../assets/fix.svg) - Correzioni e miglioramenti
 * ![Bug](../assets/bug.svg) - Problemi noti
+
+## [!DNL Live Search] 2,0,3
+
+* Compatibile con Adobe Commerce (EE): 2.4.x
+* Compatibile con Adobe Commerce per Cloud (ECE): 2.4.x
+* Stabilità: Stabile
+
+* ![Nuovo](../assets/new.svg) - Live Search supporta ora le funzioni B2B rispettando le autorizzazioni per le categorie, i cataloghi condivisi e i prezzi specifici per i gruppi di clienti.
+
+Per accedere a queste funzioni, i merchants devono aggiornare l’estensione Live Search >= 2.0.3 .
+
+Consigliamo agli utenti di eseguire l’aggiornamento e il test prima di passare alla produzione. È consigliabile aggiornare l&#39;ambiente di produzione durante le ore di inattività dopo la verifica dei risultati dell&#39;ambiente di test.
+
+>[!NOTE]
+>
+>Il supporto B2B verrà aggiunto in modo graduale a partire dal 9 agosto sui servizi di back-end, con una migrazione prevista da completare entro la fine di agosto. Se l’estensione Live Search non viene aggiornata, la vetrina continuerà a funzionare normalmente ma senza le funzioni B2B.
+
+### Limitazioni note / Bug:
+
+* ![Bug](../assets/bug.svg) - I suggerimenti provengono da prodotti non visualizzabili nel gruppo di clienti.
+* ![Bug](../assets/bug.svg) - I prodotti non vengono visualizzati se non aggiunti al &quot;catalogo condiviso predefinito&quot;.
+* B2B con Live Search per PWA Studi non sarà disponibile finché PWA Studi non ne aggiunge il supporto.
+* Le sostituzioni dei prodotti e i feed attributi di prodotto potrebbero presentare problemi di sincronizzazione che richiedono l’esecuzione da parte degli amministratori `bin/magento indexer:reset` e `bin/magento indexer:reindex` per risincronizzare correttamente.
 
 ## [!DNL Live Search] 2,0
 

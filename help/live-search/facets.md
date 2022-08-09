@@ -2,9 +2,9 @@
 title: '"Facet"'
 description: '"[!DNL Live Search] i facet utilizzano più dimensioni di valori di attributo come criteri di ricerca."'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 238ce2f774207f387970d3c833e0a29f0ede6550
+source-git-commit: 40e7da1cb71bd3c977acb77714c2cab55b3b7bf8
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,12 @@ Faceting è un metodo di filtro ad alte prestazioni che utilizza più dimensioni
 
 I requisiti degli attributi di categoria e prodotto per la facet sono simili agli attributi filtrabili utilizzati per la navigazione a livelli. Le proprietà storefront di ciascun attributo devono essere impostate su `filterable (with results)`.
 
-* È possibile configurare fino a 100 attributi come facet con [!DNL Live Search].
-* [!DNL Live Search] indicizza fino a 300 attributi come filtrabili/ricercabili/ordinabili e visibili nella ricerca.
+Live Search supporta fino a:
+
+* 100 attributi configurati come facet
+* 50 attributi ordinabili
+* 200 attributi filtrabili
+* 200 attributi ricercabili
 
 | Impostazione | Descrizione |
 |--- |--- |
