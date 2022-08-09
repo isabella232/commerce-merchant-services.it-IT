@@ -1,9 +1,10 @@
 ---
 title: Connettere dati Commerce a Adobe Experience Platform
 description: Scopri come collegare i dati Commerce a Adobe Experience Platform.
-source-git-commit: 9b5f2da08167e22bbba504009bccc87d0ab02c48
+exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
+source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -34,7 +35,7 @@ L&#39;ID Datastream consente l&#39;inoltro degli eventi da Adobe Experience Plat
 | Organizzazione IMS (globale) | ID appartenente all’organizzazione che ha acquistato il prodotto Adobe DX. Questo ID collega la tua istanza Adobe Commerce a Adobe Experience Platform. |
 | ID Datastream (Storeview) | ID che consente il flusso dei dati da Adobe Experience Platform ad altri prodotti DX di Adobe. Questo ID può essere associato a uno specifico storeView all&#39;interno della tua istanza Adobe Commerce specifica. |
 
-Con l’estensione del connettore di Experience Platform installata, viene creato il collegamento tra Adobe Commerce e Adobe Experience Platform e viene specificato l’ID del ream di dati, [!DNL Commerce] i dati iniziano a scorrere fino al server Edge Adobe Experience Platform e ad altri prodotti DX Adobe.
+Con l’estensione del connettore di Experience Platform installata, il collegamento tra Adobe Commerce e Adobe Experience Platform creato e l’ID del Datastream specificato, i dati Commerce iniziano a scorrere fino al bordo di Adobe Experience Platform e ad altri prodotti DX di Adobe.
 
 ## Dati di Commerce a margine
 
