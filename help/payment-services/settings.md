@@ -4,9 +4,9 @@ description: Dopo l'installazione, è possibile configurare [!DNL Payment Servic
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 89fa175b70a2b4b37d5999dedc56a7e41ae28b7d
+source-git-commit: 60d04755b29f107a0543bd71e19ca5b2b6997b4d
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1032'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Puoi abilitare e configurare le opzioni di pagamento dei pulsanti intelligenti P
 
       >[!NOTE]
       >
-      > Apple Pay è abilitato per impostazione predefinita per la modalità sandbox, ma anche [deve avere un account Apple Developer](test-validate.md#test-in-sandbox-environment) (completo di false carte di credito e informazioni di fatturazione) per testarlo. Quando sei pronto a utilizzare Apple Pay in modalità di produzione, dopo aver completato qualsiasi [test e convalida](test-validate.md), contatta le vendite per abilitarle per i tuoi store live.
+      > Per utilizzare Apple Paga [deve avere un account Apple Developer](test-validate.md#test-in-sandbox-environment) (completo di false carte di credito e informazioni di fatturazione) per testarlo. Quando sei pronto a utilizzare Apple Pay in sandbox *o* modalità di produzione, dopo aver completato [test e convalida](test-validate.md), contatta il tuo rappresentante commerciale per abilitarlo per i tuoi store live.
 
 1. Per abilitare la modalità di debug, attiva **[!UICONTROL Debug Mode]** selettore.
 1. Clic **[!UICONTROL Save]**.
