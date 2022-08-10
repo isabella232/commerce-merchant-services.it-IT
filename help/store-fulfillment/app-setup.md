@@ -4,16 +4,16 @@ description: Imposta la [!DNL Store Assist] app per gestire i flussi di lavoro e
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 68e615671f4e465d7fe89794613dbf129ae66dbf
+source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
 
 # Configurazione app
 
-Store Assist è un&#39;app di piattaforma FaaS (Compliance-as-a-service) basata su Walmart Commerce Technologies. L’app fornisce funzionalità di implementazione in-store da gestire [!DNL buy online], [!DNL pick up in store] (BOPIS) ordini.  Con Store Assist, i collaboratori dello store possono vedere quali articoli sono stati ordinati dai clienti, scegliere più rapidamente gli articoli corretti e impostare gli ordini evasi per la consegna in negozio o in blocco ai clienti.
+Store Assist è un&#39;app di piattaforma FaaS (Compliance-as-a-service) basata su Walmart Commerce Technologies. L’app fornisce funzionalità di implementazione in-store da gestire [!DNL buy online, pick up in store] (BOPIS) ordini. Con Store Assist, i collaboratori dello store possono vedere quali articoli sono stati ordinati dai clienti, scegliere più rapidamente gli articoli corretti e impostare gli ordini evasi per la consegna in negozio o in blocco ai clienti.
 
 L’app Store Assist riceve tutte le informazioni sull’ordine e sui clienti, dai dettagli dell’ordine ai tempi di prelievo, e rende i dati disponibili per archiviare i collaboratori online, tramite dispositivi mobili. L&#39;app include [!UICONTROL Pick], [!UICONTROL Stage], [!UICONTROL Handoff]e [!UICONTROL Orders] moduli per aiutare Store Associates ad attività di evasione come il seguente:
 
@@ -30,13 +30,13 @@ L’app Store Assist riceve tutte le informazioni sull’ordine e sui clienti, d
 
 L&#39;app Store Assist richiede due tipi di configurazione:
 
-- Impostazioni di configurazione dell’amministratore di Adobe Commerce in [gestire gli account utente, i ruoli utente e le autorizzazioni delle risorse dalle impostazioni del sistema di amministrazione di Adobe Commerce](user-setup.md).
+- Impostazioni del sistema di amministrazione di Adobe Commerce in [gestire account utente, ruoli utente, autorizzazioni risorse](user-setup.md)e [le selezioni di modelli e marca disponibili ai clienti durante il processo di check-in](check-in-experience-setup.md).
 
 - Impostazioni di configurazione front-end per personalizzare l’interfaccia dell’app Store Assist e altre impostazioni, tra cui:
 
    - **App Store Assist per marchi**- Personalizza l’interfaccia utente dell’app con il logo e i colori dell’azienda.
 
-   - **Aggiornare le istruzioni predefinite**- Personalizzare le istruzioni contenute nelle interfacce Store Assist per i moduli Pick, Stage, Handoff e Order per rispettare le politiche e le procedure aziendali e guidare Store Associates in ogni fase del flusso di lavoro di evasione.
+   - **Aggiornare le istruzioni predefinite**- Personalizza le istruzioni contenute nei moduli Store Assist Pick, Stage, Handoff e Order per guidare gli associati Store in ogni fase del flusso di lavoro di evasione per la tua azienda.
 
    - **Localizzazione**- Seleziona la lingua disponibile per l&#39;app. Scegli il formato di data e ora e seleziona le unità di misura predefinite e la valuta predefinita.
 
@@ -59,7 +59,7 @@ L&#39;app Store Assist richiede due tipi di configurazione:
 
 ## Download e installazione delle app
 
-Una volta completata la configurazione dell&#39;app Store Assist, Store Associates può scaricare, installare e accedere all&#39;app Store Assist dai propri dispositivi mobili.
+Dopo aver configurato e configurato l&#39;app Store Assist, Store Associates può scaricare, installare e accedere all&#39;app Store Assist dai propri dispositivi mobili.
 
 - Verifica che il dispositivo mobile soddisfi il [requisiti hardware e software](solution-requirements.md#store-assist-app-requirements) per la soluzione Store Fulfillment.
 
@@ -70,4 +70,4 @@ Una volta completata la configurazione dell&#39;app Store Assist, Store Associat
    - **[!UICONTROL Company name]** associato all’account Store Assist
 
    - **Memorizzare le credenziali dell&#39;account Assistenza**- credenziali nome utente e password per il loro account.
-   Un amministratore di Adobe Commerce può creare un account utente e impostare le autorizzazioni per gli account utente di Assistenza agli archivi per le posizioni degli archivi che dispongono di [Ritocco nel negozio](merchant-store-configuration.md#pickup-location-configuration) nelle impostazioni di Admin Store.
+   Un amministratore Adobe Commerce può creare un account utente e impostare le autorizzazioni per [!DNL Store Assist app] account utente per posizioni store che hanno [Ritocco nel negozio](merchant-store-configuration.md#pickup-location-configuration) nelle impostazioni di Admin Store.

@@ -4,9 +4,9 @@ description: '"Scopri come [!DNL Store Fulfillment for Adobe Commerce by Walmart
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 87818d3a0eb8f0cb4bc9fac2aef3c56a2e620aaf
+source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Store Fulfillment offre anche un flusso di lavoro di evasione end-to-end che aiu
 
 * **Flessibilità omnicanale**-Trasformare negozi e magazzini in punti di ritiro e centri di evasione.
 
-* **Opzioni di ritiro dei clienti**- I clienti possono vedere facilmente la disponibilità dei prodotti e selezionare un negozio per raccogliere gli articoli, sia in negozio che in curbside, selezionando gli acquisti online.
+* **Opzioni di ritiro dei clienti**-Durante la selezione degli acquisti online, i clienti possono facilmente vedere la disponibilità del prodotto e selezionare un negozio per il ritiro in negozio o curbside.
 
 * **Efficienza della realizzazione**- L&#39;applicazione mobile Store Assist aiuta i collaboratori dello store ad aumentare la velocità e l&#39;accuratezza dell&#39;ordine.
 
@@ -31,47 +31,47 @@ Store Fulfillment offre anche un flusso di lavoro di evasione end-to-end che aiu
 
 ## Estensione Store Fulfillation
 
-Supporta e migliora le funzioni native di Adobe Commerce
+La soluzione Store Fulfillment supporta e migliora le funzionalità native di Adobe Commerce.
 
 * Supporta la maggior parte dei tipi di prodotto: semplici, configurabili, raggruppati, raggruppati e virtuali
 
 * Si integra con [[!DNL Adobe Commerce] Inventory management](https://docs.magento.com/user-guide/catalog/inventory-learn-more.html)
 
-* Si integra con i sistemi commerciali POS (POS) quali ERP, OMS e WMS) per la gestione dell&#39;inventario
+* Si integra con i sistemi di gestione dell&#39;inventario dei punti vendita (POS), quali ERP, OMS e WMS
 
 * Completamente compatibile con il tema Luma
 
 * Fornisce il supporto GraphQL per vetrine headless e Venia
 
-* Supporta l&#39;app Store Assist di Walmart Commerce Technology. Questa app invia ordini di ritiro direttamente al dispositivo portatile del tuo dipendente nel negozio giusto in modo che gli articoli possano essere scelti e rapidamente e accuratamente selezionati, messi in scena e consegnati ai clienti al loro check-in.
+* Supporta l&#39;app Store Assist di Walmart Commerce Technologies. Questa app fornisce informazioni sull&#39;ordine di ritiro direttamente sul dispositivo palmare del dipendente nella posizione dello store selezionata. Grazie a queste informazioni, possono scegliere rapidamente e accuratamente, scattare e consegnare gli articoli ai clienti quando arrivano al negozio.
 
 ## App Store Assist
 
-L&#39;app Store Assist per dispositivi iOS e Android™ interagisce con la tecnologia Commerce Walmart per offrire funzionalità di evasione omnicanale ai negozi al dettaglio.
+L&#39;app Store Assist per dispositivi iOS e Android™ interagisce con [!DNL Walmart Commerce Technologies] per portare le funzionalità di realizzazione omnichannel nei negozi al dettaglio.
 
-* Invia ordini di ritiro in negozio e curbside direttamente per memorizzare i dispositivi mobili degli associati
+* Invia ordini di ritiro in negozio e curbside direttamente per memorizzare i dispositivi mobili dei collaboratori
 
-* Assicurati che gli ordini vengano raccolti, posizionati e consegnati in modo rapido e accurato ai clienti al momento del check-in per il ritiro dell&#39;ordine.
+* Assicurati che gli ordini dei negozi vengano raccolti, posizionati e consegnati in modo rapido e accurato ai clienti quando arrivano al negozio per il ritiro degli ordini
 
 * Gestisci l&#39;accesso utente associato all&#39;archivio, inclusi i criteri di sicurezza, l&#39;autenticazione a due fattori e altro ancora
 
-* Sincronizza automaticamente i dati sulle posizioni e le scorte dei punti vendita al dettaglio con Adobe Commerce
+* Sincronizza automaticamente ad Adobe Commerce i dati sulle posizioni e le scorte dei punti vendita al dettaglio
 
 ## Esperienza utente migliorata
 
-La funzione Store Fulfillment migliora Adobe Commerce aggiungendo le seguenti funzionalità per fornire migliori esperienze di acquisto e flussi di lavoro di evasione semplificati:
+La funzione Store Fulfillment migliora Adobe Commerce aggiungendo funzionalità per offrire esperienze di acquisto migliorate e flussi di lavoro di evasione semplificati.
 
-* **Selettore posizione store (SLS)**-Espone l&#39;opzione di ritiro del negozio, la disponibilità di inventario e il selettore del negozio sulle pagine del prodotto e del carrello oltre al pagamento nativo.
+* **Selettore posizione store (SLS)**- Aggiunge alle pagine del prodotto e del carrello, oltre al checkout nativo, opzioni di ritiro archivio, disponibilità di inventario e selettori di archivio.
 
-* **Disponibilità del magazzino**- Aggiunge ad Adobe Commerce Inventory management opzioni di configurazione aggiuntive per i prodotti e per la configurazione globale, al fine di supportare l’allocazione delle scorte a livello di archivio per favorire la tempestiva implementazione locale.
+* **Disponibilità del magazzino**- Aggiunge opzioni di configurazione aggiuntive per prodotto e globale ad Adobe Commerce Inventory management. Queste opzioni supportano l&#39;allocazione dell&#39;inventario a livello di archivio per favorire una tempestiva implementazione locale.
 
-* **Miglioramenti al carrello e al checkout**- Comunicare ai clienti i tempi di ritiro, le posizioni e i costi più rapidi disponibili durante la loro sessione di acquisto online.
+* **Miglioramenti al carrello e al checkout**- Comunica i tempi di ritiro, le posizioni e i costi più rapidi disponibili ai clienti durante la loro sessione di acquisto online.
 
 * **Flusso del processo di archiviazione**- Aggiunge interfacce per migliorare il processo di check-in dei clienti e le interazioni con i collaboratori dello store quando arrivano per il ritiro in-store o curbside.
 
 * **Cronologia account**- Estende il [!DNL Commerce] cronologia account per visualizzare i passaggi nella cronologia degli ordini.
 
-* **E-mail transazionali**- Estende le funzionalità di amministrazione di [!UICONTROL Sales Emails] per aggiungere modelli e-mail per acquisti online, preleva transazioni in negozio. I modelli supportano la comunicazione in tempo reale tra clienti e collaboratori dello store durante il processo di recupero degli ordini.
+* **E-mail transazionali**- Estende le funzionalità di amministrazione di [!UICONTROL Sales Emails] per aggiungere modelli e-mail per acquisti online, seleziona transazioni in negozio. I modelli supportano la comunicazione in tempo reale tra clienti e collaboratori dello store durante il processo di recupero degli ordini.
 
 * **Flessibilità**- Estensioni [!DNL Commerce] capacità di supportare scenari per l&#39;elaborazione di ordini arretrati, riduzioni di quantità e evasione parziale degli ordini, facilitando al contempo le cancellazioni e le note di credito necessarie per supportare questi scenari.
 
