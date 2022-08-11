@@ -1,13 +1,13 @@
 ---
-title: '"[!DNL Catalog Service] Note sulla versione"'
-description: '"Informazioni sulla versione più recente per [!DNL Catalog Service] per Adobe Commerce."'
-source-git-commit: 3959cc5d07f9a0da0ba772a4f3bc56adeb3c6bf3
+title: '''[!DNL Catalog Service] Note sulla versione'''
+description: Informazioni aggiornate sulla versione di [!DNL Catalog Service] per Adobe Commerce.
+exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
+source-git-commit: 72913e0c0b7364e38d37fe1a8279c40a4e849c02
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '153'
 ht-degree: 2%
 
 ---
-
 
 # [!DNL Catalog Service] Note sulla versione
 
@@ -32,6 +32,7 @@ Queste note sulla versione descrivono le versioni più recenti di [!DNL Catalog 
 
 ## Limitazioni note
 
+* I pacchetti e i prodotti raggruppati non sono supportati.
 * La determinazione dei prezzi di livello non è supportata.
 * In una matrice di immagini, solo la prima immagine contiene ruoli.
 * Le immagini per le varianti non vengono recuperate.
