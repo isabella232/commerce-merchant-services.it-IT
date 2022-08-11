@@ -1,12 +1,12 @@
 ---
 user-guide-title: '"[!DNL Store FulFillment Guide]"'
-user-guide-description: Informazioni dettagliate sull’installazione, la configurazione e l’utilizzo dell’evasione store per gli archivi Adobe Commerce.
+user-guide-description: Informazioni dettagliate sull’installazione, la configurazione e l’utilizzo di Store Fulfillment per gli archivi Adobe Commerce.
 breadcrumb-title: Completamento store per Adobe Commerce
-index: false
-source-git-commit: 87818d3a0eb8f0cb4bc9fac2aef3c56a2e620aaf
+index: true
+source-git-commit: 27ed666954f445eb99e0bf370d1155924bfb8ad3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '83'
+ht-degree: 2%
 
 ---
 
