@@ -2,16 +2,20 @@
 title: Abilita [!DNL Payment Services] per la produzione
 description: Completare il processo di onboarding abilitando [!DNL Payment Services] per la produzione.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: 51722d7045ccb6ccfdc7ab5bd93d5ca46b52cf03
+source-git-commit: a983cf30872544d72bd13c3f04f04a35eebcf85d
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Abilita [!DNL Payment Services] per la produzione
 
-Dopo l&#39;estensione Payments Services è [installato](install.md), l&#39;istanza è [configurato e connesso](connect.md)e [configurare la sandbox](sandbox.md) e testato, puoi procedere a mettere il servizio in produzione e completare il [processo di onboarding](onboard.md).
+Puoi mettere il servizio in produzione e completare il [processo di onboarding](onboard.md), secondo i passaggi descritti in questo argomento, dopo aver eseguito le operazioni seguenti:
+
+* [Installa](install.md) estensione Payment Services
+* [Configurazione e connessione](connect.md) la tua istanza
+* [Configurazione](sandbox.md) e [test](test-validate.md) la tua sandbox
 
 ## Imposta [!DNL Payment Services] come metodo di pagamento
 

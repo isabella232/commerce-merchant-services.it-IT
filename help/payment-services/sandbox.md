@@ -2,9 +2,9 @@
 title: Configurare la sandbox di prova
 description: Utilizzare un account sandbox PayPal per utilizzare [!DNL Payment Services] in modalità di prova.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: e8d008d9a38cebde7772b7e3d70d2447631414fe
+source-git-commit: ab4a2f4d432f74cb48dc4b92468305c93088593a
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -13,22 +13,20 @@ ht-degree: 0%
 
 Prima di iniziare l&#39;onboarding della sandbox, devi registrarti per un account PayPal Developer gratuito e creare sia un commerciante (da utilizzare per l&#39;onboarding) che account di acquisto (da utilizzare per testare il pagamento). Se necessario, puoi creare più account sviluppatore.
 
-Un account sandbox PayPal consente di utilizzare [!DNL Payment Services] in modalità di prova. PayPal richiede l&#39;utilizzo di un account di prova della sandbox aziendale generato da PayPal Developer Portal, e-mail e password per l&#39;onboarding della sandbox. Non creare un altro account durante il processo di onboarding della sandbox.
+Un account sandbox PayPal consente di utilizzare [!DNL Payment Services] in modalità di prova. PayPal richiede l&#39;utilizzo di un account di prova della sandbox aziendale generato da PayPal Developer Portal, e-mail e password per l&#39;onboarding della sandbox. *Non creare un altro account durante il processo di onboarding della sandbox.*
 
-Se hai creato un account durante il processo di onboarding di PayPal, devi reimpostare la sandbox di onboarding perché o non puoi verificare il tuo messaggio e-mail.
-
-Per ripristinare l’account sandbox:
-
-1. Clic **[!UICONTROL Reset sandbox]**. Consulta la sezione [PayPal crea un account sandbox aziendale](https://developer.paypal.com/docs/api-basics/sandbox/accounts/#create-a-business-sandbox-account) documentazione per ulteriori informazioni.
-1. Fai clic su **[!UICONTROL Sandbox onboarding]** e completa il successivo set di passaggi.
+## onboarding sandbox
 
 Per completare l’onboarding della sandbox:
 
 1. Passa a [Pagina Account sviluppatore PayPal](https://developer.paypal.com/developer/accounts/).
-1. Fai clic su **[!UICONTROL Log in to Home]** e accedi con le tue credenziali esistenti all&#39;account PayPal Developers o fai clic su **Iscriviti** per creare un account.
+1. Fai clic su **[!UICONTROL Log in to Home]** e accedi con il tuo account di test della sandbox aziendale generato da PayPal Developer Portal esistente oppure fai clic su **Iscriviti** per creare un account.
 1. Crea un account sandbox PayPal:
    1. Vai a _[!UICONTROL SANDBOX]_>**[!UICONTROL Accounts]**.
    1. Clic **[!UICONTROL Create account]**.
+
+      Se hai creato un account sandbox PayPal durante il processo di onboarding di PayPal nella sandbox, devi [reimpostare la sandbox di onboarding](#reset-your-sandbox-account) perché o non puoi verificare il tuo messaggio e-mail.
+
    1. Seleziona **[!UICONTROL Business]** come Tipo di account e fai clic su **[!UICONTROL Create]**.
    1. In _[!UICONTROL Sandbox Accounts]_fai clic sui tre punti nella sezione_[!UICONTROL Manage accounts]_ per l’account sandbox creato.
    1. Clic **[!UICONTROL View/edit account]**.
@@ -42,11 +40,11 @@ Per completare l’onboarding della sandbox:
 
    Questa opzione è visibile se non hai ancora completato l’onboarding della sandbox per [!DNL Payment Services].
 
-   Un ID commerciante sandbox viene generato automaticamente e popolato nel [impostazioni](settings.md). Non modificare o modificare questo ID.
+   Un ID commerciante sandbox viene generato automaticamente e popolato in [impostazioni](settings.md). Non modificare o modificare questo ID.
 
    Ti viene presentata una finestra PayPal per la connessione di un account PayPal per iniziare ad accettare pagamenti.
 
-1. Inserisci l&#39;e-mail del tuo account aziendale e del tuo paese o regione e fai clic su **[!UICONTROL Next]**.
+1. Inserisci l&#39;e-mail del tuo account commerciale PayPal (non l&#39;account sandbox PayPal) e del tuo paese o regione e fai clic su **[!UICONTROL Next]**.
 
    ![PayPal - Connessione dell&#39;account PayPal per i pagamenti](assets/paypal-connectacct.png)
 
@@ -60,6 +58,15 @@ Quando l&#39;onboarding della sandbox PayPal è approvato, dovresti vedere una n
 >[!IMPORTANT]
 >
 >Se revochi il consenso a [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] per l&#39;elaborazione dei pagamenti (nelle impostazioni del tuo account PayPal), gli ordini nel tuo negozio non possono essere elaborati da [!DNL Payment Services]. Nella home di Payment Services viene visualizzato un avviso relativo al consenso revocato. Per ignorare l’avviso, fai clic su **[!UICONTROL Do not show again]**.
+
+### Ripristino dell’account sandbox
+
+Se hai creato un account sandbox PayPal durante il processo di onboarding di PayPal, devi reimpostare la sandbox di onboarding perché o non puoi verificare il tuo messaggio e-mail.
+
+Per ripristinare l’account sandbox:
+
+1. Clic **[!UICONTROL Reset sandbox]**. [Crea un account sandbox aziendale PayPal](https://developer.paypal.com/docs/api-basics/sandbox/accounts/#create-a-business-sandbox-account).
+1. Fai clic su **[!UICONTROL Sandbox onboarding]** e completa il successivo set di passaggi.
 
 ## Abilita il numero di telefono del contatto
 
