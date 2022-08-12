@@ -2,10 +2,10 @@
 title: '"[!DNL Quick Checkout] prerequisiti"'
 description: '"Verifica che il tuo sistema soddisfi i requisiti necessari per utilizzare il [!DNL Quick Checkout] per l''estensione Adobe Commerce."'
 exl-id: fa61aa73-a2b6-4c69-ab42-cede74c15caa
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '113'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,7 @@ Fai riferimento a [onboarding](../quick-checkout/onboarding.md) per ulteriori in
 
 ## Limiti di compatibilità
 
-La [!DNL Quick Checkout] presenta problemi di compatibilità esistenti per il programma di accesso rapido (EAP):
+[!DNL Quick Checkout] problemi di compatibilità esistenti:
 
 | **Problema** | **Vincoli** |
 |----------------|-----------------|

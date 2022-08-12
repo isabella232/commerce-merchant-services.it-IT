@@ -2,9 +2,9 @@
 title: '"A bordo [!DNL Quick Checkout] per estensione Adobe Commerce"'
 description: '"Scopri come [!DNL Quick Checkout] potrebbe essere utile per la tua istanza Adobe Commerce e per come effettuare l’onboarding e la configurazione dell’estensione."'
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 05d967573f645db1e8473798df279712d6d2dfc9
+source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '701'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Consulta la sezione [installare](../quick-checkout/install.md) per informazioni 
 
 ## Crea account con [!DNL Bolt]
 
-Prima di configurare la [!DNL Quick Checkout] nell’amministratore di Adobe Commerce è necessario creare un [sandbox](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} e [produzione](https://merchant.bolt.com/register){target=&quot;_blank&quot;} account commerciali in [!DNL Bolt]. Fornisci tutti i dettagli richiesti per creare un account in [!DNL Bolt].
+Prima di configurare la [!DNL Quick Checkout] nell’amministratore di Adobe Commerce è necessario creare un [sandbox](https://merchant-sandbox.bolt.com/register?platform=magento2){target=&quot;_blank&quot;} e [produzione](https://merchant.bolt.com/register?platform=magento2){target=&quot;_blank&quot;} account commerciali in [!DNL Bolt]. Fornisci tutti i dettagli richiesti per creare un account in [!DNL Bolt].
 
 Fai riferimento a [verificare e convalidare](../quick-checkout/testing.md) per ulteriori informazioni.
 
