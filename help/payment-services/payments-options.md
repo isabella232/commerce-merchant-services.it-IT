@@ -2,9 +2,9 @@
 title: Opzioni di pagamento
 description: Impostare le opzioni di pagamento per personalizzare i metodi disponibili per i clienti del negozio.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 26735a191eab529bc3e8e7fc3d64295d345888d6
+source-git-commit: c7afa798096e07409fb36a3d08f7e5b2a5ce40db
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,10 @@ La [!DNL Venmo] è visibile dalla pagina del prodotto, dal mini-carrello, dal ca
 I clienti possono utilizzare l’ID touch sui propri dispositivi per utilizzare [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), che utilizza le credenziali di pagamento con carta di credito e di debito memorizzate sul dispositivo iOS o macOS.
 
 La [!DNL Apple Pay] è visibile dalla pagina del prodotto, dal mini-carrello, dal carrello e dalle viste per il pagamento.
+
+>[!NOTE]
+>
+> Per utilizzare Apple Pay, contatta il rappresentante commerciale per abilitarlo per i tuoi store live.
 
 ### [!DNL Pay Later] pulsante
 

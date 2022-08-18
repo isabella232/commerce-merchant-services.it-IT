@@ -4,9 +4,9 @@ description: Dopo l'installazione, è possibile configurare [!DNL Payment Servic
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 60d04755b29f107a0543bd71e19ca5b2b6997b4d
+source-git-commit: ecfe1448a0272fe5401090b322f4b69dffd1a8fa
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1087'
 ht-degree: 0%
 
 ---
@@ -108,6 +108,8 @@ Puoi abilitare e configurare le opzioni di pagamento dei pulsanti intelligenti P
       >
       > Per utilizzare Apple Paga [deve avere un account Apple Developer](test-validate.md#test-in-sandbox-environment) (completo di false carte di credito e informazioni di fatturazione) per testarlo. Quando sei pronto a utilizzare Apple Pay in sandbox *o* modalità di produzione, dopo aver completato [test e convalida](test-validate.md), contatta il tuo rappresentante commerciale per abilitarlo per i tuoi store live.
 
+      Quando si attiva/disattiva la visibilità dei pulsanti di pagamento o il messaggio PayPal Pay Later, viene visualizzata un&#39;anteprima visiva della configurazione nella parte inferiore della pagina Settings (Impostazioni).
+
 1. Per abilitare la modalità di debug, attiva **[!UICONTROL Debug Mode]** selettore.
 1. Clic **[!UICONTROL Save]**.
 
@@ -145,6 +147,9 @@ Puoi anche configurare le _[!UICONTROL Button style]_opzioni dei pulsanti intell
 1. Per modificare il **[!UICONTROL Shape]**, seleziona `Pill` o `Rect`.
 1. Per abilitare il selettore dell’altezza del pulsante, attiva/disattiva **[!UICONTROL Responsive button height]** selettore.
 1. Per modificare il **[!UICONTROL Label]**, seleziona l’opzione di etichetta desiderata.
+
+   Quando si modificano le opzioni di configurazione per layout, colore, forma, altezza ed etichetta, viene visualizzata un&#39;anteprima visiva della configurazione nella parte inferiore della pagina Impostazioni.
+
 1. Clic **[!UICONTROL Save]**.
 
    Se tenti di allontanarti da questa visualizzazione senza salvare le modifiche, viene visualizzato un modale che richiede di ignorare le modifiche, continuare a modificare o salvare le modifiche.
