@@ -1,14 +1,15 @@
 ---
-title: Panoramica
-description: '"[!DNL Product Recommendations] sono un potente strumento di marketing che puoi utilizzare per aumentare le conversioni, incrementare i ricavi e stimolare l''impegno degli acquirenti."'
-source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
+title: Introduzione a [!DNL Product Recommendations]
+description: '''[!DNL Product Recommendations] sono un potente strumento di marketing che puoi utilizzare per aumentare le conversioni, incrementare i ricavi e stimolare l''impegno degli acquirenti."'
+exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
+source-git-commit: 3f753f6a91c9f2c29def90d323c004a689056e71
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
 
-# Panoramica
+# Introduzione a [!DNL Product Recommendations]
 
 I consigli sui prodotti sono un potente strumento di marketing che puoi utilizzare per aumentare le conversioni, incrementare i ricavi e stimolare il coinvolgimento degli acquirenti. I consigli sui prodotti Adobe Commerce sono basati su [Adobe Sensei](https://www.adobe.com/sensei.html), che utilizza algoritmi di intelligenza artificiale e machine-learning per eseguire un’analisi approfondita dei dati aggregati dei visitatori. Questi dati, se combinati con il catalogo Adobe Commerce, danno luogo a un’esperienza altamente coinvolgente, pertinente e personalizzata.
 
@@ -31,3 +32,9 @@ I consigli sui prodotti consentono di:
 - Scegli tra nove tipi di consigli intelligenti distinti in base alle seguenti aree: basato su articoli, basato su popolarità, tendenze e similarità
 - Utilizza i dati comportamentali per personalizzare i consigli in tutto il percorso di vetrina dell’acquirente
 - Misura le metriche chiave rilevanti per ogni raccomandazione per comprendere l’impatto delle raccomandazioni
+
+## [!DNL Product Recommendations] demo
+
+Guarda questo video per saperne di più [!DNL Product Recommendations]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)
