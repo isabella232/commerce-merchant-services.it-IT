@@ -1,10 +1,10 @@
 ---
-title: '"A bordo [!DNL Quick Checkout] per estensione Adobe Commerce"'
-description: '"Scopri come [!DNL Quick Checkout] potrebbe essere utile per la tua istanza Adobe Commerce e per come effettuare l’onboarding e la configurazione dell’estensione."'
+title: "A bordo [!DNL Quick Checkout] per estensione Adobe Commerce"
+description: "Scopri come [!DNL Quick Checkout] potrebbe essere utile per la tua istanza Adobe Commerce e per come effettuare l’onboarding e la configurazione dell’estensione."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
+source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,8 @@ ht-degree: 0%
 # [!DNL Quick Checkout] onboarding
 
 Per iniziare a utilizzare [!DNL Quick Checkout] per l’estensione Adobe Commerce devi completare alcuni passaggi onboarding per collegare la tua istanza alla nostra funzionalità di pagamento.
+
+![Pagamento rapido](assets/overview-admin-panel.png)
 
 1. [Ottieni estensione](#get-extension).
 1. [Crea un account commerciale di produzione o sandbox con [!DNL Bolt]](#create-account-with-bolt). Fornisci tutte le informazioni necessarie per verificare la tua identità.
@@ -21,6 +23,16 @@ Per iniziare a utilizzare [!DNL Quick Checkout] per l’estensione Adobe Commerc
 1. [Definire le impostazioni del servizio](#complete-admin-configuration) per configurare [!DNL Quick Checkout] estensione.
 1. [Fai clic su Salva configurazione](#enable-live-quick-checkout) per abilitare l&#39;estensione.
 1. Cambia ambito in **Sito Web principale** e [fai clic su Configura URL di callback](#check-shopper-valid-account) pulsante .
+
+Se Gainsight è abilitato, attiva la **Fate il tour** nel tuo [!DNL Quick Checkout] Pannello di amministrazione informazioni [!DNL Quick Checkout] per Adobe Commerce:
+
+1. Sulla _Amministratore_ barra laterale, vai a **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > Avanzate:
+
+   ![Pagamento rapido](assets/gainsight-admin.png)
+
+Se Gainsight non è abilitato, continua con i passaggi di onboarding.
+
+Consulta la sezione [[!DNL Quick Checkout] Pannello Admin](../quick-checkout/admin-panel.md) per ulteriori informazioni.
 
 >[!NOTE]
 >

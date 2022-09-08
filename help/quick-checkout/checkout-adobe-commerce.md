@@ -1,10 +1,10 @@
 ---
-title: Flusso di cassa
-description: Panoramica [!DNL Quick Checkout] flusso per un utente Adobe Commerce.
+title: "Flusso di pagamento per un utente Adobe Commerce"
+description: "Panoramica del [!DNL Quick Checkout] flusso per un utente Adobe Commerce."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: a95d2ed92c69feba03d1b84d44abf08c1d1b4029
+source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Quando un acquirente è un utente registrato sia in Adobe Commerce che [!DNL Bol
 
 Se [!DNL Bolt] account trovato durante il pagamento, gli acquirenti possono continuare con il loro [!DNL Quick Checkout] esperienza di pagamento diretta:
 
-1. Inserisci la Password una tantum (OTP) inviata a [!DNL Bolt] indirizzo e-mail o mobile dell’account, a seconda [preferenze dell&#39;utente nella [!DNL Bolt] account](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
+1. Inserisci la Password una tantum (OTP) inviata a [!DNL Bolt] indirizzo e-mail o mobile dell&#39;account, a seconda [preferenze dell&#39;utente nella [!DNL Bolt] account](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
 
 ![Popup OTP](assets/pop-up.png)
 
