@@ -1,8 +1,8 @@
 ---
-title: '"[!DNL Payment Services] Note sulla versione"'
+title: "[!DNL Payment Services] Note sulla versione"
 description: Consulta le note sulla versione per informazioni su tutti [!DNL Payment Services] versioni.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 1f88c66d0c12dcde2c8fdde1dd3b4838ae6d462d
+source-git-commit: 4e6bf72033495683491b0c59a544d1474f6c1486
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -28,6 +28,10 @@ Vedi [Disponibilità](https://devdocs.magento.com/release/availability.html) per
 Queste note sulla versione descrivono le modifiche e le correzioni apportate alle funzioni e che sono state rilasciate al di fuori delle regolari versioni delle funzioni per il servizio in hosting.
 
 +++Aggiornamenti al servizio in hosting
+
+_12 settembre 2022_
+
+![Nuovo](../assets/new.svg)<!-- Issue PAY-3705 --> La `increment_id` è ora disponibile per l&#39;utilizzo nella riconciliazione dei pagamenti nei sistemi ERP esterni. Si propaga al [`custom_id` _e_ `invoice_id`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html#reconcile-with-erp-system), visibile sia nel webhook PayPal che nel dettaglio dell&#39;attività commerciale per un pagamento.
 
 _31 agosto 2022_
 
