@@ -2,10 +2,10 @@
 title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] Note sulla versione'
 description: "Consulta le note sulla versione per informazioni su tutti [!DNL Store Fulfillment by Walmart Commerce Technologies] versioni."
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 5e7dcc48c65b2f3f75a33c6e556dcef882a80549
+source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 4%
+source-wordcount: '99'
+ht-degree: 5%
 
 ---
 
@@ -17,9 +17,10 @@ Queste note sulla versione descrivono la versione iniziale di [!DNL Store Fulfil
 ![Problema risolto](../assets/fix.svg) Correzioni e miglioramenti
 ![Problema noto](../assets/bug.svg) Problemi noti
 
-## v1.1.0
-
-![Problema risolto](../assets/fix.svg) <!-- Issue WM-x -->Semplificato il [Configurazione dell’esperienza di check-in](check-in-experience-setup.md) per l&#39;app Store Assist aggiungendo le selezioni predefinite di modelli e marca dell&#39;automobile. Nella versione precedente, i commercianti dovevano configurare manualmente le selezioni della marca e del modello dell&#39;automobile.
+<!-- ## v1.1 -->
+<!--
+![Fixed issue](../assets/fix.svg)-->
+<!-- Simplified the [Check-in experience configuration](check-in-experience-setup.md) for the Store Assist app by adding default car make and model selections. In the previous version, merchants had to manually configure the car make and model selections.-->
 
 ## v1.0.0
 

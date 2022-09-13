@@ -4,49 +4,140 @@ description: Configurare le impostazioni generali per abilitare [!DNL Store Fulf
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
 workflow-type: tm+mt
-source-wordcount: '2413'
+source-wordcount: '2518'
 ht-degree: 0%
 
 ---
 
-# Configurazione generale
+# Memorizza configurazione di servizio e vendite
 
-Nell’amministratore di Adobe Commerce, configura le impostazioni di configurazione generali per abilitare [!DNL Store Fulfillment] servizi per il tuo archivio, configura le impostazioni di estensione globale e fornisci i dati chiave per l&#39;integrazione configurando il [!UICONTROL Account Credentials].
+Configura[!DNL Store Fulfillment] per abilitare l’estensione, specifica le impostazioni di estensione, configura le impostazioni di sicurezza per gli utenti dell’app Store Assist e imposta le opzioni per i metodi di consegna.
 
-L&#39;integrazione deve essere collegata al servizio Store Fulfillment. Inoltre, configura le impostazioni generali di Store Fulfillment per abilitare e personalizzare i servizi Store Fulfillment in base alle funzionalità e ai requisiti operativi della tua organizzazione.
+>[!IMPORTANT]
+>
+>La configurazione del servizio Store Fulfillment si applica solo dopo aver collegato la tua istanza Adobe Commerce e la [!DNL Store Fulfillment] app. Vedi [Esegui il programma Connect Store](connect-set-up-service.md).
 
-La configurazione generale per [!DNL Store Fulfillment] include le seguenti impostazioni di configurazione:
+Configura le impostazioni dei servizi di evasione dell&#39;archivio dal menu Configurazione dell&#39;archivio di amministrazione in Adobe Commerce.
 
-- [Abilita la soluzione](#enable-the-store-fulfillment-solution)
-- [Gestire le credenziali dell&#39;account per connettersi ai servizi di evasione dell&#39;archivio](#account-credentials)
-- [Configurare la registrazione](#configure-logging)
-- [Impostare le opzioni per la gestione dell&#39;ordine e delle operazioni di sincronizzazione degli errori](#order-synchronization)
-- [Abilita opzioni di spedizione per l&#39;evasione del negozio](#enable-store-fullment-shipping-options)
-- [Configurare le impostazioni di sicurezza e autenticazione per l’app Store Fulfillment](#store-fulfillment-app)
-- [Imposta la disponibilità e la configurazione dei messaggi del metodo di consegna](#in-store-delivery-methods)
+Accedi alle impostazioni per abilitare l’estensione, configurare le impostazioni globali e specificare le opzioni di sicurezza per le connessioni utente e gli account dell’app Store Assist selezionando **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
+
+![Configurazione dei servizi dell’Admin Store per l’esecuzione dello store](assets/store-services-admin-sf-config.png)
+
+Accedi alle impostazioni per configurare i metodi di consegna selezionando **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
+
+![Configurazione vendite dell&#39;Admin Store per l&#39;evasione del negozio](assets/store-sales-admin-sf-deliver-config.png)
+
+## Impostazioni di base
+
+<table>
+<thead>
+<tr>
+<td><strong>Campo</strong></td>
+<td><strong>Descrizione</strong></td>
+<td><strong>Ambito</strong></td>
+<td><strong>Obbligatorio</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[!UICONTROL Price]</strong></td>
+<td>Prezzo da pagare al cliente per il ritiro in negozio. Il valore predefinito è zero.</td>
+<td>Sito Web</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Search Radius]</strong></td>
+<td>Il raggio, in chilometri, da utilizzare quando un acquirente cerca una posizione di ritiro del negozio nel negozio di checkout. I risultati della ricerca restituiscono solo gli archivi situati entro il raggio di ricerca specificato.</td>
+<td>Sito Web</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Displayed error message]</strong></td>
+<td>Messaggio che viene visualizzato quando un cliente seleziona il ritiro in negozio, ma il metodo di consegna non è disponibile. Se necessario, è possibile personalizzare il testo predefinito.
+</td>
+<td>Visualizzazione store</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+
+>[!NOTE]
+>
+>La [!UICONTROL Search Radius] viene utilizzata solo se hai configurato il [posizione dell&#39;archivio e configurazione della mappatura](store-location-map-provider-setup.md) per Adobe Commerce.
 
 ## Abilita la soluzione Store Fulfillment
 
-| **Campo** | **Descrizione** | **Ambito** | **Obbligatorio** |
-|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **[!UICONTROL Enabled]** | Abilita o disabilita la soluzione. Quando abilitato, configura e utilizza le funzionalità di Store Fulfillment e stabilisce la connessione tra i servizi Adobe Commerce Store e Store Fulfillment. Quando è disabilitata, tutte le funzioni di Store Fulfillment sono disabilitate e non vi è comunicazione tra Adobe Commerce e i servizi Store Fulfillment. Impossibile elaborare o ricevere le informazioni sull&#39;ordine. | Globale | Sì |
+Abilita la [!DNL Store Fulfillment] soluzione per aggiungere le funzionalità di ritiro in-store e curbside alle esperienze di acquisto e pagamento nella tua vetrina Adobe Commerce.
 
-Per completare questa configurazione, vedi **Negozi > Configurazione > Servizi > Store Fulfillment by Walmart Commerce Technologies**.
+<table>
+<thead>
+<tr>
+<td><strong>Campo</strong></td>
+<td><strong>Descrizione</strong></td>
+<td><strong>Ambito</strong></td>
+<td><strong>Obbligatorio</strong></td>
+</tr>
+ </thead>
+ <tbody>
+<tr>
+<td><strong>[!UICONTROL Enabled]</strong></td>
+<td>Abilita o disabilita la soluzione. Quando abilitato, configura e utilizza le funzionalità di Store Fulfillment e stabilisce la connessione tra i servizi Adobe Commerce Store e Store Fulfillment. Quando è disabilitata, tutte le funzioni di Store Fulfillment sono disabilitate e non vi è comunicazione tra Adobe Commerce e i servizi Store Fulfillment. Impossibile elaborare o ricevere le informazioni sull'ordine.</td>
+<td>Globale</td>
+<td>Sì</td>
+</tr>
+</tbody>
+</table>
 
 ## Aggiungi credenziali account
 
-| **Campo** | **Descrizione** | **Ambito** | **Obbligatorio** |
-|----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **[!UICONTROL Environment]** | Può selezionare *Sandbox* o *Produzione*:</br> Sandbox comunica con i servizi di evasione in un test.</br>La produzione comunica con un ambiente live. Utilizzo **only** in produzione.</br>Puoi assegnare un set di credenziali per ogni ambiente e gestire entrambi i set nella stessa installazione. </br></br>Salvare le credenziali prima di convalidare la connessione. | Globale | Sì |
-| **[!UICONTROL API Server URL]** | URL dell’endpoint API per l’evasione di Walmart Store. Questo deve essere un URL completo fornito durante il processo di onboarding. I clienti Store Fulfillment ricevono sia un URL Sandbox che di Produzione. Assicurati di copiare/incollare l’URL completo, inclusa la barra finale &quot;/&quot;. | Globale | Sì |
-| **[!UICONTROL Token Auth Server URL]** | L&#39;URL dell&#39;endpoint di autenticazione per l&#39;evasione dell&#39;archivio Walmart. Il valore deve essere l’URL completo fornito durante il processo di onboarding. Ricevi sia un URL Sandbox che di produzione. Assicurati di copiare/incollare l’URL completo, inclusa la barra finale `/`&quot;. | Globale | Sì |
-| **[!UICONTROL Merchant Id]** | L’ID commerciante (tenant) univoco fornito durante il processo di onboarding. L&#39;ID viene utilizzato per instradare gli ordini e assicura che i negozi commerciali li ricevano. | Globale | Sì |
-| **[!UICONTROL Consumer Id]** | L&#39;ID di integrazione univoco. Questo viene fornito durante il processo di onboarding. Non cambia. Viene utilizzato per autenticare tutte le comunicazioni con i servizi di evasione. | Globale | Sì |
-| **[!UICONTROL Consumer Secret]** | Chiave di integrazione univoca. Questo viene fornito durante il processo di onboarding. Viene utilizzato per autenticare tutte le comunicazioni con i servizi di evasione. | Globale | Sì |
+<table>
+<tr>
+<td><strong>Campo</strong></td>
+<td><strong>Descrizione</strong></td>
+<td><strong>Ambito</strong></td>
+<td><strong>Obbligatorio</strong></td>
+    </tr>
+<tr>
+<td><strong>[!UICONTROL Environment]</strong></td>
+<td>Seleziona o <i>Sandbox</i> o <i>Produzione</i><br></br> Sandbox comunica con i servizi di evasione in un test.La produzione comunica con un ambiente live. Utilizzo <strong>only</strong> in produzione.<br></br>Puoi assegnare un set di credenziali per ogni ambiente e gestire entrambi i set nella stessa installazione. <br></br>Salvare le credenziali prima di convalidare la connessione.</td>
+<td>Globale</td>
+<td>Sì</td>
+    </tr>
+<tr>
+<td><strong>[!UICONTROL API Server URL]</strong></td>
+<td>URL dell’endpoint API per l’evasione di Walmart Store. Deve essere l’URL completo fornito durante il processo di onboarding. I clienti Store Fulfillment ricevono sia un URL Sandbox che di Produzione. Assicurati di copiare/incollare l’URL completo, inclusa la barra finale "/".</td>
+<td>Globale</td>
+<td>Sì</td>
+    </tr>
+<tr>
+<td><strong>[!UICONTROL Token Auth Server URL]</strong></td>
+<td>L'URL dell'endpoint di autenticazione per l'evasione dell'archivio Walmart. Il valore deve essere l’URL completo fornito durante il processo di onboarding. Ricevi sia un URL Sandbox che di produzione. Assicurati di copiare/incollare l'URL completo, inclusa la barra finale "/`".</td>
+<td>Globale</td>
+<td>Sì</td>
+    </tr>
+<tr>
+<td><strong>[!UICONTROL Merchant Id]</strong></td>
+<td>L’ID commerciante (tenant) univoco fornito durante il processo di onboarding. L'ID viene utilizzato per instradare gli ordini e assicura che i negozi commerciali li ricevano.</td>
+<td>Globale</td>
+<td>Sì</td>
+    </tr>
+<tr>
+<td><strong>[!UICONTROL Consumer Id]</strong></td>
+<td>L'ID di integrazione univoco. Questo viene fornito durante il processo di onboarding. Non cambia. Viene utilizzato per autenticare tutte le comunicazioni con i servizi di evasione.</td>
+<td>Globale</td>
+<td>Sì</td>
+    </tr>
+<tr>
+<td><strong>[!UICONTROL Consumer Secret]</strong></td>
+<td>Chiave di integrazione univoca. Questo viene fornito durante il processo di onboarding. Viene utilizzato per autenticare tutte le comunicazioni con i servizi di evasione.</td>
+<td>Globale</td>
+<td>Sì</td>
+    </tr>
+</table>
 
-Dopo aver configurato le credenziali account, seleziona **[!UICONTROL Validate Credentials]** per verificare e stabilire una connessione al servizio Web di evasione per la prima volta.
+Dopo aver configurato le credenziali account, seleziona <strong>[!UICONTROL Validate Credentials]</strong> per verificare e stabilire una connessione al servizio Web di evasione per la prima volta.
 
 ## Configurare la registrazione
 
@@ -54,34 +145,99 @@ Quando la registrazione è abilitata, il file di registro può espandersi rapida
 
 Chiedi all’amministratore di sistema di configurare gli ambienti per consentire la gestione delle eccezioni in modo che le eccezioni relative alle API possano essere acquisite tramite il firewall o la cache. È inoltre possibile chiedere all&#39;amministratore di sistema di impostare la rotazione del registro su questo file per ridurre al minimo le dimensioni.
 
-| **Campo** | **Descrizione** | **Ambito** | **Obbligatorio** |
-|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **Modalità debug** | La modalità Debug viene utilizzata per aumentare l&#39;attività registrata all&#39;interno dell&#39;integrazione. Se disabilitata, non vengono registrate informazioni di debug. Quando abilitata, tutte le informazioni di debug vengono registrate.</br> Tutti i dati registrati si trovano nel file : `var/log/walmart-bopis.log` | Globale | No |
+<table>
+<thead>
+<tr>
+<td><strong>Campo</strong></td>
+<td><strong>Descrizione</strong></td>
+<td><strong>Ambito</strong></td>
+<td><strong>Obbligatorio</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[!UICONTROL Debug Mode]</strong></td>
+<td>La modalità Debug viene utilizzata per aumentare l'attività registrata all'interno dell'integrazione. Se disabilitata, non vengono registrate informazioni di debug. Quando abilitata, tutte le informazioni di debug vengono registrate. Tutti i dati registrati si trovano nel file : `var/log/walmart-bopis.log`</td>
+<td>Globale</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
 
 ## Gestisci sincronizzazione ordine
 
 Configura le impostazioni per gestire gli errori per la sincronizzazione degli ordini, gli attributi del catalogo da utilizzare per la scansione dei codici a barre durante il prelievo degli ordini e configura le dimensioni dei batch degli ordini per la coda di evasione degli archivi.
 
 Puoi visualizzare i dettagli sulle operazioni di sincronizzazione degli ordini dal dashboard Gestione code di evasione archivio nell&#39;Admin (
-**[!UICONTROL System > Tools > Store Fulfillment Queue]**).
+<strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong>).
 
 ### Gestione degli errori di sincronizzazione
 
-| **Campo** | **Descrizione** | **Ambito** | **Obbligatorio** |
-|-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------------|
-| **Errore critico di nuovo** | Specifica i tentativi per un&#39;operazione di sincronizzazione dei record dopo un errore critico.</br></br>Errori critici si verificano ogni volta che l&#39;integrazione non riceve una risposta positiva dal servizio di evasione. Ciò può verificarsi quando il servizio è inattivo o quando si verifica un errore nei dati dell’ordine che si inviano.</br></br>Una volta raggiunta la soglia per i tentativi, l’elemento rimane in una coda ma non viene elaborato di nuovo. Visualizza tutti gli elementi con errori da **[!UICONTROL System > Tools > Store Fulfillment Queue]** Gestione in Admin. Per risolvere i problemi relativi agli elementi che si verificano con regolarità, contatta il tuo Account Manager. | Globale | No |
-| **Abilita e-mail di notifica degli errori** | Abilitare le notifiche di errore per ricevere un messaggio e-mail quando la variabile [!UICONTROL Retry Critical Error Threshold] viene raggiunto per un ordine. La notifica include tutti i dettagli disponibili sull’errore. | Globale | No |
-| **Invia e-mail di notifica di errore a** | Elenco delimitato da virgole degli indirizzi e-mail dei destinatari per le notifiche di errore. | Globale | No |
-| **Modello e-mail eccezione di sincronizzazione ordine** | Specifica il modello e-mail utilizzato per avvisare i destinatari degli errori di sincronizzazione dell’ordine. Viene fornito un modello predefinito. Non supporta la personalizzazione. | Visualizzazione store | No |
+<table>
+<tr>
+<td><strong>Campo</strong></td>
+<td><strong>Descrizione</strong></td>
+<td><strong>Ambito</strong></td>
+<td><strong>Obbligatorio</strong></td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Retry Critical Error]</strong></td>
+<td>Specifica i tentativi per un'operazione di sincronizzazione dei record dopo un errore critico.<br></br>Errori critici si verificano ogni volta che l'integrazione non riceve una risposta positiva dal servizio di evasione. Ciò può verificarsi quando il servizio è inattivo o quando si verifica un errore nei dati dell’ordine che si inviano.<br></br>Una volta raggiunta la soglia per i tentativi, l’elemento rimane in una coda ma non viene elaborato di nuovo. Visualizza tutti gli elementi con errori da <strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong> Gestione in Admin. Per risolvere i problemi relativi agli elementi che si verificano con regolarità, contatta il tuo Account Manager.</td>
+<td>Globale</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Enable Error Notification Email]</strong></td>
+<td>Abilitare le notifiche di errore per ricevere un messaggio e-mail quando la variabile [!UICONTROL Retry Critical Error Threshold] viene raggiunto per un ordine. La notifica include tutti i dettagli disponibili sull’errore.</td>
+<td>Globale</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Send Error Notification Email To]</strong></td>
+<td>Elenco delimitato da virgole degli indirizzi e-mail dei destinatari per le notifiche di errore.</td>
+<td>Globale</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Order Sync Exception Email Template]</strong></td>
+<td>Specifica il modello e-mail utilizzato per avvisare i destinatari degli errori di sincronizzazione dell’ordine. Viene fornito un modello predefinito. Non supporta la personalizzazione.</td>
+<td>Visualizzazione store</td>
+<td>No</td>
+</tr>
+</table>
 
 ### Sincronizzazione degli ordini
 
-| **Campo** | **Descrizione** | **Ambito** | **Obbligatorio** |
-|--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **[!UICONTROL Barcode Source]** | L&#39;attributo di catalogo che memorizza il codice scannable per gli articoli corrispondenti nelle posizioni degli esercenti.</br></br>Se disponi di una sola posizione commerciale esistente, è probabile che tu utilizzi i codici UPC, mentre il tuo canale di e-commerce identifica i prodotti per SKU. Se questo è il tuo scenario, seleziona l&#39;attributo di catalogo che contiene il codice UPC.</br></br>Questa impostazione assicura che gli ordini inviati al tuo commerciante memorizzino le voci di elenco con l&#39;identificatore corretto, in modo che gli associati al negozio possano eseguire una scansione accurata degli elementi durante il processo di prelievo.</br></br>Se non sei sicuro, controlla con i tuoi associati di evasione nel reparto Spedizione e prelievo per determinare quale attributo deve essere inviato. Potrebbe essere necessario aggiungere l&#39;attributo appropriato al set di attributi di prodotto Adobe Commerce se l&#39;attributo non è attualmente incluso nel database. | Sito Web | Sì |
-| **[!UICONTROL Barcode Type]** | Attributo di catalogo che memorizza l’origine del codice a barre per gli articoli corrispondenti nelle posizioni degli esercenti.</br></br>Questa impostazione assicura che gli ordini inviati al commerciante memorizzino gli elementi dell&#39;elenco con l&#39;identificatore corretto, in modo che gli associati all&#39;archivio possano eseguire una scansione accurata degli elementi durante il processo di prelievo. Le opzioni includono: SKU, UPC, GTIN, UPCA, EAN13, UPCE0, DISA, UAB, CODABAR, Price Embedded UPC.</br></br>Se non sei sicuro, seleziona l’opzione che assomiglia maggiormente ai valori contenuti nel tuo [!UICONTROL Barcode Source] attributo. I collaboratori dello store possono comunque corrispondere gli elementi manualmente dal loro elenco di selezione. | Sito Web | Sì |
-| **[!UICONTROL Max Number of Items]** | Il numero massimo di elementi da inviare contemporaneamente dalla coda di evasione dell&#39;archivio.</br></br>Gli ordini BOPIS vengono inviati al servizio di evasione a intervalli regolari in batch. Questa impostazione consente di controllare le dimensioni del batch.</br></br>Il valore predefinito è 100 elementi. A seconda del volume e della capacità dell&#39;ordine, potrebbe essere necessario regolare questo valore in alto o in basso. | Globale | No |
-
+<table>
+<thead>
+<tr>
+<td><strong>Campo</strong></td>
+<td><strong>Descrizione</strong></td>
+<td><strong>Ambito</strong></td>
+<td><strong>Obbligatorio</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[!UICONTROL Barcode Source]</strong></td>
+<td>L'attributo di catalogo che memorizza il codice scannable per gli articoli corrispondenti nelle posizioni degli esercenti.<br></br>Se disponi di una sola posizione commerciale esistente, è probabile che tu utilizzi i codici UPC, mentre il tuo canale di e-commerce identifica i prodotti per SKU. Se questo è il tuo scenario, seleziona l'attributo di catalogo che contiene il codice UPC.<br></br>Questa impostazione assicura che gli ordini inviati ai punti vendita elenchi con l'identificatore corretto in modo che gli associati all'archivio possano eseguire una scansione accurata degli elementi durante il processo di prelievo.<br></br>Se non sei sicuro, controlla con i tuoi associati di evasione nel reparto Spedizione e prelievo per determinare quale attributo deve essere inviato. Potrebbe essere necessario aggiungere l'attributo appropriato al set di attributi di prodotto Adobe Commerce se l'attributo non è attualmente incluso nel database.</td>
+<td>Sito Web</td>
+<td>Sì</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Barcode Type]</strong></td>
+<td>Attributo di catalogo che memorizza l’origine del codice a barre per gli articoli corrispondenti nelle posizioni degli esercenti.<br></br>Questa impostazione assicura che gli ordini inviati ai punti vendita elenchi con l'identificatore corretto in modo che gli associati all'archivio possano eseguire una scansione accurata degli elementi durante il processo di prelievo. Le opzioni includono: SKU, UPC, GTIN, UPCA, EAN13, UPCE0, DISA, UAB, CODABAR, Price Embedded UPC.<br></br>Se non sei sicuro, seleziona l’opzione che assomiglia maggiormente ai valori contenuti nel tuo [!UICONTROL Barcode Source] attributo. I collaboratori dello store possono comunque corrispondere gli elementi manualmente dal loro elenco di selezione.</td>
+<td>Sito Web</td>
+<td>Sì</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Max Number of Items]</strong></td>
+<td>Il numero massimo di elementi da inviare contemporaneamente dalla coda di evasione dell'archivio.<br></br>Gli ordini BOPIS vengono inviati al servizio di evasione a intervalli regolari in batch. Questa impostazione consente di controllare le dimensioni del batch.<br></br>Il valore predefinito è 100 elementi. A seconda del volume e della capacità dell'ordine, potrebbe essere necessario regolare questo valore in alto o in basso.</td>
+<td>Globale</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
 
 ## Abilita opzioni di spedizione per l&#39;evasione del negozio
 
@@ -89,15 +245,45 @@ Configura le opzioni di spedizione Store Fulfillment che determinano la disponib
 
 ### Negozio di spedizione
 
-| **Campo** | **Descrizione** | **Ambito** | **Obbligatorio** |
-|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **[!UICONTROL Enable Ship To Store]** | L&#39;impostazione &quot;nave-to-store&quot; sfrutta le funzionalità esistenti di spedizione-to-store. Se utilizzi Inventory management o se puoi accettare e soddisfare gli ordini in posizioni commerciali senza inventario tramite trasferimenti di inventario store-to-store, imposta questa opzione su `Yes`.</br></br>Se non è possibile supportare l&#39;opzione di consegna al negozio o non si desidera offrirla, impostare su `No`. Se disabilitata, gli articoli nel catalogo con inventario zero per un negozio di merchant o quelli che si trovano al di sotto di tale posizione [!DNL Out of Stock Threshold], non sono offerte con opzioni di ritiro in negozio.</br></br>Si tratta di un’impostazione globale che può essere regolata in base alla posizione del commerciante. | Globale | No |
+<table>
+<thead>
+<tr>
+<td><strong>Campo</strong></td>
+<td><strong>Descrizione</strong></td>
+<td><strong>Ambito</strong></td>
+<td><strong>Obbligatorio</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[!UICONTROL Enable Ship To Store]</strong></td>
+<td>L'impostazione "nave-to-store" si basa sulle capacità esistenti di spedizione-to-store. Se utilizzi Inventory management o se puoi accettare e soddisfare ordini in posizioni commerciali senza inventario tramite trasferimenti di inventario da negozio a negozio, imposta questa opzione su "Sì".<br></br>Se non è possibile supportare l'opzione di consegna al negozio o non si desidera offrirla, impostare su "No". Se disabilitata, gli articoli nel catalogo con inventario zero per un negozio di merchant o quelli che si trovano al di sotto di tale posizione [!DNL Out of Stock Threshold], non sono offerte con opzioni di ritiro in negozio.<br></br>Si tratta di un’impostazione globale che può essere regolata in base alla posizione del commerciante.</td>
+<td>Globale</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
 
 ### Negozio a partire da spedizione
 
-| **Campo** | **Descrizione** | **Ambito** | **Obbligatorio** |
-|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **[!UICONTROL Enable Ship From Store]** | Abilita o disabilita l’opzione Consegna iniziale negli archivi commerciali. Quando abilitata, le posizioni del tuo negozio di esercenti sono considerate in aggregato con altre sorgenti assegnate nel stock associato al tuo sito web.</br></br>Nei servizi Inventory management standard, la [!DNL Ship from Store] l’opzione è intrinseca e non può essere disabilitata. Con la soluzione Store Fulfillment hai la possibilità di attivarla o disattivarla.</br></br>Questa è un&#39;impostazione globale. È inoltre possibile regolare questa impostazione per posizione e prodotto mercante. | Globale | No |
+<table>
+<thead>
+<tr>
+<td><strong>Campo</strong></td>
+<td><strong>Descrizione</strong></td>
+<td><strong>Ambito</strong></td>
+<td><strong>Obbligatorio</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[!UICONTROL Enable Ship From Store]</strong></td>
+<td>Abilita o disabilita l’opzione Consegna iniziale negli archivi commerciali. Quando abilitata, le posizioni del tuo negozio di esercenti sono considerate in aggregato con altre sorgenti assegnate nel stock associato al tuo sito web.<br></br>Nei servizi Inventory management standard, la [!DNL Ship from Store] l’opzione è intrinseca e non può essere disabilitata. Con la soluzione Store Fulfillment, è possibile attivarla o disattivarla.<br></br>Questa è un'impostazione globale. È inoltre possibile regolare questa impostazione per posizione e prodotto mercante.</td>
+<td>Globale</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
 
 
 ## Gestisci account e autorizzazioni per l&#39;utilizzo dell&#39;app dell&#39;archivio
@@ -106,26 +292,86 @@ Configura le impostazioni per l’account utente dell’app di evasione archivio
 
 ### App Security
 
-| **Campo** | **Descrizione** | **Ambito** | **Obbligatorio** |
-|------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **[!UICONTROL User Session Lifetime]** | L&#39;intervallo di tempo, in secondi, in cui una sessione utente associata allo store rimane attiva prima del logout automatico. I valori validi sono compresi tra 60 e 31536000. | Globale | No |
-| **[!UICONTROL Maximum Login Failures to Lockout Account]** | Specifica il numero di tentativi di accesso non riusciti consentiti prima che un associato dello store venga bloccato dal proprio account.</br></br>Per disattivare il blocco degli account, imposta il valore su 0. | Globale | No |
-| **[!UICONTROL Lockout Time (minutes)]** | Numero di minuti per bloccare un account dopo un errore di accesso. | Globale | No |
-| **[!UICONTROL Force Password Change]** | Determina se è richiesta una modifica della password utente.</br></br>`Yes`: Richiedi all&#39;utente di cambiare la password dopo la configurazione dell&#39;account.</br>`No`: Consiglia all&#39;utente di cambiare la password dopo la configurazione dell&#39;account. | Globale | No |
-| **Durata della password** | Il numero di giorni in cui una password rimane valida prima della modifica della password richiesta. Lascia vuoto per disabilitare questa opzione. | Globale | No |
+<table>
+<thead>
+<tr>
+<td><strong>Campo</strong></td>
+<td><strong>Descrizione</strong></td>
+<td><strong>Ambito</strong></td>
+<td><strong>Obbligatorio</strong></td>
+</tr>
+ </thead>
+ <tbody>
+<tr>
+<td><strong>[!UICONTROL User Session Lifetime]</strong></td>
+<td>L'intervallo di tempo, in secondi, in cui una sessione utente associata allo store rimane attiva prima del logout automatico. I valori validi sono compresi tra 60 e 31536000.</td>
+<td>Globale</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Maximum Login Failures to Lockout Account]</strong></td>
+<td>Specifica il numero di tentativi di accesso non riusciti consentiti prima che un associato dello store venga bloccato dal proprio account.<br></br>Per disattivare il blocco degli account, imposta il valore su 0.</td>
+<td>Globale</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Lockout Time (minutes)]</strong></td>
+<td>Numero di minuti per bloccare un account dopo un errore di accesso.</td>
+<td>Globale</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Force Password Change]</strong></td>
+<td>Determina se è richiesta una modifica della password utente.<br></br>"Sì": Richiedi all'utente di cambiare la password dopo la configurazione dell'account.`No`: Consiglia all'utente di cambiare la password dopo la configurazione dell'account.</td>
+<td>Globale</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Password Lifetime]</strong></td>
+<td>Il numero di giorni in cui una password rimane valida prima della modifica della password richiesta. Lascia vuoto per disabilitare questa opzione.</td>
+<td>Globale</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
 
 ### Autenticazione a due fattori
 
-| **Campo** | **Descrizione** | **Ambito** | **Obbligatorio** |
-|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **APP utente 2FA** | Abilita o disabilita l’autenticazione a due fattori per gli associati allo store. Quando è abilitata, all&#39;associazione store viene richiesto di fornire una password una tantum generata da un provider di autenticazione. | Globale | No |
-| **Criterio APP 2FA** | Imposta i criteri di imposizione per l’autenticazione a due fattori.</br></br>**[!UICONTROL Optional]**: L&#39;associazione allo store può ignorare l&#39;autenticazione a due fattori se non è impostato alcun provider.</br></br>**[!UICONTROL Mandatory]**: L&#39;associazione allo store è necessaria per completare l&#39;autenticazione a due fattori. | Globale | No |
-| **Provider 2FA** | Selezionare uno o più servizi del provider di autenticazione per offrire ai collaboratori dello store. Per impostare l’autenticazione e l’autenticazione a due fattori, gli associati allo store devono installare l’app di autenticazione da uno dei provider disponibili installati sui propri dispositivi mobili. | Globale | No |
+<table>
+<thead>
+<tr>
+<td><strong>Campo</strong></td>
+<td><strong>Descrizione</strong></td>
+<td><strong>Ambito</strong></td>
+<td><strong>Obbligatorio</strong></td>
+</tr>
+ </thead>
+ <tbody>
+<tr>
+<td><strong>[!UICONTROL APP User 2FA]</strong></td>
+<td>Abilita o disabilita l’autenticazione a due fattori per gli associati allo store. Quando è abilitata, all'associazione store viene richiesto di fornire una password una tantum generata da un provider di autenticazione.</td>
+<td>Globale</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL APP 2FA Policy]</strong></td>
+<td>Imposta i criteri di imposizione per l’autenticazione a due fattori.<br></br><strong>[!UICONTROL Optional]</strong>: L'associazione allo store può ignorare l'autenticazione a due fattori se non è impostato alcun provider.<br></br><strong>[!UICONTROL Mandatory]</strong>: L'associazione allo store è necessaria per completare l'autenticazione a due fattori.</td>
+<td>Globale</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL 2FA Providers]</strong></td>
+<td>Selezionare uno o più servizi del provider di autenticazione per offrire ai collaboratori dello store. Per impostare l’autenticazione e l’autenticazione a due fattori, gli associati allo store devono installare l’app di autenticazione da uno dei provider disponibili installati sui propri dispositivi mobili.</td>
+<td>Globale</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
 
-### Metodi di Consegna
+## Metodi di Consegna
 
 L&#39;evasione dello store funziona estendendo il Adobe Commerce nativo [!DNL In-Store Delivery] funzionalità.
-Dopo aver installato l’estensione, sono disponibili ulteriori opzioni di configurazione amministratore per i metodi di consegna in-store. Configura queste opzioni aggiuntive dall’amministratore selezionando **[!UICONTROL Stores > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
+Dopo aver installato l’estensione, sono disponibili ulteriori opzioni di configurazione amministratore per i metodi di consegna in-store. Configura queste opzioni aggiuntive dall’amministratore selezionando <strong>[!UICONTROL Stores > Configuration > Sales > Delivery Methods > In-Store Pickup]</strong>.
 
 Nelle impostazioni Store Fulfillment (Esegui evasione archivio), puoi configurare i seguenti metodi di consegna per gli ordini In-Store Pickup.
 
@@ -133,20 +379,41 @@ Nelle impostazioni Store Fulfillment (Esegui evasione archivio), puoi configurar
 
 - **Curbside pick**- Opzioni di offerta per i clienti per parcheggiare in una posizione del negozio e far loro consegnare il loro ordine da un associato del negozio.
 
-#### Configurazione dei metodi di consegna
+>[!NOTE]
+>
+>Per ulteriori informazioni sulla configurazione delle opzioni di consegna in-store, vedi [Consegna in-store](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) nella Guida utente di Adobe Commerce.
 
-<!---
-In-store pickup, says its global setting, but scope is Website.  How do you configure the in-store pickup options at the retail level?
---->
 
-| **Campo** | **Descrizione** | **Ambito** | **Obbligatorio** |
-|-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **[!UICONTROL Enable In-Store Pickup]** | Attiva o disattiva l&#39;opzione di ritiro in negozio disponibile durante il pagamento per i clienti che scelgono il ritiro dal negozio. Quando il ritiro in negozio è disattivato, l’opzione non viene visualizzata.</br></br>Questa impostazione globale si applica a tutte le posizioni dei punti vendita al dettaglio. Quando abilitato, puoi disattivarlo in modo selettivo nella posizione del negozio. | Sito Web | No |
-| **Abilita ritocco urbano** | Attiva o disattiva l&#39;opzione di prelievo sul lato curvo durante il processo di pagamento per i clienti che scelgono il ritiro dal negozio.</br></br>Questa impostazione globale si applica a tutte le posizioni dei punti vendita al dettaglio. Quando abilitato, puoi disattivarlo in modo selettivo nella posizione del negozio. | Sito Web | No |
+### Configurazione dei metodi di consegna
 
-Per informazioni dettagliate su come personalizzare i metodi di consegna nelle posizioni dei punti vendita al dettaglio selezionate, consulta **Configurazione punto vendita al dettaglio**.
+Con il metodo di consegna in-store, il cliente può selezionare un&#39;origine da utilizzare come posizione di ritiro durante il pagamento.
 
-#### Configurazione del titolo del metodo di consegna
+<table>
+<thead>
+<tr>
+<td><strong>Campo</strong></td>
+<td><strong>Descrizione</strong></td>
+<td><strong>Ambito</strong></td>
+<td><strong>Obbligatorio</strong></td>
+</tr>
+ </thead>
+ <tbody>
+<tr>
+<td><strong>[!UICONTROL Enable In-Store Pickup]</strong></td>
+<td>Attiva o disattiva l'opzione di ritiro in negozio disponibile durante il pagamento per i clienti che scelgono il ritiro dal negozio. Quando il ritiro in negozio è disattivato, l’opzione non viene visualizzata.<br></br>Questa impostazione globale si applica a tutte le posizioni dei punti vendita al dettaglio. Quando abilitato, puoi disattivarlo in modo selettivo nella posizione del negozio.</td>
+<td>Sito Web</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Enable Curbside Pickup]</strong></td>
+<td>Attiva o disattiva l'opzione di prelievo sul lato curvo durante il processo di pagamento per i clienti che scelgono il ritiro dal negozio.<br></br>Questa impostazione globale si applica a tutte le posizioni dei punti vendita al dettaglio. Quando abilitato, puoi disattivarlo in modo selettivo nella posizione del negozio.</td>
+<td>Sito Web</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+
+### Configurazione del titolo del metodo di consegna
 
 <table>
 <thead>
@@ -159,7 +426,7 @@ Per informazioni dettagliate su come personalizzare i metodi di consegna nelle p
 </thead>
 <tbody><tr>
 <td><strong>Titolo della consegna casa</strong></td>
-<td>Specifica il titolo da visualizzare per l'opzione Consegna iniziale nelle aree di prodotto, carrello e pagamento. La consegna a domicilio si riferisce alle capacità di spedizione standard di Adobe Commerce, da un magazzino, da un vettore, direttamente all'indirizzo di spedizione fornito dal cliente.</br></br>Questa etichetta non influisce sul vettore di spedizione selezionato o sulle relative etichette del metodo di spedizione disponibili.</td>
+<td>Specifica il titolo da visualizzare per l'opzione Consegna iniziale nelle aree di prodotto, carrello e pagamento. La consegna a domicilio si riferisce alle capacità di spedizione standard di Adobe Commerce, da un magazzino, da un vettore o direttamente all'indirizzo di spedizione fornito dal cliente.</br></br>Questa etichetta non influisce sul vettore di spedizione selezionato o sulle relative etichette del metodo di spedizione disponibili.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
@@ -226,7 +493,7 @@ Per informazioni dettagliate su come personalizzare i metodi di consegna nelle p
 </tr>
 </tbody></table>
 
-#### Configurazione titoli disponibilità stock
+### Configurazione titoli disponibilità stock
 
 <table>
 <thead>
@@ -238,8 +505,8 @@ Per informazioni dettagliate su come personalizzare i metodi di consegna nelle p
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>Disponibile</strong></td>
-<td>Quando un cliente utilizza l'indicatore di posizione del negozio al dettaglio, viene visualizzata la disponibilità di inventario per l'articolo o gli articoli correnti per ogni posizione.</br></br>Puoi personalizzare l’etichetta di stato "in-stock" qui.</td>
+<td><strong>n-Stock</strong></td>
+<td>Quando un cliente utilizza la collocazione del negozio al dettaglio, la disponibilità di inventario per non più articoli correnti viene visualizzata per ogni posizione.</br></br>Puoi personalizzare l’etichetta di stato "in-stock" qui.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>

@@ -4,9 +4,9 @@ description: Imposta la [!DNL Store Assist] app per gestire i flussi di lavoro e
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ L&#39;app Store Assist richiede due tipi di configurazione:
 
    - **Cancellazione dal negozio**- Specifica se gli ordini possono essere annullati dall&#39;archivio e quali ruoli dispongono di autorizzazioni di annullamento
 
-   - **Finestra di pulizia ordine**- Specifica per quanto tempo è trascorso il periodo di ritiro pianificato che un ordine raccolto rimane in fase di staging prima di essere ribloccato, ad esempio tre giorni.
+   - **Finestra di pulizia ordine**- Specificare la durata del [Lead time di recupero stimato](enable-general.md#delivery-method-title-configuration) che un ordine raccolto rimanga in fase di staging prima di essere ripopolato, ad esempio tre giorni. Il valore predefinito è 7 giorni. Se questa configurazione è attivata, l&#39;ordine viene annullato automaticamente alla scadenza di questo periodo di tempo. Gli articoli vengono ripopolati e il commerciante riceve un&#39;e-mail di cancellazione.
 
    - Personalizza tutte le istruzioni dell’app (scelta, staging, consegna).
 

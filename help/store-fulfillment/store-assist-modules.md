@@ -1,15 +1,15 @@
 ---
-title: '"Flussi di lavoro di evasione di assistenza allo store"'
-description: '"Scopri i moduli Pick, Stage, Hand-Off e Orders disponibili nell’app Store Assist. Questi moduli consentono il flusso di lavoro di evasione dell''archivio end-to-end per gli ordini BOPIS. Gli associati al negozio utilizzano questi moduli per gestire e consegnare gli ordini di ritiro dal negozio ai clienti."'
+title: Flussi di lavoro di evasione degli aiuti per store
+description: Scopri i moduli Pick, Stage, Hand-Off e Orders disponibili nell’app Store Assist. Questi moduli consentono il flusso di lavoro di evasione dell'archivio end-to-end per gli ordini BOPIS. Gli associati al negozio utilizzano questi moduli per gestire e consegnare gli ordini di ritiro dal negozio ai clienti.
 role: User
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: a8414f19-5489-41e9-84d6-39d2e61c2b08
+source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---
-
 
 # Flussi di lavoro di evasione degli aiuti per store
 
@@ -17,7 +17,7 @@ L&#39;app Store Assist fornisce agli Store Associates quattro moduli per gestire
 
 - **[Selezione](#pick-module)**- Ottieni la massima visibilità su tutti gli articoli ordinati e sugli strumenti per assicurarti che gli articoli giusti e le quantità corrette siano prelevati. I collaboratori dello store possono scegliere uno o più ordini contemporaneamente per una maggiore efficienza.
 
-- **[Stage](#stage-module)**- Inserire una posizione in cui vengono ordinati gli ordini mentre i clienti stanno viaggiando verso il negozio in modo che i Store Associates possano trovarli facilmente per la consegna degli ordini
+- **[Stage](#stage-module)**- Inserire una posizione in cui vengono ordinati gli ordini mentre i clienti stanno viaggiando verso il negozio in modo che i Store Associates possano trovarli facilmente per la consegna degli ordini.
 
 - **[Mano](#hand-off-module)**- Ottieni notifiche in tempo reale dopo l&#39;arrivo dei clienti al negozio per ridurre al minimo i tempi di attesa e gli ordini di consegna
 
@@ -58,10 +58,12 @@ Una volta selezionato un ordine pronto per la consegna da parte del cliente. Tut
 
 Il cliente potrebbe aver scelto una persona alternativa per ritirare l&#39;ordine. In questo caso, si vedono il nome e le informazioni di contatto per la persona che dovrebbe scegliere l&#39;ordine.
 
-Dopo aver consegnato l&#39;ordine al cliente, l&#39;associazione Store deve accettare l&#39;ordine o rifiutare alcuni articoli. Una volta che il cliente è soddisfatto, deve firmare l’ordine sul dispositivo del tuo associato, se una firma della tua azienda richiede una firma.
+Dopo aver consegnato l&#39;ordine al cliente, l&#39;associazione Store deve accettare l&#39;ordine o rifiutare alcuni articoli. Una volta che il cliente è soddisfatto, deve firmare l&#39;ordine sul dispositivo del tuo associato, se una firma della tua azienda richiede una firma.
 
 Se i clienti arrivano senza effettuare il check-in, i tuoi associati possono archiviarli manualmente.
 
 ## Modulo Ordini
 
 Il modulo Ordini visualizza tutti gli ordini esistenti e il relativo stato. Quando un cliente chiama per controllare il proprio ordine, Store Associates può trovare rapidamente le informazioni cercando il numero o la ricerca dal modulo Ordini.
+
+Gli associati al negozio possono anche annullare gli ordini dalla pagina Ordini nell’app Store Assist.
