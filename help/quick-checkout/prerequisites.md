@@ -1,17 +1,17 @@
 ---
-title: '"[!DNL Quick Checkout] prerequisiti"'
-description: '"Verifica che il tuo sistema soddisfi i requisiti necessari per utilizzare il [!DNL Quick Checkout] per l''estensione Adobe Commerce."'
+title: "[!DNL Quick Checkout] prerequisiti"
+description: "Verifica che il tuo sistema soddisfi i requisiti necessari per utilizzare il [!DNL Quick Checkout] per l'estensione Adobe Commerce."
 exl-id: fa61aa73-a2b6-4c69-ab42-cede74c15caa
-source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
+source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
 workflow-type: tm+mt
-source-wordcount: '113'
+source-wordcount: '110'
 ht-degree: 1%
 
 ---
 
 # [!DNL Quick Checkout] prerequisiti
 
-La [!DNL Quick Checkout] è compatibile con le versioni Magenti Open Source e Adobe Commerce `>= 2.4.1-p1`.
+La [!DNL Quick Checkout] è compatibile con [!DNL Magento Open Source] e versioni Adobe Commerce `>= 2.4.1-p1`.
 
 Fai riferimento a [onboarding](../quick-checkout/onboarding.md) per ulteriori informazioni.
 

@@ -4,9 +4,9 @@ description: Configura i modelli e-mail transazionali per la comunicazione con i
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1200'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Configura i modelli e-mail di vendita dall’amministratore: **[!UICONTROL Store
 </tr>
 <tr>
 <td><strong>Invia ordine pronto per il metodo di copia dell'e-mail di recupero</strong></td>
-<td>Il metodo dell'email "copia di carbonio" invia all'uso.</td>
+<td>Il metodo di copia dell’e-mail, copia in carbonio, da utilizzare.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
@@ -136,7 +136,7 @@ Configura i modelli e-mail di vendita dall’amministratore: **[!UICONTROL Store
 </tr>
 <tr>
 <td><strong>Invia È Stato Ritirato Metodo Di Copia E-Mail</strong></td>
-<td>Il metodo dell'email "copia di carbonio" inviare per utilizzare.</td>
+<td>Il metodo di copia dell’e-mail, copia in carbonio, da utilizzare.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
@@ -185,7 +185,7 @@ Configura i modelli e-mail di vendita dall’amministratore: **[!UICONTROL Store
 </tr>
 <tr>
 <td><strong>Metodo di copia ritardata dell'ordine di invio</strong></td>
-<td>Il metodo dell'email "copia di carbonio" inviare per utilizzare.</td>
+<td>Il metodo di copia dell’e-mail, copia in carbonio, da utilizzare.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
@@ -236,7 +236,7 @@ Configura i modelli e-mail di vendita dall’amministratore: **[!UICONTROL Store
 </tr>
 <tr>
 <td><strong>Metodo di copia annullato dell'ordine di invio</strong></td>
-<td>Il metodo dell'email "copia di carbonio" inviare per utilizzare.</td>
+<td>Il metodo di copia dell’e-mail, copia in carbonio, da utilizzare.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
@@ -292,7 +292,7 @@ Configura i modelli e-mail di vendita dall’amministratore: **[!UICONTROL Store
 </tr>
 <tr>
 <td><strong>Metodo di copia parzialmente annullato dell'ordine di invio</strong></td>
-<td>Il metodo dell'email "copia di carbonio" inviare per utilizzare.</td>
+<td>Il metodo di copia dell’e-mail, copia in carbonio, da utilizzare.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>

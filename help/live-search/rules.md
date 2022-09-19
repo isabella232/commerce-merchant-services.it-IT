@@ -1,10 +1,10 @@
 ---
-title: '"Regole"'
-description: '"[!DNL Live Search] le regole combinano logica e azioni per modellare l’esperienza di acquisto."'
+title: "Regole"
+description: "[!DNL Live Search] le regole combinano logica e azioni per modellare l’esperienza di acquisto."
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: ed245e440f6db59d8eba66afeddb840420da0cf7
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '102'
 ht-degree: 0%
 
 ---
@@ -19,4 +19,4 @@ Ogni regola ha tre componenti principali:
 * Eventi : le azioni che hanno luogo quando le condizioni sono soddisfatte.
 * Dettagli: nome della regola, intervallo di tempo facoltativo e descrizione.
 
-È possibile combinare più condizioni e azioni e pianificare una regola per essere attiva per un periodo di tempo specifico.
+È possibile combinare più condizioni e azioni e pianificare una regola per essere attiva per un periodo.

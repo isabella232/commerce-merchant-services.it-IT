@@ -1,10 +1,10 @@
 ---
-title: '"Gestisci facet"'
-description: '"Scopri come gestire gli elementi esistenti [!DNL Live Search] facet."'
+title: "Gestisci facet"
+description: "Scopri come gestire gli elementi esistenti [!DNL Live Search] facet."
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Fai riferimento a [Impostazioni](settings.md) per configurare gli intervalli e i
 
 1. In **Valore massimo** imposta il numero massimo (da 0 a 10) dei valori del filtro facet da visualizzare nella vetrina.
 1. Al termine, fai clic su **Salva**.
-Le modifiche verranno visualizzate nella vetrina solo dopo la loro pubblicazione.
+Le modifiche verranno visualizzate nella vetrina solo dopo la pubblicazione.
 
 ## Facet pin/sblocca
 
@@ -81,4 +81,4 @@ Il facet viene rimosso dalla vetrina dopo la pubblicazione delle modifiche.
 ## Pubblicare le modifiche
 
 1. Per aggiornare la vetrina con le modifiche, fai clic su **Pubblicare le modifiche**.
-1. Attendi circa quindici minuti perché gli aggiornamenti vengano visualizzati nel tuo negozio.
+1. Attendi circa 15 minuti perché gli aggiornamenti vengano visualizzati nel tuo negozio.

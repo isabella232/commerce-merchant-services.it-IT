@@ -1,17 +1,23 @@
 ---
-title: '"[!DNL Live Search] Indicizzazione"'
-description: '"Scopri come [!DNL Live Search] indicizza le proprietà degli attributi del prodotto."'
+title: "[!DNL Live Search] Indicizzazione"
+description: "Scopri come [!DNL Live Search] indicizza le proprietà degli attributi del prodotto."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 2835209ad881db388894c5b1da213312436d3550
+source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
 
 # Indicizzazione
 
-Le proprietà dell’attributo di prodotto (metadati) determinano il modo in cui un attributo può essere utilizzato nel catalogo, il suo aspetto e il suo comportamento nell’archivio e i dati inclusi nelle operazioni di trasferimento dei dati. L&#39;ambito dei metadati degli attributi è `website/store/store view`.
+Le proprietà dell’attributo del prodotto (metadati) determinano:
+
+* Utilizzo di un attributo nel catalogo
+* Il suo aspetto e il suo comportamento nel negozio
+* I dati inclusi nelle operazioni di trasferimento dei dati
+
+L&#39;ambito dei metadati degli attributi è `website/store/store view`.
 
 La [!DNL Live Search] L’API consente a un client di ordinare in base a qualsiasi attributo di prodotto con la [vetrina, proprietà](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` impostato su `Yes` nell’amministratore di Adobe Commerce. Quando abilitato, `Search Weight` e `Visible in Advanced Search` può essere impostato per l&#39;attributo .
 
@@ -61,7 +67,7 @@ Flusso di lavoro di aggiornamento streaming:
 
 1. I prodotti aggiornati vengono sincronizzati dall’istanza di Adobe Commerce al servizio catalogo.
 1. Il servizio di indicizzazione cerca continuamente gli aggiornamenti dei prodotti dal servizio catalogo. I prodotti aggiornati vengono indicizzati quando arrivano nel servizio catalogo.
-1. Possono essere necessari fino a quindici minuti perché un aggiornamento del prodotto diventi disponibile in [!DNL Live Search].
+1. L’aggiornamento di un prodotto può richiedere fino a 15 minuti per essere disponibile in [!DNL Live Search].
 
 ## Ricerca client
 

@@ -2,9 +2,9 @@
 title: Installa [!DNL Payment Services]
 description: Installa l'estensione Payments Services.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
-source-git-commit: 43599d041899251f7716e215284b6eff9312943d
+source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Devi prima scaricare l&#39;estensione da [Commerce Marketplace](https://experien
 
 ## Installare l’estensione
 
-È possibile installare [!DNL Payment Services] estensione per entrambi [!DNL Adobe Commerce] sull’infrastruttura cloud e le istanze locali, collegate all’ID Magento ([mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions)) fornita nel processo di registrazione, con le chiavi del Compositore. [!DNL Magento] I clienti open source utilizzano le istruzioni on-premise.
+È possibile installare [!DNL Payment Services] estensione per entrambi [!DNL Adobe Commerce] su infrastrutture cloud e istanze locali, collegate al tuo account Commerce [mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) fornito nel processo di registrazione. [!DNL Magento Open Source] i clienti utilizzano le istruzioni on-premise.
 
 Il Compositore utilizza queste chiavi durante l&#39;installazione iniziale di [!DNL Adobe Commerce]o in situazioni in cui le chiavi del Compositore non sono state precedentemente salvate nel `auth.json` file.
 
@@ -57,7 +57,7 @@ Questo metodo viene utilizzato per installare [!DNL Payment Services] estensione
 
 ### Configurazione on-premise e altre configurazioni
 
-Questo metodo viene utilizzato per installare [!DNL Payment Services] estensione per un&#39;istanza locale e [!DNL Magento] Clienti Open Source.
+Questo metodo viene utilizzato per installare [!DNL Payment Services] estensione per un&#39;istanza locale e [!DNL Magento Open Source] clienti.
 
 1. Per ottenere l&#39;estensione, esegui i seguenti comandi:
 
@@ -114,7 +114,7 @@ Se vedi il seguente errore che indica che hai le chiavi Composer non corrette:
 Could not find a matching version of package magento/payment-services. Check the package spelling, your version constraint and that the package is available in a stability which matches your minimum-stability (stable).
 ```
 
-Verifica che le chiavi del Compositore siano collegate all’ID Magento utilizzato durante [!DNL Payment Services] registrazione.
+Verifica che le chiavi del Compositore siano collegate al `MageID` utilizzato durante [!DNL Payment Services] registrazione.
 
 Per vedere quali chiavi del Compositore sono configurate:
 
@@ -130,7 +130,7 @@ Per vedere quali chiavi del Compositore sono configurate:
    cat /path/to/auth.json
    ```
 
-1. Vedi [quali chiavi sono associate al tuo ID Magento](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
+1. Vedi [quali chiavi sono associate al tuo account Commerce `MageID`](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
 
 ### Memoria insufficiente per PHP
 

@@ -1,10 +1,10 @@
 ---
-title: '"Installazione [!DNL Live Search]"'
-description: '"Scopri come installare, aggiornare e disinstallare [!DNL Live Search] da Adobe Commerce."'
+title: "Installazione [!DNL Live Search]"
+description: "Scopri come installare, aggiornare e disinstallare [!DNL Live Search] da Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1266'
 ht-degree: 0%
 
 ---
@@ -179,7 +179,7 @@ Per ulteriore assistenza, consulta [[!DNL Live Search] catalogo non sincronizzat
 
 ### Aggiornamenti futuri dei prodotti
 
-Dopo la sincronizzazione iniziale, possono essere necessari fino a quindici minuti perché gli aggiornamenti incrementali dei prodotti siano disponibili per la ricerca in vetrina. Per ulteriori informazioni, vai a [Indicizzazione - Aggiornamenti dei prodotti in streaming](indexing.md).
+Dopo la sincronizzazione iniziale, possono essere necessari fino a 15 minuti perché gli aggiornamenti incrementali dei prodotti siano disponibili per la ricerca in vetrina. Per ulteriori informazioni, vai a [Indicizzazione - Aggiornamenti dei prodotti in streaming](indexing.md).
 
 ## Verificare la connessione {#test-connection}
 

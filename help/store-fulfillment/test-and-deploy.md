@@ -4,9 +4,9 @@ description: Piano di test per verificare la funzionalità Store Fulfillment. I 
 role: User, Admin
 level: Intermediate
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
 workflow-type: tm+mt
-source-wordcount: '2652'
+source-wordcount: '2657'
 ht-degree: 0%
 
 ---
@@ -96,12 +96,12 @@ Questa sezione del piano di test riguarda l’inventario e la sincronizzazione d
 <tr>
 <td><strong>Nuovo ordine push, sincronizzazione API—Ordine cliente</strong></td>
 <td>Il cliente invia un ordine di ritiro dal negozio.</td>
-<td><ul><li>Nella vista Ordine di amministrazione, un <strong>Utente amministratore Adobe Commerce</strong> visualizza lo stato di Order Sync aggiornato in <code>Sent</code></li><li>Il registro dei dettagli dell’ordine include il messaggio <code>Order was sent to BOPIS solution for sync, it’s not yet acknowledged yet.</code></li></ul></td>
+<td><ul><li>Nella vista Ordine di amministrazione, un <strong>Utente amministratore Adobe Commerce</strong> visualizza lo stato di Order Sync aggiornato in <code>Sent</code></li><li>Il registro dei dettagli dell’ordine include il messaggio <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>Nuovo ordine push, sincronizzazione API: l’amministratore invia l’ordine</strong></td>
 <td>Un Adobe Commerce <strong>Amministratore</strong> invia un ordine di ritiro.</td>
-<td><ul><li>Nella vista Ordine di amministrazione, lo stato Sincronizzazione ordine viene aggiornato a <code>Sent</code>.</li><li>Il registro dei dettagli dell’ordine include il messaggio <code>Order was sent to BOPIS solution for sync, it’s not yet acknowledged yet.</code></li></ul></td>
+<td><ul><li>Nella vista Ordine di amministrazione, lo stato Sincronizzazione ordine viene aggiornato a <code>Sent</code>.</li><li>Il registro dei dettagli dell’ordine include il messaggio <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>Nuovo ordine push, coda eccezioni<strong></td>
@@ -161,7 +161,7 @@ Questa sezione del piano di test include scenari per testare il flusso di lavoro
 <li>Ricezione del messaggio e-mail di rimborso ordine: <code>$x amount was refunded</code></li>
 <li>Lo stato dell'ordine è <code>Processing</code>.</li>
 <li>Nota di credito creata in Adobe Commerce (Attendere che il cron funzioni).</li>
-<li>Se alcuni elementi non sono stati selezionati, verifica che la [!UICONTROL Ready for Pickup] e-mail con la nilpick o la sezione rimborso viene visualizzata. <code>DISPLAY COMMENT HISTORY</code> show <code>Order is ready for pickup, but some items not available.</code>.</li>
+<li>Se alcuni elementi non sono stati selezionati, verifica che la [!UICONTROL Ready for Pickup] Viene visualizzata l'e-mail con la sezione di prelievo o rimborso nil. <code>DISPLAY COMMENT HISTORY</code> show <code>Order is ready for pickup, but some items not available.</code>.</li>
 <li><code>CUSTOMER NOTIFIED</code> flag è <code>true</code>.</li>
 </ul>
 </td>
@@ -566,25 +566,25 @@ Questa sezione del piano di test tratta gli scenari per testare i flussi di lavo
 <tr>
 <td>
 <strong>Selezione ordine singolo: percorso felice, ritiro curbside</strong></td>
-<td>Scegliere articoli singoli e multipli. Nessun nilpicks, e pick-up a bordo del marciapiede (con staging).
+<td>Scegliere articoli singoli e multipli. Nessun picchetto nil, e pick-up curbside (con staging).
 </td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Selezione multi ordine: percorso felice, ritiro curbside</strong></td>
-<td>Articoli singoli e multipli. Nessun nilpicks, e pick-up a bordo nudo (con staging)</td>
+<td>Articoli singoli e multipli. Nessun picchetto nil, e pick-up curbside (con staging)</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Selezione ordine singolo: percorso felice in negozio pick-up</strong></td>
-<td>Articoli singoli e multipli. Nessun nilpicks, e l'installazione di pick-up (con staging)</td>
+<td>Articoli singoli e multipli. Nessun picks nil, e il ritiro di istore (con staging)</td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Selezione multi ordine: percorso felice, ritiro in negozio</strong></td>
-<td>Scegliere articoli singoli e multipli. Nessun nilpicks, e pick-up a bordo del marciapiede (con staging).</td>
+<td>Scegliere articoli singoli e multipli. Nessun picchetto nil, e pick-up curbside (con staging).</td>
 <td></td>
 </tr>
 <tr>

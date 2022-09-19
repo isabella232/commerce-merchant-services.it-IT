@@ -1,10 +1,10 @@
 ---
-title: '"Aggiungi regole"'
-description: '"Scopri come creare [!DNL Live Search] regole."'
+title: "Aggiungi regole"
+description: "Scopri come creare [!DNL Live Search] regole."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: ed245e440f6db59d8eba66afeddb840420da0cf7
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1276'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Per generare una regola, il primo passaggio consiste nell’utilizzare l’edito
 
 ## Passaggio 2: Descrivere le condizioni
 
-Le condizioni sono i requisiti per attivare un evento. Una regola può avere fino a dieci condizioni e venticinque eventi.
+Le condizioni sono i requisiti per attivare un evento. Una regola può avere fino a dieci condizioni e 25 eventi.
 
 ![Regola : crea la regola](assets/rules-add-workspace.png)
 
@@ -33,9 +33,9 @@ Le condizioni sono i requisiti per attivare un evento. Una regola può avere fin
 1. Sotto *Creare la regola*, seleziona **Condizione** da soddisfare e seguire le istruzioni per completare la dichiarazione.
 
    * Ricerca contiene - Immettere la stringa di testo che deve essere presente nella query dell&#39;acquirente. L’impostazione Match (Corrispondenza) determina il grado in cui la query dell’acquirente corrisponde al catalogo. Opzioni:<br /> Any - Qualsiasi parte del testo della query dell&#39;acquirente può corrispondere alla condizione.<br />All - Tutte le query dell&#39;acquirente devono corrispondere alla condizione.
-   * La query di ricerca è - Inserisci una stringa di testo che corrisponda esattamente alla query dell’acquirente. Ad esempio: &quot;pantaloni da yoga&quot;. Regole con `Search query is` e Corrispondenza `All` può avere una sola condizione.
-   * La query di ricerca inizia con: immetti un carattere o una stringa di testo che deve trovarsi all’inizio della query dell’acquirente.
-   * La query di ricerca termina con: immetti un carattere o una stringa di testo che deve trovarsi alla fine della query dell’acquirente.
+   * La query di ricerca è - Immettere una stringa di testo che corrisponda esattamente alla query dell&#39;acquirente. Ad esempio: &quot;pantaloni da yoga&quot;. Regole con `Search query is` e Corrispondenza `All` può avere una sola condizione.
+   * La query di ricerca inizia con - Inserisci un carattere o una stringa di testo che deve essere all&#39;inizio della query dell&#39;acquirente.
+   * La query di ricerca termina con - Immettere un carattere o una stringa di testo che deve trovarsi alla fine della query dell&#39;acquirente.
 
    I risultati vengono visualizzati immediatamente nel *Verifica la regola* e sono numerati per priorità. È possibile utilizzare *Risultati per riga* cursore in alto a destra per modificare il numero di prodotti in ogni riga.
 
@@ -52,7 +52,7 @@ Inizialmente, il riquadro di test esegue il rendering della query dalla casella 
 ### Condizioni multiple
 
 1. Per creare una regola con più condizioni, fai clic su **Aggiungi condizione**.
-Una regola può avere fino a 10 condizioni. L’operatore logico che unisce due condizioni si basa sulla *Corrispondenza* impostazione. Per impostazione predefinita, *Corrispondenza* è `All` e l&#39;operatore logico è `AND`.
+Una regola può avere fino a dieci condizioni. L’operatore logico che unisce due condizioni si basa sulla *Corrispondenza* impostazione. Per impostazione predefinita, *Corrispondenza* è `All` e l&#39;operatore logico è `AND`.
 
    ![Regole - La query di ricerca contiene](assets/rules-search-query-contains-and.png)
 
@@ -67,7 +67,7 @@ Una regola può avere fino a 10 condizioni. L’operatore logico che unisce due 
 
    La *Corrispondenza* determina l&#39;operatore logico utilizzato per unire più condizioni. Modifica della *Corrispondenza* l’impostazione modifica tutti gli operatori logici nella regola. Non è possibile combinare `AND` e `OR` nella stessa regola.
 
-   In questo esempio, invece di cercare &quot;pantaloni di yoga&quot;, ci sono due query separate che cercano &quot;yoga&quot; o &quot;pantaloni&quot;. Questa regola è meno specifica e verrà attivata più spesso nella vetrina rispetto all’altra.
+   In questo esempio, invece di cercare &quot;pantaloni di yoga&quot;, ci sono due query separate che cercano &quot;yoga&quot; o &quot;pantaloni&quot;. Questa regola è meno specifica e viene attivata più spesso nella vetrina rispetto all&#39;altra.
 
    ![Regole - Corrispondenza](assets/rules-match.png)
 
@@ -75,9 +75,9 @@ Una regola può avere fino a 10 condizioni. L’operatore logico che unisce due 
 
 ## Passaggio 3: Aggiungi eventi
 
-Gli eventi sono azioni che modificano i risultati della ricerca quando le condizioni sono soddisfatte. Una singola regola può contenere fino a 25 eventi.
+gli eventi sono azioni che modificano i risultati della ricerca quando le condizioni sono soddisfatte. Una singola regola può contenere fino a 25 eventi.
 
-1. Sotto *Eventi*, scegli **Evento** da eseguire quando sono soddisfatte le condizioni associate.
+1. Sotto *Eventi*, scegli **Evento** da effettuare quando sono soddisfatte le condizioni associate.
 
    Ad esempio, scegli `Pin a product`. Quindi, inserisci il nome del prodotto da fissare. Se hai bisogno di aiuto, puoi trovare il nome nel riquadro di test.
 Quindi, inserisci il *Posizione* dove deve apparire il prodotto bloccato. Il prodotto viene spostato nella nuova posizione nel riquadro di test e contrassegnato con un *Fessura* badge anteprima.
@@ -97,7 +97,7 @@ Le informazioni immesse in questo campo vengono visualizzate nella sezione [Dett
 
 1. Sotto *Dettagli*, immetti un **Nome** per la regola.
 1. Inserisci una breve **Descrizione** della regola.
-1. Inserisci il **Data di inizio** e **Data di fine** quando la regola sarà attiva o scegli le date dal calendario.
+1. Inserisci il **Data di inizio** e **Data di fine** affinché la regola sia attiva o scegli le date dal calendario.
 
    Per selezionare un intervallo di date, fai clic sulla prima data e trascina per selezionare l’intervallo.
 
@@ -122,10 +122,10 @@ Le informazioni immesse in questo campo vengono visualizzate nella sezione [Dett
 
 | Condizione | Descrizione |
 |--- |--- |
-| La query di ricerca contiene | Un carattere o una stringa di testo inclusi nella query dell’acquirente. Per soddisfare questa condizione, la query dell’acquirente deve corrispondere a un solo carattere. |
-| Query di ricerca | Un carattere o una stringa di testo che corrisponde esattamente alla query dell’acquirente. Impossibile comporre query complesse con più condizioni quando si utilizza questa condizione. |
-| La query di ricerca inizia con | La query dell’acquirente inizia con questo carattere o stringa di testo. |
-| La query di ricerca termina con | La query dell’acquirente termina con questo carattere o stringa di testo. |
+| La query di ricerca contiene | Un carattere o una stringa di testo inclusi nella query dell&#39;acquirente. Per soddisfare questa condizione, la query dell’acquirente deve corrispondere a un solo carattere. |
+| Query di ricerca | Un carattere o una stringa di testo che corrisponde esattamente alla query dell&#39;acquirente. Impossibile comporre query complesse con più condizioni quando si utilizza questa condizione. |
+| La query di ricerca inizia con | La query dell&#39;acquirente inizia con questo carattere o stringa di testo. |
+| La query di ricerca termina con | La query dell&#39;acquirente termina con questo carattere o stringa di testo. |
 
 ### Operatori logici
 
@@ -145,9 +145,9 @@ Le informazioni immesse in questo campo vengono visualizzate nella sezione [Dett
 
 | Evento | Descrizione |
 |--- |--- |
-| Incremento | Sposta un SKU o un intervallo di SKU più in alto nei risultati della ricerca. Ognuna di esse è contrassegnata da un contrassegno di anteprima &quot;potenziato&quot; nei risultati della ricerca di test. |
-| Sepoltura | Sposta un SKU o un intervallo di SKU più in basso nei risultati della ricerca. Ognuna di esse è contrassegnata da un badge di anteprima &quot;sepolto&quot; nei risultati della ricerca di test. |
-| Fissare un prodotto | Associa un singolo SKU a una posizione specifica nei risultati della ricerca. Il prodotto viene contrassegnato con un contrassegno di anteprima &quot;bloccato&quot; nei risultati della ricerca di test. |
+| Incremento | Sposta un SKU o un intervallo di SKU più in alto nei risultati della ricerca. Ognuno di essi è contrassegnato con un contrassegno di anteprima &quot;potenziato&quot; nei risultati della ricerca di test. |
+| Sepoltura | Sposta un SKU o un intervallo di SKU più in basso nei risultati della ricerca. Ognuno di essi è contrassegnato con un badge di anteprima &quot;sepolto&quot; nei risultati della ricerca di test. |
+| Fissare un prodotto | Associa un singolo SKU a una posizione specifica nei risultati della ricerca. Il prodotto viene contrassegnato con un contrassegno di anteprima &quot;bloccato&quot; nei risultati della ricerca di prova. |
 | Nascondere un prodotto | Esclude una SKU (Stock Keeping Unit) o una gamma di SKU (Stock Keeping Unit) dai risultati della ricerca. |
 
 ### Dettagli

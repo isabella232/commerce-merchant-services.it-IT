@@ -2,7 +2,7 @@
 title: Voci
 description: I vuoti consentono di liberare i fondi in un conto di carte di credito o di debito che sono bloccati o tenuti da parte da un'autorizzazione per l'importo di un acquisto.
 exl-id: 029a7038-2812-46ce-b188-929a7a758d89
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Con [!DNL Payment Services], puoi utilizzare la funzionalità Commerce esistente
 >
 >È possibile annullare una transazione solo se il pagamento non è ancora stato acquisito.
 
-Se il tuo negozio è [configurato](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} per autorizzare solo (non acquisire) i fondi nel punto vendita, un acquisto dal negozio determina un ordine con un `Processing` nell&#39;amministratore di Magento.
+Se il tuo negozio è [configurato](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} per autorizzare solo (non acquisire) i fondi nel punto vendita, un acquisto dal negozio determina un ordine con un `Processing` in Commerce Admin.
 
 È inoltre possibile [annullare un ordine](https://docs.magento.com/user-guide/sales/order-update.html#cancel-a-pending-order){target=&quot;_blank&quot;} non fatturata. Anche le autorizzazioni non acquisite vengono annullate nell&#39;ambito del processo di cancellazione.
 
