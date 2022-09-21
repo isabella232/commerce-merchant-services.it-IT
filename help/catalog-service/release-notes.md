@@ -2,7 +2,7 @@
 title: '[!DNL Catalog Service] Note sulla versione'
 description: Informazioni aggiornate sulla versione di [!DNL Catalog Service] per Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 6609060a4ef09f72d579d97383ac487b105c81d6
+source-git-commit: 372dc1cb567121ab86f606d2ace9f19d8e01170b
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 1%
@@ -36,7 +36,6 @@ Queste funzionalità non sono ancora supportate:
 * Bundle e prodotti raggruppati
 * Non vengono ricevuti aggiornamenti quando le varianti vengono eliminate dal catalogo
 * Ignorare la visibilità B2B: è possibile cercare i prodotti o aggiungerli al carrello per specifici gruppi di clienti
-
 
 ## Versione beta
 

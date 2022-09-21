@@ -1,13 +1,13 @@
 ---
-title: '"[!DNL Catalog Service]"'
-description: '"[!DNL Catalog Service] per Adobe Commerce fornisce un modo per recuperare il contenuto delle pagine di visualizzazione dei prodotti e delle pagine di elenco dei prodotti molto più rapidamente rispetto alle query native di Adobe Commerce GraphQL."'
-source-git-commit: eb2242ac99cfaef4ed75936a1b5cc800cc451c83
+title: '[!DNL Catalog Service]'
+description: '''[!DNL Catalog Service] per Adobe Commerce fornisce un modo per recuperare il contenuto delle pagine di visualizzazione dei prodotti e delle pagine di elenco dei prodotti molto più rapidamente rispetto alle query native di Adobe Commerce GraphQL."'
+exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
+source-git-commit: 372dc1cb567121ab86f606d2ace9f19d8e01170b
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Catalog Service] per Adobe Commerce
 
@@ -48,5 +48,3 @@ Facoltativamente, puoi implementare [Rete API per Adobe Developer App Builder](h
 ## Implementazione
 
 Il processo di installazione richiede la configurazione del [Connettore Commerce Services](../landing/saas.md). Una volta completata questa operazione, il passaggio successivo consiste nell&#39;aggiornare il codice della vetrina per incorporare il [!DNL Catalog Service] query. Tutto [!DNL Catalog Service] le query vengono instradate al gateway GraphQL. L’URL viene fornito durante il processo di onboarding.
-
-[Adobe Commerce Devdocs](https://devdocs.magento.com/catalog-service/index.html) descrive le differenze tra core e [!DNL Catalog Service] query. Sono incluse anche le informazioni di riferimento per ogni query.
