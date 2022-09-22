@@ -1,17 +1,17 @@
 ---
 title: query productSearch
 description: 'Guida di riferimento per la query GraphQL `productSearch` per il servizio catalogo Adobe Commerce.'
-source-git-commit: 49692cf4375ebb975b2cf132d21ac8debe609a90
+source-git-commit: d9b8c89f6d04aa9d569b450af2893b92938119ad
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # query productSearch
 
-Servizio catalogo per Adobe Commerce `productSearch` query può utilizzare Live Search per restituire i dettagli sugli SKU specificati come input. Anche se questa query è la stessa del [`productSearch` query](https://devdocs.magento.com//live-search/product-search.html), Live Search restituisce un `productView` oggetto. Consulta la sezione [`productSearch` query](https://devdocs.magento.com//live-search/product-search.html) argomento per informazioni di riferimento.
+Servizio catalogo per Adobe Commerce `productSearch` query può utilizzare Live Search per restituire i dettagli sugli SKU specificati come input. Anche se questa query è la stessa del [`productSearch` query](https://devdocs.magento.com/live-search/product-search.html), Live Search restituisce un `productView` oggetto. Consulta la sezione [`productSearch` query](https://devdocs.magento.com/live-search/product-search.html) argomento per informazioni di riferimento.
 
 ## Sintassi
 

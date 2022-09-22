@@ -1,9 +1,9 @@
 ---
 title: query sui prodotti
 description: "Guida di riferimento per la query GraphQL `products` per Adobe Commerce Catalog Service."
-source-git-commit: 7edfdd71c0900a6bdc7c064a29a6cce405a361ab
+source-git-commit: d9b8c89f6d04aa9d569b450af2893b92938119ad
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # query sui prodotti
 
-Servizio catalogo per Adobe Commerce `products` query restituisce i dettagli sugli SKU specificati come input. Anche se questa query ha lo stesso nome della [`products` query](https://devdocs.magento.com//guides/v2.4/graphql/queries/products.html) che viene fornito con Adobe Commerce e Magento Open Source di base, ci sono alcune differenze.
+Servizio catalogo per Adobe Commerce `products` query restituisce i dettagli sugli SKU specificati come input. Anche se questa query ha lo stesso nome della [`products` query](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) che viene fornito con Adobe Commerce e Magento Open Source di base, ci sono alcune differenze.
 
 La query Servizio catalogo richiede uno o più valori SKU come input. La query è progettata principalmente per recuperare informazioni per eseguire il rendering dei seguenti tipi di contenuto:
 
