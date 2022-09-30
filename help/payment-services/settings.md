@@ -4,9 +4,9 @@ description: Dopo l'installazione, è possibile configurare [!DNL Payment Servic
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 0bd6137ec7cd5da04ae6a48f06cd5aec254b46ef
+source-git-commit: 65787d91c098e8f5d4ae46cba4d5e226b6301ecc
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1555'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,13 @@ Per configurare [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magent
 >
 > Per la configurazione multi-store o legacy, fai riferimento alla [Configura nell’amministratore](configure-admin.md) argomento.
 
-## Abilita servizi di pagamento
+## Configurare le impostazioni generali
 
-È possibile attivare [!DNL Payment Services] per il tuo sito web e abilita test sandbox o pagamenti live, nel [!UICONTROL General] sezione .
+La [!UICONTROL General] Le impostazioni consentono di abilitare o disabilitare Servizi di pagamento come metodo di pagamento e di aggiungere informazioni alle transazioni dei clienti per contrassegnare o preimpostare un sito web o una visualizzazione store con informazioni personalizzate.
+
+### Abilita servizi di pagamento
+
+È possibile attivare [!DNL Payment Services] per il tuo sito web e abilita test sandbox o pagamenti live.
 
 1. Sulla _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
@@ -33,7 +37,7 @@ Per configurare [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magent
 
    La _[!UICONTROL General]_include le impostazioni utilizzate per abilitare [!DNL Payment Services] come metodo di pagamento.
 
-1. Per abilitare [!DNL Payment Services] come metodo di pagamento per il tuo negozio, nel _[!UICONTROL General]_sezione, interruttore (**[!UICONTROL Enable Payment Services as payment method]**) a `Yes`.
+1. Per abilitare [!DNL Payment Services] come metodo di pagamento per il tuo negozio, nel _[!UICONTROL General]_sezione, interruttore **[!UICONTROL Enable Payment Services as payment method]**a `Yes`.
 
 1. Se stai ancora testando [!DNL Payment Services] per il tuo negozio, imposta **Modalità di pagamento** a `Sandbox`. Se sei pronto per abilitare i pagamenti live, impostalo su `Production`.
 
@@ -49,7 +53,31 @@ Per configurare [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magent
 
 È ora possibile modificare le impostazioni predefinite per [opzioni di pagamento](#configure-payment-options) funzioni e visualizzazione della vetrina.
 
-### Opzioni di configurazione generali
+### Aggiungi descrittore soft
+
+Puoi aggiungere una [!UICONTROL Soft Descriptor] al sito web o alla configurazione di singole viste store. I descrittori morbidi vengono visualizzati sui rendiconti bancari delle transazioni cliente. Se disponi di più store, marchi, cataloghi, ad esempio, puoi facilmente delineare tra loro aggiungendo testo personalizzato al [!UICONTROL Soft Descriptor] campo .
+
+1. Sulla _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+
+   ![Vista Home](assets/payment-services-menu-small.png)
+
+1. Clic **[!UICONTROL Settings]**. Vedi [Introduzione a [!DNL Payment Services] Pagina principale](payments-home.md) per ulteriori informazioni.
+1. Seleziona la visualizzazione del sito web o del negozio nella **[!UICONTROL Scope]** menu a discesa, per il quale si desidera creare un descrittore soft. Per la configurazione iniziale, lasciare impostato come **[!UICONTROL Default]** per impostare il valore predefinito.
+1. Aggiungi il testo personalizzato (fino a 22 caratteri) nel campo di testo, sostituendo `Custom descriptor`.
+1. Clic **[!UICONTROL Save]**.
+1. Per creare un descrittore software diverso da quello predefinito configurato per una visualizzazione sito Web o store:
+   1. Seleziona la visualizzazione del sito web o del negozio nella **[!UICONTROL Scope]** menu a discesa, per il quale si desidera creare un descrittore soft.
+   1. Attiva/disattiva *off* **[!UICONTROL Use website]** o **[!UICONTROL Use default]**, a seconda dell’ambito selezionato).
+   1. Aggiungi il testo personalizzato nel campo di testo.
+   1. Clic **[!UICONTROL Save]**.
+1. Per abilitare la visualizzazione di un sito Web o di un archivio, visualizzare il descrittore software predefinito *o* il descrittore software utilizzato per il sito web principale:
+   1. Seleziona la visualizzazione del sito web o del negozio nella **[!UICONTROL Scope]** menu a discesa, per il quale si desidera abilitare un descrittore software esistente.
+   1. Attiva/disattiva *su* **[!UICONTROL Use website]** o **[!UICONTROL Use default]**, a seconda dell’ambito selezionato).
+   1. Clic **[!UICONTROL Save]**.
+
+   Se tenti di allontanarti da questa visualizzazione senza salvare le modifiche, viene visualizzato un modale che richiede di ignorare le modifiche, continuare a modificare o salvare le modifiche.
+
+### Opzioni di configurazione
 
 | Campo | Ambito | Descrizione |
 |---|---|---|
@@ -57,6 +85,7 @@ Per configurare [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magent
 | [!UICONTROL Payment mode] | vista store | Imposta il metodo o l&#39;ambiente per l&#39;archivio. Opzioni: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Sandbox Merchant ID] | vista store | Il tuo ID commerciante sandbox, generato automaticamente durante l’onboarding della sandbox. |
 | [!UICONTROL Production Merchant ID] | vista store | Il tuo ID commerciante di produzione, generato automaticamente durante l’onboarding della sandbox. |
+| [!UICONTROL Soft Descriptor] | visualizzazione sito Web o negozio | Aggiungi un descrittore soft al tuo sito web e alle visualizzazioni store per aggiungere informazioni alle transazioni dei clienti che delineano marchi, store o linee di prodotto. La [!UICONTROL Use website] l’opzione attiva/disattiva applica eventuali descrittori soft aggiunti a livello di sito web. La [!UICONTROL Use default] l’opzione attiva/disattiva applica eventuali descrittori soft aggiunti come predefiniti. |
 
 ## Configurare le opzioni di pagamento
 
@@ -144,7 +173,7 @@ Puoi anche configurare le _[!UICONTROL Button style]_opzioni dei pulsanti intell
 
 1. Per attivare la linea di graduazione in un layout orizzontale, attiva la **[!UICONTROL Show tagline]** selettore.
 1. Per modificare il **[!UICONTROL Color]**, seleziona l’opzione di colore desiderata.
-1. Per modificare il **[!UICONTROL Shape]**, seleziona `Pill` o `Rect`.
+1. Per modificare il **[!UICONTROL Shape]**, seleziona `Pill` o `Rectangle`.
 1. Per abilitare il selettore dell’altezza del pulsante, attiva/disattiva **[!UICONTROL Responsive button height]** selettore.
 1. Per modificare il **[!UICONTROL Label]**, seleziona l’opzione di etichetta desiderata.
 
