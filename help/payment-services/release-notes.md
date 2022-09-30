@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Note sulla versione"
 description: Consulta le note sulla versione per informazioni su tutti [!DNL Payment Services] versioni.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 4e6bf72033495683491b0c59a544d1474f6c1486
+source-git-commit: 5d791896f647391993f668a018b3eb9194c4cf3f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1165'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,18 @@ _28 giugno 2021_
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-2761 --> Ora puoi personalizzare i dati visualizzati nella [Report stato del pagamento dell&#39;ordine](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) e [Rapporto Pagamenti](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) mediante la visualizzazione o l&#39;eliminazione delle colonne mediante il controllo Column settings.
 
 +++
+
+## v1.4.0
+
+_30 settembre 2022_
+
+![Nuovo](../assets/new.svg)<!-- Issue PAY-784 --> I servizi di pagamento ora includono la possibilità di impostare un conto commerciale su [utilizzare più account aziendali PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-business-accounts). Questo consente al commerciante di gestire i tuoi negozi in più paesi utilizzando valute diverse, o di utilizzare Adobe Commerce per una parte della tua attività.
+
+![Nuovo](../assets/new.svg)<!-- Issue PAY-3231 --> I commercianti possono [aggiungi un [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) ai siti web o alla configurazione di viste store individuali che mostrano sul rendiconto bancario delle transazioni cliente un elenco di marchi, negozi o linee di prodotto.
+
+![Nuovo](../assets/new.svg)<!-- Issue PAY-3707 --> [Attiva o disattiva i campi della carta di credito e i pulsanti intelligenti PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html) per il pagamento nelle impostazioni di Servizi di pagamento.
+
+![Problema risolto](../assets/fix.svg)<!-- Issue PAY-3546 --> Quando un cliente fa clic su **[!UICONTROL Edit cart]**, la pagina viene reindirizzata alla pagina del carrello e mostra gli elementi aggiornati invece di mostrare un carrello vuoto.
 
 ## v1.3.1
 
