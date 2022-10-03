@@ -4,7 +4,7 @@ description: Utilizzare il rapporto Pagamenti per garantire la piena trasparenza
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 0bd6137ec7cd5da04ae6a48f06cd5aec254b46ef
+source-git-commit: 39c0140961fa9de5075087bbc3fbec0e14560860
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] offre un reporting completo per ottenere una visione chiara degli ordini e dei pagamenti del tuo negozio.
 
-![Visualizzazione rapporti finanziari](assets/reports-view-new.png)
+![Visualizzazione rapporti finanziari](assets/report-view.png)
 
 Sono disponibili due visualizzazioni di generazione rapporti Pagamenti per consentirti di visualizzare informazioni approfondite su tutte le tue vincite:
 
@@ -34,7 +34,7 @@ La visualizzazione dei dati relativi ai pagamenti è disponibile nella home di P
 
 Sulla _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** per visualizzare il grafico di visualizzazione dei dati su crediti e debiti e le medie mobili nel tempo.
 
-![Visualizzazione dati di payout nell’amministratore](assets/payouts-data.png)
+![Visualizzazione dati di payout nell’amministratore](assets/payouts-report.png)
 
 Fai clic su **[!UICONTROL View Report]** per passare alla tabella dettagliata [Visualizzazione del rapporto Pagamenti](#payouts-report-view).
 
