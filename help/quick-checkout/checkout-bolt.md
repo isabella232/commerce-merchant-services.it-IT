@@ -1,10 +1,10 @@
 ---
-title: "Flusso di pagamento in Adobe Commerce"
+title: "Flusso di pagamento di un utente Bolt in Adobe Commerce"
 description: Panoramica [!DNL Quick Checkout] flusso per un utente Bolt in Adobe Commerce.
 exl-id: 12f58b7e-1f86-4891-b225-9f4be82c2d5d
-source-git-commit: 4dd8008901dbdbfaf1de5b1aa166dc70dd02440f
+source-git-commit: 7c99f1aa4bed9878625d855509448494d5547d56
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
