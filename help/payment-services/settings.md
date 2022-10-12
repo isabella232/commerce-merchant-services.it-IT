@@ -4,9 +4,9 @@ description: Dopo l'installazione, è possibile configurare [!DNL Payment Servic
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 785528d5940af28fa8bf6873d636b40d8e7bc05f
+source-git-commit: 6c14f062336926ead7e0ce285fb4251586698240
 workflow-type: tm+mt
-source-wordcount: '1594'
+source-wordcount: '1678'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,9 @@ ht-degree: 0%
 
 Puoi personalizzare [!DNL Payment Services] per soddisfare le tue esigenze con le impostazioni disponibili nella sezione [!DNL Payment Services] Casa.
 
-Per configurare [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] click **[!UICONTROL Settings]**. Queste opzioni di configurazione si applicano solo all’ambiente impostato nel _[!UICONTROL Payment mode]_campo_[!UICONTROL Settings]_ > _[!UICONTROL General]_.
+Per configurare [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] click **[!UICONTROL Settings]**. Queste opzioni di configurazione si applicano solo all’ambiente impostato nel _[!UICONTROL Payment mode]_campo[_ Generale _opzioni di configurazione](#general-configuration-options).
 
->[!IMPORTANT]
->
-> Per la configurazione multi-store o legacy, fai riferimento alla [Configura nell’amministratore](configure-admin.md) argomento.
+Per la configurazione multi-store o legacy consulta [Configura nell’amministratore](configure-admin.md).
 
 ## Configurare le impostazioni generali
 
@@ -106,7 +104,7 @@ Vedi [Opzioni di pagamento](payments-options.md#credit-card-fields) per ulterior
 
    Se tenti di allontanarti da questa visualizzazione senza salvare le modifiche, viene visualizzato un modale che richiede di ignorare le modifiche, continuare a modificare o salvare le modifiche.
 
-1. Passa a **[!UICONTROL System]** > **[!UICONTROL Cache Management]** e fai clic su **[!UICONTROL Flush Cache]** per aggiornare tutte le cache non valide.
+1. [Svuotare la cache](#flush-the-cache).
 
 #### Opzioni di configurazione
 
@@ -141,13 +139,13 @@ Puoi abilitare e configurare le opzioni di pagamento dei pulsanti intelligenti P
       > Per utilizzare Apple Paga [deve avere un account Apple Developer](test-validate.md#test-in-sandbox-environment) (completo di false carte di credito e informazioni di fatturazione) per testarlo. Quando sei pronto a utilizzare Apple Pay in sandbox *o* modalità di produzione, dopo aver completato [test e convalida](test-validate.md), contatta il tuo rappresentante commerciale per abilitarlo per i tuoi store live.
 
       Quando si attiva/disattiva la visibilità dei pulsanti di pagamento o il messaggio PayPal Pay Later, viene visualizzata un&#39;anteprima visiva della configurazione nella parte inferiore della pagina Settings (Impostazioni).
-
+git
 1. Per abilitare la modalità di debug, attiva **[!UICONTROL Debug Mode]** selettore.
 1. Clic **[!UICONTROL Save]**.
 
    Se tenti di allontanarti da questa visualizzazione senza salvare le modifiche, viene visualizzato un modale che richiede di ignorare le modifiche, continuare a modificare o salvare le modifiche.
 
-1. Passa a **[!UICONTROL System]** > **[!UICONTROL Cache Management]** e fai clic su **[!UICONTROL Flush Cache]** per aggiornare tutte le cache non valide.
+1. [Svuotare la cache](#flush-the-cache).
 
 #### Opzioni di configurazione
 
@@ -187,7 +185,7 @@ Puoi anche configurare le _[!UICONTROL Button style]_opzioni dei pulsanti intell
 
    Se tenti di allontanarti da questa visualizzazione senza salvare le modifiche, viene visualizzato un modale che richiede di ignorare le modifiche, continuare a modificare o salvare le modifiche.
 
-1. Passa a **[!UICONTROL System]** > **[!UICONTROL Cache Management]** e fai clic su **[!UICONTROL Flush Cache]** per aggiornare tutte le cache non valide.
+1. [Svuotare la cache](#flush-the-cache).
 
 Puoi configurare [!DNL PayPal Smart Buttons] stile [nella configurazione Legacy in Admin](configure-admin.md#configure-paypal-smart-buttons) o qui [!DNL Payment Services Home]. Vedi [Guida allo stile dei pulsanti di PayPal](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) per ulteriori informazioni sulle opzioni.
 
@@ -203,6 +201,17 @@ Puoi configurare [!DNL PayPal Smart Buttons] stile [nella configurazione Legacy 
 | [!UICONTROL Height] | Visualizzazione store | Definire l’altezza dei pulsanti di pagamento. Valore predefinito: nessuno |
 | [!UICONTROL Label] | Visualizzazione store | Definire l’etichetta visualizzata nei pulsanti di pagamento. Opzioni: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
 
+## Svuotare la cache
+
+Se modifichi la configurazione in _Impostazioni_, ad esempio attivando i pulsanti Pay, Venmo o PayPal PayLater di Apple, scarica manualmente la cache in modo che il tuo negozio mostri le configurazioni più recenti.
+
+1. Sulla _Amministratore_ barra laterale, vai a **[!UICONTROL System]** > **[!UICONTROL Cache Management]**.
+1. Fai clic su **[!UICONTROL Flush Cache]** per aggiornare tutte le cache non valide.
+
+Se un tipo di cache nella tabella Gestione cache ha un `INVALIDATED` stato, l&#39;archivio potrebbe non mostrare la configurazione più recente per quell&#39;elemento. Esegui il flush della cache per aggiornare il tuo archivio per mostrare la configurazione più recente.
+
+Per garantire che lo store mostri la configurazione corretta, periodicamente [svuota la cache](https://docs.magento.com/user-guide/system/cache-management.html).
+
 ## Utilizzare più account PayPal
 
 In Servizi di pagamento è possibile utilizzare più account PayPal all&#39;interno di **uno** conto commerciale a livello di sito web. Ad esempio, se gestisci i tuoi store in più paesi (che utilizzano diversi) [valute](https://docs.magento.com/user-guide/stores/currency.html)) o desideri utilizzare Adobe Commerce per alcune parti della tua attività ma non per *tutto*, puoi configurare il tuo account commerciale per l&#39;utilizzo di più account PayPal.
@@ -210,3 +219,4 @@ In Servizi di pagamento è possibile utilizzare più account PayPal all&#39;inte
 Vedi [Sito, archiviazione e visualizzazione ambito](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) per ulteriori informazioni sulla gerarchia di siti web, store e viste store.
 
 Il rappresentante commerciale può creare un nuovo [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) per il tuo conto commerciale e a bordo del sito aggiuntivo con PayPal in modo che uno qualsiasi dei pulsanti PayPal che configuri per apparire verrà mostrato sul tuo sito. Contatta il tuo rappresentante commerciale per assistenza sull&#39;utilizzo di più account PayPal per i tuoi siti web.
+
