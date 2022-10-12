@@ -1,10 +1,10 @@
 ---
 title: Eventi
-description: Scopri i dati acquisiti da ogni evento e visualizza la definizione completa dello schema.
+description: Scopri quali dati acquisisce ogni evento.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 589d22f488572411b6632ac37d7bc5b752f72e2d
+source-git-commit: aaaab3d11c15a69856711a41e889a5d0208aedd2
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1977'
 ht-degree: 0%
 
 ---
@@ -13,15 +13,19 @@ ht-degree: 0%
 
 Di seguito sono elencati gli eventi Commerce disponibili quando installi l’estensione del connettore Experience Platform. I dati raccolti da questi eventi vengono inviati al server Edge di Adobe Experience Platform. Puoi anche creare [eventi personalizzati](custom-events.md) raccogliere dati aggiuntivi non forniti al momento.
 
-Oltre ai dati raccolti dai seguenti eventi, ottieni anche [dati aggiuntivi](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) fornito dall’SDK Web di Adobe Experience Platform.
+Oltre ai dati raccolti dai seguenti eventi, ottieni anche [altri dati](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) fornito dall’SDK Web di Adobe Experience Platform.
 
 >[!NOTE]
 >
->Tutti gli eventi includono `personID` campo , che è un identificatore univoco della persona.
+>Tutti gli eventi della vetrina includono `personID` campo , che è un identificatore univoco della persona.
 
 ## addToCart
 
-Attivazione quando un prodotto viene aggiunto al carrello o quando la quantità di un prodotto nel carrello viene incrementata. [Schema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/addToCartAEP.ts).
+Attivazione quando un prodotto viene aggiunto al carrello o quando la quantità di un prodotto nel carrello viene incrementata.
+
+### Nome evento XDM
+
+`commerce.productListAdds`
 
 ### Tipo
 
@@ -34,10 +38,71 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | Campo | Descrizione |
 |---|---|
 | `productListAdds` | Indica se un prodotto è stato aggiunto a un carrello. Un valore di `1` indica che è stato aggiunto un prodotto. |
+| `productListItems` | Una serie di prodotti aggiunti al carrello |
 | `SKU` | Unità di conservazione delle scorte. Identificatore univoco per il prodotto. |
 | `name` | Nome visualizzato o nome leggibile del prodotto |
-| `priceTotal` | Totale per l&#39;ordine dopo l&#39;applicazione di tutti gli sconti e le imposte |
-| `quantity` | Numero di unità richieste dal cliente per il prodotto |
+| `priceTotal` | Prezzo totale dell&#39;articolo della linea di prodotti |
+| `quantity` | Numero di unità di prodotto aggiunte al carrello |
+| `discountAmount` | Indica l&#39;importo dello sconto applicato |
+| `currencyCode` | La [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valuta del prodotto |
+| `productImageUrl` | URL immagine principale del prodotto |
+| `selectedOptions` | Campo utilizzato per un prodotto configurabile. `attribute` identifica un attributo del prodotto configurabile, ad esempio `size` o `color` e `value` identifica il valore dell&#39;attributo, ad esempio `small` o `black`. |
+| `cartID` | ID univoco che identifica il carrello del cliente |
+
+## openCart
+
+Attivazione quando viene creato un nuovo carrello, ovvero quando un prodotto viene aggiunto a un carrello vuoto.
+
+### Nome evento XDM
+
+`commerce.productListOpens`
+
+### Tipo
+
+Vetrina
+
+### Dati raccolti
+
+Nella tabella seguente sono descritti i dati raccolti per questo evento.
+
+| Campo | Descrizione |
+|---|---|
+| `productListOpens` | Indica se è stato creato un carrello. Un valore di `1` indica che è stato creato un carrello. |
+| `productListItems` | Una serie di prodotti aggiunti al carrello |
+| `SKU` | Unità di conservazione delle scorte. Identificatore univoco per il prodotto. |
+| `name` | Nome visualizzato o nome leggibile del prodotto |
+| `priceTotal` | Prezzo totale dell&#39;articolo della linea di prodotti |
+| `quantity` | Numero di unità di prodotto aggiunte al carrello |
+| `discountAmount` | Indica l&#39;importo dello sconto applicato |
+| `currencyCode` | La [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valuta del prodotto |
+| `productImageUrl` | URL immagine principale del prodotto |
+| `selectedOptions` | Campo utilizzato per un prodotto configurabile. `attribute` identifica un attributo del prodotto configurabile, ad esempio `size` o `color` e `value` identifica il valore dell&#39;attributo, ad esempio `small` o `black`. |
+| `cartID` | ID univoco che identifica il carrello del cliente |
+
+## removeFromCart
+
+Attivazione ogni volta che un prodotto viene rimosso o ogni volta che la quantità di un prodotto nel carrello viene diminuita.
+
+### Nome evento XDM
+
+`commerce.productListRemovals`
+
+### Tipo
+
+Vetrina
+
+### Dati raccolti
+
+Nella tabella seguente sono descritti i dati raccolti per questo evento.
+
+| Campo | Descrizione |
+|---|---|
+| `productListRemovals` | Indica se un prodotto è stato rimosso dal carrello. Un valore di `1` indica che un prodotto è stato rimosso dal carrello. |
+| `productListItems` | Una serie di prodotti rimossi dal carrello |
+| `SKU` | Unità di conservazione delle scorte. Identificatore univoco per il prodotto. |
+| `name` | Nome visualizzato o nome leggibile del prodotto |
+| `priceTotal` | Prezzo totale dell&#39;articolo della linea di prodotti |
+| `quantity` | Numero di unità di prodotto rimosse dal carrello |
 | `discountAmount` | Indica l&#39;importo dello sconto applicato |
 | `currencyCode` | La [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valuta del prodotto |
 | `productImageUrl` | URL immagine principale del prodotto |
@@ -46,7 +111,11 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
 ## shoppingCartView
 
-Attivazione quando viene caricata una pagina del carrello. [Schema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/viewAEP.ts).
+Attivazione quando viene caricata una pagina del carrello.
+
+### Nome evento XDM
+
+`commerce.productListViews`
 
 ### Tipo
 
@@ -59,11 +128,11 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | Campo | Descrizione |
 |---|---|
 | `productListViews` | Indica se è stato visualizzato un elenco di prodotti |
-| `productListItems` | Un array di prodotti aggiunti al carrello |
+| `productListItems` | Una serie di prodotti nel carrello |
 | `SKU` | Unità di conservazione delle scorte. Identificatore univoco per il prodotto. |
 | `name` | Nome visualizzato o nome leggibile del prodotto |
-| `priceTotal` | Totale per l&#39;ordine dopo l&#39;applicazione di tutti gli sconti e le imposte |
-| `quantity` | Numero di unità richieste dal cliente per il prodotto |
+| `priceTotal` | Prezzo totale dell&#39;articolo della linea di prodotti |
+| `quantity` | Numero di unità di prodotto nel carrello |
 | `discountAmount` | Indica l&#39;importo dello sconto applicato |
 | `currencyCode` | La [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valuta del prodotto |
 | `productImageUrl` | URL immagine principale del prodotto |
@@ -72,7 +141,11 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
 ## pageView
 
-Attivazione al caricamento di qualsiasi pagina. [Schema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/page/viewAEP.ts).
+Attivazione al caricamento di qualsiasi pagina.
+
+### Nome evento XDM
+
+`web.webpagedetails.pageViews`
 
 ### Tipo
 
@@ -88,7 +161,11 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
 ## productPageView
 
-Attivazione al caricamento di qualsiasi pagina di prodotto. [Schema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/viewAEP.ts).
+Attivazione al caricamento di qualsiasi pagina di prodotto.
+
+### Nome evento XDM
+
+`commerce.productViews`
 
 ### Tipo
 
@@ -101,10 +178,10 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | Campo | Descrizione |
 |---|---|
 | `productViews` | Indica se il prodotto è stato visualizzato |
-| `productListItems` | Un array di prodotti aggiunti al carrello |
+| `productListItems` | Una serie di prodotti nel carrello |
 | `SKU` | Unità di conservazione delle scorte. Identificatore univoco per il prodotto. |
 | `name` | Nome visualizzato o nome leggibile del prodotto |
-| `priceTotal` | Totale per l&#39;ordine dopo l&#39;applicazione di tutti gli sconti e le imposte |
+| `priceTotal` | Prezzo totale dell&#39;articolo della linea di prodotti |
 | `discountAmount` | Indica l&#39;importo dello sconto applicato |
 | `currencyCode` | La [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valuta del prodotto |
 | `productImageUrl` | URL immagine principale del prodotto |
@@ -112,7 +189,11 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
 ## startCheckout
 
-Attivazione quando l&#39;acquirente fa clic su un pulsante di pagamento. [Schema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/initiateCheckoutAEP.ts).
+Attivazione quando l&#39;acquirente fa clic su un pulsante di pagamento.
+
+### Nome evento XDM
+
+`commerce.checkouts`
 
 ### Tipo
 
@@ -125,11 +206,11 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | Campo | Descrizione |
 |---|---|
 | `checkouts` | Indica se si è verificata un&#39;azione durante il processo di pagamento |
-| `productListItems` | Un array di prodotti aggiunti al carrello |
+| `productListItems` | Una serie di prodotti nel carrello |
 | `SKU` | Unità di conservazione delle scorte. Identificatore univoco per il prodotto. |
 | `name` | Nome visualizzato o nome leggibile del prodotto |
-| `priceTotal` | Totale per l&#39;ordine dopo l&#39;applicazione di tutti gli sconti e le imposte |
-| `quantity` | Numero di unità richieste dal cliente per il prodotto |
+| `priceTotal` | Prezzo totale dell&#39;articolo della linea di prodotti |
+| `quantity` | Numero di unità di prodotto nel carrello |
 | `discountAmount` | Indica l&#39;importo dello sconto applicato |
 | `currencyCode` | La [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valuta del prodotto |
 | `productImageUrl` | URL immagine principale del prodotto |
@@ -138,7 +219,11 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
 ## completeCheckout
 
-Attivazione quando l&#39;acquirente effettua un ordine. [Schema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/checkout/placeOrderAEP.ts).
+Attivazione quando l&#39;acquirente effettua un ordine.
+
+### Nome evento XDM
+
+`commerce.order`
 
 ### Tipo
 
@@ -163,11 +248,11 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | `shippingMethod` | Il metodo di spedizione scelto dal cliente, ad esempio consegna standard, consegna rapida, ritiro in negozio e così via |
 | `shippingAmount` | Costo totale di spedizione per gli articoli nel carrello |
 | `promotionID` | Identificatore univoco della promozione, se presente |
-| `productListItems` | Un array di prodotti aggiunti al carrello |
+| `productListItems` | Una serie di prodotti nel carrello |
 | `SKU` | Unità di conservazione delle scorte. Identificatore univoco per il prodotto. |
 | `name` | Nome visualizzato o nome leggibile del prodotto |
-| `priceTotal` | Totale per l&#39;ordine dopo l&#39;applicazione di tutti gli sconti e le imposte |
-| `quantity` | Numero di unità richieste dal cliente per il prodotto |
+| `priceTotal` | Prezzo totale dell&#39;articolo della linea di prodotti |
+| `quantity` | Numero di unità di prodotto nel carrello |
 | `discountAmount` | Indica l&#39;importo dello sconto applicato |
 | `currencyCode` | La [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) codice valuta utilizzato per i totali dell&#39;ordine. |
 | `productImageUrl` | URL immagine principale del prodotto |
@@ -175,11 +260,15 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
 ## signIn
 
-Attivazione quando un acquirente tenta di accedere. [Schema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signInAEP.ts).
+Attivazione quando un acquirente tenta di accedere.
 
 >[!NOTE]
 >
 > Questo evento viene attivato quando si tenta l&#39;azione specifica. Non indica che l’azione è stata eseguita correttamente.
+
+### Nome evento XDM
+
+`userAccount.login`
 
 ### Tipo
 
@@ -201,11 +290,15 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
 ## signOut
 
-Attivazione quando un acquirente tenta di disconnettersi. [Schema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signOutAEP.ts).
+Attivazione quando un acquirente tenta di disconnettersi.
 
 >[!NOTE]
 >
 > Questo evento viene attivato quando si tenta l&#39;azione specifica. Non indica che l’azione è stata eseguita correttamente.
+
+### Nome evento XDM
+
+`userAccount.logout`
 
 ### Tipo
 
@@ -223,11 +316,15 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
 ## createAccount
 
-Attivazione quando un acquirente tenta di creare un account. [Schema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/createAccountAEP.ts).
+Attivazione quando un acquirente tenta di creare un account.
 
 >[!NOTE]
 >
 > Questo evento viene attivato quando si tenta l&#39;azione specifica. Non indica che l’azione è stata eseguita correttamente.
+
+### Nome evento XDM
+
+`userAccount.createProfile`
 
 ### Tipo
 
@@ -250,11 +347,15 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
 ## editAccount
 
-Attivazione quando un acquirente tenta di modificare un account. [Schema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/editAccountAEP.ts).
+Attivazione quando un acquirente tenta di modificare un account.
 
 >[!NOTE]
 >
 > Questo evento viene attivato quando si tenta l&#39;azione specifica. Non indica che l’azione è stata eseguita correttamente.
+
+### Nome evento XDM
+
+`userAccount.updateProfile`
 
 ### Tipo
 
@@ -293,11 +394,13 @@ Attivazione dai seguenti eventi nelle pagine dei risultati di ricerca:
 - Passa alla pagina precedente
 - Passa a una pagina diversa
 
-[Schema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchRequestSentAEP.ts).
-
 >[!NOTE]
 >
 >Gli eventi di ricerca non sono supportati in Adobe Commerce Enterprise Edition con il modulo B2B installato.
+
+### Nome evento XDM
+
+`searchRequest`
 
 ### Tipo
 
@@ -323,11 +426,13 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
 Attivato quando Live Search restituisce i risultati per la pagina &quot;search as you type&quot; o risultati di ricerca.
 
-[Schema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchResponseReceivedAEP.ts)
-
 >[!NOTE]
 >
 >Gli eventi di ricerca non sono supportati in Adobe Commerce Enterprise Edition con il modulo B2B installato.
+
+### Nome evento XDM
+
+`searchResponse`
 
 ### Tipo
 
@@ -342,4 +447,4 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | `searchResponse` | Indica se è stata ricevuta una risposta di ricerca |
 | `suggestions` | Matrice di stringhe che includono i nomi dei prodotti e delle categorie presenti nel catalogo simili alla query di ricerca |
 | `numberOfResults` | Numero di prodotti restituiti |
-| `productListItems` | Un array di prodotti aggiunti al carrello. Include `SKU`(unità di conservazione delle scorte) e `name` del prodotto (nome visualizzato o nome leggibile dall&#39;utente). |
+| `productListItems` | Una serie di prodotti nel carrello. Include `SKU`(unità di conservazione delle scorte) e `name` del prodotto (nome visualizzato o nome leggibile dall&#39;utente). |

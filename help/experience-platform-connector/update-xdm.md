@@ -2,22 +2,21 @@
 title: Aggiungi gruppi di campi allo schema XDM
 description: Scopri come aggiungere gruppi di campi specifici per Adobe Commerce a uno schema XDM.
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
-source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
+source-git-commit: f5d1c39fe1b02d2a661b92f971fba5b3e836dd6a
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '266'
 ht-degree: 0%
 
 ---
 
 # Aggiungi gruppi di campi allo schema XDM
 
-Uno dei [prerequisiti](overview.md#prereqs) per utilizzare il connettore Experience Platform è necessario accedere all’area di lavoro del datastream e [creare un datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en) specifico per Adobe Commerce. Quando crei quel datastream, devi anche selezionare uno schema XDM che rappresenti i dati che intendi acquisire. Questo argomento fornisce i gruppi di campi che lo schema XDM deve includere per raccogliere correttamente i dati forniti dalla vetrina Adobe Commerce [events](events.md).
+Uno dei [fasi di onboarding](overview.md#onboarding-steps) per utilizzare il connettore Experience Platform è necessario accedere all’area di lavoro del datastream e [creare un datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) specifico per Adobe Commerce. Quando crei quel datastream, devi anche selezionare uno schema XDM che rappresenti i dati che intendi acquisire. Questo argomento fornisce i gruppi di campi che lo schema XDM deve includere per raccogliere correttamente i dati forniti dalla vetrina Adobe Commerce [events](events.md).
 
-1. Se non disponi già di uno schema XDM, [creare](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en#create) uno. In caso contrario, [modifica](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en#edit) lo schema XDM esistente nell’interfaccia utente di Adobe Experience Platform.
+1. Se non disponi già di uno schema XDM, [creare](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) uno. In caso contrario, [modifica](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#edit) lo schema XDM esistente nell’interfaccia utente di Adobe Experience Platform.
 
-1. [Aggiungi](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en#add-field-groups) i seguenti gruppi di campi specifici per Commerce:
+1. [Aggiungi](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups) i seguenti gruppi di campi specifici per Commerce:
 
-   - Commerce
    - Ricerca nel sito
    - Visita pagina web
    - Processo di accesso utente

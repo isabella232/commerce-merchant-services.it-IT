@@ -2,10 +2,10 @@
 title: Note sulla versione
 description: Informazioni aggiornate sulla versione del connettore Adobe Experience Platform di Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 1c881bd5783653304d71a7a4a3db9f3471bd0ae3
+source-git-commit: b41428a7e86b09bee5273828e58c5db6601e7a09
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 6%
+source-wordcount: '114'
+ht-degree: 5%
 
 ---
 
@@ -17,7 +17,14 @@ Queste note sulla versione descrivono le versioni più recenti del connettore Ex
 * ![Correzione](../assets/fix.svg) - Correzioni e miglioramenti
 * ![Bug](../assets/bug.svg) - Problemi noti
 
-## Connettore Experience Platform 1.0.0
+## 2,0,0
+
+* ![Nuovo](../assets/new.svg) - Aggiunte due nuove [eventi di vetrina](events.md): `openCart` e `removeFromCart`
+* ![Nuovo](../assets/new.svg) - È stato aggiunto il supporto per un [AEM vetrina](overview.md#aem-support)
+* ![Nuovo](../assets/new.svg) - Aggiunta la possibilità di specificare il proprio SDK web AEP quando [collegamento](connect-data.md) l’istanza Adobe Commerce all’Experience Platform
+* ![Correzione](../assets/fix.svg) - È stato aggiornato il requisito dell’ambito del datastream in modo che gli ID del datastream debbano essere indirizzati al sito web anziché a storeview
+
+## 1.0.0
 
 * ![Nuovo](../assets/new.svg) - Versione generale di disponibilità
 
