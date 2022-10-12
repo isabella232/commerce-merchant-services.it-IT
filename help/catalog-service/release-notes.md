@@ -4,8 +4,8 @@ description: Informazioni aggiornate sulla versione di [!DNL Catalog Service] pe
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '395'
+ht-degree: 1%
 
 ---
 
