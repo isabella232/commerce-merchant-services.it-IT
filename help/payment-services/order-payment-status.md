@@ -4,7 +4,7 @@ description: Utilizza il rapporto sullo stato del pagamento dell'ordine per aver
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: 39c0140961fa9de5075087bbc3fbec0e14560860
+source-git-commit: ddd9fa9b2a709858239c88477f19e8787a0b65c2
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] offre un reporting completo per ottenere una visione chiara degli ordini e dei pagamenti del tuo negozio.
 
-![Visualizzazione rapporti finanziari](assets/report-view.png)
+![Visualizzazione rapporti finanziari](assets/reports-justpayouts.png)
 
 Il rapporto sullo stato del pagamento dell&#39;ordine ti aiuta a capire facilmente dove si trova un ordine specifico all&#39;interno del flusso di processo dell&#39;ordine al contante. Questo rapporto ti consente di visualizzare rapidamente lo stato dei pagamenti degli ordini e di identificare eventuali problemi potenziali.
 
