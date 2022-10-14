@@ -2,7 +2,7 @@
 title: "[!DNL Payment Services] Note sulla versione"
 description: Consulta le note sulla versione per informazioni su tutti [!DNL Payment Services] versioni.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 39c0140961fa9de5075087bbc3fbec0e14560860
+source-git-commit: 77fbe32ec285bd6ab55100971459f685e19f8425
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -52,6 +52,12 @@ _28 giugno 2021_
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-2761 --> Ora puoi personalizzare i dati visualizzati nella [Report stato del pagamento dell&#39;ordine](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) e [Rapporto Pagamenti](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) mediante la visualizzazione o l&#39;eliminazione delle colonne mediante il controllo Column settings.
 
 +++
+
+## v1.4.1
+
+_14 ottobre 2022_
+
+![Nuovo](../assets/new.svg)<!-- Issue PAY-3766 --> Quando il metodo di pagamento di un cliente viene rifiutato, il messaggio di errore visibile è più descrittivo. Consiglia al cliente di inserire nuovamente le informazioni di pagamento e riprova, prova un altro metodo di pagamento o contatta la sua banca in merito alla transazione rifiutata.
 
 ## v1.4.0
 
