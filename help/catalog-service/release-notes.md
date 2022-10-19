@@ -2,7 +2,7 @@
 title: '[!DNL Catalog Service] Note sulla versione'
 description: Informazioni aggiornate sulla versione di [!DNL Catalog Service] per Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
+source-git-commit: c0d3d277bd9bb291de6eede811dc6b00255e5412
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 1%
@@ -13,17 +13,17 @@ ht-degree: 1%
 
 Queste note sulla versione descrivono le versioni più recenti di [!DNL Catalog Service] e comprendono:
 
-* ![Nuovo](../assets/new.svg) - Nuove funzioni
-* ![Correzione](../assets/fix.svg) - Correzioni e miglioramenti
-* ![Bug](../assets/bug.svg) - Problemi noti
+* ![Nuovo](../assets/new.svg) Nuove funzioni
+* ![Correzione](../assets/fix.svg) Correzioni e miglioramenti
+* ![Bug](../assets/bug.svg) Problemi noti
 
 ## Versione V1.0
 
 Data di rilascio: 2022-10-04 Compatibile con Adobe Commerce (EE): 2.4.x Compatibile con Adobe Commerce for Cloud (ECE): Stabilità 2.4.x: Disponibilità generale
 
-![Nuovo](../assets/new.svg) - Supporto di prodotti raggruppati e in bundle.
-![Nuovo](../assets/new.svg) - Sono state aggiunte le sostituzioni per la visibilità B2B. È ora possibile cercare i prodotti e aggiungerli al carrello per specifici gruppi di clienti.
-![Correzione](../assets/fix.svg) - Il servizio è ora più stabile e offre prestazioni migliori.
+![Nuovo](../assets/new.svg) Ora supporta prodotti raggruppati e in bundle.
+![Nuovo](../assets/new.svg) Sono state aggiunte le sostituzioni per la visibilità B2B. È ora possibile cercare i prodotti e aggiungerli al carrello per specifici gruppi di clienti.
+![Correzione](../assets/fix.svg) Il servizio è ora più stabile e offre prestazioni migliori.
 
 ### Limitazioni note
 
@@ -41,10 +41,10 @@ Queste funzionalità non sono ancora supportate:
 
 Data di rilascio: 2022-09-12 Compatibile con Adobe Commerce (EE): 2.4.x Compatibile con Adobe Commerce for Cloud (ECE): Stabilità 2.4.x: Beta
 
-![Nuovo](../assets/new.svg) - Supporto delle immagini per varianti: le immagini del prodotto vengono restituite in base alle opzioni selezionate
-![Nuovo](../assets/new.svg) - Ruoli per il supporto dei prezzi: consentire solo ai membri di gruppi di clienti specifici di vedere il prezzo dei prodotti
-![Correzione](../assets/fix.svg) - Maggiore stabilità e prestazioni del servizio
-![Nuovo](../assets/new.svg) - Gli aggiornamenti vengono ricevuti quando i prodotti vengono eliminati dal catalogo
+![Nuovo](../assets/new.svg) Le immagini per il supporto delle varianti: le immagini del prodotto vengono restituite in base alle opzioni selezionate
+![Nuovo](../assets/new.svg) Ruoli per il supporto dei prezzi: consentire solo ai membri di gruppi di clienti specifici di vedere il prezzo dei prodotti
+![Correzione](../assets/fix.svg) Miglioramento della stabilità e delle prestazioni del servizio
+![Nuovo](../assets/new.svg) Gli aggiornamenti vengono ricevuti quando i prodotti vengono eliminati dal catalogo
 
 ### Limitazioni note
 
@@ -59,7 +59,8 @@ Queste funzionalità non sono ancora supportate:
 
 Data di rilascio: 2022-08-09 Compatibile con Adobe Commerce (EE): 2.4.x Compatibile con Adobe Commerce for Cloud (ECE): Stabilità 2.4.x: Beta
 
-* ![Nuovo](../assets/new.svg) - `products` e `refineProduct` le query restituiscono i dati seguenti:
+![Nuovo](../assets/new.svg) La `products` e `refineProduct` le query restituiscono i dati seguenti:
+
 * Attributi di prodotto predefiniti (del sistema).
 * Attributi del prodotto dinamici e filtrali in base al ruolo (pagina di visualizzazione del prodotto/pagina di elenco prodotti).
 * Opzioni del prodotto.
