@@ -2,9 +2,9 @@
 title: Eventi
 description: Scopri quali dati acquisisce ogni evento.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: aaaab3d11c15a69856711a41e889a5d0208aedd2
+source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
 workflow-type: tm+mt
-source-wordcount: '1977'
+source-wordcount: '1987'
 ht-degree: 0%
 
 ---
@@ -447,4 +447,7 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | `searchResponse` | Indica se è stata ricevuta una risposta di ricerca |
 | `suggestions` | Matrice di stringhe che includono i nomi dei prodotti e delle categorie presenti nel catalogo simili alla query di ricerca |
 | `numberOfResults` | Numero di prodotti restituiti |
-| `productListItems` | Una serie di prodotti nel carrello. Include `SKU`(unità di conservazione delle scorte) e `name` del prodotto (nome visualizzato o nome leggibile dall&#39;utente). |
+| `productListItems` | Una serie di prodotti nel carrello. |
+| `SKU` | Unità di conservazione delle scorte. Identificatore univoco per il prodotto. |
+| `name` | Nome visualizzato o nome leggibile del prodotto |
+| `productImageUrl` | URL immagine principale del prodotto |

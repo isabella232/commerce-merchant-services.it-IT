@@ -2,9 +2,9 @@
 title: Raccogliere dati Commerce tramite tag Adobe Experience Platform
 description: Scopri come raccogliere i dati Commerce utilizzando i tag Adobe Experience Platform.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: c7344efead97b0562a146f096123dd84f998fd5e
+source-git-commit: f3c37c9c50c608f9f0ea4582fbcca2b99a3428b5
 workflow-type: tm+mt
-source-wordcount: '2504'
+source-wordcount: '2574'
 ht-degree: 0%
 
 ---
@@ -124,6 +124,7 @@ Per ciascuno dei seguenti eventi, mappa gli eventi Adobe Commerce al tuo XDM seg
 - [`searchRequestSent`](#searchrequestsent)
 - [`searchResponseReceived`](#searchresponsereceived)
 - [`addToCart`](#addtocart)
+- [`openCart`](#opencart)
 - [`viewCart`](#viewcart)
 - [`removeFromCart`](#removefromcart)
 - [`startCheckout`](#initiatecheckout)
@@ -783,6 +784,39 @@ Crea i seguenti elementi dati:
 - **Tipo di azione**: `Send event`
 - **Tipo**: `commerce.productListAdds`
 - **Dati XDM**: `%add to cart%`
+
+### openCart {#opencart}
+
+Attivazione quando viene creato un nuovo carrello, che si verifica quando un prodotto viene aggiunto a un carrello vuoto.
+
+#### Elementi dati
+
+Crea il seguente elemento dati:
+
+1. Carrello aperto:
+
+   - **Nome**: `open cart`
+   - **Estensione**: `Adobe Experience Platform Web SDK`
+   - **Tipo di elemento dati**: `XDM object`
+   - **Gruppo di campi**: `commerce` > `productListOpens` > `value`
+   - **value**: **Valore** = `1`
+   - **Gruppo di campi**: `commerce` > `cart` > `cartID`
+   - **ID carrello**: **Valore** = `%cart id%`
+   - **Gruppo di campi**: `productListItems`. Per `productListItems`, è possibile precalcolare più elementi. Seleziona **productListItems** > **Fornire un intero array**.
+
+#### Regole 
+
+- **Nome**: `open cart`
+- **Estensione**: `Adobe Client Data Layer`
+- **Tipo evento**: `Data Pushed`
+- **Evento specifico**: `open-cart`
+
+##### Azioni
+
+- **Estensione**: `Adobe Experience Platform Web SDK`
+- **Tipo di azione**: `Send event`
+- **Tipo**: `commerce.productListOpens`
+- **Dati XDM**: `%open cart%`
 
 ### viewCart {#viewcart}
 
