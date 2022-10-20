@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] per Adobe Commerce fornisce un modo per recuperare il contenuto delle pagine di visualizzazione dei prodotti e delle pagine di elenco dei prodotti molto più rapidamente rispetto alle query native di Adobe Commerce GraphQL."'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
+source-git-commit: fb229136728a8e7a8afa077120dbad388d1e4089
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,30 @@ Poiché il servizio evita la comunicazione diretta con l’applicazione, è in g
 I sistemi GraphQL di base e di servizio non comunicano direttamente tra loro. Puoi accedere a ogni sistema da un URL diverso e le chiamate richiedono informazioni di intestazione diverse. I due sistemi GraphQL sono progettati per essere utilizzati insieme. La [!DNL Catalog Service] Il sistema GraphQL potenzia il sistema di base per rendere più veloci le esperienze sulla vetrina dei prodotti.
 
 Facoltativamente, puoi implementare [Rete API per Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/) per integrare i due sistemi GraphQL di Adobe Commerce con API private e di terze parti e altre interfacce software tramite Adobe Developer. La mesh può essere configurata per garantire che le chiamate indirizzate a ciascun endpoint contengano le informazioni di autorizzazione corrette nelle intestazioni.
+
+## Dettagli architettonici
+
+Le sezioni seguenti descrivono alcune delle differenze tra i due sistemi GraphQL.
+
+### Gestione dello schema
+
+Poiché Catalog Service funziona come un servizio, gli integratori non devono preoccuparsi della versione sottostante di Commerce. La sintassi delle query è la stessa per tutte le versioni. Inoltre, lo schema è coerente per tutti i merchants. Questa coerenza semplifica la definizione delle best practice e aumenta notevolmente il riutilizzo dei widget di vetrina.
+
+### Semplificazione dei tipi di prodotto
+
+Lo schema riduce la diversità dei tipi di prodotto in due casi d’uso:
+
+* I prodotti semplici sono quelli definiti con un unico prezzo e quantità. Il servizio catalogo mappa i tipi di prodotti semplici, virtuali, scaricabili e con carta regalo in `simpleProductViews`.
+
+* I prodotti complessi sono costituiti da più prodotti semplici. I prodotti semplici componenti possono avere prezzi diversi. È inoltre possibile definire un prodotto complesso in modo che l’acquirente possa specificare la quantità di prodotti semplici componenti. Il servizio catalogo mappa i tipi di prodotto configurabili, raggruppati e raggruppati in `complexProductViews`.
+
+Le opzioni di prodotto complesse sono unificate e distinte in base al loro comportamento, non in base al tipo. Ogni valore di opzione rappresenta un prodotto semplice. Questo valore di opzione ha accesso agli attributi di prodotto semplici, tra cui prezzo. Quando l&#39;acquirente seleziona tutte le opzioni per un prodotto complesso, la combinazione delle opzioni selezionate punta a un prodotto semplice specifico. Il prodotto semplice rimane ambiguo finché l&#39;acquirente non seleziona un valore per tutte le opzioni disponibili.
+
+### Prezzi
+
+I prodotti semplici rappresentano l&#39;unità di vendita di base che ha un prezzo. Servizio catalogo calcola il prezzo regolare prima degli sconti e il prezzo finale dopo gli sconti. I calcoli dei prezzi possono includere imposte sui prodotti fissi. Escludono le promozioni personalizzate.
+
+Un prodotto complesso non ha un prezzo fisso. Al contrario, Servizio catalogo restituisce i prezzi delle semplificazioni collegate. Ad esempio, un commerciante può assegnare inizialmente gli stessi prezzi a tutte le varianti di un prodotto configurabile. Se determinate dimensioni o colori sono impopolari, il commerciante può ridurre i prezzi di tali varianti. Pertanto, il prezzo del prodotto complesso (configurabile) all&#39;inizio mostra una fascia di prezzo, riflettendo il prezzo sia delle varianti standard che impopolari. Dopo che l&#39;acquirente ha selezionato un valore per tutte le opzioni disponibili, la vetrina visualizza un prezzo unico.
 
 ## Implementazione
 
