@@ -1,11 +1,11 @@
 ---
-user-guide-title: '"[!DNL Product Recommendations] Guida"'
+user-guide-title: "[!DNL Product Recommendations] Guida"
 user-guide-description: Questa guida fornisce istruzioni dettagliate sull’utilizzo di [!DNL Product Recommendations] da Adobe Commerce.
-breadcrumb-title: '"[!DNL Product Recommendations] Guida"'
-source-git-commit: 100bd28a68991cda2db3a327d3c3916517c33366
+breadcrumb-title: "[!DNL Product Recommendations] Guida"
+source-git-commit: 81ab2e22b0ec81e97d27ee135c88b50731a3986d
 workflow-type: tm+mt
-source-wordcount: '43'
-ht-degree: 4%
+source-wordcount: '51'
+ht-degree: 3%
 
 ---
 
@@ -30,3 +30,8 @@ ht-degree: 4%
    - [Tipi di consigli](type.md)
    - [Filtri](filters.md)
    - [Posizionamento ed etichette](placement.md)
+- [!DNL Product Recommendations] Sviluppatore {#developer}
+   - [Panoramica](development-overview.md)
+   - [Raccogliere dati](events.md)
+   - [Modifica](customize.md)
+   - [Gestire le limitazioni dei cookie](setting-cookie.md)
