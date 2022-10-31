@@ -2,7 +2,7 @@
 title: Note sulla versione
 description: Informazioni aggiornate sulla versione del connettore Adobe Experience Platform di Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: f3c37c9c50c608f9f0ea4582fbcca2b99a3428b5
+source-git-commit: b0f729a8035d89a8cd45b583df28dedfb36c19d4
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 3%
@@ -27,12 +27,14 @@ Vedi [Disponibilità](https://experienceleague.adobe.com/docs/commerce-operation
 
 Queste note sulla versione descrivono le modifiche alle funzioni e le correzioni relative alle estensioni utilizzate dal connettore di Experience Platform.
 
-+++Aggiornamenti al servizio in hosting
++++Aggiornamenti al servizio supportati
 
 _12 ottobre 2022_
 
 * ![Nuovo](../assets/new.svg) - Aggiunte due [eventi di vetrina](events.md): `openCart` e `removeFromCart` all’SDK e al Collector per Adobe Commerce Storefront Events
 * ![Nuovo](../assets/new.svg) - È stato aggiunto il supporto per un [AEM vetrina](overview.md#aem-support)
+
++++
 
 ## 2,0,0
 
