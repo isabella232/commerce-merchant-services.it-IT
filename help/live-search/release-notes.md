@@ -2,10 +2,10 @@
 title: "[!DNL Live Search] Note sulla versione"
 description: "Informazioni sulla versione più recente per [!DNL Live Search] da Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
+source-git-commit: baa2587fc9d048d7a7915b9370b63ac6c2ff93d2
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -16,6 +16,22 @@ Queste note sulla versione descrivono le versioni più recenti di [!DNL Live Sea
 * ![Nuovo](../assets/new.svg) - Nuove funzioni
 * ![Correzione](../assets/fix.svg) - Correzioni e miglioramenti
 * ![Bug](../assets/bug.svg) - Problemi noti
+
+## [!DNL Live Search] 2.0.4
+
+* Compatibile con Adobe Commerce (EE): 2.4.x
+* Compatibile con Adobe Commerce per Cloud (ECE): 2.4.x
+* Stabilità: Stabile
+
+* ![Nuovo](../assets/new.svg) - Live Search supporta ora il filtro tramite l’impostazione &quot;Display Out of Stock Products&quot; nell’amministratore. Se &#39;Display Out of Stock Products&#39; è impostato su false, `inStock = true` viene aggiunto al filtro.
+* ![Correzione](../assets/fix.svg) - Per migliorare le prestazioni, il blocco &quot;Suggerimenti&quot; è stato rimosso dalla finestra a comparsa Live Search. I dati vengono comunque trasmessi tramite GraphQL, nel caso in cui desideri sostituire la funzione.
+* ![Correzione](../assets/fix.svg) - `categories` e `categoryPath` hanno sostituito `categoryIds` per il filtro delle categorie. Ulteriori informazioni nella sezione [productSearch](https://devdocs.magento.com/live-search/product-search.html#filter) argomento.
+* ![Correzione](../assets/fix.svg) - In precedenza, un utente legato a un’azienda B2B avrebbe ricevuto un codice del gruppo di clienti errato durante le ricerche. Live Search restituisce ora il valore corretto.
+* ![Correzione](../assets/fix.svg) - In precedenza, quando si cerca un termine che non esiste, Live Search restituirà un errore. Questo bug è stato corretto.
+
+Per accedere a queste funzioni, i merchants devono aggiornare l’estensione Live Search >= 2.0.4 .
+
+Consigliamo agli utenti di eseguire l’aggiornamento e il test prima di passare alla produzione. È consigliabile aggiornare l&#39;ambiente di produzione durante le ore di inattività dopo la verifica dei risultati dell&#39;ambiente di test.
 
 ## [!DNL Live Search] 2,0,3
 
