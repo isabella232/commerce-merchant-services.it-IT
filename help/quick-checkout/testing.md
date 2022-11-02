@@ -1,8 +1,8 @@
 ---
-title: '"Verifica [!DNL Quick Checkout] per estensione Adobe Commerce"'
-description: '"La verifica e la convalida garantiscono che [!DNL Quick Checkout] l''estensione funziona come previsto."'
+title: "Verifica [!DNL Quick Checkout] per estensione Adobe Commerce"
+description: "La verifica e la convalida garantiscono che [!DNL Quick Checkout] l'estensione funziona come previsto."
 exl-id: 308f39e1-e2f6-40d8-b876-0f9013effed3
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -44,15 +44,15 @@ Completa i test di produzione con carte di credito reali e [!DNL Bolt] account d
 Completa il pagamento dal tuo negozio:
 
 1. Vai alla vetrina e inserisci gli oggetti desiderati nel carrello.
-2. Procedi al pagamento.
-3. Immettere un indirizzo e-mail associato a un [!DNL Bolt] quando richiesto.
-4. Inserisci la Password una tantum (OTP) inviata all’indirizzo e-mail dell’account.
-5. Seleziona il dashboard dell’ambiente:
+1. Procedi al pagamento.
+1. Immettere un indirizzo e-mail associato a un [!DNL Bolt] quando richiesto.
+1. Inserisci la Password una tantum (OTP) inviata all’indirizzo e-mail dell’account.
+1. Seleziona il dashboard dell’ambiente:
 
    - Sandbox
    - Produzione
 
-6. Effettua l&#39;ordine.
+1. Effettua l&#39;ordine.
 
 Una volta effettuato un ordine, puoi visualizzare i dettagli dei tuoi ordini nel tuo _Griglia ordini_ visualizza:
 

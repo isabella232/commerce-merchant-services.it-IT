@@ -2,9 +2,9 @@
 title: "A bordo [!DNL Quick Checkout] per estensione Adobe Commerce"
 description: "Scopri come [!DNL Quick Checkout] potrebbe essere utile per la tua istanza Adobe Commerce e per come effettuare l’onboarding e la configurazione dell’estensione."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
+source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,9 @@ Per collegare il provider di servizi di pagamento segui i passaggi descritti nel
 
 1. Convalida le credenziali dopo aver fornito l’API univoca e [!DNL Publishable keys].
 
-![Pagamento rapido](assets/quick-checkout-main-view.png)
+![Pagamento rapido](assets/quick-checkout-main-view-react.png)
+
+Fai riferimento a [Impostazioni](../quick-checkout/settings-quick-checkout.md) per ulteriori informazioni sulle opzioni di configurazione per il [!DNL Quick Checkout] per l&#39;estensione Adobe Commerce.
 
 >[!CAUTION]
 >
