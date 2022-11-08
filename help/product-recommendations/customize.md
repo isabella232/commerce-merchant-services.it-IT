@@ -1,7 +1,8 @@
 ---
 title: Personalizza
 description: Scopri come personalizzare i consigli sui prodotti.
-source-git-commit: 478c5bf7d7830d971c576ce50ff0bf3ffd4fe9e5
+exl-id: b1b8e770-45ec-4403-b79b-4f0a9f7bd959
+source-git-commit: a34c3c8a5caca1bbf611b2df650c562aeeab297b
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 0%
@@ -110,7 +111,7 @@ Gli sviluppatori devono spesso accedere ai valori degli attributi di prodotto pe
 
 Ad esempio, se il tuo negozio vende alcuni prodotti biologici, potresti avere un attributo personalizzato su tali prodotti che li designa come `Organic = Yes`. Potrebbe essere necessario accedere a questo valore di attributo nella vetrina in modo da poter fornire a questi prodotti un trattamento visivo speciale quando compaiono in Recommendations. Analogamente, l’accesso a questi valori di attributi di prodotto personalizzati consente di applicare un badge ai prodotti o di indirizzare la logica personalizzata nel livello di presentazione del sito.
 
-![Aggiungi badge](assets/unit.png)
+![Aggiungi badge](assets/unit-custom.png)
 
 Per assicurarti che sia disponibile un attributo di prodotto personalizzato quando esegui il rendering dell&#39;unità di raccomandazione sulla pagina, imposta la variabile `Used in Product Listing` proprietà di `Yes` in [Attributi del prodotto](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) in Admin.
 
