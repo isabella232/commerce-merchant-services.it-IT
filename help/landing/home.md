@@ -5,7 +5,7 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: Documentazione
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: cc7636dd6bb5dff0d1223279bd22b50df9758253
+source-git-commit: bbc97eff4cd0c5b544df34061a1e156e72b91d18
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%
@@ -62,14 +62,14 @@ Adobe fornisce una raccolta di Commerce, integration e data services per aiutare
    </tr>
 <tr>
     <td valign="top" width="200px">
-       <img alt="Canale di vendita Amazon" src="assets/amazon-channel.png" width="170px"></td>
+       <img alt="Sales Channel Amazon" src="assets/amazon-channel.png" width="170px"></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html"> <strong>Canale di vendita Amazon</strong></a> <br><em>(Disponibile per Magento Open Source)</em>
     <div>È possibile integrarsi con la più grande destinazione globale di acquisti online al mondo per consentire le vendite di Amazon, fornire automazione e sincronizzazione dei dati, gestire gli elenchi di Amazon e altro ancora tramite un unico dashboard.</div>
   </td>
    </tr>
 <tr>
     <td valign="top">
-       <img alt="[!DNL Channel manager]" src="assets/channel-manager.png" width="170px"></td>
+       <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png" width="170px"></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"> <strong>Channel Manager</strong></a> <br><em>(Disponibile per Magento Open Source)</em>
     <div>Aumentare le vendite, raggiungere nuovi clienti, semplificare le operazioni e risparmiare tempo integrando con Walmart Marketplace. Consente al personale di gestire le vendite, l'inventario e i prezzi di Walmart Marketplace in modo semplice e in Commerce.</div>
   </td>
