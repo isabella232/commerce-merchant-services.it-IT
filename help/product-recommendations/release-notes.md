@@ -2,9 +2,9 @@
 title: Note sulla versione
 description: Informazioni aggiornate sulla versione di [!DNL Product Recommendations] da Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
+source-git-commit: 944576fdacd7dbbb704f74ba06d34f64eac41122
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '967'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,6 @@ ht-degree: 0%
 
 Le note sulla versione contengono aggiornamenti a quanto segue [!DNL Product Recommendations] moduli:
 
-* A partire dal marzo 2021, [!DNL Product Recommendations] sono ora supportati in [PWA Studi](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/) vetrine.
 * [!DNL Product Recommendations] metapackage: `magento/product-recommendations`
 * Supporto di Page Builder in [!DNL Product Recommendations] (facoltativo) modulo: `magento/module-page-builder-product-recommendations`
 * Supporto per tipi di raccomandazione per similarità visiva per [!DNL Product Recommendations] (facoltativo) modulo: `magento/module-visual-product-recommendations`
@@ -26,6 +25,10 @@ Le note sulla versione includono:
 Consulta la documentazione per gli sviluppatori su [informazioni sulla compatibilità dei prodotti](https://devdocs.magento.com/release/availability.html).
 
 ## Adobe Commerce 2.3.x e 2.4.x
+
+### 4.0.1 di magento/product-recommendations
+
+* ![Correzione](../assets/fix.svg) - In precedenza, il Recommendations prodotto mostrava un errore quando la valuta di visualizzazione veniva convertita in una valuta non predefinita. Il cambio di valuta ora funziona correttamente.
 
 ### 4.0.0 di magento/product-recommendations
 
