@@ -2,9 +2,9 @@
 title: "Flusso di pagamento in Adobe Commerce"
 description: "Panoramica del [!DNL Quick Checkout] Flusso in Adobe Commerce."
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
+source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -47,4 +47,4 @@ La [!DNL Quick Checkout] consente più casi d’uso durante un flusso di checkou
 
 ## Assistenza
 
-Contatta il supporto Adobe Commerce tramite [Centro assistenza Adobe Commerce](https://support.magento.com/hc/en-us/articles/360000913794-Adobe-Commerce-Help-Center-User-Guide) per qualsiasi assistenza.
+Contatta il supporto Adobe Commerce tramite [Centro assistenza Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) per qualsiasi assistenza.

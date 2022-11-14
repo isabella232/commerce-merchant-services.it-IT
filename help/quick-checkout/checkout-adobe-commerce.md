@@ -2,9 +2,9 @@
 title: "Flusso di pagamento per un utente Adobe Commerce"
 description: "Panoramica del [!DNL Quick Checkout] flusso per un utente Adobe Commerce."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
+source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Se [!DNL Bolt] account trovato durante il pagamento, gli acquirenti possono cont
 
 Se l&#39;acquirente ha effettuato l&#39;accesso ad Adobe Commerce prima del pagamento, il [!DNL Bolt] La finestra a comparsa OTP non verrà visualizzata durante il pagamento.
 
-Se riscontri problemi quando inserisci un ordine come utente Adobe Commerce esistente, consulta la [Risolvere i problemi relativi all’estrazione rapida](https://support.magento.com/hc/en-us/articles/6909450342541) nell&#39;Aiuto di Adobe Commerce.
+Se riscontri problemi quando inserisci un ordine come utente Adobe Commerce esistente, consulta la [Risolvere i problemi relativi all’estrazione rapida](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) nell&#39;Aiuto di Adobe Commerce.
 
 ## Nuovo [!DNL Bolt] account
 
