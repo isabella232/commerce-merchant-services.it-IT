@@ -2,9 +2,9 @@
 title: "Panoramica sull'onboarding"
 description: "[!DNL Live Search] flusso di onboarding, requisiti di sistema, limiti e limitazioni"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 5a17c601f84c7e366801c17fad96c1e598b1adfe
+source-git-commit: b4cdbc3b166a3aae5b4219196a86cb681744d435
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -34,9 +34,9 @@ Al momento, il [!DNL Live Search] l’API di ricerca/categoria ha i seguenti lim
 
 ### Indicizzazione
 
-* Indici fino a 300 attributi di prodotto per visualizzazione store
-* Indici solo prodotti dal database Adobe Commerce
-* Non indicizza le pagine CMS
+* Indici fino a 300 attributi di prodotto per visualizzazione store.
+* Indici solo i prodotti dal database Adobe Commerce.
+* Le pagine CMS non sono indicizzate.
 
 ### Query
 
@@ -45,13 +45,13 @@ Al momento, il [!DNL Live Search] l’API di ricerca/categoria ha i seguenti lim
 
 ### Regole
 
-* Il numero massimo di regole per ID spazio dati è 50.
+* Il numero massimo di regole per visualizzazione archivio è 50.
 * Il numero massimo di condizioni per regola è 10.
 * Il numero massimo di eventi per regola è 25.
 
 ### Sinonimi
 
-* [!DNL Live Search] può gestire fino a 200 sinonimi per `Data Space ID`.
+* [!DNL Live Search] può gestire fino a 200 sinonimi per visualizzazione store.
 
 ### Versione beta di PWA
 
