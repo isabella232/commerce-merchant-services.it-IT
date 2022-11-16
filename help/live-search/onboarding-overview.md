@@ -2,9 +2,9 @@
 title: "Panoramica sull'onboarding"
 description: "[!DNL Live Search] flusso di onboarding, requisiti di sistema, limiti e limitazioni"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: b4cdbc3b166a3aae5b4219196a86cb681744d435
+source-git-commit: 8e541924d6a69f963e150057b82e682e1e5d3801
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
@@ -62,9 +62,6 @@ Al momento, il [!DNL Live Search] l’API di ricerca/categoria ha i seguenti lim
 ### Non supportato al momento
 
 * La [Ricerca avanzata](https://docs.magento.com/user-guide/catalog/search-advanced.html) il modulo è disabilitato quando [!DNL Live Search] e il collegamento Ricerca avanzata nel piè di pagina della vetrina viene rimosso.
-* [Gruppi di clienti](https://docs.magento.com/user-guide/customers/customer-groups.html)
 * [Gruppi di prezzi personalizzati](https://docs.magento.com/user-guide/catalog/product-price-group.html)
 * Più posizioni di inventario utilizzate da [MCOM](https://docs.magento.com/user-guide/mcom.html) o altre estensioni OMS
-* [Funzionalità B2B integrate](https://business.adobe.com/products/magento/b2b-ecommerce.html)
 * I prezzi dei prodotti non includono [imposta sul valore aggiunto](https://docs.magento.com/user-guide/tax/vat.html) (IVA).
-* I prodotti esauriti vengono visualizzati nei risultati di ricerca indipendentemente dal [Opzioni stock](https://docs.magento.com/user-guide/catalog/inventory-options-global.html) configurazione.
