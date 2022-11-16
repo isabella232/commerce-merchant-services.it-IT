@@ -1,13 +1,13 @@
 ---
-title: "[!DNL Quick Checkout] reporting"
-description: "[!DNL Quick Checkout] offre informazioni complete sui rapporti."
-source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
+title: '''[!DNL Quick Checkout] reportistica'
+description: '''[!DNL Quick Checkout] offre informazioni complete sui rapporti."'
+exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
+source-git-commit: dd9eab0d6b88a6c723ec10b882a4bb668d66973f
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
-
 
 # Rapporti
 
@@ -28,9 +28,9 @@ I grafici nella sezione Panoramica mostrano informazioni dettagliate sulle prest
 | Grafico | Descrizione |
 |---|---|
 | [!UICONTROL Checkout abandonment] | La percentuale di visitatori che escono dal processo di pagamento senza completare un acquisto. |
-| [!UICONTROL Checkout abandonment breakdown] | L’abbandono del pagamento è diviso per tipo di visitatore. Opzioni: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
+| [!UICONTROL Checkout abandonment breakdown] | L’abbandono del pagamento è diviso per tipo di visitatore. La descrizione comando mostra una differenza percentuale tra Bolt e Guest. Opzioni: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 | [!UICONTROL Average checkout time] | Il tempo medio impiegato da un visitatore per completare il processo di pagamento. |
-| [!UICONTROL Average checkout time breakdown] | Tempo medio di pagamento diviso per tipo di visitatore. Opzioni: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
+| [!UICONTROL Average checkout time breakdown] | Tempo medio di pagamento diviso per tipo di visitatore. La descrizione comando mostra una differenza percentuale tra Bolt e Guest. Opzioni: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 | [!UICONTROL Orders by account type] | Ordini inseriti divisi per tipo di visitatore. Opzioni: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 
 ## Rapporti sulle tendenze
@@ -55,4 +55,3 @@ Puoi filtrare i risultati mostrati per data, o i predefiniti esistenti, come **U
 |---|---|
 | [!UICONTROL Preset] | Un elenco a discesa che visualizza i predefiniti che possono essere utilizzati per mostrare intervalli di dati specifici. Per impostazione predefinita: Ultimi 30 giorni |
 | [!UICONTROL Date range] | Elenco a discesa che consente di selezionare un intervallo di dati specifico a seconda delle date selezionate. |
-
