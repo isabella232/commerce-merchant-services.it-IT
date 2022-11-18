@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Note sulla versione"
 description: Consulta le note sulla versione per informazioni su tutti [!DNL Payment Services] versioni.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 77fbe32ec285bd6ab55100971459f685e19f8425
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1286'
 ht-degree: 0%
 
 ---
@@ -53,11 +53,19 @@ _28 giugno 2021_
 
 +++
 
+## v1.5.0
+
+_18 novembre 2022_
+
+![Nuovo](../assets/new.svg)<!-- Issue PAY-3880 --> Ora un acquirente può [visualizza (salva) le informazioni sulla carta di credito durante il pagamento](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) da utilizzare in un acquisto successivo per lo stesso negozio o un altro negozio all&#39;interno dello stesso account commerciale.
+
+![Nuovo](../assets/new.svg)<!-- Issue PAY-3950 --> Gli esercenti ora possono abilitare [Funzione Instant Purchase Commerce](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) per i loro negozi in modo che i consumatori possano [informazioni sulla carta di credito vaulata](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html)) per accelerare il pagamento.
+
 ## v1.4.1
 
 _14 ottobre 2022_
 
-![Nuovo](../assets/new.svg)<!-- Issue PAY-3766 --> Quando il metodo di pagamento di un cliente viene rifiutato, il messaggio di errore visibile è più descrittivo. Consiglia al cliente di inserire nuovamente le informazioni di pagamento e riprova, prova un altro metodo di pagamento o contatta la sua banca in merito alla transazione rifiutata.
+![Correzione](../assets/fix.svg)<!-- Issue PAY-3766 --> Quando il metodo di pagamento di un cliente viene rifiutato, il messaggio di errore visibile è più descrittivo. Consiglia al cliente di inserire nuovamente le informazioni di pagamento e riprova, prova un altro metodo di pagamento o contatta la sua banca in merito alla transazione rifiutata.
 
 ## v1.4.0
 

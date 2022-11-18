@@ -2,9 +2,9 @@
 title: Opzioni di pagamento
 description: Impostare le opzioni di pagamento per personalizzare i metodi disponibili per i clienti del negozio.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: c7afa798096e07409fb36a3d08f7e5b2a5ce40db
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '1001'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,8 @@ Esistono diversi comportamenti per ogni metodo di pagamento a seconda della posi
 ## [!UICONTROL Credit Card Fields]
 
 [!UICONTROL Credit Card Fields] fornire un pagamento semplice e sicuro per le modalità di pagamento con carta di credito o con carta di debito. Quando un acquirente effettua il Check-Out utilizzando i campi della carta di credito, immette il proprio nome, indirizzo di fatturazione e informazioni sulla carta di credito o di debito per effettuare l&#39;ordine. Le informazioni sui clienti vengono utilizzate in modo sicuro durante la sessione di acquisto per guidarle facilmente attraverso il flusso di cassa.
+
+Abilita [archiviazione carte di credito](#vaulting) per consentire agli acquirenti di archiviare (salvare) le informazioni della propria carta di credito per un rapido pagamento in un secondo momento.
 
 Puoi configurare [!UICONTROL Credit Card Fields] nella configurazione dello store o nella home di Payment Services. Vedi [Impostazioni](settings.md#credit-card-fields) per ulteriori informazioni.
 
@@ -104,6 +106,12 @@ Quando un cliente effettua il check-out direttamente dalla pagina del prodotto, 
 Se il cliente annulla l&#39;ordine, l&#39;articolo nella pagina di prodotto corrente viene aggiunto al carrello del cliente, unendo tutti gli altri articoli presenti nel carrello. Questa funzione consente al cliente di acquistare rapidamente l&#39;articolo che sta visualizzando, conservando anche tutti gli altri articoli aggiunti al carrello in precedenza durante la navigazione dei prodotti.
 
 Quando un cliente accede al flusso di pagamento dalla pagina del prodotto, la pagina di pagamento viene semplificata; la visualizzazione mostra solo i dati e le opzioni relativi all’ordine.
+
+## Archiviazione carte di credito
+
+Gli acquirenti possono archiviare, o &quot;salvare&quot;, le informazioni sulla propria carta di credito per acquisti futuri a livello di sito web (qualsiasi negozio all&#39;interno del conto dello stesso commerciante).
+
+Vedi [Archiviazione carte di credito](vaulting.md) per ulteriori informazioni.
 
 ## Sicurezza
 

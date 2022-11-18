@@ -2,9 +2,9 @@
 title: Sicurezza e conformità
 description: Controlla i requisiti di sicurezza e conformità per il tuo sito.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,10 @@ I commercianti possono completare un [questionario di autovalutazione (SAQ)](htt
 ### Campi carta di credito
 
 Con i campi della carta di credito, nessun dato regolamentato PCI viene trasmesso tra i servizi. Non è necessario archiviare o mantenere tali dati, il che riduce notevolmente i problemi di conformità PCI.
+
+### Vaulting delle schede
+
+Quando un acquirente [vaults o &quot;salva&quot; le loro informazioni sulla carta di credito](vaulting.md) per gli acquisti futuri nei vostri negozi, le informazioni minime sulla carta di credito vengono condivise con l&#39;acquirente (ultime quattro cifre, data di scadenza della carta e marca della carta). Le informazioni sulla carta di credito vengono memorizzate con il provider di pagamento. Quando una carta scade o non ha più bisogno delle informazioni salvate, può cancellare quel token in modo che le informazioni non vengano più memorizzate dal provider di pagamento.
 
 ### Pulsanti avanzati PayPal
 

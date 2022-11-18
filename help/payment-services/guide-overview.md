@@ -4,9 +4,9 @@ description: Informazioni complete sulle [!DNL Payment Services] per [!DNL Adobe
 seo-title: Adobe Commerce Payments Services Guide
 seo-description: Describes how to use [!DNL Payment Services] with Adobe Commerce or [!DNL Magento Open Source].
 exl-id: 30b23f26-9aac-4a24-a607-2431455fc935
-source-git-commit: 83040fecfc4f0ffbd3f6b3fc5e098443dadcdb5e
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
@@ -35,8 +35,8 @@ Questa guida non descrive le funzionalità di base di [!DNL Adobe Commerce] e [!
 
 | Guida | Descrizione |
 |------ | ----------- |
-| [[!DNL Adobe Commerce] 2.4 Guida utente](https://docs.magento.com/user-guide/) | Documentazione incentrata sul merchant per entrambi [!DNL Adobe Commerce] e [!DNL Magento Open Source] |
-| [[!DNL Adobe Commerce] Guida per gli sviluppatori 2.4](https://devdocs.magento.com/) | Documentazione incentrata sugli sviluppatori utilizzata per generare e personalizzare [!DNL Adobe Commerce] o [!DNL Magento Open Source] |
+| [[!DNL Adobe Commerce] 2.4 Guida utente](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | Documentazione incentrata sul merchant per entrambi [!DNL Adobe Commerce] e [!DNL Magento Open Source] |
+| [[!DNL Adobe Commerce] Guida per gli sviluppatori 2.4](https://developer.adobe.com/commerce/docs) | Documentazione incentrata sugli sviluppatori utilizzata per generare e personalizzare [!DNL Adobe Commerce] o [!DNL Magento Open Source] |
 
 ## Supporto
 

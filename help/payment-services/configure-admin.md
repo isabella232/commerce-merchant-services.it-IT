@@ -4,9 +4,9 @@ description: Dopo l'installazione, è possibile configurare [!DNL Payment Servic
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 2e9a611cf94bb83733c9cad1e04f4244f62d4272
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '780'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -61,6 +61,8 @@ Vedi [Opzioni di pagamento](payments-options.md#paypal-smart-buttons) per ulteri
 1. In _[!UICONTROL Payment Services]_espandi la sezione_[!UICONTROL Credit Card Fields]_ sezione .
 1. Per **[!UICONTROL Title]**, immettere il testo (se necessario) per modificare il nome del metodo di pagamento come mostrato durante l&#39;estrazione.
 1. A [imposta l&#39;azione di pagamento](production.md#set-payment-services-as-payment-method), seleziona **[!UICONTROL Authorize]** o **Autorizzazione e acquisizione**.
+1. Per **[!UICONTROL Show on checkout page]**, scegli `Yes` per abilitare o disabilitare i campi della carta di credito nella pagina di pagamento.
+1. Per **[!UICONTROL Vault Enabled]**, scegli `Yes` per abilitare l&#39;archiviazione della carta di credito per il pagamento.
 1. Per **Modalità debug**, scegli `Yes` per abilitare la modalità di debug (o `No` per disattivarlo).
 1. Fai clic su **[!UICONTROL Save Config]** per salvare le modifiche.
 1. Passa a **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, quindi fai clic su **[!UICONTROL Flush Cache]** per aggiornare tutte le cache non valide.
