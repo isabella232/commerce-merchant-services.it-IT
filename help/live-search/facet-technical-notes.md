@@ -1,10 +1,10 @@
 ---
-title: '"Note tecniche"'
-description: '"Note tecniche sull''utilizzo [!DNL Live Search] facet."'
+title: "Note tecniche"
+description: "Note tecniche sull'utilizzo [!DNL Live Search] facet."
 exl-id: 37982610-0ff7-48b7-b088-be7d2eff8a57
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 1a55f2fb3d56183e5e73d172ebdc40f340e4d520
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '117'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Faceting è un metodo di filtraggio ad alte prestazioni che utilizza più dimensioni di valori di attributi statici e dinamici ricercabili come criteri di ricerca.
 
-[!DNL Live Search] utilizza `productSearch` query che restituisce facet e altri dati specifici per [!DNL Live Search]. Fai riferimento a [`productSearch` query](https://devdocs.magento.com/live-search/product-search.html) per esempi di codice.
+[!DNL Live Search] utilizza `productSearch` query che restituisce facet e altri dati specifici per [!DNL Live Search]. Fai riferimento a [`productSearch` query](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) per esempi di codice.
 
 ## Aggregazione di facet
 

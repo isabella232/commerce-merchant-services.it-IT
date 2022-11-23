@@ -2,9 +2,9 @@
 title: "Installazione [!DNL Live Search]"
 description: "Scopri come installare, aggiornare e disinstallare [!DNL Live Search] da Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: c4039dbf203198ea1218f4e1516a2690fb7c61c4
+source-git-commit: 11f961ea7e2e01d5d9efdaf2191f25f3a1dc8878
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ In questo scenario, [!DNL Elasticsearch] gestisce temporaneamente le richieste d
 
    Dovresti essere in grado di aggiungere facet dopo `cron` esegue i feed di prodotto e attributo ed esporta i metadati degli attributi in [!DNL Live Search] servizi.
 
-1. Attendi almeno un’ora per l’indicizzazione e la sincronizzazione dei dati. Quindi, utilizza il [Campo giochi GraphQL](https://devdocs.magento.com/live-search/graphql-support.html) con la query predefinita per verificare quanto segue:
+1. Attendi almeno un’ora per l’indicizzazione e la sincronizzazione dei dati. Quindi, utilizza il [Campo giochi GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) con la query predefinita per verificare quanto segue:
 
    * Il conteggio dei prodotti restituito è simile a quello previsto per la visualizzazione store.
    * I facet vengono restituiti.
