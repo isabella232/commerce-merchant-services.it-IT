@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] reportistica'
 description: '''[!DNL Quick Checkout] offre informazioni complete sui rapporti."'
 exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
-source-git-commit: dd9eab0d6b88a6c723ec10b882a4bb668d66973f
+source-git-commit: bdfac90aa221f39dfc53eee833c473c7dcb0a042
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> È necessario attivare [**Tracciamento degli acquisti**](../quick-checkout/settings-quick-checkout.md) nel pannello Amministratore in modo che Adobe Commerce possa condividere le informazioni sull’estrazione con Bolt. Per impostazione predefinita questa opzione di configurazione è impostata su **Sì**. Se questa opzione è disabilitata (impostate su **No**), la generazione di rapporti ne risentirà.
+> Per consentire ad Adobe Commerce di condividere le informazioni di pagamento con Bolt, la [**Tracciamento degli acquisti**](../quick-checkout/settings-quick-checkout.md)  deve essere abilitata nell&#39;amministratore. Per impostazione predefinita, questa opzione di configurazione è impostata su **Sì**. Se questa opzione è impostata su **No**, la generazione di rapporti ne risentirà. Bolt aggiorna le informazioni di reporting una volta al giorno alle 03:00 del mattino Eastern Standard Time (EST).
 
 ## Rapporti panoramica
 
