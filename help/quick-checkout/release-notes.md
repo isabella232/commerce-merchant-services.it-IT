@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] Note sulla versione'
 description: Consulta le note sulla versione per informazioni su tutti [!DNL Quick Checkout] versioni.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,14 @@ Vedi [Disponibilità](https://devdocs.magento.com/release/availability.html) per
 Queste note sulla versione descrivono le modifiche e le correzioni apportate alle funzioni e che sono state rilasciate al di fuori delle regolari versioni delle funzioni per il pannello Amministratore.
 
 +++Aggiornamenti del pannello di amministrazione
+
+_30 novembre 2022_
+
+![Nuovo](../assets/new.svg)<!-- Issue BOLT-502 --> Ora, la [reporting](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) tab ha un nuovo predefinito &quot;Ultimo anno&quot;.
+
+![Nuovo](../assets/new.svg)<!-- Issue BOLT-471 --> Miglioramenti dell’esperienza utente nella [!DNL Quick Checkout] Pannello Admin mostra ulteriori informazioni in [Descrizioni comandi](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html).
+
+![Problema risolto](../assets/fix.svg)<!-- Issue BOLT-514 --> Miglioramenti dell’esperienza utente nella [!DNL Quick Checkout] Il pannello di amministrazione mostra i numeri degli ordini totali corretti, la coerenza dei colori e le legende corrette per tutti i grafici.
 
 _2 novembre 2022_
 
@@ -52,6 +60,16 @@ _5 ottobre 2022_
 ![Problema risolto](../assets/fix.svg)<!-- Issue BOLT-369 --> Ora, la [[!DNL Quick Checkout] Pannello di amministrazione](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) visualizza la versione dell’app nel piè di pagina.
 
 +++
+
+## v1.4.0
+
+_30 novembre 2022_
+
+![Nuovo](../assets/new.svg)<!-- Issue BOLT-513 --> Ora, quando un cliente Adobe Commerce è connesso al negozio durante il processo di pagamento e dispone di un account Bolt, viene visualizzata un’opzione per accedere all’account Bolt del cliente.
+
+![Nuovo](../assets/new.svg)<!-- Issue BOLT-512 --> Una nuova configurazione rileva automaticamente se è possibile effettuare l&#39;accesso a Bolt anche per gli acquirenti registrati.
+
+![Nuovo](../assets/new.svg)<!-- Issue BOLT-480 --> Una nuova configurazione nel [!DNL Quick Checkout] Il pannello di amministrazione consente di modificare il flusso di navigazione predefinito nel **Spedizione** una volta che un cliente Bolt accede. Per impostazione predefinita, è configurato per **Pagamenti** pagina.
 
 ## v1.3.0
 

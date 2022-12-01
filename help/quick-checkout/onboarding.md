@@ -2,9 +2,9 @@
 title: "A bordo [!DNL Quick Checkout] per estensione Adobe Commerce"
 description: "Scopri come [!DNL Quick Checkout] potrebbe essere utile per la tua istanza Adobe Commerce e per come effettuare l’onboarding e la configurazione dell’estensione."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -132,11 +132,23 @@ Per verificare se l&#39;acquirente ha un [!DNL Bolt] account:
 1. Cambia l&#39;ambito in **Sito Web principale**.
 1. Fai clic sul pulsante **Configurare l’URL di callback** pulsante . Ciò consente [!DNL Bolt] per determinare se l&#39;acquirente ha un conto. Se lo fanno, appare il pop-up OTP.
 
->[!CAUTION]
->
-> Passare all&#39;ambito **Sito Web principale** assicura che sia impostato l’URL corretto. Ogni sito web può avere più domini.
+   >[!CAUTION]
+   >
+   > Passare all&#39;ambito **Sito Web principale** assicura che sia impostato l’URL corretto. Ogni sito web può avere più domini.
 
 Consulta la sezione [Sito, archiviazione e visualizzazione ambito](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)Argomento {target=&quot;_blank&quot;} per ulteriori informazioni sugli ambiti in Adobe Commerce.
+
+## Configurare le impostazioni del servizio
+
+![Pagamento rapido](assets/service-settings.png)
+
+1. Imposta **Abilita tracciamento checkout** a `Yes`.
+
+   >[!CAUTION]
+   >
+   > La disattivazione di questa opzione influisce sul reporting perché Adobe Commerce non è autorizzato a condividere informazioni di tracciamento dei checkout con Bolt.
+
+1. Seleziona la **Passaggio successivo dopo l’accesso** per modificare il flusso di navigazione dopo l’accesso del cliente. Per impostazione predefinita, è impostata su **Pagamenti** pagina.
 
 ## Assistenza
 
