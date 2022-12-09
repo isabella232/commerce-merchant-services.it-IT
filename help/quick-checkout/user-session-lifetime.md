@@ -1,17 +1,17 @@
 ---
 title: Durata della sessione utente
 description: L’amministratore offre la possibilità di configurare la durata dei cookie dell’utente Adobe Commerce per [!DNL Quick Checkout] estensione.
-source-git-commit: a95d2ed92c69feba03d1b84d44abf08c1d1b4029
+exl-id: 32cf5d70-9a50-49ca-8b40-5f04bc1e24b7
+source-git-commit: 2f14cd437be6d48e24e56b3b31a1c640357b27e3
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-
 # Durata della sessione utente
 
-La durata di una sessione dell’acquirente è determinata da diversi fattori, che possono essere configurati nel tuo amministratore Adobe Commerce. Vedi [Configura la durata del cookie](https://docs.magento.com/user-guide/customers/customer-online-options.html){target=_blank} per ulteriori informazioni.
+La durata di una sessione dell’acquirente è determinata da diversi fattori, che possono essere configurati nel tuo amministratore Adobe Commerce. Vedi [Configura la durata del cookie](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/configure/customer-online-options.html){target=_blank} per ulteriori informazioni.
 
 La durata configurata dei cookie può influenzare [!DNL Quick Checkout] se:
 
