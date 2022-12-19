@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] Note sulla versione'
 description: Consulta le note sulla versione per informazioni su tutti [!DNL Quick Checkout] versioni.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
+source-git-commit: 8b915cd0a8f25934675a2ae00ee2694b7facc1bd
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,10 @@ Vedi [Disponibilità](https://devdocs.magento.com/release/availability.html) per
 Queste note sulla versione descrivono le modifiche e le correzioni apportate alle funzioni e che sono state rilasciate al di fuori delle regolari versioni delle funzioni per il pannello Amministratore.
 
 +++Aggiornamenti del pannello di amministrazione
+
+_14 dicembre 2022_
+
+![Problema risolto](../assets/fix.svg)<!-- Issue BOLT-524 --> La [!DNL Quick Checkout] Il pannello Amministratore ora mostra gli ordini totali corretti e le informazioni di reporting aggiornate.
 
 _30 novembre 2022_
 
