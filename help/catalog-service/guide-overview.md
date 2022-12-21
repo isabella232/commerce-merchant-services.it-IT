@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Panoramica della guida"'
 description: '''[!DNL Catalog Service for Adobe Commerce] fornisce un modo per recuperare il contenuto delle pagine di visualizzazione dei prodotti e delle pagine di elenco dei prodotti più velocemente rispetto alle query native di Adobe Commerce GraphQL."'
 exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
-source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
+source-git-commit: fdc8482b22b11261265af52e3ab0c780a14c3342
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,12 @@ Questa guida è destinata agli amministratori di Adobe [!DNL Commerce]. Include 
 | [Guida utente di Adobe Commerce 2.4](https://docs.magento.com/user-guide/) | Documentazione incentrata sul merchant per Adobe Commerce e Magenti Open Source |
 | [Guida per gli sviluppatori di Adobe Commerce 2.4](https://devdocs.magento.com/) | Documentazione incentrata sugli sviluppatori utilizzata per creare e personalizzare Adobe Commerce o Magento Open Source |
 
-## Assistenza
+## Supporto
 
-Il processo di onboarding è progettato per guidarti attraverso i passaggi necessari per la configurazione e l&#39;abilitazione del [!DNL Catalog Service] funzionalità. Contatta il team di progettazione Adobe Commerce nel [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) canale di Slack pubblico per l&#39;assistenza.
+La [processo di onboarding](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/installation.html) è progettato per guidarti attraverso i passaggi necessari per configurare e abilitare il [!DNL Catalog Service] funzionalità.
+
+Se hai bisogno di informazioni o hai domande che non sono incluse in questa guida, utilizza le risorse seguenti:
+
+* [Centro assistenza](https://support.magento.com/hc/en-us/search#q=catalog%20service&amp;sort=relevancy) - Consulta gli articoli relativi alla risoluzione dei problemi relativi al Servizio catalogo .
+* [Biglietti di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) - Inviare un biglietto per ricevere ulteriore assistenza.
+* Partecipa al team di progettazione Adobe Commerce e agli utenti dei servizi di vetrina SaaS nel [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) canale di Slack pubblico aggiornato.
