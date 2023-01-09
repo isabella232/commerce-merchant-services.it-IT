@@ -2,9 +2,9 @@
 title: Configurare la sandbox di prova
 description: Utilizzare un account sandbox PayPal per utilizzare [!DNL Payment Services] in modalità di prova.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: ab4a2f4d432f74cb48dc4b92468305c93088593a
+source-git-commit: 3596e3e156a834e39da2105e7ac79588d1edd408
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ Un account sandbox PayPal consente di utilizzare [!DNL Payment Services] in moda
 Per completare l’onboarding della sandbox:
 
 1. Passa a [Pagina Account sviluppatore PayPal](https://developer.paypal.com/developer/accounts/).
-1. Fai clic su **[!UICONTROL Log in to Home]** e accedi con il tuo account di test della sandbox aziendale generato da PayPal Developer Portal esistente oppure fai clic su **Iscriviti** per creare un account.
+1. Fai clic su **[!UICONTROL Log in to Dashboard]** e accedi con il tuo account di test della sandbox aziendale generato da PayPal Developer Portal esistente oppure fai clic su **Iscriviti** per creare un account.
 1. Crea un account sandbox PayPal:
-   1. Vai a _[!UICONTROL SANDBOX]_>**[!UICONTROL Accounts]**.
+   1. Vai a _[!UICONTROL Testing Tools]_>**[!UICONTROL Sandbox Accounts]**.
    1. Clic **[!UICONTROL Create account]**.
 
       Se hai creato un account sandbox PayPal durante il processo di onboarding di PayPal nella sandbox, devi [reimpostare la sandbox di onboarding](#reset-your-sandbox-account) perché o non puoi verificare il tuo messaggio e-mail.
