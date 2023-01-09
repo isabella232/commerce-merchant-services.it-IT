@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: Documentazione
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: bbc97eff4cd0c5b544df34061a1e156e72b91d18
+source-git-commit: 60848c4f34f7f894b6b2fa09e5d1462801ffb2ab
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
@@ -54,9 +54,9 @@ Adobe fornisce una raccolta di Commerce, integration e data services per aiutare
   </td>
     </tr>
 <tr>
-    <td valign="top">
+    <td valign="top" width="200px">
        <img alt="Evasione del negozio" src="assets/store-fulfillment-landing-graphic.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html"> <strong>Evasione del negozio</strong></a> <br><em>(Disponibile per Magento Open Source)</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html"> <strong>Evasione del negozio</strong></a></br>
     <div>Offri un flusso di lavoro di acquisto on-line di livello superiore, prendi in negozio (BOPIS) l'esperienza dei clienti e massimizza la produttività dei dipendenti, fornendo un flusso di lavoro completo di evasione abilitato tramite un dispositivo mobile.</div>
   </td>
    </tr>
