@@ -2,9 +2,9 @@
 title: "Aggiungi regole"
 description: "Scopri come creare [!DNL Live Search] regole."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: ed245e440f6db59d8eba66afeddb840420da0cf7
+source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1287'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Quindi, inserisci il *Posizione* dove deve apparire il prodotto bloccato. Il pro
 
 Le informazioni immesse in questo campo vengono visualizzate nella sezione [Dettagli regola](rules-workspace.md) pannello.
 
-1. Sotto *Dettagli*, immetti un **Nome** per la regola.
+1. Sotto *Dettagli*, immetti un **Nome** per la regola. Tutti i nomi delle regole devono essere univoci.
 1. Inserisci una breve **Descrizione** della regola.
 1. Inserisci il **Data di inizio** e **Data di fine** affinché la regola sia attiva o scegli le date dal calendario.
 
@@ -154,7 +154,7 @@ Le informazioni immesse in questo campo vengono visualizzate nella sezione [Dett
 
 | Campo | Descrizione |
 |--- |--- |
-| Nome | Nome della regola. |
+| Nome | Nome della regola. I nomi delle regole devono essere univoci. |
 | Data di inizio | La data di inizio della regola, se pianificata. |
 | Data di fine | Data di fine della regola, se pianificata. |
 | Descrizione | Breve descrizione della regola. |
