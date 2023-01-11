@@ -2,9 +2,9 @@
 title: Onboarding e installazione
 description: Scopri come installare [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: fd1c6c385efb2f0e632f74959e75b3b7240b7ada
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Il processo di onboarding per [!DNL Catalog Service] richiede l&#39;accesso alla
 
 La [!DNL Catalog Service] è installato con le chiavi del Compositore, collegate all’account Commerce [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) fornito nel processo di registrazione. Il Compositore utilizza queste chiavi durante l&#39;installazione iniziale di [!DNL Adobe Commerce]o in situazioni in cui le chiavi del Compositore non sono state precedentemente salvate nel `auth.json` file.
 
-Vedi [Ottieni le chiavi di autenticazione](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) per ulteriori informazioni su come ottenere le chiavi Composer.
+Vedi [Ottieni le chiavi di autenticazione](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) per ulteriori informazioni su come ottenere le chiavi Composer.
 
 ### Adobe Commerce su infrastruttura cloud
 

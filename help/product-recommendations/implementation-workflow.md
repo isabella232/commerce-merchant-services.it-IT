@@ -1,9 +1,10 @@
 ---
 title: Flusso di lavoro di implementazione
 description: Scopri i passaggi per implementare correttamente [!DNL Product Recommendations] sulla vetrina.
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: 766e1191-0330-4515-9331-e45318539dc9
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ Quando installi `magento/product-recommendations module`, Adobe Sensei aggrega i
 
    Distribuzione [!DNL Product Recommendations] richiede due [origini dati](type.md): catalogo e comportamento. Poiché la produzione è l&#39;unico ambiente in cui le azioni degli acquirenti vengono acquisite e analizzate, è nel tuo interesse iniziare la raccolta dei dati sulla produzione il prima possibile. [Scopri](behavioral-data.md) come Adobe Sensei addestra i modelli di apprendimento automatico che consentono di ottenere consigli di qualità superiore. Inoltre, quando inizi a raccogliere dati comportamentali sulla produzione, puoi [recuperare consigli](verify.md) basati su questi dati di produzione mentre operano in ambienti non di produzione. Puoi quindi testare e sperimentare diverse raccomandazioni calcolate in base ai dati reali dell’acquirente raccolti in produzione.
 
-   Per distribuire la raccolta dati in produzione, devi [installare e configurare](install-configure.md) la [!DNL Product Recommendations] modulo fornendo un [Chiave API](https://docs.magento.com/user-guide/system/saas.html#apikey).
+   Per distribuire la raccolta dati in produzione, devi [installare e configurare](install-configure.md) la [!DNL Product Recommendations] modulo fornendo un [Chiave API](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html).
 
    >[!TIP]
    >
@@ -42,7 +43,7 @@ Quando installi `magento/product-recommendations module`, Adobe Sensei aggrega i
    >
    > Personalizzando il modello, potete specificare il foglio di stile, sovrascrivere dove appare un&#39;unità di raccomandazione su una pagina e così via.
 
-   Vedi [Personalizza](https://devdocs.magento.com/recommendations/customize.html) per informazioni su come completare questo passaggio, consulta la documentazione per gli sviluppatori .
+   Vedi [Personalizza](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/customize.html) per informazioni su come completare questo passaggio, consulta la documentazione per gli sviluppatori .
 
 1. **Sottoporre a test i consigli nell’ambiente non di produzione**
 

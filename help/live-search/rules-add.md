@@ -2,9 +2,9 @@
 title: "Aggiungi regole"
 description: "Scopri come creare [!DNL Live Search] regole."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Per generare una regola, il primo passaggio consiste nell’utilizzare l’edito
 ## Passaggio 1: Aggiungi una regola
 
 1. Nell&#39;Admin, vai a **Marketing** > SEO &amp; Search > **Live Search**.
-1. Imposta la **Ambito** per identificare [vista store](https://docs.magento.com/user-guide/configuration/scope.html) dove si applica la regola.
+1. Imposta la **Ambito** per identificare [vista store](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) dove si applica la regola.
 1. Fai clic sul pulsante **Regole** scheda .
 1. Fai clic su **Aggiungi regola** per avviare l&#39;editor di regole.
 

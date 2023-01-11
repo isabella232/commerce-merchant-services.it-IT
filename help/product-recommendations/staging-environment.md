@@ -1,9 +1,10 @@
 ---
 title: Test in ambiente di staging
 description: Scopri come utilizzare [!DNL Product Recommendations] dall’ambiente di produzione nell’ambiente di staging a scopo di test.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: 178ff2aa-7821-45f7-85f1-d490d8182817
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -35,7 +36,7 @@ Per recuperare i consigli dall’ambiente di produzione, è necessario assicurar
 
 1. Distribuisci `magento/product-recommendations` in un ambiente non di produzione in cui i dati del catalogo sono simili al catalogo di produzione.
 
-1. Utilizza uno degli ID spazio dati non di produzione per [configurazione](https://docs.magento.com/user-guide/configuration/services/saas.html) nell&#39;amministratore.
+1. Utilizza uno degli ID spazio dati non di produzione per [configurazione](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) nell&#39;amministratore.
 
 1. Genera i dati da solo cliccando sulla vetrina per simulare il comportamento degli acquirenti effettivi (o crea uno script di automazione). Mediante il test, puoi generare eventi comportamentali nell’ambiente non di produzione. Tali eventi vengono utilizzati per generare affinità di prodotto che alimentano i consigli. Per le prove, [!DNL Commerce] suggerisce di interagire con i seguenti tipi di consigli:
 

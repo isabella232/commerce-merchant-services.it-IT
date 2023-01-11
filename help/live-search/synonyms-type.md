@@ -1,10 +1,10 @@
 ---
-title: '"Tipi di sinonimi"'
-description: '"unidirezionale e bidirezionale [!DNL Live Search] i sinonimi espandono la definizione di parole chiave."'
+title: "Tipi di sinonimi"
+description: "unidirezionale e bidirezionale [!DNL Live Search] i sinonimi espandono la definizione di parole chiave."
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: cd1b40ffb350a87ea1317be82789f702922881b9
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -53,4 +53,4 @@ Assicurati di essere coerente con il modo in cui la terminologia viene utilizzat
 
 ### Mappatura delle parole chiave
 
-Questa tecnica utilizza attributi di prodotto ricercabili, anziché sinonimi, per creare associazioni basate su parole chiave tra i prodotti. Di conseguenza, un prodotto mappato può essere visualizzato nei risultati di ricerca di un altro prodotto. Per ulteriori informazioni, consulta [Risultati ricerca](https://docs.magento.com/user-guide/catalog/search-results.html).
+Questa tecnica utilizza attributi di prodotto ricercabili, anziché sinonimi, per creare associazioni basate su parole chiave tra i prodotti. Di conseguenza, un prodotto mappato può essere visualizzato nei risultati di ricerca di un altro prodotto. Per ulteriori informazioni, consulta [Risultati ricerca](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html).

@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Indicizzazione"
 description: "Scopri come [!DNL Live Search] indicizza le proprietà degli attributi del prodotto."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Le proprietà dell’attributo del prodotto (metadati) determinano:
 
 L&#39;ambito dei metadati degli attributi è `website/store/store view`.
 
-La [!DNL Live Search] L’API consente a un client di ordinare in base a qualsiasi attributo di prodotto con la [vetrina, proprietà](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` impostato su `Yes` nell’amministratore di Adobe Commerce. Quando abilitato, `Search Weight` e `Visible in Advanced Search` può essere impostato per l&#39;attributo .
+La [!DNL Live Search] L’API consente a un client di ordinare in base a qualsiasi attributo di prodotto con la [vetrina, proprietà](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` impostato su `Yes` nell’amministratore di Adobe Commerce. Quando abilitato, `Search Weight` e `Visible in Advanced Search` può essere impostato per l&#39;attributo .
 
 >[!NOTE]
 >
@@ -71,7 +71,7 @@ Flusso di lavoro di aggiornamento streaming:
 
 ## Ricerca client
 
-La [!DNL Live Search] L’API consente a un cliente di ordinare in base a qualsiasi attributo di prodotto ordinabile impostando [vetrina, proprietà](https://docs.magento.com/user-guide/catalog/product-attributes.html), *Utilizzato per l&#39;ordinamento negli elenchi dei prodotti* a `Yes`. A seconda del tema, questa impostazione fa sì che l’attributo sia incluso come opzione nel [Ordina per](https://docs.magento.com/user-guide/catalog/navigation.html) controllo dell’impaginazione nelle pagine di catalogo. È possibile indicizzare fino a 300 attributi di prodotto per [!DNL Live Search]con [proprietà della vetrina](https://docs.magento.com/user-guide/stores/attributes-product.html) ricercabili e filtrabili.
+La [!DNL Live Search] L’API consente a un cliente di ordinare in base a qualsiasi attributo di prodotto ordinabile impostando [vetrina, proprietà](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *Utilizzato per l&#39;ordinamento negli elenchi dei prodotti* a `Yes`. A seconda del tema, questa impostazione fa sì che l’attributo sia incluso come opzione nel [Ordina per](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) controllo dell’impaginazione nelle pagine di catalogo. È possibile indicizzare fino a 300 attributi di prodotto per [!DNL Live Search]con [proprietà della vetrina](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) ricercabili e filtrabili.
 I metadati dell’indice vengono memorizzati nella pipeline di indicizzazione ed è accessibile dal servizio di ricerca.
 
 ![[!DNL Live Search] diagramma API dei metadati dell&#39;indice](assets/index-metadata-api.svg)

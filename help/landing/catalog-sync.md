@@ -2,7 +2,7 @@
 title: Sincronizzazione catalogo
 description: Scopri come esportare i dati dei prodotti dal [!DNL Commerce] server a [!DNL Commerce Services] mantenere costantemente aggiornati i servizi.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: 68e615671f4e465d7fe89794613dbf129ae66dbf
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Sincronizzazione catalogo
 
-Adobe Commerce e Magenti Open Source utilizzano gli indici per compilare i dati del catalogo in tabelle. Il processo viene attivato automaticamente da [events](https://docs.magento.com/user-guide/system/index-management-events.html) ad esempio una modifica al prezzo di un prodotto o al livello di inventario.
+Adobe Commerce e Magenti Open Source utilizzano gli indici per compilare i dati del catalogo in tabelle. Il processo viene attivato automaticamente da [events](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) ad esempio una modifica al prezzo di un prodotto o al livello di inventario.
 
 Il processo di sincronizzazione del catalogo viene eseguito ogni ora per consentire [!DNL Commerce] servizi per l’utilizzo dei dati di catalogo. La sincronizzazione del catalogo esporta i dati di prodotto dal [!DNL Commerce] server a [!DNL Commerce] servizi su base continuativa per mantenere i servizi aggiornati. Ad esempio: [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) richiede informazioni di catalogo correnti per restituire con precisione i consigli con nomi, prezzi e disponibilità corretti. È possibile utilizzare _Sincronizzazione catalogo_ dashboard per osservare e gestire il processo di sincronizzazione o [interfaccia a riga di comando](#resynccmdline) per attivare la sincronizzazione del catalogo e reindicizzare i dati del prodotto per consumo [!DNL Commerce] servizi.
 

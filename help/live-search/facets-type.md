@@ -1,10 +1,10 @@
 ---
-title: '"Tipi di sfaccettature"'
-description: '"[!DNL Live Search] i facet sono dinamici e vengono visualizzati nell’elenco Filtri se pertinente."'
+title: "Tipi di sfaccettature"
+description: "[!DNL Live Search] i facet sono dinamici e vengono visualizzati nell’elenco Filtri se pertinente."
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Al momento della query, [!DNL Live Search] genera i risultati della ricerca in g
 
 Facet di cui è stato eseguito il rendering per [!DNL Commerce] storefront viene elaborato dall&#39;adattatore di ricerca, che elabora le richieste ed esegue il rendering dei risultati nella vetrina. Tutto [!DNL Commerce] i facet della vetrina sono ordinati alfabeticamente con opzioni a selezione singola, indipendentemente dal tipo di input assegnato all’attributo corrispondente. I facet disponibili nella vetrina vengono resi in base al tema corrente e riflettono eventuali personalizzazioni apportate alla presentazione della navigazione a livelli.
 
-Al contrario, [senza testa](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/webapi-vision.html) le implementazioni vengono elaborate dall’API e supportano opzioni aggiuntive. I facet headless possono essere ordinati alfabeticamente o per conteggio e possono avere opzioni a selezione singola o multipla.
+Al contrario, [senza testa](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api/) le implementazioni vengono elaborate dall’API e supportano opzioni aggiuntive. I facet headless possono essere ordinati alfabeticamente o per conteggio e possono avere opzioni a selezione singola o multipla.
 
 ### Seleziona tipo
 
@@ -42,7 +42,7 @@ Per le implementazioni headless, i facet possono essere definiti come `single se
 
 ### Etichette dei facet
 
-Per [!DNL Commerce] vetrine, l&#39;etichetta del facet è determinata dal [*Proprietà attributo*](https://docs.magento.com/user-guide/stores/attribute-product-create.html). Per gli archivi con più viste, è possibile definire etichette aggiuntive in *Gestire le etichette*. Per le implementazioni headless, le etichette vengono modificate dalla sezione [area di lavoro di targeting](faceting-workspace.md).
+Per [!DNL Commerce] vetrine, l&#39;etichetta del facet è determinata dal [*Proprietà attributo*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html). Per gli archivi con più viste, è possibile definire etichette aggiuntive in *Gestire le etichette*. Per le implementazioni headless, le etichette vengono modificate dalla sezione [area di lavoro di targeting](faceting-workspace.md).
 
 ### Tipo di ordinamento
 

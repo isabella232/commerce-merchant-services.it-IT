@@ -1,10 +1,10 @@
 ---
-title: '"Sinonimi"'
-description: '"[!DNL Live Search] I sinonimi espandono le query con parole che differiscono da quelle presenti nel catalogo."'
+title: "Sinonimi"
+description: "[!DNL Live Search] I sinonimi espandono le query con parole che differiscono da quelle presenti nel catalogo."
 exl-id: f2b7c5fb-f009-4834-baff-06e8ed7be7e5
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '119'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,4 +15,4 @@ I sinonimi espandono la query di ricerca per includere parole che potrebbero ess
 
 >[!IMPORTANT]
 >
->Per installazioni Adobe Commerce con [!DNL Live Search] installati, [!DNL Live Search] I sinonimi sostituiscono lo standard Adobe Commerce [Sinonimi di ricerca](https://docs.magento.com/user-guide/marketing/search-synonyms.html) , anche se entrambi compaiono nel *SEO e ricerca* nel menu Marketing. Se utilizzi [!DNL Live Search], segui le istruzioni riportate in questa sezione.
+>Per installazioni Adobe Commerce con [!DNL Live Search] installati, [!DNL Live Search] I sinonimi sostituiscono lo standard Adobe Commerce [Sinonimi di ricerca](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html#search-synonyms) , anche se entrambi compaiono nel *SEO e ricerca* nel menu Marketing. Se utilizzi [!DNL Live Search], segui le istruzioni riportate in questa sezione.

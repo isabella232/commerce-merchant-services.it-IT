@@ -2,9 +2,9 @@
 title: Installazione e configurazione
 description: Scopri come installare, aggiornare e disinstallare [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
-source-git-commit: 74176c054f05742bc47e4cf2b4e1ea4e057dcba9
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ composer require magento/product-recommendations
 composer require magento/module-page-builder-product-recommendations
 ```
 
-Attivando [!DNL Product Recommendations] in Page Builder, puoi aggiungere un [unità di raccomandazione](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html) a qualsiasi contenuto creato in Page Builder, ad esempio pagine, blocchi e blocchi dinamici.
+Attivando [!DNL Product Recommendations] in Page Builder, puoi aggiungere un [unità di raccomandazione](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) a qualsiasi contenuto creato in Page Builder, ad esempio pagine, blocchi e blocchi dinamici.
 
 >[!NOTE]
 >
@@ -52,9 +52,9 @@ composer require magento/module-visual-product-recommendations
 
 ## Configura [!DNL Product Recommendations] {#configure}
 
-Dopo aver installato `magento/product-recommendations` modulo, devi configurare il [Connettore Commerce Services](https://docs.magento.com/user-guide/configuration/services/saas.html) specificando le chiavi API e selezionando uno spazio dati SaaS.
+Dopo aver installato `magento/product-recommendations` modulo, devi configurare il [Connettore Commerce Services](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) specificando le chiavi API e selezionando uno spazio dati SaaS.
 
-Per verificare che l’esportazione del catalogo sia corretta, verifica che la [cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) l&#39;occupazione e [indicizzatori](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) sono in esecuzione e `Product Feed` indexer impostato su `Update by Schedule`.
+Per verificare che l’esportazione del catalogo sia corretta, verifica che la [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) l&#39;occupazione e [indicizzatori](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) sono in esecuzione e `Product Feed` indexer impostato su `Update by Schedule`.
 
 Quando ti colleghi correttamente a Commerce Services tramite le chiavi API e specifichi lo spazio dati SaaS, inizia la sincronizzazione del catalogo. È quindi possibile [verify](verify.md) che i dati comportamentali vengono inviati alla tua vetrina.
 
@@ -104,4 +104,4 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 ## Disinstalla [!DNL Product Recommendations] {#uninstall}
 
-Se necessario, puoi [disinstallare](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall-mods.html) il modulo product-recommendations.
+Se necessario, puoi [disinstallare](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html) il modulo product-recommendations.

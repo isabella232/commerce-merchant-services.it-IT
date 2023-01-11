@@ -2,9 +2,9 @@
 title: Verifica raccolta eventi
 description: Scopri come verificare che i dati comportamentali vengano inviati ad Adobe Commerce.
 exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
-source-git-commit: 7d9cef7a81196921b465ccf2dcd58d98b66d6598
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Installa il [Estensione Snowplow Analytics Debugger per Chrome](https://chrome.g
 
 1. Scorri verso il basso fino a visualizzare **Dati contestuali _n_**. Cerca l&#39;istanza di vetrina nel **Schema**.
 
-1. Verifica che [ID spazio dati SaaS](https://docs.magento.com/user-guide/configuration/services/saas.html) è impostato correttamente.
+1. Verifica che [ID spazio dati SaaS](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) è impostato correttamente.
 
 ![Filtro Snowplow](assets/snowplow-filter.png)
 _Filtro per arcobaleno_
@@ -62,8 +62,8 @@ _Filtro per arcobaleno_
 
 ## Verifica che gli eventi si attivino correttamente
 
-Per verificare che gli eventi utilizzati per le metriche si attivino correttamente, cerca il `impression-render`, `view`e `rec-click` eventi in Snowplow Analytics Debugger. Consulta la sezione [elenco completo degli eventi](https://devdocs.magento.com/recommendations/events.html).
+Per verificare che gli eventi utilizzati per le metriche si attivino correttamente, cerca il `impression-render`, `view`e `rec-click` eventi in Snowplow Analytics Debugger. Consulta la sezione [elenco completo degli eventi](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/events.html).
 
 >[!NOTE]
 >
-> Se [Modalità di restrizione dei cookie](https://docs.magento.com/user-guide/stores/compliance-cookie-restriction-mode.html) è abilitato e Adobe Commerce non raccoglie dati comportamentali finché l’acquirente non acconsente. Se la modalità di restrizione dei cookie è disabilitata, i dati comportamentali vengono raccolti per impostazione predefinita.
+> Se [Modalità di restrizione dei cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) è abilitato e Adobe Commerce non raccoglie dati comportamentali finché l’acquirente non acconsente. Se la modalità di restrizione dei cookie è disabilitata, i dati comportamentali vengono raccolti per impostazione predefinita.

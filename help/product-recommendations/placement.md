@@ -1,7 +1,8 @@
 ---
 title: Posizionamento ed etichette
 description: Scopri dove puoi inserire consigli su varie pagine del sito e suggerimenti per le etichette utilizzate di frequente per ciascun tipo di raccomandazione.
-source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
+exl-id: e1025138-49dc-4833-92bb-27e8e415d724
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -58,4 +59,4 @@ Nella tabella seguente sono elencate le pagine della vetrina in cui è possibile
 | Dettagli prodotto | Nella parte inferiore del contenuto principale (impostazione predefinita) | Più visualizzati<br>Più acquistati<br>Più aggiunto al carrello<br>Ho visualizzato questo, visto che<br>Ho visto questo, l&#39;ho comprato<br>Ho comprato questo, l&#39;ho comprato<br>Più simile a questo<br>Tendenza<br>Somiglianza visiva |
 | Carrello | Nella parte inferiore del contenuto principale (impostazione predefinita) | Più visualizzati<br>Più acquistati<br>Più aggiunto al carrello<br>Ho visualizzato questo, visto che<br>Ho visto questo, l&#39;ho comprato<br>Ho comprato questo, l&#39;ho comprato<br>Più simile a questo<br>Tendenza |
 | Conferma | Nella parte inferiore del contenuto principale (impostazione predefinita) | Più visualizzati<br>Più acquistati<br>Più aggiunto al carrello<br>Ho visualizzato questo, visto che<br>Ho visto questo, l&#39;ho comprato<br>Ho comprato questo, l&#39;ho comprato<br>Più simile a questo<br>Tendenza |
-| Page Builder | [Trascinamento della selezione](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html#add-an-existing-recommendation-unit) per posizionare il tipo di contenuto | Più visualizzati<br>Più acquistati<br>Più aggiunto al carrello<br>Consigliato per te<br>Tendenza |
+| Page Builder | [Trascinamento della selezione](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) per posizionare il tipo di contenuto | Più visualizzati<br>Più acquistati<br>Più aggiunto al carrello<br>Consigliato per te<br>Tendenza |

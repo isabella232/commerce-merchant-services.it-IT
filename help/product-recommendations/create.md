@@ -2,7 +2,7 @@
 title: Crea nuova raccomandazione
 description: Scopri come creare un’unità di raccomandazione del prodotto.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 5fa08429a97c9ed59a339a0eca268f99c1023b7e
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -20,11 +20,11 @@ Quando attivate l&#39;unità di raccomandazione, Adobe Commerce inizia a [raccog
 
 1. Sulla _Amministratore_ barra laterale, vai a **Marketing** > _Promozioni_ > **Recommendations di prodotto** per visualizzare _Recommendations di prodotto_ workspace.
 
-1. Specifica la [Visualizzazione store](https://docs.magento.com/user-guide/configuration/scope.html) in cui visualizzare i consigli.
+1. Specifica la [Visualizzazione store](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) in cui visualizzare i consigli.
 
    >[!NOTE]
    >
-   > Le unità consigliate di Page Builder possono essere create solo per la visualizzazione store predefinita. Per ulteriori informazioni sulla creazione di consigli di prodotto con Page Builder, consulta [Aggiungi contenuto - Recommendations prodotto](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html).
+   > Le unità consigliate di Page Builder possono essere create solo per la visualizzazione store predefinita. Per ulteriori informazioni sulla creazione di consigli di prodotto con Page Builder, consulta [Aggiungi contenuto - Recommendations prodotto](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
 
 1. Fai clic su **Crea consiglio**.
 
@@ -37,7 +37,7 @@ Quando attivate l&#39;unità di raccomandazione, Adobe Commerce inizia a [raccog
    - Dettagli prodotto
    - Carrello
    - Conferma
-   - [Page Builder](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html)
+   - [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
 
    Potete creare fino a cinque unità di raccomandazione attive per ciascun tipo di pagina e fino a 25 per Page Builder. Il tipo di pagina è grigio Quando viene raggiunto il limite.
 

@@ -1,11 +1,12 @@
 ---
-title: '"[!DNL Product Recommendations] Panoramica della guida"'
+title: '''[!DNL Product Recommendations] Panoramica della guida"'
 description: Informazioni complete sulle [!DNL Product Recommendations] per gli amministratori di Adobe Commerce, inclusi l'installazione e l'onboarding
 seo-title: Adobe Commerce [!DNL Product Recommendations] Guide
 seo-description: Describes how to use [!DNL Product Recommendations] with Adobe Commerce.
-source-git-commit: 46b27458ec7105692cacfca91a62938fd25c8095
+exl-id: 7f5105ba-e764-4cb5-9b95-75810e934b47
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -30,12 +31,12 @@ Questa guida non descrive le funzionalità di base di Adobe Commerce e Magenti O
 
 | Guida | Descrizione |
 |------ | ----------- |
-| [Guida utente di Adobe Commerce 2.4](https://docs.magento.com/user-guide/) | Documentazione incentrata sul merchant per Adobe Commerce e Magenti Open Source |
-| [Guida per gli sviluppatori di Adobe Commerce 2.4](https://devdocs.magento.com/) | Documentazione incentrata sugli sviluppatori utilizzata per creare e personalizzare Adobe Commerce o Magento Open Source |
+| [Guida utente di Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce.html) | Documentazione incentrata sul merchant per Adobe Commerce e Magenti Open Source |
+| [Guida per gli sviluppatori di Adobe Commerce 2.4](https://developer.adobe.com/commerce/docs) | Documentazione incentrata sugli sviluppatori utilizzata per creare e personalizzare Adobe Commerce o Magento Open Source |
 
 ## Supporto
 
 Se hai bisogno di informazioni o hai domande che non sono incluse in questa guida, utilizza le risorse seguenti:
 
 * [Centro assistenza](https://support.magento.com/hc/en-us){target=&quot;_blank&quot;}—Vedi il [!DNL Product Recommendations]Articoli relativi alla risoluzione dei problemi.
-* [Biglietti di supporto](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target=&quot;_blank&quot;} - Invia un ticket per ricevere ulteriore assistenza.
+* [Biglietti di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket){target=&quot;_blank&quot;} - Invia un ticket per ricevere ulteriore assistenza.

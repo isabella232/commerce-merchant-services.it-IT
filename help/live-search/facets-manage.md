@@ -2,9 +2,9 @@
 title: "Gestisci facet"
 description: "Scopri come gestire gli elementi esistenti [!DNL Live Search] facet."
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Fai riferimento a [Impostazioni](settings.md) per configurare gli intervalli e i
 
 1. Per modificare l’etichetta del facet, effettua una delle seguenti operazioni:
 
-   * Per [!DNL Commerce] vetrina, modifica [etichetta attributo](https://docs.magento.com/user-guide/stores/attributes-product.html).
+   * Per [!DNL Commerce] vetrina, modifica [etichetta attributo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html).
    * Per un’implementazione headless, fai clic sul valore nella prima colonna e modifica il testo in base alle esigenze.
 
    ![Modifica etichetta](assets/facet-edit-label.png)

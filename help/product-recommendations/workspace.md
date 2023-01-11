@@ -2,9 +2,9 @@
 title: Area di lavoro
 description: Scopri come configurare, gestire e monitorare le prestazioni dei consigli di prodotto.
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
-source-git-commit: 9f1f05475b2d8401ec33272e3f12e3cc7285478d
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ _Area di lavoro Recommendations_
 
 ## Imposta l&#39;ambito
 
-Inizialmente il [scope](https://docs.magento.com/user-guide/stores/websites-stores-views.html) di tutte le impostazioni per i consigli è impostato su `Default Store View`. Se l’installazione Commerce include più viste Store, imposta **Ambito** al [vista store](https://docs.magento.com/user-guide/configuration/scope.html) a cui si applicano le raccomandazioni.
+Inizialmente il [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) di tutte le impostazioni per i consigli è impostato su `Default Store View`. Se l’installazione Commerce include più viste Store, imposta **Ambito** al [vista store](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) a cui si applicano le raccomandazioni.
 
 ## Imposta intervallo di date delle metriche
 

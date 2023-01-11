@@ -1,10 +1,10 @@
 ---
-title: '"Presentazione rapida"'
-description: '"Fai un rapido tour di [!DNL Live Search] dal negozio."'
+title: "Presentazione rapida"
+description: "Fai un rapido tour di [!DNL Live Search] dal negozio."
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Con particolare attenzione alla velocità, alla pertinenza e alla facilità d&#3
 
 ## Ricerca durante la digitazione
 
-[!DNL Live Search] risponde con i prodotti suggeriti e una miniatura dei risultati della ricerca principale in un [palude](storefront-popover.md) come query di tipo shoppers nel [Ricerca](https://docs.magento.com/user-guide/catalog/search-quick.html) scatola. La [dettaglio del prodotto](https://docs.magento.com/user-guide/quick-tour/product-page.html) quando gli acquirenti fanno clic su un prodotto suggerito o in primo piano. A _Visualizza tutto_ nel piè di pagina del pover viene visualizzata la pagina dei risultati della ricerca.
+[!DNL Live Search] risponde con i prodotti suggeriti e una miniatura dei risultati della ricerca principale in un [palude](storefront-popover.md) come query di tipo shoppers nel [Ricerca](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) scatola. La [dettaglio del prodotto](https://experienceleague.adobe.com/docs/commerce-admin/start/storefront/storefront.html#product-page) quando gli acquirenti fanno clic su un prodotto suggerito o in primo piano. A _Visualizza tutto_ nel piè di pagina del pover viene visualizzata la pagina dei risultati della ricerca.
 
 [!DNL Live Search] restituisce i risultati &quot;search as you type&quot; per una query di due o più caratteri. Per una corrispondenza parziale, il numero massimo di caratteri per parola è 20. Il numero di caratteri nella query non è configurabile. I campi seguenti sono inclusi nel pover: `name`, `sku`e `category_ids`.
 

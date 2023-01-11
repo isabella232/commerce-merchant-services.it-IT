@@ -2,9 +2,9 @@
 title: Area di lavoro
 description: L’area di lavoro Live Search viene utilizzata per configurare, gestire e monitorare le prestazioni di ricerca.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 1a55f2fb3d56183e5e73d172ebdc40f340e4d520
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ L’area di lavoro è il luogo in cui puoi configurare, gestire e monitorare le 
 
 ## Imposta l&#39;ambito
 
-Inizialmente il [scope](https://docs.magento.com/user-guide/configuration/scope.html) di tutti [!DNL Live Search] è impostato su `Default Store View`. Se [!DNL Commerce] l&#39;installazione include più viste store, set **Ambito** al [vista store](https://docs.magento.com/user-guide/stores/websites-stores-views.html) dove si applicano le impostazioni dei facet.
+Inizialmente il [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) di tutti [!DNL Live Search] è impostato su `Default Store View`. Se [!DNL Commerce] l&#39;installazione include più viste store, set **Ambito** al [vista store](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) dove si applicano le impostazioni dei facet.
 
 ## Opzioni menu
 

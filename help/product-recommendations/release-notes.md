@@ -2,9 +2,9 @@
 title: Note sulla versione
 description: Informazioni aggiornate sulla versione di [!DNL Product Recommendations] da Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: 944576fdacd7dbbb704f74ba06d34f64eac41122
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Le note sulla versione includono:
 * ![Nuovo](../assets/new.svg) - Nuove funzioni
 * ![Correzione](../assets/fix.svg) - Correzioni e miglioramenti
 
-Consulta la documentazione per gli sviluppatori su [informazioni sulla compatibilità dei prodotti](https://devdocs.magento.com/release/availability.html).
+Consulta la documentazione per gli sviluppatori su [informazioni sulla compatibilità dei prodotti](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## Adobe Commerce 2.3.x e 2.4.x
 
@@ -51,7 +51,7 @@ Consulta la documentazione per gli sviluppatori su [informazioni sulla compatibi
 ### 3.3.5 di magento/product-recommendations
 
 * ![Nuovo](../assets/new.svg) - Aggiunto [Supporto B2B](onboarding.md#b2bsupport) in Recommendations prodotto
-* ![Nuovo](../assets/new.svg) - Aggiunta di nuovi feed a [sincronizzare i dati del catalogo](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-catalog-sync.html) a Commerce Services tramite la riga di comando
+* ![Nuovo](../assets/new.svg) - Aggiunta di nuovi feed a [sincronizzare i dati del catalogo](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) a Commerce Services tramite la riga di comando
 
 ### 3.3.3 di magento/product-recommendations
 
@@ -79,7 +79,7 @@ Consulta la documentazione per gli sviluppatori su [informazioni sulla compatibi
 
 ### 3.2.5 di magento/product-recommendations
 
-* ![Nuovo](../assets/new.svg) - Servizi di Magento rinominati in [Commerce Services](https://docs.magento.com/user-guide/system/saas.html) e una migliore usabilità in Admin
+* ![Nuovo](../assets/new.svg) - Servizi di Magento rinominati in [Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) e una migliore usabilità in Admin
 
 ### 3.2.4 di magento/product-recommendations
 
@@ -94,7 +94,7 @@ Consulta la documentazione per gli sviluppatori su [informazioni sulla compatibi
 ### 3.2.2 di magento/product-recommendations
 
 * ![Nuovo](../assets/new.svg) - Aggiunta la possibilità di [visualizzare in anteprima i risultati della raccomandazione](create.md) al momento della creazione. Potrebbe essere necessario aggiornare il modulo alla versione più recente.
-* ![Nuovo](../assets/new.svg) - Aggiunta la possibilità di [monitorare e gestire](https://docs.magento.com/user-guide/system/catalog-sync.html) il processo di sincronizzazione del catalogo da Admin.
+* ![Nuovo](../assets/new.svg) - Aggiunta la possibilità di [monitorare e gestire](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) il processo di sincronizzazione del catalogo da Admin.
 * ![Nuovo](../assets/new.svg) - Aggiunto [filtri](filters.md) per controllare quali prodotti vengono visualizzati nei consigli.
 * ![Nuovo](../assets/new.svg) - Aggiunto il [Somiglianza visiva](type.md#visualsim) tipo di raccomandazione.
 
@@ -104,7 +104,7 @@ Consulta la documentazione per gli sviluppatori su [informazioni sulla compatibi
 
 ### 3.1.0 di magento/product-recommendations
 
-* ![Nuovo](../assets/new.svg) - Aggiunta la possibilità di [resync](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-catalog-sync.html) il catalogo ai servizi SaaS tramite la riga di comando.
+* ![Nuovo](../assets/new.svg) - Aggiunta la possibilità di [resync](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) il catalogo ai servizi SaaS tramite la riga di comando.
 * ![Nuovo](../assets/new.svg) - È stato aggiunto il supporto per i prefissi delle tabelle del database
 * ![Correzione](../assets/fix.svg) - Supporto PHP 7.1 rimosso
 
@@ -153,7 +153,7 @@ Questa è una versione principale. Devi [modifica](install-configure.md#update) 
 
 ### 1.0.3 di magento/module-page-builder-product-recommendations per Page Builder
 
-* ![Nuovo](../assets/new.svg) - Supporto di Page Builder. Con l’integrazione di Page Builder, è possibile posizionare in modo preciso e granulare le unità di Recommendations in qualsiasi posizione arbitraria sui contenuti creati da Page Builder. Potete inoltre assegnare loro lo stile per le intestazioni e le unità dei consigli. Vai a [Page Builder](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html) per ulteriori informazioni.
+* ![Nuovo](../assets/new.svg) - Supporto di Page Builder. Con l’integrazione di Page Builder, è possibile posizionare in modo preciso e granulare le unità di Recommendations in qualsiasi posizione arbitraria sui contenuti creati da Page Builder. Potete inoltre assegnare loro lo stile per le intestazioni e le unità dei consigli. Vai a [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) per ulteriori informazioni.
 
 ### 2.0.0 di magento/product-recommendations
 
@@ -164,4 +164,4 @@ Questa è una versione principale. Devi [modifica](install-configure.md#update) 
 Per ulteriori informazioni [!DNL Product Recommendations] e [!DNL Product Recommendations] sviluppo:
 
 * [Guida utente](overview.md)
-* [Documentazione per gli sviluppatori](https://devdocs.magento.com/recommendations/product-recs.html)
+* [Documentazione per gli sviluppatori](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html)

@@ -1,10 +1,10 @@
 ---
-title: '"Aggiungi sinonimi"'
-description: '"Aggiungi [!DNL Live Search] sinonimi per migliorare la risposta alle richieste di ricerca."'
+title: "Aggiungi sinonimi"
+description: "Aggiungi [!DNL Live Search] sinonimi per migliorare la risposta alle richieste di ricerca."
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Aumenta il coinvolgimento dei clienti aggiungendo il tuo elenco curato dei sinon
 ## Passaggio 1: Aggiungi un sinonimo
 
 1. Nell&#39;Admin, vai a **Marketing** > SEO &amp; Search > **[!DNL Live Search]**.
-1. Per più negozi, impostare **Ambito** al [vista store](https://docs.magento.com/user-guide/configuration/scope.html) dove si applicano le impostazioni sinonimo.
+1. Per più negozi, impostare **Ambito** al [vista store](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) dove si applicano le impostazioni sinonimo.
 1. Fai clic sul pulsante **Sinonimi** scheda .
 1. Fai clic sul pulsante **Aggiungi sinonimi** pulsante .
 

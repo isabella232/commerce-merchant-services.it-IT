@@ -2,9 +2,9 @@
 title: Onboarding
 description: Scopri i requisiti e le piattaforme supportate in [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -40,4 +40,4 @@ Il processo di onboarding per [!DNL Product Recommendations] richiede l&#39;acce
 
 ### Supporto B2B {#b2bsupport}
 
-Le vetrine B2B spesso richiedono una logica complessa che determina la visibilità del prodotto e i prezzi per ogni acquirente o gruppo di clienti. [!DNL Product Recommendations] now [supporto](release-notes.md) questa funzionalità onorando [autorizzazioni categoria](https://docs.magento.com/user-guide/catalog/category-permissions.html), [cataloghi condivisi](https://docs.magento.com/user-guide/catalog/catalog-shared.html)e [determinazione dei prezzi per gruppi di clienti](https://docs.magento.com/user-guide/catalog/pricing-advanced.html). Ad esempio, se hai nascosto alcune categorie dal segmento di clienti al dettaglio, a un acquirente in quel segmento non verranno mostrati consigli per i prodotti in quelle categorie. Inoltre, quando definisci un catalogo condiviso per specifici gruppi di clienti e aziende, questi acquirenti visualizzano i consigli solo per i prodotti a cui possono accedere. Tutti i prodotti consigliati riflettono il prezzo corretto specifico per il gruppo di clienti in base al gruppo di clienti di ciascun acquirente.
+Le vetrine B2B spesso richiedono una logica complessa che determina la visibilità del prodotto e i prezzi per ogni acquirente o gruppo di clienti. [!DNL Product Recommendations] now [supporto](release-notes.md) questa funzionalità onorando [autorizzazioni categoria](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [cataloghi condivisi](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html)e [determinazione dei prezzi per gruppi di clienti](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). Ad esempio, se hai nascosto alcune categorie dal segmento di clienti al dettaglio, a un acquirente in quel segmento non verranno mostrati consigli per i prodotti in quelle categorie. Inoltre, quando definisci un catalogo condiviso per specifici gruppi di clienti e aziende, questi acquirenti visualizzano i consigli solo per i prodotti a cui possono accedere. Tutti i prodotti consigliati riflettono il prezzo corretto specifico per il gruppo di clienti in base al gruppo di clienti di ciascun acquirente.

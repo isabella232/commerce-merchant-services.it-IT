@@ -2,16 +2,16 @@
 title: Impostazioni
 description: Scopri come modificare l’origine del [!DNL Product Recommendations] e come abilitare i consigli visivi.
 exl-id: 8c074e11-e0cb-4d55-b646-30279c79bbc2
-source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Impostazioni
 
-Quando [configurare uno spazio dati SaaS](https://docs.magento.com/user-guide/configuration/services/saas.html) per Recommendations, lo spazio dati SaaS raccoglie dati di catalogo e dati comportamentali di vetrina. [Adobe Sensei](https://www.adobe.com/sensei.html) analizza i dati e calcola le associazioni di prodotti utilizzate per distribuire Product Recommendations.
+Quando [configurare uno spazio dati SaaS](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) per Recommendations, lo spazio dati SaaS raccoglie dati di catalogo e dati comportamentali di vetrina. [Adobe Sensei](https://www.adobe.com/sensei.html) analizza i dati e calcola le associazioni di prodotti utilizzate per distribuire Product Recommendations.
 
 Gli ambienti non di produzione per il test o la gestione temporanea di solito non dispongono della quantità o della qualità dei dati comportamentali di vetrina per fornire consigli di prodotto realistici. Il comportamento effettivo dell&#39;acquirente su scala può essere catturato solo in un ambiente di produzione. Per risolvere questo problema, Adobe Commerce consente di utilizzare i consigli di prodotto dell’ambiente di produzione con altri spazi dati SaaS non di produzione. L’utilizzo dei dati effettivi della vetrina in un ambiente non di produzione consente di visualizzare in anteprima i consigli che gli acquirenti visualizzano e sperimentano con diversi tipi di consigli e posizioni di posizionamento. Recommendations proveniente da un diverso spazio dati SaaS può essere visualizzato in anteprima da acquirenti, ma non cliccato.
 
