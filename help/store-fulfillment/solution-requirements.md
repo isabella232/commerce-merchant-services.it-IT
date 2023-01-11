@@ -4,9 +4,9 @@ description: Requisiti per il provisioning e l'onboarding [!DNL Store Fulfillmen
 role: User, Admin
 level: Intermediate
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
-source-git-commit: 421c90f4c8bd687216cd48c72f30301a32115522
+source-git-commit: 842d5b7182d54a1aa5a715662503801816a24c24
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '298'
 ht-degree: 2%
 
 ---
@@ -22,19 +22,19 @@ La [!DNL Store Fulfillment] è disponibile per i clienti Adobe Commerce sulle se
 - Adobe Commerce su infrastruttura cloud (ECE)
 - Adobe Commerce nei locali (EE)
 
-La soluzione Store Fulfillment è compatibile con le seguenti versioni software.
+La soluzione Store Fulfillment è compatibile con le versioni software elencate in *Compatibilità software* tabella.
 
 **Compatibilità software**
 
 | **Software** | **Versione minima** | **Versione massima** |
 |----------------|---------------------|---------------------|
-| Adobe Commerce | 2.4.0 | 2.4.4 |
+| Adobe Commerce | 2.4.0 | 2.4.5 |
 | Compositore | 1.x | 2.x |
-| MariaDB | 10,2 | 10,4 |
-| MySQL | 5,7 | 8,0 |
+| MariaDB | 10.2 | 10.4 |
+| MySQL | 5.7 | 8.0 |
 | PHP | 7.4 | 8.1 |
 
-Per requisiti dettagliati, consulta Adobe Commerce [Requisiti di sistema](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) nella documentazione per sviluppatori.
+Per requisiti dettagliati, consulta Adobe Commerce [Requisiti di sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in *Guida all’installazione di Adobe Commerce*.
 
 ## Requisiti dell’app di Assistenza store
 
@@ -52,7 +52,7 @@ Il processo end-to-end per gestire gli ordini di ritiro degli store viene gestit
 
 ## Requisiti aziendali
 
-Per implementare la soluzione Store Fulfillment, la tua azienda deve soddisfare i seguenti criteri minimi.
+Per implementare la soluzione Store Fulfillment, la tua azienda deve soddisfare i seguenti criteri minimi:
 
 - Solo aziende basate negli Stati Uniti
 
