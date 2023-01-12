@@ -4,30 +4,32 @@ description: Configurare le impostazioni generali per abilitare [!DNL Store Fulf
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
+source-git-commit: 0cf5a99891fb6ec0b6e446aac05e64bc97d70e7c
 workflow-type: tm+mt
-source-wordcount: '2518'
+source-wordcount: '2543'
 ht-degree: 0%
 
 ---
 
 # Memorizza configurazione di servizio e vendite
 
-Configura[!DNL Store Fulfillment] per abilitare l’estensione, specifica le impostazioni di estensione, configura le impostazioni di sicurezza per gli utenti dell’app Store Assist e imposta le opzioni per i metodi di consegna.
+Configura [!DNL Store Fulfillment] dal [!DNL Commerce] Per abilitare l’estensione, specifica le impostazioni di estensione, configura le impostazioni di sicurezza per gli utenti dell’app Store Assist e imposta le opzioni per i metodi di consegna.
 
 >[!IMPORTANT]
 >
 >La configurazione del servizio Store Fulfillment si applica solo dopo aver collegato la tua istanza Adobe Commerce e la [!DNL Store Fulfillment] app. Vedi [Esegui il programma Connect Store](connect-set-up-service.md).
 
-Configura le impostazioni dei servizi di evasione dell&#39;archivio dal menu Configurazione dell&#39;archivio di amministrazione in Adobe Commerce.
+## Gestire le impostazioni dei servizi di evasione dell&#39;archivio
 
-Accedi alle impostazioni per abilitare l’estensione, configurare le impostazioni globali e specificare le opzioni di sicurezza per le connessioni utente e gli account dell’app Store Assist selezionando **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
+Gestire le impostazioni per i servizi Store Fulfillment da [!DNL Commerce Admin Store Configuration] menu.
 
-![Configurazione dei servizi dell’Admin Store per l’esecuzione dello store](assets/store-services-admin-sf-config.png)
+- Abilita l’estensione, configura le impostazioni globali e specifica le opzioni di sicurezza per le connessioni utente e gli account dell’app Store Assist selezionando **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
 
-Accedi alle impostazioni per configurare i metodi di consegna selezionando **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
+   ![Configurazione dei servizi dell’Admin Store per l’esecuzione dello store](assets/store-services-admin-sf-config.png)
 
-![Configurazione vendite dell&#39;Admin Store per l&#39;evasione del negozio](assets/store-sales-admin-sf-deliver-config.png)
+- Configura i metodi di consegna selezionando **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
+
+   ![Configurazione vendite dell&#39;Admin Store per l&#39;evasione del negozio](assets/store-sales-admin-sf-deliver-config.png)
 
 ## Impostazioni di base
 
@@ -55,7 +57,7 @@ Accedi alle impostazioni per configurare i metodi di consegna selezionando **[!U
 </tr>
 <tr>
 <td><strong>[!UICONTROL Displayed error message]</strong></td>
-<td>Messaggio che viene visualizzato quando un cliente seleziona il ritiro in negozio, ma il metodo di consegna non è disponibile. Se necessario, è possibile personalizzare il testo predefinito.
+<td>Messaggio visualizzato quando un cliente seleziona il ritiro in negozio per un elemento che non è disponibile per il ritiro in negozio. Se necessario, è possibile personalizzare il testo predefinito.
 </td>
 <td>Visualizzazione store</td>
 <td>No</td>
@@ -83,7 +85,7 @@ Abilita la [!DNL Store Fulfillment] soluzione per aggiungere le funzionalità di
  <tbody>
 <tr>
 <td><strong>[!UICONTROL Enabled]</strong></td>
-<td>Abilita o disabilita la soluzione. Quando abilitato, configura e utilizza le funzionalità di Store Fulfillment e stabilisce la connessione tra i servizi Adobe Commerce Store e Store Fulfillment. Quando è disabilitata, tutte le funzioni di Store Fulfillment sono disabilitate e non vi è comunicazione tra Adobe Commerce e i servizi Store Fulfillment. Impossibile elaborare o ricevere le informazioni sull'ordine.</td>
+<td>Abilita o disabilita la soluzione. Quando abilitato, configura e utilizza le funzionalità di Store Fulfillment e stabilisce la connessione tra il tuo archivio Adobe Commerce e [!DNL Store Fulfillment] servizi. Se disabilitata, tutte le funzioni di Store Fulfillment sono disabilitate e non è disponibile alcuna comunicazione tra Adobe Commerce e i servizi Store Fulfillment. Impossibile elaborare o ricevere le informazioni sull'ordine.</td>
 <td>Globale</td>
 <td>Sì</td>
 </tr>
@@ -98,52 +100,58 @@ Abilita la [!DNL Store Fulfillment] soluzione per aggiungere le funzionalità di
 <td><strong>Descrizione</strong></td>
 <td><strong>Ambito</strong></td>
 <td><strong>Obbligatorio</strong></td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Environment]</strong></td>
-<td>Seleziona o <i>Sandbox</i> o <i>Produzione</i><br></br> Sandbox comunica con i servizi di evasione in un test.La produzione comunica con un ambiente live. Utilizzo <strong>only</strong> in produzione.<br></br>Puoi assegnare un set di credenziali per ogni ambiente e gestire entrambi i set nella stessa installazione. <br></br>Salvare le credenziali prima di convalidare la connessione.</td>
+<td>Seleziona o <i>[!UICONTROL Sandbox]</i> o <i>[!UICONTROL Production]</i><br></br>Selezione [!UICONTROL Sandbox] consente la comunicazione con i servizi di esecuzione in un ambiente di test.<br></br>Selezione [!UICONTROL Production] consente la comunicazione con i servizi di realizzazione in un ambiente live.<br></br>A ogni ambiente viene assegnato un set di credenziali e puoi gestire entrambi i set nella stessa installazione. <br></br>Salvare le credenziali prima di convalidare la connessione.</td>
 <td>Globale</td>
 <td>Sì</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL API Server URL]</strong></td>
-<td>URL dell’endpoint API per l’evasione di Walmart Store. Deve essere l’URL completo fornito durante il processo di onboarding. I clienti Store Fulfillment ricevono sia un URL Sandbox che di Produzione. Assicurati di copiare/incollare l’URL completo, inclusa la barra finale "/".</td>
+<td>URL dell’endpoint API per l’evasione di Walmart Store. Deve essere l’URL completo fornito durante il processo di onboarding. I clienti Store Fulfillment ricevono sia un URL Sandbox che di Produzione. Quando aggiungi i valori, accertati di copiare e incollare l’URL completo, inclusa la barra finale "/".</td>
 <td>Globale</td>
 <td>Sì</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Token Auth Server URL]</strong></td>
-<td>L'URL dell'endpoint di autenticazione per l'evasione dell'archivio Walmart. Il valore deve essere l’URL completo fornito durante il processo di onboarding. Ricevi sia un URL Sandbox che di produzione. Assicurati di copiare/incollare l'URL completo, inclusa la barra finale "/`".</td>
+<td>L'URL dell'endpoint di autenticazione per l'evasione dell'archivio Walmart. Il valore deve essere l’URL completo fornito durante il processo di onboarding. Ricevi sia un URL Sandbox che di produzione. Quando aggiungi i valori, accertati di copiare e incollare l’URL completo, inclusa la barra finale "/".</td>
 <td>Globale</td>
 <td>Sì</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Merchant Id]</strong></td>
-<td>L’ID commerciante (tenant) univoco fornito durante il processo di onboarding. L'ID viene utilizzato per instradare gli ordini e assicura che i negozi commerciali li ricevano.</td>
+<td>L’ID commerciante (tenant) univoco fornito durante il processo di onboarding. Questo ID viene utilizzato per instradare gli ordini in modo che gli archivi commerciali li ricevano.</td>
 <td>Globale</td>
 <td>Sì</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Consumer Id]</strong></td>
-<td>L'ID di integrazione univoco. Questo viene fornito durante il processo di onboarding. Non cambia. Viene utilizzato per autenticare tutte le comunicazioni con i servizi di evasione.</td>
+<td>L'ID di integrazione univoco fornito durante il processo di onboarding. Questo ID viene utilizzato per autenticare tutte le comunicazioni tra Adobe Commerce e i servizi di evasione degli archivi</td>
 <td>Globale</td>
 <td>Sì</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Consumer Secret]</strong></td>
-<td>Chiave di integrazione univoca. Questo viene fornito durante il processo di onboarding. Viene utilizzato per autenticare tutte le comunicazioni con i servizi di evasione.</td>
+<td>Chiave di integrazione univoca fornita durante il processo di onboarding. Questa chiave viene utilizzata per autenticare tutte le comunicazioni tra Adobe Commerce e il servizio di evasione degli archivi.</td>
 <td>Globale</td>
 <td>Sì</td>
-    </tr>
+</tr>
 </table>
 
-Dopo aver configurato le credenziali account, seleziona <strong>[!UICONTROL Validate Credentials]</strong> per verificare e stabilire una connessione al servizio Web di evasione per la prima volta.
+Dopo aver configurato le [!UICONTROL Account Credentials], seleziona <strong>[!UICONTROL Validate Credentials]</strong> per verificare e stabilire una connessione al servizio di esecuzione del negozio per la prima volta.
 
 ## Configurare la registrazione
 
-Quando la registrazione è abilitata, il file di registro può espandersi rapidamente. Per evitare problemi di tempo di risposta negli ambienti di produzione, fai attenzione ad abilitare la registrazione e attiva solo per un breve periodo di tempo quando necessario.
+I registri per i servizi di evasione dell’archivio sono disponibili nel file di registro `var/log/walmart-bopis.log`.
 
-Chiedi all’amministratore di sistema di configurare gli ambienti per consentire la gestione delle eccezioni in modo che le eccezioni relative alle API possano essere acquisite tramite il firewall o la cache. È inoltre possibile chiedere all&#39;amministratore di sistema di impostare la rotazione del registro su questo file per ridurre al minimo le dimensioni.
+Chiedi all’amministratore di sistema di configurare gli ambienti per consentire la gestione delle eccezioni in modo che le eccezioni relative alle API possano essere acquisite tramite il firewall o la cache.
+
+Poiché il file di registro dell&#39;applicazione può crescere rapidamente, abilita la registrazione per l&#39;applicazione solo per un breve periodo di tempo quando necessario, ad esempio quando si risolvono i problemi di evasione dell&#39;archivio per un [!DNL Commerce] ordine. Questa configurazione evita i problemi di tempo di risposta negli ambienti di produzione causati da file di registro di grandi dimensioni.
+
+>[!TIP]
+>
+>Per le installazioni on-premise di Adobe Commerce, chiedi all’amministratore di sistema di configurare la rotazione dei log per `var/log/walmart-bopis.log` per ridurre al minimo le dimensioni. Per le installazioni on-premise di Adobe Commerce, vedi [Rotazione del registro](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=en#server-settings) in _Guida all’installazione di Adobe Commerce_. Per Adobe Commerce sui progetti di infrastruttura cloud, consulta [Visualizzare e gestire i registri](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
 
 <table>
 <thead>
@@ -157,7 +165,7 @@ Chiedi all’amministratore di sistema di configurare gli ambienti per consentir
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Debug Mode]</strong></td>
-<td>La modalità Debug viene utilizzata per aumentare l'attività registrata all'interno dell'integrazione. Se disabilitata, non vengono registrate informazioni di debug. Quando abilitata, tutte le informazioni di debug vengono registrate. Tutti i dati registrati si trovano nel file : `var/log/walmart-bopis.log`</td>
+<td>La modalità Debug viene utilizzata per aumentare l'attività registrata all'interno dell'integrazione. Se disabilitata, non vengono registrate informazioni di debug. Quando abilitata, tutte le informazioni di debug vengono registrate <br></br>Tutti i dati registrati si trovano nel file : <pre>var/log/walmart-bopis.log</pre>
 <td>Globale</td>
 <td>No</td>
 </tr>
@@ -322,7 +330,7 @@ Configura le impostazioni per l’account utente dell’app di evasione archivio
 </tr>
 <tr>
 <td><strong>[!UICONTROL Force Password Change]</strong></td>
-<td>Determina se è richiesta una modifica della password utente.<br></br>"Sì": Richiedi all'utente di cambiare la password dopo la configurazione dell'account.`No`: Consiglia all'utente di cambiare la password dopo la configurazione dell'account.</td>
+<td><em>[!UICONTROL Yes]</em>: Richiedi all'utente di cambiare la password dopo la configurazione dell'account.<br></br><em>[!UICONTROL No]</em>: Consiglia all'utente di cambiare la password dopo la configurazione dell'account.</td>
 <td>Globale</td>
 <td>No</td>
 </tr>
@@ -370,18 +378,17 @@ Configura le impostazioni per l’account utente dell’app di evasione archivio
 
 ## Metodi di Consegna
 
-L&#39;evasione dello store funziona estendendo il Adobe Commerce nativo [!DNL In-Store Delivery] funzionalità.
-Dopo aver installato l’estensione, sono disponibili ulteriori opzioni di configurazione amministratore per i metodi di consegna in-store. Configura queste opzioni aggiuntive dall’amministratore selezionando <strong>[!UICONTROL Stores > Configuration > Sales > Delivery Methods > In-Store Pickup]</strong>.
-
-Nelle impostazioni Store Fulfillment (Esegui evasione archivio), puoi configurare i seguenti metodi di consegna per gli ordini In-Store Pickup.
+L&#39;evasione dello store funziona estendendo il Adobe Commerce nativo [!DNL In-Store Delivery] funzionalità. Dopo aver installato l&#39;estensione, puoi configurare i metodi di consegna in-store utilizzando le seguenti impostazioni estese aggiunte all&#39;amministratore.
 
 - **Ritiro in negozio**- Opzioni di offerta per la consegna in negozio durante il processo di pagamento Questo è lo scenario di consegna più comune per gli ordini BOPIS.
 
-- **Curbside pick**- Opzioni di offerta per i clienti per parcheggiare in una posizione del negozio e far loro consegnare il loro ordine da un associato del negozio.
+- **[!UICONTROL Curbside pick up]**- Opzioni di offerta per i clienti per parcheggiare in una posizione del negozio e far loro consegnare il loro ordine da un associato del negozio.
+
+Configura queste impostazioni dall’amministratore selezionando <strong>[!UICONTROL Stores > Configuration > Sales > Delivery Methods > In-Store Pickup]</strong>.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla configurazione delle opzioni di consegna in-store, vedi [Consegna in-store](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) nella Guida utente di Adobe Commerce.
+>Per ulteriori informazioni sulla configurazione delle opzioni di consegna in-store, vedi [Consegna in-store](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) in _Guida utente di Adobe Commerce_.
 
 
 ### Configurazione dei metodi di consegna
@@ -426,7 +433,7 @@ Con il metodo di consegna in-store, il cliente può selezionare un&#39;origine d
 </thead>
 <tbody><tr>
 <td><strong>Titolo della consegna casa</strong></td>
-<td>Specifica il titolo da visualizzare per l'opzione Consegna iniziale nelle aree di prodotto, carrello e pagamento. La consegna a domicilio si riferisce alle capacità di spedizione standard di Adobe Commerce, da un magazzino, da un vettore o direttamente all'indirizzo di spedizione fornito dal cliente.</br></br>Questa etichetta non influisce sul vettore di spedizione selezionato o sulle relative etichette del metodo di spedizione disponibili.</td>
+<td>Specifica il titolo da visualizzare per l'opzione Consegna iniziale nelle aree di prodotto, carrello e pagamento. La consegna a domicilio si riferisce alle capacità di spedizione standard di Adobe Commerce, da un magazzino, da un vettore o direttamente all'indirizzo di spedizione fornito dal cliente. </br></br>Questa etichetta non influisce sulle etichette del metodo di spedizione per il vettore di spedizione selezionato.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
@@ -438,7 +445,7 @@ Con il metodo di consegna in-store, il cliente può selezionare un&#39;origine d
 </tr>
 <tr>
 <td><strong>Titolo del ritiro store</strong></td>
-<td>Quando a un cliente vengono presentate le opzioni di consegna ed è disponibile il ritiro in negozio, viene visualizzata questa etichetta.</br></br>Puoi personalizzare questa etichetta, che viene visualizzata nelle aree prodotto, carrello e pagamento.</td>
+<td>Quando a un cliente vengono presentate le opzioni di consegna ed è disponibile il ritiro in negozio, viene visualizzata questa etichetta. </br></br>Puoi personalizzare questa etichetta, che viene visualizzata nelle aree prodotto, carrello e pagamento.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
@@ -462,25 +469,25 @@ Con il metodo di consegna in-store, il cliente può selezionare un&#39;origine d
 </tr>
 <tr>
 <td><strong>Istruzioni per il caricamento nello store</strong></td>
-<td>Quando un ordine è pronto per il ritiro presso i negozi al dettaglio, il cliente riceve una notifica tramite e-mail. Se il cliente ha selezionato [!DNL In-Store Pickup] durante il pagamento, è possibile personalizzare le istruzioni di ritiro qui.</br></br>Si tratta di un'impostazione globale che si applica a tutte le posizioni dei punti vendita al dettaglio. È inoltre possibile personalizzare le istruzioni a livello di posizione del punto vendita.</td>
+<td>Quando un ordine è pronto per il ritiro presso i negozi al dettaglio, il cliente riceve una notifica tramite e-mail. Se il cliente ha selezionato [!DNL In-Store Pickup] durante il pagamento, è possibile personalizzare le istruzioni di ritiro qui. </br></br>Si tratta di un'impostazione globale che si applica a tutte le posizioni dei punti vendita al dettaglio. È inoltre possibile personalizzare le istruzioni a livello di posizione del punto vendita.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
 <tr>
 <td><strong>Istruzioni per l'accesso a Curbside</strong></td>
-<td>Specifica le istruzioni personalizzate di prelievo ordine da includere nelle notifiche e-mail del cliente per gli ordini di ritiro dei curbside.</br></br>Si tratta di un'impostazione globale che si applica a tutte le posizioni dei punti vendita al dettaglio. È inoltre possibile personalizzare le istruzioni a livello di posizione del punto vendita.</td>
+<td>Specifica le istruzioni di prelievo dell'ordine personalizzate da includere nelle notifiche e-mail del cliente per gli ordini di ritiro curbside. </br></br>Si tratta di un'impostazione globale che si applica a tutte le posizioni dei punti vendita al dettaglio. È inoltre possibile personalizzare le istruzioni a livello di posizione del punto vendita.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
 <tr>
 <td><strong>Lead time di recupero stimato</strong></td>
-<td>Il numero di minuti necessari prima che un ordine venga ricevuto, evaso e pronto per essere prelevato. Queste informazioni vengono mostrate al cliente quando si seleziona una posizione del negozio al dettaglio per l'opzione di consegna del ritiro dal negozio.</br></br>Si tratta di un'impostazione globale che si applica a tutte le posizioni dei punti vendita al dettaglio. È inoltre possibile personalizzare il lead time a livello di posizione del negozio.</td>
+<td>Il numero di minuti necessari prima che un ordine venga ricevuto, evaso e pronto per essere prelevato. Queste informazioni vengono mostrate al cliente quando si seleziona una posizione del negozio al dettaglio per l'opzione di consegna del ritiro dal negozio. Si tratta di un'impostazione globale che si applica a tutte le posizioni dei punti vendita al dettaglio. È inoltre possibile personalizzare il lead time a livello di posizione del negozio.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
 <tr>
 <td><strong>Etichetta del tempo di recupero stimato</strong></td>
-<td>Visualizza il tempo stimato fino a quando un ordine non è disponibile per il ritiro del cliente. Queste informazioni vengono mostrate ai clienti quando selezionano una posizione del negozio al dettaglio per l'opzione di consegna del ritiro dal negozio.</br></br>Quando personalizzi questa etichetta, puoi utilizzare il codice <code>%1</code> per inserire il <strong>Lead time di recupero stimato</strong>Ad esempio:</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>Si tratta di un'impostazione globale che si applica a tutte le posizioni dei punti vendita al dettaglio. È inoltre possibile personalizzare il lead time a livello di posizione del negozio.</br></br><code>Ready for Pickup in %1 minutes.</code></br></br></td>
+<td>Visualizza il tempo stimato fino a quando un ordine non è disponibile per il ritiro del cliente. Queste informazioni vengono mostrate ai clienti quando selezionano una posizione di vendita al dettaglio per [!DNL In-Store Pickup] opzione di consegna. </br></br>Quando personalizzi questa etichetta, puoi utilizzare il codice <code>%1</code> per inserire il <strong>Lead time di recupero stimato</strong>. Ad esempio:</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>Si tratta di un'impostazione globale che si applica a tutte le posizioni dei punti vendita al dettaglio. È inoltre possibile personalizzare il lead time a livello di posizione del negozio.</br></br><code>Ready for Pickup in %1 minutes.</code></br></br></td>
 <td>Visualizzazione store</td>
 <td>No</td>
 <tr>
@@ -505,8 +512,8 @@ Con il metodo di consegna in-store, il cliente può selezionare un&#39;origine d
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>n-Stock</strong></td>
-<td>Quando un cliente utilizza la collocazione del negozio al dettaglio, la disponibilità di inventario per non più articoli correnti viene visualizzata per ogni posizione.</br></br>Puoi personalizzare l’etichetta di stato "in-stock" qui.</td>
+<td><strong>Disponibile</strong></td>
+<td>Quando un cliente utilizza la collocazione del negozio al dettaglio, la disponibilità di inventario per gli articoli correnti viene visualizzata per ogni posizione. </br></br>Puoi personalizzare le <em>[!UICONTROL in-stock]</em> etichetta di stato.</br></br></td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
@@ -518,7 +525,7 @@ Con il metodo di consegna in-store, il cliente può selezionare un&#39;origine d
 </tr>
 <tr>
 <td><strong>Disponibile parzialmente</strong></td>
-<td>Quando un cliente utilizza la collocazione del negozio al dettaglio, la disponibilità di inventario per gli articoli correnti viene visualizzata per ogni posizione.</br></br>Puoi personalizzare l’etichetta di stato "parziale disponibile" qui.</td>
+<td>Quando un cliente utilizza la collocazione del negozio al dettaglio, la disponibilità di inventario per gli articoli correnti viene visualizzata per ogni posizione. </br></br>Puoi personalizzare le <em>[!UICONTROL partially in-stock]</em> etichetta di stato.</br></br></td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
