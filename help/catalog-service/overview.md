@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] per Adobe Commerce fornisce un modo per recuperare il contenuto delle pagine di visualizzazione dei prodotti e delle pagine di elenco dei prodotti molto più rapidamente rispetto alle query native di Adobe Commerce GraphQL."'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: 55036065c686553bc530bb7a4fe46fcec1bd9ee8
+source-git-commit: 489de0f56cba06620c334e2b17040b32a72968ef
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '903'
 ht-degree: 0%
 
 ---
@@ -32,18 +32,18 @@ Il diagramma seguente mostra i due sistemi GraphQL:
 
 ![Diagramma dell’architettura del catalogo](assets/catalog-service-architecture.png)
 
-Nel sistema GraphQL principale, PWA invia una richiesta all’applicazione Commerce, che riceve ogni richiesta, la elabora, eventualmente inviando una richiesta tramite più sottosistemi, quindi restituisce una risposta alla vetrina. Questo round trip può causare rallentamenti dei tempi di caricamento delle pagine, che possono causare tassi di conversione inferiori.
+Nel sistema GraphQL di base, PWA invia una richiesta all’applicazione Commerce, che riceve ogni richiesta, la elabora, eventualmente inviando una richiesta tramite più sottosistemi, quindi restituisce una risposta alla vetrina. Questo round trip può causare rallentamenti dei tempi di caricamento delle pagine, che possono causare tassi di conversione inferiori.
 
-[!DNL Catalog Service] è un servizio gateway GraphQL federato. Il servizio accede a un database separato che contiene i dettagli del prodotto e le relative informazioni, ad esempio attributi di prodotto, varianti, prezzi e categorie. Il servizio mantiene il database sincronizzato con Adobe Commerce tramite indicizzazione.
+[!DNL Catalog Service] è un gateway di Storefront Services. Il servizio accede a un database separato che contiene i dettagli del prodotto e le relative informazioni, ad esempio attributi di prodotto, varianti, prezzi e categorie. Il servizio mantiene il database sincronizzato con Adobe Commerce tramite indicizzazione.
 Poiché il servizio evita la comunicazione diretta con l’applicazione, è in grado di ridurre la latenza del ciclo di richiesta e risposta.
 
 >[!NOTE]
 >
->Il gateway è per l’integrazione futura con Product Recommendations. In questa versione, puoi accedere al [!DNL Catalog Service Federated GraphQL] e [!DNL Live Search] query federate dallo stesso endpoint se si dispone di una chiave di licenza valida per entrambi i prodotti.
+>Il gateway è per l’integrazione futura con Product Recommendations. In questa versione, puoi accedere al [!DNL Catalog Service GraphQL] e [!DNL Live Search] query dallo stesso endpoint se si dispone di una chiave di licenza valida per entrambi i prodotti.
 
 I sistemi GraphQL di base e di servizio non comunicano direttamente tra loro. Puoi accedere a ogni sistema da un URL diverso e le chiamate richiedono informazioni di intestazione diverse. I due sistemi GraphQL sono progettati per essere utilizzati insieme. La [!DNL Catalog Service] Il sistema GraphQL potenzia il sistema di base per rendere più veloci le esperienze sulla vetrina dei prodotti.
 
-Facoltativamente, puoi implementare [Rete API per Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/) per integrare i due sistemi GraphQL di Adobe Commerce con API private e di terze parti e altre interfacce software tramite Adobe Developer. La mesh può essere configurata per garantire che le chiamate indirizzate a ciascun endpoint contengano le informazioni di autorizzazione corrette nelle intestazioni.
+Facoltativamente, puoi implementare [Rete API per Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/) per integrare i due sistemi Adobe Commerce GraphQL con API private e di terze parti e altre interfacce software tramite Adobe Developer. La mesh può essere configurata per garantire che le chiamate indirizzate a ciascun endpoint contengano le informazioni di autorizzazione corrette nelle intestazioni.
 
 ## Dettagli architettonici
 
