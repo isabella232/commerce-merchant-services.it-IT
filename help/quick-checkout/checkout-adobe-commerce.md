@@ -2,9 +2,9 @@
 title: "Flusso di pagamento per un utente Adobe Commerce"
 description: "Panoramica del [!DNL Quick Checkout] flusso per un utente Adobe Commerce."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,19 @@ Se [!DNL Bolt] account trovato durante il pagamento, gli acquirenti possono cont
 Se l&#39;acquirente ha effettuato l&#39;accesso ad Adobe Commerce prima del pagamento, il [!DNL Bolt] Il pop-up OTP non verrà visualizzato durante il pagamento, ma viene visualizzato un messaggio che suggerisce all&#39;acquirente di effettuare l&#39;accesso per accedere al loro portafoglio Bolt.
 
 Se riscontri problemi quando inserisci un ordine come utente Adobe Commerce esistente, consulta la [Risolvere i problemi relativi all’estrazione rapida](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) nell&#39;Aiuto di Adobe Commerce.
+
+### Accesso automatico
+
+È possibile configurare un accesso automatico per [!DNL Quick Checkout] utenti. È possibile abilitare una configurazione per accedere automaticamente a un utente durante il pagamento.
+
+1. Sulla _Amministratore_ barra laterale, passare a **Negozi** > **Configurazione** > **Pagamento** per accedere alla pagina di configurazione generale di Checkout Admin.
+1. In _Impostazioni del servizio_ sezione per [!DNL Quick Checkout], fornisce tutti i dettagli necessari per impostare l’accesso automatico.
+
+Vedi [[!DNL Quick Checkout] configurare le impostazioni del servizio](../quick-checkout/onboarding.md#configure-service-settings) per ulteriori informazioni.
+
+>[!NOTE]
+>
+> Primo accesso quando **accesso automatico** è abilitato richiede il consenso dell’utente per autorizzarlo accettando una finestra a comparsa.
 
 ## Nuovo [!DNL Bolt] account
 

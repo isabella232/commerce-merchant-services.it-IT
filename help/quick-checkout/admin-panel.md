@@ -1,22 +1,19 @@
 ---
-title: "[!DNL Quick Checkout] per il pannello Adobe Commerce Admin"
-description: "Scopri come [!DNL Quick Checkout] Il pannello di amministrazione può aiutare a integrare, configurare e visualizzare correttamente l'estensione."
-source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
+title: '''[!DNL Quick Checkout] per il pannello Adobe Commerce Admin"'
+description: Scopri come [!DNL Quick Checkout] Il pannello di amministrazione può aiutare a integrare, configurare e visualizzare correttamente l'estensione.
+exl-id: d91763ed-b4f6-4736-9503-0305edd77e91
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '198'
 ht-degree: 0%
 
 ---
-
 
 # Introduzione al [!DNL Quick Checkout] Pannello Admin
 
 [!DNL Quick Checkout] per Adobe Commerce e Magenti Open Source fornisce una visualizzazione del pannello Amministratore con tutte le informazioni necessarie per configurare e utilizzare l’estensione .
 
 1. Sulla _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**:
-
-   ![Pagamento rapido menu](assets/sales-quickcheckout.png)
-
 1. In questa visualizzazione, puoi accedere al _Pannello Admin_ panoramica, _Risorse_ informazioni [!DNL Quick Checkout], get _Guida e supporto_ o configura l&#39;estensione tramite _Impostazioni_.
 
    ![Pagamento rapido menu](assets/admin-panel-view.png)

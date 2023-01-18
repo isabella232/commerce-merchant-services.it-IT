@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] Note sulla versione'
 description: Consulta le note sulla versione per informazioni su tutti [!DNL Quick Checkout] versioni.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 8b915cd0a8f25934675a2ae00ee2694b7facc1bd
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1185'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,20 @@ _5 ottobre 2022_
 ![Problema risolto](../assets/fix.svg)<!-- Issue BOLT-369 --> Ora, la [[!DNL Quick Checkout] Pannello di amministrazione](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) visualizza la versione dell’app nel piè di pagina.
 
 +++
+
+## v1.5.0
+
+_18 gennaio 2023_
+
+![Nuovo](../assets/new.svg)<!-- Issue BOLT-522 --> È possibile abilitare/disabilitare una nuova configurazione per rilevare se [acquirente](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-options/checkout-adobe-commerce.html) può essere collegato automaticamente a Bolt.
+
+![Nuovo](../assets/new.svg)<!-- Issue BOLT-523 --> È possibile attivare/disattivare una nuova configurazione che consente ai commercianti di specificare se è possibile accedere automaticamente a entrambe le reti o solo alla rete Bolt.
+
+![Problema risolto](../assets/fix.svg)<!-- Issue BOLT-542 --> Miglioramenti dell’esperienza utente quando [salvataggio della scheda o dell&#39;indirizzo in un account Bolt](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) quando un acquirente fornisce un’e-mail.
+
+![Problema risolto](../assets/fix.svg)<!-- Issue BOLT-550 --> Miglioramenti dell’esperienza utente in [accesso automatico](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#configure-service-settings) quando un utente Bolt fornisce e-mail.
+
+![Problema risolto](../assets/fix.svg)<!-- Issue BOLT-544 --> Miglioramenti della compatibilità per [URL di callback](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#check-shopper-valid-account) con [siti multipli](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html) a Bolt.
 
 ## v1.4.0
 

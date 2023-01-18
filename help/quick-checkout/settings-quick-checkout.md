@@ -2,9 +2,9 @@
 title: Configura le [!DNL Quick Checkout] per estensione Adobe Commerce
 description: Scopri le opzioni di configurazione per [!DNL Quick Checkout] e come integrare e configurare correttamente l'estensione.
 exl-id: 892e04dc-17d6-45e9-b2ab-c7a0735a75bc
-source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Per accedere alle seguenti impostazioni di configurazione:
 1. Sulla _Amministratore_ barra laterale, vai a **Negozi** > _Impostazioni_ > **Configurazione**.
 1. Nel pannello a sinistra, espandi **Vendite** e seleziona **Pagamento**.
 
-   ![Pagamento rapido](assets/quick-checkout-main-view-admin.png)
+   ![Pagamento rapido](assets/configuration-view.png)
 
 Fai riferimento a [Onboarding](../quick-checkout/onboarding.md) per ulteriori informazioni su come configurare il [!DNL Quick Checkout] per Adobe Commerce.
 
@@ -52,9 +52,11 @@ Fai riferimento a [Onboarding](../quick-checkout/onboarding.md) per ulteriori in
 | Campo | Ambito | Descrizione |
 |---|---|---|
 | [!UICONTROL Title] | vista store | Aggiungere il testo da visualizzare come titolo per questa opzione di pagamento nella visualizzazione Metodo di pagamento durante il pagamento. Opzioni: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | sito web | La [azione di pagamento](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} per il metodo di pagamento specificato. Opzioni: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | sito web | La [azione di pagamento](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} per il metodo di pagamento specificato. Opzioni: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Debug Mode] | sito web | Attiva o disattiva la modalità di debug. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Enable checkout tracking] | sito web | Definisci se Adobe Commerce consente di condividere le informazioni di tracciamento del checkout con Bolt. Abilitato per impostazione predefinita. Se disabilitata, la generazione di rapporti ne risentirà. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Next Stage After Login Mode] | sito web | Modifica il flusso di navigazione dopo l’accesso del cliente. Opzioni: [!UICONTROL Payment] / [!UICONTROL Shipping] |
+| [!UICONTROL Automatic Login Enabled] | sito web | Definisci se [!DNL Quick Checkout] consente l&#39;accesso automatico durante il pagamento. Abilitato per impostazione predefinita. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Automatic Login Network] | sito web | Seleziona la rete in cui il cliente accede automaticamente. Per impostazione predefinita, è abilitato il bullone. Opzioni: [!UICONTROL Bolt + Merchant] / [!UICONTROL Bolt] |
 
 {style=&quot;table-layout:auto&quot;}
