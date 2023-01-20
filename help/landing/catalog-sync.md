@@ -2,9 +2,9 @@
 title: Sincronizzazione catalogo
 description: Scopri come esportare i dati dei prodotti dal [!DNL Commerce] server a [!DNL Commerce Services] mantenere costantemente aggiornati i servizi.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: fe5bbceb7f443e7b177ecd4812b981d6e7fd0a6b
+source-git-commit: 853c55fbae3ccfb7abea8ce074127f2871d55688
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Il processo di sincronizzazione del catalogo viene eseguito ogni ora per consent
 
 >[!NOTE]
 >
-> La _Sincronizzazione catalogo_ Il dashboard è disponibile solo quando è installato il servizio Recommendations prodotto.
+> La _Sincronizzazione catalogo_ il dashboard è disponibile solo quando _Recommendations di prodotto_ i moduli sono installati e riflettono le proiezioni dei dati relative solo a tale funzione. Supporto per altri servizi commerce, ad esempio _Live Search_ e _Servizio catalogo_ sono pianificate per il futuro.
 
 Per accedere al dashboard Sincronizzazione catalogo, seleziona **Sistema** > _Trasferimento dati_ > **Sincronizzazione catalogo**.
 
