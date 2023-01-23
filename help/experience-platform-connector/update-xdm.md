@@ -2,9 +2,9 @@
 title: Aggiungi gruppi di campi allo schema XDM
 description: Scopri come aggiungere gruppi di campi specifici per Adobe Commerce a uno schema XDM.
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
-source-git-commit: f5d1c39fe1b02d2a661b92f971fba5b3e836dd6a
+source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Uno dei [fasi di onboarding](overview.md#onboarding-steps) per utilizzare il con
    - Dati di contatto personali
    - Dettagli Commerce
    - Adobe Analytics Experience Event Commerce (se desideri inviare dati ad Adobe Analytics)
-   - Identificatore persona
+   - Mappa identità
 
    >[!NOTE]
    >
@@ -32,4 +32,10 @@ Uno dei [fasi di onboarding](overview.md#onboarding-steps) per utilizzare il con
 
    Lo schema XDM contiene ora gruppi di campi specifici per Commerce, in modo che i dati raccolti dalla vetrina Commerce [events](events.md) è rappresentato in XDM.
 
-1. [Creare un datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) e selezionare lo schema XDM che contiene i gruppi di campi specifici per Commerce.
+1. [Creare un set di dati](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) in base allo schema creato o aggiornato.
+
+   Un set di dati è un costrutto di archiviazione e gestione per una raccolta di dati, in genere una tabella, che contiene uno schema (colonne) e campi (righe). I set di dati contengono anche metadati che descrivono vari aspetti dei dati memorizzati.
+
+1. [Creare un datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) e seleziona lo schema XDM che contiene i gruppi di campi specifici per Commerce e il set di dati corrispondente.
+
+   Il datastream inoltra i dati raccolti al set di dati. I dati sono rappresentati nel set di dati in base allo schema selezionato.

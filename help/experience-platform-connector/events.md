@@ -2,9 +2,9 @@
 title: Eventi
 description: Scopri quali dati acquisisce ogni evento.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
+source-git-commit: 975854dbdae32e5e51bb57593cf122627d01571f
 workflow-type: tm+mt
-source-wordcount: '1987'
+source-wordcount: '3141'
 ht-degree: 0%
 
 ---
@@ -15,23 +15,21 @@ Di seguito sono elencati gli eventi Commerce disponibili quando installi l’est
 
 Oltre ai dati raccolti dai seguenti eventi, ottieni anche [altri dati](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) fornito dall’SDK Web di Adobe Experience Platform.
 
+## Eventi Storefront
+
++++ Gli eventi di vetrina raccolgono dati comportamentali anonimi dai tuoi acquirenti mentre navigano sul tuo sito. I dati raccolti da questi eventi possono essere utilizzati per creare promozioni e campagne mirate a un set specifico di acquirenti.
+
 >[!NOTE]
 >
->Tutti gli eventi della vetrina includono `personID` campo , che è un identificatore univoco della persona.
+>Tutti gli eventi della vetrina includono `identityMap` campo , che è un identificatore univoco della persona.
 
-## addToCart
+### addToCart
 
-Attivazione quando un prodotto viene aggiunto al carrello o quando la quantità di un prodotto nel carrello viene incrementata.
+| Descrizione | Nome evento XDM |
+|---|---|
+| Attivazione quando un prodotto viene aggiunto al carrello o quando la quantità di un prodotto nel carrello viene incrementata. | `commerce.productListAdds` |
 
-### Nome evento XDM
-
-`commerce.productListAdds`
-
-### Tipo
-
-Vetrina
-
-### Dati raccolti
+#### Dati raccolti da addToCart
 
 Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
@@ -49,19 +47,13 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | `selectedOptions` | Campo utilizzato per un prodotto configurabile. `attribute` identifica un attributo del prodotto configurabile, ad esempio `size` o `color` e `value` identifica il valore dell&#39;attributo, ad esempio `small` o `black`. |
 | `cartID` | ID univoco che identifica il carrello del cliente |
 
-## openCart
+### openCart
 
-Attivazione quando viene creato un nuovo carrello, ovvero quando un prodotto viene aggiunto a un carrello vuoto.
+| Descrizione | Nome evento XDM |
+|---|---|
+| Attivazione quando viene creato un nuovo carrello, ovvero quando un prodotto viene aggiunto a un carrello vuoto. | `commerce.productListOpens` |
 
-### Nome evento XDM
-
-`commerce.productListOpens`
-
-### Tipo
-
-Vetrina
-
-### Dati raccolti
+#### Dati raccolti da openCart
 
 Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
@@ -79,19 +71,13 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | `selectedOptions` | Campo utilizzato per un prodotto configurabile. `attribute` identifica un attributo del prodotto configurabile, ad esempio `size` o `color` e `value` identifica il valore dell&#39;attributo, ad esempio `small` o `black`. |
 | `cartID` | ID univoco che identifica il carrello del cliente |
 
-## removeFromCart
+### removeFromCart
 
-Attivazione ogni volta che un prodotto viene rimosso o ogni volta che la quantità di un prodotto nel carrello viene diminuita.
+| Descrizione | Nome evento XDM |
+|---|---|
+| Attivazione ogni volta che un prodotto viene rimosso o ogni volta che la quantità di un prodotto nel carrello viene diminuita. | `commerce.productListRemovals` |
 
-### Nome evento XDM
-
-`commerce.productListRemovals`
-
-### Tipo
-
-Vetrina
-
-### Dati raccolti
+#### Dati raccolti da removeFromCart
 
 Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
@@ -109,19 +95,13 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | `selectedOptions` | Campo utilizzato per un prodotto configurabile. `attribute` identifica un attributo del prodotto configurabile, ad esempio `size` o `color` e `value` identifica il valore dell&#39;attributo, ad esempio `small` o `black`. |
 | `cartID` | ID univoco che identifica il carrello del cliente |
 
-## shoppingCartView
+### shoppingCartView
 
-Attivazione quando viene caricata una pagina del carrello.
+| Descrizione | Nome evento XDM |
+|---|---|
+| Attivazione quando viene caricata una pagina del carrello. | `commerce.productListViews` |
 
-### Nome evento XDM
-
-`commerce.productListViews`
-
-### Tipo
-
-Vetrina
-
-### Dati raccolti
+#### Dati raccolti da shoppingCartView
 
 Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
@@ -139,19 +119,13 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | `selectedOptions` | Campo utilizzato per un prodotto configurabile. `attribute` identifica un attributo del prodotto configurabile, ad esempio `size` o `color` e `value` identifica il valore dell&#39;attributo, ad esempio `small` o `black`. |
 | `cartID` | ID univoco che identifica il carrello del cliente |
 
-## pageView
+### pageView
 
-Attivazione al caricamento di qualsiasi pagina.
+| Descrizione | Nome evento XDM |
+|---|---|
+| Attivazione al caricamento di qualsiasi pagina. | `web.webpagedetails.pageViews` |
 
-### Nome evento XDM
-
-`web.webpagedetails.pageViews`
-
-### Tipo
-
-Vetrina
-
-### Dati raccolti
+#### Dati raccolti da pageView
 
 Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
@@ -159,19 +133,13 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 |---|---|
 | `pageViews` | Indica se è stata caricata una pagina. A `value` di `1` indica che la pagina è stata caricata. |
 
-## productPageView
+### productPageView
 
-Attivazione al caricamento di qualsiasi pagina di prodotto.
+| Descrizione | Nome evento XDM |
+|---|---|
+| Attivazione al caricamento di qualsiasi pagina di prodotto. | `commerce.productViews` |
 
-### Nome evento XDM
-
-`commerce.productViews`
-
-### Tipo
-
-Vetrina
-
-### Dati raccolti
+#### Dati raccolti da productPageView
 
 Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
@@ -187,19 +155,13 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | `productImageUrl` | URL immagine principale del prodotto |
 | `selectedOptions` | Campo utilizzato per un prodotto configurabile. `attribute` identifica un attributo del prodotto configurabile, ad esempio `size` o `color` e `value` identifica il valore dell&#39;attributo, ad esempio `small` o `black`. |
 
-## startCheckout
+### startCheckout
 
-Attivazione quando l&#39;acquirente fa clic su un pulsante di pagamento.
+| Descrizione | Nome evento XDM |
+|---|---|
+| Attivazione quando l&#39;acquirente fa clic su un pulsante di pagamento. | `commerce.checkouts` |
 
-### Nome evento XDM
-
-`commerce.checkouts`
-
-### Tipo
-
-Vetrina
-
-### Dati raccolti
+#### Dati raccolti da startCheckout
 
 Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
@@ -217,19 +179,13 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | `selectedOptions` | Campo utilizzato per un prodotto configurabile. `attribute` identifica un attributo del prodotto configurabile, ad esempio `size` o `color` e `value` identifica il valore dell&#39;attributo, ad esempio `small` o `black`. |
 | `cartID` | ID univoco che identifica il carrello del cliente |
 
-## completeCheckout
+### completeCheckout
 
-Attivazione quando l&#39;acquirente effettua un ordine.
+| Descrizione | Nome evento XDM |
+|---|---|
+| Attivazione quando l&#39;acquirente effettua un ordine. | `commerce.order` |
 
-### Nome evento XDM
-
-`commerce.order`
-
-### Tipo
-
-Vetrina
-
-### Dati raccolti
+#### Dati raccolti da completeCheckout
 
 Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
@@ -248,6 +204,8 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | `shippingMethod` | Il metodo di spedizione scelto dal cliente, ad esempio consegna standard, consegna rapida, ritiro in negozio e così via |
 | `shippingAmount` | Costo totale di spedizione per gli articoli nel carrello |
 | `promotionID` | Identificatore univoco della promozione, se presente |
+| `personalEmail` | Specifica l&#39;indirizzo e-mail personale |
+| `address` | L&#39;indirizzo tecnico, ad esempio `name@domain.com` come comunemente definito nella RFC2822 e negli standard successivi |
 | `productListItems` | Una serie di prodotti nel carrello |
 | `SKU` | Unità di conservazione delle scorte. Identificatore univoco per il prodotto. |
 | `name` | Nome visualizzato o nome leggibile del prodotto |
@@ -257,24 +215,24 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | `currencyCode` | La [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) codice valuta utilizzato per i totali dell&#39;ordine. |
 | `productImageUrl` | URL immagine principale del prodotto |
 | `selectedOptions` | Campo utilizzato per un prodotto configurabile. `attribute` identifica un attributo del prodotto configurabile, ad esempio `size` o `color` e `value` identifica il valore dell&#39;attributo, ad esempio `small` o `black`. |
++++
 
-## signIn
+## Eventi di profilo
 
-Attivazione quando un acquirente tenta di accedere.
++++
+Gli eventi di profilo includono informazioni sull’account, ad esempio `signIn`, `signOut`, `createAccount`e `editAccount`. Questi dati vengono utilizzati per popolare i dettagli chiave dei clienti necessari per definire meglio i segmenti o eseguire campagne di marketing, ad esempio per indirizzare gli acquirenti che vivono a New York.
+
+### signIn
+
+| Descrizione | Nome evento XDM |
+|---|---|
+| Attivazione quando un acquirente tenta di accedere. | `userAccount.login` |
 
 >[!NOTE]
 >
 > Questo evento viene attivato quando si tenta l&#39;azione specifica. Non indica che l’azione è stata eseguita correttamente.
 
-### Nome evento XDM
-
-`userAccount.login`
-
-### Tipo
-
-Profilo
-
-### Dati raccolti
+#### Dati raccolti da signIn
 
 Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
@@ -288,23 +246,17 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | `userAccount` | Indica eventuali dettagli fedeltà, preferenze, processi di accesso e altre preferenze dell’account |
 | `login` | Indica se un visitatore ha tentato l&#39;accesso |
 
-## signOut
+### signOut
 
-Attivazione quando un acquirente tenta di disconnettersi.
+| Descrizione | Nome evento XDM |
+|---|---|
+| Attivazione quando un acquirente tenta di disconnettersi. | `userAccount.logout` |
 
 >[!NOTE]
 >
 > Questo evento viene attivato quando si tenta l&#39;azione specifica. Non indica che l’azione è stata eseguita correttamente.
 
-### Nome evento XDM
-
-`userAccount.logout`
-
-### Tipo
-
-Profilo
-
-### Dati raccolti
+#### Dati raccolti da signOut
 
 Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
@@ -314,23 +266,17 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | `userAccount` | Indica eventuali dettagli fedeltà, preferenze, processi di accesso e altre preferenze dell’account |
 | `logout` | Indica se un visitatore ha tentato di disconnettersi |
 
-## createAccount
+### createAccount
 
-Attivazione quando un acquirente tenta di creare un account.
+| Descrizione | Nome evento XDM |
+|---|---|
+| Attivazione quando un acquirente tenta di creare un account. | `userAccount.createProfile` |
 
 >[!NOTE]
 >
 > Questo evento viene attivato quando si tenta l&#39;azione specifica. Non indica che l’azione è stata eseguita correttamente.
 
-### Nome evento XDM
-
-`userAccount.createProfile`
-
-### Tipo
-
-Profilo
-
-### Dati raccolti
+#### Dati raccolti da createAccount
 
 Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
@@ -345,23 +291,17 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | `userAccount` | Indica eventuali dettagli fedeltà, preferenze, processi di accesso e altre preferenze dell’account |
 | `createProfile` | Indica se un utente ha creato un profilo di account |
 
-## editAccount
+### editAccount
 
-Attivazione quando un acquirente tenta di modificare un account.
+| Descrizione | Nome evento XDM |
+|---|---|
+| Attivazione quando un acquirente tenta di modificare un account. | `userAccount.updateProfile` |
 
 >[!NOTE]
 >
 > Questo evento viene attivato quando si tenta l&#39;azione specifica. Non indica che l’azione è stata eseguita correttamente.
 
-### Nome evento XDM
-
-`userAccount.updateProfile`
-
-### Tipo
-
-Profilo
-
-### Dati raccolti
+#### Dati raccolti da editAccount
 
 Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
@@ -376,37 +316,23 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | `address` | L&#39;indirizzo tecnico, ad esempio `name@domain.com` come comunemente definito nella RFC2822 e negli standard successivi |
 | `userAccount` | Indica eventuali dettagli fedeltà, preferenze, processi di accesso e altre preferenze dell’account |
 | `updateProfile` | Indica se un utente ha aggiornato il proprio profilo account |
++++
 
-## searchRequestSent
+## Eventi di ricerca
 
-Attivato dai seguenti eventi nel puntatore &quot;cerca come digiti&quot;:
++++ Gli eventi di ricerca forniscono dati pertinenti all’intento dell’acquirente. Approfondisci l&#39;intento di un acquirente che aiuta i commercianti a vedere come i consumatori cercano gli articoli, cosa cliccano e alla fine acquistano o abbandonano. Un esempio di come utilizzare questi dati è se desideri indirizzare gli acquirenti esistenti che cercano il tuo prodotto principale, ma non acquistano mai il prodotto.
 
-- Premi Invio
-- Fai clic su _Visualizza tutto_
+### searchRequestSent
 
-Attivazione dai seguenti eventi nelle pagine dei risultati di ricerca:
-
-- Selezionare un filtro
-- Cambia l&#39;ordinamento (_Ordina per_)
-- Cambia la direzione di ordinamento (crescente o decrescente)
-- Modifica il numero di risultati per pagina (_Mostra n. per pagina_)
-- Passa alla pagina successiva
-- Passa alla pagina precedente
-- Passa a una pagina diversa
+| Descrizione | Nome evento XDM |
+|---|---|
+| Attivato dai seguenti eventi nel puntatore &quot;cerca come digiti&quot;:<br>Premi Invio, Fai Clic Su _Visualizza tutto_<br> Attivazione dai seguenti eventi nelle pagine dei risultati di ricerca:<br>Seleziona un filtro, Cambia l’ordinamento (_Ordina per_), Cambia l&#39;ordinamento (crescente o decrescente), Cambia il numero di risultati per pagina (_Mostra n. per pagina_), passare alla pagina successiva, passare alla pagina precedente e passare a una pagina diversa | `searchRequest` |
 
 >[!NOTE]
 >
 >Gli eventi di ricerca non sono supportati in Adobe Commerce Enterprise Edition con il modulo B2B installato.
 
-### Nome evento XDM
-
-`searchRequest`
-
-### Tipo
-
-Ricerca
-
-### Dati raccolti
+#### Dati raccolti da searchRequestSent
 
 Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
@@ -422,23 +348,17 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | `order` | Ordine in cui restituire i risultati della ricerca |
 | `query` | Termini cercati |
 
-## searchResponseReceived
+### searchResponseReceived
 
-Attivato quando Live Search restituisce i risultati per la pagina &quot;search as you type&quot; o risultati di ricerca.
+| Descrizione | Nome evento XDM |
+|---|---|
+| Attivato quando Live Search restituisce i risultati per la pagina &quot;search as you type&quot; o risultati di ricerca. | `searchResponse` |
 
 >[!NOTE]
 >
 >Gli eventi di ricerca non sono supportati in Adobe Commerce Enterprise Edition con il modulo B2B installato.
 
-### Nome evento XDM
-
-`searchResponse`
-
-### Tipo
-
-Ricerca
-
-### Dati raccolti
+#### Dati raccolti da searchResponseReceived
 
 Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
@@ -451,3 +371,88 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | `SKU` | Unità di conservazione delle scorte. Identificatore univoco per il prodotto. |
 | `name` | Nome visualizzato o nome leggibile del prodotto |
 | `productImageUrl` | URL immagine principale del prodotto |
+
++++
+
+## (Beta) Eventi back office
+
+>[!NOTE]
+>
+>Per i commercianti già iscritti al nostro programma beta back office, hai accesso agli eventi back office. Se desideri partecipare al programma beta del back office, contatta [drios@adobe.com](mailto:drios@adobe.com).
+
++++ Gli eventi back office contengono informazioni sullo stato di un ordine, ad esempio se un ordine è stato effettuato, annullato, rimborsato o spedito. I dati raccolti da questi eventi lato server mostrano una visualizzazione 360 dell&#39;ordine dell&#39;acquirente. Questo può aiutare i commercianti a eseguire meglio il targeting o ad analizzare l’intero stato dell’ordine durante lo sviluppo di campagne di marketing. Ad esempio, è possibile individuare le tendenze in alcune categorie di prodotti che presentano buone prestazioni in diversi momenti dell’anno. Ad esempio, vestiti invernali che vendono meglio durante i mesi più freddi o alcuni colori di prodotto che i consumatori sono interessati nel corso degli anni. Inoltre, i dati sullo stato dell&#39;ordine possono essere utili per calcolare il valore del cliente a vita, comprendendo la propensione di un acquirente alla conversione in base agli ordini precedenti.
+
+### orderPlaced
+
+| Descrizione | Nome evento XDM |
+|---|---|
+| Attivazione quando un acquirente effettua un ordine. | `commerce.orderPlaced` |
+
+#### Dati raccolti da orderPlaced
+
+Nella tabella seguente sono descritti i dati raccolti per questo evento.
+
+| Campo | Descrizione |
+|---|---|
+| `identityMap` | Contiene l’indirizzo e-mail che identifica il cliente |
+| `address` | L&#39;indirizzo tecnico, ad esempio `name@domain.com` come comunemente definito nella RFC2822 e negli standard successivi |
+| `eventType` | `commerce.orderPlaced` |
+| `productListItems` | Un array di prodotti nell&#39;ordine |
+| `name` | Nome visualizzato o nome leggibile del prodotto |
+| `SKU` | Unità di conservazione delle scorte. Identificatore univoco per il prodotto. |
+| `quantity` | Numero di unità di prodotto nel carrello |
+| `priceTotal` | Prezzo totale dell&#39;articolo della linea di prodotti |
+| `discountAmount` | Indica l&#39;importo dello sconto applicato |
+| `order` | Contiene informazioni sull&#39;ordine |
+| `purchaseID` | Identificatore univoco assegnato dal venditore per l&#39;acquisto o il contratto. Non c&#39;è garanzia che l&#39;ID sia univoco |
+| `purchaseOrderNumber` | Identificatore univoco assegnato dall&#39;acquirente per l&#39;acquisto o il contratto |
+| `payments` | Elenco dei pagamenti per l&#39;ordine |
+| `paymentType` | Modalità di pagamento dell&#39;ordine. Valori enumerati personalizzati consentiti. |
+| `currencyCode` | La [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) codice valuta utilizzato per questo elemento di pagamento |
+| `paymentAmount` | Valore del pagamento |
+| `shipping` | Dettagli di spedizione per uno o più prodotti |
+| `shippingMethod` | Il metodo di spedizione scelto dal cliente, ad esempio consegna standard, consegna rapida, ritiro in negozio e così via |
+| `shippingAddress` | Indirizzo spedizione fisica |
+| `street1` | Informazioni principali sul livello della strada, numero dell&#39;appartamento, numero della strada e nome della strada |
+| `shippingAmount` | Importo che il cliente ha dovuto pagare per la spedizione. |
+| `billingAddress` | Indirizzo postale di fatturazione |
+| `street1` | Informazioni principali sul livello della strada, numero dell&#39;appartamento, numero della strada e nome della strada |
+| `street2` | Campo aggiuntivo per informazioni a livello stradale |
+| `city` | Nome della città |
+| `state` | Nome dello stato. Questo è un campo in formato libero. |
+| `postalCode` | Codice postale della posizione. I codici postali non sono disponibili per tutti i paesi. In alcuni paesi ciò conterrà solo una parte del codice postale. |
+| `country` | Nome del territorio amministrato dal governo. Diversi da `xdm:countryCode`, è un campo in formato libero che può avere il nome del paese in qualsiasi lingua. |
+
+### orderShipped
+
+| Descrizione | Nome evento XDM |
+|---|---|
+| Attivazione quando viene spedito un ordine. | `commerce.orderLineItemShipped` |
+
+#### Dati raccolti da orderShipped
+
+Nella tabella seguente sono descritti i dati raccolti per questo evento.
+|Campo|Descrizione| |—|—| |`identityMap`|Contiene l&#39;indirizzo e-mail che identifica il cliente| |`address`|L&#39;indirizzo tecnico, ad esempio `name@domain.com` come comunemente definito nella RFC2822 e negli standard successivi| |`eventType`|`commerce.orderLineItemShipped`| |`productListItems`|Matrice di prodotti nell&#39;ordine| |`name`|Nome visualizzato o nome leggibile del prodotto| |`SKU`|Unità di conservazione delle scorte. Identificatore univoco per il prodotto.| |`quantity`|Numero di unità di prodotto nel carrello| |`priceTotal`|Il prezzo totale per l&#39;articolo della linea di prodotti| |`discountAmount`|Indica l&#39;importo dello sconto applicato| |`order`|Contiene informazioni sull&#39;ordine| |`purchaseID`|Identificatore univoco assegnato dal venditore per l&#39;acquisto o il contratto. Non esiste alcuna garanzia che l&#39;ID sia univoco| |`purchaseOrderNumber`|Identificatore univoco assegnato dall&#39;acquirente per l&#39;acquisto o il contratto| |`payments`|Elenco dei pagamenti per l&#39;ordine| |`paymentType`|Modalità di pagamento dell&#39;ordine. Valori enumerati personalizzati consentiti.| |`currencyCode`|Il [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) codice valuta utilizzato per questo elemento di pagamento| |`paymentAmount`|Valore del pagamento| |`shipping`|Dettagli di spedizione per uno o più prodotti| |`shippingMethod`|Il metodo di spedizione scelto dal cliente, ad esempio la consegna standard, la consegna rapida, il ritiro in negozio e così via| |`shippingAddress`|Indirizzo di spedizione fisica| |`street1`|Informazioni principali sul livello della strada, numero dell&#39;appartamento, numero della strada e nome della strada| |`shippingAmount`|Importo che il cliente ha dovuto pagare per la spedizione.| |`billingAddress`|Indirizzo postale di fatturazione| |`street1`|Informazioni principali sul livello della strada, numero dell&#39;appartamento, numero della strada e nome della strada| |`street2`|Campo aggiuntivo per informazioni a livello stradale| |`city`|Nome della città| |`state`|Nome dello stato. Questo è un campo in formato libero.| |`postalCode`|Il codice postale del luogo. I codici postali non sono disponibili per tutti i paesi. In alcuni paesi ciò conterrà solo una parte del codice postale.| |`country`|Nome del territorio amministrato dal governo. Diversi da `xdm:countryCode`, è un campo a forma libera che può avere il nome del paese in qualsiasi lingua.|
+
+### orderCancelled
+
+| Descrizione | Nome evento XDM |
+|---|---|
+| Attivazione quando un acquirente annulla un ordine. | `commerce.orderCancelled` |
+
+#### Dati raccolti da orderCancelled
+
+Nella tabella seguente sono descritti i dati raccolti per questo evento.
+|Campo|Descrizione| |—|—| |`identityMap`|Contiene l&#39;indirizzo e-mail che identifica il cliente| |`address`|L&#39;indirizzo tecnico, ad esempio `name@domain.com` come comunemente definito nella RFC2822 e negli standard successivi| |`eventType`|`commerce.orderCancelled`| |`productListItems`|Matrice di prodotti nell&#39;ordine| |`name`|Nome visualizzato o nome leggibile del prodotto| |`SKU`|Unità di conservazione delle scorte. Identificatore univoco per il prodotto.| |`quantity`|Numero di unità di prodotto nel carrello| |`priceTotal`|Il prezzo totale per l&#39;articolo della linea di prodotti| |`discountAmount`|Indica l&#39;importo dello sconto applicato| |`order`|Contiene informazioni sull&#39;ordine| |`purchaseID`|Identificatore univoco assegnato dal venditore per l&#39;acquisto o il contratto. Non esiste alcuna garanzia che l&#39;ID sia univoco| |`purchaseOrderNumber`|Identificatore univoco assegnato dall&#39;acquirente per l&#39;acquisto o il contratto|
+
+### orderRefund
+
+| Descrizione | Nome evento XDM |
+|---|---|
+| Attivazione quando un acquirente restituisce un elemento in un ordine. | `commerce.creditMemoIssued` |
+
+#### Dati raccolti da orderRefund
+
+Nella tabella seguente sono descritti i dati raccolti per questo evento.
+|Campo|Descrizione| |—|—| |`identityMap`|Contiene l&#39;indirizzo e-mail che identifica il cliente| |`address`|L&#39;indirizzo tecnico, ad esempio `name@domain.com` come comunemente definito nella RFC2822 e negli standard successivi| |`eventType`|`commerce.creditMemoIssued`| |`productListItems`|Matrice di prodotti nell&#39;ordine| |`order`|Contiene informazioni sull&#39;ordine| |`purchaseID`|Identificatore univoco assegnato dal venditore per l&#39;acquisto o il contratto. Non esiste alcuna garanzia che l&#39;ID sia univoco| |`purchaseOrderNumber`|Identificatore univoco assegnato dall&#39;acquirente per l&#39;acquisto o il contratto|
++++

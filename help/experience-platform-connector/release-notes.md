@@ -2,10 +2,10 @@
 title: Note sulla versione
 description: Informazioni aggiornate sulla versione del connettore Adobe Experience Platform di Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: f3d35772d75d1d0711d389a00023834720d63bd9
+source-git-commit: 975854dbdae32e5e51bb57593cf122627d01571f
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 3%
+source-wordcount: '312'
+ht-degree: 2%
 
 ---
 
@@ -36,13 +36,20 @@ _12 ottobre 2022_
 
 +++
 
+## 2.1.0
+
+_17 gennaio 2023_
+
+* ![Nuovo](../assets/new.svg) - Aggiornamento del [Amministratore del connettore Experience Platform](connect-data.md) in modo da poter specificare un proprio AEP Web SDK (lega). Inoltre, è stata aggiunta un&#39;opzione per i commercianti iscritti al nostro programma beta back office per inviare [dati evento back office](connect-data.md#data-collection) sul bordo. Questi eventi contengono [informazioni sullo stato dell&#39;ordine](events.md#beta-order-status-events) su un ordine, ad esempio se un ordine è stato effettuato, annullato, rimborsato o spedito. Se desideri partecipare al programma beta del back office, contatta [drios@adobe.com](mailto:drios@adobe.com).
+* ![Correzione](../assets/fix.svg) È stato modificato in utilizzando `identityMap` anziché `personID` quando si imposta l’identità principale per tutti i dati inviati al bordo.
+
 ## 2.0.1
 
 _10 novembre 2022_
 
 * ![Problema risolto](../assets/fix.svg) - Ora il contesto Adobe Experience Platform viene impostato solo dopo il corretto caricamento di Storefront Event Collector e Storefront Event SDK.
 
-## 2,0,0
+## 2.0.0
 
 _12 ottobre 2022_
 
