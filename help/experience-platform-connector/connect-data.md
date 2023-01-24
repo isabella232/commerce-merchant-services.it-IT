@@ -2,7 +2,7 @@
 title: Connettere dati Commerce a Adobe Experience Platform
 description: Scopri come collegare i dati Commerce a Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: 710a18a63c84f0ae0a5aa3b3ad50fdfce0358db6
+source-git-commit: 18edfec6dbc66ef0e94e9f54ca1061386104d90c
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 0%
@@ -37,9 +37,9 @@ Per collegare l’istanza Adobe Commerce a Adobe Experience Platform, devi forni
 >
 >Per i commercianti già iscritti al nostro programma beta back office, vedrai una casella di controllo per abilitare gli eventi back office. Se desideri partecipare al programma beta del back office, contatta [drios@adobe.com](mailto:drios@adobe.com).
 
-![Configurazione del connettore Experience Platform beta](assets/epc-config-beta.png)
-
 In **Raccolta dati** Specifica i tipi di dati da raccogliere e inviare al bordo Experience Platform. Per impostazione predefinita, gli eventi di vetrina vengono inviati automaticamente, purché l’SDK web AEP e l’ID organizzazione siano validi. Per ulteriori informazioni, consulta l’argomento degli eventi . [vetrina](events.md#storefront-events) e [ufficio postale](events.md#beta-order-status-events) eventi.
+
+![Configurazione del connettore Experience Platform beta](assets/epc-config-beta.png)
 
 >[!NOTE]
 >
