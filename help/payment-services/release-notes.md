@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Note sulla versione"
 description: Consulta le note sulla versione per informazioni su tutti [!DNL Payment Services] versioni.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: c26023b1b63362d42ab351e451168dd50ff962a2
+source-git-commit: 1b86831f04250a0a45c09842da0018e20c422e62
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1445'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,10 @@ Vedi [Disponibilità](https://devdocs.magento.com/release/availability.html) per
 Queste note sulla versione descrivono le modifiche e le correzioni apportate alle funzioni e che sono state rilasciate al di fuori delle regolari versioni delle funzioni per il servizio in hosting.
 
 +++Aggiornamenti al servizio in hosting
+
+_25 gennaio 2023_
+
+![Problema noto](../assets/bug.svg)<!-- Issue PAY-4102 --> Le nuove installazioni di Servizi di pagamento non sono in grado di configurare Commerce Services, rendendo i Servizi di pagamento non operativi. Per risolvere questo problema, aggiorna l’estensione Payment Services alla versione 1.5.3.
 
 _12 settembre 2022_
 
@@ -53,13 +57,19 @@ _28 giugno 2021_
 
 +++
 
+## v1.5.3
+
+_25 gennaio 2022_
+
+![Problema risolto](../assets/fix.svg)<!-- Issue PAY-4102 --> È stata rilasciata una correzione a un problema noto non compatibile con le versioni precedenti. Questa versione blocca la versione dell&#39;estensione del servizio ID alla versione stabile più recente, che riabilita le nuove installazioni di Payment Services per configurare Commerce Services.
+
 ## v1.5.2
 
 _22 dicembre 2022_
 
 ![Problema risolto](../assets/fix.svg)<!-- Issue PAY-3992 --> È stata migliorata la fatturazione in Servizi di pagamento quando viene rifiutato un metodo di pagamento.
 
-![Problema risolto](../assets/fix.svg)<!-- Issue PAY-3999 --> I servizi di pagamento ora visualizzano correttamente i pulsanti di smart PayPal per i commercianti che utilizzano [Pagamento degli incendi](https://marketplace.magento.com/swissup-firecheckout.html)Modello personalizzato {target=_blank} per la pagina di pagamento. Precedentemente, il minicart visualizzava i pulsanti a intermittenza.
+![Problema risolto](../assets/fix.svg)<!-- Issue PAY-3999 --> I servizi di pagamento ora visualizzano correttamente i pulsanti di smart PayPal per i commercianti che utilizzano [Pagamento degli incendi](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} modello personalizzato per la pagina di pagamento. Precedentemente, il minicart visualizzava i pulsanti a intermittenza.
 
 ## v1.5.1
 
