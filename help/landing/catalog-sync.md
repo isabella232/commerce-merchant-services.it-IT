@@ -2,9 +2,9 @@
 title: Sincronizzazione catalogo
 description: Scopri come esportare i dati dei prodotti dal [!DNL Commerce] server a [!DNL Commerce Services] mantenere costantemente aggiornati i servizi.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: 853c55fbae3ccfb7abea8ce074127f2871d55688
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '909'
 ht-degree: 0%
 
 ---
@@ -96,11 +96,11 @@ Quando si attiva una risincronizzazione dei dati, l’aggiornamento dei dati pu�
 
 ### Sincronizzazione non in esecuzione
 
-Se la sincronizzazione non è in esecuzione su una pianificazione o non viene sincronizzato nulla, vedi [KnowledgeBase](https://support.magento.com/hc/en-us/articles/360042224851).
+Se la sincronizzazione non è in esecuzione su una pianificazione o non viene sincronizzato nulla, vedi [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html).
 
 ### Sincronizzazione non riuscita
 
-Se la sincronizzazione del catalogo ha uno stato di **Non riuscito**, invia un [biglietto di supporto](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket).
+Se la sincronizzazione del catalogo ha uno stato di **Non riuscito**, invia un [biglietto di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## Interfaccia della riga di comando {#resynccmdline}
 

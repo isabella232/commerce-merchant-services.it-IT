@@ -1,12 +1,12 @@
 ---
 title: '''[!DNL Store Fulfillment] Panoramica della guida"'
-description: '"Informazioni complete su [!DNL Store Fulfillment] per gli amministratori di Adobe Commerce, inclusa l''installazione e l''onboarding."'
+description: "Informazioni complete su [!DNL Store Fulfillment] per gli amministratori di Adobe Commerce, inclusa l'installazione e l'onboarding."
 seo-title: Adobe Commerce Store Fulfillment Guide
 seo-description: Describes how to use [!DNL Store Fulfillment by Walmart Commerce Technologies] services with Adobe Commerce.
 exl-id: b4af273c-5176-4a67-a783-e0bb1740b3d8
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
@@ -38,5 +38,5 @@ Questa guida non descrive le funzionalità di base di Adobe Commerce.
 
 Se hai bisogno di informazioni o hai domande che non sono incluse in questa guida, utilizza le risorse seguenti:
 
-* [Centro assistenza](https://support.magento.com/hc/en-us){target=&quot;_blank&quot;}—Vedi il [!DNL Store Fulfillment]Articoli relativi alla risoluzione dei problemi.
-* [Biglietti di supporto](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target=&quot;_blank&quot;} - Invia un ticket per ricevere ulteriore assistenza.
+* [Centro assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"}- Vedi [!DNL Store Fulfillment]Articoli relativi alla risoluzione dei problemi.
+* [Biglietti di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"}- Invia un ticket per ricevere ulteriore assistenza.

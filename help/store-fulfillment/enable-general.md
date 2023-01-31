@@ -4,9 +4,9 @@ description: Configurare le impostazioni generali per abilitare [!DNL Store Fulf
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 0cf5a99891fb6ec0b6e446aac05e64bc97d70e7c
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '2543'
+source-wordcount: '2541'
 ht-degree: 0%
 
 ---
@@ -151,7 +151,7 @@ Poiché il file di registro dell&#39;applicazione può crescere rapidamente, abi
 
 >[!TIP]
 >
->Per le installazioni on-premise di Adobe Commerce, chiedi all’amministratore di sistema di configurare la rotazione dei log per `var/log/walmart-bopis.log` per ridurre al minimo le dimensioni. Per le installazioni on-premise di Adobe Commerce, vedi [Rotazione del registro](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=en#server-settings) in _Guida all’installazione di Adobe Commerce_. Per Adobe Commerce sui progetti di infrastruttura cloud, consulta [Visualizzare e gestire i registri](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
+>Per le installazioni on-premise di Adobe Commerce, chiedi all’amministratore di sistema di configurare la rotazione dei log per `var/log/walmart-bopis.log` per ridurre al minimo le dimensioni. Per le installazioni on-premise di Adobe Commerce, vedi [Rotazione del registro](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) in _Guida all’installazione di Adobe Commerce_. Per Adobe Commerce sui progetti di infrastruttura cloud, consulta [Visualizzare e gestire i registri](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
 
 <table>
 <thead>
@@ -318,7 +318,7 @@ Configura le impostazioni per l’account utente dell’app di evasione archivio
 </tr>
 <tr>
 <td><strong>[!UICONTROL Maximum Login Failures to Lockout Account]</strong></td>
-<td>Specifica il numero di tentativi di accesso non riusciti consentiti prima che un associato dello store venga bloccato dal proprio account.<br></br>Per disattivare il blocco degli account, imposta il valore su 0.</td>
+<td>Specifica il numero di tentativi di accesso non riusciti consentiti prima che un associato store venga bloccato dal proprio account.<br></br>Per disattivare il blocco degli account, imposta il valore su 0.</td>
 <td>Globale</td>
 <td>No</td>
 </tr>
