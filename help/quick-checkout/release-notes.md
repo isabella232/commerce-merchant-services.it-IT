@@ -1,10 +1,10 @@
 ---
-title: '[!DNL Quick Checkout] Note sulla versione'
+title: '''[!DNL Quick Checkout] Note sulla versione"'
 description: Consulta le note sulla versione per informazioni su tutti [!DNL Quick Checkout] versioni.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1241'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,14 @@ _5 ottobre 2022_
 ![Problema risolto](../assets/fix.svg)<!-- Issue BOLT-369 --> Ora, la [[!DNL Quick Checkout] Pannello di amministrazione](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) visualizza la versione dell’app nel piè di pagina.
 
 +++
+
+## v1.6.0
+
+_9 febbraio 2023_
+
+![Problema risolto](../assets/fix.svg)<!-- Issue BOLT-567 --> Miglioramenti dell’esperienza utente quando [ordinazione](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) utilizzando [Consegna in negozio](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery.html) con il metodo [!DNL Quick Checkout] disattivato.
+
+![Problema risolto](../assets/fix.svg)<!-- Issue BOLT-569 --> Miglioramenti alla funzionalità di logout che consente ai consumatori di [disconnessione dalla rete Bolt](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/user-session-lifetime.html).
 
 ## v1.5.0
 

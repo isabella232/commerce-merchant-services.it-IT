@@ -2,9 +2,9 @@
 title: "A bordo [!DNL Quick Checkout] per estensione Adobe Commerce"
 description: "Scopri come [!DNL Quick Checkout] potrebbe essere utile per la tua istanza Adobe Commerce e per come effettuare l’onboarding e la configurazione dell’estensione."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
@@ -150,6 +150,10 @@ Consulta la sezione [Sito, archiviazione e visualizzazione ambito](https://exper
 
 1. Seleziona la **Passaggio successivo dopo l’accesso** per modificare il flusso di navigazione dopo l’accesso del cliente. Per impostazione predefinita, è impostata su **Pagamenti** pagina.
 1. Definisci se [!DNL Quick Checkout] consente di **accesso automatico** durante il pagamento. Per impostazione predefinita è attivato per accedere automaticamente al [!DNL Bolt] rete.
+
+   >[!NOTE]
+   >
+   > Vedi [Documentazione di accesso automatico del bullone](https://help.bolt.com/products/embedded/direct-api/auto-login/) per ulteriori informazioni.
 
 ## Assistenza
 

@@ -2,9 +2,9 @@
 title: "Flusso di pagamento in Adobe Commerce"
 description: "Panoramica del [!DNL Quick Checkout] Flusso in Adobe Commerce."
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '217'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,10 @@ Un successo [!DNL Quick Checkout] il flusso consiste dei seguenti passaggi:
 1. Procedi al pagamento.
 
 ![Pagamento](assets/proceed-checkout.png)
+
+>[!NOTE]
+>
+> Puoi abilitare l&#39;accesso automatico per il tuo commerciante. Vedi [Argomento Bolt&#39;s Enable Automatic Login](https://help.bolt.com/products/embedded/direct-api/auto-login/) per ulteriori informazioni.
 
 1. Quando richiesto, immetti un indirizzo e-mail associato a un [!DNL Bolt] conto.
 1. Inserisci la Password una tantum (OTP) inviata a [!DNL Bolt] indirizzo e-mail o numero di telefono dell&#39;account.

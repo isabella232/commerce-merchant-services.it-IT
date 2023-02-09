@@ -2,9 +2,9 @@
 title: "Flusso di pagamento di un utente Bolt in Adobe Commerce"
 description: Panoramica [!DNL Quick Checkout] flusso per un utente Bolt in Adobe Commerce.
 exl-id: 12f58b7e-1f86-4891-b225-9f4be82c2d5d
-source-git-commit: 7c99f1aa4bed9878625d855509448494d5547d56
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 0%
 # Utenti ospiti
 
 L’esperienza di pagamento per gli ospiti è diversa dall’esperienza utente Adobe. Quando un acquirente inserisce un indirizzo e-mail nel checkout, il [!DNL Quick Checkout] lo convalida e trova un [!DNL Bolt] conto.
+
+>[!WARNING]
+>
+> La [!DNL In-Store Pickup] La funzionalità (ISPU) non è supportata quando la [!DNL Quick Checkout] è abilitato.
 
 ## Registrato [!DNL Bolt] account
 
