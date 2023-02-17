@@ -1,9 +1,10 @@
 ---
 title: Archiviazione carte di credito
 description: Gli acquirenti possono archiviare (salvare) i dati della propria carta di credito per acquisti futuri.
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
+source-git-commit: fb0a8295772fc6e23f2910019e1beadd64d7ed70
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,22 @@ Inoltre possono facilmente cancellare le loro carte di credito evaulate da [Meto
 
 ## Abilita vaulting
 
-È possibile abilitare l&#39;archiviazione della carta di credito per i negozi in Servizi di pagamento [Impostazioni](settings.md#card-vaulting).
+È possibile abilitare l&#39;archiviazione delle carte di credito per i clienti _e_ esercenti nell&#39;amministratore: per i tuoi negozi in [!DNL Payment Services] [Impostazioni](settings.md#card-vaulting).
+
+## Utilizzare il vaulting nell&#39;amministratore
+
+Se un cliente ha una carta di credito precedentemente attivata, un esercente può creare un ordine successivo per quel cliente nell&#39;Amministratore utilizzando i metodi di pagamento vagliati.
+
+È possibile utilizzare le schede con privilegi nell&#39;amministratore solo se il cliente dispone sia di un account esistente che di un token valido memorizzato nel sistema da un pagamento completato in precedenza.
+
+Per creare un ordine nell&#39;amministratore per un cliente utilizzando la sua carta di credito vaultata:
+
+1. [Creare un ordine e aggiungere prodotti](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html).
+1. In _[!UICONTROL Payment & Shipping Information]_, seleziona **[!UICONTROL Stored Cards]**come metodo di pagamento.
+1. Selezionare il metodo di pagamento con carta di credito desiderato.
+1. Dopo aver completato tutte le altre fasi necessarie per l&#39;ordine, [inviare](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
+
+   ![Utilizza la carta di credito attivata in Amministratore per il cliente](assets/admin-vaultedcard.png)
 
 ## Sicurezza
 

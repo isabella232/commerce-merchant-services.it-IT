@@ -4,9 +4,9 @@ description: Dopo l'installazione, è possibile configurare [!DNL Payment Servic
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
+source-git-commit: 482182dca95964e68f1637ff1cc7aad84b00e3eb
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1892'
 ht-degree: 0%
 
 ---
@@ -112,6 +112,7 @@ Vedi [Opzioni di pagamento](payments-options.md#credit-card-fields) per ulterior
 1. Per abilitare [Autenticazione protetta 3DS](security.md#3ds) (`Off` per impostazione predefinita, attiva/disattiva **[!UICONTROL 3DS Secure authentication]** selettore su `Always` o `When required`.
 1. Per abilitare o disabilitare i campi della carta di credito nella pagina di pagamento, attiva **[!UICONTROL Show on checkout page]** selettore.
 1. Per attivare o disattivare [archiviazione di schede](#card-vaulting), attiva/disattiva **[!UICONTROL Vault enabled]** selettore.
+1. Per attivare o disattivare [metodi di pagamento vagliati nell&#39;amministratore](#card-vaulting) (per consentire ai commercianti di completare gli ordini dei clienti nell&#39;amministratore utilizzando il metodo di pagamento attivato), seleziona **[!UICONTROL Show vaulted methods in Admin]** selettore.
 1. Per attivare o disattivare la modalità di debug, attiva **[!UICONTROL Debug Mode]** selettore.
 1. Fai clic su **[!UICONTROL Save]**.
 
@@ -127,7 +128,8 @@ Vedi [Opzioni di pagamento](payments-options.md#credit-card-fields) per ulterior
 | [!UICONTROL Payment Action] | sito web | La [azione di pagamento](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} per il metodo di pagamento specificato. Opzioni: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL 3DS Secure authentication] | sito web | Attiva o disattiva [Autenticazione protetta 3DS](security.md#3ds). Opzioni: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | sito web | Attiva o disattiva i campi della carta di credito da visualizzare nella pagina di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled] | sito web | Attiva o disattiva [archiviazione carte di credito](#card-vaulting). Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | vista store | Attiva o disattiva [archiviazione carte di credito](vaulting.md). Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show vaulted payment methods in Admin] | vista store | Attiva o disattiva la possibilità per gli esercenti di completare gli ordini per i clienti nell&#39;amministratore [utilizzando un metodo di pagamento vaultato](vaulting.md). Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | sito web | Attiva o disattiva la modalità di debug. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### Pulsanti di pagamento
@@ -230,6 +232,8 @@ Per garantire che lo store mostri la configurazione corretta, periodicamente [sv
 ## Vaulting delle schede
 
 È possibile abilitare funzionalità che consentono ai clienti di archiviare, o &quot;salvare&quot;, le informazioni sulla carta di credito nel proprio account personale da utilizzare per acquisti futuri.
+
+Puoi anche utilizzare l’archiviazione delle schede nell’amministratore per completare gli ordini successivi per i clienti esistenti.
 
 Attiva o disattiva l&#39;archiviazione delle schede nel [Impostazioni campo carta di credito](#credit-card-fields).
 
