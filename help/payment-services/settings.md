@@ -4,9 +4,9 @@ description: Dopo l'installazione, è possibile configurare [!DNL Payment Servic
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1825'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ La [!UICONTROL General] Le impostazioni consentono di abilitare o disabilitare S
 
    ![Vista Home](assets/payment-services-menu-small.png)
 
-1. Clic **[!UICONTROL Settings]**. Vedi [Introduzione a [!DNL Payment Services] Pagina principale](payments-home.md) per ulteriori informazioni.
+1. Fai clic su **[!UICONTROL Settings]**. Vedi [Introduzione a [!DNL Payment Services] Pagina principale](payments-home.md) per ulteriori informazioni.
 
    La _[!UICONTROL General]_include le impostazioni utilizzate per abilitare [!DNL Payment Services] come metodo di pagamento.
 
@@ -43,7 +43,7 @@ La [!UICONTROL General] Le impostazioni consentono di abilitare o disabilitare S
    >
    >Le _[!UICONTROL Sandbox Merchant ID]_e_[!UICONTROL Production Merchant ID]_ sono generati automaticamente e presenti nei rispettivi campi al termine dell’onboarding per la sandbox e/o la produzione.
 
-1. Clic **[!UICONTROL Save]**.
+1. Fai clic su **[!UICONTROL Save]**.
 
    Se tenti di allontanarti da questa visualizzazione senza salvare le modifiche, viene visualizzato un modale che richiede di ignorare le modifiche, continuare a modificare o salvare le modifiche.
 
@@ -59,19 +59,19 @@ Puoi aggiungere una [!UICONTROL Soft Descriptor] al sito web o alla configurazio
 
    ![Vista Home](assets/payment-services-menu-small.png)
 
-1. Clic **[!UICONTROL Settings]**. Vedi [Introduzione a [!DNL Payment Services] Pagina principale](payments-home.md) per ulteriori informazioni.
+1. Fai clic su **[!UICONTROL Settings]**. Vedi [Introduzione a [!DNL Payment Services] Pagina principale](payments-home.md) per ulteriori informazioni.
 1. Seleziona la visualizzazione del sito web o del negozio nella **[!UICONTROL Scope]** menu a discesa, per il quale si desidera creare un descrittore soft. Per la configurazione iniziale, lasciare impostato come **[!UICONTROL Default]** per impostare il valore predefinito.
 1. Aggiungi il testo personalizzato (fino a 22 caratteri) nel campo di testo, sostituendo `Custom descriptor`.
-1. Clic **[!UICONTROL Save]**.
+1. Fai clic su **[!UICONTROL Save]**.
 1. Per creare un descrittore software diverso da quello predefinito configurato per una visualizzazione sito Web o store:
    1. Seleziona la visualizzazione del sito web o del negozio nella **[!UICONTROL Scope]** menu a discesa, per il quale si desidera creare un descrittore soft.
    1. Attiva/disattiva _off_ **[!UICONTROL Use website]** o **[!UICONTROL Use default]**, a seconda dell’ambito selezionato).
    1. Aggiungi il testo personalizzato nel campo di testo.
-   1. Clic **[!UICONTROL Save]**.
+   1. Fai clic su **[!UICONTROL Save]**.
 1. Per abilitare la visualizzazione di un sito Web o di un archivio, visualizzare il descrittore software predefinito _o_ il descrittore software utilizzato per il sito web principale:
    1. Seleziona la visualizzazione del sito web o del negozio nella **[!UICONTROL Scope]** menu a discesa, per il quale si desidera abilitare un descrittore software esistente.
    1. Attiva/disattiva _su_ **[!UICONTROL Use website]** o **[!UICONTROL Use default]**, a seconda dell’ambito selezionato).
-   1. Clic **[!UICONTROL Save]**.
+   1. Fai clic su **[!UICONTROL Save]**.
 
    Se tenti di allontanarti da questa visualizzazione senza salvare le modifiche, viene visualizzato un modale che richiede di ignorare le modifiche, continuare a modificare o salvare le modifiche.
 
@@ -87,13 +87,13 @@ Puoi aggiungere una [!UICONTROL Soft Descriptor] al sito web o alla configurazio
 
 ## Configurare le opzioni di pagamento
 
-Ora che hai abilitato Servizi di pagamento per il tuo sito web, puoi modificare le impostazioni predefinite per le funzioni di pagamento e la visualizzazione della vetrina.
+Ora che hai abilitato [!UICONTROL Payment Services] per il tuo sito web, puoi modificare le impostazioni predefinite per le funzioni di pagamento e la visualizzazione della vetrina.
 
 1. Sulla _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
    ![Vista Home](assets/payment-services-menu-small.png)
 
-1. Clic **[!UICONTROL Settings]**. Vedi [Introduzione a [!DNL Payment Services] Pagina principale](payments-home.md) per ulteriori informazioni.
+1. Fai clic su **[!UICONTROL Settings]**. Vedi [Introduzione a [!DNL Payment Services] Pagina principale](payments-home.md) per ulteriori informazioni.
 1. Configura le opzioni di pagamento per [carte di credito](#credit-card-fields), [pulsanti di pagamento](#payment-buttons)e [stile pulsante](#button-style), secondo le sezioni seguenti.
 
 ### Campi carta di credito
@@ -109,10 +109,11 @@ Vedi [Opzioni di pagamento](payments-options.md#credit-card-fields) per ulterior
 1. Seleziona la vista Store nella **[!UICONTROL Scope]** menu a discesa, per il quale si desidera abilitare un metodo di pagamento.
 1. Per modificare il nome del metodo di pagamento visualizzato durante il pagamento, modificare il valore nel **[!UICONTROL Checkout title]** campo .
 1. A [imposta l&#39;azione di pagamento](production.md#set-payment-services-as-payment-method), interruttore **[!UICONTROL Payment action]** a `Authorize` o `Authorize and Capture`.
+1. Per abilitare [Autenticazione protetta 3DS](security.md#3ds) (`Off` per impostazione predefinita, attiva/disattiva **[!UICONTROL 3DS Secure authentication]** selettore su `Always` o `When required`.
 1. Per abilitare o disabilitare i campi della carta di credito nella pagina di pagamento, attiva **[!UICONTROL Show on checkout page]** selettore.
 1. Per attivare o disattivare [archiviazione di schede](#card-vaulting), attiva/disattiva **[!UICONTROL Vault enabled]** selettore.
 1. Per attivare o disattivare la modalità di debug, attiva **[!UICONTROL Debug Mode]** selettore.
-1. Clic **[!UICONTROL Save]**.
+1. Fai clic su **[!UICONTROL Save]**.
 
    Se tenti di allontanarti da questa visualizzazione senza salvare le modifiche, viene visualizzato un modale che richiede di ignorare le modifiche, continuare a modificare o salvare le modifiche.
 
@@ -123,9 +124,10 @@ Vedi [Opzioni di pagamento](payments-options.md#credit-card-fields) per ulterior
 | Campo | Ambito | Descrizione |
 |---|---|---|
 | [!UICONTROL Title] | vista store | Aggiungere il testo da visualizzare come titolo per questa opzione di pagamento nella visualizzazione Metodo di pagamento durante il pagamento. Opzioni: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | sito web | La [azione di pagamento](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} per il metodo di pagamento specificato. Opzioni: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | sito web | La [azione di pagamento](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} per il metodo di pagamento specificato. Opzioni: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL 3DS Secure authentication] | sito web | Attiva o disattiva [Autenticazione protetta 3DS](security.md#3ds). Opzioni: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | sito web | Attiva o disattiva i campi della carta di credito da visualizzare nella pagina di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled] | sito web | Attiva o disattiva l&#39;archiviazione delle carte di credito. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | sito web | Attiva o disattiva [archiviazione carte di credito](#card-vaulting). Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | sito web | Attiva o disattiva la modalità di debug. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### Pulsanti di pagamento
@@ -154,7 +156,7 @@ Puoi abilitare e configurare le opzioni di pagamento dei pulsanti intelligenti P
       Quando si attiva/disattiva la visibilità dei pulsanti di pagamento o il messaggio PayPal Pay Later, viene visualizzata un&#39;anteprima visiva della configurazione nella parte inferiore della pagina Settings (Impostazioni).
 
 1. Per abilitare la modalità di debug, attiva **[!UICONTROL Debug Mode]** selettore.
-1. Clic **[!UICONTROL Save]**.
+1. Fai clic su **[!UICONTROL Save]**.
 
    Se tenti di allontanarti da questa visualizzazione senza salvare le modifiche, viene visualizzato un modale che richiede di ignorare le modifiche, continuare a modificare o salvare le modifiche.
 
@@ -165,7 +167,7 @@ Puoi abilitare e configurare le opzioni di pagamento dei pulsanti intelligenti P
 | Campo | Ambito | Descrizione |
 |---|---|---|
 | [!UICONTROL Title] | vista store | Aggiungere il testo da visualizzare come titolo per questa opzione di pagamento nella visualizzazione Metodo di pagamento durante il pagamento. Opzioni: campo di testo |
-| [!UICONTROL Payment Action] | sito web | La [azione di pagamento](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} per il metodo di pagamento specificato. Opzioni: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | sito web | La [azione di pagamento](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} per il metodo di pagamento specificato. Opzioni: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show PayPal buttons on checkout page] | vista store | Attiva o disattiva [!DNL PayPal Smart Buttons] nella pagina di pagamento. Opzioni: [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on product detail page] | vista store | Attiva o disattiva [!DNL PayPal Smart Buttons] nella pagina dei dettagli del prodotto. Opzioni: [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons in mini-cart preview] | vista store | Attiva o disattiva [!DNL PayPal Smart Buttons] nell’anteprima del mini-carrello. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
@@ -194,7 +196,7 @@ Puoi anche configurare le _[!UICONTROL Button style]_opzioni dei pulsanti intell
 
    Quando si modificano le opzioni di configurazione per layout, colore, forma, altezza ed etichetta, viene visualizzata un&#39;anteprima visiva della configurazione nella parte inferiore della pagina Impostazioni.
 
-1. Clic **[!UICONTROL Save]**.
+1. Fai clic su **[!UICONTROL Save]**.
 
    Se tenti di allontanarti da questa visualizzazione senza salvare le modifiche, viene visualizzato un modale che richiede di ignorare le modifiche, continuare a modificare o salvare le modifiche.
 
@@ -231,12 +233,21 @@ Per garantire che lo store mostri la configurazione corretta, periodicamente [sv
 
 Attiva o disattiva l&#39;archiviazione delle schede nel [Impostazioni campo carta di credito](#credit-card-fields).
 
-Vedi [Archiviazione carte di credito](vaulting.md) per ulteriori informazioni sull&#39;archiviazione.
+Vedi [Archiviazione carte di credito](vaulting.md) per ulteriori informazioni.
+
+## 3DS
+
+3DS protegge clienti e commercianti da attività fraudolente nei loro negozi e consente il rispetto degli standard dell&#39;Unione Europea (UE).
+
+Attivare o disattivare i 3DS in [Impostazioni campo carta di credito](#credit-card-fields).
+
+Vedi [3DS in sicurezza](security.md#3ds) per ulteriori informazioni.
 
 ## Utilizzare più account PayPal
 
-In Servizi di pagamento è possibile utilizzare più account PayPal all&#39;interno di **uno** conto commerciale a livello di sito web. Ad esempio, se gestisci i tuoi store in più paesi (che utilizzano diversi) [valute](https://docs.magento.com/user-guide/stores/currency.html)) o desideri utilizzare Adobe Commerce per alcune parti della tua attività ma non per _tutto_, puoi configurare il tuo account commerciale per l&#39;utilizzo di più account PayPal.
+In [!UICONTROL Payment Services], puoi utilizzare più account PayPal all&#39;interno di **uno** conto commerciale a livello di sito web. Ad esempio, se gestisci i tuoi store in più paesi (che utilizzano diversi) [valute](https://docs.magento.com/user-guide/stores/currency.html)) o desideri utilizzare Adobe Commerce per alcune parti della tua attività ma non per _tutto_, puoi configurare il tuo account commerciale per l&#39;utilizzo di più account PayPal.
 
 Vedi [Sito, archiviazione e visualizzazione ambito](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) per ulteriori informazioni sulla gerarchia di siti web, store e viste store.
 
 Il rappresentante commerciale può creare un nuovo [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) per il tuo conto commerciale e a bordo del sito aggiuntivo con PayPal in modo che uno qualsiasi dei pulsanti PayPal che configuri per apparire verrà mostrato sul tuo sito. Contatta il tuo rappresentante commerciale per assistenza sull&#39;utilizzo di più account PayPal per i tuoi siti web.
+

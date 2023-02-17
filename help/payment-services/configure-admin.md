@@ -4,9 +4,9 @@ description: Dopo l'installazione, è possibile configurare [!DNL Payment Servic
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -61,9 +61,10 @@ Vedi [Opzioni di pagamento](payments-options.md#paypal-smart-buttons) per ulteri
 1. In _[!UICONTROL Payment Services]_espandi la sezione_[!UICONTROL Credit Card Fields]_ sezione .
 1. Per **[!UICONTROL Title]**, immettere il testo (se necessario) per modificare il nome del metodo di pagamento come mostrato durante l&#39;estrazione.
 1. A [imposta l&#39;azione di pagamento](production.md#set-payment-services-as-payment-method), seleziona **[!UICONTROL Authorize]** o **Autorizzazione e acquisizione**.
-1. Per **[!UICONTROL Show on checkout page]**, scegli `Yes` per abilitare o disabilitare i campi della carta di credito nella pagina di pagamento.
+1. Per **[!UICONTROL Show on checkout page]**, scegli `Yes` per abilitare i campi della carta di credito nella pagina di pagamento.
 1. Per **[!UICONTROL Vault Enabled]**, scegli `Yes` per abilitare l&#39;archiviazione della carta di credito per il pagamento.
-1. Per **Modalità debug**, scegli `Yes` per abilitare la modalità di debug (o `No` per disattivarlo).
+1. Per **[!UICONTROL Debug Mode]**, scegli `Yes` per abilitare la modalità di debug (o `No` per disattivarlo).
+1. Per abilitare **[!UICONTROL 3DS Secure authentication]** (`Off` per impostazione predefinita, scegli `Always` o `When required`.
 1. Fai clic su **[!UICONTROL Save Config]** per salvare le modifiche.
 1. Passa a **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, quindi fai clic su **[!UICONTROL Flush Cache]** per aggiornare tutte le cache non valide.
 
@@ -72,7 +73,10 @@ Vedi [Opzioni di pagamento](payments-options.md#paypal-smart-buttons) per ulteri
 | Campo | Ambito | Descrizione |
 |---|---|---|
 | [!UICONTROL Title] | vista store | Aggiungere il testo da visualizzare come titolo per questa opzione di pagamento nella visualizzazione Metodo di pagamento durante il pagamento. Opzioni: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | sito web | La [azione di pagamento](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} per il metodo di pagamento specificato. Opzioni: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | sito web | La [azione di pagamento](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} per il metodo di pagamento specificato. Opzioni: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Show on checkout page] | sito web | Abilita o disabilita i campi della carta di credito nella pagina di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault Enabled] | sito web | Attiva o disattiva l&#39;archiviazione delle carte di credito. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL 3DS Secure authentication] | sito web | Attiva o disattiva [Autenticazione protetta 3DS](security.md#3ds). Opzioni: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | sito web | Attiva o disattiva la modalità di debug. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ## [!DNL PayPal Smart Buttons]
@@ -101,7 +105,7 @@ Puoi abilitare e configurare le opzioni di pagamento dei pulsanti avanzati PayPa
 | Campo | Ambito | Descrizione |
 |---|---|---|
 | [!UICONTROL Title] | vista store | Aggiungere il testo da visualizzare come titolo per questa opzione di pagamento nella visualizzazione Metodo di pagamento durante il pagamento. Opzioni: campo di testo |
-| [!UICONTROL Payment Action] | sito web | La [azione di pagamento](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} per il metodo di pagamento specificato. Opzioni: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | sito web | La [azione di pagamento](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} per il metodo di pagamento specificato. Opzioni: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Display Pay Later Message] | sito web | Attiva o disattiva la messaggistica Paga in seguito nel carrello, nella pagina del prodotto, nel mini-carrello e durante il flusso di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Venmo Enabled] | vista store | Attiva o disattiva l&#39;opzione di pagamento Venmo in cui vengono visualizzati i pulsanti di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Apple Pay Enabled] | vista store | Attiva o disattiva l&#39;opzione Pagamento Apple in cui vengono visualizzati i pulsanti di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
@@ -126,3 +130,4 @@ Puoi abilitare e configurare le opzioni di pagamento dei pulsanti avanzati PayPa
 ## Svuotare la cache
 
 Se modifichi la configurazione, [svuotare manualmente la cache](/help/payment-services/settings.md#flush-the-cache) in modo che il tuo negozio mostri le impostazioni di configurazione più recenti.
+
