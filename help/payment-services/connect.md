@@ -2,9 +2,9 @@
 title: Collegare l'istanza
 description: Collega la tua istanza Commerce utilizzando una chiave API e una chiave privata e specifica lo spazio dati nella configurazione.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
-source-git-commit: a983cf30872544d72bd13c3f04f04a35eebcf85d
+source-git-commit: 5aba246ce2a7802954a90c08c7dac2247a71ff6d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
@@ -45,10 +45,10 @@ La stessa chiave API può essere utilizzata tra le istanze, ma ogni istanza deve
 Dopo aver ottenuto le credenziali, puoi configurare il progetto SaaS e Saas Data Space.
 
 1. Sulla _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]**.
-1. Clic **[!UICONTROL Configure Commerce Services]**.
+1. Fai clic su **[!UICONTROL Configure Commerce Services]**.
 
    Questa opzione è visibile se non hai ancora configurato Commerce Services per il tuo account.
 
    Sei indirizzato all’area di configurazione in Admin, **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**, per configurare il connettore Commerce Services.
 
-1. Per configurare Commerce Services, segui i passaggi descritti in [Configurazione SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-commerce-services).
+1. Per configurare Commerce Services, segui i passaggi descritti in [Configurazione SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#saasenv).
