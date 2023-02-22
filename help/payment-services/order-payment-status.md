@@ -1,17 +1,17 @@
 ---
-title: Report stato del pagamento dell'ordine
+title: Rapporto sullo stato del pagamento dell'ordine
 description: Utilizza il rapporto sullo stato del pagamento dell'ordine per avere visibilità sullo stato del pagamento degli ordini e identificare eventuali problemi potenziali.
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: ddd9fa9b2a709858239c88477f19e8787a0b65c2
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1416'
 ht-degree: 0%
 
 ---
 
-# Report stato del pagamento dell&#39;ordine
+# Rapporto sullo stato del pagamento dell&#39;ordine
 
 [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] offre un reporting completo per ottenere una visione chiara degli ordini e dei pagamenti del tuo negozio.
 
@@ -33,11 +33,11 @@ Vedere gli stati di pagamento, gli stati di fatturazione e spedizione, gli stati
 
 La [!DNL Payment Services] Il modulo utilizza i dati degli ordini e li combina con i dati di pagamento aggregati provenienti da altre fonti (incluso PayPal), per fornire report significativi e molto utili.
 
-I dati dell&#39;ordine vengono esportati e mantenuti nel servizio di pagamento. Quando [modificare o aggiungere gli stati dell’ordine](https://docs.magento.com/user-guide/sales/order-status-custom.html){target=&quot;_blank&quot;} o [modificare una visualizzazione store](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html){target=&quot;_blank&quot;}, [archiviare](https://docs.magento.com/user-guide/stores/store-information.html){target=&quot;_blank&quot;}, o nome del sito web, questi dati vengono combinati con i dati di pagamento e il rapporto sullo stato del pagamento dell&#39;ordine viene compilato con le informazioni combinate.
+I dati dell&#39;ordine vengono esportati e mantenuti nel servizio di pagamento. Quando [modificare o aggiungere gli stati dell’ordine](https://docs.magento.com/user-guide/sales/order-status-custom.html){target="_blank"} or [edit a store view](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html){target="_blank"}, [store](https://docs.magento.com/user-guide/stores/store-information.html){target="_blank"}, o nome del sito web, tali dati sono combinati con i dati di pagamento e il rapporto sullo stato del pagamento dell&#39;ordine è compilato con le informazioni combinate.
 
 Questo processo prevede due passaggi:
 
-1. L&#39;indice viene modificato o `ON SAVE` (ogni volta che le informazioni sull&#39;ordine o sul negozio vengono modificate) o `BY SCHEDULE` (su una pianificazione cron preconfigurata), a seconda di come è configurato in [Gestione dell&#39;indice](https://docs.magento.com/user-guide/system/index-management.html){target=&quot;_blank&quot;} nell&#39;amministratore.
+1. L&#39;indice viene modificato o `ON SAVE` (ogni volta che le informazioni sull&#39;ordine o sul negozio vengono modificate) o `BY SCHEDULE` (su una pianificazione cron preconfigurata), a seconda di come è configurato in [Gestione dell&#39;indice](https://docs.magento.com/user-guide/system/index-management.html){target="_blank"} nell&#39;amministratore.
 
    Per impostazione predefinita, l’indicizzazione dei dati si verifica `ON SAVE`, il che significa che ogni volta che qualcosa cambia nell&#39;ordine, lo stato dell&#39;ordine, la vista del negozio, il negozio o il sito web, il processo di reindicizzazione avviene immediatamente.
 
@@ -53,7 +53,7 @@ Gli unici dati esportati e raccolti a scopo di reporting sono i dati utilizzati 
 
 Anche se, per impostazione predefinita, la reindicizzazione avviene in `ON SAVE` è consigliabile indicizzare in `BY SCHEDULE` modalità. La `BY SCHEDULE` l&#39;indice viene eseguito su una pianificazione cron di un minuto e tutti i dati modificati vengono visualizzati nel rapporto sullo stato dell&#39;ordine entro due minuti da qualsiasi modifica dei dati. Questa reindicizzazione programmata ti aiuta a ridurre qualsiasi sforzo sul tuo negozio, specialmente se hai un grande volume di ordini in arrivo, perché si verifica su una pianificazione (non come ogni ordine è posizionato).
 
-È possibile modificare la modalità indice—`ON SAVE` o `BY SCHEDULE`—[nell’amministratore](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target=&quot;_blank&quot;}.
+È possibile modificare la modalità indice—`ON SAVE` o `BY SCHEDULE`—[nell’amministratore](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"}.
 
 Per scoprire come configurare l’esportazione dei dati, consulta [Configurazione della riga di comando](configure-cli.md#configure-data-export).
 
@@ -181,10 +181,10 @@ I rapporti sullo stato del pagamento degli ordini includono le seguenti informaz
 
 | Colonna | Descrizione |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | ID ordine commerciale<br> <br>Per visualizzare i dati correlati [info ordine](https://docs.magento.com/user-guide/sales/orders.html){target=&quot;_blank&quot;}, fai clic sull&#39;ID. |
+| [!UICONTROL Order ID] | ID ordine commerciale<br> <br>Per visualizzare i dati correlati [info ordine](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, fai clic sull&#39;ID. |
 | [!UICONTROL Order Date] | Timestamp data ordine |
 | [!UICONTROL Authorized Date] | Data e ora dell&#39;autorizzazione di pagamento |
-| [!UICONTROL Order Status] | Commerce corrente [stato dell&#39;ordine](https://docs.magento.com/user-guide/sales/order-status.html){target=&quot;_blank&quot;} |
+| [!UICONTROL Order Status] | Commerce corrente [stato dell&#39;ordine](https://docs.magento.com/user-guide/sales/order-status.html){target="_blank"} |
 | [!UICONTROL Invoiced] | Stato della fattura dell&#39;ordine:*[!UICONTROL No]*, *[!UICONTROL Partial]* oppure *[!UICONTROL Yes]* |
 | [!UICONTROL Shipped] | Stato di spedizione dell&#39;ordine—*[!UICONTROL No]*, *[!UICONTROL Partial]* oppure *[!UICONTROL Yes]* |
 | [!UICONTROL Order Amt] | Importo totale complessivo dell&#39;ordine |

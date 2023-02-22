@@ -1,15 +1,15 @@
 ---
-title: Collegare l'istanza
+title: Connetti l'istanza
 description: Collega la tua istanza Commerce utilizzando una chiave API e una chiave privata e specifica lo spazio dati nella configurazione.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
-source-git-commit: 5aba246ce2a7802954a90c08c7dac2247a71ff6d
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 0%
 
 ---
 
-# Collegare l&#39;istanza
+# Connetti l&#39;istanza
 
 [!DNL Payment Services] è alimentato da Commerce Services e implementato come SaaS (software as a service). Collega la tua istanza Commerce utilizzando una chiave API e una chiave privata e specifica lo spazio dati nella configurazione utilizzando l’ [Connettore Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html). **Questa connessione viene impostata una sola volta.**
 

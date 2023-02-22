@@ -1,15 +1,15 @@
 ---
-title: Configurare la sandbox di prova
+title: Impostare la Sandbox di prova
 description: Utilizzare un account sandbox PayPal per utilizzare [!DNL Payment Services] in modalità di prova.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: 5aba246ce2a7802954a90c08c7dac2247a71ff6d
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%
 
 ---
 
-# Configurare la sandbox di prova
+# Impostare la Sandbox di prova
 
 Prima di iniziare l&#39;onboarding della sandbox, devi registrarti per un account PayPal Developer gratuito e creare sia un commerciante (da utilizzare per l&#39;onboarding) che account di acquisto (da utilizzare per testare il pagamento). Se necessario, puoi creare più account sviluppatore.
 

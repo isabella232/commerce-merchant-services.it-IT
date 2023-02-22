@@ -2,9 +2,9 @@
 title: Abilita [!DNL Payment Services] per la produzione
 description: Completare il processo di onboarding abilitando [!DNL Payment Services] per la produzione.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '702'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,11 @@ Puoi mettere il servizio in produzione e completare il [processo di onboarding](
 Dopo [configurare Commerce Services](connect.md#configure-commerce-services) e consente [test sandbox](sandbox.md#enable-sandbox-testing) o [pagamenti live](#enable-live-payments), è necessario impostare [!DNL Payment Services] come metodo di pagamento.
 
 1. Sulla _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Clic **[!UICONTROL Enable Payment Services]**.
+1. Fai clic su **[!UICONTROL Enable Payment Services]**.
 
    Questa opzione è visibile se non è ancora stata configurata [!DNL Payment Services] come metodo di pagamento per uno o più siti web.
 
-   Viene visualizzata l’area delle impostazioni nella vista Home con le relative opzioni espanse (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), dove è possibile abilitare [!DNL Payment Services] opzioni come [metodo di pagamento](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target=&quot;_blank&quot;}.
+   Viene visualizzata l’area delle impostazioni nella vista Home con le relative opzioni espanse (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), dove è possibile abilitare [!DNL Payment Services] opzioni come [metodo di pagamento](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
 
 1. In _[!UICONTROL General Configuration]_, set **[!UICONTROL Enable]**a `Yes`.
 1. Imposta **[!UICONTROL Payment Action]**, per _[!UICONTROL Credit Card Fields]_e_[!UICONTROL PayPal Smart Buttons]_, a una delle seguenti operazioni:
@@ -36,9 +36,9 @@ Dopo [configurare Commerce Services](connect.md#configure-commerce-services) e c
    | `Authorize` | Approva l&#39;acquisto e blocca i fondi. L&#39;importo non viene prelevato finché non viene &quot;catturato&quot; dal commerciante. |
    | `Authorize and Capture` | Approva l&#39;acquisto e il commerciante &quot;cattura&quot; i fondi. |
 
-1. Clic **[!UICONTROL Save]**.
+1. Fai clic su **[!UICONTROL Save]**.
 1. Fai clic su **[!UICONTROL Go to Payment Services]** da indirizzare nuovamente al [!DNL Payment Services] Casa.
-1. [Svuota la cache](https://docs.magento.com/user-guide/system/cache-management.html){target=&quot;_blank&quot;}.
+1. [Svuota la cache](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
    La pulizia deve essere eseguita dopo ogni modifica della configurazione.
 
@@ -47,7 +47,7 @@ Vedi [Configurare i servizi di pagamento](settings.md) per ulteriori informazion
 ## Onboarding completo
 
 1. Sulla _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Clic **[!UICONTROL Live onboarding]**.
+1. Fai clic su **[!UICONTROL Live onboarding]**.
 
    Questa opzione è visibile se non hai ancora completato l’onboarding live per [!DNL Payment Services].
 
@@ -106,8 +106,8 @@ Per abilitare i pagamenti live:
 1. Sulla _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Nella home, fai clic su **[!UICONTROL Settings]** in alto a destra nella pagina. Vedi [Pagina principale](payments-home.md) per ulteriori informazioni.
 1. In _[!UICONTROL General Configuration]_set di sezioni **[!UICONTROL Payment mode]**a `Production`.
-1. Clic **[!UICONTROL Save]**.
-1. [Svuota la cache](https://docs.magento.com/user-guide/system/cache-management.html){target=&quot;_blank&quot;}.
+1. Fai clic su **[!UICONTROL Save]**.
+1. [Svuota la cache](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
    >[!IMPORTANT]
    >

@@ -4,9 +4,9 @@ description: Dopo l'installazione, è possibile configurare [!DNL Payment Servic
 role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -47,11 +47,11 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 >
 >Se non si specificano indici nel comando, tutti gli indici vengono aggiornati allo stesso valore. Se si desidera modificare un indicizzatore specifico, è necessario inserirlo nel comando.
 
-Per ulteriori informazioni sulla modifica manuale della modalità di un indicizzatore, vedere [Configurare gli indicizzatori](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target=&quot;_blank&quot;} nella documentazione per gli sviluppatori. Per scoprire come modificarlo nell’amministratore, consulta [Gestione dell&#39;indice](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target=&quot;_blank&quot;} nella guida utente principale.
+Per ulteriori informazioni sulla modifica manuale della modalità di un indicizzatore, vedere [Configurare gli indicizzatori](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"} in the developer documentation. To learn how to change it in the Admin, see [Index management](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"} nella guida utente di base.
 
 ### Reindicizzare manualmente i dati
 
-È possibile reindicizzare manualmente i dati, invece di attendere che si verifichino automaticamente. Vedi [Reindicizzazione](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target=&quot;_blank&quot;} in [Gestire gli indicizzatori](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target=&quot;_blank&quot;} per ulteriori informazioni.
+È possibile reindicizzare manualmente i dati, invece di attendere che si verifichino automaticamente. Vedi [Reindicizzazione](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} in [Manage the Indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} per ulteriori informazioni.
 
 Quando `BY SCHEDULE` viene impostata, il sistema tiene traccia delle entità modificate e il processo cron ne aggiorna l&#39;indice in base a una pianificazione impostata. Vedi [Esegui cron dalla riga di comando](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run) in [Configurare ed eseguire cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html)) per scoprire come attivare manualmente l’indicizzazione utilizzando cron jobs.
 

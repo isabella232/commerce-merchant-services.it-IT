@@ -1,15 +1,15 @@
 ---
-title: Archiviazione carte di credito
+title: Vaulting con carta di credito
 description: Gli acquirenti possono archiviare (salvare) i dati della propria carta di credito per acquisti futuri.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
-source-git-commit: fb0a8295772fc6e23f2910019e1beadd64d7ed70
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
 
 ---
 
-# Archiviazione carte di credito
+# Vaulting con carta di credito
 
 Convertire clienti una tantum in acquirenti fedeli con il vaulting della carta di credito. Gli acquirenti possono salvare le credenziali della propria carta di credito durante il pagamento per utilizzarle in un acquisto successivo per lo stesso, o per un altro, negozio all&#39;interno dello stesso account commerciale.
 

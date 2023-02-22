@@ -4,9 +4,9 @@ description: Utilizzare il rapporto Pagamenti per garantire la piena trasparenza
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: ddd9fa9b2a709858239c88477f19e8787a0b65c2
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1335'
 ht-degree: 0%
 
 ---
@@ -154,8 +154,8 @@ I rapporti di pagamento includono le seguenti informazioni.
 | [!UICONTROL Code] | Codice transazione che indica il credito (*CR*) o Debiti (*DR*) |
 | [!UICONTROL Reference ID] | ID transazione originale per il quale è correlato l’evento |
 | [!UICONTROL Invoice] | ID fattura (uno per ordine) della transazione |
-| [!UICONTROL Commerce order] | ID ordine commerciale <br> <br>Per visualizzare i dati correlati [info ordine](https://docs.magento.com/user-guide/sales/orders.html){target=&quot;_blank&quot;}, fai clic sull&#39;ID. |
-| [!UICONTROL Commerce trans] | ID transazione commerciale <br> <br>Per visualizzare i dati correlati [informazioni sulle transazioni](https://docs.magento.com/user-guide/sales/transactions.html){target=&quot;_blank&quot;}, fai clic sull&#39;ID. |
+| [!UICONTROL Commerce order] | ID ordine commerciale <br> <br>Per visualizzare i dati correlati [info ordine](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, fai clic sull&#39;ID. |
+| [!UICONTROL Commerce trans] | ID transazione commerciale <br> <br>Per visualizzare i dati correlati [informazioni sulle transazioni](https://docs.magento.com/user-guide/sales/transactions.html){target="_blank"}, fai clic sull&#39;ID. |
 | [!UICONTROL Pay method] | Tipo di carta di credito *[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL APPLE_PAY]*, *[!UICONTROL CREDIT_CARD]*- e il provider di carte associato (ad esempio *Visto* o *MasterCard*) |
 | [!UICONTROL Trans amt] | Importo della transazione |
 | [!UICONTROL Cur] | Unità di valuta per l&#39;importo della transazione |
@@ -184,19 +184,19 @@ Questi tipi di operazioni possono essere annotati nelle operazioni di pagamento.
 | ------------ | -------------------- |
 | [!UICONTROL PAYMENT] | Il denaro è stato trasferito tra un acquirente e un venditore per un ordine |
 | [!UICONTROL AUTH] | Autorizzazione e autorizzazione di transazioni nulle |
-| [!UICONTROL BONUS] | — |
+| [!UICONTROL BONUS] | -- |
 | [!UICONTROL CHARGEBACK] | Transazioni di storno di commissioni e di commissioni di addebito |
-| [!UICONTROL CORRECTION] | — |
-| [!UICONTROL CURRENCY_CONVERSION] | — |
-| [!UICONTROL DEPOSIT] | — |
-| [!UICONTROL DISBURSEMENT] | — |
-| [!UICONTROL DISPUTE] | — |
+| [!UICONTROL CORRECTION] | -- |
+| [!UICONTROL CURRENCY_CONVERSION] | -- |
+| [!UICONTROL DEPOSIT] | -- |
+| [!UICONTROL DISBURSEMENT] | -- |
+| [!UICONTROL DISPUTE] | -- |
 | [!UICONTROL FEES] | Commissioni partner, commissioni di pagamento e transazioni di storno di commissioni |
-| [!UICONTROL HOLD] | — |
-| [!UICONTROL HOLD_RELEASE] | — |
-| [!UICONTROL INCENTIVES] | — |
-| [!UICONTROL OTHERS] | — |
+| [!UICONTROL HOLD] | -- |
+| [!UICONTROL HOLD_RELEASE] | -- |
+| [!UICONTROL INCENTIVES] | -- |
+| [!UICONTROL OTHERS] | -- |
 | [!UICONTROL RECOUP] | Ricavi da conti bancari o perdite |
-| [!UICONTROL REFUND] | — |
-| [!UICONTROL REVERSAL] | — |
-| [!UICONTROL WITHDRAWAL] | — |
+| [!UICONTROL REFUND] | -- |
+| [!UICONTROL REVERSAL] | -- |
+| [!UICONTROL WITHDRAWAL] | -- |

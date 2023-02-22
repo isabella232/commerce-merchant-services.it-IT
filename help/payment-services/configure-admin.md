@@ -1,17 +1,17 @@
 ---
-title: Configurazione dei servizi di pagamento legacy
+title: Configurazione servizi di pagamento legacy
 description: Dopo l'installazione, è possibile configurare [!DNL Payment Services] nella configurazione Admin at store .
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 482182dca95964e68f1637ff1cc7aad84b00e3eb
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '866'
 ht-degree: 0%
 
 ---
 
-# Configurazione dei servizi di pagamento legacy
+# Legacy [!DNL Payment Services] Configurazione
 
 Puoi personalizzare [!DNL Payment Services] per soddisfare le tue esigenze con opzioni di configurazione utili nell’amministratore.
 
