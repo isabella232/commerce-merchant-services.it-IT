@@ -1,15 +1,15 @@
 ---
-title: Area di lavoro
+title: '''[!DNL Product Recommendations] Area di lavoro'
 description: Scopri come configurare, gestire e monitorare le prestazioni dei consigli di prodotto.
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 25d5321b6f29bab5d8cf329170f3644f35100438
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
 
-# Area di lavoro
+# [!DNL Product Recommendations] Area di lavoro
 
 La [!DNL Product Recommendations] workspace visualizza un elenco di consigli configurati in precedenza con metriche che consentono di tenere traccia del successo di ogni raccomandazione. L’elenco può essere configurato per calcolare le metriche per l’ultimo giorno, settimana o mese. Puoi utilizzare le metriche per creare informazioni fruibili in base alla frequenza con cui viene visualizzata o su cui viene fatto clic un’unità di raccomandazione oppure per analizzare le prestazioni delle raccomandazioni.
 

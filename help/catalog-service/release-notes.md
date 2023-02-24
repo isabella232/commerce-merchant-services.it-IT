@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Note sulla versione"'
 description: Informazioni aggiornate sulla versione di [!DNL Catalog Service] per Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 67f9e5ce69930f3298427a103f9160f925d2ae0d
+source-git-commit: fd3f71a1b3d958f3aa79f0ba6603d30e16e70507
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -13,19 +13,20 @@ ht-degree: 0%
 
 Queste note sulla versione descrivono le versioni più recenti di [!DNL Catalog Service] e comprendono:
 
-* ![Nuovo](../assets/new.svg) Nuove funzioni
-* ![Correzione](../assets/fix.svg) Correzioni e miglioramenti
-* ![Bug](../assets/bug.svg) Problemi noti
+![Nuovo](../assets/new.svg) Nuove funzioni
+![Correzione](../assets/fix.svg) Correzioni e miglioramenti
+![Bug](../assets/bug.svg) Problemi noti
 
-## Versione V1.4
+## Versione principale corrente
+
+### Versione V1.4
 
 Data di rilascio: 2023-2-7 Compatibile con Adobe Commerce (EE): 2.4.x Compatibile con Adobe Commerce for Cloud (ECE): Stabilità 2.4.x: Disponibilità generale
 
 ![Nuovo](../assets/new.svg) È stato pubblicato il metapackage del servizio catalogo per semplificare i passaggi di installazione.
 ![Correzione](../assets/fix.svg) Miglioramenti a livello di scalabilità e prestazioni delle API.
 
-
-### Limitazioni note
+#### Limitazioni note
 
 Queste funzionalità non sono ancora supportate:
 
@@ -44,7 +45,7 @@ Le seguenti limitazioni possono essere risolte utilizzando l&#39;API GraphQL cor
 * Prodotti scaricabili e carte regalo
 * Categorie (`categories` e `categoryList`)
 
-## Versione V1.3
+### Versione V1.3
 
 Data di rilascio: 2023-1-17 Compatibile con Adobe Commerce (EE): 2.4.x Compatibile con Adobe Commerce for Cloud (ECE): Stabilità 2.4.x: Disponibilità generale
 
@@ -53,7 +54,7 @@ Data di rilascio: 2023-1-17 Compatibile con Adobe Commerce (EE): 2.4.x Compatibi
 ![Nuovo](../assets/new.svg) È stato aggiunto il supporto per i prodotti virtuali.
 ![Correzione](../assets/fix.svg) Miglioramenti a livello di scalabilità e prestazioni delle API.
 
-### Limitazioni note
+#### Limitazioni note
 
 Queste funzionalità non sono ancora supportate:
 
@@ -72,14 +73,14 @@ Le seguenti limitazioni possono essere risolte utilizzando l&#39;API GraphQL cor
 * Prodotti scaricabili e carte regalo
 * Categorie (`categories` e `categoryList`)
 
-## Versione V1.1
+### Versione V1.1
 
 Data di rilascio: 2022-11-18 Compatibile con Adobe Commerce (EE): 2.4.x Compatibile con Adobe Commerce for Cloud (ECE): Stabilità 2.4.x: Disponibilità generale
 
 ![Nuovo](../assets/new.svg) Il servizio Catalogo ora supporta Adobe [Rete API](https://developer.adobe.com/graphql-mesh-gateway/).
 ![Correzione](../assets/fix.svg) Abbiamo migliorato la scalabilità delle API e le prestazioni complessive.
 
-### Limitazioni note
+#### Limitazioni note
 
 Queste funzionalità non sono ancora supportate:
 
@@ -98,7 +99,7 @@ Le seguenti limitazioni possono essere risolte utilizzando l’API GraphQL:
 * Prodotti scaricabili e carte regalo
 * Categorie (`categories` e `categoryList`)
 
-## Versione V1.0
+### Versione V1.0
 
 Data di rilascio: 2022-10-04 Compatibile con Adobe Commerce (EE): 2.4.x Compatibile con Adobe Commerce for Cloud (ECE): Stabilità 2.4.x: Disponibilità generale
 
@@ -106,7 +107,7 @@ Data di rilascio: 2022-10-04 Compatibile con Adobe Commerce (EE): 2.4.x Compatib
 ![Nuovo](../assets/new.svg) Sono state aggiunte le sostituzioni per la visibilità B2B. È ora possibile cercare i prodotti e aggiungerli al carrello per specifici gruppi di clienti.
 ![Correzione](../assets/fix.svg) Il servizio è ora più stabile e offre prestazioni migliori.
 
-### Limitazioni note
+#### Limitazioni note
 
 Queste funzionalità non sono ancora supportate:
 
@@ -118,7 +119,11 @@ Queste funzionalità non sono ancora supportate:
 * Supporto per tipi di prodotti virtuali, scaricabili e con carta regalo
 * Prezzo pubblicizzato minimo (MAP)
 
-## Versione 0.3 - Beta+
+## Versioni precedenti
+
++++Versioni beta
+
+### Versione 0.3 - Beta+
 
 Data di rilascio: 2022-09-12 Compatibile con Adobe Commerce (EE): 2.4.x Compatibile con Adobe Commerce for Cloud (ECE): Stabilità 2.4.x: Beta
 
@@ -127,7 +132,7 @@ Data di rilascio: 2022-09-12 Compatibile con Adobe Commerce (EE): 2.4.x Compatib
 ![Correzione](../assets/fix.svg) Miglioramento della stabilità e delle prestazioni del servizio
 ![Nuovo](../assets/new.svg) Gli aggiornamenti vengono ricevuti quando i prodotti vengono eliminati dal catalogo
 
-### Limitazioni note
+#### Limitazioni note
 
 Queste funzionalità non sono ancora supportate:
 
@@ -136,7 +141,7 @@ Queste funzionalità non sono ancora supportate:
 * Non vengono ricevuti aggiornamenti quando le varianti vengono eliminate dal catalogo
 * Ignorare la visibilità B2B: è possibile cercare i prodotti o aggiungerli al carrello per specifici gruppi di clienti
 
-## Versione beta
+### Versione beta
 
 Data di rilascio: 2022-08-09 Compatibile con Adobe Commerce (EE): 2.4.x Compatibile con Adobe Commerce for Cloud (ECE): Stabilità 2.4.x: Beta
 
@@ -150,10 +155,12 @@ Data di rilascio: 2022-08-09 Compatibile con Adobe Commerce (EE): 2.4.x Compatib
 * Prezzi del gruppo di clienti e fasce di prezzo. Restituiscono un prezzo predefinito di fallback ai consumatori senza un gruppo di clienti.
 * Tipi di prodotti che utilizzano prezzi specifici per i clienti B2B.
 
-### Limitazioni note
+#### Limitazioni note
 
 * I pacchetti e i prodotti raggruppati non sono supportati.
 * La determinazione dei prezzi di livello non è supportata.
 * In una matrice di immagini, solo la prima immagine contiene ruoli.
 * Le immagini per le varianti non vengono recuperate.
 * Gli aggiornamenti non vengono ricevuti quando i prodotti o le varianti vengono eliminati dal catalogo.
+
++++

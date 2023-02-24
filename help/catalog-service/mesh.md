@@ -1,30 +1,30 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
 description: '''[!DNL API Mesh] per Adobe Commerce offre un modo per integrare più origini dati tramite un endpoint GraphQL comune."'
-source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
+source-git-commit: bdceeeeb1ed58c4ffbc87bee24c1eb3754b1cde9
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service and API Mesh]
 
-La [Rete API per Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) consente agli sviluppatori di integrare API private o di terze parti e altre interfacce con i prodotti Adobe tramite Adobe IO.
+La [Rete API per Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) consente agli sviluppatori di integrare API private o di terze parti e altre interfacce con i prodotti Adobe tramite Adobe I/O Runtime.
 
 ![Diagramma dell’architettura del catalogo](assets/catalog-service-architecture-mesh.png)
 
 Il primo passaggio per utilizzare la mesh API con il servizio catalogo è quello di collegare la mesh API alla tua istanza. Vedi istruzioni dettagliate in [Creare una mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
-Per completare la configurazione, è necessario [Pacchetto Adobe IO CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) installato.
+Per completare la configurazione, installa la [Pacchetto Adobe Developer CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 
-Una volta configurato Mesh su Adobe IO, esegui il seguente comando che aggiunge un `CommerceCatalogServiceGraph` alla rete.
+Una volta configurata Mesh su Adobe I/O Runtime, esegui il seguente comando che aggiunge un `CommerceCatalogServiceGraph` alla rete.
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
 ```
 
-dove `variables.json` è un file separato che memorizza i valori comunemente utilizzati per Adobe IO.
+Dove `variables.json` è un file separato che memorizza i valori comunemente utilizzati per Adobe I/O Runtime.
 Ad esempio, la chiave API può essere salvata all’interno del file :
 
 ```json
@@ -40,7 +40,7 @@ Dopo aver eseguito questo comando, il servizio catalogo deve essere in esecuzion
 La mesh API consente agli utenti di utilizzare origini dati esterne per migliorare la tua istanza di Adobe Commerce. Può essere utilizzato anche per configurare i dati Commerce esistenti per abilitare nuove funzionalità.
 
 In questo esempio, la mesh API viene utilizzata per abilitare i prezzi di livello in Adobe Commerce.
-Sostituisci il `name `, `endpoint` e `x-api-key` valori.
+Sostituisci il `name `, `endpoint`e `x-api-key` valori.
 
 ```json
 {
