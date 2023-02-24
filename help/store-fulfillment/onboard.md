@@ -4,7 +4,7 @@ description: '''[!DNL Live Search] flusso di onboarding, requisiti di sistema, l
 role: User, Admin
 level: Intermediate
 exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -49,6 +49,6 @@ Introduzione a [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Te
 
 1. [Creare utenti e ruoli per l’app Store Assist](user-setup.md).
 
-1. [Scarica Walmart’s [!DNL Store Assist] app per il dispositivo desiderato. L’app è disponibile sia nell’app Apple (iOS) che in Google Play (Android™)](app-setup.md) negozi.
+1. [Scarica Walmart [!DNL Store Assist] app per il dispositivo desiderato. L’app è disponibile sia nell’app Apple (iOS) che in Google Play (Android™)](app-setup.md) negozi.
 
 Dopo aver installato, configurato, completato l&#39;onboarding e aver accesso al [!DNL Store Assist] app, puoi [iniziare a creare ordini e test](test-and-deploy.md).

@@ -1,12 +1,12 @@
 ---
-user-guide-title: '"[!DNL Store FulFillment Guide]"'
+user-guide-title: "[!DNL Store FulFillment Guide]"
 user-guide-description: Informazioni dettagliate sull’installazione, la configurazione e l’utilizzo di Store Fulfillment per gli archivi Adobe Commerce.
 breadcrumb-title: Completamento store per Adobe Commerce
 index: true
-source-git-commit: 27ed666954f445eb99e0bf370d1155924bfb8ad3
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '83'
-ht-degree: 2%
+source-wordcount: '84'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 - [Panoramica della guida](guide-overview.md)
 - [Introduzione a [!DNL Store Fulfillment]](introduction.md)
-- [Archiviare flussi di lavoro di assistenza](store-assist-modules.md)
+- [Archiviare flussi di lavoro di Assistenza](store-assist-modules.md)
 - [Requisiti](solution-requirements.md)
 - [Note sulla versione](release-notes.md)
 - Evasione a bordo del negozio {#onboarding}
@@ -26,16 +26,15 @@ ht-degree: 2%
 - [Panoramica della configurazione](service-config-settings-overview.md)
 - Configurazione archivio {#store-configuration}
    - [Configurazione generale](enable-general.md)
-   - [E-mail di vendita](sales-emails.md)
-   - [Negozio di commercianti (fonti)](merchant-store-configuration.md)
+   - [Modelli e-mail di vendita](sales-emails.md)
+   - [Negozio commerciale (fonti)](merchant-store-configuration.md)
    - [Gestione delle scorte di prodotti](product-stock.md)
    - [Trasferimento sorgente Inventory management](inventory-stock-transfer.md)
-   - [Siti Web/Ambito di applicazione multipli](multi-site-and-scope-config.md)
+   - [Sito web/ambito multipli](multi-site-and-scope-config.md)
 - Configurazione del sistema {#system-configuration}
    - [Processi in background](background-processes.md)
    - [Posizione del negozio e configurazione della mappatura](store-location-map-provider-setup.md)
    - [Configurazione dell’esperienza di check-in](check-in-experience-setup.md)
    - [Configurazione utente](user-setup.md)
    - [Configurazione dell&#39;app](app-setup.md)
-
 

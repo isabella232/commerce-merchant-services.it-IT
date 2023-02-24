@@ -4,14 +4,14 @@ description: Configurare le impostazioni generali per abilitare [!DNL Store Fulf
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '2541'
 ht-degree: 0%
 
 ---
 
-# Memorizza configurazione di servizio e vendite
+# Configurazione del servizio store e delle vendite
 
 Configura [!DNL Store Fulfillment] dal [!DNL Commerce] Per abilitare l’estensione, specifica le impostazioni di estensione, configura le impostazioni di sicurezza per gli utenti dell’app Store Assist e imposta le opzioni per i metodi di consegna.
 
@@ -500,7 +500,7 @@ Con il metodo di consegna in-store, il cliente può selezionare un&#39;origine d
 </tr>
 </tbody></table>
 
-### Configurazione titoli disponibilità stock
+### Configurazione dei titoli di disponibilità stock
 
 <table>
 <thead>
@@ -530,3 +530,4 @@ Con il metodo di consegna in-store, il cliente può selezionare un&#39;origine d
 <td>No</td>
 </tr>
 </tbody></table>
+

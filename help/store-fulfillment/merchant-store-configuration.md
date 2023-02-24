@@ -1,9 +1,10 @@
 ---
-title: Configurazione dell’archivio merchant
-description: 'È stata migliorata la configurazione delle sorgenti Inventory management come negozi commerciali. '
+title: Configurazione di Merchant Stores
+description: È stata migliorata la configurazione delle sorgenti Inventory management come negozi commerciali.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+exl-id: 7c3444d0-5ecb-4ac1-aa81-e48eea290f5d
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '1209'
 ht-degree: 0%
@@ -107,7 +108,7 @@ Gestisci la configurazione di Merchant Stores dall&#39;amministratore: **[!UICON
 
 {style=&quot;table-layout:auto&quot;}
 
-## Configurazione della posizione del pickup
+## Configurazione della posizione di prelievo
 
 | **Campo** | **Descrizione** | **Ambito** | **Obbligatorio** |
 |-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
@@ -141,10 +142,3 @@ Gestisci la configurazione di Merchant Stores dall&#39;amministratore: **[!UICON
 | **[!UICONTROL Is Car Make a Mandatory Field?]**</br>`Extension Attribute: car_make_mandatory` | Specificare se l&#39;identificazione del veicolo è necessaria per i clienti durante il Check-In.</br></br>Se attivato, al cliente viene richiesto di specificare la marca del proprio veicolo all&#39;arrivo. Se disabilitata, il cliente può saltare questo input. | Globale | No |
 | **[!UICONTROL Use Additional Information]**</br> `Extension Attribute: use_additional_information` | Specifica se supportare la raccolta di informazioni aggiuntive dal cliente durante il Check-In. | Globale | No |
 | **[!UICONTROL Is Additional Information a Mandatory Field?]**</br>`Extension Attribute: additional_information_mandatory` | Specifica se sono necessarie informazioni aggiuntive per i clienti durante il Check-In. </br></br>Se attivato, al cliente viene richiesto di inserire ulteriori informazioni all’arrivo. Se disabilitata, il cliente può saltare questo input. | Globale | No |
-
-
-
-
-
-
-

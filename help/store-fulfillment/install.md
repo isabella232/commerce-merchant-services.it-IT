@@ -4,9 +4,9 @@ description: "Installa il [!DNL Store Fulfillment solution] per una vetrina Adob
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Estrai il file di archivio che contiene il bundle di integrazione per installare
 
 1. Estrai il file di archivio nella nuova directory.
 
-1. Verifica che i file estratti siano rivisti l’elenco dei file.
+1. Verifica che i file siano stati estratti correttamente esaminando l’elenco dei file.
 
    ```
    ../var/www/html/artifacts]$ ls -a
@@ -194,4 +194,5 @@ La `-f` se utilizzi un tema vuoto, è necessaria l’opzione .
 
 >[!NOTE]
 >
->Per ulteriori informazioni, consulta [Best practice per l’implementazione dei contenuti statici in Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) nel Centro assistenza Adobe Commerce.
+>Per ulteriori informazioni, consulta la sezione [Best practice per l’implementazione dei contenuti statici in Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) nell&#39;Aiuto di Adobe Commerce.
+

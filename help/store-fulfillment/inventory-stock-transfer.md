@@ -1,10 +1,10 @@
 ---
-title: Trasferimento sorgente Inventory management
-description: '"Configurare le risorse per [!DNL Store Fulfillment solution] con Adobe Commerce Inventory management. Imposta un nuovo magazzino e trasferisci magazzino fuori magazzino predefinito in modo da poterlo assegnare a fonti configurate per abilitare le funzionalità di Store Pickup richieste dalla soluzione Store Fulfillment."'
+title: Trasferimento origine Inventory management
+description: "Configurare le risorse per [!DNL Store Fulfillment solution] con Adobe Commerce Inventory management. Imposta un nuovo magazzino e trasferisci magazzino fuori magazzino predefinito in modo da poterlo assegnare a fonti configurate per abilitare le funzionalità di Store Pickup richieste dalla soluzione Store Fulfillment."
 role: User, Admin
 level: Intermediate
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 ---
 
 
-# Trasferimento sorgente Inventory management
+# Trasferimento origine Inventory management
 
 La [!DNL Store Fulfillment] la soluzione utilizza Adobe Commerce Inventory management nativo. Per impostazione predefinita, la [!DNL Commerce] la configurazione assegna tutto l&#39;inventario web al magazzino predefinito, che non può avere ulteriori origini assegnate. Poiché a un sito web può essere assegnato un solo stock, un commerciante deve configurare un nuovo stock e, facoltativamente, trasferire il proprio inventario di origine predefinito a un&#39;origine assegnata all&#39;ambito appropriato. Quindi, la sorgente può essere assegnata al nuovo stock.
 

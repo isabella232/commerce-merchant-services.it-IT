@@ -3,16 +3,17 @@ title: Collegare la soluzione Store Fulfillment
 description: Stabilisci le connessioni tra Adobe Commerce e la soluzione Store Fulfillment creando e autorizzando un'integrazione Adobe Commerce e aggiungendo le credenziali dell'account Store Fulfillment alla configurazione del servizio Adobe Commerce.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
 
 # Collegare la soluzione Store Fulfillment
 
-Stabilisci la connessione tra Adobe Commerce e i servizi Store Fulfillment configurando le credenziali di autenticazione e i dati di connessione richiesti dall&#39;amministratore.
+Collega i servizi di evasione dell’archivio ad Adobe Commerce aggiungendo le credenziali di autenticazione e i dati di connessione richiesti all’amministratore di Adobe Commerce.
 
 - **[Configura [!DNL Commerce integration settings]](#create-the-commerce-integration)**- Crea un’integrazione Adobe Commerce per i servizi Store Fulfillment e genera i token di accesso per autenticare le richieste in arrivo dai server Store Fulfillment.
 
@@ -47,7 +48,7 @@ Per integrare Adobe Commerce con i servizi Store Fulfillment, crea un’integraz
 
 ## Configurare le credenziali dell’account di evasione dell’archivio
 
-Dopo aver completato il modulo di assunzione, viene creato per voi un account Walmart Store Fulfillment. Quando saranno disponibili, riceverai le seguenti credenziali:
+Dopo aver completato il modulo di assunzione, viene creato per voi un account Walmart Store Fulfillment. Quando sono disponibili, riceverai le seguenti credenziali:
 
 - [!DNL Merchant ID]
 - [!DNL Consumer ID]
@@ -59,7 +60,7 @@ Queste credenziali sono necessarie per configurare e utilizzare Store Fulfillmen
 
 >[!NOTE]
 >
->Il completamento del processo di creazione dell’account può richiedere del tempo. In attesa delle credenziali, [rivedere e configurare altre impostazioni per la soluzione Store Fulfillment](service-config-settings-overview.md).
+>Il completamento del processo di creazione dell’account può richiedere del tempo. In attesa delle credenziali, [controlla e configura altre impostazioni per la soluzione Store Fulfillment](service-config-settings-overview.md).
 
 ### Aggiungi le credenziali per la connessione all&#39;evasione dell&#39;archivio
 
@@ -76,11 +77,3 @@ Queste credenziali sono necessarie per configurare e utilizzare Store Fulfillmen
 >[!NOTE]
 >
 >Se le credenziali non sono valide, verifica di aver immesso i valori corretti per ogni ambiente e riconvalida. Contatta il rappresentante commerciale di riferimento per eventuali problemi di connessione.
-
-
-
-
-
-
-
-

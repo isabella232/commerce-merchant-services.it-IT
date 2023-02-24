@@ -4,9 +4,9 @@ description: Piano di test per verificare la funzionalità Store Fulfillment. I 
 role: User, Admin
 level: Intermediate
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '2657'
+source-wordcount: '2660'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ La configurazione della connessione deve essere completata prima di poter creare
 
 1. Dalla griglia dello store, verificare che gli archivi siano stati contrassegnati come `Synced` prima di creare ordini di test.
 
-## Piano di test di esempio
+## Piano di prova di esempio
 
 I rivenditori convalidano le funzionalità di base della soluzione Store Fulfillment durante la configurazione e il test delle fasi di una distribuzione. Questo piano di prova campione fornisce un punto di partenza per le prove. Aggiungi scenari aggiuntivi in base alle tue esigenze.
 
@@ -56,7 +56,7 @@ Questo piano di prova campione riguarda i seguenti settori funzionali:
 | Pagamento senza frontiere</br>Modulo di archiviazione | Esperienza di check-in | Cliente, Amministratore |
 | App Store Assist | Ordine</br>Selezione</br>Stage</br>e Handoff | Associato store |
 
-### Sincronizzazione API di Inventory
+### Sincronizzazione API di inventario
 
 Questa sezione del piano di test riguarda l’inventario e la sincronizzazione degli ordini per verificare che gli aggiornamenti alle origini di prelievo e alle scorte siano sincronizzati correttamente tra Adobe Commerce e la soluzione Store Fulfillment.
 
@@ -277,7 +277,7 @@ Questa sezione del piano di test include scenari per testare il flusso di lavoro
 <ol>
 <li>Effettua l'ordine.</li>
 <li>Attendi la sincronizzazione dell’ordine.</li>
-<li>Verificare che la fattura sia stata creata (se autorizzata e acquisita) e che sia stata ricevuta l'e-mail della fattura.</li>
+<li>Se l'opzione di autorizzazione e acquisizione è configurata, verificare che la fattura sia stata creata e che il cliente abbia ricevuto l'e-mail della fattura.</li>
 <li>Scegli tutti i prodotti con Postman.</li>
 <li>Consegna.</li>
 <li>Faccia una spesa.</li>
@@ -373,7 +373,7 @@ Questa sezione del piano di test riguarda la gestione dell&#39;account per gli u
 </tr>
 </table>
 
-## Tipi di prodotti Adobe Commerce
+## Tipi di prodotto Adobe Commerce
 
 Gli scenari di test per i tipi di prodotto Adobe Commerce verificano che i clienti visualizzino le informazioni corrette sul prodotto, sulle scorte e sui metodi di consegna per diversi tipi di prodotto:
 
@@ -566,39 +566,39 @@ Questa sezione del piano di test tratta gli scenari per testare i flussi di lavo
 <tr>
 <td>
 <strong>Selezione ordine singolo: percorso felice, ritiro curbside</strong></td>
-<td>Scegliere articoli singoli e multipli. Nessun picchetto nil, e pick-up curbside (con staging).
+<td>Scegliere articoli singoli e multipli. Nessun pickup nil, e ritiro curbside (con staging).
 </td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Selezione multi ordine: percorso felice, ritiro curbside</strong></td>
-<td>Articoli singoli e multipli. Nessun picchetto nil, e pick-up curbside (con staging)</td>
+<td>Articoli singoli e multipli. Nessun pickup nil e ritiro curbside (con staging)</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Selezione ordine singolo: percorso felice in negozio pick-up</strong></td>
-<td>Articoli singoli e multipli. Nessun picks nil, e il ritiro di istore (con staging)</td>
+<td>Articoli singoli e multipli. Nessun pickup nil e ritiro in negozio (con staging)</td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Selezione multi ordine: percorso felice, ritiro in negozio</strong></td>
-<td>Scegliere articoli singoli e multipli. Nessun picchetto nil, e pick-up curbside (con staging).</td>
+<td>Scegliere articoli singoli e multipli. Nessun pickup nil, e ritiro curbside (con staging).</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Selezione ordine singolo - percorso non felice, ritiro in negozio</strong></td>
-<td>Scegli articoli singoli e multipli con prelievo parziale e nilpick e istore (con staging)</td>
+<td>Scegli articoli singoli e multipli con ritiro parziale e nilpick e in-store (con staging)</td>
 </td>
 <td></td>
 </tr>
 <td><strong>Raccolta ordini multipli - non felice ritiro percorso-curbside</strong></td>
-<td>Scegli articoli singoli e multipli con prelievo parziale e nilpick e istore (con staging)</td>
+<td>Scegli articoli singoli e multipli con ritiro parziale e nilpick e in-store (con staging)</td>
 <td></td>
 </tr>
 <td><strong>Selezione ordine singolo - percorso non felice, ritiro curbside</strong></td>
-<td>Scegli articoli singoli e multipli con prelievo parziale e nilpick e curbside (con staging)</strong></td>
+<td>Scegli articoli singoli e multipli con ritiro parziale e nilpick e curbside (con staging)</strong></td>
 </td>
 <td></td>
 </tr>

@@ -1,17 +1,17 @@
 ---
-title: Configurazione di più siti web e ambiti
+title: Configurazione di più siti web e ambito
 description: Configura risorse e metodi di consegna per più siti web e ambiti di archiviazione.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: 8939046e-1c26-4380-83be-ff8e074e591d
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
 
 ---
 
-
-# Configurazione di più siti web e ambiti
+# Configurazione di più siti web e ambito
 
 È possibile impostare [Ambito](https://docs.magento.com/user-guide/configuration/scope.html) per alcuni elementi per ospitare più siti web, negozi e viste store:
 

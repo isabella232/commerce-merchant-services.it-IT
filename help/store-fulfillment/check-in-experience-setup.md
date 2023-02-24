@@ -1,10 +1,10 @@
 ---
 title: Configurazione dell’esperienza di check-in
-description: Configura le selezioni di modelli e marca di auto disponibili per i clienti di ritiro curbside quando completano il modulo di ordine di prelievo.
+description: Configura le selezioni di marca e modello] disponibili per i clienti di ritiro a bordo quando completano il modulo di ordine di ritiro.
 role: User, Admin
 level: Intermediate
 exl-id: 341b96cd-bb83-4d07-965c-b09fab24dc81
-source-git-commit: 5e7dcc48c65b2f3f75a33c6e556dcef882a80549
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 0%

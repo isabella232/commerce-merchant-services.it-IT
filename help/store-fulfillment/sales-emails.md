@@ -1,18 +1,18 @@
 ---
-title: E-mail di vendita
+title: Modelli e-mail di vendita
 description: Configura i modelli e-mail transazionali per la comunicazione con i clienti e gli amministratori di store durante il processo di evasione per gli ordini Store Pickup.
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1202'
 ht-degree: 0%
 
 ---
 
 
-# E-mail di vendita
+# Modelli e-mail di vendita
 
 Store Fulfillment offre un set esteso di modelli e-mail transazionali per supportare i flussi di lavoro di ordine e di evasione. Offrono comunicazioni e messaggi coerenti e automatizzati su tutti i canali, informando gli amministratori di clienti e negozi circa le modifiche dello stato dell&#39;ordine, le istruzioni per gli ordini di ritiro in negozio e altro ancora.
 

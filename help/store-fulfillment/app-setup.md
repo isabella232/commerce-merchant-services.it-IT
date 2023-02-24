@@ -4,14 +4,14 @@ description: Imposta la [!DNL Store Assist] app per gestire i flussi di lavoro e
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
 
-# Configurazione app
+# Configurazione dell&#39;app
 
 Store Assist è un&#39;app di piattaforma FaaS (Compliance-as-a-service) basata su Walmart Commerce Technologies. L’app fornisce funzionalità di implementazione in-store da gestire [!DNL buy online, pick up in store] (BOPIS) ordini. Con Store Assist, i collaboratori dello store possono vedere quali articoli sono stati ordinati dai clienti, scegliere più rapidamente gli articoli corretti e impostare gli ordini evasi per la consegna in negozio o in blocco ai clienti.
 
@@ -44,7 +44,7 @@ L&#39;app Store Assist richiede due tipi di configurazione:
 
    - **Cancellazione dal negozio**- Specifica se gli ordini possono essere annullati dall&#39;archivio e quali ruoli dispongono di autorizzazioni di annullamento
 
-   - **Finestra di pulizia ordine**- Specificare la durata del [Lead time di recupero stimato](enable-general.md#delivery-method-title-configuration) che un ordine raccolto rimanga in fase di staging prima di essere ripopolato, ad esempio tre giorni. Il valore predefinito è 7 giorni. Se questa configurazione è attivata, l&#39;ordine viene annullato automaticamente alla scadenza di questo periodo di tempo. Gli articoli vengono ripopolati e il commerciante riceve un&#39;e-mail di cancellazione.
+   - **Finestra di pulizia ordine**- Specificare la durata del [Lead time di recupero stimato](enable-general.md#delivery-method-title-configuration) che un ordine raccolto rimanga in fase di staging prima di essere ripopolato, ad esempio tre giorni. Il valore predefinito è sette giorni. Se questa configurazione è attivata, l&#39;ordine viene annullato automaticamente alla scadenza di questo periodo di tempo. Gli articoli vengono ripopolati e il commerciante riceve un&#39;e-mail di cancellazione.
 
    - Personalizza tutte le istruzioni dell’app (scelta, staging, consegna).
 
@@ -63,11 +63,11 @@ Dopo aver configurato e configurato l&#39;app Store Assist, Store Associates pu�
 
 - Verifica che il dispositivo mobile soddisfi il [requisiti hardware e software](solution-requirements.md#store-assist-app-requirements) per la soluzione Store Fulfillment.
 
-- Scarica l’app Store Assist da [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target=&quot;_blank&quot;} o [Google Play Store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}.
+- Scarica l’app Store Assist da [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"} or the [Google Play store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"}.
 
 - Per effettuare l&#39;accesso, gli associati allo store richiedono le seguenti informazioni:
 
    - **[!UICONTROL Company name]** associato all’account Store Assist
 
    - **Memorizzare le credenziali dell&#39;account Assistenza**- credenziali nome utente e password per il loro account.
-   Un amministratore Adobe Commerce può creare un account utente e impostare le autorizzazioni per [!DNL Store Assist app] account utente per posizioni store che hanno [Ritocco nel negozio](merchant-store-configuration.md#pickup-location-configuration) nelle impostazioni di Admin Store.
+   Un amministratore Adobe Commerce può creare e gestire [!DNL Store Assist app] account utente per tutte le posizioni store che hanno [Ritocco nel negozio](merchant-store-configuration.md#pickup-location-configuration) nelle impostazioni di Admin Store.

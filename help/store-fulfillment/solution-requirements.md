@@ -4,16 +4,16 @@ description: Requisiti per il provisioning e l'onboarding [!DNL Store Fulfillmen
 role: User, Admin
 level: Intermediate
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
-source-git-commit: 842d5b7182d54a1aa5a715662503801816a24c24
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '307'
 ht-degree: 2%
 
 ---
 
-# Requisiti per la conformità allo store per Adobe Commerce
+# Requisiti di evasione archivio per Adobe Commerce
 
-Devi soddisfare i seguenti requisiti tecnici e aziendali per installare e abilitare la soluzione Store Fulfillment per Adobe Commerce.
+Le sezioni seguenti descrivono i requisiti tecnici e aziendali per l’installazione e l’abilitazione della soluzione Store Fulfillment per Adobe Commerce.
 
 ## Requisiti della piattaforma e della versione del software
 
@@ -47,7 +47,7 @@ Il processo end-to-end per gestire gli ordini di ritiro degli store viene gestit
 
 **Requisiti hardware minimi**
 
-- RAM da 1 GB
+- 1 GB di RAM
 - 600 MB di spazio libero su disco
 
 ## Requisiti aziendali
@@ -56,7 +56,7 @@ Per implementare la soluzione Store Fulfillment, la tua azienda deve soddisfare 
 
 - Solo aziende basate negli Stati Uniti
 
-- Rivenditori B2C, produttori di CPG che vendono D2C o distributori che vendono D2C o a piccole imprese
+- Commercianti, consumatori e merci imballate (CPG) Produttori che vendono direttamente ai consumatori (D2C) o distributori che vendono direttamente a consumatori o piccole imprese
 
 - Almeno un negozio fisico o un magazzino
 
