@@ -2,14 +2,14 @@
 title: "A bordo [!DNL Quick Checkout] per estensione Adobe Commerce"
 description: "Scopri come [!DNL Quick Checkout] potrebbe essere utile per la tua istanza Adobe Commerce e per come effettuare l’onboarding e la configurazione dell’estensione."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
 
 ---
 
-# [!DNL Quick Checkout] onboarding
+# [!DNL Quick Checkout] Onboarding
 
 Per iniziare a utilizzare [!DNL Quick Checkout] per l’estensione Adobe Commerce devi completare alcuni passaggi onboarding per collegare la tua istanza alla nostra funzionalità di pagamento.
 

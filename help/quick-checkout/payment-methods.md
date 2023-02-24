@@ -1,15 +1,15 @@
 ---
-title: '"Metodi di pagamento"'
-description: '"Panoramica dei metodi di pagamento compatibili con [!DNL Quick Checkout] per l''estensione Adobe Commerce."'
+title: "Metodi di pagamento"
+description: "Panoramica dei metodi di pagamento compatibili con [!DNL Quick Checkout] per l'estensione Adobe Commerce."
 exl-id: 7d151477-5932-4ec0-b729-dbda6b49e6da
-source-git-commit: a95d2ed92c69feba03d1b84d44abf08c1d1b4029
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 0%
 
 ---
 
-# [!DNL Quick Checkout] metodi di pagamento compatibili
+# [!DNL Quick Checkout] Metodi di pagamento compatibili
 
 Una volta configurato il commerciante [!DNL Quick Checkout]:
 

@@ -2,14 +2,14 @@
 title: "Flusso di pagamento in Adobe Commerce"
 description: "Panoramica del [!DNL Quick Checkout] Flusso in Adobe Commerce."
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 0%
 
 ---
 
-# [!DNL Quick Checkout] flusso
+# [!DNL Quick Checkout] Flusso
 
 Questa sezione fornisce una panoramica della tipica esperienza di pagamento tramite l’ [!DNL Quick Checkout] per l&#39;estensione Adobe Commerce.
 

@@ -2,14 +2,14 @@
 title: Durata della sessione utente
 description: L’amministratore offre la possibilità di configurare la durata dei cookie dell’utente Adobe Commerce per [!DNL Quick Checkout] estensione.
 exl-id: 32cf5d70-9a50-49ca-8b40-5f04bc1e24b7
-source-git-commit: 2f14cd437be6d48e24e56b3b31a1c640357b27e3
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '128'
 ht-degree: 0%
 
 ---
 
-# Durata della sessione utente
+# Ciclo di vita della sessione utente
 
 La durata di una sessione dell’acquirente è determinata da diversi fattori, che possono essere configurati nel tuo amministratore Adobe Commerce. Vedi [Configura la durata del cookie](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/configure/customer-online-options.html){target=_blank} per ulteriori informazioni.
 

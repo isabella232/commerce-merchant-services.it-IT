@@ -1,15 +1,15 @@
 ---
-title: '''[!DNL Quick Checkout] per il pannello Adobe Commerce Admin"'
-description: Scopri come [!DNL Quick Checkout] Il pannello di amministrazione può aiutare a integrare, configurare e visualizzare correttamente l'estensione.
+title: '''[!DNL Quick Checkout] per Adobe Commerce Admin Panel"'
+description: Scopri come [!DNL Quick Checkout] Il pannello di amministrazione può aiutare a integrare, configurare e visualizzare correttamente l’estensione.
 exl-id: d91763ed-b4f6-4736-9503-0305edd77e91
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%
 
 ---
 
-# Introduzione al [!DNL Quick Checkout] Pannello Admin
+# Introduzione al [!DNL Quick Checkout] Pannello di amministrazione
 
 [!DNL Quick Checkout] per Adobe Commerce e Magenti Open Source fornisce una visualizzazione del pannello Amministratore con tutte le informazioni necessarie per configurare e utilizzare l’estensione .
 
