@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] Note sulla versione'
+title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] Note sulla versione"'
 description: "Consulta le note sulla versione per informazioni su tutti [!DNL Store Fulfillment by Walmart Commerce Technologies] versioni."
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 60848c4f34f7f894b6b2fa09e5d1462801ffb2ab
+source-git-commit: 81723645efc5dd1f0179e32ba80bc57fbfc9d799
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 3%
+source-wordcount: '180'
+ht-degree: 2%
 
 ---
 
@@ -16,6 +16,10 @@ Queste note sulla versione descrivono la versione iniziale di [!DNL Store Fulfil
 ![Nuovo](../assets/new.svg) Nuove funzioni
 ![Problema risolto](../assets/fix.svg) Correzioni e miglioramenti
 ![Problema noto](../assets/bug.svg) Problemi noti
+
+## v1.3.0
+
+<!-- Add release notes when version 1.3.0 is released -->
 
 ## v1.2.0
 
@@ -50,4 +54,4 @@ Versione iniziale, compatibile con le seguenti versioni Commerce:
 
 ## App Store Assist
 
-Per informazioni sulle nuove versioni dell&#39;app Store Assist, consulta le informazioni sull&#39;app nella sezione [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target=&quot;_blank&quot;} o [Google Play Store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}.
+Per informazioni sulle nuove versioni dell&#39;app Store Assist, consulta le informazioni sull&#39;app nella sezione [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"} or [Google Play store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"}.

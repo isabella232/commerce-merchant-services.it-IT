@@ -4,7 +4,7 @@ description: Configurare le impostazioni generali per abilitare [!DNL Store Fulf
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 81723645efc5dd1f0179e32ba80bc57fbfc9d799
 workflow-type: tm+mt
 source-wordcount: '2541'
 ht-degree: 0%
@@ -86,7 +86,7 @@ Abilita la [!DNL Store Fulfillment] soluzione per aggiungere le funzionalità di
 <tr>
 <td><strong>[!UICONTROL Enabled]</strong></td>
 <td>Abilita o disabilita la soluzione. Quando abilitato, configura e utilizza le funzionalità di Store Fulfillment e stabilisce la connessione tra il tuo archivio Adobe Commerce e [!DNL Store Fulfillment] servizi. Se disabilitata, tutte le funzioni di Store Fulfillment sono disabilitate e non è disponibile alcuna comunicazione tra Adobe Commerce e i servizi Store Fulfillment. Impossibile elaborare o ricevere le informazioni sull'ordine.</td>
-<td>Globale</td>
+<td>Sito Web</td>
 <td>Sì</td>
 </tr>
 </tbody>
@@ -318,7 +318,7 @@ Configura le impostazioni per l’account utente dell’app di evasione archivio
 </tr>
 <tr>
 <td><strong>[!UICONTROL Maximum Login Failures to Lockout Account]</strong></td>
-<td>Specifica il numero di tentativi di accesso non riusciti consentiti prima che un associato store venga bloccato dal proprio account.<br></br>Per disattivare il blocco degli account, imposta il valore su 0.</td>
+<td>Specifica il numero di tentativi di accesso non riusciti consentiti prima che un associato dello store venga bloccato dal proprio account.<br></br>Per disattivare il blocco degli account, imposta il valore su 0.</td>
 <td>Globale</td>
 <td>No</td>
 </tr>
