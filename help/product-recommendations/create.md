@@ -2,7 +2,7 @@
 title: Crea nuova raccomandazione
 description: Scopri come creare un’unità di raccomandazione del prodotto.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Quando attivate l&#39;unità di raccomandazione, Adobe Commerce inizia a [raccog
 
    >[!NOTE]
    >
-   > Le unità consigliate di Page Builder possono essere create solo per la visualizzazione store predefinita. Per ulteriori informazioni sulla creazione di consigli di prodotto con Page Builder, consulta [Aggiungi contenuto - Recommendations prodotto](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
+   > Le unità consigliate di Page Builder devono essere create nella visualizzazione store predefinita, ma possono essere utilizzate ovunque. Per ulteriori informazioni sulla creazione di consigli di prodotto con Page Builder, consulta [Aggiungi contenuto - Recommendations prodotto](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
 
 1. Fai clic su **Crea consiglio**.
 

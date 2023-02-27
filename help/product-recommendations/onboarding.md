@@ -2,7 +2,7 @@
 title: Onboarding
 description: Scopri i requisiti e le piattaforme supportate in [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -27,16 +27,14 @@ Il processo di onboarding per [!DNL Product Recommendations] richiede l&#39;acce
 
 ### Piattaforme supportate
 
-- Adobe Commerce su prem (EE) : 2.4.x
+- Adobe Commerce on-premise (EE) : 2.4.x
 - Adobe Commerce on Cloud (ECE) : 2.4.x
 
 ### Supporto per Page Builder
 
 [!DNL Product Recommendations] può essere aggiunto a una pagina come tipo di contenuto di Page Builder. Per aggiungere il supporto di Page Builder a Product Recommendations, consulta [Installazione e configurazione](install-configure.md).
 
->[!NOTE]
->
->[!DNL Page Builder] le unità dei consigli possono essere create solo per la visualizzazione store predefinita.
+Vedi [[!DNL Page Builder] Integrazione](page-builder.md) per istruzioni su come aggiungere [!DNL Product Recommendations] in [!DNL Page Builder] contenuto.
 
 ### Supporto B2B {#b2bsupport}
 

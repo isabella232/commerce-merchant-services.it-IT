@@ -2,7 +2,7 @@
 title: Installazione e configurazione
 description: Scopri come installare, aggiornare e disinstallare [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -38,9 +38,7 @@ composer require magento/module-page-builder-product-recommendations
 
 Attivando [!DNL Product Recommendations] in Page Builder, puoi aggiungere un [unità di raccomandazione](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) a qualsiasi contenuto creato in Page Builder, ad esempio pagine, blocchi e blocchi dinamici.
 
->[!NOTE]
->
->[!DNL Page Builder] le unità dei consigli possono essere create solo per la visualizzazione store predefinita.
+Vedi [Utilizzo [!DNL Product Recommendations] con contenuto Page Builder](page-builder.md) per ulteriori istruzioni.
 
 ### Aggiungi tipo di raccomandazione per similarità visiva {#vissimsupport}
 
