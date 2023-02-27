@@ -4,9 +4,9 @@ description: Configurare le impostazioni generali per abilitare [!DNL Store Fulf
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 81723645efc5dd1f0179e32ba80bc57fbfc9d799
+source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
 workflow-type: tm+mt
-source-wordcount: '2541'
+source-wordcount: '2440'
 ht-degree: 0%
 
 ---
@@ -337,39 +337,6 @@ Configura le impostazioni per l’account utente dell’app di evasione archivio
 <tr>
 <td><strong>[!UICONTROL Password Lifetime]</strong></td>
 <td>Il numero di giorni in cui una password rimane valida prima della modifica della password richiesta. Lascia vuoto per disabilitare questa opzione.</td>
-<td>Globale</td>
-<td>No</td>
-</tr>
-</tbody>
-</table>
-
-### Autenticazione a due fattori
-
-<table>
-<thead>
-<tr>
-<td><strong>Campo</strong></td>
-<td><strong>Descrizione</strong></td>
-<td><strong>Ambito</strong></td>
-<td><strong>Obbligatorio</strong></td>
-</tr>
- </thead>
- <tbody>
-<tr>
-<td><strong>[!UICONTROL APP User 2FA]</strong></td>
-<td>Abilita o disabilita l’autenticazione a due fattori per gli associati allo store. Quando è abilitata, all'associazione store viene richiesto di fornire una password una tantum generata da un provider di autenticazione.</td>
-<td>Globale</td>
-<td>No</td>
-</tr>
-<tr>
-<td><strong>[!UICONTROL APP 2FA Policy]</strong></td>
-<td>Imposta i criteri di imposizione per l’autenticazione a due fattori.<br></br><strong>[!UICONTROL Optional]</strong>: L'associazione allo store può ignorare l'autenticazione a due fattori se non è impostato alcun provider.<br></br><strong>[!UICONTROL Mandatory]</strong>: L'associazione allo store è necessaria per completare l'autenticazione a due fattori.</td>
-<td>Globale</td>
-<td>No</td>
-</tr>
-<tr>
-<td><strong>[!UICONTROL 2FA Providers]</strong></td>
-<td>Selezionare uno o più servizi del provider di autenticazione per offrire ai collaboratori dello store. Per impostare l’autenticazione e l’autenticazione a due fattori, gli associati allo store devono installare l’app di autenticazione da uno dei provider disponibili installati sui propri dispositivi mobili.</td>
 <td>Globale</td>
 <td>No</td>
 </tr>

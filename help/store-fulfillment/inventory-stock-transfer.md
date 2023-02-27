@@ -4,9 +4,9 @@ description: "Configurare le risorse per [!DNL Store Fulfillment solution] con A
 role: User, Admin
 level: Intermediate
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 # Trasferimento origine Inventory management
 
 La [!DNL Store Fulfillment] la soluzione utilizza Adobe Commerce Inventory management nativo. Per impostazione predefinita, la [!DNL Commerce] la configurazione assegna tutto l&#39;inventario web al magazzino predefinito, che non può avere ulteriori origini assegnate. Poiché a un sito web può essere assegnato un solo stock, un commerciante deve configurare un nuovo stock e, facoltativamente, trasferire il proprio inventario di origine predefinito a un&#39;origine assegnata all&#39;ambito appropriato. Quindi, la sorgente può essere assegnata al nuovo stock.
+
+>[!IMPORTANT]
+>
+>I commercianti devono mantenere l’origine predefinita per tutti i prodotti inclusi nei tipi di prodotto di gruppo e bundle. Questi prodotti necessitano di una quantità di magazzino che soddisfi la soglia minima per la quantità negli articoli di magazzino e includa lo stato di magazzino [!UICONTROL In Stock].
 
 Queste modifiche alla configurazione consentono di eseguire tre operazioni:
 

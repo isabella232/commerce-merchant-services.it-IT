@@ -4,9 +4,9 @@ description: Stabilisci le connessioni tra Adobe Commerce e la soluzione Store F
 role: User, Admin
 level: Intermediate
 exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Collega i servizi di evasione dell’archivio ad Adobe Commerce aggiungendo le credenziali di autenticazione e i dati di connessione richiesti all’amministratore di Adobe Commerce.
 
-- **[Configura [!DNL Commerce integration settings]](#create-the-commerce-integration)**- Crea un’integrazione Adobe Commerce per i servizi Store Fulfillment e genera i token di accesso per autenticare le richieste in arrivo dai server Store Fulfillment.
+- **[Configura [!DNL Commerce integration settings]](#create-an-adobe-commerce-integration)**- Crea un’integrazione Adobe Commerce per i servizi Store Fulfillment e genera i token di accesso per autenticare le richieste in arrivo dai server Store Fulfillment.
 
 - **[Configurare le credenziali dell&#39;account per i servizi di evasione dell&#39;archivio](#configure-store-fulfillment-account-credentials)**- Aggiungi le tue credenziali per collegare Adobe Commerce al tuo account Store Fulfillment.
 
@@ -25,7 +25,7 @@ Collega i servizi di evasione dell’archivio ad Adobe Commerce aggiungendo le c
 
 ## Creare un’integrazione Adobe Commerce
 
-Per integrare Adobe Commerce con i servizi Store Fulfillment, crea un’integrazione Commerce e genera token di accesso che possono essere utilizzati per autenticare le richieste dai server Store Fulfillment.
+Per integrare Adobe Commerce con i servizi Store Fulfillment, crea un’integrazione Commerce e genera token di accesso che possono essere utilizzati per autenticare le richieste dai server Store Fulfillment. È inoltre necessario aggiornare Adobe Commerce [!UICONTROL Consumer Settings] opzioni per impedire `The consumer isn't authorized to access %resources.` errori di risposta sulle richieste da Adobe Commerce a [!DNL Store Fulfillment] servizi.
 
 1. Dall’amministratore, crea l’integrazione per l’esecuzione dello store.
 
@@ -41,10 +41,16 @@ Per integrare Adobe Commerce con i servizi Store Fulfillment, crea un’integraz
 
 1. Collabora con il tuo Account Manager per completare la configurazione sul lato Store Fulfillment e autorizzare l&#39;integrazione.
 
+1. Abilitare Adobe Commerce [!UICONTROL Consumer Settings] opzione per [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens].
 
->[!NOTE]
+   - Dall’amministratore, vai a **[!UICONTROL Stores]** >  [!UICONTROL Configuration] > **[!UICONTROL Services]** >  **[!UICONTROL OAuth]** > **[!UICONTROL Consumer Settings]**
+
+   - Imposta la [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens] opzione per **[!UICONTROL Yes]**.
+
+>[!IMPORTANT]
 >
->Per istruzioni dettagliate, vedi [Integrazioni](https://docs.magento.com/user-guide/system/integrations.html) in _Guida utente di Adobe Commerce_.
+> Il token di integrazione è specifico per l’ambiente. Se ripristini il database per un ambiente con i dati di origine provenienti da un ambiente diverso, ad esempio ripristinando i dati di produzione da un ambiente di gestione temporanea, escludi la `oauth_token` tabella dall’esportazione del database in modo che i dettagli del token di integrazione non vengano sovrascritti durante l’operazione di ripristino.
+
 
 ## Configurare le credenziali dell’account di evasione dell’archivio
 
