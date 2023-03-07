@@ -2,16 +2,16 @@
 title: Onboarding e installazione
 description: Scopri come installare [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 242060d94700efc018a520d2d680c0f47a0cb915
+source-git-commit: 747cf01eb9c270a727c970c4dec7dbec64a884fe
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '587'
 ht-degree: 0%
 
 ---
 
 # Onboarding e installazione
 
-Vedi una procedura dettagliata del servizio catalogo.
+Consulta una procedura dettagliata del processo Catalog Service.
 
 Parte 1:
 
@@ -23,29 +23,29 @@ Parte 2:
 
 ## Prerequisiti
 
-Il processo di onboarding per [!DNL Catalog Service] richiede l&#39;accesso alla riga di comando del server. Se non hai familiarità con l’utilizzo della riga di comando, chiedi aiuto a uno sviluppatore o a un integratore di sistema.
+Il processo di onboarding per [!DNL Catalog Service] richiede l&#39;accesso alla riga di comando del server. Se non hai familiarità con l’utilizzo della riga di comando, chiedi aiuto a uno sviluppatore o a un integratore di sistemi.
 
 ### Requisiti software
 
-- Adobe Commerce 2.4.x
-- PHP 8.1
+- Adobe Commerce 2.4.4+
+- PHP 8.1, 8.2
 - Compositore: 2.x
 
 ### Piattaforme supportate
 
-- Adobe Commerce sull’infrastruttura cloud: 2.4.x
-- Adobe Commerce nei locali: 2.4.x
+- Adobe Commerce sull’infrastruttura cloud: 2.4.4+
+- Adobe Commerce on-premise: 2.4.4+
 
 ## Ambienti
 
-Sono disponibili due ambienti per l’onboarding:
+Catalog Service dispone di due ambienti disponibili per l’onboarding:
 
-- Sandbox (https://catalog-service-sandbox.adobe.io/graphql) - utilizzato per il test e la convalida prima della pubblicazione
-- Produzione (https://catalog-service.adobe.io/graphql)-) utilizzata per il traffico live per merchandising e siti web di Commerce
+- Sandbox (https://catalog-service-sandbox.adobe.io/graphql): utilizzata per il test e la convalida prima della pubblicazione
+- Produzione (https://catalog-service.adobe.io/graphql)- utilizzato per il traffico in tempo reale per i commercianti e i siti web Commerce)
 
 ## Installazione e configurazione
 
-Per iniziare a usare il servizio Catalogo per Adobe Commerce , sono necessari i seguenti passaggi:
+Per iniziare a utilizzare Catalog Service per Adobe Commerce, sono necessari i seguenti passaggi:
 
 - Installare le estensioni di esportazione dei dati
 - Configurare il servizio e l’esportazione dei dati
@@ -53,19 +53,19 @@ Per iniziare a usare il servizio Catalogo per Adobe Commerce , sono necessari i 
 
 ### Installare le estensioni di esportazione dei dati
 
-Il processo di onboarding per Catalog Service richiede l&#39;accesso alla riga di comando del server.
+Il processo di onboarding per Catalog Service richiede l’accesso alla riga di comando del server.
 
-L’estensione del servizio catalogo può essere installata sia nell’infrastruttura cloud Adobe Commerce che nelle istanze locali.
+L’estensione Catalog Service può essere installata sia sull’infrastruttura cloud Adobe Commerce che sulle istanze locali.
 
-Il Servizio catalogo viene installato con le chiavi del Compositore, collegate all’account Commerce [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) fornito durante il processo di registrazione. Il Compositore utilizza queste chiavi durante l&#39;installazione iniziale di Adobe Commerce o in situazioni in cui le chiavi del Compositore non sono state precedentemente salvate in un `auth.json` file.
+Catalog Service viene installato con le chiavi del Compositore, collegate all’account Commerce [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) fornite durante il processo di abbonamento. Compositore utilizza queste chiavi durante l’installazione iniziale di Adobe Commerce o in situazioni in cui le chiavi del Compositore non sono state salvate in precedenza in un’istanza esterna `auth.json` file.
 
-Vedi [Ottieni le chiavi di autenticazione](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) per ulteriori informazioni su come ottenere le chiavi Composer.
+Consulta [Ottieni le chiavi di autenticazione](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) per ulteriori informazioni su come ottenere le chiavi del Compositore.
 
-#### Adobe Commerce su infrastruttura cloud
+#### Adobe Commerce sull’infrastruttura cloud
 
-Utilizza questo metodo per installare l’estensione del servizio catalogo per un’istanza Commerce Cloud.
+Utilizza questo metodo per installare l’estensione Catalog Service per un’istanza Commerce Cloud.
 
-1. Apri `<Commerce_root>/composer.json` in un editor di testo e aggiorna la sezione richiesta come segue:
+1. Apri `<Commerce_root>/composer.json` in un editor di testo e aggiornare la sezione require come segue:
 
 ```json
 "require": {
@@ -73,7 +73,7 @@ Utilizza questo metodo per installare l’estensione del servizio catalogo per u
 }
 ```
 
-1. Verifica la nuova configurazione localmente e aggiorna le dipendenze:
+1. Verifica la nuova configurazione in locale e aggiorna le dipendenze:
 
 ```bash
 composer update
@@ -81,13 +81,13 @@ composer update
 
 Il comando aggiorna tutte le dipendenze.
 
-1. Conferma e invia le modifiche per `composer.json` e `composer.lock`.
+1. Eseguire il commit e il push delle modifiche per `composer.json` e `composer.lock`.
 
-#### Presso i locali
+#### On-premise
 
-Utilizza questo metodo per installare l’estensione del servizio catalogo per un’istanza locale.
+Utilizza questo metodo per installare l’estensione Catalog Service per un’istanza locale.
 
-1. Apri `<Commerce_root>/composer.json` in un editor di testo e aggiorna la sezione richiesta come segue:
+1. Apri `<Commerce_root>/composer.json` in un editor di testo e aggiornare la sezione require come segue:
 
 ```json
 "require": {
@@ -95,7 +95,7 @@ Utilizza questo metodo per installare l’estensione del servizio catalogo per u
 }
 ```
 
-1. Aggiorna le dipendenze e installa l&#39;estensione:
+1. Aggiorna le dipendenze e installa l’estensione:
 
 ```bash
 composer update
@@ -117,28 +117,28 @@ bin/magento cache:clean
 
 ### Configurare il servizio e l’esportazione dei dati
 
-Dopo aver installato il Servizio catalogo, devi configurare il [Connettore Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) specificando le chiavi API e selezionando uno spazio dati SaaS.
+Dopo aver installato Catalog Service, devi configurare [Connettore Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) specificando le chiavi API e selezionando uno spazio dati SaaS.
 
-Al termine della configurazione SaaS, esegui una sincronizzazione iniziale dei dati seguendo la [Sincronizzazione catalogo](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) guida.
+Al termine della configurazione SaaS, eseguire una sincronizzazione iniziale dei dati seguendo [Sincronizzazione catalogo](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) guida.
 
-Per verificare che l’esportazione del catalogo sia eseguita correttamente:
+Per garantire il corretto funzionamento dell’esportazione del catalogo:
 
-- Conferma l’esecuzione dei cron job.
-- Verifica che gli indicizzatori siano in esecuzione.
-- Assicurati che `Catalog Attributes Feed, Product Feed, Product Overrides Feed`e `Product Variant Feed` Gli indicizzatori sono impostati su &quot;Aggiorna per pianificazione&quot;.
+- Verificare che i processi cron siano in esecuzione.
+- Verificare che gli indicizzatori siano in esecuzione.
+- Assicurati che `Catalog Attributes Feed, Product Feed, Product Overrides Feed`, e `Product Variant Feed` Gli indicizzatori sono impostati su &quot;Aggiorna per pianificazione&quot;.
 
-La sincronizzazione iniziale potrebbe richiedere da alcuni minuti a ore a seconda della dimensione del catalogo. Dopo la sincronizzazione iniziale, il Catalogo esporta i dati di prodotto dal server Commerce a Commerce Services su base continuativa per mantenere i servizi aggiornati.
+La sincronizzazione iniziale potrebbe richiedere da alcuni minuti ad ore, a seconda della dimensione del catalogo. Dopo la sincronizzazione iniziale, il catalogo esporta i dati dei prodotti dal server Commerce ai servizi Commerce su base continuativa per mantenere aggiornati i servizi.
 
 ### Accedere al servizio
 
-L’API del servizio catalogo è accessibile tramite i comandi di POST su HTTPS.
+L’API Catalog Service è accessibile utilizzando i comandi POST tramite HTTPS.
 
-Per ottenere la chiave api, vai all’area Commerce Service Connector nell’amministratore e copia la chiave API pubblica.
+Per ottenere la chiave API, vai all’area Commerce Service Connector nell’amministratore e copia la chiave API pubblica.
 
-Leggi la sezione [Documentazione di GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) per scoprire come eseguire query e inviare le intestazioni necessarie per la generazione di richieste API.
+Leggi le [Documentazione di GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) per scoprire come eseguire query e inviare le intestazioni necessarie per generare le richieste API.
 
-## Rete di servizi del catalogo e API
+## Catalog Service e Mesh API
 
-La [Rete API per Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) consente agli sviluppatori di integrare API private o di terze parti e altre interfacce con i prodotti Adobe tramite Adobe IO.
+Il [Mesh API per Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) consente agli sviluppatori di integrare API private o di terze parti e altre interfacce con i prodotti Adobe utilizzando Adobe IO.
 
-Consulta la sezione  [Rete di servizi del catalogo e API](mesh.md) argomento relativo ai dettagli di installazione e configurazione.
+Consulta la  [Catalog Service e Mesh API](mesh.md) argomento per i dettagli di installazione e configurazione.
