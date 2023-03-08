@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Note sulla versione"
 description: Consulta le note sulla versione per informazioni su tutte [!DNL Payment Services] versioni.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 61bce569fb2a761ec2956ea240d61b1ad2b3a3e2
+source-git-commit: 39bd0763b7aa6f853d0bff80c8122e899c1c58d8
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1590'
 ht-degree: 0%
 
 ---
@@ -61,6 +61,8 @@ _28 giugno 2021_
 
 _17 febbraio 2023_
 
+[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-3540 --> Aggiunto [Funzione di conformità PCI 3DS per gli esercenti che effettuano transazioni nell&#39;Unione europea (UE) e in Gran Bretagna](security.md#3ds). Questo ulteriore livello di sicurezza, che impone agli acquirenti di autenticarsi presso l’emittente della carta di credito, contribuisce a prevenire le frodi online ed è richiesto nell’ambito delle normative di conformità dell’Unione europea (UE).
 
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-3609 --> Aggiunta la possibilità di [abilitare il vaulting delle schede in Amministrazione](vaulting.md#use-vaulting-in-the-admin). Questo consente agli esercenti di creare un ordine per i clienti nell’Amministratore utilizzando i propri metodi di pagamento a scaffale.
@@ -69,17 +71,23 @@ _17 febbraio 2023_
 
 _29 gennaio 2023_
 
+[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+
 ![Problema risolto](../assets/fix.svg)<!-- Issue PAY-4110 --> È stato risolto un problema che impediva agli acquirenti di effettuare un ordine utilizzando i pulsanti avanzati sulla pagina del prodotto, sul mini carrello e sul carrello. Gli acquirenti ora possono completare gli ordini con successo.
 
 ## v1.5.3
 
 _25 gennaio 2023_
 
+[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+
 ![Problema risolto](../assets/fix.svg)<!-- Issue PAY-4102 --> È stata rilasciata una correzione a un problema noto non compatibile con le versioni precedenti. Questa versione blocca la versione dell’estensione Service ID alla versione stabile più recente, che riabilita le nuove installazioni di Payment Services per configurare Commerce Services.
 
 ## v1.5.2
 
 _22 dicembre 2022_
+
+[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
 
 ![Problema risolto](../assets/fix.svg)<!-- Issue PAY-3992 --> È stata migliorata la fatturazione in Payment Services quando un metodo di pagamento viene rifiutato.
 
@@ -89,6 +97,8 @@ _22 dicembre 2022_
 
 _23 novembre 2022_
 
+[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-3923 --> Payment Services ora include il numero di versione nell’intestazione dell’agente utente per consentire alle richieste di tenere traccia, filtrare o dichiarare obsoleti gli endpoint non utilizzati.
 
 ![Problema risolto](../assets/fix.svg)<!-- Issue PAY-3968 --> Payment Services ora visualizza correttamente i dati dell&#39;ordine quando un ordine viene effettuato dalla pagina del prodotto utilizzando i pulsanti avanzati.
@@ -96,6 +106,8 @@ _23 novembre 2022_
 ## v1.5.0
 
 _18 novembre 2022_
+
+[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
 
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-3880 --> Ora un acquirente può [archivia (salva) le informazioni sulla carta di credito durante il pagamento](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) da utilizzare in un acquisto successivo per lo stesso o un altro negozio all’interno dello stesso account esercente.
 
@@ -105,11 +117,15 @@ _18 novembre 2022_
 
 _14 ottobre 2022_
 
+[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+
 ![Correzione](../assets/fix.svg)<!-- Issue PAY-3766 --> Quando il metodo di pagamento di un cliente viene rifiutato, il messaggio di errore visibile è più descrittivo. Consiglia al cliente di inserire nuovamente le informazioni di pagamento e riprovare, provare con un altro metodo di pagamento o contattare la banca per informazioni sulla transazione rifiutata.
 
 ## v1.4.0
 
 _30 settembre 2022_
+
+[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
 
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-784 --> Payment Services ora include la possibilità di impostare un account esercente per [utilizzare più account aziendali PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-paypal-accounts). Questo consente al commerciante di gestire i negozi in più paesi utilizzando valute diverse o di utilizzare Adobe Commerce per una parte della tua attività.
 
@@ -123,11 +139,15 @@ _30 settembre 2022_
 
 _6 settembre 2022_
 
+[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+
 ![Problema risolto](../assets/fix.svg)<!-- Issue PAY-3663 --> Ora, quando un negozio di merchant acquisisce un ordine autorizzato con una valuta non globale, il processo di acquisizione viene completato e non viene visualizzato alcun errore.
 
 ## v1.3.0
 
 _9 agosto 2022_
+
+[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
 
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-XX --> Versione con disponibilità generale:[!DNL Payment Services] è ora [compatibile con [!DNL Adobe Commerce] e [!DNL Magento Open Source] versioni da 2.4.0 a 2.4.5](https://devdocs.magento.com/release/availability.html#compatibility).
 
@@ -136,6 +156,8 @@ _9 agosto 2022_
 ## v1.2.0
 
 _29 giugno 2022_
+
+[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
 
 ![Problema noto](../assets/bug.svg)<!-- Issue PAY-x --> Apple Pay non è compatibile con il browser Safari v15.5 su dispositivi mobili e desktop. Con Safari versione 15.5 non puoi completare il pagamento con Apple Pay.
 
@@ -152,6 +174,8 @@ _29 giugno 2022_
 ## v1.1.0
 
 _31 marzo 2022_
+
+[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
 
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-2127 --> Versione con disponibilità generale:[!DNL Payment Services] è ora [compatibile con [!DNL Adobe Commerce] e [!DNL Magento Open Source] versioni da 2.4.0 a 2.4.4](https://devdocs.magento.com/release/availability.html#compatibility).
 
@@ -178,6 +202,8 @@ _31 marzo 2022_
 ## v1.0.0
 
 _29 novembre 2021_
+
+[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
 
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-2127 --> Versione con disponibilità generale:[[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) è ora compatibile con [!DNL Adobe Commerce] e [!DNL Magento Open Source] versioni da 2.4.0 a 2.4.3-p1.
 
