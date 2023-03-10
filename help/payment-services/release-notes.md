@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Note sulla versione"
 description: Consulta le note sulla versione per informazioni su tutte [!DNL Payment Services] versioni.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 39bd0763b7aa6f853d0bff80c8122e899c1c58d8
+source-git-commit: e076864a117be007eeb8003d9d6a472b704996ba
 workflow-type: tm+mt
-source-wordcount: '1590'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,26 @@ _28 giugno 2021_
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-2761 --> Ora puoi personalizzare i dati visualizzati nella sezione [Rapporto stato pagamento ordine](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) e [Rapporto Pagamenti](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) visualizzando o nascondendo le colonne tramite il controllo Impostazioni colonna.
 
 +++
+
+## v2.0.0
+
+_10 marzo 2023_
+
+[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+
+![Nuovo](../assets/new.svg)<!-- Issue PAY-4152 --> È stato aggiunto il supporto per PHP 8.2 e Adobe Commerce 2.4.6. Non compatibile con PHP 7.x.
+
+## v1.6.1
+
+_10 marzo 2023_
+
+[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+
+![Correzione](../assets/fix.svg)<!-- Issue PAY-4226 --> È stato risolto un problema che impediva ai nuovi commercianti di servizi di pagamento di utilizzare il pagamento in Admin. Payment Services utilizzava in precedenza l’ID cliente Commerce, che non esiste per i nuovi clienti.
+
+![Correzione](../assets/fix.svg)<!-- Issue PAY-4205 --> È stato risolto un problema che causava la sostituzione dello stato dell&#39;indirizzo di spedizione specificato con lo stato nelle impostazioni di imposta predefinite durante il pagamento tramite [Opzione PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#paypal-smart-buttons). Ora i clienti possono far spedire i loro ordini in uno stato diverso da quello configurato come predefinito nelle impostazioni fiscali dell’esercente.
+
+![Correzione](../assets/fix.svg)<!-- Issue PAY-4202 --> È stato risolto un problema che impediva ai clienti di utilizzare il vaulting delle carte di credito per completare un acquisto o eliminare un metodo di pagamento a scaffale per un negozio. [utilizzando `Authorize and Capture` azione di pagamento](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method). In precedenza, quando il cliente tentava di utilizzare o modificare le proprie carte di credito archiviate, veniva visualizzato l’errore &quot;Provider Vault ID not found&quot; (ID archivio provider non trovato).
 
 ## v1.6.0
 
