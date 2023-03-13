@@ -1,6 +1,6 @@
 ---
 user-guide-title: "[!DNL Product Recommendations] Guida"
-user-guide-description: Questa guida fornisce istruzioni dettagliate sull’utilizzo di [!DNL Product Recommendations] da Adobe Commerce.
+user-guide-description: Questa guida fornisce istruzioni dettagliate per l’utilizzo di [!DNL Product Recommendations] da Adobe Commerce.
 breadcrumb-title: "[!DNL Product Recommendations] Guida"
 source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
 workflow-type: tm+mt
@@ -18,14 +18,14 @@ ht-degree: 0%
    - [Onboarding](onboarding.md)
    - [Flusso di lavoro di implementazione](implementation-workflow.md)
    - [Dati comportamentali](behavioral-data.md)
-   - [Senza testa](headless.md)
+   - [Headless](headless.md)
    - [Installa](install-configure.md)
    - [Impostazioni](settings.md)
    - [Verifica](verify.md)
    - [Ambiente di staging](staging-environment.md)
-   - [Integrazione di Page Builder](page-builder.md)
+   - [Integrazione Page Builder](page-builder.md)
 - [!DNL Product Recommendations] Amministratore {#admin}
-   - [Area di lavoro](workspace.md)
+   - [Workspace](workspace.md)
    - [Crea](create.md)
    - [Modifica](edit.md)
    - [Tipi di consigli](type.md)
@@ -33,6 +33,6 @@ ht-degree: 0%
    - [Posizionamento ed etichette](placement.md)
 - [!DNL Product Recommendations] Sviluppatore {#developer}
    - [Panoramica](development-overview.md)
-   - [Raccogliere dati](events.md)
+   - [Raccogli dati](events.md)
    - [Personalizza](customize.md)
-   - [Gestire le limitazioni dei cookie](setting-cookie.md)
+   - [Gestire le restrizioni dei cookie](setting-cookie.md)
