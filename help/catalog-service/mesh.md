@@ -1,31 +1,31 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
 description: '''[!DNL API Mesh] per Adobe Commerce offre un modo per integrare più origini dati tramite un endpoint GraphQL comune."'
-source-git-commit: bdceeeeb1ed58c4ffbc87bee24c1eb3754b1cde9
+source-git-commit: 41d6bed30769d3864d93d6b3d077987a810890cc
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service and API Mesh]
 
-La [Rete API per Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) consente agli sviluppatori di integrare API private o di terze parti e altre interfacce con i prodotti Adobe tramite Adobe I/O Runtime.
+Il [Mesh API per Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) consente agli sviluppatori di integrare API private o di terze parti e altre interfacce con i prodotti Adobe utilizzando Adobe I/O Runtime.
 
 ![Diagramma dell’architettura del catalogo](assets/catalog-service-architecture-mesh.png)
 
-Il primo passaggio per utilizzare la mesh API con il servizio catalogo è quello di collegare la mesh API alla tua istanza. Vedi istruzioni dettagliate in [Creare una mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
+Il primo passaggio per utilizzare la rete API con Catalog Service consiste nel collegare la rete API all’istanza. Consulta le istruzioni dettagliate in [Creare una rete](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
-Per completare la configurazione, installa la [Pacchetto Adobe Developer CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
+Per completare l&#39;installazione, installare [Pacchetto Adobe Developer CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 
-Una volta configurata Mesh su Adobe I/O Runtime, esegui il seguente comando che aggiunge un `CommerceCatalogServiceGraph` alla rete.
+Una volta configurato Mesh su Adobe I/O Runtime, esegui il seguente comando che aggiunge `CommerceCatalogServiceGraph` alla rete.
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
 ```
 
 Dove `variables.json` è un file separato che memorizza i valori comunemente utilizzati per Adobe I/O Runtime.
-Ad esempio, la chiave API può essere salvata all’interno del file :
+Ad esempio, la chiave API può essere salvata all’interno del file:
 
 ```json
 {
@@ -33,14 +33,14 @@ Ad esempio, la chiave API può essere salvata all’interno del file :
 }
 ```
 
-Dopo aver eseguito questo comando, il servizio catalogo deve essere in esecuzione attraverso la mesh API. Puoi eseguire il `aio api-mesh:get` per visualizzare la configurazione della mesh aggiornata.
+Dopo aver eseguito questo comando, il servizio catalogo deve essere in esecuzione tramite la rete API. È possibile eseguire `aio api-mesh:get` per visualizzare la configurazione della rete aggiornata.
 
-## Utilizzo della mesh API
+## Utilizzo di API Mesh
 
-La mesh API consente agli utenti di utilizzare origini dati esterne per migliorare la tua istanza di Adobe Commerce. Può essere utilizzato anche per configurare i dati Commerce esistenti per abilitare nuove funzionalità.
+API Mesh consente agli utenti di utilizzare sorgenti di dati esterne per migliorare l’istanza di Adobe Commerce. Può essere utilizzato anche per configurare i dati Commerce esistenti per abilitare nuove funzionalità.
 
-In questo esempio, la mesh API viene utilizzata per abilitare i prezzi di livello in Adobe Commerce.
-Sostituisci il `name `, `endpoint`e `x-api-key` valori.
+In questo esempio, l’API Mesh viene utilizzata per abilitare i prezzi a livello in Adobe Commerce.
+Sostituisci il `name `, `endpoint`, e `x-api-key` valori.
 
 ```json
 {
@@ -72,7 +72,6 @@ Sostituisci il `name `, `endpoint`e `x-api-key` valori.
               "Magento-Website-Code": "{context.headers['magento-website-code']}",
               "Magento-Store-Code": "{context.headers['magento-store-code']}",
               "Magento-Environment-Id": "{context.headers['magento-environment-id']}",
-              "x-api-key": "storefront-catalog-apollo",
               "Magento-Customer-Group": "{context.headers['magento-customer-group']}"
             },
             "schemaHeaders": {
@@ -125,7 +124,7 @@ Sostituisci il `name `, `endpoint`e `x-api-key` valori.
 }
 ```
 
-Una volta configurato, esegui una query sulla mesh per il prezzo su più livelli:
+Una volta configurata, esegui una query sulla rete per la determinazione dei prezzi su più livelli:
 
 ```json
 query {

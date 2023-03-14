@@ -2,76 +2,74 @@
 title: "Aggiungi sinonimi"
 description: "Aggiungi [!DNL Live Search] sinonimi per migliorare la risposta alle richieste di ricerca."
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
 
 # Aggiungi sinonimi
 
-Aumenta il coinvolgimento dei clienti aggiungendo il tuo elenco curato dei sinonimi di Live Search. [!DNL Live Search] può gestire fino a 200 sinonimi per `Data Space ID`.
+Aumentare il coinvolgimento dei clienti aggiungendo un elenco personalizzato di [!DNL Live Search] sinonimi. [!DNL Live Search] può gestire fino a 200 sinonimi per `Data Space ID`.
 
 ![[!DNL Live Search] sinonimi](assets/synonym-workspace.png)
 
-## Passaggio 1: Aggiungi un sinonimo
+## Passaggio 1: aggiungere un sinonimo
 
-1. Nell&#39;Admin, vai a **Marketing** > SEO &amp; Search > **[!DNL Live Search]**.
-1. Per più negozi, impostare **Ambito** al [vista store](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) dove si applicano le impostazioni sinonimo.
-1. Fai clic sul pulsante **Sinonimi** scheda .
-1. Fai clic sul pulsante **Aggiungi sinonimi** pulsante .
+1. In Admin (Amministrazione), vai a **Marketing** > SEO e ricerca > **[!DNL Live Search]**.
+1. Per più store, imposta **Ambito** al [visualizzazione store](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) dove si applicano le impostazioni del sinonimo.
+1. Fai clic su **Sinonimi** scheda.
+1. Fai clic su **Aggiungi sinonimi** pulsante.
 
-## Passaggio 2: Definire il sinonimo per tipo
+## Passaggio 2: definire il sinonimo per tipo
 
-Segui le istruzioni per [tipo di sinonimo](synonyms-type.md) che desideri creare.
+Seguire le istruzioni per [tipo di sinonimo](synonyms-type.md) che desideri creare.
 
-### sinonimo di doppio senso
+### Sinonimo bidirezionale
 
-1. Accetta il valore predefinito **A due vie** opzione .
+1. Accetta il valore predefinito **Bidirezionale** opzione.
 
-   ![Aggiungi sinonimo di bidirezionale](assets/synonym-add-two-way.png)
+   ![Aggiungi sinonimo bidirezionale](assets/synonym-add-two-way.png)
 
 
-1. Inserisci il **Parola chiave** termine o frase da abbinare.
-1. Inserisci il **Espansione** termini che si desidera aggiungere come sinonimi della parola chiave. Separa più termini con una virgola.
-In questo esempio, la parola chiave da abbinare è &quot;pantaloni&quot; e l&#39;insieme di termini di espansione sono &quot;pantaloni lunghi, pantaloni, slack&quot;.
+1. Inserisci il **Parola chiave** termine o frase da associare.
+1. Inserisci il **Espansione** termini da aggiungere come sinonimi per la parola chiave. Separa più termini con una virgola.
+In questo esempio, la parola chiave da associare è &quot;pantaloni&quot; e l&#39;insieme dei termini di espansione sono &quot;pantaloni lunghi, pantaloni, pantaloni allungati&quot;.
 
-   ![Esempio di sinonimo a due vie](assets/synonym-add-two-way-example.png)
+   ![Esempio di sinonimo bidirezionale](assets/synonym-add-two-way-example.png)
 
 1. Al termine, fai clic su **Salva**.
-L&#39;insieme dei sinonimi viene visualizzato nell&#39;elenco con una freccia bidirezionale tra ciascun termine, il che significa che i termini sono intercambiabili.
+Il set di sinonimi viene visualizzato nell&#39;elenco con una freccia bidirezionale tra ciascun termine, il che significa che i termini sono intercambiabili.
 
-   ![sinonimo di doppio senso](assets/synonym-two-way.png)
+   ![Sinonimo bidirezionale](assets/synonym-two-way.png)
 
-### sinonimo di unidirezionale
+### Sinonimo unidirezionale
 
-1. Fai clic sul pulsante **unidirezionale** tipo sinonimo.
+1. Fai clic su **Unidirezionale** tipo di sinonimo.
 
-   ![Aggiungi sinonimo di unidirezionale](assets/synonym-add-one-way.png)
+   ![Aggiungi sinonimo unidirezionale](assets/synonym-add-one-way.png)
 
 1. Inserisci il **Parola chiave** e **Espansione** termini. Separa più termini con una virgola.
 
-   ![Esempio di sinonimo di unidirezionale](assets/synonym-add-one-way-example.png)
+   ![Esempio di sinonimo unidirezionale](assets/synonym-add-one-way-example.png)
 
-   In questo esempio, la parola chiave è &quot;pantaloni&quot; e i termini di espansione a senso unico &quot;capris, pantaloni a lunghezza di vitello, peddle-pushers&quot; sono tutti un sottoinsieme di &quot;pantaloni&quot;, ma con un significato specifico.
+   In questo esempio, la parola chiave è &quot;pantaloni&quot; e i termini di espansione unidirezionale &quot;capri, pantaloni a lunghezza di polpaccio, spintori a pedale&quot; sono ciascuno un sottoinsieme di &quot;pantaloni&quot;, ma con un significato specifico.
 
 1. Al termine, fai clic su **Salva**.
-L&#39;insieme dei sinonimi viene visualizzato nell&#39;elenco con una freccia a senso unico che punta dai termini di espansione alla parola chiave per indicare che i termini sono sottoinsiemi della parola chiave. Un segno più separa ogni termine di espansione.
+Il set di sinonimi viene visualizzato nell&#39;elenco con una freccia unidirezionale che punta dai termini di espansione alla parola chiave per indicare che i termini sono sottoinsiemi della parola chiave. Un segno più separa ogni termine di espansione.
 
-   ![sinonimo di unidirezionale](assets/synonym-one-way.png)
+   ![Sinonimo unidirezionale](assets/synonym-one-way.png)
 
 ## Passaggio 3: Pubblicare le modifiche
 
-1. Al termine dei sinonimi, fai clic su **Pubblicare le modifiche**.
-1. Attendi fino a due ore perché gli aggiornamenti siano disponibili nella vetrina.
+1. Una volta completati i sinonimi, fare clic su **Pubblica modifiche**.
+1. Attendi fino a due ore prima che gli aggiornamenti diventino disponibili nella vetrina.
 
-![Pubblicare le modifiche](assets/synonym-publish.png)
-
-## Descrizioni campo
+## Descrizioni campi
 
 | Campo | Descrizione |
 |--- |--- |
-| [Tipo](synonyms.md) | Determina se i sinonimi hanno lo stesso significato della parola chiave o sono un sottoinsieme della parola chiave. Opzioni:<br />Due modi (predefinito) - Termini che hanno lo stesso significato della parola chiave e restituiscono gli stessi risultati di ricerca<br />Solo andata - Termini che sono un sottoinsieme della parola chiave. I sinonimi unidirezionali restituiscono un elenco più ristretto di prodotti specifici. |
+| [Tipo](synonyms.md) | Determina se i sinonimi hanno lo stesso significato della parola chiave o sono un sottoinsieme della parola chiave. Opzioni:<br />Bidirezionale (impostazione predefinita): termini che hanno lo stesso significato della parola chiave e restituiscono gli stessi risultati di ricerca<br />Unidirezionale: termini che costituiscono un sottoinsieme della parola chiave. I sinonimi unidirezionali restituiscono un elenco più ristretto di prodotti specifici. |
 | Parola chiave | Parola comunemente associata a una selezione di prodotti nel catalogo. |
-| Espansione | Altri termini che hanno lo stesso significato o lo stesso significato della parola chiave. |
+| Espansione | Termini aggiuntivi che hanno lo stesso significato o un significato simile della parola chiave. |

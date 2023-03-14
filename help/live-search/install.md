@@ -2,16 +2,16 @@
 title: "Installa [!DNL Live Search]"
 description: "Scopri come installare, aggiornare e disinstallare [!DNL Live Search] da Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 484319fc1df6c29c972b57c13bd0ed711e374e99
+source-git-commit: a589956b5594283d7ceb620abc76b2c352f8f524
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1288'
 ht-degree: 0%
 
 ---
 
 # Installa [!DNL Live Search]
 
-Live Search viene installato come estensione da Adobe Marketplace. Dopo il [!DNL Live Search] il modulo (con i moduli catalogo come dipendenze) sia installato e configurato, [!DNL Commerce] inizia a condividere i dati di ricerca e catalogo con i servizi SaaS. A questo punto *Amministratore* gli utenti possono impostare, personalizzare e gestire facet di ricerca, sinonimi e regole di merchandising.
+[!DNL Live Search] viene installato come estensione da Adobe Marketplace. Dopo il [!DNL Live Search] il modulo (con i moduli catalogo come dipendenze) sia installato e configurato, [!DNL Commerce] inizia a condividere i dati di ricerca e catalogo con i servizi SaaS. A questo punto *Amministratore* gli utenti possono impostare, personalizzare e gestire facet di ricerca, sinonimi e regole di merchandising.
 
 In questo argomento vengono fornite istruzioni per eseguire le operazioni seguenti:
 
@@ -56,8 +56,7 @@ In questo scenario, le operazioni di storefront vengono interrotte mentre il [!D
 1. Esegui i seguenti comandi per disabilitare [!DNL Elasticsearch] e moduli correlati, e installare [!DNL Live Search]:
 
    ```bash
-   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch 
-   Magento_ElasticsearchCatalogPermissionsGraphQl
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
    ```bash
@@ -86,15 +85,15 @@ In questo scenario, le operazioni di storefront vengono interrotte mentre il [!D
 
 ## Metodo 2: installare con Elasticsearch {#method-2}
 
+>[!IMPORTANT]
+>
+>A causa dell’annuncio di fine del supporto di Elasticsearch 7 relativo ad agosto 2023, si consiglia a tutti i clienti di Adobe Commerce di migrare al motore di ricerca OpenSearch 2.x. Per informazioni sulla migrazione del motore di ricerca durante l’aggiornamento del prodotto, consulta [Migrazione a OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) nel _Guida all’aggiornamento_.
+
 Questo metodo di onboarding è consigliato durante l’installazione [!DNL Live Search] a:
 
 * Una produzione esistente [!DNL Commerce] installazione
 
 In questo scenario, [!DNL Elasticsearch] gestisce temporaneamente le richieste di ricerca dalla vetrina, mentre [!DNL Live Search] service indicizza tutti i prodotti in background, senza alcuna interruzione delle normali operazioni di storefront. [!DNL Elasticsearch] è disabilitato e [!DNL Live Search] attivato dopo l&#39;indicizzazione e la sincronizzazione di tutti i dati del catalogo.
-
->[!TIP]
->
->Per evitare errori di digitazione, posiziona il cursore del mouse sull&#39;estrema destra della casella del codice e fai clic sul pulsante [!UICONTROL **Copia**] e incollarlo nella riga di comando.
 
 1. Per scaricare `live-search` , eseguire quanto segue dalla riga di comando:
 
@@ -209,9 +208,9 @@ Da aggiornare [!DNL Live Search], esegui quanto segue dalla riga di comando:
 composer update magento/live-search --with-dependencies
 ```
 
-Per eseguire l’aggiornamento a una versione principale, ad esempio da 1.0.0 a 2.0.0, modifica la directory principale del progetto [!DNL Composer] `.json` file come segue:
+Per eseguire l’aggiornamento a una versione principale, ad esempio da 2.0.0 a 3.0.1, modifica la directory principale del progetto [!DNL Composer] `.json` file come segue:
 
-1. Se il programma di installazione `magento/live-search` versione è `1.3.1` o inferiore e si sta effettuando l&#39;aggiornamento alla versione `2.0.0` o versione successiva, eseguire il comando seguente prima dell&#39;aggiornamento:
+1. Se il programma di installazione `magento/live-search` versione è `2.0.3` o inferiore e si sta effettuando l&#39;aggiornamento alla versione `3.0.0` o versione successiva, eseguire il comando seguente prima dell&#39;aggiornamento:
 
    ```bash
    bin/magento module:enable Magento_AdvancedSearch
@@ -230,7 +229,7 @@ Per eseguire l’aggiornamento a una versione principale, ad esempio da 1.0.0 a 
    ```json
    "require": {
       ...
-      "magento/live-search": "^2.0",
+      "magento/live-search": "^3.0",
       ...
     }
    ```
@@ -259,6 +258,6 @@ I seguenti elementi [!DNL Live Search] le dipendenze vengono acquisite da [!DNL 
 
 | Dipendenza | Descrizione |
 |--- |--- |
-| Esporta moduli | I seguenti moduli raccolgono e sincronizzano i dati del catalogo:<br />`saas-export`<br />`module-bundle-product-exporter`<br />`module-catalog-data-exporter`<br />`module-catalog-inventory-data-exporter`<br />`module-catalog-url-rewrite-data-exporter`<br />`module-configurable-product-data-exporter`<br />`module-data-exporter`<br />`module-parent-product-data-exporter` |
-| `services-connector` | Necessario per configurare la connessione a Commerce Services. |
-| `module-services-id` | Necessario per configurare la connessione a Commerce Services. |
+| Esporta moduli | I seguenti moduli raccolgono e sincronizzano i dati del catalogo:<br />`module-sass-catalog`<br />`module-sass-product-override`<br />`module-bundle-product-data-exporter`<br />`module-catalog-data-exporter`<br />`module-catalog-inventory-data-exporter`<br />`module-catalog-url-rewrite-data-exporter`<br />`module-configurable-product-data-exporter`<br />`module-data-exporter`<br />`module-parent-product-data-exporter`<br />`module-product-override-data-exporter` |
+| `data-services` | Necessario per configurare la connessione a Commerce Services. |
+| `services-id` | Necessario per configurare la connessione a Commerce Services. |
