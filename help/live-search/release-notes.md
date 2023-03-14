@@ -2,9 +2,9 @@
 title: '''[!DNL Live Search] Note sulla versione'
 description: "Informazioni aggiornate sulla versione di [!DNL Live Search] da Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: a589956b5594283d7ceb620abc76b2c352f8f524
+source-git-commit: 94e5d59061477440e62a8f1eb055090e0179d395
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1208'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,17 @@ Si consiglia di eseguire l’aggiornamento e il test prima di passare alla produ
 
 ## Versioni precedenti
 
-+++2.0.4 e precedenti
++++2.0.5 e precedenti
+
+## [!DNL Live Search] 2.0.5 {#205}
+
+[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+
+* ![Correzione](../assets/fix.svg) - Live Search genererebbe un errore quando le risorse SDK non erano disponibili a causa di problemi di rete. Questo bug è stato corretto.
+
+Per accedere a queste funzioni, i commercianti devono aggiornare la versione dell’estensione Live Search >= 2.0.5.
+
+Si consiglia di eseguire l’aggiornamento e il test prima di passare alla produzione. Dopo aver verificato i risultati dell’ambiente di test, è consigliabile aggiornare l’ambiente di produzione nelle ore di minore utilizzo.
 
 ### [!DNL Live Search] 2.0.4 {#204}
 
