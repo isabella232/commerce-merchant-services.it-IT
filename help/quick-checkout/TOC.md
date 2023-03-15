@@ -1,7 +1,7 @@
 ---
 user-guide-title: "[!DNL Quick Checkout] per Adobe Commerce"
-user-guide-description: '"Scopri come [!DNL Quick Checkout] potrebbero trarre vantaggio dalla tua istanza di Adobe Commerce e da come integrare e configurare correttamente l’estensione".'
-breadcrumb-title: Guida di Merchant Services
+user-guide-description: "Scopri come [!DNL Quick Checkout] potrebbe essere utile per la tua istanza Adobe Commerce e per come effettuare l’onboarding e configurare correttamente l’estensione."
+breadcrumb-title: Guida a Merchant Services
 source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
 source-wordcount: '76'
@@ -14,25 +14,25 @@ ht-degree: 0%
 
 - [Introduzione a [!DNL Quick Checkout]](overview.md)
 - [Note sulla versione](release-notes.md)
-- Onboarding [!DNL Quick Checkout] {#getting-started}
+- Onboard [!DNL Quick Checkout] {#getting-started}
    - [Prerequisiti](prerequisites.md)
    - [Installa](install.md)
    - [Onboarding](onboarding.md)
    - [Impostazioni](settings-quick-checkout.md)
-   - [!DNL Quick Checkout] Pannello di amministrazione {#quick-checkout-admin-panel}
-      - [Configurare il pannello di amministrazione](admin-panel.md)
+   - [!DNL Quick Checkout] Pannello Admin {#quick-checkout-admin-panel}
+      - [Configurare il pannello Amministratore](admin-panel.md)
       - [Configurazione utente](user-roles-setup.md)
-   - [!DNL Quick Checkout] reportistica {#quick-checkout-reporting}
+   - [!DNL Quick Checkout] reporting {#quick-checkout-reporting}
       - [Rapporti](reports.md)
 - Test e convalida {#test-validate}
    - [Test](testing.md)
-   - [Informazioni per sviluppatori](developer.md)
+   - [Informazioni per gli sviluppatori](developer.md)
 - Pagamento {#manage-checkout}
-   - [Pagina cassa](checkout-page.md)
+   - [Pagina di pagamento](checkout-page.md)
    - Opzioni di pagamento {#checkout-options}
       - [Flusso di cassa](checkout-flow.md)
-      - [Ritiro utente bullone](checkout-bolt.md)
-      - [Estrazione utenti Adobe Commerce](checkout-adobe-commerce.md)
+      - [Blocco del pagamento da parte degli utenti](checkout-bolt.md)
+      - [Checkout utente di Adobe Commerce](checkout-adobe-commerce.md)
    - [Metodi di pagamento](payment-methods.md)
 - [Durata della sessione utente](user-session-lifetime.md)
-- [Creare un ordine in Amministratore](create-order-admin.md)
+- [Crea un ordine in Amministratore](create-order-admin.md)

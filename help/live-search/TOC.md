@@ -1,6 +1,6 @@
 ---
 user-guide-title: "[!DNL Live Search] Guida"
-user-guide-description: "Questa guida fornisce istruzioni dettagliate per l’utilizzo di [!DNL Live Search] da Adobe Commerce."
+user-guide-description: "Questa guida fornisce istruzioni dettagliate sull’utilizzo di [!DNL Live Search] da Adobe Commerce."
 breadcrumb-title: "[!DNL Live Search] Guida"
 source-git-commit: e763eb8e283319b30b19dbb13284e9616196ae48
 workflow-type: tm+mt
@@ -14,7 +14,7 @@ ht-degree: 0%
 - [Panoramica della guida](guide-overview.md)
 - [Introduzione a [!DNL Live Search]](overview.md)
 - [Note sulla versione](release-notes.md)
-- Live Search integrato {#onboard}
+- Ricerca in tempo reale integrata {#onboard}
    - [Panoramica sull’onboarding](onboarding-overview.md)
    - [Installa [!DNL Live Search]](install.md)
 - [!DNL Live Search] Vetrina {#live-search-storefront}
@@ -23,11 +23,11 @@ ht-degree: 0%
    - [Vetrina [!DNL Popover]](storefront-popover.md)
    - [Stile [!DNL Popover] Elementi](storefront-popover-styling.md)
 - [!DNL Live Search] Amministratore{#live-search-admin}
-   - [Workspace](workspace.md)
+   - [Area di lavoro](workspace.md)
    - [Prestazioni](performance.md)
    - Facet {#facets}
       - [Panoramica](facets.md)
-      - [Area di lavoro di faceting](faceting-workspace.md)
+      - [Area di lavoro di visualizzazione](faceting-workspace.md)
       - [Tipi di facet](facets-type.md)
       - [Aggiungi facet](facets-add.md)
       - [Gestisci facet](facets-manage.md)
@@ -42,7 +42,7 @@ ht-degree: 0%
       - [Area di lavoro regole](rules-workspace.md)
       - [Aggiungi regole](rules-add.md)
       - [Gestisci regole](rules-manage.md)
-   - [Impostazioni configurazione Commerce](configuration.md)
+   - [Impostazioni di configurazione di Commerce](configuration.md)
    - [Impostazioni](settings.md)
    - [Indicizzazione](indexing.md)
 - Query GraphQL {#graphql}

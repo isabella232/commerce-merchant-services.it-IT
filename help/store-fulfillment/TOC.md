@@ -1,7 +1,7 @@
 ---
 user-guide-title: "[!DNL Store FulFillment Guide]"
-user-guide-description: Informazioni dettagliate sull’installazione, la configurazione e l’utilizzo di Store Fulfillment per i negozi Adobe Commerce.
-breadcrumb-title: Evasione store per Adobe Commerce
+user-guide-description: Informazioni dettagliate sull’installazione, la configurazione e l’utilizzo di Store Fulfillment per gli archivi Adobe Commerce.
+breadcrumb-title: Completamento store per Adobe Commerce
 index: true
 source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
@@ -11,30 +11,30 @@ ht-degree: 0%
 ---
 
 
-# Evasione negozio per Commerce {#store-fulfillment}
+# Completamento store per Commerce {#store-fulfillment}
 
 - [Panoramica della guida](guide-overview.md)
 - [Introduzione a [!DNL Store Fulfillment]](introduction.md)
-- [Flussi di lavoro di assistenza store](store-assist-modules.md)
+- [Archiviare flussi di lavoro di Assistenza](store-assist-modules.md)
 - [Requisiti](solution-requirements.md)
 - [Note sulla versione](release-notes.md)
-- Evasione del Negozio onboarding {#onboarding}
+- Evasione a bordo del negozio {#onboarding}
    - [Panoramica sull’onboarding](onboard.md)
    - [Installare l’estensione](install.md)
-   - [Connetti evasione negozio](connect-set-up-service.md)
+   - [Esegui il programma Connect Store](connect-set-up-service.md)
    - [Test e distribuzione](test-and-deploy.md)
-- [Panoramica sulla configurazione](service-config-settings-overview.md)
+- [Panoramica della configurazione](service-config-settings-overview.md)
 - Configurazione archivio {#store-configuration}
    - [Configurazione generale](enable-general.md)
-   - [Modelli e-mail per vendite](sales-emails.md)
-   - [Merchant store (origini)](merchant-store-configuration.md)
-   - [Gestione delle scorte dei prodotti](product-stock.md)
-   - [Trasferimento origine Inventory management](inventory-stock-transfer.md)
-   - [Più siti Web/ambito](multi-site-and-scope-config.md)
+   - [Modelli e-mail di vendita](sales-emails.md)
+   - [Negozio commerciale (fonti)](merchant-store-configuration.md)
+   - [Gestione delle scorte di prodotti](product-stock.md)
+   - [Trasferimento sorgente Inventory management](inventory-stock-transfer.md)
+   - [Sito web/ambito multipli](multi-site-and-scope-config.md)
 - Configurazione del sistema {#system-configuration}
    - [Processi in background](background-processes.md)
-   - [Impostazione della posizione del negozio e della mappatura](store-location-map-provider-setup.md)
-   - [Configurazione esperienza di check-in](check-in-experience-setup.md)
+   - [Posizione del negozio e configurazione della mappatura](store-location-map-provider-setup.md)
+   - [Configurazione dell’esperienza di check-in](check-in-experience-setup.md)
    - [Configurazione utente](user-setup.md)
-   - [Configurazione dell’app](app-setup.md)
+   - [Configurazione dell&#39;app](app-setup.md)
 
