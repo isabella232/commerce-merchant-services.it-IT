@@ -2,9 +2,9 @@
 title: Personalizza
 description: Scopri come personalizzare i consigli sui prodotti.
 exl-id: b1b8e770-45ec-4403-b79b-4f0a9f7bd959
-source-git-commit: a34c3c8a5caca1bbf611b2df650c562aeeab297b
+source-git-commit: acfaa1d72265e42b973677a7e014ba4b350ec56b
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Quando [creare](create.md) una raccomandazione, specificate la [posizione](place
    >
    >I nomi dei file nel `layout` potrebbe essere diversa se l&#39;archivio utilizza estensioni di terze parti.
 
-1. Modifichiamo il `catalog_product_view.xml` in modo che l&#39;unità di raccomandazione venga visualizzata dopo l&#39;immagine del prodotto nella pagina dei dettagli del prodotto. Prima di personalizzare questo file XML, diamo un&#39;occhiata al file e comprendiamo le sezioni da modificare:
+1. Modifica la `catalog_product_view.xml` in modo che l&#39;unità di raccomandazione venga visualizzata dopo l&#39;immagine del prodotto nella pagina dei dettagli del prodotto. Prima di personalizzare questo file XML, esaminare il file e comprendere le sezioni che sarà necessario modificare:
 
    ```xml
    <?xml version="1.0"?>
@@ -81,7 +81,7 @@ Quando [creare](create.md) una raccomandazione, specificate la [posizione](place
 
 1. Modifichiamo questo file specificando un diverso blocco di contenuto.
 
-   Verrà modificato il blocco di riferimento `name` da `main.content` a `product.info.media`.
+   Modificare il blocco di riferimento `name` da `main.content` a `product.info.media`.
 
    ```xml
    <?xml version="1.0"?>

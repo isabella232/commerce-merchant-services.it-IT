@@ -2,7 +2,7 @@
 title: Installazione e configurazione
 description: Scopri come installare, aggiornare e disinstallare [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
-source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
+source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -98,7 +98,7 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 >[!NOTE]
 >
-> Nella versione 3.x.x di Product Recommendations, era necessaria una sola chiave API. Nelle versioni 4.x.x e successive, devi fornire le chiavi API pubbliche e private Production e le chiavi API pubbliche e private Sandbox. Se non fornisci entrambe le coppie di chiavi API, non potrai accedere alla funzione Product Recommendations nell’amministratore. La raccolta dei dati, tuttavia, continuerà sulla vetrina e i consigli esistenti continueranno a essere mostrati ai tuoi acquirenti.
+> Nella versione 3.x.x di Product Recommendations, era necessaria una sola chiave API. Nelle versioni 4.x.x e successive, devi fornire le chiavi API pubbliche e private Production e le chiavi API pubbliche e private Sandbox. Se non fornisci entrambe le coppie di chiavi API, non puoi accedere alla funzione Recommendations prodotto nell’amministratore. La raccolta dei dati, tuttavia, continuerà sulla vetrina e i consigli esistenti continueranno a essere mostrati ai tuoi acquirenti.
 
 ## Disinstalla [!DNL Product Recommendations] {#uninstall}
 

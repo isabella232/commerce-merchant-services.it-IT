@@ -2,9 +2,9 @@
 title: Senza testa
 description: Scopri come integrare [!DNL Product Recommendations] in una vetrina senza testa.
 exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '272'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Puoi eseguire entrambe queste azioni utilizzando gli SDK disponibili, come descr
    | `impression-render` | unità di raccomandazione |
    | `view` | unità di raccomandazione |
    | `rec-click` | unità di raccomandazione |
-   | `rec-add-to-cart-click` | recommendation-unit (se nel modello di consigli è presente un pulsante add to cart ) |
+   | `rec-add-to-cart-click` | unità di raccomandazione (se nel modello di consigli è presente un pulsante &quot;Aggiungi al carrello&quot;) |
 
 1. Quando gli eventi vengono attivati, utilizza la variabile [Raccoglitore eventi Adobe Commerce Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) per gestire gli eventi e inviarli ad Adobe Sensei.
 
