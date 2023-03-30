@@ -2,9 +2,9 @@
 title: Connettere dati Commerce a Adobe Experience Platform
 description: Scopri come collegare i dati Commerce a Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: 18edfec6dbc66ef0e94e9f54ca1061386104d90c
+source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
@@ -33,13 +33,9 @@ Per collegare l’istanza Adobe Commerce a Adobe Experience Platform, devi forni
 
 ## Raccolta dati
 
->[!NOTE]
->
->Per i commercianti già iscritti al nostro programma beta back office, vedrai una casella di controllo per abilitare gli eventi back office. Se desideri partecipare al programma beta del back office, contatta [drios@adobe.com](mailto:drios@adobe.com).
+In **Raccolta dati** Specifica i tipi di dati da raccogliere e inviare al bordo Experience Platform. Per impostazione predefinita, gli eventi di vetrina vengono inviati automaticamente, purché l’SDK web AEP e l’ID organizzazione siano validi. Per ulteriori informazioni, consulta l’argomento degli eventi . [vetrina](events.md#storefront-events) e [ufficio postale](events.md#back-office-events) eventi.
 
-In **Raccolta dati** Specifica i tipi di dati da raccogliere e inviare al bordo Experience Platform. Per impostazione predefinita, gli eventi di vetrina vengono inviati automaticamente, purché l’SDK web AEP e l’ID organizzazione siano validi. Per ulteriori informazioni, consulta l’argomento degli eventi . [vetrina](events.md#storefront-events) e [ufficio postale](events.md#beta-order-status-events) eventi.
-
-![Configurazione del connettore Experience Platform beta](assets/epc-config-beta.png)
+![Configurazione del connettore di Experience Platform](assets/epc-config-dc.png)
 
 >[!NOTE]
 >
@@ -64,7 +60,7 @@ In **Raccolta dati** Specifica i tipi di dati da raccogliere e inviare al bordo 
 | AEP Web SDK già distribuito sul sito? | Seleziona questa casella di controllo se hai implementato il tuo AEP Web SDK sul tuo sito |
 | Nome SDK web AEP (globale) | Se sul sito è già stato implementato un Experience Platform Web SDK, specificane il nome in questo campo. Questo consente all’SDK per Storefront Event Collector e Storefront Event di utilizzare l’SDK per web di Experience Platform anziché la versione distribuita dal connettore Experience Platform. Se non hai implementato sul tuo sito un Experience Platform Web SDK, puoi lasciare vuoto questo campo e il connettore Experience Platform ne distribuirà uno per te. |
 | Eventi Storefront | È selezionato per impostazione predefinita, purché l’ID organizzazione e l’ID del datastream siano validi. Gli eventi Storefront raccolgono dati comportamentali anonimi dai tuoi acquirenti mentre navigano sul tuo sito. |
-| Eventi Back Office (Beta) | Se questa opzione è selezionata, il payload dell’evento contiene informazioni sullo stato dell’ordine anonime, ad esempio se un ordine è stato inserito, annullato, rimborsato o spedito. |
+| Eventi back Office | Se questa opzione è selezionata, il payload dell’evento contiene informazioni sullo stato dell’ordine anonime, ad esempio se un ordine è stato inserito, annullato, rimborsato o spedito. |
 | ID Datastream (sito web) | ID che consente il flusso dei dati da Adobe Experience Platform ad altri prodotti DX di Adobe. Questo ID deve essere associato a un sito web specifico all&#39;interno della tua istanza Adobe Commerce specifica. Se specifichi un tuo Experience Platform Web SDK, non specificare un ID datastream in questo campo. Il connettore di Experience Platform utilizza l&#39;ID del datastream associato a tale SDK e ignora eventuali ID del datastream specificati in questo campo (se presenti). |
 
 Con l’estensione del connettore di Experience Platform installata, il collegamento tra Adobe Commerce e Adobe Experience Platform creato e l’ID del Datastream specificato, i dati Commerce iniziano a scorrere fino al bordo di Adobe Experience Platform e ad altri prodotti DX di Adobe.
@@ -73,7 +69,7 @@ Con l’estensione del connettore di Experience Platform installata, il collegam
 >
 > Il tempo necessario per il flusso dei dati dal bordo ad altri prodotti Adobe DX può variare.
 
-## Dati di Commerce a margine
+## Verifica che i dati vengano inviati ad Experience Platform
 
 Quando i dati Commerce vengono inviati al server Edge di Adobe Experience Platform, puoi generare rapporti come segue:
 

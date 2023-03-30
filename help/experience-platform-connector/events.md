@@ -2,9 +2,9 @@
 title: Eventi
 description: Scopri quali dati acquisisce ogni evento.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 18edfec6dbc66ef0e94e9f54ca1061386104d90c
+source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
 workflow-type: tm+mt
-source-wordcount: '3141'
+source-wordcount: '4039'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Gli eventi di vetrina raccolgono dati comportamentali anonimi dai tuoi acquirent
 
 >[!NOTE]
 >
->Tutti gli eventi della vetrina includono `identityMap` campo , che è un identificatore univoco della persona.
+>Tutti gli eventi della vetrina includono [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) , che include l&#39;indirizzo e-mail dell&#39;acquirente, se disponibile, e ECID. Includendo questi dati di profilo in ogni evento, non è necessaria un’importazione separata di account utente da Adobe Commerce.
 
 ### addToCart
 
@@ -216,7 +216,6 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | `productImageUrl` | URL immagine principale del prodotto |
 | `selectedOptions` | Campo utilizzato per un prodotto configurabile. `attribute` identifica un attributo del prodotto configurabile, ad esempio `size` o `color` e `value` identifica il valore dell&#39;attributo, ad esempio `small` o `black`. |
 
-
 ## Eventi di profilo
 
 Gli eventi di profilo includono informazioni sull’account, ad esempio `signIn`, `signOut`, `createAccount`e `editAccount`. Questi dati vengono utilizzati per popolare i dettagli chiave dei clienti necessari per definire meglio i segmenti o eseguire campagne di marketing, ad esempio per indirizzare gli acquirenti che vivono a New York.
@@ -320,6 +319,8 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
 Gli eventi di ricerca forniscono dati pertinenti all’intento dell’acquirente. Approfondisci l&#39;intento di un acquirente che aiuta i commercianti a vedere come i consumatori cercano gli articoli, cosa cliccano e alla fine acquistano o abbandonano. Un esempio di come utilizzare questi dati è se desideri indirizzare gli acquirenti esistenti che cercano il tuo prodotto principale, ma non acquistano mai il prodotto.
 
+Utilizza la `uniqueIdentifier` campo trovato in entrambi i `searchRequestSent` e `searchResponseReceived` eventi per fare riferimento incrociato una richiesta di ricerca con la risposta di ricerca corrispondente.
+
 ### searchRequestSent
 
 | Descrizione | Nome evento XDM |
@@ -337,6 +338,7 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | Campo | Descrizione |
 |---|---|
 | `searchRequest` | Indica se è stata inviata una richiesta di ricerca |
+| `uniqueIdentifier` | ID univoco per questa particolare richiesta di ricerca |
 | `filter` | Indica se sono stati applicati filtri per limitare i risultati della ricerca |
 | `attribute` (filtro) | Facet di un elemento utilizzato per determinare se includerlo nei risultati della ricerca |
 | `value` | Valori degli attributi utilizzati per determinare quali elementi sono inclusi nei risultati di ricerca |
@@ -363,6 +365,7 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | Campo | Descrizione |
 |---|---|
 | `searchResponse` | Indica se è stata ricevuta una risposta di ricerca |
+| `uniqueIdentifier` | ID univoco per questa particolare risposta di ricerca |
 | `suggestions` | Matrice di stringhe che includono i nomi dei prodotti e delle categorie presenti nel catalogo simili alla query di ricerca |
 | `numberOfResults` | Numero di prodotti restituiti |
 | `productListItems` | Una serie di prodotti nel carrello. |
@@ -370,19 +373,89 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | `name` | Nome visualizzato o nome leggibile del prodotto |
 | `productImageUrl` | URL immagine principale del prodotto |
 
-## (Beta) Eventi back office
+## Eventi B2B
+
+![B2B per Adobe Commerce](../assets/b2b.svg) Per i commercianti B2B, devi [installare](install.md#install-the-b2b-extension) la `experience-platform-connector-b2b` per abilitare questi eventi.
+
+Gli eventi B2B contengono [elenco richieste](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html) informazioni, ad esempio se un elenco di richieste di acquisto è stato creato, aggiunto o eliminato da. Tracciando gli eventi specifici degli elenchi di richieste di acquisto, puoi vedere quali prodotti i clienti acquistano frequentemente e creare campagne in base a tali dati.
+
+### createRequestList
+
+| Descrizione | Nome evento XDM |
+|---|---|
+| Attivazione quando un acquirente crea un nuovo elenco di richieste di acquisto. | `commerce.requisitionListOpens` |
+
+#### Dati raccolti da createRequestList
+
+Nella tabella seguente sono descritti i dati raccolti per questo evento.
+
+| Campo | Descrizione |
+|---|---|
+| `requisitionListOpens` | Un valore di `1` indica che è stato aperto un elenco di richieste di acquisto |
+| `requisitionList` | Include un `ID` , `name`e `description` per l&#39;elenco delle richieste di acquisto |
+
+### addToRichiesteList
+
+| Descrizione | Nome evento XDM |
+|---|---|
+| Attivazione quando un acquirente aggiunge un prodotto a un elenco di richieste esistente o durante la creazione di un nuovo elenco. | `commerce.requisitionListAdds` |
 
 >[!NOTE]
 >
->Per i commercianti già iscritti al nostro programma beta back office, hai accesso agli eventi back office. Se desideri partecipare al programma beta del back office, contatta [drios@adobe.com](mailto:drios@adobe.com).
+>`addToRequisitionList` non è supportato nelle pagine di visualizzazione categoria o per i prodotti configurabili. È supportato nelle pagine di visualizzazione dei prodotti e per i prodotti semplici.
 
-Gli eventi back office contengono informazioni sullo stato di un ordine, ad esempio se un ordine è stato effettuato, annullato, rimborsato o spedito. I dati raccolti da questi eventi lato server mostrano una visualizzazione 360 dell&#39;ordine dell&#39;acquirente. Questo può aiutare i commercianti a eseguire meglio il targeting o ad analizzare l’intero stato dell’ordine durante lo sviluppo di campagne di marketing. Ad esempio, è possibile individuare le tendenze in alcune categorie di prodotti che presentano buone prestazioni in diversi momenti dell’anno. Ad esempio, vestiti invernali che vendono meglio durante i mesi più freddi o alcuni colori di prodotto che i consumatori sono interessati nel corso degli anni. Inoltre, i dati sullo stato dell&#39;ordine possono essere utili per calcolare il valore del cliente a vita, comprendendo la propensione di un acquirente alla conversione in base agli ordini precedenti.
+#### Dati raccolti da addToRequestList
+
+Nella tabella seguente sono descritti i dati raccolti per questo evento.
+
+| Campo | Descrizione |
+|---|---|
+| `requisitionListAdds` | Un valore di `1` indica che un prodotto è stato aggiunto all&#39;elenco delle richieste di acquisto |
+| `requisitionList` | Include un `ID`,  `name`e `description` per l&#39;elenco delle richieste di acquisto |
+| `productListItems` | Matrice di prodotti aggiunti all&#39;elenco delle richieste di acquisto |
+| `name` | Nome visualizzato o nome leggibile del prodotto |
+| `SKU` | Unità di conservazione delle scorte. Identificatore univoco per il prodotto. |
+| `quantity` | Numero di unità di prodotto aggiunte |
+| `priceTotal` | Prezzo totale dell&#39;articolo della linea di prodotti |
+| `discountAmount` | Indica l&#39;importo dello sconto applicato |
+| `currencyCode` | La [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) codice valuta utilizzato per questo elemento di pagamento |
+
+### removeFromRequestList
+
+| Descrizione | Nome evento XDM |
+|---|---|
+| Attivazione quando un acquirente rimuove un prodotto da un elenco di richieste di acquisto. | `commerce.requisitionListRemovals` |
+
+#### Dati raccolti da removeFromRequestList
+
+Nella tabella seguente sono descritti i dati raccolti per questo evento.
+
+| Campo | Descrizione |
+|---|---|
+| `requisitionListRemovals` | Un valore di `1` indica che un prodotto è stato rimosso dall&#39;elenco delle richieste di acquisto |
+| `requisitionList` | Include un `ID`e `description` per l&#39;elenco delle richieste di acquisto |
+| `productListItems` | Matrice di prodotti aggiunti all&#39;elenco delle richieste di acquisto |
+| `name` | Nome visualizzato o nome leggibile del prodotto |
+| `SKU` | Unità di conservazione delle scorte. Identificatore univoco per il prodotto. |
+| `quantity` | Numero di unità di prodotto aggiunte |
+| `priceTotal` | Prezzo totale dell&#39;articolo della linea di prodotti |
+| `discountAmount` | Indica l&#39;importo dello sconto applicato |
+| `currencyCode` | La [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) codice valuta utilizzato per questo elemento di pagamento |
+| `selectedOptions` | Campo utilizzato per un prodotto configurabile. `attribute` identifica un attributo del prodotto configurabile, ad esempio `size` o `color` e `value` identifica il valore dell&#39;attributo, ad esempio `small` o `black`. |
+
+## Eventi back office
+
+Gli eventi back office contengono informazioni sullo stato di un ordine, ad esempio se un ordine è stato effettuato, annullato, rimborsato, spedito o completato. I dati raccolti da questi eventi lato server mostrano una visualizzazione 360 dell&#39;ordine dell&#39;acquirente. Questa visualizzazione consente ai commercianti di eseguire meglio il targeting o di analizzare l’intero stato dell’ordine durante lo sviluppo di campagne di marketing. Ad esempio, è possibile individuare le tendenze in alcune categorie di prodotti che presentano buone prestazioni in diversi momenti dell’anno. Ad esempio, vestiti invernali che vendono meglio durante i mesi più freddi o alcuni colori di prodotto che i consumatori sono interessati nel corso degli anni. Inoltre, i dati sullo stato dell&#39;ordine possono essere utili per calcolare il valore del cliente a vita, comprendendo la propensione di un acquirente alla conversione in base agli ordini precedenti.
+
+>[!NOTE]
+>
+>Tutti gli eventi back office includono [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) , che fornisce l’indirizzo e-mail dell’acquirente. Includendo questi dati di profilo in ogni evento, non è necessaria un’importazione separata di account utente da Adobe Commerce.
 
 ### orderPlaced
 
 | Descrizione | Nome evento XDM |
 |---|---|
-| Attivazione quando un acquirente effettua un ordine. | `commerce.orderPlaced` |
+| Attivazione quando un acquirente effettua un ordine. | `commerce.backofficeOrderPlaced` |
 
 #### Dati raccolti da orderPlaced
 
@@ -390,9 +463,8 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
 | Campo | Descrizione |
 |---|---|
-| `identityMap` | Contiene l’indirizzo e-mail che identifica il cliente |
 | `address` | L&#39;indirizzo tecnico, ad esempio `name@domain.com` come comunemente definito nella RFC2822 e negli standard successivi |
-| `eventType` | `commerce.orderPlaced` |
+| `eventType` | `commerce.backofficeOrderPlaced` |
 | `productListItems` | Un array di prodotti nell&#39;ordine |
 | `name` | Nome visualizzato o nome leggibile del prodotto |
 | `SKU` | Unità di conservazione delle scorte. Identificatore univoco per il prodotto. |
@@ -406,6 +478,8 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | `paymentType` | Modalità di pagamento dell&#39;ordine. Valori enumerati personalizzati consentiti. |
 | `currencyCode` | La [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) codice valuta utilizzato per questo elemento di pagamento |
 | `paymentAmount` | Valore del pagamento |
+| `taxAmount` | Importo dell&#39;imposta versato dall&#39;acquirente nel quadro del pagamento finale |
+| `createdDate` | L&#39;ora e la data in cui viene creato un nuovo ordine nel sistema commerce. Ad esempio: `2022-10-15T20:20:39+00:00` |
 | `shipping` | Dettagli di spedizione per uno o più prodotti |
 | `shippingMethod` | Il metodo di spedizione scelto dal cliente, ad esempio consegna standard, consegna rapida, ritiro in negozio e così via |
 | `shippingAddress` | Indirizzo spedizione fisica |
@@ -419,35 +493,46 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | `postalCode` | Codice postale della posizione. I codici postali non sono disponibili per tutti i paesi. In alcuni paesi ciò conterrà solo una parte del codice postale. |
 | `country` | Nome del territorio amministrato dal governo. Diversi da `xdm:countryCode`, è un campo in formato libero che può avere il nome del paese in qualsiasi lingua. |
 
-### orderShipped
+### orderItemsShipped
 
 | Descrizione | Nome evento XDM |
 |---|---|
-| Attivazione quando viene spedito un ordine. | `commerce.orderLineItemShipped` |
+| Attivazione quando viene spedito un ordine. | `commerce.backofficeOrderItemsShipped` |
 
-#### Dati raccolti da orderShipped
+#### Dati raccolti da orderItemsShipped
 
 Nella tabella seguente sono descritti i dati raccolti per questo evento.
-|Campo|Descrizione| |—|—| |`identityMap`|Contiene l&#39;indirizzo e-mail che identifica il cliente| |`address`|L&#39;indirizzo tecnico, ad esempio `name@domain.com` come comunemente definito nella RFC2822 e negli standard successivi| |`eventType`|`commerce.orderLineItemShipped`| |`productListItems`|Matrice di prodotti nell&#39;ordine| |`name`|Nome visualizzato o nome leggibile del prodotto| |`SKU`|Unità di conservazione delle scorte. Identificatore univoco per il prodotto.| |`quantity`|Numero di unità di prodotto nel carrello| |`priceTotal`|Il prezzo totale per l&#39;articolo della linea di prodotti| |`discountAmount`|Indica l&#39;importo dello sconto applicato| |`order`|Contiene informazioni sull&#39;ordine| |`purchaseID`|Identificatore univoco assegnato dal venditore per l&#39;acquisto o il contratto. Non esiste alcuna garanzia che l&#39;ID sia univoco| |`purchaseOrderNumber`|Identificatore univoco assegnato dall&#39;acquirente per l&#39;acquisto o il contratto| |`payments`|Elenco dei pagamenti per l&#39;ordine| |`paymentType`|Modalità di pagamento dell&#39;ordine. Valori enumerati personalizzati consentiti.| |`currencyCode`|Il [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) codice valuta utilizzato per questo elemento di pagamento| |`paymentAmount`|Valore del pagamento| |`shipping`|Dettagli di spedizione per uno o più prodotti| |`shippingMethod`|Il metodo di spedizione scelto dal cliente, ad esempio la consegna standard, la consegna rapida, il ritiro in negozio e così via| |`shippingAddress`|Indirizzo di spedizione fisica| |`street1`|Informazioni principali sul livello della strada, numero dell&#39;appartamento, numero della strada e nome della strada| |`shippingAmount`|Importo che il cliente ha dovuto pagare per la spedizione.| |`billingAddress`|Indirizzo postale di fatturazione| |`street1`|Informazioni principali sul livello della strada, numero dell&#39;appartamento, numero della strada e nome della strada| |`street2`|Campo aggiuntivo per informazioni a livello stradale| |`city`|Nome della città| |`state`|Nome dello stato. Questo è un campo in formato libero.| |`postalCode`|Il codice postale del luogo. I codici postali non sono disponibili per tutti i paesi. In alcuni paesi ciò conterrà solo una parte del codice postale.| |`country`|Nome del territorio amministrato dal governo. Diversi da `xdm:countryCode`, è un campo a forma libera che può avere il nome del paese in qualsiasi lingua.|
+|Campo|Descrizione| |—|—| |`address`|L&#39;indirizzo tecnico, ad esempio `name@domain.com` come comunemente definito nella RFC2822 e negli standard successivi| |`eventType`|`commerce.backofficeOrderItemsShipped`| |`productListItems`|Matrice di prodotti nell&#39;ordine| |`name`|Nome visualizzato o nome leggibile del prodotto| |`SKU`|Unità di conservazione delle scorte. Identificatore univoco per il prodotto.| |`quantity`|Numero di unità di prodotto nel carrello| |`priceTotal`|Il prezzo totale per l&#39;articolo della linea di prodotti| |`discountAmount`|Indica l&#39;importo dello sconto applicato| |`order`|Contiene informazioni sull&#39;ordine| |`purchaseID`|Identificatore univoco assegnato dal venditore per l&#39;acquisto o il contratto. Non esiste alcuna garanzia che l&#39;ID sia univoco| |`purchaseOrderNumber`|Identificatore univoco assegnato dall&#39;acquirente per l&#39;acquisto o il contratto| |`payments`|Elenco dei pagamenti per l&#39;ordine| |`paymentType`|Modalità di pagamento dell&#39;ordine. Valori enumerati personalizzati consentiti.| |`currencyCode`|Il [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) codice valuta utilizzato per questo elemento di pagamento| |`paymentAmount`|Valore del pagamento| |`trackingNumber`|Numero di registrazione fornito dal vettore per una spedizione di un articolo d&#39;ordine| |`trackingURL`|L&#39;URL per tenere traccia dello stato di spedizione di un articolo dell&#39;ordine| |`lastUpdatedDate`|Data e ora dell&#39;ultimo aggiornamento di un determinato record dell&#39;ordine nel sistema commerce| |`shipping`|Dettagli di spedizione per uno o più prodotti| |`shippingMethod`|Il metodo di spedizione scelto dal cliente, ad esempio la consegna standard, la consegna rapida, il ritiro in negozio e così via| |`shippingAddress`|Indirizzo di spedizione fisica| |`street1`|Informazioni principali sul livello della strada, numero dell&#39;appartamento, numero della strada e nome della strada| |`shippingAmount`|Importo che il cliente ha dovuto pagare per la spedizione.| |`billingAddress`|Indirizzo postale di fatturazione| |`street1`|Informazioni principali sul livello della strada, numero dell&#39;appartamento, numero della strada e nome della strada| |`street2`|Campo aggiuntivo per informazioni a livello stradale| |`city`|Nome della città| |`state`|Nome dello stato. Questo è un campo in formato libero.| |`postalCode`|Il codice postale del luogo. I codici postali non sono disponibili per tutti i paesi. In alcuni paesi ciò conterrà solo una parte del codice postale.| |`country`|Nome del territorio amministrato dal governo. Diversi da `xdm:countryCode`, è un campo a forma libera che può avere il nome del paese in qualsiasi lingua.|
 
 ### orderCancelled
 
 | Descrizione | Nome evento XDM |
 |---|---|
-| Attivazione quando un acquirente annulla un ordine. | `commerce.orderCancelled` |
+| Attivazione quando un acquirente annulla un ordine. | `commerce.backofficeOrderCancelled` |
 
 #### Dati raccolti da orderCancelled
 
 Nella tabella seguente sono descritti i dati raccolti per questo evento.
-|Campo|Descrizione| |—|—| |`identityMap`|Contiene l&#39;indirizzo e-mail che identifica il cliente| |`address`|L&#39;indirizzo tecnico, ad esempio `name@domain.com` come comunemente definito nella RFC2822 e negli standard successivi| |`eventType`|`commerce.orderCancelled`| |`productListItems`|Matrice di prodotti nell&#39;ordine| |`name`|Nome visualizzato o nome leggibile del prodotto| |`SKU`|Unità di conservazione delle scorte. Identificatore univoco per il prodotto.| |`quantity`|Numero di unità di prodotto nel carrello| |`priceTotal`|Il prezzo totale per l&#39;articolo della linea di prodotti| |`discountAmount`|Indica l&#39;importo dello sconto applicato| |`order`|Contiene informazioni sull&#39;ordine| |`purchaseID`|Identificatore univoco assegnato dal venditore per l&#39;acquisto o il contratto. Non esiste alcuna garanzia che l&#39;ID sia univoco| |`purchaseOrderNumber`|Identificatore univoco assegnato dall&#39;acquirente per l&#39;acquisto o il contratto|
+|Campo|Descrizione| |—|—| |`address`|L&#39;indirizzo tecnico, ad esempio `name@domain.com` come comunemente definito nella RFC2822 e negli standard successivi| |`eventType`|`commerce.backofficeOrderCancelled`| |`productListItems`|Matrice di prodotti nell&#39;ordine| |`name`|Nome visualizzato o nome leggibile del prodotto| |`SKU`|Unità di conservazione delle scorte. Identificatore univoco per il prodotto.| |`quantity`|Numero di unità di prodotto nel carrello| |`priceTotal`|Il prezzo totale per l&#39;articolo della linea di prodotti| |`discountAmount`|Indica l&#39;importo dello sconto applicato| |`order`|Contiene informazioni sull&#39;ordine| |`purchaseID`|Identificatore univoco assegnato dal venditore per l&#39;acquisto o il contratto. Non esiste alcuna garanzia che l&#39;ID sia univoco| |`purchaseOrderNumber`|Identificatore univoco assegnato dall&#39;acquirente per l&#39;acquisto o il contratto| |`cancelDate`|La data e l&#39;ora in cui un acquirente annulla un ordine| |`lastUpdatedDate`|Data e ora dell&#39;ultimo aggiornamento di un determinato record dell&#39;ordine nel sistema commerce|
 
-### orderRefund
+### creditMemoEmittenti
 
 | Descrizione | Nome evento XDM |
 |---|---|
-| Attivazione quando un acquirente restituisce un elemento in un ordine. | `commerce.creditMemoIssued` |
+| Attivazione quando un acquirente restituisce un elemento in un ordine. | `commerce.backofficeCreditMemoIssued` |
 
-#### Dati raccolti da orderRefund
+#### Dati raccolti da creditMemoIssues
 
 Nella tabella seguente sono descritti i dati raccolti per questo evento.
-|Campo|Descrizione| |—|—| |`identityMap`|Contiene l&#39;indirizzo e-mail che identifica il cliente| |`address`|L&#39;indirizzo tecnico, ad esempio `name@domain.com` come comunemente definito nella RFC2822 e negli standard successivi| |`eventType`|`commerce.creditMemoIssued`| |`productListItems`|Matrice di prodotti nell&#39;ordine| |`order`|Contiene informazioni sull&#39;ordine| |`purchaseID`|Identificatore univoco assegnato dal venditore per l&#39;acquisto o il contratto. Non esiste alcuna garanzia che l&#39;ID sia univoco| |`purchaseOrderNumber`|Identificatore univoco assegnato dall&#39;acquirente per l&#39;acquisto o il contratto|
+|Campo|Descrizione| |—|—| |`address`|L&#39;indirizzo tecnico, ad esempio `name@domain.com` come comunemente definito nella RFC2822 e negli standard successivi| |`eventType`|`commerce.backofficeCreditMemoIssued`| |`productListItems`|Matrice di prodotti nell&#39;ordine| |`order`|Contiene informazioni sull&#39;ordine| |`purchaseID`|Identificatore univoco assegnato dal venditore per l&#39;acquisto o il contratto. Non esiste alcuna garanzia che l&#39;ID sia univoco| |`purchaseOrderNumber`|Identificatore univoco assegnato dall&#39;acquirente per l&#39;acquisto o il contratto| |`lastUpdatedDate`|Data e ora dell&#39;ultimo aggiornamento di un determinato record dell&#39;ordine nel sistema commerce|
+
+### orderShipmentCompleted
+
+| Descrizione | Nome evento XDM |
+|---|---|
+| Attivazione quando un acquirente restituisce un elemento in un ordine. | `commerce.backofficeOrderShipmentCompleted` |
+
+#### Dati raccolti da orderShipmentCompleted
+
+Nella tabella seguente sono descritti i dati raccolti per questo evento.
+|Campo|Descrizione| |—|—| |`address`|L&#39;indirizzo tecnico, ad esempio `name@domain.com` come comunemente definito nella RFC2822 e negli standard successivi| |`eventType`|`commerce.backofficeOrderShipmentCompleted`| |`productListItems`|Matrice di prodotti nell&#39;ordine| |`name`|Nome visualizzato o nome leggibile del prodotto| |`SKU`|Unità di conservazione delle scorte. Identificatore univoco per il prodotto.| |`quantity`|Numero di unità di prodotto nel carrello| |`priceTotal`|Il prezzo totale per l&#39;articolo della linea di prodotti| |`discountAmount`|Indica l&#39;importo dello sconto applicato| |`order`|Contiene informazioni sull&#39;ordine| |`purchaseID`|Identificatore univoco assegnato dal venditore per l&#39;acquisto o il contratto. Non esiste alcuna garanzia che l&#39;ID sia univoco| |`purchaseOrderNumber`|Identificatore univoco assegnato dall&#39;acquirente per l&#39;acquisto o il contratto| |`taxAmount`|Importo dell&#39;imposta versato dall&#39;acquirente nel quadro del pagamento finale.| |`createdDate`|L&#39;ora e la data in cui viene creato un nuovo ordine nel sistema commerce. Ad esempio: `2022-10-15T20:20:39+00:00`| |`payments`|Elenco dei pagamenti per l&#39;ordine| |`paymentType`|Modalità di pagamento dell&#39;ordine. Valori enumerati personalizzati consentiti.| |`currencyCode`|Il [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) codice valuta utilizzato per questo elemento di pagamento| |`paymentAmount`|Valore del pagamento| |`shipping`|Dettagli di spedizione per uno o più prodotti| |`shippingMethod`|Il metodo di spedizione scelto dal cliente, ad esempio la consegna standard, la consegna rapida, il ritiro in negozio e così via| |`shippingAddress`|Indirizzo di spedizione fisica| |`street1`|Informazioni principali sul livello della strada, numero dell&#39;appartamento, numero della strada e nome della strada| |`shippingAmount`|Importo che il cliente ha dovuto pagare per la spedizione.| |`personalEmail`|Specifica l&#39;indirizzo e-mail personale| |`address`|L&#39;indirizzo tecnico, ad esempio `name@domain.com` come comunemente definito nella RFC2822 e negli standard successivi| |`billingAddress`|Indirizzo postale di fatturazione| |`street1`|Informazioni principali sul livello della strada, numero dell&#39;appartamento, numero della strada e nome della strada| |`street2`|Campo aggiuntivo per informazioni a livello stradale| |`city`|Nome della città| |`state`|Nome dello stato. Questo è un campo in formato libero.| |`postalCode`|Il codice postale del luogo. I codici postali non sono disponibili per tutti i paesi. In alcuni paesi questi dati contengono solo una parte del codice postale.| |`country`|Nome del territorio amministrato dal governo. Diversi da `xdm:countryCode`, è un campo a forma libera che può avere il nome del paese in qualsiasi lingua.|

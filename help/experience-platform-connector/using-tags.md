@@ -2,9 +2,9 @@
 title: Raccogliere dati Commerce tramite tag Adobe Experience Platform
 description: Scopri come raccogliere i dati Commerce utilizzando i tag Adobe Experience Platform.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
+source-git-commit: bd4090c1b1ec417545e041a7c89f46019c07abea
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2535'
 ht-degree: 0%
 
 ---
@@ -559,6 +559,8 @@ Crea i seguenti elementi dati:
    - **value**: Non ancora disponibile
    - **Gruppo di campi**: `siteSearch` > `sort`. Seleziona **Fornire un intero oggetto**.
    - **Gruppo di campi**: `siteSearch` > `filter`. Seleziona **Fornire un intero oggetto**.
+   - **Gruppo di campi**: `searchRequest` > `id`
+   - **Identificatore univoco**: **Valore** = `%search request ID%`
    - **Gruppo di campi**: `searchRequest` > `value`
    - **value**: **Valore** = `1`
 
@@ -654,6 +656,8 @@ Crea i seguenti elementi dati:
    - **Gruppo di campi**: `productListItems` > `ProductImageUrl`
    - **ProductImageUrl**: **Valore** = `%product image%`
    - **Elemento dati**: `%search result products%`
+   - **Gruppo di campi**: `searchResponse` > `id`
+   - **Identificatore univoco**: **Valore** = `%search response ID%`
    - **Gruppo di campi**: `searchResponse` > `value`
    - **value**: **Valore** = `1`
 
@@ -1361,7 +1365,7 @@ I passaggi seguenti mostrano come configurare un `pageView` evento con `identity
 
 ## Impostazione del consenso
 
-Il consenso per la raccolta dei dati del connettore Adobe Commerce e Experience Platform è abilitato per impostazione predefinita. La rinuncia viene gestita tramite la funzione [`mg_dnt` cookie](https://docs.magento.com/user-guide/stores/cookie-reference.html). Puoi seguire i passaggi descritti qui se scegli di utilizzare `mg_dnt` per gestire il consenso. La [Documentazione di Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) dispone di diverse opzioni aggiuntive per gestire il consenso.
+Il consenso per la raccolta dei dati del connettore Adobe Commerce e Experience Platform è abilitato per impostazione predefinita. La rinuncia viene gestita tramite la funzione [`mg_dnt` cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html). Puoi seguire i passaggi descritti qui se scegli di utilizzare `mg_dnt` per gestire il consenso. La [Documentazione di Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) dispone di diverse opzioni aggiuntive per gestire il consenso.
 
 1. Crea un **Codice personalizzato core** elemento dati (`%do not track cookie%`) per `mg_dnt` cookie:
 
