@@ -2,10 +2,10 @@
 title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] Note sulla versione"'
 description: "Consulta le note sulla versione per informazioni su tutti [!DNL Store Fulfillment by Walmart Commerce Technologies] versioni."
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 9ce6a5443a930d616eeceeb1f9883cfb5496bc3a
+source-git-commit: 8cc951721b43df393d58bd55338cf026261db752
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,8 @@ Queste note sulla versione descrivono la versione iniziale di [!DNL Store Fulfil
 ## v1.3.0
 
 *27 febbraio 2023*
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}<br>Adobe Commerce versioni 2.4.0 - 2.4.5
+
+[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
 
 Questa versione contiene il seguente aggiornamento:
 
@@ -29,7 +30,8 @@ Questa versione contiene il seguente aggiornamento:
 ## v1.2.0
 
 *27 settembre 2022*
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}<br>Adobe Commerce versioni 2.4.0 - 2.4.5
+
+[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
 
 Questa versione contiene il seguente aggiornamento:
 
@@ -39,7 +41,8 @@ Questa versione contiene il seguente aggiornamento:
 ## v1.1.0
 
 *15 luglio 2022*
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}<br>Adobe Commerce versioni 2.4.0 - 2.4.4
+
+[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
 
 Stabilità: Disponibilità generale
 
@@ -48,7 +51,8 @@ Stabilità: Disponibilità generale
 ## v1.0.0
 
 *4 marzo 2022*
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}<br>Adobe Commerce versioni 2.4.0 - 2.4.4
+
+[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
 
 Stabilità: Disponibilità generale
 
