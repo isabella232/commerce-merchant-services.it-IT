@@ -2,9 +2,9 @@
 title: Eventi
 description: Scopri quali dati acquisisce ogni evento.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
+source-git-commit: 8e5fb65363b2fa39f44da86d7ba0cc5459b18768
 workflow-type: tm+mt
-source-wordcount: '4039'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -338,7 +338,7 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | Campo | Descrizione |
 |---|---|
 | `searchRequest` | Indica se è stata inviata una richiesta di ricerca |
-| `uniqueIdentifier` | ID univoco per questa particolare richiesta di ricerca |
+| `id` | ID univoco per questa particolare richiesta di ricerca |
 | `filter` | Indica se sono stati applicati filtri per limitare i risultati della ricerca |
 | `attribute` (filtro) | Facet di un elemento utilizzato per determinare se includerlo nei risultati della ricerca |
 | `value` | Valori degli attributi utilizzati per determinare quali elementi sono inclusi nei risultati di ricerca |
@@ -365,7 +365,7 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | Campo | Descrizione |
 |---|---|
 | `searchResponse` | Indica se è stata ricevuta una risposta di ricerca |
-| `uniqueIdentifier` | ID univoco per questa particolare risposta di ricerca |
+| `id` | ID univoco per questa particolare risposta di ricerca |
 | `suggestions` | Matrice di stringhe che includono i nomi dei prodotti e delle categorie presenti nel catalogo simili alla query di ricerca |
 | `numberOfResults` | Numero di prodotti restituiti |
 | `productListItems` | Una serie di prodotti nel carrello. |
@@ -391,8 +391,10 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
 | Campo | Descrizione |
 |---|---|
-| `requisitionListOpens` | Un valore di `1` indica che è stato aperto un elenco di richieste di acquisto |
-| `requisitionList` | Include un `ID` , `name`e `description` per l&#39;elenco delle richieste di acquisto |
+| `requisitionList` | Proprietà dell&#39;elenco delle richieste di acquisto creato dal cliente |
+| `ID` | Identificatore univoco dell&#39;elenco richieste di acquisto |
+| `name` | Nome dell&#39;elenco di richieste di acquisto specificato dal cliente |
+| `description` | Descrizione dell&#39;elenco di richieste di acquisto specificato dal cliente |
 
 ### addToRichiesteList
 
@@ -410,8 +412,10 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
 | Campo | Descrizione |
 |---|---|
-| `requisitionListAdds` | Un valore di `1` indica che un prodotto è stato aggiunto all&#39;elenco delle richieste di acquisto |
-| `requisitionList` | Include un `ID`,  `name`e `description` per l&#39;elenco delle richieste di acquisto |
+| `requisitionList` | Proprietà dell&#39;elenco delle richieste di acquisto creato dal cliente |
+| `ID` | Identificatore univoco dell&#39;elenco richieste di acquisto |
+| `name` | Nome dell&#39;elenco di richieste di acquisto specificato dal cliente |
+| `description` | Descrizione dell&#39;elenco di richieste di acquisto specificato dal cliente |
 | `productListItems` | Matrice di prodotti aggiunti all&#39;elenco delle richieste di acquisto |
 | `name` | Nome visualizzato o nome leggibile del prodotto |
 | `SKU` | Unità di conservazione delle scorte. Identificatore univoco per il prodotto. |
@@ -419,6 +423,7 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 | `priceTotal` | Prezzo totale dell&#39;articolo della linea di prodotti |
 | `discountAmount` | Indica l&#39;importo dello sconto applicato |
 | `currencyCode` | La [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) codice valuta utilizzato per questo elemento di pagamento |
+| `selectedOptions` | Campo utilizzato per un prodotto configurabile. `attribute` identifica un attributo del prodotto configurabile, ad esempio `size` o `color` e `value` identifica il valore dell&#39;attributo, ad esempio `small` o `black`. |
 
 ### removeFromRequestList
 
@@ -432,8 +437,10 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
 | Campo | Descrizione |
 |---|---|
-| `requisitionListRemovals` | Un valore di `1` indica che un prodotto è stato rimosso dall&#39;elenco delle richieste di acquisto |
-| `requisitionList` | Include un `ID`e `description` per l&#39;elenco delle richieste di acquisto |
+| `requisitionList` | Proprietà dell&#39;elenco delle richieste di acquisto creato dal cliente |
+| `ID` | Identificatore univoco dell&#39;elenco richieste di acquisto |
+| `name` | Nome dell&#39;elenco di richieste di acquisto specificato dal cliente |
+| `description` | Descrizione dell&#39;elenco di richieste di acquisto specificato dal cliente |
 | `productListItems` | Matrice di prodotti aggiunti all&#39;elenco delle richieste di acquisto |
 | `name` | Nome visualizzato o nome leggibile del prodotto |
 | `SKU` | Unità di conservazione delle scorte. Identificatore univoco per il prodotto. |
