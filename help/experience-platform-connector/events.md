@@ -2,9 +2,9 @@
 title: Eventi
 description: Scopri quali dati acquisisce ogni evento.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: e31c550416d29f7733c7da7f8895749487965e5d
+source-git-commit: ddacfc053f83be750c63ba376519169b38f7f478
 workflow-type: tm+mt
-source-wordcount: '4592'
+source-wordcount: '4596'
 ht-degree: 0%
 
 ---
@@ -236,10 +236,11 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
 | Campo | Descrizione |
 |---|---|
-| `eventType` | Il tipo di evento principale per questo record della serie temporale, ad esempio: `userAccount.login` |
 | `person` | Un singolo attore, contatto o proprietario |
 | `accountID` | Acquisisce l’ID dell’account utente |
-| `personalEmailID` | Specifica l’identificatore univoco dell’e-mail personale. |
+| `accountType` | Acquisisce il tipo di account utente, ad esempio `Personal` o `Company`se del caso |
+| `personalEmailID` | L&#39;indirizzo tecnico, ad esempio `name@domain.com` come comunemente definito nella RFC2822 e negli standard successivi |
+| `personalEmail` | Acquisisce i dati di contatto - un&#39;e-mail e le informazioni associate |
 | `address` | L&#39;indirizzo tecnico, ad esempio `name@domain.com` come comunemente definito nella RFC2822 e negli standard successivi |
 | `userAccount` | Indica eventuali dettagli fedeltà, preferenze, processi di accesso e altre preferenze dell’account |
 | `login` | Indica se un visitatore ha tentato l&#39;accesso |
@@ -260,7 +261,6 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
 | Campo | Descrizione |
 |---|---|
-| `eventType` | Il tipo di evento principale per questo record della serie temporale, ad esempio: `userAccount.logout` |
 | `userAccount` | Indica eventuali dettagli fedeltà, preferenze, processi di accesso e altre preferenze dell’account |
 | `logout` | Indica se un visitatore ha tentato di disconnettersi |
 
@@ -280,11 +280,11 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
 | Campo | Descrizione |
 |---|---|
-| `eventType` | Il tipo di evento principale per questo record della serie temporale, ad esempio: `account.createProfile` |
 | `person` | Un singolo attore, contatto o proprietario |
 | `accountID` | Acquisisce l’ID dell’account utente |
 | `accountType` | Acquisisce il tipo di account utente, ad esempio `Personal` o `Company`se del caso |
-| `personalEmailID` | Specifica l’identificatore univoco dell’e-mail personale. |
+| `personalEmailID` | L&#39;indirizzo tecnico, ad esempio `name@domain.com` come comunemente definito nella RFC2822 e negli standard successivi |
+| `personalEmail` | Acquisisce i dati di contatto - un&#39;e-mail e le informazioni associate |
 | `address` | L&#39;indirizzo tecnico, ad esempio `name@domain.com` come comunemente definito nella RFC2822 e negli standard successivi |
 | `userAccount` | Indica eventuali dettagli fedeltà, preferenze, processi di accesso e altre preferenze dell’account |
 | `createProfile` | Indica se un utente ha creato un profilo di account |
@@ -305,12 +305,11 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
 | Campo | Descrizione |
 |---|---|
-| `eventType` | Il tipo di evento principale per questo record della serie temporale, ad esempio: `account.updateProfile` |
 | `person` | Un singolo attore, contatto o proprietario |
 | `accountID` | Acquisisce l’ID dell’account utente |
 | `accountType` | Acquisisce il tipo di account utente, ad esempio `Personal` o `Company`se del caso |
-| `personalEmailID` | Specifica l’identificatore univoco dell’e-mail personale. |
-| `personalEmail` | Specifica l&#39;indirizzo e-mail personale |
+| `personalEmailID` | L&#39;indirizzo tecnico, ad esempio `name@domain.com` come comunemente definito nella RFC2822 e negli standard successivi |
+| `personalEmail` | Acquisisce i dati di contatto - un&#39;e-mail e le informazioni associate |
 | `address` | L&#39;indirizzo tecnico, ad esempio `name@domain.com` come comunemente definito nella RFC2822 e negli standard successivi |
 | `userAccount` | Indica eventuali dettagli fedeltà, preferenze, processi di accesso e altre preferenze dell’account |
 | `updateProfile` | Indica se un utente ha aggiornato il proprio profilo account |
