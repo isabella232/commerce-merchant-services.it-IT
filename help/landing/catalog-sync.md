@@ -2,9 +2,9 @@
 title: Sincronizzazione catalogo
 description: Scopri come esportare i dati dei prodotti dal [!DNL Commerce] server a [!DNL Commerce Services] mantenere costantemente aggiornati i servizi.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
+source-git-commit: 3931a8c2e19f0024017682b029451bf1670d94b1
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,7 @@ Se è necessario avviare una risincronizzazione del catalogo prima che si verifi
 1. In _Risincronizzazione dei dati_ sezione, fai clic su [!UICONTROL Resync].
 
    [!DNL Commerce] sincronizza il catalogo durante la prossima finestra di sincronizzazione pianificata. A seconda delle dimensioni del catalogo, questa operazione può richiedere molto tempo.
+
 
 ## Prodotti di catalogo sincronizzati
 
@@ -132,6 +133,14 @@ Il nome del feed può essere uno dei seguenti:
 - `productoverrides`— Regole di determinazione dei prezzi e visibilità del catalogo specifiche per i clienti, ad esempio quelle basate sulle autorizzazioni per le categorie
 
 Quando si attiva una risincronizzazione dei dati dalla riga di comando, l’aggiornamento dei dati potrebbe richiedere fino a un’ora.
+
+Se utilizzi [Indicizzazione dei prezzi SaaS](../price-index/index.md) e per eseguire nuovamente la sincronizzazione, esegui il seguente comando:
+
+```bash
+bin/magento saas:resync --feed=scopesCustomerGroup
+bin/magento saas:resync --feed=scopesWebsite
+bin/magento saas:resync --feed=prices
+```
 
 ### Esempi
 
