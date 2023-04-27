@@ -2,16 +2,18 @@
 title: '''[!DNL Catalog Service] Note sulla versione"'
 description: Informazioni aggiornate sulla versione di [!DNL Catalog Service] per Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: f310f840e286859070002ab0e23eda3787c89f36
+source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service] Note sulla versione
 
-Queste note sulla versione descrivono le versioni più recenti di [!DNL Catalog Service] e comprendono:
+Queste note sulla versione descrivono le versioni più recenti di [!DNL Catalog Service].
+Viene fornito il supporto per la versione principale corrente rilasciata. Per riferimento, sono disponibili note sulla versione per le versioni precedenti.
+Gli aggiornamenti includono:
 
 ![Nuovo](../assets/new.svg) Nuove funzioni
 ![Correzione](../assets/fix.svg) Correzioni e miglioramenti
