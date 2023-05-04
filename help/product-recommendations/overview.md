@@ -2,9 +2,9 @@
 title: Introduzione a [!DNL Product Recommendations]
 description: '''[!DNL Product Recommendations] sono un potente strumento di marketing che puoi utilizzare per aumentare le conversioni, incrementare i ricavi e stimolare l''impegno degli acquirenti."'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 5359c737cc90135ab0db5c32aebcb0bb131d3671
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,11 @@ I consigli sui prodotti sono un potente strumento di marketing che puoi utilizza
 
 I consigli sui prodotti vengono visualizzati nella vetrina come unità con etichette, ad esempio &quot;I clienti che hanno visualizzato questo prodotto hanno visualizzato anche&quot;. Puoi creare, gestire e distribuire consigli nelle viste Store direttamente dall&#39;amministratore di Adobe Commerce.
 
+Se la vetrina è implementata utilizzando PWA Studi, consulta [Documentazione di PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Se utilizzi una tecnologia front-end personalizzata come React o Vue JS, scopri come [integrare](headless.md) [!DNL Product Recommendations] nella tua vetrina senza testa.
+
 >[!NOTE]
 >
-> Se la vetrina è implementata utilizzando PWA Studi, consulta [Documentazione di PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Se utilizzi una tecnologia front-end personalizzata come React o Vue JS, scopri come [integrare](headless.md) [!DNL Product Recommendations] nella tua vetrina senza testa.
+>Esistono diversi modi per sviluppare un’implementazione headless o personalizzata. Questa guida descrive un modo per farlo, utilizzando PWA Studi. Non copre tutti gli scenari o le eventualità.
 
 ## Privacy
 
@@ -30,7 +32,7 @@ Considerate le complessità sempre mutevoli dello shopping online, quello che fu
 I consigli sui prodotti consentono di:
 
 - Scegli tra nove tipi di consigli intelligenti distinti in base alle seguenti aree: basato su articoli, basato su popolarità, tendenze e similarità
-- Utilizza i dati comportamentali per personalizzare i consigli in tutto il percorso di vetrina dell’acquirente
+- Utilizza i dati comportamentali per personalizzare i consigli in tutto il percorso della vetrina dell’acquirente
 - Misura le metriche chiave rilevanti per ogni raccomandazione per comprendere l’impatto delle raccomandazioni
 
 ## [!DNL Product Recommendations] demo

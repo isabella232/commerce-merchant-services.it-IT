@@ -2,9 +2,9 @@
 title: Senza testa
 description: Scopri come integrare [!DNL Product Recommendations] in una vetrina senza testa.
 exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: 521ea4fc2cce809fc12d3958e37089f3e34e1068
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,13 @@ ht-degree: 0%
 
 È possibile integrare [!DNL Product Recommendations] in una vetrina headless utilizzando [PWA Studi](https://developer.adobe.com/commerce/pwa-studio/) o una tecnologia front-end personalizzata, ad esempio React o Vue JS.
 
+Gli integratori personalizzati e headless devono fare riferimento a queste istruzioni Luma e PWA come implementazione consigliata. Esistono diversi modi per implementare Product Recommendations in soluzioni headless e questa documentazione non copre tutti gli scenari. Gli integratori devono occuparsi di eventi, progettazione e test per le loro implementazioni.
+
 [!DNL Product Recommendations] richiedere [dati comportamentali e di catalogo](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html) funzionare. Il processo di sincronizzazione dei dati del catalogo rimane invariato in un’implementazione headless, ma sono necessarie modifiche per la raccolta dei dati comportamentali.
+
+>[!NOTE]
+>
+>Le istanze headless devono implementare eventi per alimentare il dashboard di Product Recommendations.
 
 Per integrare [!DNL Product Recommendations] in una vetrina senza testa, devi:
 

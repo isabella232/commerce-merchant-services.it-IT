@@ -2,9 +2,9 @@
 title: Raccogliere dati
 description: Scopri come gli eventi raccolgono i dati per i consigli sui prodotti.
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,13 @@ La [Raccoglitore eventi Adobe Commerce Storefront](https://developer.adobe.com/c
 
 Se la vetrina è implementata con PWA Studi, consulta [Documentazione di PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Se utilizzi una tecnologia front-end personalizzata come React o Vue JS, consulta la guida utente per scoprire come integrare Product Recommendations in una [senza testa](headless.md) ambiente.
 
+## Avvertenze
+
 Gli Ad Blocker e le impostazioni di privacy possono impedire `magento/product-recommendations` modulo dall&#39;acquisizione di eventi e potrebbe causare coinvolgimento e ricavi [metriche](workspace.md) da non segnalare.
+
+Eventing non acquisisce tutte le transazioni che avvengono sul sito del commerciante. L&#39;evento ha lo scopo di dare al commerciante un&#39;idea generale degli eventi che stanno accadendo sul sito.
+
+Le implementazioni headless devono implementare eventi per alimentare il dashboard di Product Recommendations.
 
 >[!NOTE]
 >
