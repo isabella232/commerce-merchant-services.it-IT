@@ -4,9 +4,9 @@ description: Utilizzo dell’indicizzazione dei prezzi SaaS per migliorare le pr
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 7b2d90eb809eada732ed5d3ad4e038bd9733c440
+source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
 ```
 
-I clienti che utilizzano Luma e Adobe Commerce Core GraphQL possono installare un modulo che fornisce compatibilità Luma e disabilita l’indicizzatore del prezzo di base PHP:
+I clienti che utilizzano Luma e Adobe Commerce Core GraphQL possono installare un modulo che fornisce compatibilità con Luma e Core GraphQL e disabilita l’indicizzatore del prezzo di base PHP:
 
 ```
 adobe-commerce/catalog-adapter
@@ -67,17 +67,7 @@ L&#39;indicizzatore del prezzo di base PHP può essere riabilitato se necessario
 A seconda di fattori come i tipi di prodotto, la complessità dei prezzi e la dimensione del catalogo, l&#39;indicizzazione dei prezzi SaaS può essere la soluzione giusta per il vostro negozio. Leggi le seguenti limitazioni e stabilisci se si tratta di una buona soluzione per il tuo sito.
 
 Attualmente, l&#39;indicizzazione dei prezzi SaaS supporta i tipi di prodotto Semplici, Raggruppati, Virtuali, Configurabili e Bundle Dynamic.
-Il supporto per i tipi di prodotti Scaricabili, Carte regalo e Bundle Fisso sarà presto disponibile.
-
-L&#39;indicizzazione dei prezzi SaaS supporta i prezzi base:
-
-* Prezzo normale min/max
-* Prezzo finale min/max
-* Prezzi speciali
-* Prezzi del gruppo di clienti
-* Prezzi delle regole del catalogo
-
-Una volta scelto di utilizzare il nuovo feed di prezzo, è possibile contattare [Supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) per annullare l&#39;operazione.
+Il supporto per i tipi di prodotti Scaricabili, Carte regalo e Bundle Fisso sarà presto disponibile.s
 
 I nuovi feed devono essere sincronizzati manualmente con il `resync` [Comando CLI](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). In caso contrario, i dati vengono aggiornati nel processo di sincronizzazione standard. Ulteriori informazioni sulle [Sincronizzazione catalogo](../landing/catalog-sync.md) processo.
 
