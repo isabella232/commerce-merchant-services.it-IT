@@ -2,9 +2,9 @@
 title: Dati comportamentali
 description: Scopri i dati comportamentali e quando puoi iniziare a usarli.
 exl-id: d68a97b9-1497-4603-a72c-4aaaf6e048cb
-source-git-commit: 371ae21c97021912279381b5e32f953fe3b4f0dd
+source-git-commit: 840b091638aedd3f6ac097a010d035eff997ffe2
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -33,11 +33,14 @@ Altre variabili che possono influire sul tempo necessario alla formazione:
 
 - Un volume di traffico più elevato contribuisce a un apprendimento più rapido
 - Alcuni tipi di consigli si allenano più velocemente di altri
-- Adobe Commerce ricalcola i dati comportamentali ogni quattro ore. Anche se è possibile distribuire tecnicamente le unità di raccomandazione in quel momento, è importante sapere che le raccomandazioni diventano più precise più a lungo vengono utilizzate sul sito.
+- Adobe Commerce ricalcola i dati comportamentali ogni quattro ore. Recommendations diventa più preciso per quanto tempo vengono utilizzati sul sito.
 
 Per visualizzare l&#39;avanzamento del training di ciascun tipo di raccomandazione, l&#39; [creare un consiglio](create.md) In questa pagina vengono visualizzati gli indicatori di preparazione.
 
 Mentre i dati vengono raccolti sui modelli di produzione e apprendimento automatico vengono addestrati, è possibile implementare [altre attività](implementation-workflow.md) necessario per distribuire consigli alla vetrina. Al termine dei test e della configurazione dei consigli, i modelli di apprendimento automatico hanno raccolto e calcolato dati sufficienti per generare consigli rilevanti, consentendo così di distribuire i consigli sulla vetrina.
+
+Se il traffico (visualizzazioni, prodotti acquistati, tendenze) per la maggior parte degli SKU è insufficiente, potrebbero non essere disponibili dati sufficienti per completare il processo di apprendimento. Questo potrebbe causare l’aspetto dell’indicatore di preparazione nell’amministratore come se fosse bloccato.
+Gli indicatori di preparazione hanno lo scopo di fornire ai commercianti un altro punto dati nella scelta del tipo di raccomandazioni migliore per il loro archivio. I numeri sono una guida e potrebbero non raggiungere mai il 100%.
 
 ## Raccomandazioni di backup {#backuprecs}
 
