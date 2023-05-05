@@ -2,9 +2,9 @@
 title: Onboarding
 description: Scopri i requisiti e le piattaforme supportate in [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
+source-git-commit: 209bdf9c69ff81481d6df7cb8e8832deef13c9f4
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -43,3 +43,7 @@ I clienti delle raccomandazioni sui prodotti possono utilizzare [Indicizzazione 
 ### Supporto B2B {#b2bsupport}
 
 Le vetrine B2B spesso richiedono una logica complessa che determina la visibilità del prodotto e i prezzi per ogni acquirente o gruppo di clienti. [!DNL Product Recommendations] now [supporto](release-notes.md) questa funzionalità onorando [autorizzazioni categoria](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [cataloghi condivisi](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html)e [determinazione dei prezzi per gruppi di clienti](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). Ad esempio, se hai nascosto alcune categorie dal segmento di clienti al dettaglio, a un acquirente in quel segmento non verranno mostrati consigli per i prodotti in quelle categorie. Inoltre, quando definisci un catalogo condiviso per specifici gruppi di clienti e aziende, questi acquirenti visualizzano i consigli solo per i prodotti a cui possono accedere. Tutti i prodotti consigliati riflettono il prezzo corretto specifico per il gruppo di clienti in base al gruppo di clienti di ciascun acquirente.
+
+>[!NOTE]
+>
+>I commercianti possono personalizzare ed estendere widget o elementi di vetrina utilizzando [Servizio catalogo](../catalog-service/overview.md) API di Storefront, ma qualsiasi personalizzazione non rientra nell’ambito del team di supporto di Adobe.

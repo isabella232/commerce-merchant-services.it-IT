@@ -4,9 +4,9 @@ description: Utilizzo dell’indicizzazione dei prezzi SaaS per migliorare le pr
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
+source-git-commit: 209bdf9c69ff81481d6df7cb8e8832deef13c9f4
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,14 @@ ht-degree: 0%
 L&#39;indicizzazione dei prezzi SaaS accelera il tempo necessario affinché le modifiche dei prezzi si riflettano sul sito web di un cliente SaaS dopo che sono state inviate. Questo modulo opzionale consente ai commercianti con cataloghi grandi e complessi o con più siti web o gruppi di clienti di elaborare le modifiche dei prezzi in modo più rapido e continuo.
 
 Il più grande collo di bottiglia del gasdotto: processi pesanti di elaborazione, come l&#39;indicizzazione e il calcolo dei prezzi, sono stati spostati dal nucleo PHP all&#39;infrastruttura Cloud di Adobe. Questo consente ai commercianti di aumentare rapidamente le risorse per aumentare i tempi di indicizzazione dei prezzi e riflettere le modifiche ai siti web a velocità molto più elevate.
+
+Il flusso di dati di indicizzazione core per i servizi SaaS si presenta così:
+
+![Flusso di dati predefinito](assets/old_way.png)
+
+Con l&#39;indicizzazione dei prezzi SaaS, il flusso è:
+
+![Flusso di dati di indicizzazione dei prezzi SaaS](assets/new_way.png)
 
 Tutti i commercianti che soddisfano i requisiti possono trarre vantaggio da questi miglioramenti, ma quelli che vedranno i maggiori vantaggi sono i clienti con:
 
