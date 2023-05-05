@@ -2,7 +2,7 @@
 title: Panoramica della guida
 description: Scopri come integrare i dati di Adobe Commerce con Adobe Experience Platform utilizzando il connettore di Experience Platform.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 22823b662eefa953fcca6ae78f6c37ee8abff3d1
+source-git-commit: 0d5bbe7d4e2070173930df66c4f159d65c7383ea
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -31,11 +31,12 @@ Per utilizzare il connettore di Experience Platform, è necessario disporre dei 
 ## Passaggi di onboarding
 
 1. [Installa](install.md) estensione del connettore di Experience Platform.
-1. [Accedere](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) al tuo account Adobe e [visualizzare](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255) l&#39;ID organizzazione. L&#39;ID organizzazione è l&#39;ID associato all&#39;azienda con provisioning di Experience Cloud. Questo ID è una stringa alfanumerica composta da 24 caratteri, seguita da (e deve includere) `@AdobeOrg`.
-1. [Connetti](connect-data.md) la tua istanza di Adobe Commerce in Adobe Experience Platform.
+1. [Accedere](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) al tuo account Adobe e [visualizza conferma](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255) l&#39;ID organizzazione. L&#39;ID organizzazione è l&#39;ID associato all&#39;azienda con provisioning di Experience Cloud. Questo ID è una stringa alfanumerica composta da 24 caratteri, seguita da (e deve includere) `@AdobeOrg`.
 1. [Crea o aggiorna](update-xdm.md) schema XDM con gruppi di campi specifici per Commerce.
-1. [Creare un set di dati](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) in base allo schema creato o aggiornato.
+1. [Creare un set di dati](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) in base allo schema creato o aggiornato. Questo set di dati conterrà i dati Commerce inviati.
 1. [Creare un datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) e selezionare lo schema XDM che contiene i gruppi di campi specifici per Commerce.
+1. [Connessione a Commerce Services](../landing/saas.md).
+1. [Connessione a Adobe Experience Platform](connect-data.md).
 
 ## Pubblico
 
