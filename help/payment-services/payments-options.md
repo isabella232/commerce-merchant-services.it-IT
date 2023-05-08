@@ -2,9 +2,9 @@
 title: Opzioni di pagamento
 description: Impostare le opzioni di pagamento per personalizzare i metodi disponibili per i clienti del negozio.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: fac3efb74cdfdb855a3706d84cdca2dcde959940
+source-git-commit: 9bc392f2ae12269ded6174b830562444d6827f5f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1041'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ La [!DNL Apple Pay] è visibile dalla pagina del prodotto, dal mini-carrello, da
 
 >[!NOTE]
 >
-> Per utilizzare Apple Pay, contatta il tuo rappresentante commerciale o il team dell&#39;account Adobe per abilitarlo per i tuoi negozi live.
+> Per utilizzare [!DNL Apple Pay] per i tuoi negozi, completa [autoregistrazione con [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Registrati il tuo dominio live_ solo sezione) e [configuralo per i tuoi store in [!DNL Payment Services]](settings.md#payment-buttons).
 
 ### [!DNL Pay Later] pulsante
 
