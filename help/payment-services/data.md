@@ -1,6 +1,6 @@
 ---
 title: Dati disponibili
-description: Utilizza i dati di reporting finanziario per riconciliare il reporting con i sistemi non Commerce.
+description: Utilizza i dati dei rapporti finanziari per riconciliare i rapporti con sistemi non commerciali.
 role: User
 level: Intermediate
 exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # Dati disponibili
 
-Sono disponibili alcuni dati sugli ordini e sui pagamenti in modo da poter coordinare il reporting finanziario di Adobe Commerce tra sistemi esterni.
+Alcuni dati di ordini e pagamenti sono disponibili per consentire di coordinare Adobe Commerce Financial Reporting tra sistemi esterni.
 
-## Riconciliare con il sistema ERP
+## Riconciliazione con il sistema ERP
 
-È possibile riconciliare il reporting finanziario di Adobe Commerce con il sistema ERP (Enterprise Resource Planning) non di Adobe utilizzando l&#39;ID incrementale associato a un ordine specifico.
+È possibile eseguire la quadratura di Adobe Commerce Financial Reporting con il sistema ERP (Enterprise Resource Planning) non Adobe utilizzando l&#39;ID incremento associato a un ordine specifico.
 
-Quando Payment Services invia l&#39;ordine Commerce a PayPal, l&#39;ID incrementale viene incluso come `custom_id` _e_ in `invoice_id` (che contiene anche una stringa casuale dopo la `increment_id`).
+Quando Payment Services invia l&#39;ordine Commerce a PayPal, l&#39;ID di incremento viene incluso come `custom_id` _e_ nel `invoice_id` (che contiene anche una stringa casuale dopo il `increment_id`).
 
-Gli ID sono facilmente accessibili sia nel dettaglio dell&#39;attività commerciale per un pagamento sia nel webhook di PayPal.
+Gli ID sono facilmente accessibili sia nei dettagli dell&#39;attività esercente per un pagamento che nel webhook PayPal.
 
-La `invoice_id` e `custom_id` sono visualizzati nella parte inferiore del dettaglio dell&#39;attività del commerciante per un pagamento:
+Il `invoice_id` e `custom_id` sono visualizzati nella parte inferiore dei dettagli dell&#39;attività esercente per una vincita:
 
-![`custom_id` nel dettaglio dell&#39;attività commerciale](assets/merchant-activity-ids.png)
+![`custom_id` nei dettagli dell’attività di esercente](assets/merchant-activity-ids.png)
 
-`custom_id` e `invoice_id` nei dettagli del webhook di PayPal:
+`custom_id` e `invoice_id` nei dettagli nel webhook di PayPal:
 
 ```json
    ...
@@ -78,5 +78,5 @@ La `invoice_id` e `custom_id` sono visualizzati nella parte inferiore del dettag
 
 Per ulteriori informazioni, consulta la documentazione sulle API REST di PayPal:
 
-* [`purchase_unit`, in cui `custom_id` e `invoice_id` risiedere](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit:~:text=Read%20only.-,purchase_unit,-Collapse)
+* [`purchase_unit`, in cui `custom_id` e `invoice_id` risiedere](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit:~:text=Read%20only.-,purchase_unit,-Comprimi)
 * [Mostra dettagli ordine](https://developer.paypal.com/docs/api/orders/v2/#orders_get)

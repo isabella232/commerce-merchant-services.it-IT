@@ -1,6 +1,6 @@
 ---
 title: "[!DNL Storefront Popover]"
-description: "Il [!DNL Live Search storefront popover] restituisce dinamicamente prodotti e miniature consigliati."
+description: "Il [!DNL Live Search storefront popover] restituisce dinamicamente prodotti e miniature suggeriti."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
 source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
 workflow-type: tm+mt
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 # [!DNL Storefront Popover]
 
-Quando [!DNL Live Search] è [installato](install.md), [!DNL popover] appare nella vetrina quando i consumatori digitano nel [Ricerca](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) scatola. Per ogni carattere digitato, il [!DNL popover] viene aggiornato con prodotti consigliati e immagini in miniatura dei risultati di ricerca principali.
+Quando [!DNL Live Search] è [installato](install.md), a [!DNL popover] viene visualizzato nella vetrina quando gli acquirenti digitano nella [Ricerca](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) casella. Con ogni carattere digitato, il [!DNL popover] viene aggiornato con i prodotti consigliati e le miniature dei risultati di ricerca principali.
 
-[!DNL Live Search] restituisce risultati per una query di due caratteri o più. Per una corrispondenza parziale, il numero massimo di caratteri per parola è 20. Il numero di caratteri in una query &quot;search as you type&quot; non è configurabile.
+[!DNL Live Search] restituisce risultati per una query di due o più caratteri. Per una corrispondenza parziale, il numero massimo di caratteri per parola è 20. Il numero di caratteri in una query di ricerca durante la digitazione non è configurabile.
 
 ## Attributi ricercabili
 
-Per produrre risultati altamente mirati, controlla l&#39;insieme di [ricercabile](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`) gli attributi del prodotto. Per garantire la pertinenza, rendere gli attributi ricercabili solo se contengono contenuto che ha un significato chiaro e conciso. Evita di utilizzare attributi che contengono testo meno preciso e lungo, come `description`, che sebbene sia abilitata per impostazione predefinita per la ricerca, può ridurre la precisione dei risultati della ricerca. Ad esempio, se una persona cerca &quot;pantaloncini&quot; e ci sono camicie con una descrizione che include il termine &quot;maniche corte&quot;, le camicie saranno incluse nei risultati della ricerca.
+Per produrre risultati altamente mirati, rivedi l’insieme di [ricercabile](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`) attributi del prodotto. Per garantire la rilevanza, rendi gli attributi ricercabili solo se contengono contenuto con un significato chiaro e conciso. Evita di utilizzare attributi che contengono testo meno preciso e lungo, ad esempio `description`, anche se la ricerca è abilitata per impostazione predefinita, può ridurre la precisione dei risultati di ricerca. Ad esempio, se una persona cerca i &quot;pantaloncini corti&quot; e ci sono camicie con una descrizione che include il termine &quot;maniche corte&quot;, allora le camicie saranno incluse nei risultati della ricerca.
 
 È sempre possibile cercare i seguenti attributi:
 
@@ -29,19 +29,19 @@ Per produrre risultati altamente mirati, controlla l&#39;insieme di [ricercabile
 
 ## [!DNL Popover] dimensioni pagina
 
-Dimensioni della pagina [!DNL popover] determina quante righe di prodotti con completamento automatico possono essere restituite. In precedenza, le dimensioni della pagina venivano codificate in sei righe. Tuttavia, `page_size` ora è un&#39;impostazione che può essere configurata dal *Amministratore*. Durante l&#39;installazione di Live Search, il `page_size` il valore cambia nel valore corrente del [Ricerca nel catalogo](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html) - `Autocomplete Limit` impostazione.
+Dimensione della pagina del [!DNL popover] determina quante righe di prodotti completati automaticamente possono essere restituite. In precedenza, la dimensione della pagina era hardcoded in sei righe. Tuttavia, il `page_size` è ora un&#39;impostazione che può essere configurata dal *Amministratore*. Durante l’installazione di Live Search, il `page_size` il valore cambia rispetto al valore corrente del [Ricerca nel catalogo](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html) - `Autocomplete Limit` impostazione.
 
-Per impostazione predefinita, il valore Ricerca nel catalogo - Limite di completamento automatico è impostato su otto righe. Per modificare le dimensioni della pagina [!DNL popover], procedi come segue:
+Per impostazione predefinita, il valore Ricerca nel catalogo - Limite completamento automatico è impostato su otto righe. Per modificare le dimensioni della pagina [!DNL popover], eseguire le operazioni seguenti:
 
-1. Sulla *Amministratore* barra laterale, vai a **Negozi** > Impostazioni > **Configurazione**.
-1. Nel pannello a sinistra, espandi **Catalogo** e scegli **Catalogo** dall’elenco delle impostazioni.
-1. Espandi la *Ricerca nel catalogo* sezione .
-1. Imposta la **Limite completamento automatico** al numero di righe che desideri consentire nel [!DNL popover].
+1. Il giorno *Amministratore* barra laterale, vai a **Negozi** > Impostazioni > **Configurazione**.
+1. Nel pannello a sinistra, espandi **Catalogo** e scegli **Catalogo** dall&#39;elenco delle impostazioni.
+1. Espandi *Ricerca nel catalogo* sezione.
+1. Imposta il **Limite completamento automatico** al numero di righe che si desidera consentire nel [!DNL popover].
 1. Al termine, fai clic su **Salva configurazione**.
 
 ## Limitazioni
 
-* La [!DNL Live Search] [!DNL storefront popover] è disponibile solo per i negozi che utilizzano *Luma* tema o un tema personalizzato basato su *Luma*.
-* La [!DNL popover] non supporta la *Vuoto* tema. Vedi [Stile [!DNL Popover] Elementi](storefront-popover-styling.md) per saperne di più.
-* La [!DNL popover] non è supportato nel modulo Ordine rapido.
-* I commercianti possono personalizzare ed estendere widget o elementi di vetrina (ad esempio: integrazione dei campioni colore nei risultati di Live Search) tramite l’ [Servizio catalogo](../catalog-service/overview.md) API di Storefront, ma questo non rientra nell’ambito del team di supporto di Adobe.
+* Il [!DNL Live Search] [!DNL storefront popover] è disponibile solo per i negozi che utilizzano *Luma* tema o un tema personalizzato basato su *Luma*.
+* Il [!DNL popover] non supporta *Vuoto* tema. Consulta [Stile [!DNL Popover] Elementi](storefront-popover-styling.md) per ulteriori informazioni.
+* Il [!DNL popover] non è supportato nel modulo Ordine rapido.
+* I commercianti possono personalizzare ed estendere i widget o gli elementi della vetrina (ad esempio: integrazione di campioni di colore nei risultati di Live Search) utilizzando [Servizio catalogo](../catalog-service/overview.md) API Storefront, ma questo non rientra nell’ambito del team di supporto di Adobe.

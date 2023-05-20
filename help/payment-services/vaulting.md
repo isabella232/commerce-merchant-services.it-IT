@@ -1,6 +1,6 @@
 ---
 title: Vaulting con carta di credito
-description: Gli acquirenti possono archiviare (salvare) i dati della propria carta di credito per acquisti futuri.
+description: Gli acquirenti possono archiviare (salvare) i dati della carta di credito per acquisti futuri.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
@@ -11,37 +11,37 @@ ht-degree: 0%
 
 # Vaulting con carta di credito
 
-Convertire clienti una tantum in acquirenti fedeli con il vaulting della carta di credito. Gli acquirenti possono salvare le credenziali della propria carta di credito durante il pagamento per utilizzarle in un acquisto successivo per lo stesso, o per un altro, negozio all&#39;interno dello stesso account commerciale.
+Converti i clienti occasionali in acquirenti fedeli con il vaulting delle carte di credito. Gli acquirenti possono salvare, o &quot;vaultare&quot;, le credenziali della loro carta di credito durante il pagamento per utilizzarle in un acquisto successivo per lo stesso, o un altro, archiviare all&#39;interno dello stesso account esercente.
 
-![Archiviare la propria carta di credito per un uso successivo](assets/save-card-for-later.png)
+![Effettua il vaulting della carta di credito per un uso successivo](assets/save-card-for-later.png)
 
-Gli acquirenti utilizzano il token memorizzato per completare un checkout futuro con le informazioni sulla carta di credito salvate.
+Gli acquirenti utilizzano il token memorizzato per completare un pagamento futuro con le informazioni sulla carta di credito salvate.
 
-![Utilizzare le credenziali archiviate per un acquisto futuro](assets/use-stored-card.png)
+![Usa credenziali memorizzate per acquisti futuri](assets/use-stored-card.png)
 
-Inoltre possono facilmente cancellare le loro carte di credito evaulate da [Metodi di pagamento memorizzati](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) nel loro account personale.
+Possono anche eliminare facilmente le loro carte di credito archiviate da [Metodi di pagamento memorizzati](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) nel loro My Account.
 
 ![Metodi di pagamento memorizzati nel mio account](assets/stored-payment-methods.png)
 
 ## Abilita vaulting
 
-È possibile abilitare l&#39;archiviazione delle carte di credito per i clienti _e_ esercenti nell&#39;amministratore: per i tuoi negozi in [!DNL Payment Services] [Impostazioni](settings.md#card-vaulting).
+È possibile abilitare il vaulting della carta di credito per i clienti _e_ esercenti nell’Admin (Amministrazione), per i negozi in [!DNL Payment Services] [Impostazioni](settings.md#card-vaulting).
 
-## Utilizzare il vaulting nell&#39;amministratore
+## Utilizzare il vaulting in Amministrazione
 
-Se un cliente ha una carta di credito precedentemente attivata, un esercente può creare un ordine successivo per quel cliente nell&#39;Amministratore utilizzando i metodi di pagamento vagliati.
+Se un cliente dispone di una carta di credito precedentemente archiviata, un esercente può creare un ordine successivo per quel cliente nell&#39;Amministratore utilizzando i propri metodi di pagamento archiviati.
 
-È possibile utilizzare le schede con privilegi nell&#39;amministratore solo se il cliente dispone sia di un account esistente che di un token valido memorizzato nel sistema da un pagamento completato in precedenza.
+Puoi usare le carte ad archivio nell&#39;Amministratore solo se il cliente ha un account esistente e un token valido memorizzato nel sistema da un pagamento completato in precedenza.
 
-Per creare un ordine nell&#39;amministratore per un cliente utilizzando la sua carta di credito vaultata:
+Per creare un ordine nell’amministratore per un cliente utilizzando la sua carta di credito archiviata:
 
 1. [Creare un ordine e aggiungere prodotti](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html).
-1. In _[!UICONTROL Payment & Shipping Information]_, seleziona **[!UICONTROL Stored Cards]**come metodo di pagamento.
-1. Selezionare il metodo di pagamento con carta di credito desiderato.
-1. Dopo aver completato tutte le altre fasi necessarie per l&#39;ordine, [inviare](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
+1. In entrata _[!UICONTROL Payment & Shipping Information]_, seleziona **[!UICONTROL Stored Cards]**come metodo di pagamento.
+1. Seleziona il metodo di pagamento con carta di credito archiviata desiderato.
+1. Dopo aver completato tutti gli altri passaggi necessari per l&#39;ordine, [invia](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
 
-   ![Utilizza la carta di credito attivata in Amministratore per il cliente](assets/admin-vaultedcard.png)
+   ![Utilizza carta di credito in vaulting in Amministratore per cliente](assets/admin-vaultedcard.png)
 
 ## Sicurezza
 
-Le informazioni minime sulla carta di credito sono condivise con l&#39;acquirente; vedono solo le ultime quattro cifre, la data di scadenza e il marchio della loro carta di credito vaulted. Le informazioni sulla carta di credito sono memorizzate con il provider di pagamento per soddisfare [PCI](security.md#PCI-compliance) norme di conformità.
+Le informazioni minime sulla carta di credito vengono condivise con l&#39;acquirente, che visualizza solo le ultime quattro cifre, la data di scadenza e il marchio della carta di credito archiviata. Le informazioni sulla carta di credito vengono memorizzate presso il fornitore dei servizi di pagamento per soddisfare [PCI](security.md#PCI-compliance) gli standard di conformità.

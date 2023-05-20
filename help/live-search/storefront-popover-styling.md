@@ -1,17 +1,17 @@
 ---
 title: "Stile [!DNL Popover] Elementi"
-description: "Note tecniche sulla personalizzazione del [!DNL Live Search storefront popover]"
+description: "Note tecniche sulla personalizzazione di [!DNL Live Search storefront popover]"
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
 source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '203'
 ht-degree: 0%
 
 ---
 
 # Stile [!DNL Popover] Elementi
 
-La [[!DNL storefront popover]](storefront-popover.md) visualizza sempre il prodotto `name` e `price`e la selezione dei campi non è configurabile. Tuttavia, [!DNL popover] Gli elementi possono essere formattati utilizzando le classi CSS. Ad esempio, le dichiarazioni seguenti cambiano il colore di sfondo del [!DNL popover] contenitore e piè di pagina.
+Il [[!DNL storefront popover]](storefront-popover.md) visualizza sempre il prodotto `name` e `price`e la selezione dei campi non è configurabile. Tuttavia, [!DNL popover] Gli elementi possono essere formattati utilizzando le classi CSS. Ad esempio, le seguenti dichiarazioni modificano il colore di sfondo del [!DNL popover] contenitore e piè di pagina.
 
 ```css
 .livesearch.popover-container {
@@ -23,18 +23,18 @@ La [[!DNL storefront popover]](storefront-popover.md) visualizza sempre il prodo
 }
 ```
 
-## Visibilità dei contenitori
+## Visibilità contenitore
 
-Il componente principale del `.livesearch.popover-container` è `.search-autocomplete`.  La `.active` Classe indica la visibilità del contenitore. La `.active` viene aggiunta in modo condizionale quando la [!DNL popover] è aperto.
+Il componente principale del `.livesearch.popover-container` è `.search-autocomplete`.  Il `.active` La classe indica la visibilità del contenitore. Il `.active` viene aggiunta in modo condizionale quando [!DNL popover] è aperto.
 
 ```css
 .search-autocomplete.active   /* visible */
 .search-autocomplete          /* not visible */
 ```
 
-Per ulteriori informazioni sullo stile degli elementi della vetrina, consulta [Fogli di stile a cascata (CSS)](https://developer.adobe.com/commerce/frontend-core/guide/css/) in [Guida per gli sviluppatori di Frontend](https://developer.adobe.com/commerce/frontend-core/guide/).
+Per ulteriori informazioni sullo stile degli elementi della vetrina, consulta [Fogli di stile CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/) nel [Guida per gli sviluppatori di front-end](https://developer.adobe.com/commerce/frontend-core/guide/).
 
-## Selettori di classe
+## Selettori di classi
 
 I seguenti selettori di classe possono essere utilizzati per assegnare uno stile al contenitore e agli elementi di prodotto nel [!DNL popover].
 
@@ -45,25 +45,25 @@ I seguenti selettori di classe possono essere utilizzati per assegnare uno stile
 * `.livesearch.product-name`
 * `.livesearch.product-price`
 
-### Selettori classe contenitore
+### Selettori di classi contenitore
 
 #### .livesearch.popover-container
 
-![[!DNL Popover] container](assets/livesearch-popover-container.png)
+![[!DNL Popover] contenitore](assets/livesearch-popover-container.png)
 
 #### .livesearch.view-all-footer
 
 ![Visualizza tutto il piè di pagina](assets/livesearch-view-all-footer.png)
 
-### Selettori della classe di prodotto
+### Selettori di classi di prodotto
 
 #### .livesearch.products-container
 
-![Contenitore di prodotti](assets/livesearch-product-container.png)
+![Contenitore prodotto](assets/livesearch-product-container.png)
 
 #### .livesearch.product-result
 
-![Risultato del prodotto](assets/livesearch-product-result.png)
+![Risultato prodotto](assets/livesearch-product-result.png)
 
 #### .livesearch.product-name
 
@@ -75,7 +75,7 @@ I seguenti selettori di classe possono essere utilizzati per assegnare uno stile
 
 ## Utilizzo di un tema modificato {#working-with-modified-theme}
 
-La [!DNL storefront popover] può essere utilizzato con un [tema](https://developer.adobe.com/commerce/frontend-core/guide/themes/) che eredita i file richiesti da *Luma*. La `top.search` bloccare `header-wrapper` del `Magento_Search` Impossibile modificare il modulo.
+Il [!DNL storefront popover] può essere utilizzato con un [tema](https://developer.adobe.com/commerce/frontend-core/guide/themes/) che eredita i file richiesti da *Luma*. Il `top.search` blocco in `header-wrapper` del `Magento_Search` non deve essere modificato.
 
 ```html
 <referenceContainer name="header-wrapper">
@@ -87,9 +87,9 @@ La [!DNL storefront popover] può essere utilizzato con un [tema](https://develo
 </referenceContainer>
 ```
 
-## Disabilitazione della [!DNL popover]
+## Disattivazione di [!DNL popover]
 
-Per disabilitare la funzione [!DNL popover] e ripristinare lo standard [Ricerca rapida](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) , immetti il comando seguente:
+Per disattivare [!DNL popover] e ripristinare lo standard [Ricerca rapida](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) , immetti il comando seguente:
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover

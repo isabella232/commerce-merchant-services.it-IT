@@ -1,6 +1,6 @@
 ---
-title: Rapporto sullo stato del pagamento dell'ordine
-description: Utilizza il rapporto sullo stato del pagamento dell'ordine per avere visibilità sullo stato del pagamento degli ordini e identificare eventuali problemi potenziali.
+title: Rapporto Stato pagamento ordine
+description: Utilizzare il rapporto Stato pagamento ordine per ottenere visibilità sullo stato di pagamento degli ordini e identificare eventuali problemi.
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
@@ -11,85 +11,85 @@ ht-degree: 0%
 
 ---
 
-# Rapporto sullo stato del pagamento dell&#39;ordine
+# Rapporto Stato pagamento ordine
 
-[!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] offre un reporting completo per ottenere una visione chiara degli ordini e dei pagamenti del tuo negozio.
+[!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] offre una funzione di reporting completa che ti permette di avere una visione chiara degli ordini e dei pagamenti del tuo negozio.
 
-![Visualizzazione rapporti finanziari](assets/reports-justpayouts.png)
+![Visualizzazione dei report finanziari](assets/reports-justpayouts.png)
 
-Il rapporto sullo stato del pagamento dell&#39;ordine ti aiuta a capire facilmente dove si trova un ordine specifico all&#39;interno del flusso di processo dell&#39;ordine al contante. Questo rapporto ti consente di visualizzare rapidamente lo stato dei pagamenti degli ordini e di identificare eventuali problemi potenziali.
+Il rapporto Stato pagamento ordine consente di comprendere facilmente la posizione di un ordine specifico all&#39;interno del flusso di elaborazione del contante dell&#39;ordine. Questo report consente di visualizzare rapidamente lo stato dei pagamenti degli ordini e di identificare eventuali problemi.
 
-Non è necessario aprire più visualizzazioni per incrociare manualmente ordini e pagamenti con riferimenti incrociati. [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] consente di ottenere una panoramica degli ordini e dei pagamenti, il tutto all&#39;interno del rapporto sullo stato del pagamento dell&#39;ordine.
+Non è necessario aprire più viste per eseguire manualmente il riferimento incrociato di ordini e pagamenti. [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] consente di ottenere una visione d&#39;insieme degli ordini e dei pagamenti, il tutto all&#39;interno del rapporto sullo stato del pagamento dell&#39;ordine.
 
-Vedere gli stati di pagamento, gli stati di fatturazione e spedizione, gli stati di rimborso, gli stati di controversia e altro ancora all&#39;interno di questo rapporto nell&#39;Amministratore.
+Vedi stati dei pagamenti, stati fatturati e spediti, stati dei rimborsi, stati delle controversie e altro ancora, il tutto all&#39;interno di questo rapporto in Amministrazione.
 
-È possibile scaricare le transazioni dello stato dell&#39;ordine in un formato file .csv da utilizzare nel software di contabilità o gestione degli ordini esistente.
+È possibile scaricare le transazioni relative allo stato del pagamento dell&#39;ordine in un formato di file .csv da utilizzare nel software di contabilità o di gestione degli ordini esistente.
 
 >[!NOTE]
 >
->Non è possibile visualizzare i rapporti finanziari se non si [Modalità attiva integrata](production.md#enable-live-payments) per [!DNL Payment Services].
+>Non è possibile visualizzare i rapporti finanziari se non [Modalità Live onboarded e attivata](production.md#enable-live-payments) per [!DNL Payment Services].
 
 ## Dati utilizzati nel rapporto
 
-La [!DNL Payment Services] Il modulo utilizza i dati degli ordini e li combina con i dati di pagamento aggregati provenienti da altre fonti (incluso PayPal), per fornire report significativi e molto utili.
+Il [!DNL Payment Services] Il modulo utilizza i dati degli ordini e li combina con i dati di pagamento aggregati provenienti da altre fonti (incluso PayPal) per fornire rapporti significativi e molto utili.
 
-I dati dell&#39;ordine vengono esportati e mantenuti nel servizio di pagamento. Quando [modificare o aggiungere gli stati dell’ordine](https://docs.magento.com/user-guide/sales/order-status-custom.html){target="_blank"} or [edit a store view](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html){target="_blank"}, [store](https://docs.magento.com/user-guide/stores/store-information.html){target="_blank"}, o nome del sito web, tali dati sono combinati con i dati di pagamento e il rapporto sullo stato del pagamento dell&#39;ordine è compilato con le informazioni combinate.
+I dati dell’ordine vengono esportati e memorizzati nel servizio di pagamento. Quando [modificare o aggiungere stati degli ordini](https://docs.magento.com/user-guide/sales/order-status-custom.html){target="_blank"} or [edit a store view](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html){target="_blank"}, [store](https://docs.magento.com/user-guide/stores/store-information.html){target="_blank"}, o nome del sito Web, tali dati vengono combinati con i dati di pagamento e il rapporto sullo stato del pagamento dell&#39;ordine viene compilato con le informazioni combinate.
 
-Questo processo prevede due passaggi:
+Questo processo prevede due fasi:
 
-1. L&#39;indice viene modificato o `ON SAVE` (ogni volta che le informazioni sull&#39;ordine o sul negozio vengono modificate) o `BY SCHEDULE` (su una pianificazione cron preconfigurata), a seconda di come è configurato in [Gestione dell&#39;indice](https://docs.magento.com/user-guide/system/index-management.html){target="_blank"} nell&#39;amministratore.
+1. L’indice viene modificato in base ai dati `ON SAVE` (ogni volta che le informazioni dell&#39;ordine o del negozio vengono modificate) o `BY SCHEDULE` (secondo una pianificazione cron preconfigurata), a seconda di come è configurato in [Gestione indice](https://docs.magento.com/user-guide/system/index-management.html){target="_blank"} in Admin.
 
-   Per impostazione predefinita, l’indicizzazione dei dati si verifica `ON SAVE`, il che significa che ogni volta che qualcosa cambia nell&#39;ordine, lo stato dell&#39;ordine, la vista del negozio, il negozio o il sito web, il processo di reindicizzazione avviene immediatamente.
+   Per impostazione predefinita, si verifica l’indicizzazione dei dati `ON SAVE`, il che significa che ogni volta che qualcosa cambia nell’ordine, nello stato dell’ordine, nella visualizzazione del negozio, nel negozio o nel sito web, il processo di reindicizzazione avviene immediatamente.
 
-1. I dati indicizzati vengono inviati al servizio di pagamento, che viene quindi compilato nel rapporto sullo stato del pagamento dell&#39;ordine.
+1. I dati indicizzati vengono inviati al servizio di pagamento, che quindi compila il rapporto Stato pagamento ordine.
 
-Gli unici dati esportati e raccolti a scopo di reporting sono i dati utilizzati dal rapporto sullo stato del pagamento dell&#39;ordine.
+Gli unici dati esportati e confrontati a scopo di reporting sono i dati utilizzati dal rapporto Stato pagamento ordine.
 
 >[!NOTE]
 >
->I dati visualizzati in questa tabella vengono ordinati in ordine decrescente (`DESC`) per impostazione predefinita utilizzando `ORDER DATE`. La `ORDER DATE` è la marca temporale della data di creazione dell’ordine.
+>I dati mostrati in questa tabella sono ordinati in ordine decrescente (`DESC`) per impostazione predefinita utilizzando `ORDER DATE`. Il `ORDER DATE` è la data e l’ora in cui è stato creato l’ordine.
 
-### Configurare l’esportazione di dati
+### Configurare l’esportazione dei dati
 
-Anche se, per impostazione predefinita, la reindicizzazione avviene in `ON SAVE` è consigliabile indicizzare in `BY SCHEDULE` modalità. La `BY SCHEDULE` l&#39;indice viene eseguito su una pianificazione cron di un minuto e tutti i dati modificati vengono visualizzati nel rapporto sullo stato dell&#39;ordine entro due minuti da qualsiasi modifica dei dati. Questa reindicizzazione programmata ti aiuta a ridurre qualsiasi sforzo sul tuo negozio, specialmente se hai un grande volume di ordini in arrivo, perché si verifica su una pianificazione (non come ogni ordine è posizionato).
+Anche se, per impostazione predefinita, la reindicizzazione si verifica in `ON SAVE` modalità, si consiglia di indicizzare in `BY SCHEDULE` modalità. Il `BY SCHEDULE` L&#39;indice viene eseguito con una pianificazione cron di un minuto e tutti i dati modificati vengono visualizzati nel rapporto sullo stato dell&#39;ordine entro due minuti dalla modifica dei dati. Questa reindicizzazione programmata consente di ridurre qualsiasi tensione sul negozio, soprattutto se si dispone di un grande volume di ordini in entrata, perché avviene secondo un programma (non come ogni ordine viene effettuato).
 
-È possibile modificare la modalità indice—`ON SAVE` o `BY SCHEDULE`—[nell’amministratore](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"}.
+È possibile modificare la modalità indice:`ON SAVE` o `BY SCHEDULE`—[in Admin](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"}.
 
-Per scoprire come configurare l’esportazione dei dati, consulta [Configurazione della riga di comando](configure-cli.md#configure-data-export).
+Per informazioni su come configurare l’esportazione dei dati, consulta [Configurazione della riga di comando](configure-cli.md#configure-data-export).
 
 ## Disponibilità
 
-Sulla _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Order payment status]** per visualizzare gli stati di pagamento degli ordini.
+Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Order payment status]** per visualizzare gli stati di pagamento degli ordini.
 
-![Stato del pagamento dell’ordine nell’amministratore](assets/order-payment-status-report.png)
+![Stati di pagamento degli ordini nell’amministratore](assets/order-payment-status-report.png)
 
 ## Seleziona origine dati
 
-Nella visualizzazione del rapporto sullo stato del pagamento dell&#39;ordine, è possibile selezionare l&#39;origine dati—_[!UICONTROL Live]_o_[!UICONTROL Sandbox]_- per i quali visualizzare i risultati del rapporto.
+Nella vista del rapporto Stato pagamento ordine è possibile selezionare l&#39;origine dati:_[!UICONTROL Live]_o_[!UICONTROL Sandbox]_- per il quale si desidera visualizzare i risultati del rapporto.
 
 ![Selezione di origini dati](assets/datasource.png)
 
-Se _[!UICONTROL Live]_è l’origine dati selezionata, è possibile visualizzare le informazioni sui rapporti per gli archivi che utilizzano [!DNL Payment Services] in_[!UICONTROL Live]_ modalità. Se [!UICONTROL Sandbox]_ è l’origine dati selezionata, puoi visualizzare le informazioni sul rapporto per l’ambiente Sandbox.
+Se _[!UICONTROL Live]_è l&#39;origine dati selezionata, è possibile visualizzare le informazioni del report per gli archivi che utilizzano [!DNL Payment Services] in_[!UICONTROL Live]_ modalità. Se [!UICONTROL Sandbox]_ è l’origine dati selezionata, puoi visualizzare le informazioni del rapporto per il tuo ambiente Sandbox.
 
-Le selezioni dell’origine dati funzionano come segue:
+Le selezioni delle origini dati funzionano come segue:
 
-* Se non hai negozi che utilizzano [!DNL Payment Services] in modalità Live, la selezione dell’origine dati viene impostata automaticamente su _[!UICONTROL Sandbox]_.
-* Se sono presenti negozi (uno o più) che utilizzano [!DNL Payment Services] in modalità Live, la selezione dell’origine dati viene impostata automaticamente su _[!UICONTROL Live]_.
+* Se non si dispone di negozi che utilizzano [!DNL Payment Services] in modalità Live, la selezione dell’origine dati viene impostata per impostazione predefinita su _[!UICONTROL Sandbox]_.
+* Se sono presenti negozi (uno o più) che utilizzano [!DNL Payment Services] in modalità Live, la selezione dell’origine dati viene impostata per impostazione predefinita su _[!UICONTROL Live]_.
 * Le esportazioni dei rapporti rispettano sempre la selezione dell’origine dati.
 
-Selezione dell&#39;origine dati per [!UICONTROL Order Payment Status] rapporto:
+Per selezionare l&#39;origine dati per [!UICONTROL Order Payment Status] rapporto:
 
-1. Sulla _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
-1. Fai clic su **[!UICONTROL Data source]** e seleziona _[!UICONTROL Live]_o_[!UICONTROL Sandbox]_.
+1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. Clic **[!UICONTROL Data source]** e seleziona _[!UICONTROL Live]_o_[!UICONTROL Sandbox]_.
 
    I risultati del report vengono rigenerati in base all&#39;origine dati selezionata.
 
-## Personalizza arco temporale date
+## Personalizzare l’intervallo temporale delle date
 
-Dalla visualizzazione del rapporto sullo stato del pagamento dell&#39;ordine, è possibile personalizzare l&#39;intervallo temporale degli stati che si desidera visualizzare selezionando date specifiche. Per impostazione predefinita, nella griglia sono visualizzati 30 giorni degli stati di pagamento degli ordini.
+Nella visualizzazione del rapporto Stato pagamento ordine è possibile personalizzare l&#39;intervallo temporale degli stati che si desidera visualizzare selezionando date specifiche. Per impostazione predefinita, nella griglia sono visualizzati 30 giorni di stato di pagamento dell&#39;ordine.
 
-1. Sulla _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
-1. Fai clic sul pulsante **[!UICONTROL Order dates]** filtro selettore calendario.
+1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. Fai clic su **[!UICONTROL Order dates]** filtro selettore calendario.
 1. Scegli l’intervallo di date applicabile.
 1. Visualizza gli stati di pagamento dell&#39;ordine per le date specificate nella griglia.
 
@@ -97,64 +97,64 @@ Dalla visualizzazione del rapporto sullo stato del pagamento dell&#39;ordine, è
 
 Il rapporto Stato pagamento ordine mostra tutte le colonne di informazioni disponibili per impostazione predefinita. È tuttavia possibile personalizzare le colonne visualizzate nel rapporto.
 
-1. Sulla _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
-1. Fai clic sul pulsante _Impostazioni colonna_ icona (![icona delle impostazioni colonna](assets/column-settings.png)).
-1. Per personalizzare le colonne visualizzate nel rapporto, selezionare o deselezionare le colonne nell’elenco.
+1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. Fai clic su _Impostazioni colonna_ icona (![icona delle impostazioni delle colonne](assets/column-settings.png)).
+1. Per personalizzare le colonne visualizzate nel report, selezionare o deselezionare le colonne nell&#39;elenco.
 
-   Il rapporto sullo stato del pagamento dell&#39;ordine mostrerà immediatamente tutte le modifiche apportate nel menu Impostazioni colonna. Le preferenze della colonna vengono salvate e rimangono attive se ci si allontana dalla visualizzazione del rapporto.
+   Il rapporto Stato pagamento ordine visualizza immediatamente le modifiche apportate nel menu Impostazioni colonna. Le preferenze delle colonne verranno salvate e rimarranno attive anche quando ci si allontana dalla vista del rapporto.
 
-## Visualizzare gli stati
+## Stati di visualizzazione
 
-La visualizzazione del rapporto sullo stato del pagamento dell&#39;ordine mostra informazioni complete sullo stato della transazione e sullo stato del pagamento per ogni ordine di Servizi di pagamento.
+La visualizzazione del rapporto Stato pagamento ordine mostra lo stato completo delle transazioni e le informazioni sullo stato del pagamento per ogni ordine di Payment Services.
 
 ### Stato della transazione
 
-Per impostazione predefinita, nella griglia sono visualizzati 30 giorni degli stati di pagamento degli ordini.
+Per impostazione predefinita, nella griglia sono visualizzati 30 giorni di stato di pagamento dell&#39;ordine.
 
-Scorri verso sinistra e verso destra per visualizzare [informazioni sullo stato del pagamento dell&#39;ordine](#column-descriptions), inclusa la data dell’ordine, la data autorizzata, fatturata, spedita, lo stato del pagamento e altro ancora.
+Scorri verso sinistra e destra per visualizzare [informazioni stato pagamento ordine](#column-descriptions), inclusa la data dell&#39;ordine, la data autorizzata, fatturata, spedita, lo stato di pagamento e altro ancora.
 
-Il numero di righe restituite in una ricerca, o visualizzate negli stati di pagamento degli ordini di 30 giorni predefiniti, viene visualizzato sopra la griglia di visualizzazione dello stato del pagamento dell&#39;ordine accanto al filtro del selettore del calendario delle date dell&#39;ordine.
+Il numero di righe restituite in una ricerca o visualizzate negli stati di pagamento dell&#39;ordine predefiniti per 30 giorni viene visualizzato sopra la griglia di visualizzazione dello stato del pagamento dell&#39;ordine insieme al filtro del selettore calendario Date ordine.
 
 ### Stato della retribuzione
 
-La colonna Stato Pagamento mostra lo stato corrente per qualsiasi pagamento. A `Capture failed` il pagamento mostra lo stato di un avviso rosso e un `Voided` il pagamento presenta uno stato di avviso grigio.
+La colonna Stato pagamento mostra lo stato corrente di qualsiasi pagamento. A `Capture failed` il pagamento mostra uno stato di avviso rosso e un `Voided` il pagamento mostra uno stato di avviso grigio.
 
-### Stato della restituzione
+### Stato rimborso
 
-La colonna Stato Rimborso mostra lo stato corrente per qualsiasi rimborso. A `Capture failed` il pagamento mostra lo stato di un avviso rosso e un `Voided` il pagamento presenta uno stato di avviso grigio.
+La colonna Stato rimborso mostra lo stato corrente di qualsiasi rimborso. A `Capture failed` il pagamento mostra uno stato di avviso rosso e un `Voided` il pagamento mostra uno stato di avviso grigio.
 
-## Update report data
+## Aggiornare i dati del rapporto
 
-La visualizzazione del rapporto sullo stato del pagamento dell&#39;ordine mostra un _[!UICONTROL Last updated]_marca temporale che mostra l’ultima volta che le informazioni del rapporto sono state aggiornate. Per impostazione predefinita, i dati del rapporto sullo stato del pagamento dell&#39;ordine vengono aggiornati automaticamente ogni tre ore.
+La vista del rapporto Stato pagamento ordine mostra un _[!UICONTROL Last updated]_timestamp che mostra l’ultimo aggiornamento delle informazioni del rapporto. Per impostazione predefinita, i dati del rapporto Stato pagamento ordine vengono aggiornati automaticamente ogni tre ore.
 
-È inoltre possibile forzare manualmente un aggiornamento dei dati del report sullo stato del pagamento dell&#39;ordine per visualizzare le informazioni più aggiornate sul report.
+È inoltre possibile forzare manualmente l&#39;aggiornamento dei dati del rapporto Stato pagamento ordine per visualizzare le informazioni più aggiornate.
 
-1. Sulla _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
-1. Fai clic sul pulsante _Aggiorna_ icona (![icona di aggiornamento](assets/refresh-button-med.png)).
+1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. Fai clic su _Aggiorna_ icona (![icona di aggiornamento](assets/refresh-button-med.png)).
 
-   I dati del rapporto sullo stato del pagamento dell&#39;ordine vengono aggiornati, e *[!UICONTROL Update complete]* viene visualizzata una conferma e le informazioni più recenti sono presenti nella griglia.
+   I dati del rapporto sullo stato del pagamento dell&#39;ordine vengono aggiornati, *[!UICONTROL Update complete]* viene visualizzata la conferma e nella griglia sono presenti le informazioni più recenti.
 
 ## Visualizza controversie
 
-È possibile visualizzare eventuali controversie sugli ordini del negozio e accedere al Centro di risoluzione PayPal per intervenire su di essi, dall&#39;interno del rapporto sullo stato del pagamento dell&#39;ordine.
+Puoi visualizzare eventuali controversie sugli ordini del tuo Negozio e passare al Centro di risoluzione PayPal per intervenire su di essi, dall&#39;interno del rapporto Stato pagamento ordine.
 
-1. Sulla _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
-1. Passa a **[!UICONTROL Disputes column]**.
-1. Visualizza eventuali controversie per un ordine specifico e visualizza [lo stato della controversia](#order-payment-status-information).
-1. Fai clic sul collegamento ID controversia (a partire da _PP-D_) per passare al [Centro di risoluzione PayPal](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
-1. Adottare, se necessario, le misure adeguate per la controversia.
+1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. Accedi a **[!UICONTROL Disputes column]**.
+1. Visualizzare eventuali controversie per un ordine specifico e vedere [lo stato della controversia](#order-payment-status-information).
+1. Fare clic sul collegamento ID controversia (che inizia con _PP-D-_) per passare al [Centro soluzioni PayPal](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
+1. Adottare le misure appropriate per la controversia, se necessario.
 
-   Per ordinare le controversie in base allo stato, fare clic sull&#39;intestazione della colonna Dispute.
+   Per ordinare le controversie in base allo stato, fai clic sull’intestazione della colonna Controversie.
 
-## Download degli stati di pagamento dell&#39;ordine
+## Scarica stati di pagamento ordine
 
-È possibile scaricare un file .csv con tutti gli stati visibili nella griglia di visualizzazione dello stato del pagamento dell&#39;ordine, sia che si visualizzino i 30 giorni di stato predefiniti o un arco temporale personalizzato.
+È possibile scaricare un file .csv con tutti gli stati visibili nella griglia di visualizzazione dello stato del pagamento dell&#39;ordine, sia che si visualizzino gli stati predefiniti di 30 giorni o un intervallo temporale personalizzato.
 
-1. Sulla _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
-1. Se desideri visualizzare gli stati per un periodo di tempo diverso dagli ultimi 30 giorni, [personalizzare l’intervallo di tempo per gli stati](#customize-dates-timeframe).
-1. Fai clic sul pulsante _Scarica_ (![icona di download](assets/icon-download.png)).
+1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. Se desideri visualizzare gli stati per un intervallo di tempo diverso dagli ultimi 30 giorni, [personalizza l’intervallo di date temporale per i tuoi stati](#customize-dates-timeframe).
+1. Fai clic su _Scarica_ (![icona di download](assets/icon-download.png)).
 
-Gli stati di pagamento dell&#39;ordine vengono scaricati in formato .csv .
+Gli stati di pagamento dell&#39;ordine vengono scaricati in formato .csv.
 
 <!-- ## Default order payment status timeframes
 
@@ -171,32 +171,32 @@ These order payment status timeframes are currently available in [!DNL Payment S
 | Custom range | Available from the Order payment status dates selector, this can be filtered to show a custom date range. |
 -->
 
-## Informazioni sullo stato del pagamento dell&#39;ordine
+## Informazioni stato pagamento ordine
 
-La visualizzazione Stato pagamento ordine mostra informazioni complete su ogni stato visualizzato nella griglia.
+La vista Stato pagamento ordine mostra informazioni dettagliate per ogni stato visualizzato nella griglia.
 
 ### Descrizioni delle colonne
 
-I rapporti sullo stato del pagamento degli ordini includono le seguenti informazioni.
+I rapporti sullo stato dei pagamenti degli ordini includono le seguenti informazioni.
 
 | Colonna | Descrizione |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | ID ordine commerciale<br> <br>Per visualizzare i dati correlati [info ordine](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, fai clic sull&#39;ID. |
+| [!UICONTROL Order ID] | ID ordine commerce<br> <br>Per visualizzare i [informazioni ordine](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, fai clic sull&#39;ID. |
 | [!UICONTROL Order Date] | Timestamp data ordine |
-| [!UICONTROL Authorized Date] | Data e ora dell&#39;autorizzazione di pagamento |
-| [!UICONTROL Order Status] | Commerce corrente [stato dell&#39;ordine](https://docs.magento.com/user-guide/sales/order-status.html){target="_blank"} |
-| [!UICONTROL Invoiced] | Stato della fattura dell&#39;ordine:*[!UICONTROL No]*, *[!UICONTROL Partial]* oppure *[!UICONTROL Yes]* |
-| [!UICONTROL Shipped] | Stato di spedizione dell&#39;ordine—*[!UICONTROL No]*, *[!UICONTROL Partial]* oppure *[!UICONTROL Yes]* |
-| [!UICONTROL Order Amt] | Importo totale complessivo dell&#39;ordine |
-| [!UICONTROL Cur] | Tipo di valuta dell&#39;ordine |
+| [!UICONTROL Authorized Date] | Data e ora dell’autorizzazione di pagamento |
+| [!UICONTROL Order Status] | Commerce corrente [stato ordine](https://docs.magento.com/user-guide/sales/order-status.html){target="_blank"} |
+| [!UICONTROL Invoiced] | Stato fattura dell&#39;ordine—*[!UICONTROL No]*, *[!UICONTROL Partial]*, o *[!UICONTROL Yes]* |
+| [!UICONTROL Shipped] | Stato spedizione dell&#39;ordine—*[!UICONTROL No]*, *[!UICONTROL Partial]*, o *[!UICONTROL Yes]* |
+| [!UICONTROL Order Amt] | Importo totale totale dell’ordine |
+| [!UICONTROL Cur] | Tipo di valuta dell’ordine |
 | [!UICONTROL Pay Status] | Stato del pagamento per un ordine specifico |
 | [!UICONTROL Paid Amt] | Importo pagato su un ordine |
-| [!UICONTROL Cur] | Tipo di valuta dell&#39;importo pagato su un ordine |
-| [!UICONTROL Refund Status] | Stato del rimborso su un ordine (ad esempio informazioni provenienti da restituzioni, RMA e note di credito)—   *[!UICONTROL Requires refund]*, *[!UICONTROL Refund requested]*, *[!UICONTROL Refunded]*, *[!UICONTROL Refund failed]* oppure *[!UICONTROL Voided]* |
-| [!UICONTROL Refund Amount] | Importo totale rimborsato per un ordine |
+| [!UICONTROL Cur] | Tipo di valuta dell’importo pagato su un ordine |
+| [!UICONTROL Refund Status] | Stato di un rimborso su un ordine (ad esempio informazioni da restituzioni, RMA e note di accredito)—   *[!UICONTROL Requires refund]*, *[!UICONTROL Refund requested]*, *[!UICONTROL Refunded]*, *[!UICONTROL Refund failed]*, o *[!UICONTROL Voided]* |
+| [!UICONTROL Refund Amount] | Totale dell&#39;importo rimborsato per un ordine |
 | [!UICONTROL Cur] | Tipo di valuta dell&#39;importo rimborsato per un ordine |
-| [!UICONTROL Disputes] | Status di qualsiasi controversia su un ordine (informazioni da controversie e commissioni)—*[!UICONTROL Open]*, *[!UICONTROL Waiting for buyer response]*, *[!UICONTROL Waiting for seller response]*, *[!UICONTROL Under review]*, *[!UICONTROL Resolved]* oppure *[!UICONTROL Other]* |
+| [!UICONTROL Disputes] | Stato di qualsiasi controversia relativa a un ordine (informazioni derivanti da controversie e rettifiche)—*[!UICONTROL Open]*, *[!UICONTROL Waiting for buyer response]*, *[!UICONTROL Waiting for seller response]*, *[!UICONTROL Under review]*, *[!UICONTROL Resolved]*, o *[!UICONTROL Other]* |
 | [!UICONTROL Payment Method] | Metodo di pagamento utilizzato nella transazione Commerce per un ordine |
-| [!UICONTROL Website] | Sito Web da cui è stato effettuato l&#39;ordine |
-| [!UICONTROL Store] | Archivio da cui è stato effettuato l&#39;ordine |
-| [!UICONTROL Store View] | Vista store da cui è stato effettuato l’ordine |
+| [!UICONTROL Website] | Sito web da cui è stato effettuato l’ordine |
+| [!UICONTROL Store] | Archivio da cui è stato effettuato l’ordine |
+| [!UICONTROL Store View] | Visualizzazione del Negozio da cui è stato effettuato l&#39;ordine |

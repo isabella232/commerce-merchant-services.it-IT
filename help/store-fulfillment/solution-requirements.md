@@ -1,6 +1,6 @@
 ---
-title: Requisiti del Negozio
-description: Requisiti per il provisioning e l'onboarding [!DNL Store Fulfillment solution].
+title: Requisiti di evasione del negozio
+description: Requisiti per il provisioning e l’onboarding di [!DNL Store Fulfillment solution].
 role: User, Admin
 level: Intermediate
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
@@ -11,18 +11,18 @@ ht-degree: 2%
 
 ---
 
-# Requisiti di evasione archivio per Adobe Commerce
+# Memorizza requisiti di evasione per Adobe Commerce
 
 Le sezioni seguenti descrivono i requisiti tecnici e aziendali per l’installazione e l’abilitazione della soluzione Store Fulfillment per Adobe Commerce.
 
-## Requisiti della piattaforma e della versione del software
+## Requisiti di versione della piattaforma e del software
 
-La [!DNL Store Fulfillment] è disponibile per i clienti Adobe Commerce sulle seguenti piattaforme.
+Il [!DNL Store Fulfillment] La soluzione è disponibile per i clienti Adobe Commerce sulle seguenti piattaforme.
 
-- Adobe Commerce su infrastruttura cloud (ECE)
-- Adobe Commerce nei locali (EE)
+- Adobe Commerce sull’infrastruttura cloud (ECE)
+- Adobe Commerce on-premise (EE)
 
-La soluzione Store Fulfillment è compatibile con le versioni software elencate in *Compatibilità software* tabella.
+La soluzione Store Fulfillment è compatibile con le versioni software elencate nella *Compatibilità software* tabella.
 
 **Compatibilità software**
 
@@ -34,11 +34,11 @@ La soluzione Store Fulfillment è compatibile con le versioni software elencate 
 | MySQL | 5.7 | 8.0 |
 | PHP | 7.4 | 8.1 |
 
-Per requisiti dettagliati, consulta Adobe Commerce [Requisiti di sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in *Guida all’installazione di Adobe Commerce*.
+Per i requisiti dettagliati, consulta la sezione Adobe Commerce [Requisiti di sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) nel *Guida all’installazione di Adobe Commerce*.
 
-## Requisiti dell’app di Assistenza store
+## Requisiti dell’app Store Assist
 
-Il processo end-to-end per gestire gli ordini di ritiro degli store viene gestito tramite l’app Store Assist installata su dispositivi mobili. Questi dispositivi, forniti dal rivenditore o dai dipendenti del negozio che utilizzano gli smartphone personali, devono soddisfare i seguenti requisiti:
+Il processo end-to-end per gestire gli ordini di ritiro dallo store viene gestito tramite l’app Store Assist installata sui dispositivi mobili. Questi dispositivi, forniti dal rivenditore o dai dipendenti del negozio che utilizzano i propri smartphone personali, devono soddisfare i seguenti requisiti:
 
 **Requisiti minimi del sistema operativo**
 
@@ -52,20 +52,20 @@ Il processo end-to-end per gestire gli ordini di ritiro degli store viene gestit
 
 ## Requisiti aziendali
 
-Per implementare la soluzione Store Fulfillment, la tua azienda deve soddisfare i seguenti criteri minimi:
+La tua azienda deve soddisfare i seguenti criteri minimi per implementare la soluzione di Store Fulfillment:
 
-- Solo aziende basate negli Stati Uniti
+- Solo aziende con sede negli Stati Uniti
 
-- Commercianti, consumatori e merci imballate (CPG) Produttori che vendono direttamente ai consumatori (D2C) o distributori che vendono direttamente a consumatori o piccole imprese
+- Commercianti da impresa a consumatore (B2C), commercianti di beni di consumo confezionati (CPG) Produttori che vendono direttamente ai consumatori (D2C) o distributori che vendono direttamente ai consumatori o alle piccole imprese
 
-- Almeno un negozio fisico o un magazzino
+- Almeno un negozio fisico o magazzino
 
-- Gestisci l’inventario dei prodotti con Inventory management per Adobe Commerce (alias MSI)
+- Gestire l’inventario dei prodotti con Inventory management for Adobe Commerce (o MSI)
 
-- Capacità di diffondere l&#39;inventario dei commercianti
+- Possibilità di sindacare l’inventario dei commercianti
 
-- Archiviare la disponibilità Wi-Fi in tutte le località che supportano la soluzione Store Fulfillment: Velocità minima Internet a 3 Mbps
+- Memorizza la disponibilità Wi-Fi in tutte le sedi che supportano la soluzione Store Fulfillment: velocità minima di Internet di 3 Mbps
 
-- I collaboratori del negozio e del magazzino possono accedere ai dispositivi mobili iOS o Android durante i loro spostamenti, personali o forniti dal commerciante
+- Gli associati al negozio e al magazzino hanno accesso a dispositivi mobili iOS o Android durante i loro turni, personali o forniti dal commerciante
 
-- I prodotti gestiti tramite la soluzione Store Fulfillment devono avere attributi di prodotto che includono un codice di prodotto SKU o UPC
+- I prodotti gestiti tramite la soluzione Store Fulfillment devono avere attributi di prodotto che includano un codice prodotto SKU o UPC

@@ -4,14 +4,14 @@ description: Scopri come installare, aggiornare e disinstallare [!DNL Product Re
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
 source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
 
 # Installazione e configurazione
 
-Distribuzione [!DNL Product Recommendations] per la vetrina e l’amministratore richiede l’installazione del modulo e la configurazione del [Connettore Commerce Services](../landing/saas.md). Man mano che vengono rilasciati gli aggiornamenti, puoi facilmente aggiornare l’installazione con la versione più recente.
+Distribuzione [!DNL Product Recommendations] nella vetrina e l&#39;amministratore richiede di installare il modulo e configurare [Connettore Commerce Services](../landing/saas.md). Man mano che gli aggiornamenti vengono rilasciati, puoi aggiornare facilmente l’installazione con l’ultima versione.
 
 - [Installa](#install)
 - [Configura](#configure)
@@ -20,29 +20,29 @@ Distribuzione [!DNL Product Recommendations] per la vetrina e l’amministratore
 
 ## Installa [!DNL Product Recommendations] {#install}
 
-Perché [!DNL Product Recommendations] Il modulo è un metapackage autonomo, gli aggiornamenti vengono rilasciati più frequentemente di Adobe Commerce. Per essere sicuro di essere aggiornato con le ultime correzioni e funzioni di bug, fai riferimento alla [note sulla versione](release-notes.md).
+Perché il [!DNL Product Recommendations] Il modulo di è un metapacchetto autonomo; gli aggiornamenti vengono rilasciati più frequentemente rispetto ad Adobe Commerce. Per essere certi di essere aggiornati sulle ultime correzioni di bug e funzioni, consulta [note sulla versione](release-notes.md).
 
-Installa il `magento/product-recommendations` Modulo con Compositore:
+Installare `magento/product-recommendations` Modulo con Compositore:
 
 ```bash
 composer require magento/product-recommendations
 ```
 
-### Aggiunta del supporto per Page Builder {#pbsupport}
+### Supporto per Aggiungi Page Builder {#pbsupport}
 
-[!DNL Product Recommendations] per Page Builder è un modulo facoltativo e viene installato separatamente. Per utilizzare [!DNL Product Recommendations] con Page Builder, installa il modulo eseguendo il seguente comando:
+[!DNL Product Recommendations] per Page Builder è un modulo opzionale e viene installato separatamente. Da utilizzare [!DNL Product Recommendations] con Page Builder, installare il modulo eseguendo il comando seguente:
 
 ```bash
 composer require magento/module-page-builder-product-recommendations
 ```
 
-Attivando [!DNL Product Recommendations] in Page Builder, puoi aggiungere un [unità di raccomandazione](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) a qualsiasi contenuto creato in Page Builder, ad esempio pagine, blocchi e blocchi dinamici.
+Attivando [!DNL Product Recommendations] in Page Builder, è possibile aggiungere un elemento attivo esistente [unità consigli](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) a qualsiasi contenuto creato in Page Builder, ad esempio pagine, blocchi e blocchi dinamici.
 
-Vedi [Utilizzo [!DNL Product Recommendations] con contenuto Page Builder](page-builder.md) per ulteriori istruzioni.
+Consulta [Utilizzo di [!DNL Product Recommendations] con contenuto Page Builder](page-builder.md) per ulteriori istruzioni.
 
-### Aggiungi tipo di raccomandazione per similarità visiva {#vissimsupport}
+### Aggiungi tipo di consiglio per somiglianza visiva {#vissimsupport}
 
-La _Somiglianza visiva_ il tipo di raccomandazione consente di distribuire un&#39;unità di raccomandazione alla pagina dei dettagli del prodotto che visualizza i prodotti che sono [visivamente simile](type.md#visualsim) al prodotto visualizzato. Questo tipo di raccomandazione è particolarmente utile quando le immagini e gli aspetti visivi dei prodotti sono parti importanti dell’esperienza di acquisto. Installa il _Somiglianza visiva_ tipo di raccomandazione eseguendo il comando seguente:
+Il _Somiglianza visiva_ tipo di consiglio consente di distribuire un’unità di consigli nella pagina dei dettagli del prodotto, in cui vengono visualizzati i prodotti [visivamente simile](type.md#visualsim) al prodotto visualizzato. Questo tipo di consigli è più utile quando le immagini e gli aspetti visivi dei prodotti sono parti importanti dell’esperienza di acquisto. Installare _Somiglianza visiva_ tipo di consiglio eseguendo il comando seguente:
 
 ```bash
 composer require magento/module-visual-product-recommendations
@@ -50,21 +50,21 @@ composer require magento/module-visual-product-recommendations
 
 ## Configura [!DNL Product Recommendations] {#configure}
 
-Dopo aver installato `magento/product-recommendations` modulo, devi configurare il [Connettore Commerce Services](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) specificando le chiavi API e selezionando uno spazio dati SaaS.
+Dopo aver installato `magento/product-recommendations` , è necessario configurare il [Connettore Commerce Services](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) specificando le chiavi API e selezionando uno spazio dati SaaS.
 
-Per verificare che l’esportazione del catalogo sia corretta, verifica che la [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) l&#39;occupazione e [indicizzatori](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) sono in esecuzione e `Product Feed` indexer impostato su `Update by Schedule`.
+Per garantire il corretto funzionamento dell’esportazione del catalogo, verifica che [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) job e [indici](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) sono in esecuzione e `Product Feed` indicizzatore impostato su `Update by Schedule`.
 
-Quando ti colleghi correttamente a Commerce Services tramite le chiavi API e specifichi lo spazio dati SaaS, inizia la sincronizzazione del catalogo. È quindi possibile [verify](verify.md) che i dati comportamentali vengono inviati alla tua vetrina.
+Una volta effettuato correttamente il collegamento a Commerce Services tramite le chiavi API e specificato SaaS Data Space, inizia la sincronizzazione del catalogo. Potrai quindi [verifica](verify.md) i dati comportamentali vengono inviati alla vetrina.
 
 ## Aggiorna il tuo [!DNL Product Recommendations] installazione {#update}
 
-Come tutti Adobe Commerce, [!DNL Product Recommendations] utilizza Composer per l&#39;installazione e gli aggiornamenti. Per aggiornare `magento/product-recommendations` , esegui quanto segue:
+Come tutte le soluzioni Adobe Commerce, [!DNL Product Recommendations] utilizza Composer per l&#39;installazione e gli aggiornamenti. Per aggiornare `magento/product-recommendations` eseguire quanto segue:
 
 ```bash
 composer update magento/product-recommendations --with-dependencies
 ```
 
-Per eseguire l&#39;aggiornamento a una versione principale, ad esempio da 3.0 a 4.0, è necessario modificare la directory principale `composer.json` per il progetto. (Vedi [note sulla versione](release-notes.md) per informazioni sull&#39;ultima versione). Ad esempio, apriamo il `composer.json` e cerca il `magento/product-recommendations` modulo:
+Per eseguire l’aggiornamento a una versione principale, ad esempio da 3.0 a 4.0, devi modificare la directory principale `composer.json` per il progetto. (consultare la [note sulla versione](release-notes.md) per informazioni sull&#39;ultima versione). Ad esempio, apriamo l’elemento principale `composer.json` e cercare il file `magento/product-recommendations` modulo:
 
 ```json
 "require": {
@@ -74,7 +74,7 @@ Per eseguire l&#39;aggiornamento a una versione principale, ad esempio da 3.0 a 
 }
 ```
 
-Scarichiamo la versione principale da `3.0` a `4.0`:
+Saltiamo la versione principale da `3.0` a `4.0`:
 
 ```json
 "require": {
@@ -84,13 +84,13 @@ Scarichiamo la versione principale da `3.0` a `4.0`:
 }
 ```
 
-Salva il `composer.json` file ed esecuzione:
+Salva il `composer.json` file ed esegui:
 
 ```bash
 composer update magento/product-recommendations --with-dependencies
 ```
 
-Oppure se hai installato il `magento/module-visual-product-recommendations` e `magento/module-page-builder-product-recommendations` moduli:
+Oppure, se hai installato `magento/module-visual-product-recommendations` e `magento/module-page-builder-product-recommendations` moduli:
 
 ```bash
 composer update --with-dependencies magento/product-recommendations magento/module-visual-product-recommendations magento/module-page-builder-product-recommendations
@@ -98,8 +98,8 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 >[!NOTE]
 >
-> Nella versione 3.x.x di Product Recommendations, era necessaria una sola chiave API. Nelle versioni 4.x.x e successive, devi fornire le chiavi API pubbliche e private Production e le chiavi API pubbliche e private Sandbox. Se non fornisci entrambe le coppie di chiavi API, non puoi accedere alla funzione Recommendations prodotto nell’amministratore. La raccolta dei dati, tuttavia, continuerà sulla vetrina e i consigli esistenti continueranno a essere mostrati ai tuoi acquirenti.
+> Nelle versioni 3.x.x di Product Recommendations, era necessaria una sola chiave API. Nelle versioni 4.x.x e successive, devi fornire le chiavi API di produzione pubbliche e private nonché le chiavi API sandbox pubbliche e private. Se non fornisci entrambe le coppie di chiavi API, non puoi accedere alla funzione Product Recommendations in Admin. La raccolta dei dati, tuttavia, continuerà nella tua vetrina e i consigli esistenti continueranno a essere visualizzati ai tuoi acquirenti.
 
 ## Disinstalla [!DNL Product Recommendations] {#uninstall}
 
-Se necessario, puoi [disinstallare](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html) il modulo product-recommendations.
+Se necessario, puoi [disinstalla](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html) il modulo prodotti-consigli.

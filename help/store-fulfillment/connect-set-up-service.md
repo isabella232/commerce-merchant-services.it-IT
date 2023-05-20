@@ -1,6 +1,6 @@
 ---
-title: Collegare la soluzione Store Fulfillment
-description: Stabilisci le connessioni tra Adobe Commerce e la soluzione Store Fulfillment creando e autorizzando un'integrazione Adobe Commerce e aggiungendo le credenziali dell'account Store Fulfillment alla configurazione del servizio Adobe Commerce.
+title: Collegare la soluzione di distribuzione del punto vendita
+description: Stabilisci le connessioni tra Adobe Commerce e la soluzione Store Fulfillment creando e autorizzando un’integrazione Adobe Commerce e aggiungendo le credenziali dell’account Store Fulfillment alla configurazione del servizio Adobe Commerce.
 role: User, Admin
 level: Intermediate
 exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
@@ -11,75 +11,75 @@ ht-degree: 0%
 
 ---
 
-# Collegare la soluzione Store Fulfillment
+# Collegare la soluzione di distribuzione del punto vendita
 
-Collega i servizi di evasione dell’archivio ad Adobe Commerce aggiungendo le credenziali di autenticazione e i dati di connessione richiesti all’amministratore di Adobe Commerce.
+Connettere Store Fulfillment Services ad Adobe Commerce aggiungendo all’amministratore di Adobe Commerce le credenziali di autenticazione e i dati di connessione richiesti.
 
-- **[Configura [!DNL Commerce integration settings]](#create-an-adobe-commerce-integration)**- Crea un’integrazione Adobe Commerce per i servizi Store Fulfillment e genera i token di accesso per autenticare le richieste in arrivo dai server Store Fulfillment.
+- **[Configura [!DNL Commerce integration settings]](#create-an-adobe-commerce-integration)**: crea un’integrazione Adobe Commerce per i servizi di Store Fulfillment e genera i token di accesso per autenticare le richieste in ingresso dai server Store Fulfillment.
 
-- **[Configurare le credenziali dell&#39;account per i servizi di evasione dell&#39;archivio](#configure-store-fulfillment-account-credentials)**- Aggiungi le tue credenziali per collegare Adobe Commerce al tuo account Store Fulfillment.
+- **[Configura le credenziali dell&#39;account per Store Fulfillment Services](#configure-store-fulfillment-account-credentials)**-Aggiungi le credenziali per collegare Adobe Commerce al tuo account Store Fulfillment.
 
 >[!NOTE]
 >
->Completare la configurazione della connessione e convalidarla prima di iniziare il test.
+>Completa la configurazione della connessione e convalidala correttamente prima di iniziare il test.
 
 ## Creare un’integrazione Adobe Commerce
 
-Per integrare Adobe Commerce con i servizi Store Fulfillment, crea un’integrazione Commerce e genera token di accesso che possono essere utilizzati per autenticare le richieste dai server Store Fulfillment. È inoltre necessario aggiornare Adobe Commerce [!UICONTROL Consumer Settings] opzioni per impedire `The consumer isn't authorized to access %resources.` errori di risposta sulle richieste da Adobe Commerce a [!DNL Store Fulfillment] servizi.
+Per integrare Adobe Commerce con i servizi di Store Fulfillment, puoi creare un’integrazione Commerce e generare token di accesso che possono essere utilizzati per autenticare le richieste dai server di Store Fulfillment. È inoltre necessario aggiornare Adobe Commerce [!UICONTROL Consumer Settings] opzioni per impedire `The consumer isn't authorized to access %resources.` errori di risposta nelle richieste da Adobe Commerce a [!DNL Store Fulfillment] servizi.
 
-1. Dall’amministratore, crea l’integrazione per l’esecuzione dello store.
+1. Dall’amministratore, crea l’integrazione per l’evasione del punto vendita.
 
    - Denomina l&#39;estensione
    - Inserisci il tuo indirizzo e-mail
    - Immetti la password dell&#39;account amministratore
 
-1. Configura [!UICONTROL API Resource Access permissions] per l’integrazione, seleziona `[!UICONTROL All]`
+1. Configura [!UICONTROL API Resource Access permissions] per l&#39;integrazione: selezionare `[!UICONTROL All]`
 
 1. Genera i token di accesso per l’autenticazione salvando e attivando l’integrazione.
 
-1. Copia e salva i token di accesso in una posizione protetta e crittografata.
+1. Copiare e salvare i token di accesso in una posizione sicura e crittografata.
 
-1. Collabora con il tuo Account Manager per completare la configurazione sul lato Store Fulfillment e autorizzare l&#39;integrazione.
+1. Collabora con il tuo Account Manager per completare la configurazione sul lato Store Fulfillment e per autorizzare l’integrazione.
 
-1. Abilitare Adobe Commerce [!UICONTROL Consumer Settings] opzione per [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens].
+1. Abilita Adobe Commerce [!UICONTROL Consumer Settings] opzione per [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens].
 
    - Dall’amministratore, vai a **[!UICONTROL Stores]** >  [!UICONTROL Configuration] > **[!UICONTROL Services]** >  **[!UICONTROL OAuth]** > **[!UICONTROL Consumer Settings]**
 
-   - Imposta la [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens] opzione per **[!UICONTROL Yes]**.
+   - Imposta il [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens] opzione per **[!UICONTROL Yes]**.
 
 >[!IMPORTANT]
 >
-> Il token di integrazione è specifico per l’ambiente. Se ripristini il database per un ambiente con i dati di origine provenienti da un ambiente diverso, ad esempio ripristinando i dati di produzione da un ambiente di gestione temporanea, escludi la `oauth_token` tabella dall’esportazione del database in modo che i dettagli del token di integrazione non vengano sovrascritti durante l’operazione di ripristino.
+> Il token di integrazione è specifico per l’ambiente. Se si ripristina il database per un ambiente con i dati di origine provenienti da un ambiente diverso, ad esempio il ripristino dei dati di produzione da un ambiente di staging, escludere `oauth_token` nell’esportazione del database, in modo che i dettagli del token di integrazione non vengano sovrascritti durante l’operazione di ripristino.
 
 
-## Configurare le credenziali dell’account di evasione dell’archivio
+## Configura credenziali account di evasione archivio
 
-Dopo aver completato il modulo di assunzione, viene creato per voi un account Walmart Store Fulfillment. Quando sono disponibili, riceverai le seguenti credenziali:
+Dopo aver completato il modulo di accettazione, viene creato un account di evasione del negozio Walmart. Riceverai le seguenti credenziali quando saranno disponibili:
 
 - [!DNL Merchant ID]
 - [!DNL Consumer ID]
 - [!DNL Consumer Secret]
 - [!DNL API Server URL]
-- [!DNL Token Auth Server URL] (solitamente la stessa configurazione di cui sopra)
+- [!DNL Token Auth Server URL] (in genere corrisponde alla configurazione precedente)
 
 Queste credenziali sono necessarie per configurare e utilizzare Store Fulfillment.
 
 >[!NOTE]
 >
->Il completamento del processo di creazione dell’account può richiedere del tempo. In attesa delle credenziali, [controlla e configura altre impostazioni per la soluzione Store Fulfillment](service-config-settings-overview.md).
+>Il completamento del processo di creazione dell’account può richiedere del tempo. Mentre attendi le credenziali, [rivedere e configurare altre impostazioni per la soluzione Store Fulfillment](service-config-settings-overview.md).
 
-### Aggiungi le credenziali per la connessione all&#39;evasione dell&#39;archivio
+### Aggiungi credenziali per la connessione a Store Fulfillment
 
-1. Configura [credenziali account](enable-general.md) per gli ambienti Production e Sandbox.
+1. Configura [credenziali account](enable-general.md) per gli ambienti di produzione e sandbox.
 
 1. Dall’amministratore, vai a **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**
 
-1. Immetti le credenziali account fornite per la **[!UICONTROL Production environment]**. Tutti i campi sono obbligatori.
+1. Immetti le credenziali account fornite per **[!UICONTROL Production environment]**. Tutti i campi sono obbligatori.
 
 1. Seleziona **[!UICONTROL Save Config]**.
 
-1. Verificare la connessione selezionando **[!UICONTROL Validate Credentials]**.
+1. Verifica la connessione selezionando **[!UICONTROL Validate Credentials]**.
 
 >[!NOTE]
 >
->Se le credenziali non sono valide, verifica di aver immesso i valori corretti per ogni ambiente e riconvalida. Contatta il rappresentante commerciale di riferimento per eventuali problemi di connessione.
+>Se le credenziali non sono valide, verifica di aver immesso i valori corretti per ogni ambiente e riconvalida. Se riscontri ancora problemi durante la connessione, contatta il rappresentante del tuo account.

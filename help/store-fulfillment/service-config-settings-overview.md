@@ -1,6 +1,6 @@
 ---
-title: Panoramica della configurazione per l'evasione dello store
-description: Scopri i tipi di impostazioni di configurazione dell’amministratore disponibili per personalizzare le funzionalità di esecuzione estese fornite dalla soluzione Store Fulfillment e collegati alle istruzioni per il completamento della configurazione.
+title: Panoramica sulla configurazione per l'evasione del punto vendita
+description: Scopri i tipi di impostazioni di configurazione dell’amministratore disponibili per personalizzare le funzionalità di implementazione estesa fornite dalla soluzione Store Fulfillment e crea un collegamento alle istruzioni per completare la configurazione.
 role: User, Admin
 level: Intermediate
 exl-id: c432791a-94a0-457d-9ed9-8937846ce4f4
@@ -11,38 +11,38 @@ ht-degree: 0%
 
 ---
 
-# Panoramica sulla configurazione per l&#39;esecuzione dello store
+# Panoramica sulla configurazione per il Store Fulfillment
 
 In Adobe Commerce Admin, le impostazioni di configurazione per Store Fulfillment Services di Walmart Commerce Technologies sono suddivise per tipo.
 
-**Memorizza impostazioni di configurazione evasione per tipo**
+**Archivia impostazioni di configurazione di evasione per tipo**
 
-| **Tipo** | **Descrizione** | **Configurabile API** |
+| **Tipo** | **Descrizione** | **API configurabile** |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
-| [Configurazione generale](enable-general.md) | Integrazione generale impostata per la soluzione Store Fulfillment, le sue funzioni attive e le credenziali per la connessione ai servizi di evasione. | No |
-| [Configurazione e-mail vendite](sales-emails.md) | Imposta modelli di posta elettronica aggiuntivi per le notifiche dei clienti inviate durante il processo di check-in. | No |
-| [Configurazione dell’archivio merchant](merchant-store-configuration.md) | Imposta origini Inventory management avanzate come negozi commerciali. | Sì |
-| [Gestione delle scorte di prodotti](product-stock.md) | Configura i messaggi e le funzionalità di stock commerciali disponibili per i clienti. | Sì |
-| [Trasferimento origine Inventory management](inventory-stock-transfer.md) | Imposta un nuovo stock, trasferisci il magazzino fuori del magazzino predefinito. | Sì |
-| [Configurazione di più siti web/ambiti](multi-site-and-scope-config.md) | Configura risorse e metodi di consegna per più siti web/ambiti store. | No |
-| [Configurazione del sistema del processo in background](background-processes.md) | Configura le pianificazioni per i processi in background utilizzati nella sincronizzazione dei dati con i servizi di evasione. | No |
-| [Impostazione della posizione e della mappatura del negozio](store-location-map-provider-setup.md) | Configura la possibilità di utilizzare un provider a distanza per cercare i negozi al dettaglio e visualizzare queste informazioni nella mappa SLS | Sì |
-| [Configurazione dell’esperienza di check-in](check-in-experience-setup.md) | Configura il colore dell&#39;auto e rende le opzioni che saranno disponibili durante il processo di check-in | Sì |
-| [Configurazione utente](user-setup.md) | Gestisci account utente, ruoli e autorizzazioni per i collaboratori dello store che utilizzano l&#39;app Store Assist. ambiti. | Sì |
-| [Configurazione app](app-setup.md) | Esamina le configurazioni disponibili per l’app Store Assist necessarie per completare il processo di onboarding. Queste impostazioni non possono essere configurate dall&#39;amministratore di Adobe Commerce. | Sì |
+| [Configurazione generale](enable-general.md) | Integrazione generale impostata per la soluzione Store Fulfillment, le relative funzioni attive e le credenziali per la connessione ai servizi di evasione. | No |
+| [Configurazione e-mail vendite](sales-emails.md) | Impostare ulteriori modelli di posta elettronica per le notifiche dei clienti inviate durante il processo di archiviazione. | No |
+| [Configurazione archivio esercenti](merchant-store-configuration.md) | Imposta le origini Inventory management avanzate come negozi per esercenti. | Sì |
+| [Gestione magazzino prodotto](product-stock.md) | Configura i messaggi sulle azioni e le funzioni disponibili per i clienti. | Sì |
+| [Trasferimento origine Inventory management](inventory-stock-transfer.md) | Impostare un nuovo magazzino e trasferire il magazzino al di fuori del magazzino predefinito. | Sì |
+| [Configurazione di più siti Web/ambiti](multi-site-and-scope-config.md) | Configura le scorte e i metodi di consegna per più siti Web/ambiti di archiviazione. | No |
+| [Configurazione del sistema di processi in background](background-processes.md) | Configurare le pianificazioni dei processi in background utilizzati nella sincronizzazione dei dati con i servizi di evasione. | No |
+| [Impostazione della posizione del negozio e della mappatura](store-location-map-provider-setup.md) | Configurare la possibilità di utilizzare un provider di servizi a distanza per cercare negozi al dettaglio e visualizzare queste informazioni nella mappa SLS | Sì |
+| [Configurazione dell’esperienza di archiviazione](check-in-experience-setup.md) | Configura il colore dell&#39;auto e le opzioni di creazione dell&#39;auto che saranno disponibili durante il check-in | Sì |
+| [Configurazione utente](user-setup.md) | Gestisci gli account utente, i ruoli e le autorizzazioni per gli associati allo store che utilizzano l&#39;app Store Assist. ambiti. | Sì |
+| [Configurazione app](app-setup.md) | Verifica le configurazioni disponibili per l’app Store Assist necessaria per completare il processo di onboarding. Queste impostazioni non possono essere configurate dall’amministratore di Adobe Commerce. | Sì |
 
-## Utilizzare il riferimento di configurazione
+## Utilizza il riferimento di configurazione
 
-Visualizza il riferimento di configurazione per ogni tipo di impostazione selezionando il nome del tipo nel _Memorizza impostazioni di configurazione evasione per tipo_ tabella.
+Visualizzare il riferimento di configurazione per ciascun tipo di impostazione selezionando il nome del tipo nella _Archivia impostazioni di configurazione di evasione per tipo_ tabella.
 
 Nel riferimento di configurazione per ciascun tipo, i dettagli di configurazione vengono visualizzati in una tabella con le seguenti intestazioni di colonna:
 
 - **Campo** fa riferimento al nome del campo da configurare
 
-- **Descrizione** fornisce dettagli importanti sullo scopo e il comportamento del campo
+- **Descrizione** fornisce dettagli importanti sullo scopo e sul comportamento del campo
 
 - **Ambito** indica l’ambito di configurazione di Adobe Commerce per l’impostazione (globale, sito web, store)
 
-- **Obbligatorio** il valore indica se è necessario impostare un valore sul campo
+- **Obbligatorio** valore indica se è necessario impostare un valore nel campo
 
-Per riferimento tecnico, puoi anche trovare il percorso di configurazione interno per ciascun campo.
+Per informazioni tecniche, puoi anche trovare il percorso di configurazione interno di ciascun campo.

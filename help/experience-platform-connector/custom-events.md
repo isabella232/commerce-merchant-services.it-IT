@@ -1,6 +1,6 @@
 ---
 title: Creare eventi personalizzati
-description: Scopri come creare eventi personalizzati per collegare i dati di Adobe Commerce ad altri prodotti DX di Adobe.
+description: Scopri come creare eventi personalizzati per collegare i dati di Adobe Commerce ad altri prodotti Adobe DX.
 exl-id: 5a754106-c66a-4280-9896-6d065df8a841
 source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
@@ -11,17 +11,17 @@ ht-degree: 0%
 
 # Creare eventi personalizzati
 
-È possibile estendere [piattaforma di eventi](events.md) creando eventi di vetrina personalizzati per raccogliere dati unici per il tuo settore. Quando crei e configuri un evento personalizzato, questo viene inviato al [Raccoglitore eventi Adobe Commerce](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-collectors).
+È possibile estendere [piattaforma di gestione eventi](events.md) creando eventi storefront personalizzati per raccogliere dati specifici per il tuo settore. Quando crei e configuri un evento personalizzato, questo viene inviato al [Raccolta eventi di Adobe Commerce](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-collectors).
 
-## Gestire eventi personalizzati
+## Gestire gli eventi personalizzati
 
-Gli eventi personalizzati sono supportati solo per Adobe Experience Platform. I dati personalizzati non vengono inoltrati alle dashboard e ai tracciatori delle metriche di Adobe Commerce.
+Gli eventi personalizzati sono supportati solo per Adobe Experience Platform. I dati personalizzati non vengono inoltrati alle dashboard di Adobe Commerce e ai tracker di metriche.
 
-Per qualsiasi `custom` , il raccoglitore aggiunge un `personId` (`ecid`) a `customContext` e avvolge un `xdm` prima di inoltrare al server Edge.
+Per qualsiasi `custom` , il raccoglitore aggiunge un `personId` (`ecid`) a `customContext` e racchiude un `xdm` intorno a esso prima dell&#39;inoltro al bordo.
 
 Esempio:
 
-Evento personalizzato pubblicato tramite Adobe Commerce Events SDK:
+Evento personalizzato pubblicato tramite SDK eventi di Adobe Commerce:
 
 ```javascript
 mse.publish.custom({
@@ -47,13 +47,13 @@ In Experience Platform Edge:
 
 ## Gestire le sostituzioni degli eventi (attributi personalizzati)
 
-Le sostituzioni degli attributi per gli eventi standard sono supportate solo ad Experience Platform. I dati personalizzati non vengono inoltrati ai dashboard e ai tracciatori delle metriche Commerce.
+Le sostituzioni di attributo per gli eventi standard sono supportate solo per l’Experience Platform. I dati personalizzati non vengono inoltrati alle dashboard di Commerce e ai tracker di metriche.
 
-Per qualsiasi evento con un set `customContext`, sostituisce il raccoglitore `personId` e i contatori Adobe Analytics e inoltra tutti gli altri attributi impostati in `customContext`.
+Per qualsiasi evento con un set `customContext`, il raccoglitore sostituisce `personId` e Adobe Analytics e inoltra tutti gli altri attributi impostati in `customContext`.
 
 Esempi:
 
-Visualizzazione del prodotto con sostituzioni pubblicate tramite Adobe Commerce Events SDK:
+Visualizzazione prodotto con sostituzioni pubblicate tramite SDK per eventi di Adobe Commerce:
 
 ```javascript
 mse.publish.productPageView({
@@ -78,7 +78,7 @@ In Experience Platform Edge:
 }
 ```
 
-La visualizzazione del prodotto con sostituzioni di Adobe Commerce viene pubblicata tramite l’SDK di Adobe Commerce Events:
+La visualizzazione del prodotto con le sostituzioni di Adobe Commerce pubblicata tramite l’SDK degli eventi di Adobe Commerce:
 
 ```javascript
 mse.publish.productPageView({

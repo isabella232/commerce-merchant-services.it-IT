@@ -1,40 +1,40 @@
 ---
 title: Filtra prodotti
-description: Definisci condizioni che includono o escludono i prodotti dall’utilizzo come consigli.
+description: Definisci le condizioni che includono o escludono l’utilizzo dei prodotti come consigli.
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
 source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
 
 # Filtra prodotti
 
-Adobe Commerce applica automaticamente filtri predefiniti non configurabili alle unità dei consigli. Se a una pagina sono state distribuite più unità di raccomandazione, Adobe Commerce filtra tutti i prodotti che vengono ripetuti nelle unità. Viene utilizzato solo il primo riferimento a un prodotto ripetuto, per fare spazio ad altri prodotti da raccomandare. Adobe Commerce inoltre filtra i prodotti acquistati in precedenza e quelli presenti nel carrello.
+Adobe Commerce applica automaticamente filtri predefiniti non configurabili alle unità di consigli. Se in una pagina sono distribuite più unità di consigli, Adobe Commerce filtra tutti i prodotti ripetuti in tali unità. Viene utilizzato solo il primo riferimento a un prodotto ripetuto, per fare spazio ad altri prodotti da consigliare. Adobe Commerce filtra anche eventuali prodotti acquistati in precedenza e quelli presenti nel carrello.
 
-Quando [creare](create.md) un&#39;unità di raccomandazione, potete definire filtri che controllano quali prodotti possono essere visualizzati nei consigli. Questi filtri si basano su un set di condizioni di inclusione o esclusione definite dall’utente. Nei consigli vengono visualizzati solo i prodotti che corrispondono a tutte le condizioni di inclusione. I prodotti che corrispondono a una qualsiasi delle condizioni di esclusione non sono consigliati.
+Quando [creare](create.md) in un’unità di consigli, puoi definire filtri che controllano quali prodotti possono essere visualizzati nei consigli. Questi filtri si basano su un set di condizioni di inclusione o esclusione definite dall’utente. Solo i prodotti che corrispondono a tutte le condizioni di inclusione vengono visualizzati nei consigli. Non sono consigliati i prodotti che soddisfano una qualsiasi delle condizioni di esclusione.
 
-Puoi configurare più filtri e abilitare solo quelli desiderati selezionando l’opzione su ogni pagina del filtro. Questo consente di creare bozze di filtri da utilizzare in futuro. In ogni scheda viene visualizzato il numero di filtri abilitati.
+Per configurare più filtri e abilitarli solo quelli desiderati, seleziona l’opzione (Attiva/Disattiva) in ogni pagina del filtro. Ciò consente di creare bozze di filtri da utilizzare in futuro. Il numero di filtri attivati viene visualizzato in ogni scheda.
 
 ## Condizioni
 
 Le condizioni possono essere statiche o dinamiche.
 
-- Una condizione statica utilizza gli attributi di prodotto esistenti per determinare quali prodotti possono apparire nell’unità. Ad esempio, puoi specificare che nell’unità vengono visualizzati solo i prodotti in magazzino con un prezzo superiore a 25 $. Le condizioni statiche sono disponibili in tutti i tipi di pagina.
+- Una condizione statica utilizza gli attributi di prodotto esistenti per determinare quali prodotti possono comparire nell’unità. Ad esempio, è possibile specificare che solo i prodotti in magazzino con un prezzo superiore a 25 $ vengano visualizzati nell&#39;unità. Le condizioni statiche sono disponibili su tutti i tipi di pagina.
 
-- Una condizione dinamica chiave del contesto corrente di un acquirente, ad esempio la categoria o il prodotto attualmente visualizzato. Ad esempio, quando crei una raccomandazione di prodotto da distribuire nelle pagine dei dettagli del prodotto, puoi creare una condizione per consigliare solo i prodotti che rientrano in una fascia di prezzo relativa del prodotto attualmente visualizzato. Le condizioni dinamiche sono disponibili in ogni tipo di pagina, ad eccezione della home page e nelle pagine con consigli inseriti con Page Builder.
+- Una condizione dinamica chiave del contesto corrente di un acquirente, ad esempio la categoria o il prodotto attualmente visualizzato. Ad esempio, quando crei un consiglio di prodotto da distribuire nelle pagine dei dettagli del prodotto, puoi creare una condizione per consigliare solo i prodotti che rientrano in un intervallo di prezzo relativo del prodotto attualmente visualizzato. Le condizioni dinamiche sono disponibili su ogni tipo di pagina, eccetto la Home page, e sulle pagine con consigli inseriti con Page Builder.
 
 ### Operatori logici
 
-Operatori logici `AND` e `OR` sono utilizzati per unire più condizioni. Se utilizzi sia filtri di inclusione che filtri di esclusione, le inclusioni vengono valutate per prime per determinare tutti i prodotti possibili che possono essere consigliati, i prodotti che corrispondono a eventuali filtri di esclusione vengono rimossi dall’elenco.
+Operatori logici `AND` e `OR` vengono utilizzati per unire più condizioni. Se utilizzi sia i filtri di inclusione che i filtri di esclusione, le inclusioni vengono valutate per prime per determinare tutti i possibili prodotti che possono essere consigliati, quindi i prodotti che corrispondono a eventuali filtri di esclusione vengono rimossi dall’elenco.
 
-- `AND` - Unisce due condizioni di filtro dell’inclusione
+- `AND` - Unisce due condizioni di filtro di inclusione
 - `OR` - Unisce due condizioni di filtro di esclusione
 
 >[!NOTE]
 >
-> I filtri di inclusione e esclusione sostituiscono le esclusioni di categoria legacy nelle versioni 3.2.2 e successive della `magento/product-recommendations` modulo . Consulta la sezione [note sulla versione](release-notes.md) per ulteriori informazioni sulle versioni di Adobe Commerce.
+> I filtri di inclusione e i filtri di esclusione sostituiscono le esclusioni di categoria legacy nelle versioni 3.2.2 e successive di `magento/product-recommendations` modulo. Consulta la [note sulla versione](release-notes.md) per ulteriori informazioni sulle versioni di Adobe Commerce.
 
 ## Tipi di filtri {#filtertypes}
 
@@ -42,37 +42,37 @@ Operatori logici `AND` e `OR` sono utilizzati per unire più condizioni. Se util
 
 ### Categoria
 
-I filtri basati sulla categoria di un prodotto utilizzano assegnazioni di categorie dirette e relative sottocategorie. Ad esempio, l’abilitazione di una condizione di esclusione per una categoria `Gear` esclude i prodotti assegnati a `Gear` e tutte le sue sottocategorie quali `Gear/Bags` o `Gear/Fitness Equipment`. Per i commercianti B2B, il filtro Categoria aderisce a qualsiasi [categorie di prodotti specifiche per il cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) hai configurato.
+I filtri basati sulla categoria di un prodotto utilizzano le assegnazioni dirette delle categorie e le relative sottocategorie. Ad esempio, l’abilitazione di una condizione di esclusione per la categoria `Gear` esclude i prodotti assegnati a `Gear` e tutte le sue sottocategorie, ad esempio `Gear/Bags` o `Gear/Fitness Equipment`. Per i commercianti B2B, il filtro Categoria aderisce a qualsiasi [categorie di prodotti specifiche del cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) hai configurato.
 
-Adobe Commerce consiglia di utilizzare la seguente configurazione di filtro categorie quando distribuisci consigli ai tipi di pagina:
+Adobe Commerce consiglia di utilizzare la seguente configurazione del filtro categorie quando distribuisci i consigli ai tipi di pagina:
 
 | Pagina | Filtra per |
 |---|---|
-| Pagina principale | Non filtrare i prodotti. |
-| Categoria | Filtrare i prodotti nella categoria specifica. |
-| Dettagli prodotto | Filtrare i prodotti nelle stesse categorie. |
-| Carrello | Filtrare categorie di prodotti nel carrello. |
-| Conferma ordine | Filtra categorie di prodotti acquistati. |
+| Home | Non filtrare i prodotti. |
+| Categoria | Filtra i prodotti nella categoria specifica. |
+| Dettagli prodotto | Filtra i prodotti nelle stesse categorie. |
+| Carrello | Filtra le categorie di prodotti nel carrello. |
+| Conferma ordine | Filtra le categorie di prodotti acquistati. |
 
 ### Prodotto
 
-I filtri dei prodotti specificano quali prodotti specifici sono idonei, o non idonei, da visualizzare nei consigli. Non è possibile selezionare prodotti disattivati o non visibili individualmente perché tali prodotti non possono mai essere visualizzati nei consigli.
+I filtri dei prodotti specificano quali prodotti specifici sono idonei, o non idonei, per la visualizzazione nei consigli. Non puoi selezionare prodotti disabilitati o non visibili singolarmente, in quanto tali prodotti non possono mai essere visualizzati nei consigli.
 
 ### Tipo
 
-Un filtro basato sul tipo di prodotto include o esclude tutti i prodotti di un tipo specifico. I tipi supportati includono _Semplice_, _Configurabile_, _Virtuale_, _Scaricabile_ oppure _Carta regalo_. _Bundle_ e _Raggruppato_ i prodotti non sono ancora supportati.
+Un filtro basato sul tipo di prodotto include o esclude tutti i prodotti di un tipo specifico. I tipi supportati includono _Semplice_, _Configurabile_, _Virtuale_, _Download disponibile_, o _Biglietto regalo_. _Bundle_ e _Raggruppato_ prodotti non ancora supportati.
 
 ### Visibilità
 
-Filtra i prodotti in base alla visibilità, ad esempio: _Catalogo_, _Ricerca_ o entrambi.
+Filtra i prodotti in base alla visibilità, ad esempio: _Catalogo_, _Ricerca_, o entrambi.
 
 ### Prezzo
 
-Un filtro basato sul prezzo del prodotto utilizza il prezzo finale per eseguire il confronto. Il prezzo finale comprende eventuali sconti o prezzi speciali disponibili per i consumatori anonimi. Per i commercianti B2B, il prezzo visualizzato riflette il [determinazione dei prezzi di gruppo specifici per i clienti](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) hai configurato.
+Un filtro basato sul prezzo del prodotto utilizza il prezzo finale per eseguire il confronto. Il prezzo finale include eventuali sconti o prezzi speciali disponibili per gli acquirenti anonimi. Per gli esercenti B2B, il prezzo visualizzato riflette il [prezzo di gruppo specifico per il cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) hai configurato.
 
-### Stato delle scorte
+### Stato del magazzino
 
 I seguenti filtri di esclusione possono essere utilizzati per filtrare i prodotti in base allo stato delle scorte:
 
-- Non disponibile - (Solo esclusione) Esclude i prodotti che non sono disponibili.
-- Basso in stock - (solo esclusione) Esclude i prodotti a basso contenuto di stock. Lo stato di stock ridotto si basa sul _Solo X soglia sinistra_ valore in [Configurazione dell’inventario](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html).
+- Esaurito - (solo esclusione) esclude i prodotti esauriti.
+- Magazzino basso: (solo esclusione) esclude i prodotti con scorte limitate. Lo stato di scorte scarse si basa sulla _Solo X soglia sinistra_ valore in [Configurazione inventario](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html).

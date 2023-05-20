@@ -1,62 +1,62 @@
 ---
 title: Posizionamento ed etichette
-description: Scopri dove puoi inserire consigli su varie pagine del sito e suggerimenti per le etichette utilizzate di frequente per ciascun tipo di raccomandazione.
+description: Scopri dove puoi inserire consigli su varie pagine del sito e suggerimenti per le etichette utilizzate di frequente per ogni tipo di consiglio.
 exl-id: e1025138-49dc-4833-92bb-27e8e415d724
 source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
 
 # Posizionamento ed etichette
 
-Con così tanti tipi di consigli tra cui scegliere, quali utilizzare in ogni pagina? Se non sai da dove iniziare, prova quanto segue:
+Con così tanti tipi di consigli tra cui scegliere, quale utilizzare in ogni pagina? Se non si è sicuri della posizione da cui iniziare, provare a eseguire le operazioni seguenti:
 
-| Pagina | Tipo di raccomandazione |
+| Pagina | Tipo di consiglio |
 |---|---|
 | Home page | `Recommended for you` |
-| Pagina di prodotto | `Viewed this, viewed that` |
+| Pagina prodotto | `Viewed this, viewed that` |
 | Carrello | `Bought this, bought that` |
 
-Puoi tenere traccia delle [metriche](workspace.md) e, se necessario, regolare. Ricordate che la sperimentazione è la chiave.
+Puoi tenere traccia di [metriche](workspace.md) e regolarli se necessario. Ricordate che la sperimentazione è fondamentale.
 
-Alcune pagine della vetrina limitano la posizione in cui è possibile inserire i consigli. Potete inserire i consigli in una delle seguenti posizioni di pagina. Per ulteriori informazioni, consulta la tabella seguente.
+Alcune pagine di vetrina limitano la posizione in cui è possibile inserire i consigli. Puoi posizionare i consigli in una delle seguenti posizioni di pagina. Per ulteriori informazioni, consulta la tabella seguente.
 
-- Nella parte superiore del contenuto principale, Recommendations compare sopra l’area di contenuto principale, appena sotto la barra di navigazione superiore.
-- Nella parte inferiore del contenuto principale (impostazione predefinita): Recommendations viene visualizzato sotto l’area di contenuto principale e prima di qualsiasi altro blocco di contenuto sulla pagina, ad esempio _Prodotti correlati_.
+- Nella parte superiore del contenuto principale - Recommendations viene visualizzato sopra l’area del contenuto principale appena sotto la barra di navigazione superiore.
+- Nella parte inferiore del contenuto principale (impostazione predefinita): Recommendations viene visualizzato sotto l’area del contenuto principale e prima di qualsiasi altro blocco di contenuto della pagina, ad esempio _Prodotti correlati_.
 
-![Posizionamento dei consigli](assets/storefront-home-page-top.png)
+![Posizionamento consigli](assets/storefront-home-page-top.png)
 _Consiglio nella parte superiore della home page_
 
-## Etichette per i consigli
+## Etichette per consigli
 
-L&#39;etichetta assegnata a una raccomandazione nella vetrina influenza il modo in cui i consumatori interpretano la sua rilevanza per loro. Le etichette seguenti vengono utilizzate di frequente per ogni tipo di raccomandazione.
+L’etichetta assegnata a un consiglio nella vetrina influisce sul modo in cui i consumatori ne interpretano la rilevanza per gli stessi. Le seguenti etichette vengono spesso utilizzate per ogni tipo di consiglio.
 
-![Posizionamento dei consigli](assets/storefront-search-results-top.png)
-_Consiglio al di sopra dei risultati di ricerca_
+![Posizionamento consigli](assets/storefront-search-results-top.png)
+_Consiglio nella parte superiore dei risultati di ricerca_
 
-| Tipo di raccomandazione | Etichette consigliate |
+| Tipo di consiglio | Etichette consigliate |
 |---|---|
-| Più visualizzati<br> Più aggiunto al carrello<br>Più acquistati<br>Conversione (visualizza su carrello)<br>Conversione (visualizzazione acquisto) | Più popolari<br>Articoli popolari<br>Tendenza<br>Popolare in questo momento<br>Recentemente popolari<br>Articoli popolari ispirati da questo articolo (PDP)<br>Articoli più venduti<br>Potresti essere interessato a |
-| Consigliato per te | Solo per te<br>Consigliato per te<br>Ispirato alle tendenze di shopping |
-| Ho visto questo, visto che | I clienti che hanno visualizzato questo elemento hanno visualizzato anche<br>I clienti hanno visualizzato anche<br>Articoli correlati |
-| Ho visto questo, l&#39;ho comprato | I clienti che hanno visualizzato questo hanno acquistato<br>Clienti acquistati<br>Cosa comprano gli altri dopo aver visualizzato questo articolo? |
-| Ho comprato questo, l&#39;ho comprato | Ottieni tutto quello di cui hai bisogno<br>Non dimenticate queste<br>Comprato frequentemente |
-| Più simile a questo | Altri elementi come questo<br>Simile a questo |
-| Generico | Può piacerti anche<br>Agli acquirenti piaceva anche<br>Opzioni simili<br>Articoli correlati |
-| Tendenza | Tendenza<br>Tendenza ora<br>Tendenza recente<br>Articoli caldi<br>Prodotti correlati alle tendenze (PDP) |
-| Visualizzato di recente | Visualizzato di recente<br>Dai un&#39;occhiata |
+| Articoli più visualizzati<br> Più aggiunti al carrello<br>Più acquistati<br>Conversione (da vista a carrello)<br>Conversione (visualizzazione all&#39;acquisto) | Più popolari<br>Elementi popolari<br>Di tendenza<br>Popolare al momento<br>Popolari di recente<br>Articoli popolari ispirati da questo articolo (PDP)<br>Articoli più venduti<br>Potrebbe interessarti |
+| Consigliato per te | Solo per te<br>Consigliato per te<br>Ispirato dalle tendenze di acquisto |
+| Ha Visualizzato Questo, Ha Visualizzato Quello | Hanno visto anche i clienti che hanno visto questo oggetto<br>Clienti visualizzati anche<br>Elementi correlati |
+| Ha visualizzato questo, ha acquistato quello | I clienti che hanno visualizzato questo hanno acquistato<br>I clienti hanno acquistato<br>Cosa acquistano gli altri dopo aver visualizzato questo oggetto? |
+| Ho Comprato Questo E Quello | Ottieni tutto il necessario<br>Non dimenticate questi<br>Acquistato di frequente insieme |
+| Altri argomenti correlati | Altri elementi come questo<br>Simile a questo |
+| Generico | Ti potrebbe piacere<br>Piaceva anche agli acquirenti<br>Opzioni simili<br>Elementi correlati |
+| Di tendenza | Di tendenza<br>Di tendenza<br>Di tendenza recente<br>Elementi attivi<br>Prodotti correlati di tendenza (PDP) |
+| Visualizzato di recente | Visualizzato di recente<br>Dai un&#39;altra occhiata |
 
-## Raccomandazioni supportate per pagina
+## Consigli supportati per pagina
 
-Nella tabella seguente sono elencate le pagine della vetrina in cui è possibile inserire i consigli e i tipi consentiti in ogni pagina.
+Nella tabella seguente sono elencate le pagine iniziali in cui è possibile inserire i consigli e i tipi di consigli consentiti in ogni pagina.
 
-| Pagina | Posizionamento Recommendations |
+| Pagina | Recommendations di posizionamento |
 |---|---|
-| Home page | Nella parte superiore del contenuto principale<br>Nella parte inferiore del contenuto principale (impostazione predefinita) | Più visualizzati<br>Più acquistati<br>Più aggiunto al carrello<br>Consigliato per te<br>Tendenza |
-| Categoria | Nella parte superiore del contenuto principale<br>Nella parte inferiore del contenuto principale (impostazione predefinita) | Più visualizzati<br>Più acquistati<br>Più aggiunto al carrello<br>Consigliato per te<br>Tendenza |
-| Dettagli prodotto | Nella parte inferiore del contenuto principale (impostazione predefinita) | Più visualizzati<br>Più acquistati<br>Più aggiunto al carrello<br>Ho visualizzato questo, visto che<br>Ho visto questo, l&#39;ho comprato<br>Ho comprato questo, l&#39;ho comprato<br>Più simile a questo<br>Tendenza<br>Somiglianza visiva |
-| Carrello | Nella parte inferiore del contenuto principale (impostazione predefinita) | Più visualizzati<br>Più acquistati<br>Più aggiunto al carrello<br>Ho visualizzato questo, visto che<br>Ho visto questo, l&#39;ho comprato<br>Ho comprato questo, l&#39;ho comprato<br>Più simile a questo<br>Tendenza |
-| Conferma | Nella parte inferiore del contenuto principale (impostazione predefinita) | Più visualizzati<br>Più acquistati<br>Più aggiunto al carrello<br>Ho visualizzato questo, visto che<br>Ho visto questo, l&#39;ho comprato<br>Ho comprato questo, l&#39;ho comprato<br>Più simile a questo<br>Tendenza |
-| Page Builder | [Trascinamento della selezione](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) per posizionare il tipo di contenuto | Più visualizzati<br>Più acquistati<br>Più aggiunto al carrello<br>Consigliato per te<br>Tendenza |
+| Home page | Nella parte superiore del contenuto principale<br>Nella parte inferiore del contenuto principale (impostazione predefinita) | Articoli più visualizzati<br>Più acquistati<br>Più aggiunti al carrello<br>Consigliato per te<br>Di tendenza |
+| Categoria | Nella parte superiore del contenuto principale<br>Nella parte inferiore del contenuto principale (impostazione predefinita) | Articoli più visualizzati<br>Più acquistati<br>Più aggiunti al carrello<br>Consigliato per te<br>Di tendenza |
+| Dettagli prodotto | Nella parte inferiore del contenuto principale (impostazione predefinita) | Articoli più visualizzati<br>Più acquistati<br>Più aggiunti al carrello<br>Ha visualizzato questo, ha visualizzato quello<br>Ho visto questo, ho comprato quello<br>Ho comprato questo e quello<br>Altri argomenti correlati<br>Di tendenza<br>Somiglianza visiva |
+| Carrello | Nella parte inferiore del contenuto principale (impostazione predefinita) | Articoli più visualizzati<br>Più acquistati<br>Più aggiunti al carrello<br>Ha visualizzato questo, ha visualizzato quello<br>Ho visto questo, ho comprato quello<br>Ho comprato questo e quello<br>Altri argomenti correlati<br>Di tendenza |
+| Conferma | Nella parte inferiore del contenuto principale (impostazione predefinita) | Articoli più visualizzati<br>Più acquistati<br>Più aggiunti al carrello<br>Ha visualizzato questo, ha visualizzato quello<br>Ho visto questo, ho comprato quello<br>Ho comprato questo e quello<br>Altri argomenti correlati<br>Di tendenza |
+| Page Builder | [Trascina](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) per posizionare il tipo di contenuto | Articoli più visualizzati<br>Più acquistati<br>Più aggiunti al carrello<br>Consigliato per te<br>Di tendenza |

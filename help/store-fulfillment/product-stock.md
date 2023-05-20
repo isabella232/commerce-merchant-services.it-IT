@@ -1,48 +1,48 @@
 ---
-title: Gestione delle scorte di prodotti
-description: Configura i messaggi e le funzionalità di stock commerciali disponibili per i clienti.
+title: Gestione magazzino prodotto
+description: Configura i messaggi sulle azioni e le funzioni disponibili per i clienti.
 role: User, Admin
 level: Intermediate
 exl-id: 3ac217f7-e823-4578-8416-5ecceb76aa87
 source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
 
-# Gestione delle scorte di prodotti
+# Gestione magazzino prodotto
 
-Come commerciante, puoi utilizzare Adobe Commerce [Inventory management](https://docs.magento.com/user-guide/catalog/inventory-management.html) opzioni di stock e di origine. Inoltre, è possibile utilizzare la soluzione Store Fulfillment per controllare altre opzioni di disponibilità dell&#39;inventario relative alle operazioni del negozio commerciale.
+In qualità di commerciante, puoi utilizzare Adobe Commerce [Inventory management](https://docs.magento.com/user-guide/catalog/inventory-management.html) stock e opzioni di origine. È inoltre possibile utilizzare la soluzione di evasione del punto vendita per controllare altre opzioni di disponibilità del magazzino correlate alle operazioni del punto vendita esercente.
 
-- Opzione di consegna da negozi Merchant
+- Opzione di consegna a domicilio da negozi mercantili
 
-- Consenti / Disponibile per il ritiro dal negozio
+- Consenti/Disponibile per ritiro negozio
 
-- UPC/SKU/altri identificatori di prodotto univoci
+- UPC / SKU / Altri identificatori di prodotto univoci
 
 - Soglia esaurita
 
-- Inventario decrescente da posizioni specifiche su ordine
+- Diminuzione delle scorte da ubicazioni specifiche in base all&#39;ordine
 
-Configura le opzioni di Stock di prodotto dall’amministratore: **[!UICONTROL Catalog > Products > Select Product]**
+Configura le opzioni Stock di prodotto dall’Amministratore: **[!UICONTROL Catalog > Products > Select Product]**
 
-## **Opzioni stock prodotto**
+## **Opzioni magazzino prodotto**
 
 | **Campo** | **Descrizione** | **Ambito** | **Obbligatorio** |
 |----------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------------|
-| **Disponibile per la distribuzione a domicilio** | Imposta la disponibilità della consegna a domicilio (Spedizione da negozio) per il prodotto. Se abilitata, tutte le posizioni assegnate del negozio di esercenti con inventario disponibile per il prodotto sono considerate idonee per l’opzione Consegna iniziale. Quando questa opzione è disabilitata, il prodotto non è mai idoneo per la distribuzione a domicilio.</br></br>Nella maggior parte dei casi, è sufficiente impostare questa opzione a livello di negozio di merchant. Tuttavia, potrebbero esistere casi unici per prodotti specifici, come quelli soggetti a restrizioni di spedizione federali, che non dovrebbero essere ammessi a Home Delivery. | Sito Web | No |
-| **[!UICONTROL Available for Store Pickup]** | Imposta la disponibilità del ritiro dal negozio per il prodotto. Se abilitata, tutte le posizioni assegnate del negozio di esercenti con inventario disponibile per il prodotto sono considerate idonee per l’opzione Ritiro dal negozio . Se disabilitata, il prodotto non è mai idoneo per il ritiro dal negozio.</br></br>Questa opzione può essere utile per tenere traccia dell’inventario commerciale nel sistema che non desideri vendere dal tuo canale e-commerce. | Sito Web | No |
-| **[!UICONTROL UPC / SKU / Custom Scannable Identifier]** | Questo attributo deve già esistere come attributo di prodotto e si riferisce al **[!UICONTROL Barcode Source / Barcode Type]** impostazione. Questo attributo viene utilizzato per tenere traccia di un codice a barre digitalizzabile per i prodotti. Questo valore può essere inviato quando un ordine viene inviato agli esercizi commerciali per il prelievo. I collaboratori dello store possono utilizzare il valore con l’elenco di prelievo per far corrispondere i prodotti sullo scaffale utilizzando uno scanner per codici a barre. | Visualizzazione store | No |
+| **Disponibile per la consegna a domicilio** | Imposta la disponibilità della consegna a domicilio (dal punto vendita) per il prodotto. Quando questa opzione è abilitata, tutte le ubicazioni di negozi commerciali assegnate con scorte disponibili per il prodotto sono considerate idonee per l’opzione Consegna a domicilio. Quando questa opzione è disabilitata, il prodotto non è mai idoneo per la consegna a domicilio.</br></br>Nella maggior parte dei casi, è sufficiente impostare questa opzione a livello di punto vendita. Tuttavia, potrebbero esserci casi specifici per prodotti specifici, come quelli soggetti a restrizioni federali di spedizione, che non dovrebbero essere idonei per la consegna a domicilio. | Sito Web | No |
+| **[!UICONTROL Available for Store Pickup]** | Imposta la disponibilità del ritiro dello store per il prodotto. Quando questa opzione è abilitata, tutte le ubicazioni di negozi mercantili assegnate con scorte disponibili per il prodotto sono considerate idonee per l’opzione Ritiro da store. Se disabilitato, il prodotto non è mai idoneo per il ritiro dal negozio.</br></br>Questa opzione può essere utile per tenere traccia dell’inventario dei commercianti nel sistema che non desideri vendere dal tuo canale di e-commerce. | Sito Web | No |
+| **[!UICONTROL UPC / SKU / Custom Scannable Identifier]** | Questo attributo deve già esistere come attributo di prodotto e fa riferimento al **[!UICONTROL Barcode Source / Barcode Type]** impostazione. Questo attributo viene utilizzato per tenere traccia di un codice a barre digitalizzabile per i prodotti. Questo valore può essere inviato quando un ordine viene inviato ai negozi esercenti per il prelievo. Gli associati al negozio possono utilizzare il valore con la distinta di prelievo per far corrispondere i prodotti sullo scaffale utilizzando uno scanner con codice a barre. | Visualizzazione store | No |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## Fonti per inventario a livello di prodotto
+## Origini per inventario a livello di prodotto
 
 | **Campo** | **Descrizione** | **Ambito** | **Obbligatorio** |
 |-----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **[!UICONTROL Out of Stock Threshold]** | Imposta la soglia di magazzino per l&#39;articolo all&#39;interno di ogni origine. Quando le scorte scendono al di sotto della soglia, sono considerate esaurite alla fonte.</br></br>Per utilizzare l&#39;impostazione di configurazione dell&#39;archivio globale, controlla il **[!UICONTROL Use Default]** opzione . | Globale | No |
-| **[!UICONTROL Allow Store Pickup]** | Imposta esplicitamente se l’articolo è disponibile per il ritiro dall’archivio, indipendentemente dalla configurazione di magazzino o dalla posizione dell’archivio commerciale disponibile.</br></br> Per utilizzare l’impostazione a livello di prodotto, deseleziona la [!UICONTROL Use Default] ed effettua la selezione. In caso contrario, questa impostazione viene scelta in base alla configurazione per **[!UICONTROL Allow In-Store Pickup]** che è impostato sulla fonte di magazzino. | Globale | No |
+| **[!UICONTROL Out of Stock Threshold]** | Impostare la soglia del magazzino per l&#39;articolo all&#39;interno di ogni origine. Quando le scorte scendono al di sotto della soglia, vengono considerate esaurite alla fonte.</br></br>Per utilizzare l&#39;impostazione di configurazione globale dell&#39;archivio, selezionare **[!UICONTROL Use Default]** opzione. | Globale | No |
+| **[!UICONTROL Allow Store Pickup]** | Imposta in modo esplicito se l&#39;articolo è disponibile per il prelievo dal negozio, indipendentemente dalla configurazione disponibile dell&#39;ubicazione del magazzino o del negozio esercente.</br></br> Per utilizzare l&#39;impostazione a livello di prodotto, deselezionare [!UICONTROL Use Default] ed effettuare la selezione. In caso contrario, questa impostazione viene scelta in base alla configurazione per **[!UICONTROL Allow In-Store Pickup]** impostato sull&#39;origine del materiale. | Globale | No |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 

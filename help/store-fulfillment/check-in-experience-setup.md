@@ -1,6 +1,6 @@
 ---
-title: Configurazione dell’esperienza di check-in
-description: Configura le selezioni di marca e modello] disponibili per i clienti di ritiro a bordo quando completano il modulo di ordine di ritiro.
+title: Configurazione dell’esperienza di archiviazione
+description: Configurare le selezioni di marca e modello] disponibili per i clienti di ritiro a bordo quando completano il modulo per l'ordine di ritiro.
 role: User, Admin
 level: Intermediate
 exl-id: 341b96cd-bb83-4d07-965c-b09fab24dc81
@@ -11,22 +11,22 @@ ht-degree: 0%
 
 ---
 
-# Configurazione dell’esperienza di check-in
+# Configurazione dell’esperienza di archiviazione
 
-Quando i clienti arrivano per il ritiro a bordo del marciapiede, utilizzano il modulo d&#39;ordine per effettuare il check-in e fornire informazioni sulla loro posizione, marca dell&#39;auto e modello di auto. Queste informazioni vengono inviate agli Associati Store tramite l&#39;app Store Assist in modo che possano consegnare rapidamente gli ordini di ritiro curbside.
+Quando i clienti arrivano per un ritiro a bordo, utilizzano il modulo Pickup Order per effettuare il check-in e fornire informazioni sulla loro posizione, marca dell’auto e modello dell’auto. Queste informazioni vengono inviate a Store Associates tramite l’app Store Assist in modo che possano consegnare rapidamente gli ordini di prelievo a blocchi.
 
-![[!DNL Check-In Experience Car Make] e [!DNL Model] impostazioni per il ritiro a terra](assets/checkin-system-settings-car-options.png)
+![[!DNL Check-In Experience Car Make] e [!DNL Model] impostazioni per il prelievo a bordo campo](assets/checkin-system-settings-car-options.png)
 
 >[!NOTE]
 >
->È possibile configurare l’interfaccia del modulo Ordine di prelievo dalla [Menu Configurazione archivio](merchant-store-configuration.md#configure-check-in-experience-interface-options). Ad esempio, puoi specificare quali campi di input visualizzare e se sono obbligatori o facoltativi.
+>È possibile configurare l&#39;interfaccia del modulo Ordine di prelievo dalla [Menu Configurazione store](merchant-store-configuration.md#configure-check-in-experience-interface-options). Ad esempio, puoi specificare quali campi di input visualizzare e se sono obbligatori o facoltativi.
 
 
-## Configura le selezioni di marca e colore dell&#39;auto
+## Configurare le selezioni di marca e colore dell’auto
 
-Gli utenti amministratori possono gestire le selezioni di modelli e marche automobilistiche disponibili nel modulo di prelievo dalle impostazioni di sistema di Adobe Commerce:
+Gli utenti amministratori possono gestire le selezioni della marca e del modello dell’auto disponibili nel Modulo di prelievo dalle impostazioni dei sistemi Adobe Commerce:
 
-- **[!UICONTROL System]> Check In > Autonome**
+- **[!UICONTROL System]> Check-In > Carrozzeria**
 - **[!UICONTROL System]> Check-In > Colori auto**
 
 ![[!DNL Check-In Experience system configuration for curbside pickup]](assets/check-in-experience-system-config.png)

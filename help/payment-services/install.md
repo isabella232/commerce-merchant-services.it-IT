@@ -1,6 +1,6 @@
 ---
 title: Installa [!DNL Payment Services]
-description: Installa l'estensione Payments Services.
+description: Installare l'estensione Payments Services.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 source-git-commit: 4d6c9a3017575e9adbf5dc11cf0717511592dbcf
 workflow-type: tm+mt
@@ -13,31 +13,31 @@ ht-degree: 0%
 
 Download e installazione di [!DNL Payment Services] estensione per [!DNL Adobe Commerce] e [!DNL Magento Open Source] è un passaggio preliminare per l’utilizzo di [!DNL Payment Services].
 
-![[!DNL Payment Services] vista amministratore dell&#39;estensione](assets/admin-view.png)
+![[!DNL Payment Services] visualizzazione amministrazione dell’estensione](assets/admin-view.png)
 
-## Scarica l&#39;estensione
+## Scaricare l’estensione
 
-Devi prima scaricare l&#39;estensione da [Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html) prima di installarlo.
+Scarica l&#39;estensione da [Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html) prima di installarlo.
 
-1. Passa a [Estensione di Payment Services nella Commerce Marketplace](https://marketplace.magento.com/magento-payment-services.html).
-1. Per scegliere l’edizione e la versione, seleziona **[!UICONTROL Edition]** e **[!UICONTROL Your store version]** alle selezioni preferite.
+1. Accedi a [Estensione Payment Services nella Commerce Marketplace](https://marketplace.magento.com/magento-payment-services.html).
+1. Per scegliere l’edizione e la versione, attiva/disattiva **[!UICONTROL Edition]** e **[!UICONTROL Your store version]** alle tue selezioni preferite.
 1. Clic **[!UICONTROL Add to Cart]**.
 1. Completa il pagamento e fai clic su **[!UICONTROL Place Order]**.
-1. Controlla l&#39;e-mail associata al download di Marketplace per la conferma dell&#39;ordine e i dettagli.
+1. Per informazioni dettagliate e conferma dell’ordine, controlla l’e-mail associata al download per Marketplace.
 
 ## Installare l’estensione
 
-È possibile installare [!DNL Payment Services] estensione per entrambi [!DNL Adobe Commerce] su infrastrutture cloud e istanze locali, collegate al tuo account Commerce [mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) fornito nel processo di registrazione. [!DNL Magento Open Source] i clienti utilizzano le istruzioni on-premise.
+È possibile installare [!DNL Payment Services] estensione per entrambi [!DNL Adobe Commerce] sull’infrastruttura cloud e sulle istanze locali, collegate al tuo account Commerce [mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) fornite nel processo di abbonamento. [!DNL Magento Open Source] i clienti utilizzano le istruzioni on-premise.
 
-Il Compositore utilizza queste chiavi durante l&#39;installazione iniziale di [!DNL Adobe Commerce]o in situazioni in cui le chiavi del Compositore non sono state precedentemente salvate nel `auth.json` file.
+Il Compositore utilizza queste chiavi durante l’installazione iniziale di [!DNL Adobe Commerce], o in situazioni in cui le chiavi del Compositore non sono state salvate in precedenza nel `auth.json` file.
 
-Vedi [Ottieni le chiavi di autenticazione](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) per ulteriori informazioni su come ottenere le chiavi Composer.
+Consulta [Ottieni le chiavi di autenticazione](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) per ulteriori informazioni su come ottenere le chiavi del Compositore.
 
-Vedi [Installare un’estensione](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/extensions.html) per ulteriori informazioni su cosa considerare prima di scaricare e installare un&#39;estensione.
+Consulta [Installare un’estensione](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/extensions.html) per ulteriori informazioni su cosa considerare prima di scaricare e installare un’estensione.
 
-### [!DNL Adobe Commerce] sull&#39;infrastruttura cloud
+### [!DNL Adobe Commerce] sull’infrastruttura cloud
 
-Questo metodo viene utilizzato per installare [!DNL Payment Services] estensione per un&#39;istanza Commerce Cloud.
+Questo metodo viene utilizzato per installare [!DNL Payment Services] estensione per un’istanza Commerce Cloud.
 
 1. Aggiorna il tuo `composer.json` file:
 
@@ -45,35 +45,35 @@ Questo metodo viene utilizzato per installare [!DNL Payment Services] estensione
    composer require magento/payment-services --no-update
    ```
 
-1. Aggiorna le dipendenze e installa l&#39;estensione:
+1. Aggiorna le dipendenze e installa l’estensione:
 
    ```bash
    composer update magento/payment-services --with-dependencies
    ```
 
-   Utilizza la `composer update` per aggiornare tutte le dipendenze principali.
+   Utilizza il `composer update` per aggiornare tutte le dipendenze radice.
 
-1. Conferma e invia le modifiche.
+1. Eseguire il commit e inviare le modifiche.
 
-### Configurazione on-premise e altre configurazioni
+### Configurazioni locali e di altro tipo
 
-Questo metodo viene utilizzato per installare [!DNL Payment Services] estensione per un&#39;istanza locale e [!DNL Magento Open Source] clienti.
+Questo metodo viene utilizzato per installare [!DNL Payment Services] estensione per un’istanza on-premise e [!DNL Magento Open Source] clienti.
 
-1. Per ottenere l&#39;estensione, esegui i seguenti comandi:
+1. Per ottenere l’estensione, esegui i seguenti comandi:
 
    ```bash
    composer require magento/payment-services --no-update
    ```
 
-1. Aggiorna le dipendenze e installa l&#39;estensione:
+1. Aggiorna le dipendenze e installa l’estensione:
 
    ```bash
    composer update magento/payment-services --with-dependencies
    ```
 
-   Utilizza la `composer update` per aggiornare tutte le dipendenze principali.
+   Utilizza il `composer update` per aggiornare tutte le dipendenze radice.
 
-1. Aggiorna l&#39;istanza:
+1. Aggiorna l’istanza:
 
    ```bash
    bin/magento setup:upgrade
@@ -85,12 +85,12 @@ Questo metodo viene utilizzato per installare [!DNL Payment Services] estensione
    bin/magento cache:clean
    ```
 
-1. Conferma le modifiche.
-1. Per assicurarti che il codice di commit sia distribuito, aggiorna la tua istanza .
+1. Conferma modifiche.
+1. Per garantire che il codice confermato sia distribuito, aggiorna l’istanza .
 
 ## Aggiornare l’estensione
 
-Quando una nuova versione di [!DNL Payment Services] viene rilasciata e puoi facilmente aggiornare l’estensione.
+Quando una nuova versione di [!DNL Payment Services] è stato rilasciato, puoi aggiornare facilmente l’estensione.
 
 1. Per ottenere la versione più recente del pacchetto:
 
@@ -98,17 +98,17 @@ Quando una nuova versione di [!DNL Payment Services] viene rilasciata e puoi fac
    composer update magento/payment-services --with-dependencies
    ```
 
-   Utilizza la `composer update` per aggiornare tutte le dipendenze principali.
+   Utilizza il `composer update` per aggiornare tutte le dipendenze radice.
 
-1. Conferma e invia le modifiche.
+1. Eseguire il commit e inviare le modifiche.
 
 ## Risoluzione dei problemi
 
-Potrebbero verificarsi errori durante il tentativo di installazione del [!DNL Payment Services] estensione. Per risolvere gli errori, utilizzare i seguenti metodi di risoluzione dei problemi.
+È possibile che vengano visualizzati errori durante il tentativo di installazione di [!DNL Payment Services] estensione. Per risolvere gli errori, utilizzare i seguenti metodi di risoluzione dei problemi.
 
-### Tasti compositore errati
+### Tasti composizione errati
 
-Se vedi il seguente errore che indica che hai le chiavi Composer non corrette:
+Se viene visualizzato il seguente errore che indica la presenza di chiavi di composizione errate:
 
 ```terminal
 Could not find a matching version of package magento/payment-services. Check the package spelling, your version constraint and that the package is available in a stability which matches your minimum-stability (stable).
@@ -124,17 +124,17 @@ Per vedere quali chiavi del Compositore sono configurate:
    composer config --global home
    ```
 
-1. Visualizza la `auth.json` file:
+1. Visualizza `auth.json` file:
 
    ```bash
    cat /path/to/auth.json
    ```
 
-1. Vedi [quali chiavi sono associate al tuo account Commerce `MageID`](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
+1. Consulta [quali chiavi sono associate al tuo account Commerce `MageID`](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
 
 ### Memoria insufficiente per PHP
 
-Se vedi il seguente errore che indica che non hai abbastanza memoria per PHP:
+Se viene visualizzato il seguente errore che indica che non si dispone di memoria sufficiente per PHP:
 
 ```terminal
 Fatal error: Allowed memory size of 2146435072 bytes exhausted (tried to allocate 4096 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52

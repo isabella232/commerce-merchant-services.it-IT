@@ -1,6 +1,6 @@
 ---
 title: Reporting finanziario
-description: '"[!DNL Payment Services] offre rapporti completi che ti consentono di ottenere una visione chiara degli ordini e dei pagamenti del tuo negozio."'
+description: '"[!DNL Payment Services] offre una funzione di reporting completa che ti permette di avere una visione chiara degli ordini e dei pagamenti del tuo negozio".'
 role: User
 feature: Payments
 level: Intermediate
@@ -13,8 +13,8 @@ ht-degree: 0%
 
 # Reporting finanziario
 
-[!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] offre un reporting completo per ottenere una visione chiara degli ordini e dei pagamenti del tuo negozio.
+[!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] offre una funzione di reporting completa che ti permette di avere una visione chiara degli ordini e dei pagamenti del tuo negozio.
 
-![Visualizzazione rapporti finanziari](assets/reports-view.png)
+![Visualizzazione dei report finanziari](assets/reports-view.png)
 
-I rapporti di gestione del flusso di cassa (stato Pagamenti e Pagamenti ordine) sincronizzano i dettagli di pagamento con le informazioni sull&#39;ordine per garantire la piena trasparenza del volume elaborato, del saldo di pagamento e dei rapporti dettagliati a livello di transazione per la riconciliazione finanziaria.
+I rapporti di gestione dei flussi di cassa, ovvero Pagamenti e Stato pagamento ordine, sincronizzano i dettagli di pagamento con le informazioni sull&#39;ordine per garantire la piena trasparenza del volume elaborato, del saldo dei pagamenti e dei rapporti dettagliati a livello di transazione per la riconciliazione finanziaria.

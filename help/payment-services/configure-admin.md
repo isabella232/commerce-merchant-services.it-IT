@@ -1,6 +1,6 @@
 ---
 title: Configurazione servizi di pagamento legacy
-description: Dopo l'installazione, è possibile configurare [!DNL Payment Services] nella configurazione Admin at store .
+description: Dopo l’installazione, puoi configurare [!DNL Payment Services] in Admin at the store configuration (Amministrazione nella configurazione dell’archivio).
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
@@ -13,123 +13,123 @@ ht-degree: 0%
 
 # Legacy [!DNL Payment Services] Configurazione
 
-Puoi personalizzare [!DNL Payment Services] per soddisfare le tue esigenze con opzioni di configurazione utili nell’amministratore.
+Puoi personalizzare [!DNL Payment Services] alle tue esigenze con utili opzioni di configurazione nell’Admin.
 
-Quando si configura [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] in Admin, tali configurazioni si applicano solo all’ambiente impostato in _[!UICONTROL Method]_campo_[!UICONTROL General Configuration]_. Qualsiasi modifica apportata nei campi di configurazione è indipendente dal passaggio alla _[!UICONTROL Method]_selezione (selection) - se si cambia il metodo, le selezioni non vengono reimpostate.
+Quando si configura [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] in Admin, tali configurazioni si applicano solo all&#39;ambiente impostato in _[!UICONTROL Method]_campo di_[!UICONTROL General Configuration]_. Tutte le modifiche apportate nei campi di configurazione sono indipendenti dal passaggio _[!UICONTROL Method]_selection - se si cambia metodo, le selezioni non vengono ripristinate.
 
 ## Configurazione generale
 
-È possibile attivare [!DNL Payment Services] per il tuo negozio e abilita il test sandbox o i pagamenti live nel _[!UICONTROL General Configuration]_sezione .
+È possibile abilitare [!DNL Payment Services] per il tuo negozio e abilitare i test sandbox o i pagamenti live nel _[!UICONTROL General Configuration]_sezione.
 
-1. Sulla _Amministratore_ barra laterale, vai a **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
+1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. Nel pannello a sinistra, espandi **[!UICONTROL Sales]** e scegli **[!UICONTROL Payment Methods]**.
 
-   ![Visualizzazione dei metodi](assets/methods-view.png)
+   ![Visualizzazione Metodi](assets/methods-view.png)
 
-1. Espandi la _[!UICONTROL Recommended Solutions]_sezione .
-1. In _[!UICONTROL [!DNL Payment Services]]_espandi la sezione_[!UICONTROL General Configuration]_ sezione .
-1. Per **Abilita**, imposta su `Yes` per abilitare [!DNL Payment Services] per il tuo negozio.
-1. Per **Metodo**, imposta su `Sandbox` se stai ancora testando [!DNL Payment Services] per il vostro negozio o `Production` se sei pronto per abilitare i pagamenti live.
+1. Espandi _[!UICONTROL Recommended Solutions]_sezione.
+1. In _[!UICONTROL [!DNL Payment Services]]_, espandere la sezione_[!UICONTROL General Configuration]_ sezione.
+1. Per **Abilita**, impostarlo su `Yes` per abilitare [!DNL Payment Services] per il tuo negozio.
+1. Per **Metodo**, impostarlo su `Sandbox` se stai ancora testando [!DNL Payment Services] per il tuo negozio o `Production` se sei pronto per abilitare i pagamenti live.
 
    >[!WARNING]
    >
-   >Le _[!UICONTROL Sandbox Merchant ID]_e_[!UICONTROL Production Merchant ID]_ sono generati automaticamente e presenti nei rispettivi campi al termine dell’onboarding per la sandbox e/o la produzione. Non rimuovere o modificare questi ID.
+   >Il tuo _[!UICONTROL Sandbox Merchant ID]_e_[!UICONTROL Production Merchant ID]_ sono generati automaticamente e presenti nei rispettivi campi quando hai completato l’onboarding per la sandbox e/o la produzione. Non rimuovere o modificare questi ID.
 
-1. Fai clic su **[!UICONTROL Save Config]** per salvare le modifiche.
-1. Passa a **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, quindi fai clic su **[!UICONTROL Flush Cache]** per aggiornare tutte le cache non valide.
+1. Clic **[!UICONTROL Save Config]** per salvare le modifiche.
+1. Accedi a **[!UICONTROL System]** > **[!UICONTROL Cache Management]** e quindi fare clic su **[!UICONTROL Flush Cache]** per aggiornare tutte le cache non valide.
 
 ### Opzioni di configurazione
 
 | Campo | Ambito | Descrizione |
 |---|---|---|
-| [!UICONTROL Enable] | sito web | Attiva o disattiva [!DNL Payment Services] per il sito web. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Method] | vista store | Imposta il metodo o l&#39;ambiente per l&#39;archivio. Opzioni: [!UICONTROL Sandbox] / [!UICONTROL Production] |
-| [!UICONTROL Sandbox Merchant ID] | vista store | Il tuo ID commerciante sandbox, generato automaticamente durante l’onboarding della sandbox. Non modificare o modificare questo ID. |
-| [!UICONTROL Production Merchant ID] | vista store | Il tuo ID commerciante di produzione, generato automaticamente durante l’onboarding della sandbox. Non modificare o modificare questo ID. |
+| [!UICONTROL Enable] | sito web | Attiva o disattiva [!DNL Payment Services] per il tuo sito web. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Method] | visualizzazione store | Imposta il metodo o l’ambiente per lo store. Opzioni: [!UICONTROL Sandbox] / [!UICONTROL Production] |
+| [!UICONTROL Sandbox Merchant ID] | visualizzazione store | L’ID venditore della sandbox, generato automaticamente durante l’onboarding della sandbox. Non modificare o alterare questo ID. |
+| [!UICONTROL Production Merchant ID] | visualizzazione store | L’ID esercente di produzione, generato automaticamente durante l’onboarding della sandbox. Non modificare o alterare questo ID. |
 
 ## [!UICONTROL Credit Card Fields]
 
-La [!UICONTROL Credit Card Fields] le opzioni di pagamento forniscono un pagamento semplice e sicuro per le modalità di pagamento con carta di credito o con carta di debito.
+Il [!UICONTROL Credit Card Fields] le opzioni di pagamento forniscono un pagamento semplice e sicuro per i metodi di pagamento con carta di credito o con carta di debito.
 
-Vedi [Opzioni di pagamento](payments-options.md#paypal-smart-buttons) per ulteriori informazioni.
+Consulta [Opzioni di pagamento](payments-options.md#paypal-smart-buttons) per ulteriori informazioni.
 
 ### Configura campi carta di credito
 
-1. Sulla _Amministratore_ barra laterale, vai a **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
+1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. Nel pannello a sinistra, espandi **[!UICONTROL Sales]** e scegli **[!UICONTROL Payment Methods]**.
-1. Espandi la _[!UICONTROL Recommended Solutions]_sezione .
-1. In _[!UICONTROL Payment Services]_espandi la sezione_[!UICONTROL Credit Card Fields]_ sezione .
+1. Espandi _[!UICONTROL Recommended Solutions]_sezione.
+1. In _[!UICONTROL Payment Services]_, espandere la sezione_[!UICONTROL Credit Card Fields]_ sezione.
 1. Per **[!UICONTROL Title]**, immettere il testo (se necessario) per modificare il nome del metodo di pagamento come mostrato durante l&#39;estrazione.
-1. A [imposta l&#39;azione di pagamento](production.md#set-payment-services-as-payment-method), seleziona **[!UICONTROL Authorize]** o **Autorizzazione e acquisizione**.
+1. A [imposta l&#39;azione di pagamento](production.md#set-payment-services-as-payment-method), seleziona **[!UICONTROL Authorize]** o **Autorizza e acquisisci**.
 1. Per **[!UICONTROL Show on checkout page]**, scegli `Yes` per abilitare i campi della carta di credito nella pagina di pagamento.
-1. Per **[!UICONTROL Vault Enabled]**, scegli `Yes` per abilitare l&#39;archiviazione della carta di credito per il pagamento.
-1. Per **[!UICONTROL Vault Enabled in Admin]**, scegli `Yes` per consentire al commerciante di creare ordini per i clienti che utilizzano la propria carta di credito vaulted.
-1. Per **[!UICONTROL Debug Mode]**, scegli `Yes` per abilitare la modalità di debug (o `No` per disattivarlo).
-1. Per abilitare **[!UICONTROL 3DS Secure authentication]** (`Off` per impostazione predefinita, scegli `Always` o `When required`.
-1. Fai clic su **[!UICONTROL Save Config]** per salvare le modifiche.
-1. Passa a **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, quindi fai clic su **[!UICONTROL Flush Cache]** per aggiornare tutte le cache non valide.
+1. Per **[!UICONTROL Vault Enabled]**, scegli `Yes` per abilitare il vaulting della carta di credito per il pagamento.
+1. Per **[!UICONTROL Vault Enabled in Admin]**, scegli `Yes` per consentire al commerciante di creare ordini per i clienti utilizzando la carta di credito a scaffale.
+1. Per **[!UICONTROL Debug Mode]**, scegli `Yes` per abilitare la modalità di debug (o `No` per disattivarla).
+1. Per abilitare **[!UICONTROL 3DS Secure authentication]** (`Off` per impostazione predefinita) scegli `Always` o `When required`.
+1. Clic **[!UICONTROL Save Config]** per salvare le modifiche.
+1. Accedi a **[!UICONTROL System]** > **[!UICONTROL Cache Management]** e quindi fare clic su **[!UICONTROL Flush Cache]** per aggiornare tutte le cache non valide.
 
 #### Opzioni di configurazione
 
 | Campo | Ambito | Descrizione |
 |---|---|---|
-| [!UICONTROL Title] | vista store | Aggiungere il testo da visualizzare come titolo per questa opzione di pagamento nella visualizzazione Metodo di pagamento durante il pagamento. Opzioni: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | sito web | La [azione di pagamento](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) per il metodo di pagamento specificato. Opzioni: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
-| [!UICONTROL Show on checkout page] | sito web | Abilita o disabilita i campi della carta di credito nella pagina di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled] | vista store | Attiva o disattiva [archiviazione carte di credito](vaulting.md). Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled in Admin] | vista store | Attiva o disattiva la funzionalità per [commerciante per completare gli ordini per i clienti nell&#39;amministratore](vaulting.md) utilizzando un metodo di pagamento vaultato. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Title] | visualizzazione store | Aggiungere il testo da visualizzare come titolo per questa opzione di pagamento nella vista Metodo di pagamento durante l&#39;estrazione. Opzioni: [!UICONTROL text field] |
+| [!UICONTROL Payment Action] | sito web | Il [azione di pagamento](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) per il metodo di pagamento specificato. Opzioni: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Show on checkout page] | sito web | Attiva o disattiva i campi della carta di credito nella pagina di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | visualizzazione store | Attiva o disattiva [vaulting con carta di credito](vaulting.md). Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled in Admin] | visualizzazione store | Attiva o disattiva la possibilità per [esercente per completare gli ordini per i clienti nell’Admin](vaulting.md) utilizzando un metodo di pagamento a scaffale. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL 3DS Secure authentication] | sito web | Attiva o disattiva [Autenticazione protetta 3DS](security.md#3ds). Opzioni: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | sito web | Attiva o disattiva la modalità di debug. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ## [!DNL PayPal Smart Buttons]
 
-La [!DNL PayPal Smart Buttons] le opzioni di pagamento forniscono al cliente un processo di pagamento semplice, rapido e sicuro.
+Il [!DNL PayPal Smart Buttons] le opzioni di pagamento offrono al cliente un processo di pagamento semplice, veloce e sicuro.
 
-Vedi [Opzioni di pagamento](payments-options.md#paypal-smart-buttons) per ulteriori informazioni.
+Consulta [Opzioni di pagamento](payments-options.md#paypal-smart-buttons) per ulteriori informazioni.
 
 ### Configura [!DNL PayPal Smart Buttons]
 
-Puoi abilitare e configurare le opzioni di pagamento dei pulsanti avanzati PayPal all&#39;interno dell&#39;Amministratore:
+Puoi abilitare e configurare le opzioni di pagamento PayPal Smart Buttons in Admin:
 
-1. Sulla _Amministratore_ barra laterale, vai a **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
+1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. Nel pannello a sinistra, espandi **[!UICONTROL Sales]** e scegli **[!UICONTROL Payment Methods]**.
-1. Espandi la _[!UICONTROL Recommended Solutions]_sezione .
-1. In _[!UICONTROL Payment Services]_espandi la sezione_[!UICONTROL PayPal Smart Buttons]_ sezione .
-1. Per modificare il nome del metodo di pagamento come mostrato durante il pagamento, modificare il _[!UICONTROL Title]_campo .
+1. Espandi _[!UICONTROL Recommended Solutions]_sezione.
+1. In _[!UICONTROL Payment Services]_, espandere la sezione_[!UICONTROL PayPal Smart Buttons]_ sezione.
+1. Per modificare il nome del metodo di pagamento come mostrato durante l&#39;estrazione, modificare il _[!UICONTROL Title]_campo.
 1. A [imposta l&#39;azione di pagamento](production.md#set-payment-services-as-payment-method), seleziona **[!UICONTROL Authorize]** o **[!UICONTROL Authorize and Capture]**.
-1. Per disabilitare la funzione [Messaggi di pagamento in un secondo momento](payments-options.md#pay-later-button) (se desiderato), seleziona `No` per **[!UICONTROL Display Pay Later Message]**.
-1. Per abilitare la modalità di debug, seleziona `Yes` per **[!UICONTROL Debug Mode]** (`No` lo disattiva).
+1. Per disattivare [Messaggistica pagamento posticipato](payments-options.md#pay-later-button) (se desiderato), selezionare `No` per **[!UICONTROL Display Pay Later Message]**.
+1. Per abilitare la modalità di debug, seleziona `Yes` per **[!UICONTROL Debug Mode]** (`No` disattiva).
 1. Per salvare le modifiche, fai clic su **[!UICONTROL Save Config]** .
-1. Passa a **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, quindi fai clic su **[!UICONTROL Flush Cache]** per aggiornare tutte le cache non valide.
+1. Accedi a **[!UICONTROL System]** > **[!UICONTROL Cache Management]** e quindi fare clic su **[!UICONTROL Flush Cache]** per aggiornare tutte le cache non valide.
 
 ### Opzioni di configurazione
 
 | Campo | Ambito | Descrizione |
 |---|---|---|
-| [!UICONTROL Title] | vista store | Aggiungere il testo da visualizzare come titolo per questa opzione di pagamento nella visualizzazione Metodo di pagamento durante il pagamento. Opzioni: campo di testo |
-| [!UICONTROL Payment Action] | sito web | La [azione di pagamento](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} per il metodo di pagamento specificato. Opzioni: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
-| [!UICONTROL Display Pay Later Message] | sito web | Attiva o disattiva la messaggistica Paga in seguito nel carrello, nella pagina del prodotto, nel mini-carrello e durante il flusso di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Venmo Enabled] | vista store | Attiva o disattiva l&#39;opzione di pagamento Venmo in cui vengono visualizzati i pulsanti di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Apple Pay Enabled] | vista store | Attiva o disattiva l&#39;opzione Pagamento Apple in cui vengono visualizzati i pulsanti di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL PayPal Pay Later Enabled] | vista store | Attiva o disattiva l&#39;aspetto dell&#39;opzione di pagamento successivo in cui vengono visualizzati i pulsanti di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Title] | visualizzazione store | Aggiungere il testo da visualizzare come titolo per questa opzione di pagamento nella visualizzazione Metodo di pagamento durante l&#39;estrazione. Opzioni: campo di testo |
+| [!UICONTROL Payment Action] | sito web | Il [azione di pagamento](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} per il metodo di pagamento specificato. Opzioni: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Display Pay Later Message] | sito web | Abilita o disabilita la funzione di messaggistica Paga più tardi nel carrello, nella pagina del prodotto, nel mini-carrello e durante il flusso di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Venmo Enabled] | visualizzazione store | Abilita o disabilita l&#39;opzione di pagamento Venmo in cui sono visualizzati i pulsanti di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Apple Pay Enabled] | visualizzazione store | Abilita o disabilita l&#39;opzione di pagamento Apple Pay in cui sono visualizzati i pulsanti di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL PayPal Pay Later Enabled] | visualizzazione store | Abilita o disabilita l&#39;aspetto dell&#39;opzione di pagamento successivo in cui vengono visualizzati i pulsanti di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | sito web | Attiva o disattiva la modalità di debug. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show buttons on product detail page] | vista store | Attiva o disattiva [!DNL PayPal Smart Buttons] nella pagina dei dettagli del prodotto. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show buttons in mini-cart preview] | vista store | Attiva o disattiva [!DNL PayPal Smart Buttons] nell’anteprima del mini-carrello. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show buttons on cart page] | vista store | Attiva o disattiva [!DNL PayPal Smart Buttons] nella pagina del carrello. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show buttons on product detail page] | visualizzazione store | Attiva o disattiva [!DNL PayPal Smart Buttons] nella pagina dei dettagli del prodotto. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show buttons in mini-cart preview] | visualizzazione store | Attiva o disattiva [!DNL PayPal Smart Buttons] nell’anteprima del mini-carrello. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show buttons on cart page] | visualizzazione store | Attiva o disattiva [!DNL PayPal Smart Buttons] sulla pagina del carrello. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### [!DNL PayPal Smart Buttons] Opzioni di stile
 
 | Campo | Ambito | Descrizione |
 |--- |--- |--- |
-| [!UICONTROL Layout] | Visualizzazione store | Definire lo stile del layout per i pulsanti Paypal Smart. Opzioni: [!UICONTROL Vertical] / [!UICONTROL Horizontal] |
-| [!UICONTROL Color] | Visualizzazione store | Definire il colore dei pulsanti avanzati Paypal. Opzioni: [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black] |
-| [!UICONTROL Shape] | Visualizzazione store | Definire la forma dei pulsanti avanzati Paypal. Opzioni: [!UICONTROL Rectangular] / [!UICONTROL Pill] |
+| [!UICONTROL Layout] | Visualizzazione store | Definisci lo stile di layout per i pulsanti avanzati Paypal. Opzioni: [!UICONTROL Vertical] / [!UICONTROL Horizontal] |
+| [!UICONTROL Color] | Visualizzazione store | Definisci il colore dei pulsanti avanzati di Paypal. Opzioni: [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black] |
+| [!UICONTROL Shape] | Visualizzazione store | Definisci la forma dei pulsanti avanzati di Paypal. Opzioni: [!UICONTROL Rectangular] / [!UICONTROL Pill] |
 | [!UICONTROL Use Default Height] | Visualizzazione store | Definisce se i pulsanti avanzati PayPal utilizzano un&#39;altezza predefinita. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Height] | Visualizzazione store | Consente di definire l&#39;altezza dei pulsanti avanzati PayPal. Valore predefinito: nessuno |
-| [!UICONTROL Label] | Visualizzazione store | Definire l&#39;etichetta visualizzata nei pulsanti avanzati PayPal. Opzioni: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
-| [!UICONTROL Tagline] | Visualizzazione store | Abilita lo slogan. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Height] | Visualizzazione store | Definisci l&#39;altezza dei pulsanti avanzati PayPal. Valore predefinito: nessuno |
+| [!UICONTROL Label] | Visualizzazione store | Definisci l&#39;etichetta visualizzata nei pulsanti avanzati PayPal. Opzioni: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
+| [!UICONTROL Tagline] | Visualizzazione store | Attiva tagline. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
 
-## Svuotare la cache
+## Svuota la cache
 
-Se modifichi la configurazione, [svuotare manualmente la cache](/help/payment-services/settings.md#flush-the-cache) in modo che il tuo negozio mostri le impostazioni di configurazione più recenti.
+Se si modifica la configurazione, [svuotare manualmente la cache](/help/payment-services/settings.md#flush-the-cache) in modo che nell’archivio siano visualizzate le impostazioni di configurazione più recenti.
 

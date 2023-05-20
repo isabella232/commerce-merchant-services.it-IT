@@ -1,25 +1,25 @@
 ---
-title: "Installazione [!DNL Quick Checkout] per estensione Adobe Commerce"
-description: "Segui questi passaggi per installare [!DNL Quick Checkout] nel tuo progetto Adobe Commerce."
+title: "Installa [!DNL Quick Checkout] per estensione Adobe Commerce"
+description: "Segui questi passaggi per installare [!DNL Quick Checkout] nel progetto Adobe Commerce."
 exl-id: e1dabc9a-0ab0-4f8d-98d3-7a32abbedcb8
 source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
 
 # Installa [!DNL Quick Checkout]
 
-La [!DNL Quick Checkout] estensione per Adobe Commerce e [!DNL Magento Open Source] può essere installato con [!DNL Composer keys], che sono collegati all’account Commerce [`mageid`](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions){target=&quot;_blank&quot;} fornito nel processo di registrazione. Il Compositore utilizza queste chiavi durante l&#39;installazione iniziale di Adobe Commerce, o in situazioni in cui il [!DNL Composer keys] non sono stati salvati in precedenza in `auth.json` file.
+Il [!DNL Quick Checkout] estensione per Adobe Commerce e [!DNL Magento Open Source] può essere installato con [!DNL Composer keys], collegati all’account Commerce [`mageid`](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions){target="_blank"} fornite nel processo di abbonamento. Compositore utilizza queste chiavi durante l’installazione iniziale di Adobe Commerce o in situazioni in cui [!DNL Composer keys] non sono stati salvati in precedenza in `auth.json` file.
 
-Vedi [ottieni le chiavi di autenticazione](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html)Argomento {target=&quot;_blank&quot;} per ulteriori informazioni su come ottenere [!DNL Composer keys].
+Consulta [ottenere le chiavi di autenticazione](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html){target="_blank"} per ulteriori informazioni su come ottenere [!DNL Composer keys].
 
-Esistono due modi per installare questa estensione: [Adobe Commerce su infrastruttura cloud](#magento-commerce-cloud) o [locale](#on-premises) installazioni. Questi metodi richiedono l’utilizzo dell’interfaccia a riga di comando (CLI).
+Esistono due modi per installare questa estensione: [Adobe Commerce sull’infrastruttura cloud](#magento-commerce-cloud) o [on-premise](#on-premises) installazioni. Questi metodi richiedono l&#39;utilizzo dell&#39;interfaccia della riga di comando (CLI).
 
-## Aggiorna impostazione di stabilità minima
+## Aggiorna impostazione stabilità minima
 
-Prima di installare l&#39;estensione, assicurati che la `minimum-stability` nel campo `composer.json` file impostato su `"stable"`:
+Prima di installare l’estensione, assicurati che `minimum-stability` campo nel tuo `composer.json` il file è impostato su `"stable"`:
 
 `"minimum-stability": "stable"`
 
@@ -27,9 +27,9 @@ Prima di installare l&#39;estensione, assicurati che la `minimum-stability` nel 
 
 È possibile installare [!DNL Quick Checkout] estensione sia per Adobe Commerce sull’infrastruttura cloud che per le istanze locali.
 
-### Adobe Commerce su infrastruttura cloud
+### Adobe Commerce sull’infrastruttura cloud
 
-Questo metodo viene utilizzato per installare [!DNL Quick Checkout] estensione per un&#39;istanza Commerce Cloud.
+Questo metodo viene utilizzato per installare [!DNL Quick Checkout] estensione per un’istanza Commerce Cloud.
 
 1. Nella workstation locale, passa alla directory principale del progetto Cloud.
 
@@ -39,33 +39,33 @@ Questo metodo viene utilizzato per installare [!DNL Quick Checkout] estensione p
    composer require magento/quick-checkout --no-update
    ```
 
-1. Aggiorna le dipendenze e installa l&#39;estensione:
+1. Aggiorna le dipendenze e installa l’estensione:
 
    ```bash
    composer update
    ```
 
-   La `composer update` Il comando aggiorna tutte le dipendenze. Se non si desidera aggiornare tutte le dipendenze contemporaneamente, utilizzare questo comando: `composer update magento/quick-checkout`.
+   Il `composer update` aggiorna tutte le dipendenze. Se non si desidera aggiornare tutte le dipendenze contemporaneamente, utilizzare questo comando: `composer update magento/quick-checkout`.
 
-1. Conferma e invia le modifiche.
+1. Eseguire il commit e inviare le modifiche.
 
-### Presso i locali
+### On-premise
 
-Questo metodo viene utilizzato per installare [!DNL Quick Checkout] estensione per un&#39;istanza on-premise.
+Questo metodo viene utilizzato per installare [!DNL Quick Checkout] estensione per un’istanza on-premise.
 
-1. Aggiungi il modulo Quick Checkout al `require` della sezione `composer.json` file:
+1. Aggiungere il modulo Check-Out rapido a `require` sezione del `composer.json` file:
 
    ```bash
    composer require magento/quick-checkout --no-update
    ```
 
-1. Aggiorna le dipendenze e installa l&#39;estensione:
+1. Aggiorna le dipendenze e installa l’estensione:
 
    ```bash
    composer update
    ```
 
-   La `composer update` Il comando aggiorna tutte le dipendenze. Se non si desidera aggiornare tutte le dipendenze contemporaneamente, utilizzare questo comando: `composer update magento/quick-checkout`.
+   Il `composer update` aggiorna tutte le dipendenze. Se non si desidera aggiornare tutte le dipendenze contemporaneamente, utilizzare questo comando: `composer update magento/quick-checkout`.
 
 1. Aggiorna Adobe Commerce:
 
@@ -79,12 +79,12 @@ Questo metodo viene utilizzato per installare [!DNL Quick Checkout] estensione p
    bin/magento cache:clean
    ```
 
-1. Conferma le modifiche.
-1. Aggiorna l’istanza locale per assicurarti che il codice impegnato sia distribuito.
+1. Conferma modifiche.
+1. Aggiorna l’istanza on-premise per garantire che il codice confermato sia distribuito.
 
 ## Aggiornare l’estensione
 
-Quando rilasciamo una nuova versione di [!DNL Quick Checkout], puoi facilmente aggiornare l’estensione.
+Quando viene rilasciata una nuova versione di [!DNL Quick Checkout], puoi aggiornare facilmente l’estensione.
 
 1. Per ottenere la versione più recente del pacchetto:
 
@@ -92,16 +92,16 @@ Quando rilasciamo una nuova versione di [!DNL Quick Checkout], puoi facilmente a
    composer update
    ```
 
-   La `composer update` Il comando aggiorna tutte le dipendenze. Se non si desidera aggiornare tutte le dipendenze contemporaneamente, utilizzare questo comando: `composer update magento/quick-checkout`.
+   Il `composer update` aggiorna tutte le dipendenze. Se non si desidera aggiornare tutte le dipendenze contemporaneamente, utilizzare questo comando: `composer update magento/quick-checkout`.
 
-1. Conferma e invia le modifiche.
+1. Eseguire il commit e inviare le modifiche.
 
 ## Risoluzione dei problemi
 
-Potrebbero verificarsi errori durante il tentativo di installazione del [!DNL Quick Checkout] estensione.
+È possibile che vengano visualizzati errori durante il tentativo di installazione di [!DNL Quick Checkout] estensione.
 
-In caso di problemi durante il [!DNL Quick Checkout] processo di installazione, vedi [Risolvere i problemi relativi all’estrazione rapida](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) nel Centro assistenza Adobe Commerce.
+In caso di problemi durante il [!DNL Quick Checkout] processo di installazione, vedere [Risoluzione dei problemi di Check-Out rapido](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) nel Centro assistenza Adobe Commerce.
 
 ## Prerequisiti
 
-Consulta la sezione [prerequisiti](../quick-checkout/prerequisites.md) per ulteriori informazioni.
+Consulta la [prerequisiti](../quick-checkout/prerequisites.md) per ulteriori informazioni.

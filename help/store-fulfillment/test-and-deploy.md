@@ -1,6 +1,6 @@
 ---
-title: Esecuzione del test e distribuzione dello store
-description: Piano di test per verificare la funzionalità Store Fulfillment. I test coprono l’API di sincronizzazione dell’inventario, il flusso di lavoro di evasione end-to-end per gli ordini annullati, la gestione degli utenti dell’app di evasione dell’archivio e l’esperienza di archiviazione dei clienti.
+title: Verifica e distribuisci l'evasione dell'archivio
+description: Piano di test per verificare la funzionalità Evasione punto vendita. I test coprono l'API di sincronizzazione dell'inventario, il flusso di lavoro di esecuzione end-to-end per gli ordini annullati, la gestione degli utenti dell'app Store Fulfillment e l'esperienza di archiviazione del cliente.
 role: User, Admin
 level: Intermediate
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
@@ -11,345 +11,345 @@ ht-degree: 0%
 
 ---
 
-# Esecuzione di test e distribuisci store per Adobe Commerce
+# Test e distribuzione del completamento dell’archivio per Adobe Commerce
 
-Dopo aver completato il processo di onboarding nell&#39;ambiente di sviluppo, puoi avviare il processo per testare e distribuire la soluzione Store Fulfillment nell&#39;ambiente di produzione.
+Dopo aver completato il processo di onboarding nell’ambiente di sviluppo, puoi avviare il processo per testare e distribuire la soluzione Store Fulfillment nell’ambiente di produzione.
 
 **Prerequisiti**
 
-Prima di testare o sincronizzare le informazioni, gli archivi o gli ordini, verifica di aver completato le seguenti attività:
+Prima di eseguire il test o la sincronizzazione di informazioni, archivi o ordini, verificare di aver completato le seguenti attività:
 
-- Completato il [Configurazione generale](enable-general.md) per i servizi Store Fulfillment.
+- Completato il [Configurazione generale](enable-general.md) per i servizi di distribuzione del punto vendita.
 
-- [Aggiungi e convalida le credenziali dell’account e i dettagli di connessione per la sandbox e gli ambienti di produzione](connect-set-up-service.md#configure-store-fulfillment-account-credentials)
+- [Aggiungi e convalida le credenziali dell’account e i dettagli di connessione per gli ambienti sandbox e di produzione](connect-set-up-service.md#configure-store-fulfillment-account-credentials)
 
-- Conferma che [Integrazione Adobe Commerce](connect-set-up-service.md#configure-store-fulfillment-account-credentials) per la soluzione Store Fulfillment è disponibile e autorizzata.
+- Confermare che [Integrazione di Adobe Commerce](connect-set-up-service.md#configure-store-fulfillment-account-credentials) per la soluzione di Store Fulfillment è disponibile e autorizzata.
 
-## Preparazione al test
+## Preparazione per il test
 
-La configurazione della connessione deve essere completata prima di poter creare qualsiasi ordine di test o eseguire test di integrazione. Prima di eseguire il test, è inoltre necessario verificare che i dati dell&#39;archivio siano sincronizzati.
+La configurazione della connessione deve essere completata prima di poter creare ordini di test o eseguire test di integrazione. Prima di eseguire il test, è necessario verificare che i dati dell’archivio siano sincronizzati.
 
-1. Sincronizza le origini di Store Fulfillment.
+1. Sincronizza origini di evasione archivio.
 
    - Vai a **[!UICONTROL Stores > Sources]**.
 
    - Seleziona **[!UICONTROL Synchronize Store Fulfillment Sources]**.
 
-1. Dalla griglia dello store, verificare che gli archivi siano stati contrassegnati come `Synced` prima di creare ordini di test.
+1. Dalla griglia del punto vendita, verificare che i punti vendita siano stati contrassegnati come `Synced` prima di creare ordini di test.
 
 ## Piano di prova di esempio
 
-I rivenditori convalidano le funzionalità di base della soluzione Store Fulfillment durante la configurazione e il test delle fasi di una distribuzione. Questo piano di prova campione fornisce un punto di partenza per le prove. Aggiungi scenari aggiuntivi in base alle tue esigenze.
+I rivenditori convalidano le funzionalità di base della soluzione Store Fulfillment durante le fasi di configurazione e di test di una distribuzione. Questo piano di test di esempio fornisce un punto di partenza per il test. Aggiungi altri scenari in base alle tue esigenze.
 
 >[!NOTE]
 >
->Dopo aver completato l&#39;onboarding iniziale per la soluzione Store Fulfillment o aggiornato un&#39;installazione esistente, testa sempre l&#39;applicazione in un ambiente non di produzione prima di distribuirla in produzione.
+>Dopo aver completato l’onboarding iniziale per la soluzione Store Fulfillment o aver aggiornato un’installazione esistente, testa sempre l’applicazione in un ambiente non di produzione prima di implementarla in produzione.
 
-Questo piano di prova campione riguarda i seguenti settori funzionali:
+Il presente piano di prova di esempio riguarda le seguenti aree funzionali:
 
 | Area funzionale | Funzione | Ruolo |
 |-------------------------------------|------------------------------------------|----------------------------------|
-| Sincronizzazione dell&#39;inventario e degli ordini | Sincronizzazione API inventario | Amministratore Adobe Commerce |
-| Fine-fine | Flussi di lavoro di annullamento ordini | Cliente, Amministratore, Store Associate |
-| Amministratore | Autorizzazioni per l&#39;app per l&#39;evasione dell&#39;archivio | Amministratore |
-| Adobe Commerce Frontend | Tipi di prodotti | Cliente, Amministratore |
-| Pagamento senza frontiere</br>Modulo di archiviazione | Esperienza di check-in | Cliente, Amministratore |
-| App Store Assist | Ordine</br>Selezione</br>Stage</br>e Handoff | Associato store |
+| Sincronizzazione di magazzino e ordini | Sincronizzazione API inventario | Amministratore Adobe Commerce |
+| End-to-End | Flussi di lavoro per annullamento ordine | Cliente, Amministratore, Associate store |
+| Amministratore | Autorizzazioni app di esecuzione store | Amministratore |
+| Adobe Commerce Frontend | Tipi di prodotto | Cliente, Amministratore |
+| Pagamento front-end</br>Modulo di check-in | Esperienza di check-in | Cliente, Amministratore |
+| App assistenza store | Ordine</br>Scegli</br>Fase</br>e Handoff | Associa store |
 
-### Sincronizzazione API di inventario
+### Sincronizzazione API inventario
 
-Questa sezione del piano di test riguarda l’inventario e la sincronizzazione degli ordini per verificare che gli aggiornamenti alle origini di prelievo e alle scorte siano sincronizzati correttamente tra Adobe Commerce e la soluzione Store Fulfillment.
+Questa sezione del piano di test riguarda la sincronizzazione di inventario e ordine per verificare che gli aggiornamenti alle origini di prelievo e alle scorte siano sincronizzati correttamente tra Adobe Commerce e la soluzione di evasione dello store.
 
-**Area funzionale**: Sincronizzazione dell&#39;inventario e degli ordini</br>
+**Area funzionale**: Sincronizzazione di magazzino e ordini</br>
 **Ruolo:** Amministratore</br>
-**Tipo di prova:** Tutto positivo
+**Tipo di test:** Tutti positivi
 
 <table>
 <thead>
 <tr>
 <th>Funzione</th>
 <th>Scenario di prova</th>
-<th>Risultati attesi</th>
+<th>Risultati previsti</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Aggiungi sorgente di ritiro</strong></td>
-<td>Salvare una nuova sorgente di ritiro.</td>
+<td><strong>Aggiungi origine scorte di prelievo</strong></td>
+<td>Salvare una nuova origine di materiale di prelievo.</td>
 <td>La sincronizzazione in tempo reale invia i dettagli dell'origine al servizio Walmart GIF entro 5 minuti.</td>
 </tr>
 <tr>
-<td><strong>Aggiorna l'origine del ritiro esistente</strong></td>
-<td>Salvare gli aggiornamenti a un'origine di ritiro esistente.</td>
-<td>L'operazione di sincronizzazione in tempo reale invia i dettagli a Walmart GIF entro 5 minuti</td>
+<td><strong>Aggiorna origine scorte di prelievo esistente</strong></td>
+<td>Salvare gli aggiornamenti a un'origine di prelievo esistente.</td>
+<td>La sincronizzazione in tempo reale invia i dettagli a Walmart GIF entro 5 minuti</td>
 </tr>
 <tr>
-<td><strong>Fonte di prelievo</br><code>Is Synced</code> status</br><code>Is Synced</code></strong></td>
-<td>Salvare gli aggiornamenti a un'origine di ritiro esistente.</td>
-<td>Dopo un'operazione riuscita, la <code>Is Synced</code> della colonna della pagina Gestisci origine aggiornamenti da <code>No</code> a <code>Yes</code>.</td>
+<td><strong>Origine scorte di ritiro</br><code>Is Synced</code> stato</br><code>Is Synced</code></strong></td>
+<td>Salvare gli aggiornamenti a un'origine di prelievo esistente.</td>
+<td>Dopo un'operazione riuscita, <code>Is Synced</code> della pagina Gestisci origine, aggiorna da <code>No</code> a <code>Yes</code>.</td>
 </tr>
 <tr>
-<td><strong>Processo di prenotazione delle scorte modificato</strong></td>
+<td><strong>Processo di prenotazione scorte modificate</strong></td>
 <td>Crea e invia un nuovo ordine per un prodotto.</td>
-<td>La quantità vendibile del prodotto diminuisce di conseguenza.</td>
+<td>La quantità vendibile per il prodotto diminuisce di conseguenza.</td>
 </tr>
 <tr>
-<td><strong>Nuovo ordine push, sincronizzazione API—Ordine cliente</strong></td>
-<td>Il cliente invia un ordine di ritiro dal negozio.</td>
-<td><ul><li>Nella vista Ordine di amministrazione, un <strong>Utente amministratore Adobe Commerce</strong> visualizza lo stato di Order Sync aggiornato in <code>Sent</code></li><li>Il registro dei dettagli dell’ordine include il messaggio <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
+<td><strong>Push per nuovo ordine, sincronizzazione API: ordine cliente</strong></td>
+<td>Il cliente invia un ordine di prelievo del negozio.</td>
+<td><ul><li>Nella visualizzazione Ordine di amministrazione, è possibile visualizzare <strong>Utente amministratore di Adobe Commerce</strong> vede che lo stato di sincronizzazione degli ordini è stato aggiornato a <code>Sent</code></li><li>Il registro dei dettagli dell’ordine include il messaggio <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
-<td><strong>Nuovo ordine push, sincronizzazione API: l’amministratore invia l’ordine</strong></td>
-<td>Un Adobe Commerce <strong>Amministratore</strong> invia un ordine di ritiro.</td>
-<td><ul><li>Nella vista Ordine di amministrazione, lo stato Sincronizzazione ordine viene aggiornato a <code>Sent</code>.</li><li>Il registro dei dettagli dell’ordine include il messaggio <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
+<td><strong>Push per nuovo ordine, sincronizzazione API: l'amministratore invia l'ordine</strong></td>
+<td>Un Adobe Commerce <strong>Amministratore</strong> invia un ordine di prelievo.</td>
+<td><ul><li>Nella vista Ordine amministratore, lo stato di sincronizzazione ordini si aggiorna su <code>Sent</code>.</li><li>Il registro dei dettagli dell’ordine include il messaggio <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
-<td><strong>Nuovo ordine push, coda eccezioni<strong></td>
-<td>Identifica diversi prodotti virtuali e scaricabili nell’amministratore di Adobe Commerce che possono essere soddisfatti tramite Adobe Commerce senza richiedere l’interazione con il servizio Fulfillment (FaaS).</td>
-<td>Questi prodotti vengono rimossi o contrassegnati in modo appropriato nell'esportazione per evitare un conflitto a valle con gli FaaS.</td>
+<td><strong>Push nuovo ordine, coda eccezioni<strong></td>
+<td>Identifica diversi prodotti virtuali e scaricabili nell’amministratore di Adobe Commerce che possono essere soddisfatti tramite Adobe Commerce senza richiedere l’interazione con il servizio di evasione (FaaS).</td>
+<td>Questi prodotti sono rimossi o contrassegnati in modo appropriato nell'esportazione per evitare un conflitto a valle con le FAAS.</td>
 </tr>
 </tbody>
 </table>
 
-### Flussi di lavoro di annullamento ordini
+### Flussi di lavoro per annullamento ordine
 
 Questa sezione del piano di test include scenari per testare il flusso di lavoro end-to-end per gli ordini annullati tramite Adobe Commerce.
 
 **Area funzionale:** Amministratore Adobe Commerce</br>
-**Ruolo:** End-to-end (Amministratore, Store Associate, Cliente)</br>
+**Ruolo:** End-to-End (Amministratore, Associate store, Cliente)</br>
 **Tipo di risultato del test:** Positivo per tutti gli scenari
 
 <table style="table-layout:fixed">
 <tr>
 <th>Funzione</th>
 <th>Scenario</th>
-<th>Risultati attesi</th>
+<th>Risultati previsti</th>
 </tr>
 <tr>
-<td><strong>Cancellazione completa dell'ordine</strong></td>
+<td><strong>Annullamento completo dell’ordine</strong></td>
 <td><ol>
-<li>Ordinare.</li>
-<li>Attendi la sincronizzazione dell’ordine.</li>
-<li>Verifica la creazione della fattura (se autorizzata e acquisita) la ricezione dell'e-mail della fattura.</li>
-<li>Crea nota di accredito con tutti i prodotti ordinati dalla vista Fattura.</li>
+<li>Ordinate.</li>
+<li>Attendi che l’ordine venga sincronizzato.</li>
+<li>Verificare la ricezione dell'e-mail della fattura (se si autorizza e si acquisisce).</li>
+<li>Creare una nota di credito con tutti i prodotti ordinati dalla vista Fattura.</li>
 </ol>
 </td>
 <td>
 <ul>
-<li>Storico degli ordini aggiornato con <code>We refunded $X online. Transaction ID: transactionID</code> e <code>Received Cancel acknowledgment from the BOPIS solution.</code></li>
-<li>Lo stato dell'ordine è <code>Closed</code>. (Abbiamo impostato la REVISIONE DEI PAGAMENTI ora.)</li>
-<li>Nota di credito creata in Adobe Commerce. (Aspetta che il cron funzioni.)</li>
-<li>Se tutti gli elementi selezionati, allora pronto per il ritiro e-mail <code>DISPLAY COMMENT HISTORY</code> show <code>Order is ready for pickup</code> (<code>CUSTOMER NOTIFIED</code> flag è <code>true</code>.)</li>
-<li>Se tutti gli elementi non sono stati selezionati, l'e-mail di annullamento e-mail e VISUALIZZA CRONOLOGIA COMMENTO mostra <code>Order has been canceled - all items were not available</code></li>
-<li><code>CUSTOMER NOTIFIED</code> flag è <code>true</code>.)</li>
+<li>Cronologia ordini aggiornata con <code>We refunded $X online. Transaction ID: transactionID</code> e <code>Received Cancel acknowledgment from the BOPIS solution.</code></li>
+<li>Lo stato dell’ordine è <code>Closed</code>. (Abbiamo impostato PAYMENT REVIEW adesso.)</li>
+<li>Nota di credito creata in Adobe Commerce. (Attendere che il cron funzioni).</li>
+<li>Se vengono selezionati tutti gli elementi, pronto per l’e-mail di prelievo <code>DISPLAY COMMENT HISTORY</code> mostra <code>Order is ready for pickup</code> (<code>CUSTOMER NOTIFIED</code> il flag è <code>true</code>.)</li>
+<li>Se non vengono prelevati tutti gli elementi, vengono visualizzati i messaggi e-mail di annullamento e VISUALIZZA CRONOLOGIA COMMENTI <code>Order has been canceled - all items were not available</code></li>
+<li><code>CUSTOMER NOTIFIED</code> il flag è <code>true</code>.)</li>
 </ul>
 </td>
 </tr>
-<tr><td><strong>Annullamento parziale dell’ordine<strong></td>
+<tr><td><strong>Annullamento parziale dell'ordine<strong></td>
 <td>
 <ol>
-<li>Ordinare con almeno due prodotti.</li>
-<li>Attendi la sincronizzazione dell’ordine.</li>
-<li>Verificare che la fattura sia stata creata (se autorizzata e acquisita) e che sia stata ricevuta l'e-mail della fattura.</li>
-<li>Attendi due ore per il regolamento della transazione.</li>
-<li>Crea nota di accredito con solo una parte dei prodotti ordinati dalla vista Fattura.</li>
+<li>Effettuare l'ordine con almeno due prodotti.</li>
+<li>Attendi che l’ordine venga sincronizzato.</li>
+<li>Verificare che la fattura sia stata creata (se si autorizza e si acquisisce) e che sia stata ricevuta un'e-mail di fattura.</li>
+<li>Attendere due ore per la liquidazione della transazione.</li>
+<li>Creare una nota di credito con solo una parte dei prodotti ordinati dalla vista Fattura.</li>
 </td>
 <td>
 <ul>
-<li>Aggiornamento della cronologia degli ordini: <code>We refunded $X online. Transaction ID: transactionID</code></li>
-<li>Aggiornamento della cronologia degli ordini: <code>Order notified as partly canceled at: Date and Hour</code></li>
-<li>Ricezione del messaggio e-mail di rimborso ordine: <code>$x amount was refunded</code></li>
-<li>Lo stato dell'ordine è <code>Processing</code>.</li>
-<li>Nota di credito creata in Adobe Commerce (Attendere che il cron funzioni).</li>
-<li>Se alcuni elementi non sono stati selezionati, verifica che la [!UICONTROL Ready for Pickup] Viene visualizzata l'e-mail con la sezione di prelievo o rimborso nil. <code>DISPLAY COMMENT HISTORY</code> show <code>Order is ready for pickup, but some items not available.</code>.</li>
-<li><code>CUSTOMER NOTIFIED</code> flag è <code>true</code>.</li>
+<li>Aggiornamento cronologia ordini: <code>We refunded $X online. Transaction ID: transactionID</code></li>
+<li>Aggiornamento cronologia ordini: <code>Order notified as partly canceled at: Date and Hour</code></li>
+<li>Ricevuta e-mail di rimborso ordine: <code>$x amount was refunded</code></li>
+<li>Lo stato dell’ordine è <code>Processing</code>.</li>
+<li>Nota di credito creata in Adobe Commerce (attendi che cron funzioni).</li>
+<li>Se alcuni articoli non sono stati prelevati, verifica che [!UICONTROL Ready for Pickup] viene visualizzata l’e-mail con la sezione prelievo o rimborso nullo. <code>DISPLAY COMMENT HISTORY</code> mostra <code>Order is ready for pickup, but some items not available.</code>.</li>
+<li><code>CUSTOMER NOTIFIED</code> il flag è <code>true</code>.</li>
 </ul>
 </td>
 </tr>
-<td><strong>Pronto per il ritiro</br></br>Cancellazione completa</br>(tutti i prodotti sono impostati come raccolti con 0 qty)</br></strong></td>
+<td><strong>Pronto per il ritiro</br></br>Annullamento completo</br>(tutti i prodotti sono impostati come raccolti con 0 qtà)</br></strong></td>
 <td>
 <ol>
-<li>Effettua l'ordine.</li>
-<li>Attendi la sincronizzazione dell’ordine.</li>
-<li>Verificare che la fattura sia stata creata (se autorizzata e acquisita) e che sia stata ricevuta l'e-mail della fattura.</li>
-<li>Vai a Postman ed esegui la richiesta Ready for Pickup con tutti i prodotti impostati come <code>picked</code> con <code>0 qty</code>.</li>
+<li>Effettua l’ordine.</li>
+<li>Attendi che l’ordine venga sincronizzato.</li>
+<li>Verificare che la fattura sia stata creata (se si autorizza e si acquisisce) e che sia stata ricevuta un'e-mail di fattura.</li>
+<li>Vai al Postman ed esegui la richiesta Ready for Pickup con tutti i prodotti impostati come <code>picked</code> con <code>0 qty</code>.</li>
 </ol>
 </td>
 <td>
 <ul>
-<li>Storico ordini aggiornato: <code>We refunded $X offline</code></li>
-<li>Lo stato dell'ordine è <code>CLOSED</code>.
-<li>Viene creata la nota di accredito. (Aspetta che il cron funzioni.)</li>
+<li>Cronologia ordini aggiornata: <code>We refunded $X offline</code></li>
+<li>Lo stato dell’ordine è <code>CLOSED</code>.
+<li>Viene creata la nota di credito. (Attendere che il cron funzioni).</li>
 <li>E-mail di rimborso ricevuta: <code>$x amount was refunded</code></li>
-<li>Messaggio e-mail di annullamento ordine inviato.</li>
+<li>E-mail di annullamento ordine inviata.</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>Pronto per il ritiro - Annullamento parziale</strong></br></br><strong>(Alcuni prodotti vengono raccolti e alcuni vengono raccolti con <code>0 qty</code>)</strong>
+<td><strong>Pronto per il ritiro - Annullamento parziale</strong></br></br><strong>(Alcuni prodotti vengono raccolti e altri vengono raccolti con <code>0 qty</code>)</strong>
 </td>
 <td>
 <ol>
-<li>Effettua l'ordine.</li>
-<li>Attendi la sincronizzazione dell’ordine.</li>
-<li>Verificare che la fattura sia stata creata (se autorizzata e acquisita) e che sia stata ricevuta l'e-mail della fattura.</li>
-<li>Vai a Postman ed esegui la richiesta Ready for Pickup con parte dei prodotti impostati come raccolto con 0 qty e gli altri selezionati.</li>
+<li>Effettua l’ordine.</li>
+<li>Attendi che l’ordine venga sincronizzato.</li>
+<li>Verificare che la fattura sia stata creata (se si autorizza e si acquisisce) e che sia stata ricevuta un'e-mail di fattura.</li>
+<li>Vai al Postman ed esegui la richiesta Pronto per il ritiro con parte dei prodotti impostati come prelevati con 0 qtà e il resto prelevato.</li>
 </ol>
 </td>
 <td>
 <ul>
 <li><code>Your order is ready for pickup</code> con [!UICONTROL Ready for Pickup Items] e [!UICONTROL Canceled Items] tabelle. </li>
-<li>Lo stato dell'ordine è PRONTO PER IL PICKUP. </li>
-<li>Storico ordini aggiornato: <code>We refunded $X offline.</code>
-<li>Storico ordini aggiornato: <code>Order notified as partly canceled at: Date and hour</code>
+<li>Lo stato dell'ordine è PRONTO PER IL RITIRO. </li>
+<li>Cronologia ordini aggiornata: <code>We refunded $X offline.</code>
+<li>Cronologia ordini aggiornata: <code>Order notified as partly canceled at: Date and hour</code>
 <li>E-mail di rimborso ricevuta: <code>$x amount was refunded</code>
-<li>Viene creata la nota di accredito. (Aspetta che il cron funzioni.)</li>
+<li>Viene creata la nota di credito. (Attendere che il cron funzioni).</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>Pronto per il pickup - Annullamento parziale</br></br>Alcuni prodotti sono raccolti e alcuni sono raccolti con <code>0 qty</code>)</strong>
+<td><strong>Pronto per il ritiro - Annullamento parziale</br></br>Alcuni prodotti vengono selezionati, altri vengono selezionati con <code>0 qty</code>)</strong>
 </td>
 <td><ol>
-<li>Effettua l'ordine.</li>
-<li>Attendi la sincronizzazione dell’ordine.</li>
-<li>Verificare che la fattura sia stata creata (se autorizzata e acquisita) e che sia stata ricevuta l'e-mail della fattura.</li>
-<li>Vai a Postman ed esegui la richiesta Ready for Pickup con parte dei prodotti impostati come raccolto con 0 qty e gli altri selezionati.</li>
+<li>Effettua l’ordine.</li>
+<li>Attendi che l’ordine venga sincronizzato.</li>
+<li>Verificare che la fattura sia stata creata (se si autorizza e si acquisisce) e che sia stata ricevuta un'e-mail di fattura.</li>
+<li>Vai al Postman ed esegui la richiesta Pronto per il ritiro con parte dei prodotti impostati come prelevati con 0 qtà e il resto prelevato.</li>
 </ol>
 </td>
 <td><ul>
 <li><code>Your order is ready for pickup</code> con [!UICONTROL Ready for Pickup Items] e [!UICONTROL Canceled Items] tabelle. </li>
-<li>Lo stato dell'ordine è PRONTO PER IL PICKUP. </li>
-<li>Storico ordini aggiornato: <code>We refunded $X offline.</code>
-<li>Storico ordini aggiornato: <code>Order notified as partly canceled at: Date and hour</code>
+<li>Lo stato dell'ordine è PRONTO PER IL RITIRO. </li>
+<li>Cronologia ordini aggiornata: <code>We refunded $X offline.</code>
+<li>Cronologia ordini aggiornata: <code>Order notified as partly canceled at: Date and hour</code>
 <li>E-mail di rimborso ricevuta: <code>$x amount was refunded</code>
-<li>Viene creata la nota di accredito. (Aspetta che il cron funzioni.)</li>
+<li>Viene creata la nota di credito. (Attendere che il cron funzioni).</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>Dispensato (durante la dispensa) </br></br>Cancellazione completa (tutti i prodotti sono impostati come rifiutati)</strong>
+<td><strong>Erogato (durante la dispensazione) </br></br>Annullamento completo (tutti i prodotti sono impostati come rifiutato)</strong>
 </td>
 <td>
 <ol>
-<li>Effettua l'ordine.</li>
-<li>Attendi la sincronizzazione dell’ordine.</li>
-<li>Verificare che la fattura sia stata creata (se autorizzata e acquisita) e che sia stata ricevuta l'e-mail della fattura.</li>
-<li>Vai a Postman ed esegui la richiesta Ready for Pickup con tutti i prodotti impostati come selezionati.</li>
-<li>Apri la tua cassetta postale, trova l'e-mail Ready for Pickup. Quindi fai clic su **[!UICONTROL Confirm Arrival]**</li>
-<li>Consegna.</li>
+<li>Effettua l’ordine.</li>
+<li>Attendi che l’ordine venga sincronizzato.</li>
+<li>Verificare che la fattura sia stata creata (se si autorizza e si acquisisce) e che sia stata ricevuta un'e-mail di fattura.</li>
+<li>Vai al Postman ed esegui la richiesta Pronto per il ritiro con tutti i prodotti impostati come prelevati.</li>
+<li>Apri la cassetta postale, individua l’e-mail Pronto per il ritiro. Quindi, fai clic su **[!UICONTROL Confirm Arrival]**.</li>
+<li>Archivia.</li>
 <li>Vai a Postman ed esegui la richiesta Dispensed con tutti i prodotti impostati come rifiutati.</li>
 </ol>
 <td><ul>
-<li>Storico ordini aggiornato: <code>We refunded $X offline.</code></li>
+<li>Cronologia ordini aggiornata: <code>We refunded $X offline.</code></li>
 <li>E-mail di rimborso ricevuta: <code>$x amount was refunded</code></li>
 <li>Stato impostato su <code>CLOSED</code>.</li>
-<li>Nota di accredito creata. (Aspetta che il cron funzioni.)</li>
+<li>Nota di credito creata. (Attendere che il cron funzioni).</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>Dispensato (durante la dispensa)</br></br>Annullamento parziale</br>(alcuni prodotti sono dispensati; alcuni sono respinti.)</strong>
+<td><strong>Erogato (durante la dispensazione)</br></br>Annullamento parziale</br>(Alcuni prodotti vengono dispensati; alcuni vengono rifiutati).</strong>
 </br></td>
 <td>
 <ol>
-<li>Effettua l'ordine.</li>
-<li>Attendi la sincronizzazione dell’ordine.</li>
-<li>Verificare che la fattura sia stata creata (se autorizzata e acquisita) e che sia stata ricevuta l'e-mail della fattura.</li>
-<li>Vai a Postman ed esegui la richiesta Ready for Pickup con tutti i prodotti impostati come selezionati.</li>
-<li>Apri la tua cassetta postale. Trova il messaggio e-mail pronto per il ritiro e seleziona <code>Confirm Arrival</code>.</li>
-<li>Consegna.</li>
-<li>Vai a Postman ed esegui la richiesta Dispensed con alcuni prodotti impostati per essere distribuiti e alcuni impostati per essere rifiutati</li>
+<li>Effettua l’ordine.</li>
+<li>Attendi che l’ordine venga sincronizzato.</li>
+<li>Verificare che la fattura sia stata creata (se si autorizza e si acquisisce) e che sia stata ricevuta un'e-mail di fattura.</li>
+<li>Vai a Postman ed esegui la richiesta Pronto per il ritiro con tutti i prodotti impostati come prelevati.</li>
+<li>Apri la cassetta postale. Trova l’e-mail Pronto per il ritiro e seleziona <code>Confirm Arrival</code>.</li>
+<li>Archivia.</li>
+<li>Andare al Postman ed eseguire la richiesta dispensata con alcuni prodotti impostati per la dispensazione e alcuni impostati per il rifiuto</li>
 </ol>
 </td>
 <td>
-<li>Storico ordini aggiornato: <code>We refunded $X offline</code></li>
+<li>Cronologia ordini aggiornata: <code>We refunded $X offline</code></li>
 <li><code>Order notified as partly canceled at: Date and Hour</code>
 <li>E-mail di rimborso ricevuta: <code>$x amount was refunded</code>
 <li>Stato ordine impostato su <code>Ready for pickup Dispensed</code>
-<li>Nota di accredito creata. (Aspetta che il cron funzioni.)</li>
+<li>Nota di credito creata. (Attendere che il cron funzioni).</li>
 </td>
 </tr>
 <tr>
-<td> <strong>Nuovo RMA dopo ritorno (completo)</strong>
+<td> <strong>Nuova RMA dopo il ritorno (completo)</strong>
 </td>
 <td>
 <ol>
-<li>Effettua l'ordine.</li>
-<li>Attendi la sincronizzazione dell’ordine.</li>
-<li>Se l'opzione di autorizzazione e acquisizione è configurata, verificare che la fattura sia stata creata e che il cliente abbia ricevuto l'e-mail della fattura.</li>
+<li>Effettua l’ordine.</li>
+<li>Attendi che l’ordine venga sincronizzato.</li>
+<li>Se l'opzione Autorizza e acquisisci è configurata, verificare che la fattura sia stata creata e che il cliente abbia ricevuto l'e-mail della fattura.</li>
 <li>Scegli tutti i prodotti con Postman.</li>
-<li>Consegna.</li>
-<li>Faccia una spesa.</li>
-<li>Vai all'ordine e seleziona<strong>[!UICONTROL Create returns]=
-<li>Creare l’RMA.</li>
+<li>Archivia.</li>
+<li>Fai una dispensa.</li>
+<li>Vai all’ordine e seleziona<strong>[!UICONTROL Create returns]=
+<li>Creare la RMA.</li>
 </ol>
 </td>
 <td>
 <ul>
-<li>La RMA è stata creata e viene visualizzata sotto la <strong>[!UICONTROL Returns]</b> nella vista Ordine.</li>
-<li>Il cliente ha ricevuto un'e-mail di conferma RMA.</li>
+<li>La RMA è stata creata ed è visualizzata sotto la <strong>[!UICONTROL Returns]</b> nella vista Ordine.</li>
+<li>Il cliente ha ricevuto l’e-mail di conferma RMA.</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>Nuovo RMA dopo il ritorno — Parziale</strong>
+<td><strong>Nuova RMA dopo la restituzione — Parziale</strong>
 </td>
 <td>
 <ol>
-<li>Effettua l'ordine.</li>
-<li>Attendi la sincronizzazione dell’ordine.</li>
-<li>Verificare che la fattura sia stata creata (se autorizzata e acquisita) e che sia stata ricevuta l'e-mail della fattura.</li>
+<li>Effettua l’ordine.</li>
+<li>Attendi che l’ordine venga sincronizzato.</li>
+<li>Verificare che la fattura sia stata creata (se si autorizza e si acquisisce) e che sia stata ricevuta un'e-mail di fattura.</li>
 <li>Scegli tutti i prodotti con Postman.</li>
-<li>Consegna.</li>
-<li>Faccia una spesa.</li>
-<li>Vai all'ordine e seleziona  <strong>[!UICONTROL Create returns]</strong></li>
-<li>Crea la RMA con parte dei prodotti ordinati.</li>
+<li>Archivia.</li>
+<li>Fai una dispensa.</li>
+<li>Vai all’ordine e seleziona  <strong>[!UICONTROL Create returns]</strong></li>
+<li>Creare la RMA con parte dei prodotti ordinati.</li>
 </ol>
 <td>
 <ul>
-<li>RMA creato e visualizzato sotto <strong>[!UICONTROL Returns]</strong> nella vista Ordine.</li>
+<li>RMA creato e visualizzato sotto il <strong>[!UICONTROL Returns]</strong> nella vista Ordine.</li>
 <li>Il cliente ha ricevuto l’e-mail di conferma RMA.</li>
-<li>Dopo aver creato RMA, ottieni l'autorizzazione RMA: Dall’amministratore, vai a <strong>[!UICONTROL Sales > Returns]</strong>. Selezionare l’RMA creato e autorizzarlo.</li>
-<li>Verifica che il cliente abbia ricevuto l’e-mail di conferma dell’autorizzazione RMA.</li>
-<li>Verificare che il rimborso sia stato aggiunto alle transazioni e alla cronologia degli ordini.</li>
+<li>Dopo aver creato RMA, ottieni l’autorizzazione RMA: dall’amministratore, vai a <strong>[!UICONTROL Sales > Returns]</strong>. Selezionare la RMA creata e autorizzarla.</li>
+<li>Verificare che il cliente abbia ricevuto l'e-mail di conferma dell'autorizzazione RMA.</li>
+<li>Verificare che il rimborso sia stato aggiunto alla cronologia transazioni e ordini.</li>
 </ul>
 </td>
 </tr>
 </table>
 
 
-### Autorizzazioni per l&#39;app per l&#39;evasione dell&#39;archivio
+### Autorizzazioni app di esecuzione store
 
-Questa sezione del piano di test riguarda la gestione dell&#39;account per gli utenti delle app che eseguono lo store.
+Questa sezione del piano di test tratta la gestione dell’account per gli utenti dell’app Store Fulfillment.
 
-- Conferma che un associato dello store può eseguire l&#39;autenticazione con un nuovo account utente creato dall&#39;amministratore di Adobe Commerce.
+- Conferma che un Associate store possa eseguire l’autenticazione con un nuovo account utente creato dall’Amministratore Adobe Commerce.
 - Conferma che gli aggiornamenti agli account esistenti siano stati applicati correttamente.
 
 **Area funzionale:** Amministratore Adobe Commerce</br>
-**Ruolo:** Amministratore, archivia associato</br>
-**Tipo di prova:** Tutto positivo
+**Ruolo:** Amministratore, Store Associate</br>
+**Tipo di test:** Tutti positivi
 
 <table style="table-layout:auto">
 <tr>
 <th>Funzione</th>
 <th>Scenario</th>
-<th>Risultati attesi</th>
+<th>Risultati previsti</th>
 </tr>
 <tr>
 <td><strong>Gestione account utente - Crea account</strong></br></br>
 </td>
 <td>
 <ol>
-<li><strong>Amministratore</strong> — Accedi all'amministratore di Adobe Commerce</li>
-<li>Vai a <strong>[!UICONTROL System] &gt; Memorizza autorizzazioni app conformi &gt; Tutti gli utenti dell'app che esegue l'evasione dell'archivio</strong></li>
+<li><strong>Amministratore</strong> — Accedi ad Adobe Commerce Admin.</li>
+<li>Vai a <strong>[!UICONTROL System] &gt; Autorizzazioni app di esecuzione store &gt; Tutti gli utenti app di esecuzione store</strong></li>
 <li><strong>Aggiungi nuovo utente.</strong></li>
 </ol>
 <td>
 <ul>
-<li>Creazione account completata.</li>
+<li>Account creato correttamente.</li>
 <li>Il nuovo account utente viene visualizzato nel [!UICONTROL Store Fulfillment Users] dashboard.</li>
-<li><strong>Associato store</strong> accedi all'app Store Assist con un nuovo account utente.</li>
+<li><strong>Associa store</strong> accedi all’app Store Assist con un nuovo account utente.</li>
 </ul>
 </td>
 </tr>
@@ -358,33 +358,33 @@ Questa sezione del piano di test riguarda la gestione dell&#39;account per gli u
 </td>
 <td>
 <ol>
-<li>Accedi all’amministratore di Adobe Commerce con l’account utente Admin.</li>
-<li>Vai a <strong>[!UICONTROL System] &gt; Memorizza autorizzazioni app conformi &gt; Tutti gli utenti dell'app che esegue l'evasione dell'archivio</strong>.</li>
-<li>Nell'elenco Account utente, apri un account utente attivo esistente selezionando <strong>[!UICONTROL Edit]</strong>.
-<li>Disattiva l'account modificando <strong>[!UICONTROL Is Active]</strong> a <strong>No</strong>.</li>
+<li>Accedi ad Adobe Commerce Admin con l’account utente Admin.</li>
+<li>Vai a <strong>[!UICONTROL System] &gt; Autorizzazioni app di esecuzione store &gt; Tutti gli utenti app di esecuzione store</strong>.</li>
+<li>Nell'elenco Account utente aprire un account utente attivo esistente selezionando <strong>[!UICONTROL Edit]</strong>.
+<li>Disattiva l’account modificando <strong>[!UICONTROL Is Active]</strong> a <strong>No</strong>.</li>
 </ol>
 </td>
 <td>
 <ul>
-<li>Sulla <strong>[!UICONTROL Store Fulfillment App Users]</strong> dashboard, lo stato dell’account aggiornato è stato modificato in <strong>[!UICONTROL Inactive]</strong>.</li>
-<li>Store Associate non può accedere all'app Store Assist con le credenziali account inattive.</li>
+<li>Il giorno <strong>[!UICONTROL Store Fulfillment App Users]</strong> dashboard, lo stato dell’account aggiornato è stato modificato in <strong>[!UICONTROL Inactive]</strong>.</li>
+<li>Associate store: impossibile accedere all'app Store Assist con le credenziali dell'account inattive.</li>
 </ul>
 </td>
 </tr>
 </table>
 
-## Tipi di prodotto Adobe Commerce
+## Tipi di prodotti Adobe Commerce
 
-Gli scenari di test per i tipi di prodotto Adobe Commerce verificano che i clienti visualizzino le informazioni corrette sul prodotto, sulle scorte e sui metodi di consegna per diversi tipi di prodotto:
+Gli scenari di test per i tipi di prodotto Adobe Commerce verificano che i clienti visualizzino le informazioni corrette su prodotto, scorte e metodo di consegna per i diversi tipi di prodotto:
 
 - [!UICONTROL Configurable]
 - [!UICONTROL Grouped]
 - [!UICONTROL Virtual]
-- [!UICONTROL Bundle products] nella vetrina Adobe Commerce.
+- [!UICONTROL Bundle products] nella vetrina di Adobe Commerce.
 
 **Area funzionale:** Adobe Commerce Frontend</br>
-**Ruolo:** Utente app di assistenza store (associato store)</br>
-**Tipo di prova:** Tutto positivo
+**Ruolo:** Utente app assistenza store (Store Associate)</br>
+**Tipo di test:** Tutti positivi
 
 <table style="table-layout:auto">
 <tr>
@@ -397,10 +397,10 @@ Gli scenari di test per i tipi di prodotto Adobe Commerce verificano che i clien
 </td>
 <td>
 <ul>
-<li>Verifica che l'utente possa vedere solo le opzioni configurabili, quale origine è abilitata, le risorse sono assegnate e che ci siano alcuni elementi in magazzino - controlla i prodotti secondari.</li>
-<li>Verifica che quando selezioni un archivio diverso, le opzioni non disponibili siano visualizzate come incrociate.</li>
-<li>Verifica che se l'utente seleziona un archivio diverso, le opzioni configurabili non siano selezionate.</li>
-<li>Verifica che se un prodotto configurabile è già nel carrello e un utente seleziona un negozio diverso, il prodotto mostra come esaurito.</li>
+<li>Verificare che l'utente sia in grado di visualizzare solo le opzioni configurabili, che l'origine sia abilitata, che il materiale sia assegnato e che vi siano alcuni articoli in magazzino. Controllare i prodotti secondari.</li>
+<li>Verifica che, quando selezioni un archivio diverso, le opzioni non disponibili vengano visualizzate come barrate.</li>
+<li>Verifica che, se l’utente seleziona un archivio diverso, le opzioni configurabili non siano selezionate.</li>
+<li>Verifica che, se un prodotto configurabile è già nel carrello e un utente seleziona un altro store, il prodotto venga visualizzato come esaurito.</li>
 </ul>
 </td>
 <td></td>
@@ -411,10 +411,10 @@ Gli scenari di test per i tipi di prodotto Adobe Commerce verificano che i clien
 </td>
 <td>
 <ul>
-<li>Verifica che i metodi di consegna e [!UICONTROL Add to cart] sono disattivati per il cliente quando tutti i prodotti figlio hanno
-<code>qty</code> impostato su <code>0</code>.</li>
-<li>Verifica che i metodi di consegna siano abilitati per il cliente quando almeno uno dei prodotti secondari ha <code>qty</code> impostato su <code>0.</code></li>
-<li>Verifica che [!UICONTROL Store Pickup Delivery] il metodo è visibile e attivo solo per i prodotti che hanno [!UICONTROL Available for Store Pickup] abilitato. (Controllare il prodotto figlio.)</li>
+<li>Verifica che i metodi di consegna e [!UICONTROL Add to cart] sono disattivati per il cliente quando tutti i prodotti secondari hanno
+<code>qty</code> imposta su <code>0</code>.</li>
+<li>Verifica che i metodi di consegna siano abilitati per il cliente quando almeno uno dei prodotti secondari ha <code>qty</code> imposta su <code>0.</code></li>
+<li>Verifica che [!UICONTROL Store Pickup Delivery] è visibile e attivo solo per i prodotti con [!UICONTROL Available for Store Pickup] abilitato. (Controlla prodotto secondario).</li>
 </ul>
 </td>
 <td></td>
@@ -423,18 +423,18 @@ Gli scenari di test per i tipi di prodotto Adobe Commerce verificano che i clien
 <td><strong>Prodotti virtuali</strong>
 </td>
 <td>
-Verifica che i prodotti virtuali non offrano  [!UICONTROL In-store Pickup] metodo di consegna.
+Verificare che i prodotti virtuali non offrano  [!UICONTROL In-store Pickup] metodo di consegna.
 <td></td>
 </td>
 </tr>
 <tr>
-<td><strong>Bundle prodotti</strong>
+<td><strong>Prodotti bundle</strong>
 </td>
 <td>
 <ul>
-<li>Verifica se almeno un prodotto figlio ha [!UICONTROL Available for Store Pickup] disabilitata, l’opzione di consegna del ritiro dal negozio non è disponibile per il cliente.</li>
-<li>Verifica se almeno un prodotto figlio ha [!UICONTROL Available for Home Delivery] disabilitata, l’opzione Consegna iniziale non è disponibile per il cliente.</li>
-<li>Verifica che almeno uno dei prodotti secondari in un bundle sia esaurito, che il bundle (prodotto principale) sia visualizzato come [!UICONTROL Out of stock].</li>
+<li>Verifica che almeno un prodotto secondario abbia [!UICONTROL Available for Store Pickup] disabilitata, l’opzione Store Pickup delivery non è disponibile per il cliente.</li>
+<li>Verifica che almeno un prodotto secondario abbia [!UICONTROL Available for Home Delivery] disabilitata, l’opzione Consegna a domicilio non è disponibile per il cliente.</li>
+<li>Verifica se almeno uno dei prodotti secondari in un bundle è esaurito; anche il bundle (prodotto principale) viene visualizzato come [!UICONTROL Out of stock].</li>
 </ul>
 </td>
 <td></td>
@@ -444,203 +444,203 @@ Verifica che i prodotti virtuali non offrano  [!UICONTROL In-store Pickup] metod
 
 ## Esperienza di check-in
 
-Questa sezione del piano di test copre l’esperienza di archiviazione per gli ordini di pagamento del Negozio per le seguenti funzionalità:
+Questa sezione del piano di test riguarda l&#39;esperienza di check-in per gli ordini di ritiro dal negozio per le seguenti funzionalità:
 
-- Contatto di ritiro alternativo: verifica il flusso di lavoro per l’aggiunta di un [!UICONTROL Alternate Pickup Contact] e selezionando una [!UICONTROL Preferred Contact] su ordini di ritiro dal negozio.
+- Contatto di prelievo alternativo: verifica il flusso di lavoro per l&#39;aggiunta di un [!UICONTROL Alternate Pickup Contact] e la selezione di un [!UICONTROL Preferred Contact] su ordini di ritiro dal negozio.
 
-- Modulo di archiviazione - Verifica il flusso di lavoro per l&#39;invio di una richiesta di archiviazione per gli ordini di ritiro dal negozio.
+- Modulo di check-in: verificare il flusso di lavoro per l&#39;invio di una richiesta di check-in per gli ordini di prelievo del Negozio.
 
-**Aree funzionali:** Pagamento carrello, Modulo di pagamento per ordini di ritiro dal negozio</br>
-**Ruolo:** Amministratore, cliente, associato store</br>
-**Tipo di prova:** Tutto positivo
+**Aree funzionali:** Cart Checkout, Modulo di check-in per ordini di ritiro dal negozio</br>
+**Ruolo:** Amministratore, Cliente, Associate store</br>
+**Tipo di test:** Tutti positivi
 
-### Contatto di prelievo alternativo
+### Contatto di ritiro alternativo
 
 
-**Area funzionale:** Pagamento carrello</br>
+**Area funzionale:** Cart Checkout</br>
 **Ruolo:** Cliente</br>
-**Tipo di prova:** Tutto positivo
+**Tipo di test:** Tutti positivi
 
 <table style="table-layout:auto">
 <tr>
 <th>Funzione</th>
 <th>Scenario</th>
-<th>Risultati attesi</th>
+<th>Risultati previsti</th>
 </tr>
 <tr>
-<td><strong>Contatto di prelievo alternativo</br>
-Consegna</br><strong>
+<td><strong>Contatto di ritiro alternativo</br>
+Check-in</br><strong>
 </td>
 <td>
-Un cliente invia un ordine con l’opzione In-Store Pickup.</td>
-<td>Durante il processo di pagamento, il cliente visualizza il [!UICONTROL Alternate Pickup Contact] l’opzione relativa al passaggio Spedizione.
+Un cliente invia un ordine con l’opzione di ritiro in-store.</td>
+<td>Durante il processo di pagamento, il cliente visualizza [!UICONTROL Alternate Pickup Contact] l'opzione nella fase di spedizione.
 </td>
 </tr>
 <tr>
-<td><strong>Contatto preferito alternativo di prelievo, archiviazione</strong>
+<td><strong>Contatto preferito per ritiro alternativo, consegnare</strong>
 <td>
-Un cliente invia un ordine con l’opzione In-Store Pickup. Durante il pagamento, il cliente aggiunge un [!UICONTROL Alternate Pickup Contact].</td>
-<td>Durante il processo di pagamento, il cliente visualizza il [!UICONTROL Preferred Contact] opzione sulla fase di spedizione.</td>
+Un cliente invia un ordine con l’opzione di ritiro in-store. Durante il pagamento, il cliente aggiunge un [!UICONTROL Alternate Pickup Contact].</td>
+<td>Durante il processo di pagamento, il cliente visualizza [!UICONTROL Preferred Contact] opzione sulla fase di spedizione.</td>
 </td>
 </tr>
 <tr>
-<td><strong>Contatto alternativo di recupero, Check-in</strong>
+<td><strong>Dettagli del contatto di ritiro alternativo, check-in</strong>
 </td>
 <td>
-Un cliente invia un ordine con l’opzione In-Store Pickup. Durante il pagamento, il cliente seleziona [!UICONTROL Alternate Pickup Contact] nella fase di spedizione.
+Un cliente invia un ordine con l’opzione di ritiro in-store. Durante il pagamento, il cliente seleziona [!UICONTROL Alternate Pickup Contact] nella fase di spedizione.
 </td>
-<td>Il cliente visualizza le opzioni di input per inserire i dettagli del contatto: [!UICONTROL First name], [!UICONTROL Last name], [!UICONTROL Phone]e [!UICONTROL Email].</td>
+<td>Il cliente visualizza le opzioni di input per inserire i dettagli del contatto: [!UICONTROL First name], [!UICONTROL Last name], [!UICONTROL Phone], e [!UICONTROL Email].</td>
 </tr>
 <tr>
-<td><strong>Ritiro alternativo, archiviazione e-mail</strong>
+<td><strong>Ritiro alternativo, Archivia e-mail</strong>
 </td>
-<td>Un cliente invia un ordine con l’opzione In-Store Pickup. Durante il pagamento, il cliente seleziona [!UICONTROL Alternate Pickup Contact] nella fase di spedizione, aggiunge i dettagli del contatto e invia l'ordine.</td>
+<td>Un cliente invia un ordine con l’opzione di ritiro in-store. Durante il pagamento, il cliente seleziona [!UICONTROL Alternate Pickup Contact] nella fase di spedizione, aggiunge i dettagli del contatto e invia l'ordine.</td>
 <td>Sia il cliente che il contatto alternativo ricevono un'e-mail di check-in per l'ordine.</td>
 </tr>
-<td><strong>Pickup alternativo, dettaglio dell’ordine</strong></td>
-<td>Un cliente invia un ordine con l’opzione In-Store Pickup. Durante il pagamento, il cliente seleziona [!UICONTROL Alternate Pickup Contact] nella fase di spedizione, aggiunge i dettagli del contatto e invia l'ordine.</td>
+<td><strong>Prelievo alternativo, dettagli ordine</strong></td>
+<td>Un cliente invia un ordine con l’opzione di ritiro in-store. Durante il pagamento, il cliente seleziona [!UICONTROL Alternate Pickup Contact] nella fase di spedizione, aggiunge i dettagli del contatto e invia l'ordine.</td>
 <td>L’amministratore visualizza le informazioni di contatto aggiuntive sull’ordine salvato.</td>
 </tr>
 <tr>
-<td><strong>Contatto di prelievo alternativo, archivia visualizzazione ordine associato</strong>
+<td><strong>Contatto di ritiro alternativo, visualizzazione dell'ordine associato del negozio</strong>
 </td>
-<td>Un cliente invia un ordine con l’opzione In-Store Pickup. Durante il pagamento, il cliente seleziona [!UICONTROL Alternate Pickup Contact] nella fase di spedizione, aggiunge i dettagli del contatto e invia l'ordine.</td>
-<td>L'Associazione Store può vedere le informazioni di contatto aggiuntive sull'ordine in FaaS/ChaaS.</td>
+<td>Un cliente invia un ordine con l’opzione di ritiro in-store. Durante il pagamento, il cliente seleziona [!UICONTROL Alternate Pickup Contact] nella fase di spedizione, aggiunge i dettagli del contatto e invia l'ordine.</td>
+<td>L’Associate store può visualizzare le informazioni di contatto aggiuntive sull’ordine in FaaS/ChaaS.</td>
 </td>
 </tr>
 </tbody>
 </table>
 
-### Modulo di check-in
+### Modulo di archiviazione
 
 
-**Area funzionale:** Modulo di archiviazione</br>
+**Area funzionale:** Modulo di check-in</br>
 **Ruolo:** Cliente</br>
-**Tipo di prova:** Tutto positivo
+**Tipo di test:** Tutti positivi
 
 <table style="table-layout:auto">
 <tr>
 <th>Funzione</th>
 <th>Scenario</th>
-<th>Risultati attesi</th>
+<th>Risultati previsti</th>
 </tr>
 <tr>
-<td><strong>Azione Check-in - Invia richiesta</strong>
+<td><strong>Azione check-in: invia richiesta</strong>
 </td>
-<td>Nel modulo di archiviazione, un cliente completa tutti i campi obbligatori e invia la richiesta.</td>
+<td>Nel modulo di archiviazione, il cliente compila tutti i campi obbligatori e invia la richiesta.</td>
 <td>Il cliente riceve una risposta di successo.</td>
 </tr>
 <tr>
-<td><strong>Azione Check-in: visualizza i dettagli della richiesta</strong></td>
-<td>Invio di una richiesta di archiviazione completato da un cliente.</td>
-<td>Lo stato dell'ordine viene aggiornato nel sistema FaaS e Store Associate può vedere i dettagli della richiesta di check-in nei FaaS.
+<td><strong>Azione check-in: visualizza i dettagli della richiesta</strong></td>
+<td>Un cliente invia correttamente una richiesta di archiviazione.</td>
+<td>Gli aggiornamenti dello stato dell’ordine nel sistema FaaS e l’Associato store possono visualizzare i dettagli della richiesta di archiviazione nel FaaS.
 </td>
 </tr>
 <tr>
-<td><strong>Azione di archiviazione: invia la richiesta una sola volta</strong></td>
-<td>Dopo aver inviato una richiesta di archiviazione per un ordine, un cliente seleziona il collegamento per effettuare il check-in una seconda volta.</td>
-<td>Nel modulo di Check-In, il cliente non vede un’opzione per modificare o inviare nuovamente il modulo.</td>
+<td><strong>Azione Check-in: invia richiesta una sola volta</strong></td>
+<td>Dopo aver inviato una richiesta di check-in per un ordine, il cliente seleziona nuovamente il link per il check-in.</td>
+<td>Nel modulo di archiviazione, il cliente non visualizza un'opzione per modificare o inviare nuovamente il modulo.</td>
 </tr>
 <tr>
-<td><strong>Check-in Action - Conferma arrivo</strong></td>
-<td>Un ordine di ritiro in negozio è contrassegnato pronto per il ritiro nei FaaS. Il cliente riceve un messaggio e-mail pronto per il ritiro e seleziona [!UICONTROL Confirm Arrival].</td>
-<td>Il cliente visualizza il modulo di Check-In per l'ordine.</td>
+<td><strong>Azione check-in: conferma arrivo</strong></td>
+<td>Un ordine di prelievo in-store è contrassegnato come pronto per il prelievo nella FaaS. Il cliente riceve un messaggio e-mail pronto per il ritiro e seleziona [!UICONTROL Confirm Arrival].</td>
+<td>Il cliente visualizza il modulo di check-in per l'ordine.</td>
 </tr>
 </tbody>
 </table>
 
 ## App Store Assist
 
-Questa sezione del piano di test tratta gli scenari per testare i flussi di lavoro relativi a ordine, prelievo e consegna nell’app Store Assist.
+Questa sezione del piano di test descrive gli scenari per i flussi di lavoro di verifica ordine, prelievo e handoff nell’app Store Assist.
 
-**Area funzionale:** App Store Assist</br>
-**Ruolo:** Associato store</br>
-**Tipo di prova:** Tutto positivo
+**Area funzionale:** App assistenza store</br>
+**Ruolo:** Associa store</br>
+**Tipo di test:** Tutti positivi
 
 <table style="table-layout:auto">
 <tr>
 <th>Funzione</th>
 <th>Scenario</th>
-<th>Risultati attesi</th>
+<th>Risultati previsti</th>
 </tr>
 <tr>
 <td>
-<strong>Selezione ordine singolo: percorso felice, ritiro curbside</strong></td>
-<td>Scegliere articoli singoli e multipli. Nessun pickup nil, e ritiro curbside (con staging).
+<strong>Prelievo ordine singolo: percorso felice, prelievo a bordo strada</strong></td>
+<td>Selezionare articoli singoli e con più quantità. Nessun prelievo nullo e prelievo a bordo campo (con staging).
 </td>
-<td>
-</td>
-</tr>
-<tr>
-<td><strong>Selezione multi ordine: percorso felice, ritiro curbside</strong></td>
-<td>Articoli singoli e multipli. Nessun pickup nil e ritiro curbside (con staging)</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>Selezione ordine singolo: percorso felice in negozio pick-up</strong></td>
-<td>Articoli singoli e multipli. Nessun pickup nil e ritiro in negozio (con staging)</td>
 <td>
 </td>
 </tr>
 <tr>
-<td><strong>Selezione multi ordine: percorso felice, ritiro in negozio</strong></td>
-<td>Scegliere articoli singoli e multipli. Nessun pickup nil, e ritiro curbside (con staging).</td>
+<td><strong>Prelievo di più ordini: percorso felice, prelievo a bordo strada</strong></td>
+<td>Articoli singoli e multi-quantità. Nessun prelievo nullo e prelievo a bordo campo (con staging)</td>
 <td></td>
 </tr>
 <tr>
-<td><strong>Selezione ordine singolo - percorso non felice, ritiro in negozio</strong></td>
-<td>Scegli articoli singoli e multipli con ritiro parziale e nilpick e in-store (con staging)</td>
+<td><strong>Ritiro per singolo ordine: prelievo in negozio percorso felice</strong></td>
+<td>Articoli singoli e multi-quantità. Nessun prelievo nulla e ritiro in negozio (con staging)</td>
+<td>
+</td>
+</tr>
+<tr>
+<td><strong>Prelievo di più ordini: percorso felice, prelievo in negozio</strong></td>
+<td>Selezionare articoli singoli e con più quantità. Nessun prelievo nullo e prelievo a bordo campo (con staging).</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Prelievo di un singolo ordine: percorso non felice, prelievo in negozio</strong></td>
+<td>Prelievo di articoli in quantità singola e multipla con prelievo parziale e nilpick e in-store (con staging)</td>
 </td>
 <td></td>
 </tr>
-<td><strong>Raccolta ordini multipli - non felice ritiro percorso-curbside</strong></td>
-<td>Scegli articoli singoli e multipli con ritiro parziale e nilpick e in-store (con staging)</td>
+<td><strong>Prelievo di più ordini: prelievo a terra non felice</strong></td>
+<td>Prelievo di articoli in quantità singola e multipla con prelievo parziale e nilpick e in-store (con staging)</td>
 <td></td>
 </tr>
-<td><strong>Selezione ordine singolo - percorso non felice, ritiro curbside</strong></td>
-<td>Scegli articoli singoli e multipli con ritiro parziale e nilpick e curbside (con staging)</strong></td>
+<td><strong>Prelievo ordine singolo: percorso non felice, prelievo a bordo strada</strong></td>
+<td>Prelievo di articoli singoli e di più quantità con prelievo parziale e nilpick e a blocchi (con staging)</strong></td>
 </td>
 <td></td>
 </tr>
-<tr><td><strong>Ordine inserito - annullato prima del prelievo</strong></td>
+<tr><td><strong>Ordine effettuato - Annullato prima del prelievo</strong></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td><strong>Ordine inserito - annullato prima della consegna</strong></td>
+<td><strong>Ordine effettuato - Annullato prima della consegna</strong></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td><strong>Ordine inserito - ricerca nel modulo ordine</strong></td>
+<td><strong>Ordine effettuato: ricerca nel modulo dell’ordine</strong></td>
 <td></td>
 <td></td>
 </tr>
-<tr><td><strong>Ordine inserito - ricerca e check-in manuale per la consegna</strong></td>
+<tr><td><strong>Ordine effettuato: ricerca e check-in manuale per il trasferimento</strong></td>
 <td></td>
 <td></td>
 </tr>
-<tr><td><strong>Ordine inserito - tutti gli elementi selezionati o non disponibili contrassegnati dal selettore</strong></td>
+<tr><td><strong>Ordine effettuato: tutti gli articoli prelevati in modo non corretto o non disponibili contrassegnati dal selettore</strong></td>
 <td></td>
 <td></td></tr>
-<tr><td><strong>Ordine inserito con elementi bundle - prelievo e consegna</strong></td>
+<tr><td><strong>Ordine effettuato con articoli bundle - prelievo e handoff</strong></td>
 <td></td>
 <td></td></tr>
-<tr><td><strong>Ordine posto - Consegna con rigetto</strong></td>
+<tr><td><strong>Ordine effettuato - Mano spenta con rifiuto</strong></td>
 <td></td>
 <td></td></tr>
-<tr><td><strong>Ordine posto - Consegna con rifiuto di tutti gli articoli</strong></td>
+<tr><td><strong>Ordine effettuato - Mano a mano con rifiuto di tutti gli articoli</strong></td>
 <td></td>
 <td></td></tr>
 </tbody>
 </table>
 
-## Distribuzione
+## Distribuisci
 
-Dopo aver verificato che la soluzione sia stata configurata e testata in base alle specifiche, puoi distribuirla dalla fase di staging alla produzione.
+Dopo aver verificato che la soluzione sia stata configurata e testata in base alle specifiche, puoi procedere alla distribuzione dalla staging alla produzione.
 
-L&#39;implementazione e il test variano a seconda dell&#39;infrastruttura e delle funzionalità.
+L’implementazione e i test variano a seconda dell’infrastruttura e delle funzionalità.
 
 >[!TIP]
 >
->Per le linee guida per la distribuzione, le liste di controllo e le best practice per Adobe Commerce sui progetti di infrastruttura cloud, consulta [Distribuzione dello store](https://devdocs.magento.com/cloud/live/stage-prod-live.html) nella documentazione per sviluppatori di Adobe Commerce.
+>Per le linee guida di distribuzione, gli elenchi di controllo e le best practice per i progetti Adobe Commerce su infrastrutture cloud, consulta [Distribuire lo store](https://devdocs.magento.com/cloud/live/stage-prod-live.html) nella documentazione di Adobe Commerce Developer.

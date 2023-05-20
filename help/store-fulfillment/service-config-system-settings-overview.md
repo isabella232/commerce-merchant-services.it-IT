@@ -1,6 +1,6 @@
 ---
-title: Panoramica della configurazione del sistema
-description: Scopri le categorie di impostazioni di configurazione amministratore disponibili per la soluzione Store Fulfillment e come sono configurate.
+title: Panoramica sulla configurazione del sistema
+description: Scopri le categorie di impostazioni di configurazione dell’amministratore disponibili per la soluzione Store Fulfillment e come vengono configurate.
 role: User, Admin
 level: Intermediate
 source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
@@ -10,32 +10,32 @@ ht-degree: 0%
 
 ---
 
-# Panoramica della configurazione del sistema
+# Panoramica sulla configurazione del sistema
 
 In Adobe Commerce Admin, le impostazioni di configurazione per Store Fulfillment Services di Walmart Commerce Technologies sono suddivise per tipo.
 
-**Memorizza impostazioni di configurazione evasione per tipo**
+**Archivia impostazioni di configurazione di evasione per tipo**
 
-| **Tipo** | **Descrizione** | **Configurabile API** |
+| **Tipo** | **Descrizione** | **API configurabile** |
 |-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
-| [Configurazione dell’esperienza di check-in](store-location-map-provider-setup.md) | Configura il colore dell&#39;auto e rende le opzioni che saranno disponibili durante il processo di check-in | Sì |
-| [Configurazione utente](user-setup.md) | Gestisci account utente, ruoli e autorizzazioni per i collaboratori dello store che utilizzano l&#39;app Store Assist. ambiti. | Sì |
-| [Configurazione app](app-setup.md) | Esamina le configurazioni disponibili per l’app Store Assist necessarie per completare il processo di onboarding. Queste impostazioni non possono essere configurate dall&#39;amministratore di Adobe Commerce. | Sì |
+| [Configurazione dell’esperienza di archiviazione](store-location-map-provider-setup.md) | Configura il colore dell&#39;auto e le opzioni di creazione dell&#39;auto che saranno disponibili durante il check-in | Sì |
+| [Configurazione utente](user-setup.md) | Gestisci gli account utente, i ruoli e le autorizzazioni per gli associati allo store che utilizzano l&#39;app Store Assist. ambiti. | Sì |
+| [Configurazione app](app-setup.md) | Verifica le configurazioni disponibili per l’app Store Assist necessaria per completare il processo di onboarding. Queste impostazioni non possono essere configurate dall’amministratore di Adobe Commerce. | Sì |
 
 
-## Utilizzare il riferimento di configurazione
+## Utilizza il riferimento di configurazione
 
-Visualizza il riferimento di configurazione per ogni tipo di impostazione selezionando il nome del tipo nel _Memorizza impostazioni di configurazione evasione per tipo_ tabella.
+Visualizzare il riferimento di configurazione per ciascun tipo di impostazione selezionando il nome del tipo nella _Archivia impostazioni di configurazione di evasione per tipo_ tabella.
 
 Nel riferimento di configurazione per ciascun tipo, i dettagli di configurazione vengono visualizzati in una tabella con le seguenti intestazioni di colonna:
 
 - **Campo** fa riferimento al nome del campo da configurare
 
-- **Descrizione** fornisce dettagli importanti sullo scopo e il comportamento del campo
+- **Descrizione** fornisce dettagli importanti sullo scopo e sul comportamento del campo
 
 - **Ambito** indica l’ambito di configurazione di Adobe Commerce per l’impostazione (globale, sito web, store)
 
-- **Obbligatorio** il valore indica se è necessario impostare un valore sul campo
+- **Obbligatorio** valore indica se è necessario impostare un valore nel campo
 
-Per riferimento tecnico, puoi anche trovare il percorso di configurazione interno per ciascun campo.
+Per informazioni tecniche, puoi anche trovare il percorso di configurazione interno di ciascun campo.
 

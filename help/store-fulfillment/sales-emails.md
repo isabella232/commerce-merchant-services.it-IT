@@ -1,6 +1,6 @@
 ---
-title: Modelli e-mail di vendita
-description: Configura i modelli e-mail transazionali per la comunicazione con i clienti e gli amministratori di store durante il processo di evasione per gli ordini Store Pickup.
+title: Modelli e-mail vendita
+description: Configura i modelli e-mail transazionali per comunicare con i clienti e gli amministratori del negozio durante il processo di evasione degli ordini di ritiro dal negozio.
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
@@ -12,13 +12,13 @@ ht-degree: 0%
 ---
 
 
-# Modelli e-mail di vendita
+# Modelli e-mail vendita
 
-Store Fulfillment offre un set esteso di modelli e-mail transazionali per supportare i flussi di lavoro di ordine e di evasione. Offrono comunicazioni e messaggi coerenti e automatizzati su tutti i canali, informando gli amministratori di clienti e negozi circa le modifiche dello stato dell&#39;ordine, le istruzioni per gli ordini di ritiro in negozio e altro ancora.
+Store Fulfillment offre un set esteso di modelli e-mail transazionali per supportare i flussi di lavoro di ordine e evasione. Offrono comunicazioni e messaggi coerenti e automatizzati su tutti i canali, notificando agli amministratori di clienti e negozi le modifiche dello stato degli ordini, le istruzioni per gli ordini di prelievo in negozio e altro ancora.
 
-I modelli e-mail di evasione archivio sono configurati con messaggi e impostazioni predefiniti. Gli amministratori merchant in Adobe Commerce possono gestire e modificare le configurazioni e selezionare i modelli e-mail per comunicare con i clienti in scenari diversi. Gli amministratori possono configurare e personalizzare anche i modelli.
+I modelli e-mail per il completamento dell’archivio sono configurati con messaggi e impostazioni predefiniti. Gli amministratori di esercenti di Adobe Commerce possono gestire e modificare le configurazioni e selezionare i modelli e-mail per comunicare con i clienti in scenari diversi. Gli amministratori possono configurare e personalizzare anche i modelli.
 
-Configura i modelli e-mail di vendita dall’amministratore: **[!UICONTROL Stores > Configuration > Sales > Sales Emails]**.
+Configura i modelli e-mail per le vendite dall’Amministratore: **[!UICONTROL Stores > Configuration > Sales > Sales Emails]**.
 
 ## E-mail - Impostazioni generali
 
@@ -33,13 +33,13 @@ Configura i modelli e-mail di vendita dall’amministratore: **[!UICONTROL Store
 </thead>
 <tbody><tr>
 <td><strong>Invio asincrono</strong></td>
-<td>Disattiva questa funzione. L’invio di e-mail asincrone non è supportato. Per il tempo di comunicazione e risposta più veloce per Store Pickup, invia immediatamente le e-mail invece di fare il batch. </td>
+<td>Disattiva questa funzione. L’invio asincrono di e-mail non è supportato. Per velocizzare le comunicazioni e i tempi di risposta per il ritiro dello store, invia immediatamente le e-mail anziché raggrupparle in batch. </td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
 </tbody></table>
 
-## Ordine pronto per il ritiro nel negozio
+## Ordina pronto per il ritiro nello store
 
 <table>
 <thead>
@@ -52,49 +52,49 @@ Configura i modelli e-mail di vendita dall’amministratore: **[!UICONTROL Store
 </thead>
 <tbody><tr>
 <td><strong>Abilitato</strong></td>
-<td>Questa e-mail viene inviata al cliente quando il dipendente del negozio ha completato il prelievo dell'ordine. Imposta su "No" per disabilitare la notifica e-mail. Se il modello e-mail è disabilitato, non impedisce che un ordine venga scelto dall'associazione store.</td>
+<td>Questa e-mail viene inviata al cliente quando il responsabile del negozio ha completato il prelievo dell'ordine. Imposta su "No" per disabilitare la notifica e-mail. Se il modello e-mail è disattivato, ciò non impedisce al partner del negozio di prelevare un ordine.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Ordine Pronto Per Il Mittente E-Mail Di Ritiro</strong></td>
-<td>L’identità del mittente utilizzata per l’invio della notifica e-mail.</td>
+<td><strong>Ordina pronto per il mittente dell'e-mail di ritiro</strong></td>
+<td>L’identità del mittente utilizzata per inviare la notifica e-mail.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Modello E-Mail Per Ordine Pronto Per Il Recupero</strong></td>
-<td>Il modello di messaggio e-mail utilizzato per avvisare i clienti registrati. L’integrazione fornisce un modello predefinito.</td>
+<td><strong>Ordine pronto per il modello di e-mail di ritiro</strong></td>
+<td>Il modello di messaggio e-mail utilizzato per notificare i clienti registrati. Con l’integrazione viene fornito un modello predefinito.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
-<td><strong>Modello e-mail pronto per il prelievo per il cliente</strong></td>
-<td>Modello di messaggio e-mail utilizzato per avvisare i clienti ospiti. L’integrazione fornisce un modello predefinito.</td>
-<td>Visualizzazione store</td>
-<td>No</td>
-</tr>
-<tr>
-<td><strong>Modello e-mail pronto per il prelievo per il contatto alternativo di prelievo</strong></td>
-<td>Il modello di messaggio e-mail utilizzato per inviare una notifica ai contatti aggiuntivi denominati nell’ordine. L’integrazione fornisce un modello predefinito.</td>
+<td><strong>Ordine pronto per il modello di e-mail di ritiro per l'ospite</strong></td>
+<td>Modello di messaggio e-mail utilizzato per inviare una notifica ai clienti guest. Con l’integrazione viene fornito un modello predefinito.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Invia ordine pronto per la copia dell'e-mail di recupero in</strong></td>
-<td>Un elenco di indirizzi e-mail delimitati da virgole per inviare una copia di ogni notifica.</td>
+<td><strong>Ordine pronto per il modello di e-mail di ritiro per il contatto di ritiro alternativo</strong></td>
+<td>Il modello di messaggio e-mail utilizzato per notificare ulteriori contatti denominati nell’ordine. Con l’integrazione viene fornito un modello predefinito.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Invia ordine pronto per il metodo di copia dell'e-mail di recupero</strong></td>
-<td>Il metodo di copia dell’e-mail, copia in carbonio, da utilizzare.</td>
+<td><strong>Invia Ordine Pronto Per Il Ritiro Della Copia E-Mail A</strong></td>
+<td>Un elenco delimitato da virgole di indirizzi e-mail per inviare una copia di ogni notifica.</td>
+<td>Visualizzazione store</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Metodo Invia ordine pronto per la copia e-mail di ritiro</strong></td>
+<td>Il metodo di copia delle e-mail, ovvero la copia carbone, da utilizzare.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
 </tbody></table>
 
 
-## L&#39;ordine è stato prelevato nel Negozio
+## L&#39;ordine è stato ritirato nello Store
 
 <table>
 <thead>
@@ -107,36 +107,36 @@ Configura i modelli e-mail di vendita dall’amministratore: **[!UICONTROL Store
 </thead>
 <tbody><tr>
 <td><strong>Abilitato</strong></td>
-<td>Questa e-mail viene inviata al cliente quando per confermare che ha ritirato il proprio ordine dal negozio. Imposta su "No" per disabilitare la notifica e-mail. Se il modello e-mail è disabilitato, non impedisce che un ordine venga prelevato dal cliente.</td>
+<td>Questa e-mail viene inviata al cliente quando per confermare di aver ritirato l'ordine dal negozio. Imposta su "No" per disabilitare la notifica e-mail. Se il modello e-mail è disabilitato, non impedisce al cliente di ritirare un ordine.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>L’Ordine È Stato Ritirato Dal Mittente E-Mail</strong></td>
-<td>L’identità del mittente utilizzata per l’invio della notifica e-mail.</td>
+<td><strong>L'Ordine È Stato Ritirato Mittente E-Mail</strong></td>
+<td>L’identità del mittente utilizzata per inviare la notifica e-mail.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Ordine Selezionato Modello E-Mail</strong></td>
-<td>Il modello di messaggio e-mail utilizzato per avvisare i clienti registrati. L’integrazione fornisce un modello predefinito</td>
+<td><strong>L'Ordine È Stato Ritirato Modello E-Mail</strong></td>
+<td>Il modello di messaggio e-mail utilizzato per notificare i clienti registrati. Con l’integrazione viene fornito un modello predefinito</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
-<td><strong>Ordine selezionato Modello e-mail per guest</strong></td>
-<td>Modello di messaggio e-mail utilizzato per avvisare i clienti ospiti. L’integrazione fornisce un modello predefinito.</td>
-<td>Visualizzazione store</td>
-<td>No</td>
-</tr>
-<tr>
-<td><strong>Invia È Stata Selezionata Copia E-Mail In</strong></td>
-<td>Un elenco di indirizzi e-mail delimitati da virgole per inviare una copia di ogni notifica.</td>
+<td><strong>L'ordine è stato ritirato Modello di Email per Ospite</strong></td>
+<td>Modello di messaggio e-mail utilizzato per inviare una notifica ai clienti guest. Con l’integrazione viene fornito un modello predefinito.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Invia È Stato Ritirato Metodo Di Copia E-Mail</strong></td>
-<td>Il metodo di copia dell’e-mail, copia in carbonio, da utilizzare.</td>
+<td><strong>Invia È Stata Ritirata La Copia E-Mail A</strong></td>
+<td>Un elenco delimitato da virgole di indirizzi e-mail per inviare una copia di ogni notifica.</td>
+<td>Visualizzazione store</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Invia è stato selezionato metodo di copia e-mail</strong></td>
+<td>Il metodo di copia delle e-mail, ovvero la copia carbone, da utilizzare.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
@@ -155,37 +155,37 @@ Configura i modelli e-mail di vendita dall’amministratore: **[!UICONTROL Store
 </thead>
 <tbody><tr>
 <td><strong>Abilitato</strong></td>
-<td>Questo messaggio e-mail viene inviato al cliente per informarlo di un ritardo nell'elaborazione o nel prelievo dell'ordine presso il negozio commerciale. Imposta su "No" per disabilitare la notifica e-mail. Se il modello e-mail è disabilitato, la funzione non impedisce il ritardo di un ordine.</td>
+<td>Questa e-mail viene inviata al cliente per informarlo di un ritardo nell’elaborazione o nel prelievo dell’ordine presso il negozio di merchant. Imposta su "No" per disabilitare la notifica e-mail. Se il modello e-mail è disabilitato, la funzione non impedisce il ritardo di un ordine.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Mittente e-mail ritardata ordine
+<td><strong>Ordina mittente e-mail ritardato
 </strong></td>
-<td>L’identità del mittente utilizzata per l’invio della notifica e-mail.</td>
+<td>L’identità del mittente utilizzata per inviare la notifica e-mail.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Modello e-mail ritardato ordine</strong></td>
-<td>Il modello di messaggio e-mail utilizzato per avvisare i clienti registrati. L’integrazione fornisce un modello predefinito.</td>
+<td><strong>Modello e-mail per ordine ritardato</strong></td>
+<td>Il modello di messaggio e-mail utilizzato per notificare i clienti registrati. Con l’integrazione viene fornito un modello predefinito.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
-<td><strong>Modello e-mail ritardata ordine per ospite</strong></td>
-<td>Modello di messaggio e-mail utilizzato per avvisare i clienti ospiti. L’integrazione fornisce un modello predefinito.</td>
-<td>Visualizzazione store</td>
-<td>No</td>
-</tr>
-<tr>
-<td><strong>Invia una copia ritardata dell’e-mail a</strong></td>
-<td>Un elenco di indirizzi e-mail delimitati da virgole per inviare una copia di ogni notifica.</td>
+<td><strong>Ordinare il modello di e-mail posticipato per l'ospite</strong></td>
+<td>Modello di messaggio e-mail utilizzato per inviare una notifica ai clienti guest. Con l’integrazione viene fornito un modello predefinito.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Metodo di copia ritardata dell'ordine di invio</strong></td>
-<td>Il metodo di copia dell’e-mail, copia in carbonio, da utilizzare.</td>
+<td><strong>Invia Copia E-Mail Ritardata Dell’Ordine A</strong></td>
+<td>Un elenco delimitato da virgole di indirizzi e-mail per inviare una copia di ogni notifica.</td>
+<td>Visualizzazione store</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Metodo di invio della copia ritardata dell'ordine</strong></td>
+<td>Il metodo di copia delle e-mail, ovvero la copia carbone, da utilizzare.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
@@ -206,37 +206,37 @@ Configura i modelli e-mail di vendita dall’amministratore: **[!UICONTROL Store
 </thead>
 <tbody><tr>
 <td><strong>Abilitato</strong></td>
-<td>Questa e-mail viene inviata al cliente per avvisarlo che il loro ordine è stato annullato al negozio commerciale. Imposta su <code>No</code> per disattivare la notifica e-mail. Se il modello e-mail è disabilitato, la funzione non impedisce l’annullamento di un ordine.</td>
+<td>Questa e-mail viene inviata al cliente per informarlo che il suo ordine è stato annullato presso il negozio di vendita. Imposta su <code>No</code> per disattivare la notifica e-mail. Se il modello e-mail è disabilitato, questa funzione non impedisce l’annullamento di un ordine.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Mittente e-mail annullato ordine
+<td><strong>Mittente e-mail annullato dall'ordine
 </strong></td>
-<td>L’identità del mittente utilizzata per l’invio della notifica e-mail.</td>
+<td>L’identità del mittente utilizzata per inviare la notifica e-mail.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Modello e-mail annullato ordine</strong></td>
-<td>Il modello di messaggio e-mail utilizzato per avvisare i clienti registrati. L’integrazione fornisce un modello predefinito.</td>
+<td><strong>Modello e-mail per ordine annullato</strong></td>
+<td>Il modello di messaggio e-mail utilizzato per notificare i clienti registrati. Con l’integrazione viene fornito un modello predefinito.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
 <td><strong>Ordine annullato per ospite</strong></td>
-<td>Modello di messaggio e-mail utilizzato per avvisare i clienti ospiti. L’integrazione fornisce un modello predefinito.</td>
+<td>Modello di messaggio e-mail utilizzato per inviare una notifica ai clienti guest. Con l’integrazione viene fornito un modello predefinito.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Invia copia e-mail annullata a</strong></td>
-<td>Un elenco di indirizzi e-mail delimitati da virgole per inviare una copia di ogni notifica.</td>
+<td><strong>Invia la copia e-mail annullata dell'ordine a</strong></td>
+<td>Un elenco delimitato da virgole di indirizzi e-mail per inviare una copia di ogni notifica.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Metodo di copia annullato dell'ordine di invio</strong></td>
-<td>Il metodo di copia dell’e-mail, copia in carbonio, da utilizzare.</td>
+<td><strong>Metodo di copia annullata dell'ordine di invio</strong></td>
+<td>Il metodo di copia delle e-mail, ovvero la copia carbone, da utilizzare.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
@@ -256,43 +256,43 @@ Configura i modelli e-mail di vendita dall’amministratore: **[!UICONTROL Store
 </thead>
 <tbody><tr>
 <td><strong>Abilitato</strong></td>
-<td>Questa e-mail viene inviata al cliente per avvisarlo che parte del loro ordine è stato annullato al negozio commerciale. Imposta su <code>No</code> per disattivare la notifica e-mail. Se il modello e-mail è disabilitato, non impedisce che un ordine venga parzialmente annullato.</td>
+<td>Questa e-mail viene inviata al cliente per informarlo che parte dell’ordine è stato annullato presso il negozio di alimentari. Imposta su <code>No</code> per disattivare la notifica e-mail. Se il modello e-mail è disabilitato, ciò non impedisce che un ordine venga parzialmente annullato.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Ordine del mittente e-mail parzialmente annullato
+<td><strong>Mittente e-mail parzialmente annullato dall'ordine
 </strong></td>
-<td>L’identità del mittente utilizzata per l’invio della notifica e-mail.</td>
+<td>L’identità del mittente utilizzata per inviare la notifica e-mail.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Modello e-mail parzialmente annullato</strong></td>
-<td>Il modello di messaggio e-mail utilizzato per avvisare i clienti registrati. L’integrazione fornisce un modello predefinito.</td>
+<td><strong>Modello e-mail parzialmente annullato dall'ordine</strong></td>
+<td>Il modello di messaggio e-mail utilizzato per notificare i clienti registrati. Con l’integrazione viene fornito un modello predefinito.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
-<td><strong>Ordine Modello e-mail parzialmente annullato per contattaci alternativo</strong></td>
-<td>Il modello di messaggio e-mail utilizzato per inviare una notifica ai contatti aggiuntivi denominati nell’ordine. L’integrazione fornisce un modello predefinito.</td>
+<td><strong>Modello e-mail parzialmente annullato dall'ordine per contatto di ritiro alternativo</strong></td>
+<td>Il modello di messaggio e-mail utilizzato per notificare ulteriori contatti denominati nell’ordine. Con l’integrazione viene fornito un modello predefinito.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Ordine parzialmente annullato per ospite</strong></td>
-<td>Modello di messaggio e-mail utilizzato per avvisare i clienti ospiti. L’integrazione fornisce un modello predefinito.</td>
+<td><strong>Ordine parzialmente annullato per l'ospite</strong></td>
+<td>Modello di messaggio e-mail utilizzato per inviare una notifica ai clienti guest. Con l’integrazione viene fornito un modello predefinito.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
 <tr>
 <td><strong>Invia copia e-mail parzialmente annullata a</strong></td>
-<td>Un elenco di indirizzi e-mail delimitati da virgole per inviare una copia di ogni notifica.</td>
+<td>Un elenco delimitato da virgole di indirizzi e-mail per inviare una copia di ogni notifica.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Metodo di copia parzialmente annullato dell'ordine di invio</strong></td>
-<td>Il metodo di copia dell’e-mail, copia in carbonio, da utilizzare.</td>
+<td><strong>Metodo di copia annullata parzialmente dell'ordine di invio</strong></td>
+<td>Il metodo di copia delle e-mail, ovvero la copia carbone, da utilizzare.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
@@ -310,21 +310,21 @@ Configura i modelli e-mail di vendita dall’amministratore: **[!UICONTROL Store
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>L'ordine ha spedito per memorizzare i prodotti Mittente e-mail</strong></td>
-<td>Invia e-mail a personale commerciale specificato come rapporto aggregato di tutti gli ordini aperti che non possono essere raccolti in un negozio commerciale fino a quando il loro inventario non è disponibile. </br></br> I commercianti possono utilizzare questo rapporto per avviare e gestire trasferimenti di inventario da negozio a negozio o rifornimento. </br></br>Questa notifica si applica solo quando [!DNL Ship-to-Store] le funzioni sono abilitate.
-</br></br>Questa etichetta non influisce sul vettore di spedizione selezionato o sulle relative etichette del metodo di spedizione disponibili.</br></br></td>
+<td><strong>L'ordine ha il mittente dell'e-mail per i prodotti del Negozio</strong></td>
+<td>E-mail inviata a personale commerciante specificato come rapporto aggregato di tutti gli ordini aperti che non possono essere prelevati in un negozio commerciale finché il loro inventario non è disponibile. </br></br> I commercianti possono utilizzare questo rapporto per avviare e gestire trasferimenti di magazzino o rifornimento dal punto vendita al punto vendita. </br></br>Questa notifica si applica solo quando [!DNL Ship-to-Store] le funzioni di sono abilitate.
+</br></br>Questa etichetta non influisce sul vettore di spedizione selezionato o sulle relative etichette disponibili per il metodo di spedizione.</br></br></td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Destinatari e-mail di spedizione</strong></td>
-<td>Un elenco di indirizzi e-mail delimitati da virgole per inviare una copia di ogni notifica.</td>
+<td><strong>Destinatari e-mail del Negozio di spedizione</strong></td>
+<td>Un elenco delimitato da virgole di indirizzi e-mail per inviare una copia di ogni notifica.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
 <tr>
 <td><strong>Modello e-mail</strong></td>
-<td>Modello di messaggio e-mail utilizzato per inviare notifiche ai destinatari. L’integrazione fornisce un modello predefinito.</td>
+<td>Modello di messaggio e-mail utilizzato per notificare i destinatari. Con l’integrazione viene fornito un modello predefinito.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
@@ -332,7 +332,7 @@ Configura i modelli e-mail di vendita dall’amministratore: **[!UICONTROL Store
 
 >[!NOTE]
 >
->Se consenti ordini arretrati, devi fornire un indirizzo e-mail amministratore per ricevere notifiche su questi ordini. Aggiungi l’indirizzo alle seguenti impostazioni di configurazione: **[!UICONTROL Send Order Delayed Email Copy To]** in [Ritardo ordine](#order-delayed) modello e [!UICONTROL Ship To Store Email Recipients] in [Spedisci al negozio](#ship-to-store) modello.
+>Se consenti ordini inevasi, devi fornire un indirizzo e-mail di amministratore per ricevere notifiche su questi ordini. Aggiungi l’indirizzo alle seguenti impostazioni di configurazione: **[!UICONTROL Send Order Delayed Email Copy To]** nel [Ritardo ordine](#order-delayed) modello e [!UICONTROL Ship To Store Email Recipients] nel [Spedisci al negozio](#ship-to-store) modello.
 
 
 

@@ -4,7 +4,7 @@ description: Consulta le note sulla versione per informazioni su tutte [!DNL Pay
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 source-git-commit: e076864a117be007eeb8003d9d6a472b704996ba
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1758'
 ht-degree: 0%
 
 ---
