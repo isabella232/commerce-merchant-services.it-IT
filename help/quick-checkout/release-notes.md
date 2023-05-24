@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] Note sulla versione'
 description: Consulta le note sulla versione per informazioni su tutte [!DNL Quick Checkout] versioni.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: d58193b622a1851259b2191ea54ac6b59029dd64
+source-git-commit: 169b3e365d7f4c0c4cef19fa1941dfa0a95ea58b
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,10 @@ Consulta [Disponibilità](https://devdocs.magento.com/release/availability.html)
 Queste note sulla versione descrivono le modifiche e le correzioni apportate alle funzioni e che sono state rilasciate al di fuori delle normali versioni del pannello Amministratore.
 
 +++Aggiornamenti del pannello di amministrazione
+
+23 maggio 2023_
+
+![Problema risolto](../assets/fix.svg)<!-- Issue BOLT-489 --> Ora, il **Nuovi account** componente in [!DNL Quick Checkout] La pagina di reporting include Spectrum [Icone flusso di lavoro](https://react-spectrum.adobe.com/react-spectrum/workflow-icons.html){target=_blank}.
 
 _25 aprile 2023_
 
