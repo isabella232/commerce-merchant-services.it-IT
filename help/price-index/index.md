@@ -4,9 +4,9 @@ description: Utilizzo dell'indicizzazione dei prezzi SaaS per migliorare le pres
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 209bdf9c69ff81481d6df7cb8e8832deef13c9f4
+source-git-commit: a93ada3230d3d29dd6b79f67a61ede38de7dc250
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Se necessario, l&#39;indicizzatore dei prezzi PHP di base può essere riattivato
 
 A seconda di fattori quali i tipi di prodotto, la complessità del prezzo e le dimensioni del catalogo, l&#39;indicizzazione dei prezzi SaaS potrebbe essere la soluzione giusta per il tuo negozio. Leggi le seguenti limitazioni e stabilisci se si tratta di una buona soluzione per il tuo sito.
 
-Attualmente, l’indicizzazione dei prezzi SaaS supporta tipi di prodotto dinamici semplici, raggruppati, virtuali, configurabili e in bundle.
+Attualmente, l’indicizzazione dei prezzi SaaS supporta Simple, Grouped, Virtual, Configurable e [Bundle dinamico](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-bundle.html) tipi di prodotto.
 Il supporto per i tipi di prodotti scaricabili, gift card e bundle fissi sarà presto disponibile.
 
 I nuovi feed devono essere sincronizzati manualmente con `resync` [Comando CLI](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). In caso contrario, i dati vengono aggiornati nel processo di sincronizzazione standard. Ulteriori informazioni su [Sincronizzazione catalogo](../landing/catalog-sync.md) processo.
