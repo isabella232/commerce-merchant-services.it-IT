@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Note sulla versione"
 description: Consulta le note sulla versione per informazioni su tutte [!DNL Payment Services] versioni.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: e076864a117be007eeb8003d9d6a472b704996ba
+source-git-commit: e9209d7361d0dd6b6f502df9a898a5a35c53ec1a
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1971'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,16 @@ Consulta [Disponibilità](https://devdocs.magento.com/release/availability.html)
 Queste note sulla versione descrivono le modifiche e le correzioni apportate alle funzioni e sono state rilasciate al di fuori delle normali versioni del servizio ospitato.
 
 +++Aggiornamenti dei servizi in hosting
+
+_9 giugno 2023_
+
+![Nuovo](../assets/new.svg)<!-- Issue PAY-4288 --> Ora i commercianti possono [configura _solo_ Pulsanti di pagamento PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons)—e _non_ utilizzare l&#39;opzione di pagamento con carta di credito PayPal per fornire diverse opzioni di pagamento senza richiedere l&#39;approvazione della carta di credito PayPal.
+
+![Nuovo](../assets/new.svg)<!-- Issue PAY-4050 --> È stato aggiunto un [visualizzazione dati](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view), visualizzato nella pagina Home del servizio di pagamento, per il rapporto Stato pagamento ordine.
+
+![Problema risolto](../assets/fix.svg)<!-- Issue PAY-4486--> In precedenza, il pulsante PayPal PayLater non veniva visualizzato nel pagamento per gli esercenti del Regno Unito. La questione è risolta.
+
+![Problema risolto](../assets/fix.svg)<!-- Issue PAY-4485--> Le visualizzazioni di visualizzazione dei dati dei rapporti vengono ora visualizzate nella Home di Payment Services quando Payment Services è disabilitato.
 
 _25 gennaio 2023_
 
@@ -56,6 +66,22 @@ _28 giugno 2021_
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-2761 --> Ora puoi personalizzare i dati visualizzati nella sezione [Rapporto stato pagamento ordine](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) e [Rapporto Pagamenti](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) visualizzando o nascondendo le colonne tramite il controllo Impostazioni colonna.
 
 +++
+
+## v2.1.0
+
+_9 giugno 2023_
+
+[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+
+![Nuovo](../assets/new.svg)<!-- Issue xxx --> È stato aggiunto il supporto per Adobe Commerce 2.4.7-beta1.
+
+![Nuovo](../assets/new.svg)<!-- Issue xxx --> Aggiunto [disponibilità nei seguenti paesi e valute associate](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#availability): Australia, Francia, Regno Unito.
+
+![Nuovo](../assets/new.svg)<!-- Issue PAY-4296 --> Aggiunto [risorse espanse per i ruoli amministratore](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-roles) per garantire che gli utenti amministratori possano creare e gestire gli ordini per i clienti e possano visualizzare Payment Services (Servizi di pagamento) nel menu Sales (Vendite).
+
+![Nuovo](../assets/new.svg)<!-- Issue PAY-4236 --> Aggiunto [annullamento automatico per gli ordini che generano errori durante l&#39;estrazione](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/checkout.html#order-auto-voided-if-error).
+
+![Nuovo](../assets/new.svg)<!-- Issue PAY-4183 --> Funzionalità creata per [mostra il pulsante opzione di pagamento con carta di credito](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#debit-or-credit-card-button) nella pagina di pagamento.
 
 ## v2.0.0
 

@@ -4,9 +4,9 @@ description: Utilizzare il rapporto Pagamenti per una trasparenza completa dell'
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: 8295b7c4ea407f0528d6be69655a8b12f7defe15
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -14,8 +14,6 @@ ht-degree: 0%
 # Rapporto Pagamenti
 
 [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] offre una funzione di reporting completa che ti permette di avere una visione chiara degli ordini e dei pagamenti del tuo negozio.
-
-![Visualizzazione dei report finanziari](assets/reports-justpayouts.png)
 
 Sono disponibili due visualizzazioni di reporting Pagamenti per consentirti di visualizzare informazioni approfondite su tutti i tuoi pagamenti:
 
@@ -34,7 +32,7 @@ La visualizzazione dati Pagamenti è disponibile nella Home page di Payment Serv
 
 Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** per visualizzare il grafico con la visualizzazione dei dati relativo ai crediti rispetto ai debiti e alle medie mobili nel tempo.
 
-![Visualizzazione dei dati di pagamento nell’Amministratore](assets/payouts-report.png)
+![Visualizzazione dei dati di pagamento nell’Amministratore](assets/payouts-report.png){zoomable=yes}
 
 Clic **[!UICONTROL View Report]** per passare alla tabella dettagliata [Visualizzazione report Pagamenti](#payouts-report-view).
 
@@ -70,13 +68,13 @@ La visualizzazione del rapporto Pagamenti è disponibile nella visualizzazione P
 
 Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** per visualizzare la tabella dettagliata della visualizzazione del rapporto Pagamenti.
 
-![Transazioni di pagamento nell&#39;amministratore](assets/payouts-report-new.png)
+![Transazioni di pagamento nell&#39;amministratore](assets/payouts-report-new.png){zoomable=yes}
 
 È possibile configurare questa visualizzazione in base alle sezioni di questo argomento per presentare al meglio i dati che si desidera visualizzare.
 
 Vedi gli ID di transazioni e ordini Commerce collegati, gli importi delle transazioni, il metodo di pagamento per transazione e altro ancora, tutto all’interno del rapporto Pagamenti in Admin.
 
-È possibile scaricare le transazioni di pagamento in un formato di file .csv da utilizzare nel software di contabilità o di gestione degli ordini esistente.
+È possibile [scarica transazioni di pagamento](#download-transactions) in un formato di file .csv da utilizzare nel software di contabilità o di gestione degli ordini esistente.
 
 >[!NOTE]
 >
@@ -86,9 +84,9 @@ Vedi gli ID di transazioni e ordini Commerce collegati, gli importi delle transa
 
 Nella visualizzazione del rapporto Pagamenti, è possibile selezionare l&#39;origine dati:_[!UICONTROL Live]_o_[!UICONTROL Sandbox]_- per il quale si desidera visualizzare i risultati del rapporto.
 
-![Selezione di origini dati](assets/datasource.png)
+![Selezione di origini dati](assets/datasource.png){width=400px}
 
-Se _[!UICONTROL Live]_è l’origine dati selezionata, puoi visualizzare le informazioni del rapporto per i tuoi store live. Se [!UICONTROL Sandbox]_ è l’origine dati selezionata, puoi visualizzare le informazioni del rapporto per il tuo ambiente Sandbox.
+Se _[!UICONTROL Live]_è l&#39;origine dati selezionata, è possibile visualizzare le informazioni del rapporto per i negozi in modalità di produzione. Se_[!UICONTROL Sandbox]_ è l’origine dati selezionata, puoi visualizzare gli archivi di informazioni sul rapporto in modalità sandbox.
 
 Le selezioni delle origini dati funzionano come segue:
 
@@ -154,27 +152,27 @@ I rapporti di pagamento includono le seguenti informazioni.
 | [!UICONTROL Code] | Codice transazione che indica il credito (*CR*) o Dare (*DR*) |
 | [!UICONTROL Reference ID] | ID transazione originale per cui è correlato questo evento |
 | [!UICONTROL Invoice] | ID fattura (uno per ordine) della transazione |
-| [!UICONTROL Commerce order] | ID ordine commerce <br> <br>Per visualizzare i [informazioni ordine](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, fai clic sull&#39;ID. |
-| [!UICONTROL Commerce trans] | ID transazione commerciale <br> <br>Per visualizzare i [informazioni transazione](https://docs.magento.com/user-guide/sales/transactions.html){target="_blank"}, fai clic sull&#39;ID. |
-| [!UICONTROL Pay method] | Tipo di carta di credito—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL APPLE_PAY]*, *[!UICONTROL CREDIT_CARD]*- e il relativo provider di carte (ad esempio *Visto* o *MasterCard*) |
-| [!UICONTROL Trans amt] | Importo della transazione |
-| [!UICONTROL Cur] | Unità di valuta per l’importo della transazione |
-| [!UICONTROL Pending] | Importo ancora da erogare |
-| [!UICONTROL Cur] | Unità di valuta per l&#39;importo in sospeso |
-| [!UICONTROL Seller amt] | Importo dei fondi trasferiti da o verso un cliente <br> <br>I fondi che escono dall&#39;account del venditore presentano un prefisso trattino (-). |
-| [!UICONTROL Cur] | Unità di valuta per l&#39;importo del venditore |
-| [!UICONTROL Partner fee] | Tariffe partner associate alla transazione <br> <br>I fondi trasferiti dal conto di addebito partner mostrano un prefisso trattino (-). |
-| [!UICONTROL Cur] | Unità di valuta per la commissione partner |
-| [!UICONTROL Prov fees] | Tariffe associate alla transazione <br> <br>I fondi che si spostano dal conto di addebito del fornitore mostrano un prefisso trattino (-). |
-| [!UICONTROL Cur] | Unità di valuta per la tariffa del provider |
-| [!UICONTROL Fee %] | Percentuale dell&#39;importo della transazione addebitato come commissione |
-| [!UICONTROL Fixed fee] | Importo tariffa provider fisso |
-| [!UICONTROL Chbk fee] | Commissione di rettifica associata alla transazione <br> <br>Un trattino (-) prefisso indica che la commissione di rettifica è stata stornata. |
-| [!UICONTROL Cur] | Unità di valuta per la commissione di rettifica |
-| [!UICONTROL Hold amt] | Quantità messa in attesa o rilasciata dalla sospensione <br> <br>Un trattino (-) prefisso indica che i fondi in attesa vengono rilasciati. |
-| [!UICONTROL Cur] | Unità di valuta per l&#39;importo del blocco |
-| [!UICONTROL Recoup amt] | Importo recuperato dal conto di recupero <br> <br>I fondi che escono dal conto di recupero presentano un prefisso trattino (-). |
-| [!UICONTROL Cur] | Unità di valuta per l&#39;importo da recuperare |
+| [!UICONTROL Commerce order] | ID ordine commerce <br> <br>Per visualizzare i [informazioni ordine](https://docs.magento.com/user-guide/sales/orders.html), fai clic sull&#39;ID. |
+| [!UICONTROL Commerce trans] | ID transazione commerciale |
+| [!UICONTROL Pay method] | Tipo di carta di credito—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*- e il relativo provider di carte (ad esempio *Visto* o *MasterCard*) |
+| [!UICONTROL TRANS AMT] | Importo della transazione |
+| [!UICONTROL CUR] | Unità di valuta per l’importo della transazione |
+| [!UICONTROL PENDING] | Importo ancora da erogare |
+| [!UICONTROL CUR] | Unità di valuta per l&#39;importo in sospeso |
+| [!UICONTROL SELLER AMT] | Importo dei fondi trasferiti da o verso un cliente <br> <br>I fondi che escono dall&#39;account del venditore presentano un prefisso trattino (-). |
+| [!UICONTROL CUR] | Unità di valuta per l&#39;importo del venditore |
+| [!UICONTROL PARTNER FEE] | Tariffe partner associate alla transazione <br> <br>I fondi trasferiti dal conto di addebito partner mostrano un prefisso trattino (-). |
+| [!UICONTROL CUR] | Unità di valuta per la commissione partner |
+| [!UICONTROL PROV FEES] | Tariffe associate alla transazione <br> <br>I fondi che si spostano dal conto di addebito del fornitore mostrano un prefisso trattino (-). |
+| [!UICONTROL CUR] | Unità di valuta per la tariffa del provider |
+| [!UICONTROL FEE %] | Percentuale dell&#39;importo della transazione addebitato come commissione |
+| [!UICONTROL FIXED FEE] | Importo tariffa provider fisso |
+| [!UICONTROL CHBK FEE] | Commissione di rettifica associata alla transazione <br> <br>Un trattino (-) prefisso indica che la commissione di rettifica è stata stornata. |
+| [!UICONTROL CUR] | Unità di valuta per la commissione di rettifica |
+| [!UICONTROL HOLD AMT] | Quantità messa in attesa o rilasciata dalla sospensione <br> <br>Un trattino (-) prefisso indica che i fondi in attesa vengono rilasciati. |
+| [!UICONTROL CUR] | Unità di valuta per l&#39;importo del blocco |
+| [!UICONTROL RECOUP AMT] | Importo recuperato dal conto di recupero <br> <br>I fondi che escono dal conto di recupero presentano un prefisso trattino (-). |
+| [!UICONTROL CUR] | Unità di valuta per l&#39;importo da recuperare |
 
 ### Tipi di transazione
 

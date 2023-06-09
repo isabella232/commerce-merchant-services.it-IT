@@ -2,9 +2,9 @@
 title: Opzioni di pagamento
 description: Imposta le opzioni di pagamento per personalizzare i metodi disponibili per i clienti del tuo Negozio.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 9bc392f2ae12269ded6174b830562444d6827f5f
+source-git-commit: 44d36c530ba95f38c264ac40123ea12ec98c32b3
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1156'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Puoi configurare [!UICONTROL Credit Card Fields] nella configurazione del negozi
 
 [!DNL PayPal Smart Buttons], che utilizzano PayPal per completare un acquisto, memorizza l&#39;indirizzo di spedizione, gli indirizzi di fatturazione e i dettagli del pagamento del cliente per un uso successivo. Gli acquirenti possono utilizzare qualsiasi metodo di pagamento precedentemente memorizzato o offerto da PayPal.
 
-![[!DNL PayPal Smart Buttons] opzioni](assets/buttons-md.png)
+![[!DNL PayPal Smart Buttons] opzioni](assets/payment-buttons.png){width="500"}
 
 Puoi configurare [!UICONTROL PayPal Smart Buttons] nella configurazione del negozio o nella Home di Payment Services.  Consulta [Impostazioni](settings.md#payment-buttons) per ulteriori informazioni.
 
@@ -67,6 +67,14 @@ Il [!DNL Apple Pay] è visibile dalla pagina del prodotto, dal mini-carrello, da
 >
 > Da utilizzare [!DNL Apple Pay] per i negozi, completa [registrazione autonoma con [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Registra il dominio live_ solo sezione ) e [configuralo per i tuoi store in [!DNL Payment Services]](settings.md#payment-buttons).
 
+### Pulsante di addebito o carta di credito PayPal
+
+I clienti possono effettuare il check-out utilizzando il pulsante PayPal Debit o carta di credito.
+
+Il pulsante PayPal Debit o carta di credito è visibile dalla pagina di pagamento.
+
+Questa opzione può essere utilizzata per presentare un&#39;opzione di pagamento PayPal con addebito o carta di credito agli acquirenti quando non si dispone di un provider alternativo di carta di credito.
+
 ### [!DNL Pay Later] pulsante
 
 Offri ai tuoi clienti pagamenti a breve termine senza interessi e altre opzioni di finanziamento in modo che possano acquistare subito e pagare in seguito con [!DNL Pay Later] pulsante.
@@ -76,9 +84,9 @@ Il [!DNL Pay Later] è visibile dalla pagina del prodotto, dal mini-carrello, da
 * **Quando un cliente seleziona un prodotto tra $ 30 e $ 600**, messaggistica con PayPal e [!DNL Pay Later] fornisce al cliente ulteriori informazioni sulla [!DNL Pay in 4] opzione di pagamento. I clienti possono fare clic su **Ulteriori informazioni** per informazioni sulla funzione &quot;[!DNL Pay in 4]Opzione &quot; _o_ fai clic sul testo &quot;Oppure consulta 6 mesi di finanziamento speciale&quot; nel popup per scoprire e richiedere l&#39;opzione PayPal Credit.
 * **Quando un cliente seleziona uno o più prodotti superiori a 98,99 $**, messaggistica con PayPal e [!DNL Pay Later] fornisce ai clienti maggiori informazioni sull&#39;opzione di pagamento PayPal Credit. I clienti possono fare clic su **Ulteriori informazioni** per scoprire e richiedere l&#39;opzione PayPal Credit, _o_ fare clic sul testo &quot;Oppure vedere Pagare in 4&quot; nel popup per saperne di più [!DNL Pay in 4] opzione.
 
-   >[!NOTE]
-   >
-   >Gli importi di cui sopra sono soggetti a modifiche.
+  >[!NOTE]
+  >
+  >Gli importi di cui sopra sono soggetti a modifiche.
 
 Consulta [Impostazioni](settings.md#payment-buttons) per scoprire come disabilitare/abilitare [!DNL Pay Later] messaggi.
 
@@ -93,6 +101,29 @@ Il [!DNL Pay Now] è visibile nella finestra popup PayPal quando un cliente fa c
 
 Se l&#39;importo dell&#39;ordine finale non è ancora noto (ad esempio quando non si dispone ancora di informazioni sull&#39;indirizzo di spedizione) e il cliente è in fase di check-out dalla pagina del prodotto, dal mini-carrello o dal carrello, un _Continua_ al suo posto. Quando un cliente fa clic _Continua_, dopo aver confermato il metodo di pagamento, vengono indirizzati a una pagina di revisione dell&#39;ordine per raccogliere i dettagli necessari prima di completare il pagamento.
 
+## Utilizza solo i pulsanti di pagamento PayPal
+
+Per attivare rapidamente la modalità di produzione, puoi configurare _solo_ Pulsanti di pagamento PayPal (Venmo, PayPal, ecc.)- invece di utilizzare anche l&#39;opzione di pagamento con carta di credito PayPal.
+
+Questo consente di:
+
+* Fornisci diverse opzioni di pagamento per i tuoi clienti senza richiedere l&#39;approvazione della carta di credito tramite PayPal.
+* Utilizza il provider di carte di credito esistente per i pagamenti con carta di credito, utilizzando anche le altre opzioni di pagamento di PayPal.
+* Utilizza i pulsanti di pagamento di PayPal in un&#39;area in cui PayPal non supporta le carte di credito come opzione di pagamento.
+
+A **acquisire pagamenti con _solo_ Pulsanti di pagamento PayPal (_non_ l&#39;opzione di pagamento con carta di credito PayPal)**:
+
+1. Assicurati che il tuo negozio sia [in modalità di produzione](settings.md#enable-payment-services).
+1. [Configura i pulsanti di pagamento PayPal desiderati](settings.md#payment-buttons) in Impostazioni.
+1. Turno _Disattivato_ il **[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)** opzione in _[!UICONTROL Payment buttons]_sezione.
+
+A **acquisire i pagamenti con il provider di carte di credito esistente _e_ Pulsanti di pagamento PayPal**:
+
+1. Assicurati che il tuo negozio sia [in modalità di produzione](settings.md#enable-payment-services).
+1. [Configura i pulsanti di pagamento PayPal desiderati](settings.md#payment-buttons).
+1. Turno _Disattivato_ il **[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)** opzione in _[!UICONTROL Payment buttons]_sezione.
+1. Turno _Disattivato_ il **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** opzione in _[!UICONTROL Credit card fields]_e utilizza il tuo [account provider carta di credito esistente](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
+
 ## Ricalcolo ordine
 
 Quando un cliente accede al flusso di pagamento dal mini-carrello, dal carrello o dalla pagina del prodotto, viene indirizzato a una pagina di revisione dell’ordine in cui può visualizzare l’indirizzo di spedizione selezionato in una finestra a comparsa PayPal. Dopo che il cliente ha selezionato il metodo di spedizione, l&#39;importo dell&#39;ordine viene ricalcolato in modo appropriato e il cliente può visualizzare le spese di spedizione e le imposte.
@@ -100,14 +131,6 @@ Quando un cliente accede al flusso di pagamento dal mini-carrello, dal carrello 
 Quando un cliente accede al flusso di pagamento dalla pagina di pagamento, il sistema è già a conoscenza dell&#39;indirizzo di spedizione e dell&#39;importo calcolato finale e i totali sono rappresentati in modo appropriato.
 
 Le esenzioni fiscali, le spese di spedizione e l&#39;IVA possono variare notevolmente da un&#39;ubicazione all&#39;altra. Dopo [!DNL Payment Services] riceve l&#39;indirizzo e la tariffa di spedizione, ricalcola rapidamente tutti i costi applicabili e li visualizza in modo appropriato durante le ultime fasi di pagamento.
-
-## Ritira dalla pagina del prodotto
-
-Quando un cliente effettua il check-out direttamente dalla pagina del prodotto, utilizzando PayPal o [!DNL Pay Later] , viene acquistato solo l&#39;articolo rappresentato nella pagina di prodotto corrente. Gli articoli già presenti nel carrello del cliente non vengono aggiunti al flusso di pagamento e non vengono acquistati.
-
-Se il cliente annulla l’ordine, l’articolo nella pagina del prodotto corrente viene aggiunto al carrello del cliente, unendo tutti gli altri articoli presenti nel carrello. Questa funzione consente al cliente di acquistare rapidamente l’articolo che sta visualizzando, conservando anche tutti gli altri articoli aggiunti al carrello in precedenza durante la navigazione dei prodotti.
-
-Quando un cliente accede al flusso di pagamento dalla pagina del prodotto, la pagina di pagamento viene semplificata: la visualizzazione mostra solo i dati e le opzioni relativi all’ordine.
 
 ## Vaulting con carta di credito
 

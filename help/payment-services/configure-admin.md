@@ -4,9 +4,9 @@ description: Dopo l’installazione, puoi configurare [!DNL Payment Services] in
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: 2205ec1e4dbd027b2e510419da4bbdac2d7a480e
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '954'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,13 @@ Puoi abilitare e configurare le opzioni di pagamento PayPal Smart Buttons in Adm
 1. In _[!UICONTROL Payment Services]_, espandere la sezione_[!UICONTROL PayPal Smart Buttons]_ sezione.
 1. Per modificare il nome del metodo di pagamento come mostrato durante l&#39;estrazione, modificare il _[!UICONTROL Title]_campo.
 1. A [imposta l&#39;azione di pagamento](production.md#set-payment-services-as-payment-method), seleziona **[!UICONTROL Authorize]** o **[!UICONTROL Authorize and Capture]**.
-1. Per disattivare [Messaggistica pagamento posticipato](payments-options.md#pay-later-button) (se desiderato), selezionare `No` per **[!UICONTROL Display Pay Later Message]**.
+1. Per attivare/disattivare la [Messaggistica pagamento posticipato](payments-options.md#pay-later-button), seleziona `Yes`/`No` per **[!UICONTROL Display Pay Later Message]**.
+1. Per visualizzare i pulsanti avanzati PayPal nella pagina di pagamento, seleziona `Yes` per **[!UICONTROL Show buttons on checkout page]**.
+1. Per visualizzare i pulsanti avanzati PayPal nell&#39;anteprima del mini carrello, seleziona `Yes` per **[!UICONTROL Show buttons in mini cart preview]**.
+1. Per abilitare Venmo come opzione di pagamento, seleziona `Yes` per **[!UICONTROL Venmo Enabled]**.
+1. Per abilitare Apple Pay come opzione di pagamento, seleziona `Yes` per **[!UICONTROL Apple Pay Enabled]**.
+1. Per abilitare le carte di credito e debito PayPal come opzione di pagamento (pulsante PayPal Smart), seleziona `Yes` per **[!UICONTROL PayPal Credit and Debit Card Enabled]**.
+1. Per attivare/disattivare la [PayPal Paga più tardi](payments-options.md#pay-later-button) opzione di pagamento, seleziona `Yes`/`No` per **[!UICONTROL PayPal Pay Later Enabled]**.
 1. Per abilitare la modalità di debug, seleziona `Yes` per **[!UICONTROL Debug Mode]** (`No` disattiva).
 1. Per salvare le modifiche, fai clic su **[!UICONTROL Save Config]** .
 1. Accedi a **[!UICONTROL System]** > **[!UICONTROL Cache Management]** e quindi fare clic su **[!UICONTROL Flush Cache]** per aggiornare tutte le cache non valide.
@@ -109,13 +115,14 @@ Puoi abilitare e configurare le opzioni di pagamento PayPal Smart Buttons in Adm
 | [!UICONTROL Title] | visualizzazione store | Aggiungere il testo da visualizzare come titolo per questa opzione di pagamento nella visualizzazione Metodo di pagamento durante l&#39;estrazione. Opzioni: campo di testo |
 | [!UICONTROL Payment Action] | sito web | Il [azione di pagamento](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} per il metodo di pagamento specificato. Opzioni: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Display Pay Later Message] | sito web | Abilita o disabilita la funzione di messaggistica Paga più tardi nel carrello, nella pagina del prodotto, nel mini-carrello e durante il flusso di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Venmo Enabled] | visualizzazione store | Abilita o disabilita l&#39;opzione di pagamento Venmo in cui sono visualizzati i pulsanti di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Apple Pay Enabled] | visualizzazione store | Abilita o disabilita l&#39;opzione di pagamento Apple Pay in cui sono visualizzati i pulsanti di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL PayPal Pay Later Enabled] | visualizzazione store | Abilita o disabilita l&#39;aspetto dell&#39;opzione di pagamento successivo in cui vengono visualizzati i pulsanti di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Debug Mode] | sito web | Attiva o disattiva la modalità di debug. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show buttons on checkout page] | visualizzazione store | Attiva o disattiva [!DNL PayPal Smart Buttons] nella pagina di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons on product detail page] | visualizzazione store | Attiva o disattiva [!DNL PayPal Smart Buttons] nella pagina dei dettagli del prodotto. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons in mini-cart preview] | visualizzazione store | Attiva o disattiva [!DNL PayPal Smart Buttons] nell’anteprima del mini-carrello. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show buttons on cart page] | visualizzazione store | Attiva o disattiva [!DNL PayPal Smart Buttons] sulla pagina del carrello. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Venmo Enabled] | visualizzazione store | Abilita o disabilita l&#39;opzione di pagamento Venmo in cui sono visualizzati i pulsanti di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Apple Pay Enabled] | visualizzazione store | Abilita o disabilita l&#39;opzione di pagamento Apple Pay in cui sono visualizzati i pulsanti di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL PayPal Credit and Debit Card Enabled] | visualizzazione store | Abilita o disabilita le opzioni della carta di credito e debito PayPal in cui sono visualizzati i pulsanti di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL PayPal Pay Later Enabled] | visualizzazione store | Abilita o disabilita l&#39;opzione di pagamento PayPal Pay Later quando vengono visualizzati i pulsanti di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Debug Mode] | sito web | Attiva o disattiva la modalità di debug. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### [!DNL PayPal Smart Buttons] Opzioni di stile
 
@@ -132,4 +139,3 @@ Puoi abilitare e configurare le opzioni di pagamento PayPal Smart Buttons in Adm
 ## Svuota la cache
 
 Se si modifica la configurazione, [svuotare manualmente la cache](/help/payment-services/settings.md#flush-the-cache) in modo che nell’archivio siano visualizzate le impostazioni di configurazione più recenti.
-
