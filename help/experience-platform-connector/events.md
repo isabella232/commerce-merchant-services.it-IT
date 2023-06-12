@@ -2,9 +2,9 @@
 title: Eventi
 description: Scopri i dati acquisiti da ogni evento.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: ddacfc053f83be750c63ba376519169b38f7f478
+source-git-commit: 7b34b66d5fb199e75b321a7d7ff0f98a3a0dcf8b
 workflow-type: tm+mt
-source-wordcount: '4596'
+source-wordcount: '4605'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Oltre ai dati raccolti dai seguenti eventi, otterrai anche [altri dati](https://
 
 ## Eventi vetrina
 
-Gli eventi di vetrina raccolgono dati comportamentali anonimi dai tuoi acquirenti durante la navigazione sul tuo sito. I dati raccolti da questi eventi possono essere utilizzati per creare promozioni e campagne mirate a un gruppo specifico di acquirenti.
+Gli eventi di vetrina raccolgono dati comportamentali anonimi dai tuoi acquirenti durante la navigazione sul tuo sito. Puoi utilizzare i dati raccolti da questi eventi per creare promozioni e campagne indirizzate a un gruppo specifico di acquirenti. I dati dell’evento Storefront includono solo prodotti semplici e configurabili.
 
 >[!NOTE]
 >

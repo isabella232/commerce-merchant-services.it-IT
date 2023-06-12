@@ -2,9 +2,9 @@
 title: Connettere dati Commerce a Adobe Experience Platform
 description: Scopri come collegare i dati di Commerce a Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: 386d5e4245401695d7123a87b7dfb703f1f849e9
+source-git-commit: 8c2f275354eb4deba151ccdd83302e4b2cc5d4c9
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1952'
 ht-degree: 0%
 
 ---
@@ -30,23 +30,17 @@ Dopo aver configurato il connettore Commerce Services, puoi configurare il conne
 
 ## Aggiornare il connettore di Experience Platform
 
-In questa sezione, connetti la tua istanza di Adobe Commerce a Adobe Experience Platform utilizzando il tuo ID organizzazione. Puoi quindi specificare il tipo di dati da inviare al server Edge di Experience Platform, che si tratti di vetrina o di back office.
+In questa sezione, connetti la tua istanza di Adobe Commerce a Adobe Experience Platform utilizzando il tuo ID organizzazione. Puoi quindi specificare il tipo di dati da inviare al server Edge di Experience Platform: vetrina e ufficio di back office.
 
 ![Configurazione del connettore di Experience Platform](assets/epc-config-dc.png)
 
 ## Generale
 
-1. Accedi al tuo account di Adobe in [Connettore Commerce Services](../landing/saas.md#organizationid) e seleziona il tuo ID organizzazione.
-
-   >[!NOTE]
-   >
-   >Se in precedenza hai configurato il connettore Commerce Services, puoi saltare questo passaggio poiché il tuo ID organizzazione è già stato selezionato.
-
 1. In Admin (Amministrazione), vai a **Sistema** > Servizi > **Connettore Experience Platform**.
 
-1. In **Ambito** , impostare il contesto su **Sito Web**.
+1. Il giorno **Impostazioni** scheda in **Generale**, verifica l’ID associato al tuo account Adobe Experience Platform, come configurato in [Connettore Commerce Services](../landing/saas.md#organizationid). L’ID organizzazione è globale. È possibile associare un solo ID organizzazione per istanza di Adobe Commerce.
 
-1. In **ID organizzazione** verificare l&#39;ID associato al proprio account Adobe Experience Platform, come configurato nel [Connettore Commerce Services](../landing/saas.md#organizationid). L’ID organizzazione è globale. È possibile associare un solo ID organizzazione per istanza di Adobe Commerce.
+1. In **Ambito** , impostare il contesto su **Sito Web**.
 
 1. (Facoltativo) Se disponi già di un’ [AEP Web SDK (lega)](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) implementato nel sito, abilita la casella di controllo e aggiungi il nome dell’SDK web AEP. In caso contrario, lascia vuoti questi campi e il connettore Experience Platform ne distribuisce uno.
 
@@ -60,7 +54,7 @@ In questa sezione viene specificato il tipo di dati che si desidera inviare al s
 
 I dati lato client sono dati acquisiti nella vetrina. Ciò include le interazioni con l’acquirente, come `View Page`, `View Product`, `Add to Cart`, e [elenco richieste di acquisto](events.md#b2b-events) informazioni (per gli esercenti B2B). I dati lato server, o dati di back office, sono dati acquisiti nei server Commerce. Ciò include informazioni sullo stato di un ordine, ad esempio se un ordine è stato effettuato, annullato, rimborsato, spedito o completato.
 
-In **Raccolta dati** , selezionare il tipo di dati che si desidera inviare all&#39;edge dell&#39;Experience Platform. Per garantire che la tua istanza di Adobe Commerce possa iniziare la raccolta dei dati, controlla [prerequisiti](overview.md#prerequisites).
+Per garantire che la tua istanza di Adobe Commerce possa iniziare la raccolta dei dati, controlla [prerequisiti](overview.md#prerequisites).
 
 Per ulteriori informazioni sugli eventi, consulta l’argomento [vetrina](events.md#storefront-events) e [back office](events.md#back-office-events) eventi.
 
@@ -116,7 +110,128 @@ Per ulteriori informazioni sugli eventi, consulta l’argomento [vetrina](events
 
 >[!NOTE]
 >
->Dopo l’onboarding, i dati della vetrina iniziano a fluire verso il server Edge di Experience Platform. La visualizzazione dei dati di back office ai server Edge richiede circa 5 minuti. Gli aggiornamenti successivi sono visibili sul server Edge in base alla pianificazione cron.
+>Dopo l’onboarding, i dati della vetrina iniziano a fluire verso il server Edge di Experience Platform. I dati di back office richiedono circa cinque minuti per essere visualizzati ai margini. Gli aggiornamenti successivi sono visibili sul server Edge in base alla pianificazione cron.
+
+## (Beta) Inviare dati storici dell’ordine
+
+>[!NOTE]
+>
+>Questa funzione è disponibile solo per gli utenti beta. Per partecipare alla versione beta, invia un’e-mail al seguente indirizzo: [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+
+Adobe Commerce raccoglie fino a cinque anni di dati cronologici sugli ordini e sullo stato. Puoi utilizzare il connettore Experience Platform per inviare i dati storici all’Experience Platform per arricchire i profili dei clienti in base a tali ordini passati. I dati vengono memorizzati in un set di dati in Experience Platform.
+
+Sebbene Commerce raccolga già i dati storici dell’ordine, è necessario completare diverse attività per inviare tali dati ad Experience Platform. Le sezioni seguenti ti guidano attraverso il processo.
+
+### Installare la versione beta dell’ordine cronologico
+
+Per abilitare la raccolta di dati storici sugli ordini per la versione beta, devi aggiornare la directory principale del progetto [!DNL Composer] `.json` file come segue:
+
+1. Apri la directory principale `composer.json` file e ricerca `magento/experience-platform-connector`.
+
+1. In `require` , aggiorna il numero di versione come segue:
+
+   ```json
+   "require": {
+      ...
+      "magento/experience-platform-connector": "^3.0.0-beta1",
+      ...
+    }
+   ```
+
+1. Per gli esercenti B2B, aggiorna il `.json` file come segue:
+
+   ```json
+   "require": {
+     ...
+     "magento/experience-platform-connector-b2b": "^2.0.0-beta1"
+     ...
+   }
+   ```
+
+1. **Salva** `composer.json`. Quindi, esegui quanto segue dalla riga di comando:
+
+   ```bash
+   composer update magento/experience-platform-connector –-with-dependencies
+   ```
+
+   oppure, per gli esercenti B2B:
+
+   ```bash
+   composer update magento/experience-platform-connector-b2b --with-dependencies
+   ```
+
+### Configurare l’ordine storico beta
+
+Per garantire che la cronologia degli ordini dei clienti possa essere inviata ad Experience Platform, devi specificare le credenziali che collegano l’istanza Commerce ad Experience Platform. Se hai già installato e attivato [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) , hai già specificato le credenziali necessarie e puoi saltare questo passaggio. Se non hai già installato e attivato il modulo Audience Activation, completa i passaggi seguenti:
+
+>[!NOTE]
+>
+>In questa sezione, immetti le credenziali dalla console per sviluppatori. Assicurati che il progetto della console per sviluppatori disponga del [ruoli e autorizzazioni configurati](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
+
+1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
+
+1. Espandi **[!UICONTROL Services]** e seleziona **[!UICONTROL Experience Platform Connector]**.
+
+1. Immetti le credenziali di configurazione trovate in [console per sviluppatori](https://developer.adobe.com/console/home).
+
+   ![Configurazione amministrazione connettore Experience Platform](./assets/epc-admin-config.png){width="700" zoomable="yes"}
+
+   >[!NOTE]
+   >
+   >Per la versione beta, Commerce utilizza le credenziali JSON Web Tokens (JWT) nella console per sviluppatori. Dopo la versione beta, Commerce utilizzerà OAuth 2.0 nella console per sviluppatori.
+
+1. Clic **Salva configurazione**.
+
+### Impostare il servizio di sincronizzazione ordini
+
+Dopo aver immesso le credenziali sviluppatore, puoi impostare il servizio di sincronizzazione degli ordini. Il servizio di sincronizzazione degli ordini utilizza [Framework coda messaggi](https://developer.adobe.com/commerce/php/development/components/message-queues/) e RabbitMQ. Dopo aver completato questi passaggi, i dati sullo stato dell’ordine possono essere sincronizzati con SaaS, operazione necessaria prima dell’invio all’Experience Platform.
+
+1. [Abilita](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq.html) RabbitMQ.
+
+   >[!NOTE]
+   >
+   >RabbitMQ è già configurato per le versioni Commerce 2.4.7 e successive, ma devi abilitare i consumatori.
+
+1. Abilitare i consumatori della coda di messaggi in base al processo cron in `.magento.env.yaml` utilizzo `CRON_CONSUMERS_RUNNER` variabile di ambiente.
+
+   ```yaml
+      stage:
+        deploy:
+          CRON_CONSUMERS_RUNNER:
+            cron_run: true
+   ```
+
+   >[!NOTE]
+   >
+   >Consulta la [documentazione sulle variabili di distribuzione](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) per scoprire tutte le opzioni di configurazione disponibili.
+
+Con il servizio di sincronizzazione degli ordini abilitato, puoi quindi specificare l’intervallo di date dell’ordine cronologico nella pagina del connettore Experience Platform.
+
+### Specifica intervallo date cronologia ordini
+
+In questa sezione viene specificato l&#39;intervallo di date per gli ordini cronologici da inviare all&#39;Experience Platform.
+
+![Sincronizza cronologia ordini](./assets/order-history.png){width="700" zoomable="yes"}
+
+1. In Admin (Amministrazione), vai a **Sistema** > Servizi > **Connettore Experience Platform**.
+
+1. Seleziona la **Cronologia ordini** scheda.
+
+1. Sotto **Sincronizzazione cronologia ordini**, immetti il **ID set di dati**. Deve essere lo stesso set di dati associato allo stream di dati specificato nella [raccolta dati](#data-collection) sopra.
+
+   1. Per accedere all’ID del set di dati, apri l’interfaccia utente di Experience Platform e seleziona **Set di dati** nel menu di navigazione a sinistra per aprire **Set di dati** dashboard. Il dashboard elenca tutti i set di dati disponibili per l’organizzazione. Vengono visualizzati i dettagli di ciascun set di dati elencato, tra cui il nome, lo schema a cui il set di dati aderisce e lo stato dell’esecuzione dell’acquisizione più recente.
+   1. Apri il set di dati associato allo stream di dati.
+   1. Nel riquadro a destra vengono visualizzati i dettagli sul set di dati. Copia l’ID del set di dati.
+
+   ![Copia ID set di dati](./assets/retrieve-dataset-id.png){width="700" zoomable="yes"}
+
+1. In **Da** e **A** I campi specificano l’intervallo di dati per i dati cronologici dell’ordine che desideri inviare. Non puoi selezionare un intervallo di date superiore a cinque anni.
+
+1. Seleziona [!UICONTROL Start Sync] per avviare la sincronizzazione. I dati storici dell’ordine sono dati in batch, anziché dati di vetrina e di back office che sono dati in streaming. L’invio dei dati in batch in Experience Platform richiede circa 45 minuti.
+
+   >[!NOTE]
+   >
+   >Per la versione beta, se attivi una sincronizzazione più volte sullo stesso intervallo di tempo o su un intervallo di tempo sovrapposto, nel set di dati verranno visualizzati eventi duplicati.
 
 ## Conferma la raccolta dei dati dell’evento
 
