@@ -2,9 +2,9 @@
 title: '"Impostazioni delle configurazioni Commerce e [!DNL Live Search] '''
 description: Descrive le impostazioni di configurazione di Adobe Commerce che [!DNL Live Search] può leggere.
 exl-id: a4e9e2dd-e912-4ced-a44a-091ac5334e50
-source-git-commit: 368059d50133d8b01be83e1616044a61ab094e3c
+source-git-commit: c8303b11c7a274a3956a7336203aa34bd9d6a67f
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
@@ -17,18 +17,22 @@ Alcune impostazioni di configurazione di Commerce [!DNL Live Search] supporta. I
 
 | Impostazione configurazione Commerce | Supportato da Popover | Supportato dall&#39;adattatore |
 |---|---|---|
-| Archivi -> Configurazione -> Catalogo -> Catalogo -> Ricerca catalogo -> Lunghezza minima query | Sì | Sì |
-| Negozi -> Configurazione -> Catalogo -> Inventario -> Visualizzazione prodotti esauriti | Sì con v2.0.4+ | Sì con v2.0.4+ |
-| Archivi -> Configurazione -> Generale -> Impostazione valuta -> Opzioni valuta -> Valuta di base | Sì | Sì |
+| Archivi > Configurazione > Catalogo > Catalogo > Ricerca nel catalogo > Consenti tutti i prodotti per lunghezza pagina | Sì. Max. 500 prodotti | Sì. Max. 500 prodotti |
+| Archivi > Configurazione > Catalogo > Catalogo > Ricerca nel catalogo > Lunghezza minima query | Sì | Sì |
+| Archivi > Configurazione > Catalogo > Catalogo > Ricerca nel catalogo > Prodotti per pagina sulla griglia Valori consentiti | Sì | Sì |
+| Archivi > Configurazione > Catalogo > Catalogo > Ricerca nel catalogo > Prodotti per pagina sulla griglia Valore predefinito | Sì | Sì |
+| Negozi > Configurazione > Catalogo > Inventario > Visualizza prodotti esauriti | Sì con v2.0.4+ | Sì con v2.0.4+ |
+| Archivi > Configurazione > Valuta > Valuta di visualizzazione predefinita | Sì con 3.1.0+ | Sì con 3/1/0+ |
+| Archivi > Configurazione > Generale > Impostazione divisa > Opzioni divisa > Divisa di base | Sì | Sì |
+
+I prezzi nella pagina di elenco dei prodotti Widget e nel popover vengono ora convertiti nella valuta di visualizzazione predefinita utilizzando i tassi di valuta configurati
 
 ## Valori di configurazione non supportati
 
 [!DNL Live Search] impossibile leggere tutti i valori di configurazione. Questa tabella elenca i valori che possono essere di maggiore interesse per gli sviluppatori.
 
-| Impostazione configurazione Magento | Note |
+| Impostazione configurazione Commerce | Note |
 |---|---|
-| Archivi -> Configurazione -> Catalogo -> Vetrina -> Modalità elenco | Esegue correttamente il rendering, ma per alcune interazioni di pagina non vengono inviati eventi |
-| Archivi -> Configurazione -> Catalogo -> Vetrina -> Consenti tutti i prodotti per pagina | Non implementato; invia la richiesta al servizio di ricerca senza dimensione pagina e [!DNL Live Search] restituisce una dimensione pagina predefinita di 20 |
-| Archivi -> Configurazione -> Catalogo -> Catalogo -> Ricerca catalogo -> Lunghezza massima query | Non implementato; Search Services accetta fino a 255 caratteri |
-| Archivi -> Configurazione -> Generale -> Impostazione valuta -> Opzioni valuta -> Valuta di visualizzazione predefinita | Non attuato; [!DNL Live Search] ha accesso solo alla valuta di base |
-| Configurazione -> Vendite -> Imposta -> Impostazioni Visualizzazione Prezzo -> Visualizza Prezzi Prodotto Nel Catalogo |  |
+| Archivi > Configurazione > Catalogo > Storefront > Modalità elenco | Esegue correttamente il rendering, ma per alcune interazioni di pagina non vengono inviati eventi |
+| Archivi > Configurazione > Catalogo > Catalogo > Ricerca nel catalogo > Lunghezza massima query | Non implementato; Search Services accetta fino a 255 caratteri |
+| Configurazione > Vendite > Imposta > Impostazioni visualizzazione prezzo > Visualizza prezzi prodotto nel catalogo |  |

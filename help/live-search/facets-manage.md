@@ -2,9 +2,9 @@
 title: "Gestisci facet"
 description: "Scopri come gestire gli [!DNL Live Search] facet."
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
+source-git-commit: bce69f952e70e2e8dcb892357dea41e18f61e5f6
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -62,6 +62,10 @@ Il perno diventa blu e la sfaccettatura si sposta verso *Facet bloccati* sezione
 Il pin diventa grigio e la sfaccettatura si sposta verso *Facet dinamici* sezione.
 
    ![Facet bloccati e dinamici](assets/facets-pinned-unpinned.png)
+
+>[!NOTE]
+>
+>L’ordinamento dei facet aggiunti potrebbe non essere coerente se sono presenti due etichette con lo stesso nome.
 
 ## Sposta facet fissato
 

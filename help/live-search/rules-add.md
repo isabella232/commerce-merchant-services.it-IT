@@ -2,9 +2,9 @@
 title: "Aggiungi regole"
 description: "Scopri come creare [!DNL Live Search] regole."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 2d4c96679b93a97e032fcbb50a27cbd579554795
+source-git-commit: 0b0e9a630162c4c98c6a3af969002def03155267
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1419'
 ht-degree: 0%
 
 ---
@@ -85,6 +85,10 @@ I proprietari dei negozi possono impostare i seguenti tipi di strategie di class
 * Nessuno: i prodotti sono ordinati in base alla rilevanza
 
 1. Selezionare il tipo di strategia per la regola. Nella finestra Test regola vengono visualizzati i risultati previsti.
+
+>[!NOTE]
+>
+>Gli apostrofi e le citazioni nelle interrogazioni possono portare ad alcuni problemi minori di classificazione e rilevanza in alcune lingue.
 
 ## Aggiunta di eventi
 
