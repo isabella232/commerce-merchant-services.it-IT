@@ -2,9 +2,9 @@
 title: Opzioni di pagamento
 description: Imposta le opzioni di pagamento per personalizzare i metodi disponibili per i clienti del tuo Negozio.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 44d36c530ba95f38c264ac40123ea12ec98c32b3
+source-git-commit: 36dd961d06f279143e90f3a1f5a6114db14e8c1b
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ Per attivare rapidamente la modalità di produzione, puoi configurare _solo_ Pul
 
 Questo consente di:
 
-* Fornisci diverse opzioni di pagamento per i tuoi clienti senza richiedere l&#39;approvazione della carta di credito tramite PayPal.
+* Fornisci ai tuoi clienti varie opzioni di pagamento, tra cui i pulsanti di pagamento Venmo e PayPal, con la possibilità di disattivare i campi della carta ospitata PayPal e utilizzare un provider di carta di credito esistente.
 * Utilizza il provider di carte di credito esistente per i pagamenti con carta di credito, utilizzando anche le altre opzioni di pagamento di PayPal.
 * Utilizza i pulsanti di pagamento di PayPal in un&#39;area in cui PayPal non supporta le carte di credito come opzione di pagamento.
 
