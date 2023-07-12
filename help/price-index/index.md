@@ -4,7 +4,7 @@ description: Utilizzo dell'indicizzazione dei prezzi SaaS per migliorare le pres
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: a93ada3230d3d29dd6b79f67a61ede38de7dc250
+source-git-commit: 19c4d3263c22914672b38c5dc5ec9908889bb9b6
 workflow-type: tm+mt
 source-wordcount: '752'
 ht-degree: 0%
@@ -83,16 +83,16 @@ I nuovi feed devono essere sincronizzati manualmente con `resync` [Comando CLI](
 
 ### Luma senza dipendenze di estensione
 
-* Un commerciante Luma o Abode Commerce Core GraphQL che dispone di un servizio richiesto installato (Live Search, Product Recommendations, Catalog Service)
+* Un commerciante Luma o Adobe Commerce Core GraphQL che dispone di un servizio richiesto installato (Live Search, Product Recommendations, Catalog Service)
 * Nessuna estensione di terze parti basata sull&#39;indicizzatore dei prezzi PHP di base
 * Vendita di prodotti semplici, configurabili, raggruppati, virtuali e dinamici in bundle
 
 1. Abilita nuovi feed.
 1. Installare la scheda catalogo.
 
-### Luma e Adobe Commerce Core GraphQl con dipendenze dell’indicizzatore del prezzo di base PHP
+### Luma e Adobe Commerce Core GraphQl con dipendenze di PHP Core Price Indexer
 
-* Un commerciante Luma o Abode Commerce Core GraphQL che dispone di un servizio supportato installato (Live Search, Product Recommendations, Catalog Service)
+* Un commerciante Luma o Adobe Commerce Core GraphQL che dispone di un servizio supportato installato (Live Search, Product Recommendations, Catalog Service)
 * Con un&#39;estensione di terze parti che si basa sull&#39;indicizzatore dei prezzi PHP di base
 * Vendita di prodotti semplici, configurabili, raggruppati, virtuali e dinamici in bundle
 
