@@ -2,7 +2,7 @@
 title: Eventi
 description: Scopri i dati acquisiti da ogni evento.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 7b34b66d5fb199e75b321a7d7ff0f98a3a0dcf8b
+source-git-commit: 1484a465f3ce5b5578a7c5cf3f5f3b7d68d69c41
 workflow-type: tm+mt
 source-wordcount: '4605'
 ht-degree: 0%
@@ -328,7 +328,7 @@ Utilizza il `uniqueIdentifier` campo trovato in entrambi `searchRequestSent` e `
 
 >[!NOTE]
 >
->Gli eventi di ricerca non sono supportati in Adobe Commerce Enterprise Edition con il modulo B2B installato.
+>Gli eventi di ricerca non sono supportati in Adobe Commerce Enterprise Edition con l’estensione B2B installata.
 
 #### Dati raccolti da searchRequestSent
 
@@ -355,7 +355,7 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
 >[!NOTE]
 >
->Gli eventi di ricerca non sono supportati in Adobe Commerce Enterprise Edition con il modulo B2B installato.
+>Gli eventi di ricerca non sono supportati in Adobe Commerce Enterprise Edition con l’estensione B2B installata.
 
 #### Dati raccolti da searchResponseReceived
 

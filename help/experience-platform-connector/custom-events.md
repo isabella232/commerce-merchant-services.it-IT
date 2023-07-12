@@ -2,9 +2,9 @@
 title: Creare eventi personalizzati
 description: Scopri come creare eventi personalizzati per collegare i dati di Adobe Commerce ad altri prodotti Adobe DX.
 exl-id: 5a754106-c66a-4280-9896-6d065df8a841
-source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
+source-git-commit: 2e1a0b2a79449562a2716929084f12eeee55a159
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 È possibile estendere [piattaforma di gestione eventi](events.md) creando eventi storefront personalizzati per raccogliere dati specifici per il tuo settore. Quando crei e configuri un evento personalizzato, questo viene inviato al [Raccolta eventi di Adobe Commerce](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-collectors).
 
-## Gestire gli eventi personalizzati
+## Gestire eventi personalizzati
 
 Gli eventi personalizzati sono supportati solo per Adobe Experience Platform. I dati personalizzati non vengono inoltrati alle dashboard di Adobe Commerce e ai tracker di metriche.
 
@@ -45,7 +45,7 @@ In Experience Platform Edge:
 >
 > L’utilizzo di eventi personalizzati può influire sui rapporti predefiniti di Adobe Analytics.
 
-## Gestire le sostituzioni degli eventi (attributi personalizzati)
+## Gestire le sostituzioni di eventi (attributi personalizzati)
 
 Le sostituzioni di attributo per gli eventi standard sono supportate solo per l’Experience Platform. I dati personalizzati non vengono inoltrati alle dashboard di Commerce e ai tracker di metriche.
 
