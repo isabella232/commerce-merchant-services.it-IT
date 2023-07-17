@@ -2,7 +2,8 @@
 title: "Flusso di cassa per un utente Adobe Commerce"
 description: "Panoramica della [!DNL Quick Checkout] per un utente di Adobe Commerce."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: f790732804e110aad298689c0ddf74547ff17618
+feature: Checkout, Services, Storefront
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
@@ -64,4 +65,4 @@ In caso negativo [!DNL Bolt] L’account viene trovato, gli acquirenti continuan
 - Verifica metodo di pagamento
 - Opzione per la registrazione [!DNL Bolt] consente di effettuare pagamenti più veloci prima di inoltrare l&#39;ordine. L&#39;acquirente può accettare i termini e le condizioni per creare il proprio [!DNL Bolt] account.
 
-   ![Ricorda [!DNL Bolt]](assets/checkbox-remember-bolt.png)
+  ![Ricorda [!DNL Bolt]](assets/checkbox-remember-bolt.png)

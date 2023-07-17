@@ -2,7 +2,8 @@
 title: Configurare [!DNL Quick Checkout] per estensione Adobe Commerce
 description: Scopri le opzioni di configurazione per [!DNL Quick Checkout] e come integrare e configurare correttamente l’estensione.
 exl-id: 892e04dc-17d6-45e9-b2ab-c7a0735a75bc
-source-git-commit: f790732804e110aad298689c0ddf74547ff17618
+feature: Checkout, Services
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 0%

@@ -2,9 +2,10 @@
 title: '''[!DNL Quick Checkout] Note sulla versione'
 description: Consulta le note sulla versione per informazioni su tutte [!DNL Quick Checkout] versioni.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 169b3e365d7f4c0c4cef19fa1941dfa0a95ea58b
+feature: Release Notes, Services, Checkout
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1422'
 ht-degree: 0%
 
 ---
@@ -197,7 +198,7 @@ _9 agosto 2022_
 
 ![Nuovo](../assets/new.svg)<!-- Issue BOLT-780 --> Gli acquirenti possono effettuare il check-out tramite il [[!DNL Quick Checkout]](checkout-page.md) o tramite un [creazione manuale degli ordini](create-order-admin.md).
 
-![Nuovo](../assets/new.svg)<!-- Issue BOLT-666 --> Gli esercenti possono configurare [!DNL Quick Checkout] con azioni di pagamento di base, come [`Authorize and Capture` o `Authorize` ](onboarding.md#complete-admin-configuration), o il passaggio tra ambienti sandbox e di produzione.
+![Nuovo](../assets/new.svg)<!-- Issue BOLT-666 --> Gli esercenti possono configurare [!DNL Quick Checkout] con azioni di pagamento di base, come [`Authorize and Capture` o `Authorize`](onboarding.md#complete-admin-configuration), o il passaggio tra ambienti sandbox e di produzione.
 
 ![Nuovo](../assets/new.svg)<!-- Issue BOLT-288 --> Personalizzato [durata della sessione utente](user-session-lifetime.md) per [!DNL Quick Checkout] per Adobe Commerce.
 

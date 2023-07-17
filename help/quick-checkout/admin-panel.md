@@ -2,7 +2,8 @@
 title: '''[!DNL Quick Checkout] per il pannello di amministrazione di Adobe Commerce"'
 description: Scopri come [!DNL Quick Checkout] Il pannello di amministrazione può aiutarti a integrare, configurare e visualizzare correttamente l’estensione.
 exl-id: d91763ed-b4f6-4736-9503-0305edd77e91
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+feature: Checkout, Services
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%

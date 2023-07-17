@@ -2,7 +2,8 @@
 title: "[!DNL Quick Checkout] per Adobe Commerce"
 description: '"Scopri come [!DNL Quick Checkout] potrebbero trarre vantaggio dalla tua istanza di Adobe Commerce e da come integrare e configurare correttamente l’estensione".'
 exl-id: 6f205568-18af-4f2f-827c-b46f04e0a10a
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+feature: Checkout, Services
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -11,7 +12,7 @@ ht-degree: 0%
 
 # [!DNL Quick Checkout] per Adobe Commerce
 
-Il [!DNL Quick Checkout] per Adobe Commerce, l’estensione offre un’esperienza di pagamento fluida progettata per convertire gli acquirenti occasionali in titolari di account fedeli. Gli acquirenti si aspettano un&#39;esperienza di acquisto veloce. Eppure, l&#39;attrito nel checkout rimane ancora una ragione principale per cui gli acquirenti non completano il loro acquisto. Quando semplifichi il pagamento e migliora il tasso di conversione, puoi concentrarti su elementi che hanno un impatto reale.
+Il [!DNL Quick Checkout] per Adobe Commerce, l’estensione offre un’esperienza di pagamento fluida progettata per convertire gli acquirenti occasionali in titolari di account fedeli. Gli acquirenti si aspettano un&#39;esperienza di acquisto veloce. Eppure, l&#39;attrito nella cassa rimane ancora una ragione principale per cui gli acquirenti non completano il loro acquisto. Quando semplifichi il pagamento e migliora il tasso di conversione, puoi concentrarti su elementi che hanno un impatto reale.
 
 La guida fornisce una panoramica della tipica esperienza di pagamento di Adobe Commerce e del modo in cui [!DNL Quick Checkout] nonché le best practice da seguire in tale percorso.
 
