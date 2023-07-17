@@ -2,7 +2,8 @@
 title: Vuoti
 description: I vuoti consentono di liberare i fondi in un conto della carta di credito o di debito che sono bloccati o detenuti da un'autorizzazione per l'importo di un acquisto.
 exl-id: 029a7038-2812-46ce-b188-929a7a758d89
-source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
+feature: Payments, Checkout
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%

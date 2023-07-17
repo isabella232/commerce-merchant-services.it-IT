@@ -2,7 +2,8 @@
 title: Abilita [!DNL Payment Services] per la produzione
 description: Completa il processo di onboarding abilitando [!DNL Payment Services] per la produzione.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+feature: Payments, Checkout, Configuration, Install
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 0%
