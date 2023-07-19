@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] Note sulla versione'
 description: Informazioni aggiornate sulla versione di [!DNL Catalog Service] per Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,13 @@ Gli aggiornamenti includono:
 
 ## Versione principale corrente
 
-### Versione V1.10
+### Versione V1.11
 
-_27 giugno 2023_
+_18 luglio 2023_
 
 [!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
 
-![Nuovo](../assets/new.svg) Catalog Service ora può visualizzare i prodotti correlati nel widget Pagina dettagli prodotto.
+![Nuovo](../assets/new.svg) Catalog Service ora supporta [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) Query GraphQL per Product Recommendations.
 
 #### Limitazioni note
 
@@ -44,6 +44,14 @@ Le seguenti limitazioni possono essere risolte utilizzando l’API Mesh e l’AP
 * Prezzo minimo annunciato
 * [Prezzi a livelli](mesh.md)
 * Prodotti scaricabili e carte regalo
+
+### Versione V1.10
+
+_27 giugno 2023_
+
+[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+
+![Nuovo](../assets/new.svg) Catalog Service ora può visualizzare i prodotti correlati nel widget Pagina dettagli prodotto.
 
 ### Versione V1.7
 

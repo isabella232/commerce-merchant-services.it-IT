@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: "Il [!DNL Live Search storefront popover] restituisce dinamicamente prodotti e miniature suggeriti."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
+source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,20 @@ Per impostazione predefinita, il valore Ricerca nel catalogo - Limite completame
 1. Imposta il **Limite completamento automatico** al numero di righe che si desidera consentire nel [!DNL popover].
 1. Al termine, fai clic su **Salva configurazione**.
 
+## Servizio catalogo
+
+Il [Catalog Service per Adobe Commerce](../catalog-service/overview.md) L&#39;estensione fornisce dati di catalogo avanzati per modelli di visualizzazione per eseguire in modo rapido e completo il rendering delle esperienze di vetrina relative ai prodotti. Catalog Service può essere utilizzato insieme a Live Search per fornire funzionalità non attualmente supportate dall’estensione nativa:
+
+* Campioni colore
+* Attributi estesi
+* È possibile inserire altre informazioni sul prodotto
+
+I commercianti possono personalizzare ed estendere i widget o gli elementi della vetrina utilizzando Catalog Service, ma questo non rientra nell’ambito del team di supporto di Adobe.
+
 ## Limitazioni
 
-* Il [!DNL Live Search] [!DNL storefront popover] è disponibile solo per i negozi che utilizzano *Luma* tema o un tema personalizzato basato su *Luma*.
+* Il [!DNL Live Search] [!DNL storefront popover] è disponibile solo per i negozi che utilizzano *Luma* tema o un tema personalizzato basato su *Luma*. Le breadcrumb nella pagina dei risultati di ricerca non avranno *Lume* stile.
 * Il [!DNL popover] non supporta *Vuoto* tema. Consulta [Stile [!DNL Popover] Elementi](storefront-popover-styling.md) per ulteriori informazioni.
 * Il [!DNL popover] non è supportato nel modulo Ordine rapido.
-* I commercianti possono personalizzare ed estendere i widget o gli elementi della vetrina (ad esempio: integrazione di campioni di colore nei risultati di Live Search) utilizzando [Servizio catalogo](../catalog-service/overview.md) API Storefront, ma questo non rientra nell’ambito del team di supporto di Adobe.
+* Non sono supportate le liste dei desideri e i confronti tra prodotti.
+* È supportata solo la valuta di base.
