@@ -2,7 +2,9 @@
 title: Installare e configurare il connettore Adobe Experience Platform da Adobe Commerce
 description: Scopri come installare, configurare, aggiornare e disinstallare il connettore Adobe Experience Platform da Adobe Commerce.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: 052b9fe32797e62d5802241c7b3420decf593fc1
+role: Admin, Developer
+feature: Install
+source-git-commit: 64273ad4c1a54b150746a54896caf73ed612c2d1
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -61,7 +63,7 @@ oppure, per gli esercenti B2B:
 composer update magento/experience-platform-connector-b2b --with-dependencies
 ```
 
-Per aggiornare a una versione principale, ad esempio da 1.0.0 a 2.0.0, modifica la directory principale del progetto [!DNL Composer] `.json` file come segue:
+Per eseguire l’aggiornamento a una versione principale, ad esempio da 1.0.0 a 2.0.0, modifica la directory principale del progetto [!DNL Composer] `.json` file come segue:
 
 1. Apri la directory principale `composer.json` file e ricerca `magento/experience-platform-connector`.
 
