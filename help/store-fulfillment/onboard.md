@@ -1,10 +1,11 @@
 ---
 title: Panoramica sull’onboarding per i servizi di Store Fulfillment
 description: '''[!DNL Live Search] flusso di onboarding, requisiti di sistema, limiti e limitazioni."'
-role: User, Admin
+role: Admin, Leader
 level: Intermediate
+feature: Shipping/Delivery, Install
 exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -17,15 +18,15 @@ Introduzione a [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Te
 
 - **Estensione Store Fulfillment**: installa e configura questa estensione di terze parti nell’istanza di Adobe Commerce. Dopo l&#39;installazione, puoi configurare e gestire la soluzione Store Fulfillment dall&#39;amministratore per supportare [!DNL buys online, pickup in store] (BOPIS) nella vetrina Commerce.
 
-   ![[!DNL Store Fulfillment Service] configurazione nella visualizzazione Amministratore](assets/store-fulfillment-admin-home.png)
+  ![[!DNL Store Fulfillment Service] configurazione nella visualizzazione Amministratore](assets/store-fulfillment-admin-home.png)
 
 - **Archivia account di evasione**-Durante il processo di abilitazione, un Account Manager crea l&#39;account Store Fulfillment e fornisce le informazioni e le credenziali dell&#39;account. Queste credenziali sono necessarie per abilitare la connessione tra Adobe Commerce e la soluzione Store Fulfillment.
 
 - **App Store Assist**- Fornisce agli associati al negozio un flusso di lavoro di evasione del negozio end-to-end per gestire gli ordini BOPIS da dispositivi mobili. I soci del negozio possono scaricare e installare Walmart&#39;s [!DNL Store Assist] per dispositivi iOS e Android™. Il processo di onboarding delle app è gestito come processo separato dal Walmart Commerce Technologies Client Center. Tuttavia, [alcune impostazioni di configurazione dell’app](user-setup.md) sono state completate dall’amministratore di Adobe Commerce.
 
-   | App Store Assist - Visualizzazione introduttiva | App Store Assist — Vista moduli |
-   |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-   | ![[!DNL Store Assist App Getting Started] visualizza su dispositivo mobile](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] su dispositivo mobile](assets/store-assist-orders-small.png) |
+  | App Store Assist - Visualizzazione introduttiva | App Store Assist — Vista moduli |
+  |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+  | ![[!DNL Store Assist App Getting Started] visualizza su dispositivo mobile](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] su dispositivo mobile](assets/store-assist-orders-small.png) |
 
 ## Passaggi di provisioning
 

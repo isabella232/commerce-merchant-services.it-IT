@@ -3,8 +3,9 @@ title: Verifica e distribuisci l'evasione dell'archivio
 description: Piano di test per verificare la funzionalità Evasione punto vendita. I test coprono l'API di sincronizzazione dell'inventario, il flusso di lavoro di esecuzione end-to-end per gli ordini annullati, la gestione degli utenti dell'app Store Fulfillment e l'esperienza di archiviazione del cliente.
 role: User, Admin
 level: Intermediate
+feature: Shipping/Delivery, User Account, Roles/Permissions
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '2660'
 ht-degree: 0%
@@ -84,7 +85,7 @@ Questa sezione del piano di test riguarda la sincronizzazione di inventario e or
 <td>La sincronizzazione in tempo reale invia i dettagli a Walmart GIF entro 5 minuti</td>
 </tr>
 <tr>
-<td><strong>Origine scorte di ritiro</br><code>Is Synced</code> stato</br><code>Is Synced</code></strong></td>
+<td><strong>Origine scorte di ritiro</br><code>Is Synced</code> stato</strong></td>
 <td>Salvare gli aggiornamenti a un'origine di prelievo esistente.</td>
 <td>Dopo un'operazione riuscita, <code>Is Synced</code> della pagina Gestisci origine, aggiorna da <code>No</code> a <code>Yes</code>.</td>
 </tr>
@@ -166,7 +167,7 @@ Questa sezione del piano di test include scenari per testare il flusso di lavoro
 </ul>
 </td>
 </tr>
-<td><strong>Pronto per il ritiro</br></br>Annullamento completo</br>(tutti i prodotti sono impostati come raccolti con 0 qtà)</br></strong></td>
+<td><strong>Pronto per il ritiro</br></br>Annullamento completo</br>(tutti i prodotti sono impostati come raccolti con 0 qtà)</strong></td>
 <td>
 <ol>
 <li>Effettua l’ordine.</li>
@@ -250,7 +251,7 @@ Questa sezione del piano di test include scenari per testare il flusso di lavoro
 </tr>
 <tr>
 <td><strong>Erogato (durante la dispensazione)</br></br>Annullamento parziale</br>(Alcuni prodotti vengono dispensati; alcuni vengono rifiutati).</strong>
-</br></td>
+</td>
 <td>
 <ol>
 <li>Effettua l’ordine.</li>
@@ -469,7 +470,7 @@ Questa sezione del piano di test riguarda l&#39;esperienza di check-in per gli o
 </tr>
 <tr>
 <td><strong>Contatto di ritiro alternativo</br>
-Check-in</br><strong>
+Check-in<strong>
 </td>
 <td>
 Un cliente invia un ordine con l’opzione di ritiro in-store.</td>

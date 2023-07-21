@@ -1,19 +1,19 @@
 ---
 title: Configurazione generale
 description: Configura le impostazioni generali per abilitare [!DNL Store Fulfillment] per il tuo negozio. Configura le impostazioni globali dell'estensione, le impostazioni di sistema per la registrazione, la sincronizzazione dei dati e la sicurezza. Fornisci dati chiave per abilitare l’integrazione tra Adobe Commerce e i servizi di Store Fulfillment.
-role: User, Admin
+role: Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '2440'
+source-wordcount: '2419'
 ht-degree: 0%
 
 ---
 
 # Servizio store e configurazione vendite
 
-Configura [!DNL Store Fulfillment] dal [!DNL Commerce] L’amministratore abilita l’estensione, specifica le impostazioni di estensione, configura le impostazioni di sicurezza per gli utenti dell’app Store Assist e imposta le opzioni per i metodi di consegna.
+Abilita [!DNL Store Fulfillment] estensione da [!DNL Commerce] Amministra configurando le impostazioni di estensione, le impostazioni di sicurezza per gli utenti dell’app Store Assist e le opzioni del metodo di consegna.
 
 >[!IMPORTANT]
 >
@@ -25,11 +25,11 @@ Gestisci le impostazioni per i servizi di Store Fulfillment da [!DNL Commerce Ad
 
 - Abilita l’estensione, configura le impostazioni globali e specifica le opzioni di sicurezza per le connessioni e gli account utente dell’app Store Assist selezionando **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
 
-   ![Configurazione servizi archivio di amministrazione per Store Fulfillment](assets/store-services-admin-sf-config.png)
+  ![Configurazione servizi archivio di amministrazione per Store Fulfillment](assets/store-services-admin-sf-config.png)
 
 - Configurare i metodi di consegna selezionando **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
 
-   ![Configurazione vendite store amministratore per evasione negozio](assets/store-sales-admin-sf-deliver-config.png)
+  ![Configurazione vendite store amministratore per evasione negozio](assets/store-sales-admin-sf-deliver-config.png)
 
 ## Impostazioni di base
 
@@ -109,7 +109,7 @@ Abilita [!DNL Store Fulfillment] soluzione per aggiungere le funzionalità di pr
 </tr>
 <tr>
 <td><strong>[!UICONTROL API Server URL]</strong></td>
-<td>URL dell'endpoint API di evasione del negozio Walmart. Deve essere l’URL completo fornito durante il processo di onboarding. I clienti Store Fulfillment ricevono sia un URL sandbox che un URL di produzione. Quando aggiungi i valori, accertati di copiare e incollare l’URL completo, inclusa la barra "/" finale.</td>
+<td>URL dell'endpoint API di evasione del negozio Walmart. Il valore deve essere l’URL completo fornito durante il processo di onboarding. I clienti Store Fulfillment ricevono sia un URL sandbox che un URL di produzione. Quando aggiungi i valori, accertati di copiare e incollare l’URL completo, inclusa la barra "/" finale.</td>
 <td>Globale</td>
 <td>Sì</td>
 </tr>
@@ -190,7 +190,7 @@ Configura le impostazioni per gestire la gestione degli errori per la sincronizz
 </tr>
 <tr>
 <td><strong>[!UICONTROL Retry Critical Error]</strong></td>
-<td>Specifica i nuovi tentativi per un'operazione di sincronizzazione dei record dopo un errore critico.<br></br>Gli errori critici si verificano ogni volta che l’integrazione non riceve una risposta positiva dal servizio di evasione. Ciò può verificarsi quando il servizio non è attivo o quando si verifica un errore nell’invio dei dati dell’ordine.<br></br>Una volta raggiunta la soglia dei tentativi, l’elemento rimane in coda ma non viene elaborato di nuovo. Visualizza tutti gli elementi con errori da <strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong> Gestione in Admin. Per risolvere i problemi relativi agli elementi con errori sistematici, contatta il tuo Account Manager.</td>
+<td>Specifica i nuovi tentativi per un'operazione di sincronizzazione dei record dopo un errore critico.<br></br>Gli errori critici si verificano ogni volta che l’integrazione non riceve una risposta positiva dal servizio di evasione. Questi problemi si verificano quando il servizio è inattivo o quando si verifica un errore nell’invio dei dati dell’ordine.<br></br>Una volta raggiunta la soglia dei tentativi, l’elemento rimane in coda ma non viene elaborato di nuovo. Visualizza tutti gli elementi con errori da <strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong> Gestione in Admin. Per risolvere i problemi relativi agli elementi con errori sistematici, contatta il tuo Account Manager.</td>
 <td>Globale</td>
 <td>No</td>
 </tr>
@@ -228,7 +228,7 @@ Configura le impostazioni per gestire la gestione degli errori per la sincronizz
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Barcode Source]</strong></td>
-<td>Attributo del catalogo che memorizza il codice analizzabile per gli elementi corrispondenti nelle posizioni dell'esercente.<br></br>Se disponi di una sola sede per esercenti, è probabile che utilizzi codici UPC, mentre il canale di e-commerce identifica i prodotti in base allo SKU. Se questo è lo scenario, seleziona l’attributo di catalogo che contiene il codice UPC.<br></br>Questa impostazione garantisce che gli ordini inviati ai negozi riportino le voci con l'identificatore corretto, in modo che gli associati al negozio possano analizzare con precisione le voci durante il processo di prelievo.<br></br>Se non si è sicuri, rivolgersi agli associati di evasione nel reparto Spedizione e prelievo per determinare l'attributo da inviare. Se l’attributo non è attualmente incluso nel database, potrebbe essere necessario aggiungere l’attributo appropriato al set di attributi del prodotto Adobe Commerce.</td>
+<td>Attributo del catalogo che memorizza il codice analizzabile per gli elementi corrispondenti nelle posizioni dell'esercente.<br></br>Se disponi di una sola sede per esercenti, è probabile che utilizzi codici UPC, mentre il canale di e-commerce identifica i prodotti in base allo SKU. In questo scenario, seleziona l’attributo di catalogo contenente il codice UPC.<br></br>Questa impostazione garantisce che gli ordini inviati ai negozi riportino le voci con l'identificatore corretto, in modo che gli associati al negozio possano analizzare con precisione le voci durante il processo di prelievo.<br></br>Se non si è sicuri, rivolgersi agli associati di evasione nel reparto Spedizione e prelievo per determinare l'attributo da inviare. Se l’attributo non è attualmente incluso nel database, puoi aggiungerlo al set di attributi del prodotto Adobe Commerce.</td>
 <td>Sito Web</td>
 <td>Sì</td>
 </tr>
@@ -240,7 +240,7 @@ Configura le impostazioni per gestire la gestione degli errori per la sincronizz
 </tr>
 <tr>
 <td><strong>[!UICONTROL Max Number of Items]</strong></td>
-<td>Numero massimo di elementi da inviare dalla coda di evasione dell'archivio contemporaneamente.<br></br>Gli ordini BOPIS vengono inviati al servizio di evasione in batch, a intervalli regolari. Questa impostazione consente di controllare le dimensioni del batch.<br></br>Il valore predefinito è 100 elementi. A seconda del volume e della capacità dell’ordine, potrebbe essere necessario aumentare o diminuire questo valore.</td>
+<td>Numero massimo di elementi da inviare dalla coda di evasione dell'archivio contemporaneamente.<br></br>Gli ordini BOPIS vengono inviati al servizio di evasione in batch, a intervalli regolari. Questa impostazione consente di controllare le dimensioni del batch.<br></br>Il valore predefinito è 100 elementi. A seconda del volume e della capacità dell’ordine, puoi aumentare o diminuire il valore massimo.</td>
 <td>Globale</td>
 <td>No</td>
 </tr>
@@ -265,7 +265,7 @@ Configura le opzioni di spedizione Store Fulfillment che determinano la disponib
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable Ship To Store]</strong></td>
-<td>L'impostazione di spedizione al punto vendita si basa sulle funzionalità di spedizione al punto vendita esistenti. Se utilizzi Inventory management, o se puoi accettare ed evadere ordini presso sedi di esercenti senza scorte tramite trasferimenti di scorte da negozio a negozio, imposta questa opzione su "Sì".<br></br>Se non riesci a supportare l’opzione di spedizione al negozio o non desideri offrirla, imposta su "No". Se l'opzione è disabilitata, gli articoli del catalogo con inventario pari a zero per un punto vendita o gli articoli che si trovano al di sotto di tale ubicazione [!DNL Out of Stock Threshold], non sono disponibili con le opzioni di ritiro in-store.<br></br>Si tratta di un’impostazione globale che può essere regolata in base alla posizione dell’esercente.</td>
+<td>L'impostazione di spedizione al punto vendita si basa sulle funzionalità di spedizione al punto vendita esistenti. Se utilizzi Inventory management, o se puoi accettare ed evadere ordini presso sedi di esercenti senza scorte tramite trasferimenti di scorte da negozio a negozio, imposta questa opzione su "Sì".<br></br>Se non riesci a supportare l’opzione di spedizione al negozio o non desideri offrirla, imposta su "No". Se l'opzione è disabilitata, gli articoli del catalogo con inventario pari a zero per un punto vendita o quelli al di sotto del [!DNL Out of Stock Threshold] per quella posizione, non sono offerte con opzioni di prelievo in-store.<br></br>Puoi regolare il valore di questa impostazione per posizione dell’esercente.</td>
 <td>Globale</td>
 <td>No</td>
 </tr>
@@ -286,7 +286,7 @@ Configura le opzioni di spedizione Store Fulfillment che determinano la disponib
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable Ship From Store]</strong></td>
-<td>Abilita o disabilita l’opzione Consegna a domicilio nei negozi dei tuoi esercenti. Se questa opzione è abilitata, le posizioni dei negozi di esercenti vengono considerate in forma aggregata con altre origini assegnate nelle scorte associate al sito Web.<br></br>Nei servizi Inventory management standard, il [!DNL Ship from Store] L'opzione is è intrinseca e non può essere disabilitata. Con la soluzione Store Fulfillment è possibile attivarla o disattivarla.<br></br>Si tratta di un'impostazione globale. Puoi anche regolare questa impostazione in base alla posizione dell’esercente e al prodotto.</td>
+<td>Abilita o disabilita l’opzione Consegna a domicilio nei negozi dei tuoi esercenti. Se questa opzione è abilitata, le posizioni dei negozi di esercenti vengono considerate in forma aggregata con altre origini assegnate nelle scorte associate al sito Web.<br></br>Nei servizi Inventory management standard, il [!DNL Ship from Store] L'opzione is è intrinseca e non può essere disabilitata. Con la soluzione Store Fulfillment è possibile attivarla o disattivarla.<br></br>È possibile regolare questa impostazione in base alla posizione dell'esercente e al prodotto.</td>
 <td>Globale</td>
 <td>No</td>
 </tr>
@@ -347,7 +347,7 @@ Configura le impostazioni per l’account utente e la sicurezza della password d
 
 Store Fulfillment funziona estendendo la Adobe Commerce nativa [!DNL In-Store Delivery] funzionalità. Dopo aver installato l’estensione, puoi configurare i metodi di consegna in-store utilizzando le seguenti impostazioni estese aggiunte all’amministratore.
 
-- **Ritiro in-store**- Opzioni di offerta per la consegna in-store durante il processo di pagamento Questo è lo scenario di consegna più comune per gli ordini BOPIS.
+- **Ritiro in-store**- Opzioni di offerta per la consegna in-store durante il processo di pagamento Queste impostazioni configurano gli scenari di consegna più comuni per gli ordini BOPIS.
 
 - **[!UICONTROL Curbside pick up]**-Opzioni di offerta per i clienti di parcheggiare in una località del negozio e far consegnare il loro ordine a loro da un associato del negozio.
 
@@ -436,25 +436,25 @@ Con il metodo di consegna in-store, il cliente può selezionare un’origine da 
 </tr>
 <tr>
 <td><strong>Istruzioni per il ritiro in-store</strong></td>
-<td>Quando un ordine è pronto per essere ritirato presso i punti vendita, il cliente riceve una notifica via e-mail. Se il cliente ha selezionato [!DNL In-Store Pickup] durante il pagamento, puoi personalizzare le istruzioni di prelievo qui. </br></br>Si tratta di un'impostazione globale che si applica a tutte le posizioni del negozio al dettaglio. È inoltre possibile personalizzare le istruzioni a livello di punto vendita al dettaglio.</td>
+<td>Quando un ordine è pronto per essere ritirato presso i punti vendita, il cliente riceve una notifica via e-mail. Se il cliente ha selezionato [!DNL In-Store Pickup] durante il pagamento, puoi personalizzare le istruzioni di prelievo qui. </br></br>Queste istruzioni sono definite a livello globale e si applicano a tutti i punti vendita. È inoltre possibile personalizzare le istruzioni a livello di punto vendita al dettaglio.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
 <tr>
 <td><strong>Istruzioni per il ritiro di Curbside</strong></td>
-<td>Specifica le istruzioni personalizzate di prelievo degli ordini da includere nelle notifiche e-mail dei clienti per gli ordini di prelievo a blocchi. </br></br>Si tratta di un'impostazione globale che si applica a tutte le posizioni del negozio al dettaglio. È inoltre possibile personalizzare le istruzioni a livello di punto vendita al dettaglio.</td>
+<td>Specifica le istruzioni personalizzate di prelievo degli ordini da includere nelle notifiche e-mail dei clienti per gli ordini di prelievo a blocchi. </br></br>Queste istruzioni sono definite a livello globale e si applicano a tutti i punti vendita. È inoltre possibile personalizzare le istruzioni a livello di punto vendita al dettaglio.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
 <tr>
 <td><strong>Lead time di prelievo stimato</strong></td>
-<td>Il numero di minuti necessari prima che un ordine venga ricevuto, evaso e pronto per essere ritirato. Queste informazioni vengono mostrate al cliente quando si seleziona un punto vendita al dettaglio per l'opzione di consegna Ritiro dal negozio. Si tratta di un’impostazione globale applicabile a tutte le posizioni del negozio al dettaglio. Puoi anche personalizzare il lead time a livello di punto vendita al dettaglio.</td>
+<td>Il numero di minuti necessari prima che un ordine venga ricevuto, evaso e pronto per essere ritirato. Queste informazioni vengono mostrate al cliente quando si seleziona un punto vendita al dettaglio per l'opzione di consegna Ritiro dal negozio. Questa impostazione si applica a tutte le posizioni del punto vendita al dettaglio. Puoi anche personalizzare il lead time a livello di punto vendita al dettaglio.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
 <tr>
 <td><strong>Etichetta tempo di ritiro stimato</strong></td>
-<td>Visualizza il tempo stimato fino al momento in cui un ordine è disponibile per il prelievo del cliente. Queste informazioni vengono mostrate ai clienti quando selezionano un punto vendita al dettaglio per il [!DNL In-Store Pickup] opzione di consegna. </br></br>Quando personalizzi questa etichetta, puoi utilizzare il codice <code>%1</code> per inserire <strong>Lead time di prelievo stimato</strong>. Ad esempio:</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>Si tratta di un'impostazione globale che si applica a tutte le posizioni del negozio al dettaglio. Puoi anche personalizzare il lead time a livello di punto vendita al dettaglio.</br></br><code>Ready for Pickup in %1 minutes.</code></br></br></td>
+<td>Visualizza il tempo stimato fino al momento in cui un ordine è disponibile per il prelievo del cliente. Queste informazioni vengono mostrate ai clienti quando selezionano un punto vendita al dettaglio per il [!DNL In-Store Pickup] opzione di consegna. </br></br>Quando personalizzi questa etichetta, puoi utilizzare il codice <code>%1</code> per inserire <strong>Lead time di prelievo stimato</strong>. Ad esempio:</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>Questa impostazione si applica a tutte le posizioni del punto vendita al dettaglio. Puoi anche personalizzare il lead time a livello di punto vendita al dettaglio.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 <tr>
@@ -480,7 +480,7 @@ Con il metodo di consegna in-store, il cliente può selezionare un’origine da 
 </thead>
 <tbody><tr>
 <td><strong>In magazzino</strong></td>
-<td>Quando un cliente utilizza la collocazione del punto vendita al dettaglio, per ogni ubicazione viene visualizzata la disponibilità di magazzino per gli articoli correnti. </br></br>È possibile personalizzare <em>[!UICONTROL in-stock]</em> etichetta di stato qui.</br></br></td>
+<td>Quando un cliente utilizza la collocazione del punto vendita al dettaglio, per ogni ubicazione viene visualizzata la disponibilità di magazzino per gli articoli correnti. </br></br>È possibile personalizzare <em>[!UICONTROL in-stock]</em> etichetta di stato qui.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
@@ -492,7 +492,7 @@ Con il metodo di consegna in-store, il cliente può selezionare un’origine da 
 </tr>
 <tr>
 <td><strong>Parzialmente in magazzino</strong></td>
-<td>Quando un cliente utilizza la collocazione del punto vendita al dettaglio, viene visualizzata la disponibilità di magazzino per tutti gli articoli correnti per ogni ubicazione. </br></br>È possibile personalizzare <em>[!UICONTROL partially in-stock]</em> etichetta di stato qui.</br></br></td>
+<td>Quando un cliente utilizza la collocazione del punto vendita al dettaglio, viene visualizzata la disponibilità di magazzino per tutti gli articoli correnti per ogni ubicazione. </br></br>È possibile personalizzare <em>[!UICONTROL partially in-stock]</em> etichetta di stato qui.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>

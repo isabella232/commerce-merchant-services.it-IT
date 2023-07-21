@@ -1,10 +1,11 @@
 ---
 title: Posizione archivio e configurazione del sistema di mappatura
 description: Configurare un provider di servizi a distanza per supportare la mappatura della posizione del negozio nell'interfaccia utente della vetrina. Le soluzioni Store Fulfillment richiedono un fornitore a distanza per abilitare la ricerca nel punto vendita al dettaglio e altre funzionalità di mappatura e pianificazione per il flusso di lavoro di implementazione end-to-end.
-role: User, Admin
+role: Admin
 level: Intermediate
+feature: Shipping/Delivery, Integration, Tools and External Services, Configuration
 exl-id: d09c4652-e2eb-49dc-8c42-2aa9b6be5d6b
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%

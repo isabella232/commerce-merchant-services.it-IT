@@ -1,10 +1,11 @@
 ---
 title: Trasferimento origine Inventory management
 description: "Configurare le scorte per [!DNL Store Fulfillment solution] con Adobe Commerce Inventory management. Impostare un nuovo magazzino e trasferirlo al di fuori del magazzino predefinito in modo da poterlo assegnare alle origini configurate per abilitare le funzionalità di prelievo del magazzino richieste dalla soluzione di evasione del magazzino."
-role: User, Admin
+role: Admin
 level: Intermediate
+feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%
@@ -26,7 +27,7 @@ Queste modifiche alla configurazione consentono di eseguire tre operazioni:
 
 1. [Assegnazione in blocco delle origini](https://docs.magento.com/user-guide/catalog/inventory-bulk-assign-sources.html) per aggiungere le nuove sorgenti per tutti i prodotti.
 
-1. [Aggiornamenti in blocco completi per gli attributi del prodotto](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) per aggiungere `Allow Store Pickup` e `Allow Home Delivery` attributi ai prodotti esistenti. Quando la soluzione viene installata, gli attributi hanno il *predefinito* valori. Tuttavia, questi attributi non vengono applicati ai prodotti esistenti fino a quando non viene completato il processo di aggiornamento in blocco.
+1. [Aggiornamenti in blocco completi per gli attributi del prodotto](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) per aggiungere `Allow Store Pickup` e `Allow Home Delivery` attributi ai prodotti esistenti. Quando la soluzione viene installata, gli attributi hanno il *predefinito* valori. Tuttavia, questi attributi non vengono applicati ai prodotti esistenti fino a quando non si completa il processo di updaContes in blocco.
 
 L&#39;inventario viene detratto dall&#39;origine selezionata (ubicazione negozio al dettaglio o magazzino di e-commerce). Le origini utilizzate come magazzini di e-commerce devono essere assegnate alla stessa scorta del luogo di prelievo del negozio e prioritarie prima delle posizioni di vendita al dettaglio. Per ulteriori informazioni, consulta [Assegnazione di priorità alle origini per un Stock](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html).
 

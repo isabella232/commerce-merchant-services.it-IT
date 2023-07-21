@@ -1,10 +1,11 @@
 ---
 title: Modelli e-mail vendita
 description: Configura i modelli e-mail transazionali per comunicare con i clienti e gli amministratori del negozio durante il processo di evasione degli ordini di ritiro dal negozio.
-role: User, Admin
+role: Admin
 level: Intermediate
+feature: Shipping/Delivery, Communications, Configuration
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 0%
@@ -312,7 +313,7 @@ Configura i modelli e-mail per le vendite dall’Amministratore: **[!UICONTROL S
 <tbody><tr>
 <td><strong>L'ordine ha il mittente dell'e-mail per i prodotti del Negozio</strong></td>
 <td>E-mail inviata a personale commerciante specificato come rapporto aggregato di tutti gli ordini aperti che non possono essere prelevati in un negozio commerciale finché il loro inventario non è disponibile. </br></br> I commercianti possono utilizzare questo rapporto per avviare e gestire trasferimenti di magazzino o rifornimento dal punto vendita al punto vendita. </br></br>Questa notifica si applica solo quando [!DNL Ship-to-Store] le funzioni di sono abilitate.
-</br></br>Questa etichetta non influisce sul vettore di spedizione selezionato o sulle relative etichette disponibili per il metodo di spedizione.</br></br></td>
+</br></br>Questa etichetta non influisce sul vettore di spedizione selezionato o sulle relative etichette disponibili per il metodo di spedizione.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>

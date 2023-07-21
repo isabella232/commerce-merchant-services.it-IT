@@ -1,10 +1,11 @@
 ---
 title: Flussi di lavoro per l'evasione di assistenza al negozio
 description: Scopri i moduli Prelievo, Staging, Mano-Fuori e Ordini disponibili nell’app Assist per store. Questi moduli consentono il flusso di lavoro di evasione del punto vendita end-to-end per gli ordini BOPIS. Gli associati al negozio utilizzano questi moduli per gestire e consegnare gli ordini di prelievo del negozio ai clienti.
-role: User
+role: Leader, Admin, User
 level: Intermediate
+feature: Shipping/Delivery, Tools and External Services, Customer Service
 exl-id: a8414f19-5489-41e9-84d6-39d2e61c2b08
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
@@ -19,7 +20,7 @@ L&#39;app Store Assist fornisce a Store Associates quattro moduli per gestire il
 
 - **[Fase](#stage-module)**- Immettere un&#39;ubicazione in cui vengono effettuati gli ordini mentre i clienti si recano al negozio, in modo che gli associati al negozio possano trovarli facilmente per il trasferimento degli ordini.
 
-- **[Mano spenta](#hand-off-module)**- Notifiche in tempo reale dopo l&#39;arrivo dei clienti al negozio per ridurre al minimo i tempi di attesa e gli ordini di trasferimento
+- **[Mano spenta](#hand-off-module)**- Ricevi notifiche in tempo reale dopo l&#39;arrivo dei clienti nel negozio per ridurre al minimo i tempi di attesa e gli ordini di trasferimento.
 
 - **[Ordini](#orders-module)**- Visualizza un elenco di tutti gli ordini effettuati per un negozio in modo che tutti conoscano il numero di ordini e lo stato di ciascun ordine.
 

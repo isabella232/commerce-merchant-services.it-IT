@@ -1,12 +1,13 @@
 ---
 title: Configurazione app
 description: Configurare [!DNL Store Assist] app per gestire flussi di lavoro e processi di evasione del punto vendita end-to-end per l’acquisto online, ritiro degli ordini nel punto vendita.
-role: User, Admin
 level: Intermediate
+role: Admin
+feature: Shipping/Delivery, Configuration, Tools and External Services
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ L&#39;app Store Assist riceve tutte le informazioni relative agli ordini e ai cl
 
 >[!NOTE]
 >
->Consulta [Archivia flussi di lavoro di evasione assistenza](store-assist-modules.md) per ulteriori informazioni sull&#39;app Store Assist.
+>Ulteriori informazioni sull&#39;app Store Assist sono disponibili nella sezione [Archivia flussi di lavoro di evasione assistenza](store-assist-modules.md) argomento.
 
 ## Configurare l’app Store Assist
 
@@ -55,7 +56,8 @@ L&#39;app Store Assist richiede due tipi di configurazione:
    - **Processo a mano**- Abilitare i processi facoltativi quando l&#39;Associato negozio consegna l&#39;ordine al cliente, ad esempio richiedere una firma del cliente o richiedere all&#39;Associato di controllare l&#39;ID cliente.
 
    - **Abilita rifiuto articolo al momento del passaggio di consegne**- Consente ai clienti di restituire o annullare gli articoli dell&#39;ordine durante il trasferimento.
-   Collabora con il team di Walmart Commerce Technologies Client Services per completare la configurazione front-end per l’app Store Assist.
+
+  Collabora con il team di Walmart Commerce Technologies Client Services per completare la configurazione front-end per l’app Store Assist.
 
 ## Download e installazione dell’app
 
@@ -70,4 +72,5 @@ Dopo che l&#39;app Store Assist è stata configurata, gli associati possono scar
    - **[!UICONTROL Company name]** associato all’account Store Assist
 
    - **Memorizza credenziali account di assistenza**: credenziali di nome utente e password per il proprio account.
-   Un amministratore Adobe Commerce può creare e gestire [!DNL Store Assist app] account utente per tutte le posizioni del punto vendita che hanno [Prelievo in-store](merchant-store-configuration.md#pickup-location-configuration) nelle impostazioni di Admin Stores.
+
+  Un amministratore Adobe Commerce può creare e gestire [!DNL Store Assist app] account utente per tutte le posizioni del punto vendita che hanno [Prelievo in-store](merchant-store-configuration.md#pickup-location-configuration) nelle impostazioni di Admin Stores.
