@@ -3,9 +3,9 @@ title: Opzioni di pagamento
 description: Imposta le opzioni di pagamento per personalizzare i metodi disponibili per i clienti del tuo Negozio.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 27d121f862be99b41f467a00e5f6b9d28a40deab
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1034'
 ht-degree: 0%
 
 ---
@@ -46,6 +46,8 @@ Puoi configurare [!UICONTROL Credit Card Fields] nella configurazione del negozi
 
 Puoi configurare [!UICONTROL PayPal Smart Buttons] nella configurazione del negozio o nella Home di Payment Services.  Consulta [Impostazioni](settings.md#payment-buttons) per ulteriori informazioni.
 
+Vedi PayPal [Documentazione sui metodi di pagamento](https://developer.paypal.com/docs/checkout/payment-methods/) per sapere in quali paesi è attualmente disponibile ogni metodo di pagamento.
+
 ### [!DNL PayPal] pulsante
 
 I clienti possono effettuare il check-out con facilità e sicurezza utilizzando il pulsante PayPal.
@@ -80,21 +82,11 @@ Questa opzione può essere utilizzata per presentare un&#39;opzione di pagamento
 
 Offri ai tuoi clienti pagamenti a breve termine senza interessi e altre opzioni di finanziamento in modo che possano acquistare subito e pagare in seguito con [!DNL Pay Later] pulsante.
 
-Il [!DNL Pay Later] è visibile dalla pagina del prodotto, dal mini-carrello, dal carrello e dalle viste di pagamento:
+Il [!DNL Pay Later] è visibile dalla pagina del prodotto, dal mini-carrello, dal carrello e dalle viste di pagamento.
 
-* **Quando un cliente seleziona un prodotto tra $ 30 e $ 600**, messaggistica con PayPal e [!DNL Pay Later] fornisce al cliente ulteriori informazioni sulla [!DNL Pay in 4] opzione di pagamento. I clienti possono fare clic su **Ulteriori informazioni** per informazioni sulla funzione &quot;[!DNL Pay in 4]Opzione &quot; _o_ fai clic sul testo &quot;Oppure consulta 6 mesi di finanziamento speciale&quot; nel popup per scoprire e richiedere l&#39;opzione PayPal Credit.
-* **Quando un cliente seleziona uno o più prodotti superiori a 98,99 $**, messaggistica con PayPal e [!DNL Pay Later] fornisce ai clienti maggiori informazioni sull&#39;opzione di pagamento PayPal Credit. I clienti possono fare clic su **Ulteriori informazioni** per scoprire e richiedere l&#39;opzione PayPal Credit, _o_ fare clic sul testo &quot;Oppure vedere Pagare in 4&quot; nel popup per saperne di più [!DNL Pay in 4] opzione.
-
-  >[!NOTE]
-  >
-  >Gli importi di cui sopra sono soggetti a modifiche.
+Consulta le informazioni sulle offerte Paga più tardi in [PayPal&#39;s Pay Later offre la documentazione](https://developer.paypal.com/docs/checkout/pay-later/us/). Utilizza il **Paese** per selezionare un’area di interesse.
 
 Consulta [Impostazioni](settings.md#payment-buttons) per scoprire come disabilitare/abilitare [!DNL Pay Later] messaggi.
-
-Sono disponibili due opzioni di pagamento con [!DNL Pay Later] pulsante:
-
-* **Pagamento in 4**—I clienti possono pagare il saldo dell&#39;ordine in quattro pagamenti senza interessi (ogni due settimane) dopo un iniziale acconto. Consulta la [Documentazione di Pay in 4](https://www.paypal.com/us/digital-wallet/ways-to-pay/buy-now-pay-later) per ulteriori informazioni.
-* **Credito PayPal**- I clienti possono pagare il saldo dell&#39;ordine per un periodo di sei mesi, senza interessi. Consulta la [Documentazione di PayPal Credit](https://www.paypal.com/us/webapps/mpp/paypal-credit) per ulteriori informazioni.
 
 ### [!DNL Pay Now] pulsante
 
