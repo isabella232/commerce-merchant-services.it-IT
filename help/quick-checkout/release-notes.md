@@ -3,7 +3,7 @@ title: '''[!DNL Quick Checkout] Note sulla versione'
 description: Consulta le note sulla versione per informazioni su tutte [!DNL Quick Checkout] versioni.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
 feature: Release Notes, Services, Checkout
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '1422'
 ht-degree: 0%
@@ -84,7 +84,7 @@ _24 febbraio 2023_
 
 [!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
 
-![Nuovo](../assets/new.svg)<!-- Issue BOLT-520 --> Versione con disponibilità generale:[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) è ora preinstallato in Adobe Commerce Cloud versione 2.4.6 e successive.
+![Nuovo](../assets/new.svg)<!-- Issue BOLT-520 --> Versione con disponibilità generale:[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) è ora preinstallato in Adobe Commerce Cloud versione 2.4.6 e successive.
 
 ![Problema risolto](../assets/fix.svg)<!-- Issue BOLT-592 --> Miglioramenti nell’esperienza utente durante l’inserimento di un ordine in [Pannello di amministrazione](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/create-order-admin.html) utilizzo [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/stored-payment-methods.html) come metodo di pagamento. Questa funzionalità consente ai clienti di effettuare un ordine con Braintree come metodo di pagamento durante il pagamento quando [!DNL Quick Checkout] è abilitato.
 
@@ -150,9 +150,9 @@ _8 settembre 2022_
 
 [!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
 
-![Nuovo](../assets/new.svg)<!-- Issue BOLT-341 --> Versione con disponibilità generale:[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) è ora compatibile con Adobe Commerce versione 2.4.5.
+![Nuovo](../assets/new.svg)<!-- Issue BOLT-341 --> Versione con disponibilità generale:[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) è ora compatibile con Adobe Commerce versione 2.4.5.
 
-![Nuovo](../assets/new.svg)<!-- Issue BOLT-328 --> [!DNL Quick Checkout] per Adobe Commerce e Magenti Open Source fornisce un [Visualizzazione del pannello di amministrazione](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) con tutte le informazioni necessarie per configurare e utilizzare l’estensione.
+![Nuovo](../assets/new.svg)<!-- Issue BOLT-328 --> [!DNL Quick Checkout] per Adobe Commerce e Magento Open Source fornisce un [Visualizzazione del pannello di amministrazione](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) con tutte le informazioni necessarie per configurare e utilizzare l’estensione.
 
 ![Nuovo](../assets/new.svg)<!-- Issue BOLT-364 --> Un utente amministratore [può impostare ruoli utente e autorizzazioni](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/user-roles-setup.html) per consentire ad altri utenti di visualizzare [!DNL Quick Checkout] Pannello di amministrazione.
 
@@ -184,7 +184,7 @@ _9 agosto 2022_
 
 [!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
 
-![Nuovo](../assets/new.svg)<!-- Issue BOLT-341 --> Versione con disponibilità generale:[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) è ora compatibile con Adobe Commerce versioni da 2.4.1 a 2.4.4.
+![Nuovo](../assets/new.svg)<!-- Issue BOLT-341 --> Versione con disponibilità generale:[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) è ora compatibile con Adobe Commerce versioni da 2.4.1 a 2.4.4.
 
 ![Nuovo](../assets/new.svg)<!-- Issue BOLT-340 --> Il [!DNL Quick Checkout] per Adobe Commerce può essere installato sia per Adobe Commerce [sull’infrastruttura cloud](install.md#adobe-commerce-on-cloud-infrastructure) o [on-premise](install.md#on-premises) istanze. Questi metodi richiedono l&#39;utilizzo di un&#39;interfaccia della riga di comando.
 

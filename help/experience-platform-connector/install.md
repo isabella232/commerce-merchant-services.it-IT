@@ -4,20 +4,20 @@ description: Scopri come installare, configurare, aggiornare e disinstallare il 
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 64273ad4c1a54b150746a54896caf73ed612c2d1
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
 
 ---
 
-# Installare e configurare il connettore Experience Platform
+# Installare e configurare il connettore Experienci Platform
 
 Prima di installare l’estensione, [esaminare i prerequisiti](overview.md#prereqs).
 
 ## Installare l’estensione
 
-L&#39;estensione del connettore di Experience Platform è disponibile dal [Adobe Marketplace](https://marketplace.magento.com/magento-experience-platform-connector.html). Quando installi questa estensione dalla riga di comando del server, questa si connette all’installazione di Adobe Commerce come [servizio](../landing/saas.md). Al termine del processo, **Connettore Experience Platform** e **Connettore Commerce Services** vengono visualizzati sul **Sistema** menu in **Servizi** in Commerce _Amministratore_.
+L&#39;estensione del connettore di Experience Platform è disponibile dal [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). Quando installi questa estensione dalla riga di comando del server, questa si connette all’installazione di Adobe Commerce come [servizio](../landing/saas.md). Al termine del processo, **Connettore Experience Platform** e **Connettore Commerce Services** vengono visualizzati sul **Sistema** menu in **Servizi** in Commerce _Amministratore_.
 
 >[!NOTE]
 >

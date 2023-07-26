@@ -3,7 +3,7 @@ title: "[!DNL Payment Services] Note sulla versione"
 description: Consulta le note sulla versione per informazioni su tutte [!DNL Payment Services] versioni.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '1989'
 ht-degree: 0%
@@ -138,7 +138,7 @@ _22 dicembre 2022_
 
 ![Problema risolto](../assets/fix.svg)<!-- Issue PAY-3992 --> È stata migliorata la fatturazione in Payment Services quando un metodo di pagamento viene rifiutato.
 
-![Problema risolto](../assets/fix.svg)<!-- Issue PAY-3999 --> Payment Services ora visualizza correttamente i pulsanti avanzati PayPal per gli esercenti che utilizzano [Fire Checkout&#39;s](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} modello personalizzato per la pagina di pagamento. In precedenza, i pulsanti venivano visualizzati in modo intermittente.
+![Problema risolto](../assets/fix.svg)<!-- Issue PAY-3999 --> Payment Services ora visualizza correttamente i pulsanti avanzati PayPal per gli esercenti che utilizzano [Fire Checkout&#39;s](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} modello personalizzato per la pagina di pagamento. In precedenza, i pulsanti venivano visualizzati in modo intermittente.
 
 ## v1.5.1
 
@@ -252,7 +252,7 @@ _29 novembre 2021_
 
 [!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
 
-![Nuovo](../assets/new.svg)<!-- Issue PAY-2127 --> Versione con disponibilità generale:[[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) è ora compatibile con [!DNL Adobe Commerce] e [!DNL Magento Open Source] versioni da 2.4.0 a 2.4.3-p1.
+![Nuovo](../assets/new.svg)<!-- Issue PAY-2127 --> Versione con disponibilità generale:[[!DNL Payment Services]](https://commercemarketplace.adobe.com/magento-payment-services.html) è ora compatibile con [!DNL Adobe Commerce] e [!DNL Magento Open Source] versioni da 2.4.0 a 2.4.3-p1.
 
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-124 --> Il [!DNL Payment Services] estensione per [!DNL Adobe Commerce] e [!DNL Magento Open Source] può essere installato per [[!DNL Adobe Commerce] sull’infrastruttura cloud](install.md#adobe-commerce-on-cloud-infrastructure) o [On-premise](install.md#on-premises) istanze. Questi metodi richiedono l&#39;utilizzo di un&#39;interfaccia della riga di comando.
 

@@ -4,7 +4,7 @@ description: Installare l'estensione Payments Services.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade
-source-git-commit: 30eae4c7d81ab6c2a7f04f4ff22c25e86934380a
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Download e installazione di [!DNL Payment Services] estensione per [!DNL Adobe C
 
 Scarica l&#39;estensione da [Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html) prima di installarlo.
 
-1. Accedi a [Estensione Payment Services nella Commerce Marketplace](https://marketplace.magento.com/magento-payment-services.html).
+1. Accedi a [Estensione Payment Services nella Commerce Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html).
 1. Per scegliere l’edizione e la versione, attiva/disattiva **[!UICONTROL Edition]** e **[!UICONTROL Your store version]** alle tue selezioni preferite.
 1. Clic **[!UICONTROL Add to Cart]**.
 1. Completa il pagamento e fai clic su **[!UICONTROL Place Order]**.
