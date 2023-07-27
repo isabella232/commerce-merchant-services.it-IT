@@ -5,9 +5,9 @@ breadcrumb-title: "[!DNL Catalog Service] Guida"
 hide: true
 role: Admin
 feature: Services, Catalog Service
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: c256252ea58b61e511034cd33d81e004acff96d2
 workflow-type: tm+mt
-source-wordcount: '75'
+source-wordcount: '79'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,7 @@ ht-degree: 0%
 - [Introduzione a [!DNL Catalog Service]](overview.md)
 - [Onboarding e installazione](installation.md)
 - [Catalog Service e Mesh API](mesh.md)
+- [Servizio di acquisizione dei feed (Beta)](feed-ingestion.md)
 - Query GraphQL {#graphql}
    - [query categorie](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/)
    - [query prodotti](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/)
