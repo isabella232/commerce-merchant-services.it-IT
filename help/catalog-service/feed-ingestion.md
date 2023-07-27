@@ -1,7 +1,7 @@
 ---
 title: Servizio di acquisizione feed
 description: Scopri il servizio di acquisizione di feed per Adobe Commerce
-source-git-commit: b484429a529acfa95f70c5a55b6a5fcdedc887b3
+source-git-commit: 12b1e89924a2eb89494bcb884fc3bc14e87b2b1c
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%
@@ -42,4 +42,4 @@ Il servizio di acquisizione dei feed è progettato per:
 * Clienti con cataloghi complessi e di grandi dimensioni
 * I clienti che non utilizzano l’amministratore Adobe Commerce per gestire i dati del catalogo utilizzano un sistema ERP o di terze parti per gestire i dati del catalogo
 
-Se ti interessa partecipare al programma beta, contatta il team all’indirizzo XXXXX@adobe.com.
+Se ti interessa partecipare al programma beta, contatta il team all’indirizzo sagonzal@adobe.com.
