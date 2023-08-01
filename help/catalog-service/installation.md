@@ -2,9 +2,9 @@
 title: Onboarding e installazione
 description: Scopri come installare [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
+source-git-commit: 04b1553e7cc16d142b72553ca2a6bb9d6a6b5eb4
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,8 @@ Catalog Service dispone di due ambienti disponibili per l’onboarding:
 
 - Sandbox (https://catalog-service-sandbox.adobe.io/graphql): utilizzata per il test e la convalida prima della pubblicazione
 - Produzione (https://catalog-service.adobe.io/graphql)- utilizzato per il traffico in tempo reale per i commercianti e i siti web Commerce)
+
+Il test di carico deve essere eseguito solo nell’ambiente Sandbox. Si consiglia di: [Ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) essere aperto al momento del test di carico in modo che il team dei servizi possa prevedere il traffico server aggiuntivo.
 
 ## Installazione e configurazione
 
