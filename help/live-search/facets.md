@@ -2,9 +2,9 @@
 title: "Facet"
 description: "[!DNL Live Search] i facet utilizzano più dimensioni di valori di attributo come criteri di ricerca."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 6d4317df4f921bdc57faa4a7fbb86fc3a1d9e9b2
+source-git-commit: 9cf48f6f900385a5cb772adee8834ec9cfe5ee13
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 0%
 Faceting è un metodo di filtro ad alte prestazioni che utilizza più dimensioni di valori di attributo come criteri di ricerca. La ricerca con facet è simile, ma notevolmente &quot;più intelligente&quot; rispetto allo standard [navigazione su più livelli](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). L’elenco dei filtri disponibili è determinato da [attributi filtrabili](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) dei prodotti restituiti nei risultati della ricerca.
 
 ![Risultati di ricerca filtrati](assets/storefront-search-results-run.png)
+
+Qualsiasi facet definito può essere utilizzato come parametro URL e i risultati verranno filtrati in base ai valori dei parametri: `http://yourstore.com?brand=acme&color=red`.
 
 ## Requisiti di sfaccettato
 

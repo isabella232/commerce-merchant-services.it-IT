@@ -2,9 +2,9 @@
 title: "Presentazione rapida"
 description: "Dai un’occhiata [!DNL Live Search] dalla vetrina."
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 9cf48f6f900385a5cb772adee8834ec9cfe5ee13
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,8 @@ Per elencare tutti i prodotti restituiti dalla query di ricerca durante la digit
 ## Ricerca filtrata con facet
 
 La ricerca filtrata utilizza più dimensioni di valori di attributo, oppure [facet](facets.md), come criterio di ricerca. La selezione dei filtri è definita dall’esercente e cambia in base ai prodotti restituiti, con i facet più comunemente utilizzati inseriti nella parte superiore dell’elenco.
+
+Utilizza i facet come parametri URL:`http://yourwebsite.com?color=red`, e Live Search filtra i risultati in base a questi valori di attributo.
 
 ## Sinonimi
 
