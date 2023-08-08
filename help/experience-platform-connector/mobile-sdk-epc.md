@@ -3,9 +3,9 @@ title: Integrare Adobe Experience Platform Mobile SDK con Commerce
 description: Scopri come utilizzare l’SDK di Adobe Experience Platform Mobile con la tua vetrina commerciale headless o personalizzata.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: cae4d26d389376476b9b6a567841a847cc9c9732
+source-git-commit: c5d618788a58109e124a1774b3860cf9c41abb8a
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
@@ -40,32 +40,33 @@ Dopo aver completato la configurazione SDK per Experience Platform, aggiungi la 
 
 1. Per inviare i dati dell’evento Commerce all’Experience Platform tramite l’SDK, devi fornire uno schema XDM nel codice dell’applicazione. Questo schema deve corrispondere allo schema [configurato](https://developer.adobe.com/client-sdks/documentation/getting-started/set-up-schemas-and-datasets/) per l’SDK nell’Experience Platform.
 
-L’esempio seguente mostra come tenere traccia di `web.webpagedetails.pageViews` e impostare `identityMap` utilizzando il campo e-mail.
+   L’esempio seguente mostra come tenere traccia di `web.webpagedetails.pageViews` e impostare `identityMap` utilizzando il campo e-mail.
 
-    &quot;javascript
-    let stateName = &quot;luma: content: ios: us: en: home&quot;
-    var xdmData: [Stringa: Qualsiasi] = [
-    &quot;eventType&quot;: &quot;web.webpagedetails.pageViews&quot;,
-    &quot;web&quot;: [
-    &quot;webPageDetails&quot;: [
-    &quot;pageViews&quot;: [
-    &quot;value&quot;: 1
-    ],
-    &quot;name&quot;: &quot;Home page&quot;
-    ]
-    ]
-    ]
-    
-    let experienceEvent = ExperienceEvent(xdm: xdmData)
-    Edge.sendEvent(experienceEvent: experienceEvent)
-    
-    // Adobe Experience Platform - Aggiorna identità
-    let emailLabel = &quot;mobileuser@example.com&quot;
-    
-    let identityMap: IdentityMap = IdentityMap()
-    identityMap.add(item: IdentityItem(id: emailLabel), withNamespace: &quot;Email&quot;)
-    Identity.updateIdentities(with: identityMap)
-    &quot;
+   ```swift
+   let stateName = "luma: content: ios: us: en: home"
+   var xdmData: [String: Any] = [
+       "eventType": "web.webpagedetails.pageViews",
+       "web": [
+           "webPageDetails": [
+               "pageViews": [
+                   "value": 1
+               ],
+               "name": "Home page"
+           ]
+       ]
+   ]
+   
+   let experienceEvent = ExperienceEvent(xdm: xdmData)
+   Edge.sendEvent(experienceEvent: experienceEvent)
+   
+   // Adobe Experience Platform - Update Identity
+   
+   let emailLabel = "mobileuser@example.com"
+   
+   let identityMap: IdentityMap = IdentityMap()
+   identityMap.add(item: IdentityItem(id: emailLabel), withNamespace: "Email")
+   Identity.updateIdentities(with: identityMap)
+   ```
 
 1. Connettersi all&#39;ambiente Commerce Cloud.
 
@@ -82,7 +83,7 @@ L’esempio seguente mostra come tenere traccia di `web.webpagedetails.pageViews
 
       Questo crea un `apollo-codegen-configuration.json` file.
 
-   1. Generare i file e le directory GraphQL necessari nel progetto sostituendo il contenuto `apollo-codegen-configuration.json` file con quanto segue:
+   1. Genera i file e le directory GraphQL necessari nel progetto sostituendo il contenuto della `apollo-codegen-configuration.json` file con quanto segue:
 
       ```json
       {
