@@ -3,9 +3,9 @@ title: '''[!DNL Live Search] Note sulla versione'
 description: "Informazioni aggiornate sulla versione di [!DNL Live Search] da Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: e7e45863dced36ecbd508931df5141bb6f1d8e64
+source-git-commit: 3edbbc054fdadfeaa710b8c096db63e0d1961d02
 workflow-type: tm+mt
-source-wordcount: '1374'
+source-wordcount: '1390'
 ht-degree: 0%
 
 ---
@@ -55,6 +55,10 @@ I seguenti valori sono stati aggiunti al `storeDetails` oggetto:
 ### Aggiornamenti
 
 * Al metapacchetto sono stati aggiunti moduli di Catalog Service per supportare il recupero avanzato dei dati.
+
+### Correzioni
+
+* Il **Il mio account** La navigazione tra le pagine non scompare più quando si utilizza il widget Pagina elenco prodotti.
 
 I commercianti devono aggiornare [!DNL Live Search] versione dell&#39;estensione >= 3.0.2 per accedere a queste funzioni.
 
