@@ -3,9 +3,9 @@ title: Opzioni di pagamento
 description: Imposta le opzioni di pagamento per personalizzare i metodi disponibili per i clienti del tuo Negozio.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 27d121f862be99b41f467a00e5f6b9d28a40deab
+source-git-commit: 9a52976be16afa707b494f4da3b99192dd73b8f2
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1035'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ I clienti possono effettuare il check-out utilizzando il pulsante PayPal Debit o
 
 Il pulsante PayPal Debit o carta di credito è visibile dalla pagina di pagamento.
 
-Questa opzione può essere utilizzata per presentare un&#39;opzione di pagamento PayPal con addebito o carta di credito agli acquirenti quando non si dispone di un provider alternativo di carta di credito.
+Questa opzione può essere utilizzata per presentare un&#39;opzione di pagamento con carta di debito o di credito agli acquirenti con un pulsante ospitato da PayPal come alternativa all&#39;integrazione con carta di credito.
 
 ### [!DNL Pay Later] pulsante
 
