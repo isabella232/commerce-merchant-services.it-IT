@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Sincronizzazione catalogo
 
-Adobe Commerce e Magenti Open Source utilizzano gli indicizzatori per compilare i dati del catalogo nelle tabelle. Il processo viene attivato automaticamente da [Eventi](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) ad esempio una modifica al prezzo di un prodotto o al livello di magazzino.
+Adobe Commerce e Magento Open Source utilizzano gli indicizzatori per compilare i dati del catalogo nelle tabelle. Il processo viene attivato automaticamente da [Eventi](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) ad esempio una modifica al prezzo di un prodotto o al livello di magazzino.
 
 Il processo di sincronizzazione del catalogo viene eseguito ogni ora per consentire [!DNL Commerce] servizi per utilizzare i dati del catalogo. La sincronizzazione del catalogo esporta i dati di prodotto da [!DNL Commerce] server a [!DNL Commerce] servizi su base continuativa per mantenere aggiornati i servizi. Ad esempio: [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) necessita delle informazioni aggiornate sul catalogo per restituire in modo accurato i consigli con nomi, prezzi e disponibilità corretti. È possibile utilizzare _Sincronizzazione catalogo_ dashboard per osservare e gestire il processo di sincronizzazione o [interfaccia della riga di comando](#resynccmdline) per attivare la sincronizzazione del catalogo e reindicizzare i dati di prodotto per l&#39;utilizzo da parte di [!DNL Commerce] servizi.
 

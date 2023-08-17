@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Aggiungere gruppi di campi allo schema XDM
 
-Uno dei [passaggi di onboarding](overview.md#onboarding-steps) per utilizzare il connettore Experience Platform è necessario accedere all’area di lavoro dello stream di dati e [creare un flusso di dati](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) specifico per Adobe Commerce. Quando crei tale flusso di dati, devi anche selezionare uno schema XDM che rappresenti i dati che intendi acquisire. Questo argomento descrive i gruppi di campi che lo schema XDM deve includere per raccogliere correttamente i dati forniti dalla vetrina Adobe Commerce [Eventi](events.md).
+Uno dei [passaggi di onboarding](overview.md#onboarding-steps) per utilizzare il connettore Experienci Platform è necessario accedere all’area di lavoro dello stream di dati e [creare un flusso di dati](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) specifico per Adobe Commerce. Quando crei tale flusso di dati, devi anche selezionare uno schema XDM che rappresenti i dati che intendi acquisire. Questo argomento descrive i gruppi di campi che lo schema XDM deve includere per raccogliere correttamente i dati forniti dalla vetrina Adobe Commerce [Eventi](events.md).
 
 1. Se non disponi già di uno schema XDM, [creare](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) uno. Altrimenti, [modifica](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#edit) lo schema XDM esistente nell’interfaccia utente di Adobe Experience Platform.
 

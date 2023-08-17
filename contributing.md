@@ -2,7 +2,7 @@
 source-git-commit: 8ddf1e0fd325780c8eb974e801a4c87f49c7ee4b
 workflow-type: tm+mt
 source-wordcount: '289'
-ht-degree: 0%
+ht-degree: 14%
 
 ---
 # Contribuire
@@ -13,7 +13,7 @@ Di seguito è riportato un set di linee guida da seguire quando si contribuisce 
 
 ## Codice di condotta
 
-Questo progetto aderisce all’Adobe [codice di condotta](code-of-conduct.md). Con la tua partecipazione, dovrai rispettare questo codice. Segnala comportamenti non accettabili a
+Il progetto aderisce al [Codice di condotta](code-of-conduct.md) di Adobe. Con la tua partecipazione, accetti di rispettare questo codice. Segnala comportamenti non accettabili a
 [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
 ## Documentazione della Guida per i collaboratori
@@ -26,12 +26,11 @@ Inizia segnalando un problema. I collaboratori esistenti di questo progetto lavo
 
 ## Contratto di licenza da collaboratore
 
-Tutti i contributi di terze parti a questo progetto devono essere accompagnati da un contratto di licenza del collaboratore firmato. In questo modo si concede all&#39;Adobe il permesso di ridistribuire i contributi come parte del progetto. [Firma il CLA](https://opensource.adobe.com/cla.html). È sufficiente inviare un CLA di Adobe una sola volta. Se ne hai già inviato uno in precedenza, sei a posto!
+Tutti i contributi di terze parti a questo progetto devono essere accompagnati da un contratto di licenza del collaboratore firmato. In tal modo è concesso ad Adobe il permesso di ridistribuire i contributi come parte del progetto. [Firma il CLA](https://opensource.adobe.com/cla.html). È sufficiente inviare un CLA di Adobe una sola volta. Se ne hai già inviato uno in precedenza, sei a posto!
 
 ## Revisioni del codice
 
-Tutte le richieste devono essere presentate sotto forma di richieste pull e devono essere riviste dai collaboratori del progetto. Letto [Documentazione della richiesta di pull di GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
-per ulteriori informazioni sull’invio di richieste pull.
+Tutte le richieste devono essere presentate sotto forma di richieste pull e devono essere riviste dai collaboratori del progetto. Per ulteriori informazioni sull’invio di richieste pull, leggi la [documentazione sulle richieste pull di GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
 
 <!--
 Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when

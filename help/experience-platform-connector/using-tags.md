@@ -13,12 +13,12 @@ ht-degree: 0%
 
 # Raccogliere dati di Commerce tramite tag Adobe Experience Platform
 
-Anche se è possibile utilizzare il connettore Experience Platform per pubblicare e abbonarsi a eventi storefront, alcuni commercianti potrebbero già utilizzare una soluzione di raccolta dati, ad esempio [Tag Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html). Per questi commercianti, Adobe Commerce fornisce un’opzione di sola pubblicazione nel connettore Experience Platform che utilizza l’SDK Adobe Commerce Event.
+Anche se è possibile utilizzare il connettore Experienci Platform per pubblicare e abbonarsi a eventi storefront, alcuni commercianti potrebbero già utilizzare una soluzione di raccolta dati, ad esempio [Tag Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html). Per questi commercianti, Adobe Commerce fornisce un’opzione di sola pubblicazione nel connettore Experienci Platform che utilizza l’SDK Adobe Commerce Event.
 
 ![Flusso di dati del connettore di Experience Platform](assets/tags-data-flow.png)
 _Flusso dei dati del connettore di Experience Platform con i tag_
 
-In questo argomento, imparerai a mappare i valori dell’evento storefront forniti dal connettore Experience Platform alla soluzione di tag Adobe Experience Platform già in uso.
+In questo argomento, imparerai a mappare i valori dell’evento storefront forniti dal connettore Experienci Platform alla soluzione di tag Adobe Experience Platform già in uso.
 
 ## Raccogliere dati evento da Adobe Commerce
 
@@ -1412,7 +1412,7 @@ return IdentityMap;
 
 ## Impostazione del consenso
 
-Il consenso per la raccolta dati del connettore Adobe Commerce e Experience Platform è abilitato per impostazione predefinita. La rinuncia viene gestita tramite [`mg_dnt` cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html). Se scegli di utilizzare, segui i passaggi qui descritti `mg_dnt` per gestire il consenso. Il [Documentazione di Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) dispone di diverse opzioni aggiuntive per la gestione del consenso.
+Il consenso per la raccolta dati del connettore Adobe Commerce e Experienci Platform è abilitato per impostazione predefinita. La rinuncia viene gestita tramite [`mg_dnt` cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html). Se scegli di utilizzare, segui i passaggi qui descritti `mg_dnt` per gestire il consenso. Il [Documentazione di Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) dispone di diverse opzioni aggiuntive per la gestione del consenso.
 
 1. Creare un **Codice personalizzato core** elemento dati (`%do not track cookie%`) per `mg_dnt` cookie:
 
@@ -1433,4 +1433,4 @@ Il consenso per la raccolta dati del connettore Adobe Commerce e Experience Plat
 
 - La mancata esecuzione della procedura per disattivare la raccolta di Experienci Platform comporta il doppio conteggio degli eventi
 - La mancata configurazione di mappature/eventi come descritto in questo argomento può influire sulle bacheche di Adobe Analytics
-- Non è possibile impostare Target tramite il connettore Experience Platform se la raccolta dati è disabilitata
+- Non è possibile impostare Target tramite il connettore Experienci Platform se la raccolta dati è disabilitata

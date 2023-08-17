@@ -20,7 +20,7 @@ L&#39;app Store Assist fornisce a Store Associates quattro moduli per gestire il
 
 - **[Fase](#stage-module)**- Immettere un&#39;ubicazione in cui vengono effettuati gli ordini mentre i clienti si recano al negozio, in modo che gli associati al negozio possano trovarli facilmente per il trasferimento degli ordini.
 
-- **[Mano spenta](#hand-off-module)**- Ricevi notifiche in tempo reale dopo l&#39;arrivo dei clienti nel negozio per ridurre al minimo i tempi di attesa e gli ordini di trasferimento.
+- **[Mano spenta](#hand-off-module)**- Ricevi notifiche in tempo reale dopo l&#39;arrivo dei clienti al negozio per ridurre al minimo i tempi di attesa e gli ordini di trasferimento.
 
 - **[Ordini](#orders-module)**- Visualizza un elenco di tutti gli ordini effettuati per un negozio in modo che tutti conoscano il numero di ordini e lo stato di ciascun ordine.
 

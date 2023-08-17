@@ -24,7 +24,7 @@ Qualsiasi attributo di prodotto filtrabile può essere utilizzato come facet. Il
    * In *Attributi faceting* selezionare l&#39;attributo di prodotto da utilizzare come facet e fare clic su **Aggiungi**.
    * Per trovare un attributo di prodotto specifico, inserisci i primi caratteri del nome dell’attributo in *Ricerca* casella. Quindi, fai clic su **Aggiungi**.
 
-      Per configurare intervalli e raggruppamenti di price faceting, fare riferimento a [Impostazioni](settings.md). Per ulteriori informazioni, consulta [Tipi di facet](facets-type.md).
+     Per configurare intervalli e raggruppamenti di price faceting, fare riferimento a [Impostazioni](settings.md). Per ulteriori informazioni, consulta [Tipi di facet](facets-type.md).
 Il facet viene aggiunto alla parte inferiore del *Facet dinamici* e *Pubblica modifiche* diventa disponibile.
 
 1. Se il facet che desideri aggiungere non è stato trovato, vai a **Negozi** > Attributi > **Prodotto** e verifica che l’attributo abbia il valore [proprietà richieste](facets.md) da utilizzare come facet. Se necessario, aggiorna le seguenti proprietà della vetrina dell’attributo:

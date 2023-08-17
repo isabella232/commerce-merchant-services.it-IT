@@ -6,19 +6,19 @@ feature: Personalization, Integration, Release Notes
 source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
 source-wordcount: '465'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # Note sulla versione
 
-Queste note sulla versione contengono aggiornamenti al connettore Experience Platform e includono:
+Queste note sulla versione contengono aggiornamenti al connettore Experienci Platform e includono:
 
 * ![Nuovo](../assets/new.svg) - Nuove funzioni
 * ![Correzione](../assets/fix.svg) - Correzioni e miglioramenti
 * ![Bug](../assets/bug.svg) - Problemi noti
 
-Per modifiche e correzioni di funzionalità relative alle estensioni utilizzate dal connettore Experience Platform, vedi **Aggiornamenti dei servizi supportati**.
+Per modifiche e correzioni di funzionalità relative alle estensioni utilizzate dal connettore Experienci Platform, vedi **Aggiornamenti dei servizi supportati**.
 
 Consulta [Prossime versioni](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) per informazioni sulle pianificazioni delle versioni e sul supporto.
 
@@ -26,7 +26,7 @@ Consulta la documentazione per gli sviluppatori per [informazioni sulla compatib
 
 ## Aggiornamenti dei servizi supportati
 
-Queste note sulla versione descrivono modifiche e correzioni di funzioni relative alle estensioni utilizzate dal connettore Experience Platform.
+Queste note sulla versione descrivono modifiche e correzioni di funzioni relative alle estensioni utilizzate dal connettore Experienci Platform.
 
 +++Aggiornamenti dei servizi supportati
 
@@ -56,7 +56,7 @@ _27 giugno 2023_
 * ![Nuovo](../assets/new.svg) - Aggiunta la possibilità di [disattivare l&#39;invio di eventi storefront](connect-data.md#data-collection) all&#39;Experience Platform.
 * ![Correzione](../assets/fix.svg) - Configurazioni criteri per la sicurezza dei contenuti aggiornate.
 * ![Correzione](../assets/fix.svg) - È stato corretto il supporto per gli eventi di back office nella versione 2.4.7 di Commerce.
-* ![Nuovo](../assets/new.svg) - È stato aggiunto un messaggio di notifica sull’annullamento della validità della cache quando si salvano le modifiche apportate al modulo del connettore Experience Platform.
+* ![Nuovo](../assets/new.svg) - È stato aggiunto un messaggio di notifica sull’annullamento della validità della cache quando si salvano le modifiche apportate al modulo del connettore Experienci Platform.
 
 
 ## 3.0.0-beta1 (solo interno)

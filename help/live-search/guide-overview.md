@@ -6,7 +6,7 @@ recommendations: noCatalog
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '233'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -22,10 +22,10 @@ ht-degree: 0%
 
 ## Documentazione aggiuntiva
 
-| Guida | Descrizione |
+| Guida  | Descrizione |
 |--- |--- |
-| Guida utente di Adobe Commerce 2.4 | Documentazione incentrata sui commercianti per Adobe Commerce e Magenti Open Source |
-| Guida per gli sviluppatori di Adobe Commerce 2.4 | Documentazione incentrata sugli sviluppatori utilizzata per creare e personalizzare Adobe Commerce o Magenti Open Source |
+| Guida utente di Adobe Commerce 2.4 | Documentazione incentrata sui commercianti per Adobe Commerce e Magento Open Source |
+| Guida per gli sviluppatori di Adobe Commerce 2.4 | Documentazione incentrata sugli sviluppatori utilizzata per creare e personalizzare Adobe Commerce o Magento Open Source |
 
 ## Supporto
 

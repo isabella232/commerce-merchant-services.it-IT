@@ -1,5 +1,5 @@
 ---
-title: '''[!DNL Quick Checkout] Note sulla versione'
+title: '[!DNL Quick Checkout] Note sulla versione'
 description: Consulta le note sulla versione per informazioni su tutte [!DNL Quick Checkout] versioni.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
 feature: Release Notes, Services, Checkout
@@ -128,7 +128,7 @@ _30 novembre 2022_
 
 [!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
 
-![Nuovo](../assets/new.svg)<!-- Issue BOLT-513 --> Ora, quando un cliente di Adobe Commerce viene registrato nel negozio durante il processo di pagamento e dispone di un account Bolt, viene visualizzata un’opzione per accedere all’account Bolt dell’acquirente.
+![Nuovo](../assets/new.svg)<!-- Issue BOLT-513 --> Ora, quando un cliente Adobe Commerce viene registrato nel negozio durante il processo di pagamento e dispone di un account Bolt, viene visualizzata un’opzione per accedere all’account Bolt dell’acquirente.
 
 ![Nuovo](../assets/new.svg)<!-- Issue BOLT-512 --> Una nuova configurazione rileva automaticamente se gli acquirenti connessi possono anche essere registrati in Bullone.
 

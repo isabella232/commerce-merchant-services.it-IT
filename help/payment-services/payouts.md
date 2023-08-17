@@ -183,7 +183,7 @@ Questi tipi di operazioni possono essere annotati nelle transazioni di pagamento
 | ------------ | -------------------- |
 | [!UICONTROL PAYMENT] | Soldi trasferiti tra un acquirente e un venditore per un ordine |
 | [!UICONTROL AUTH] | Autorizzazione e autorizzazione di operazioni annullate |
-| [!UICONTROL BONUS] | -- |
+| [!UICONTROL BONUS] | — |
 | [!UICONTROL CHARGEBACK] | Transazioni di storno con commissione di rettifica e commissione di rettifica |
 | [!UICONTROL CORRECTION] | -- |
 | [!UICONTROL CURRENCY_CONVERSION] | -- |

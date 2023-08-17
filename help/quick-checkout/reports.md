@@ -6,13 +6,13 @@ feature: Checkout, Services
 source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Rapporti
 
-[!DNL Quick Checkout] per Adobe Commerce e Magenti Open Source offre una funzione di reporting completa che ti permette di ottenere informazioni dettagliate sulle statistiche sull’esperienza di pagamento del tuo negozio.
+[!DNL Quick Checkout] per Adobe Commerce e Magento Open Source offre una funzione di reporting completa che ti permette di ottenere informazioni dettagliate sulle statistiche sull’esperienza di pagamento del tuo negozio.
 
 ![Visualizzazione Rapporti](assets/reports-view-big-checkout.png)
 

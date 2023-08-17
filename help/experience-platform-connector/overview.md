@@ -1,12 +1,12 @@
 ---
 title: Panoramica della guida
-description: Scopri come integrare i dati di Adobe Commerce con Adobe Experience Platform utilizzando il connettore Experience Platform.
+description: Scopri come integrare i dati di Adobe Commerce con Adobe Experience Platform utilizzando il connettore Experienci Platform.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
 source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
 source-wordcount: '497'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -45,11 +45,11 @@ Questa guida è stata progettata per gli esercenti di Adobe Commerce che desider
 
 ### Supporto PWA Studi
 
-Consulta la [PWA Studi](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/) documentazione di per informazioni su come utilizzare il connettore Experience Platform in una vetrina PWA Studi.
+Consulta la [PWA Studi](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/) documentazione di per informazioni su come utilizzare il connettore Experienci Platform in una vetrina PWA Studi.
 
 ### Supporto AEM {#aem-support}
 
-Consulta la [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html) documentazione per scoprire come inviare i dati di un evento vetrina da una pagina di prodotto di cui è stato eseguito il rendering AEM all’Experience Platform utilizzando il CIF - connettore Experience Platform.
+Consulta la [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html) documentazione per scoprire come inviare i dati di un evento vetrina da una pagina di prodotto di cui è stato eseguito il rendering AEM all’Experience Platform utilizzando il CIF - connettore Experienci Platform.
 
 Se hai bisogno di informazioni o hai domande che non sono trattate in questa guida, utilizza le risorse seguenti:
 

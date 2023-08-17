@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Gestire le restrizioni dei cookie
 
-Sia Adobe Commerce che Magenti Open Source richiedono il consenso prima che i dati vengano memorizzati nei cookie del browser. Per ulteriori informazioni, consulta [Modalità di restrizione dei cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html).
+Sia Adobe Commerce che Magento Open Source richiedono il consenso prima che i dati vengano memorizzati nei cookie del browser. Per ulteriori informazioni, consulta [Modalità di restrizione dei cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html).
 
 Quando distribuisci il `magento/product-recommendations` alla produzione, inizia a raccogliere gli eventi di interazione dell&#39;acquirente sul tuo vetrina. Poiché i dati per questi eventi possono essere memorizzati nei cookie del browser o nell’archiviazione locale, la funzione supporta la modalità di restrizione dei cookie in quanto non raccoglie gli eventi fino a quando l’acquirente non ha fornito il consenso ai cookie.
 
@@ -19,18 +19,18 @@ Questo potrebbe non funzionare con le soluzioni di consenso dei cookie di terze 
 
 - Nome del cookie:
 
-   ```text
-   `const DNT_COOKIE = "mg_dnt";`
-   ```
+  ```text
+  `const DNT_COOKIE = "mg_dnt";`
+  ```
 
 - Imposta il cookie do-not-track per disabilitare la raccolta dati:
 
-   ```text
-   `$.mage.cookies.set(DNT_COOKIE, true);`
-   ```
+  ```text
+  `$.mage.cookies.set(DNT_COOKIE, true);`
+  ```
 
 - Per cancellare il cookie quando l&#39;utente accetta i cookie:
 
-   ```text
-   `$.mage.cookies.clear(DNT_COOKIE);`
-   ```
+  ```text
+  `$.mage.cookies.clear(DNT_COOKIE);`
+  ```

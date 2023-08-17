@@ -54,7 +54,7 @@ Consulta [[!DNL Quick Checkout] configurare le impostazioni del servizio](../qui
 
 >[!NOTE]
 >
-> Primo accesso al momento **accesso automatico** L&#39;opzione è abilitata richiede il consenso dell&#39;utente per autorizzarla accettando una finestra popup.
+> Primo accesso al momento **accesso automatico** è abilitato richiede il consenso dell&#39;utente per autorizzarlo accettando una finestra popup.
 
 ## Nuovo [!DNL Bolt] account
 

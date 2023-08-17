@@ -31,7 +31,7 @@ mse.publish.custom({
 });
 ```
 
-In Experience Platform Edge:
+In Experienci Platform Edge:
 
 ```javascript
 {
@@ -63,7 +63,7 @@ mse.publish.productPageView({
 });
 ```
 
-In Experience Platform Edge:
+In Experienci Platform Edge:
 
 ```javascript
 {
@@ -88,7 +88,7 @@ mse.publish.productPageView({
 });
 ```
 
-In Experience Platform Edge:
+In Experienci Platform Edge:
 
 ```javascript
 {

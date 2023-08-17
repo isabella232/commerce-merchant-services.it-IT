@@ -6,7 +6,7 @@ feature: Checkout, Services
 source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '190'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Puoi configurare [!DNL Quick Checkout] in base alle tue esigenze utilizzando le opzioni disponibili in Adobe Commerce Admin.
 
-[!DNL Quick Checkout] per Adobe Commerce e Magenti Open Source consente di effettuare un ordine direttamente dall’Amministratore per i tuoi acquirenti che necessitano di assistenza. Il **[!UICONTROL Create New Order]** Il modulo include tutte le informazioni necessarie per completare il normale processo di pagamento, incluso il modulo sicuro della carta di credito per acquisire le informazioni sulla carta di credito. Consulta [Creazione di un ordine](https://docs.magento.com/user-guide/customers/customer-account-create-order.html){target="_blank"} per informazioni dettagliate sui passaggi richiesti.
+[!DNL Quick Checkout] per Adobe Commerce e Magento Open Source consente di effettuare un ordine direttamente dall’Amministratore per i tuoi acquirenti che necessitano di assistenza. Il **[!UICONTROL Create New Order]** Il modulo include tutte le informazioni necessarie per completare il normale processo di pagamento, incluso il modulo sicuro della carta di credito per acquisire le informazioni sulla carta di credito. Consulta [Creazione di un ordine](https://docs.magento.com/user-guide/customers/customer-account-create-order.html){target="_blank"} per informazioni dettagliate sui passaggi richiesti.
 
 ## Campi carta di credito ospitati
 

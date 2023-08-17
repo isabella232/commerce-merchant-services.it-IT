@@ -58,7 +58,7 @@ Poiché Catalog Service funziona come un servizio, gli integratori non devono pr
 
 Lo schema riduce la diversità dei tipi di prodotto a due casi d’uso:
 
-* I prodotti semplici sono quelli definiti con un unico prezzo e quantità. Catalog Service mappa i tipi di prodotti semplici, virtuali, scaricabili e gift card su `simpleProductViews`.
+* I prodotti semplici sono quelli definiti con un prezzo e una quantità unici. Catalog Service mappa i tipi di prodotti semplici, virtuali, scaricabili e gift card su `simpleProductViews`.
 
 * I prodotti complessi sono costituiti da più prodotti semplici. Il componente prodotti semplici può avere prezzi diversi. Un prodotto complesso può anche essere definito in modo che l&#39;acquirente possa specificare la quantità di componenti semplici prodotti. Catalog Service mappa i tipi di prodotto configurabili, bundle e raggruppati su `complexProductViews`.
 

@@ -286,7 +286,7 @@ Configura le opzioni di spedizione Store Fulfillment che determinano la disponib
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable Ship From Store]</strong></td>
-<td>Abilita o disabilita l’opzione Consegna a domicilio nei negozi dei tuoi esercenti. Se questa opzione è abilitata, le posizioni dei negozi di esercenti vengono considerate in forma aggregata con altre origini assegnate nelle scorte associate al sito Web.<br></br>Nei servizi Inventory management standard, il [!DNL Ship from Store] L'opzione is è intrinseca e non può essere disabilitata. Con la soluzione Store Fulfillment è possibile attivarla o disattivarla.<br></br>È possibile regolare questa impostazione in base alla posizione dell'esercente e al prodotto.</td>
+<td>Abilita o disabilita l’opzione Consegna a domicilio nei negozi dei tuoi esercenti. Se questa opzione è abilitata, le posizioni dei negozi di esercenti vengono considerate in forma aggregata con altre origini assegnate nelle scorte associate al sito Web.<br></br>Nei servizi Inventory management standard, il [!DNL Ship from Store] L'opzione is è intrinseca e non può essere disabilitata. Con la soluzione Store Fulfillment è possibile attivarla o disattivarla.<br></br>Puoi regolare questa impostazione in base alla posizione dell’esercente e al prodotto.</td>
 <td>Globale</td>
 <td>No</td>
 </tr>

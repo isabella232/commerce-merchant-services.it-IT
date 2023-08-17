@@ -73,7 +73,7 @@ Nella tabella seguente vengono illustrate le proprietà predefinite di ricerca e
 |--- |--- |--- |
 | allow_open_amount | Sì | Filtrabile (con risultati) |
 | descrizione | Sì | No |
-| nome | Sì | No |
+| name | Sì | No |
 | prezzo | Sì | Filtrabile (con risultati) |
 | short_description | Sì | No |
 | sku | Sì | No |

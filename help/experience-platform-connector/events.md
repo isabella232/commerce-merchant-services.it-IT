@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Eventi connettore Experience Platform
 
-Di seguito è riportato un elenco degli eventi Commerce disponibili quando installi l’estensione del connettore Experience Platform. I dati raccolti da questi eventi vengono inviati a Adobe Experience Platform Edge. Puoi anche creare [eventi personalizzati](custom-events.md) per la raccolta di dati aggiuntivi non inclusi nella confezione.
+Di seguito è riportato un elenco degli eventi Commerce disponibili quando installi l’estensione del connettore Experienci Platform. I dati raccolti da questi eventi vengono inviati a Adobe Experience Platform Edge. Puoi anche creare [eventi personalizzati](custom-events.md) per la raccolta di dati aggiuntivi non inclusi nella confezione.
 
 Oltre ai dati raccolti dai seguenti eventi, otterrai anche [altri dati](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) fornite da Adobe Experience Platform Web SDK.
 
 ## Eventi vetrina
 
-Gli eventi di vetrina raccolgono dati comportamentali anonimi dai tuoi acquirenti durante la navigazione sul tuo sito. Puoi utilizzare i dati raccolti da questi eventi per creare promozioni e campagne indirizzate a un gruppo specifico di acquirenti. I dati dell’evento Storefront includono solo prodotti semplici e configurabili.
+Gli eventi di vetrina raccolgono dati comportamentali anonimi dagli acquirenti che navigano sul tuo sito. Puoi utilizzare i dati raccolti da questi eventi per creare promozioni e campagne indirizzate a un gruppo specifico di acquirenti. I dati dell’evento Storefront includono solo prodotti semplici e configurabili.
 
 >[!NOTE]
 >
@@ -318,7 +318,7 @@ Nella tabella seguente sono descritti i dati raccolti per questo evento.
 
 ## Cerca eventi
 
-Gli eventi di ricerca forniscono dati rilevanti per l’intento dell’acquirente. L&#39;intuizione dell&#39;intento di un cliente aiuta i commercianti a capire come gli acquirenti stanno cercando gli articoli, cosa cliccano e, in ultima analisi, acquistano o abbandonano. Un esempio di come puoi utilizzare questi dati è se desideri eseguire il targeting degli acquirenti esistenti che cercano il tuo prodotto principale, ma non acquistano mai il prodotto.
+Gli eventi di ricerca forniscono dati rilevanti per l’intento dell’acquirente. L&#39;intuizione dell&#39;intento di un acquirente aiuta i commercianti a vedere come gli acquirenti stanno cercando gli articoli, cosa cliccano e in ultima analisi acquistano o abbandonano. Un esempio di come puoi utilizzare questi dati è se desideri eseguire il targeting degli acquirenti esistenti che cercano il tuo prodotto principale, ma non acquistano mai il prodotto.
 
 Utilizza il `uniqueIdentifier` campo trovato in entrambi `searchRequestSent` e `searchResponseReceived` eventi per fare riferimento incrociato tra una richiesta di ricerca e la risposta di ricerca corrispondente.
 
@@ -384,7 +384,7 @@ Gli eventi B2B contengono [elenco richieste di acquisto](https://experienceleagu
 
 | Descrizione | Nome evento XDM |
 |---|---|
-| Attivazione quando un acquirente crea un nuovo elenco di richieste. | `commerce.requisitionListOpens` |
+| Attivazione quando un acquirente crea un nuovo elenco di richieste di acquisto. | `commerce.requisitionListOpens` |
 
 #### Dati raccolti da createRichiesteList
 

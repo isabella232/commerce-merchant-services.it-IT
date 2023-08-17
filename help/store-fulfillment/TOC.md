@@ -9,12 +9,12 @@ recommendations: noDisplay
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '84'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
 
-# Evasione negozio per Commerce {#store-fulfillment}
+# Evasione store per Commerce {#store-fulfillment}
 
 - [Panoramica della guida](guide-overview.md)
 - [Introduzione a [!DNL Store Fulfillment]](introduction.md)

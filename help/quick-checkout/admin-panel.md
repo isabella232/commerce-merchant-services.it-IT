@@ -6,13 +6,13 @@ feature: Checkout, Services
 source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '198'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Introduzione alla [!DNL Quick Checkout] Pannello di amministrazione
 
-[!DNL Quick Checkout] per Adobe Commerce e Magenti Open Source fornisce una vista del pannello di amministrazione con tutte le informazioni necessarie per configurare e utilizzare l’estensione.
+[!DNL Quick Checkout] per Adobe Commerce e Magento Open Source fornisce una vista del pannello di amministrazione con tutte le informazioni necessarie per configurare e utilizzare l’estensione.
 
 1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**:
 1. In questa visualizzazione, è possibile accedere al _Pannello di amministrazione_ panoramica, _Risorse_ informazioni su [!DNL Quick Checkout], get _Guida e supporto_, o configura l&#39;estensione tramite _Impostazioni_.

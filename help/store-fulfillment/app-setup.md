@@ -41,7 +41,7 @@ L&#39;app Store Assist richiede due tipi di configurazione:
 
    - **Localizzazione**- Seleziona la lingua disponibile per l&#39;app. Scegliere il formato di data e ora e selezionare le unità di misura predefinite e la valuta predefinita.
 
-   - **Tempo di inattività**- Specifica per quanto tempo l&#39;app deve essere inattiva prima della disconnessione.
+   - **Tempo di inattività**- Specifica per quanto tempo l&#39;app deve essere inattiva prima di disconnettersi.
 
    - **Annullamento dallo store**- Specificare se gli ordini possono essere annullati dallo store e quali ruoli dispongono delle autorizzazioni di annullamento
 
@@ -67,7 +67,7 @@ Dopo che l&#39;app Store Assist è stata configurata, gli associati possono scar
 
 - Scarica l’app Store Assist da [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"} or the [Google Play store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"}.
 
-- Gli associati all&#39;archivio richiedono le seguenti informazioni per effettuare l&#39;accesso:
+- Per l&#39;accesso, gli Associati archivio richiedono le seguenti informazioni:
 
    - **[!UICONTROL Company name]** associato all’account Store Assist
 

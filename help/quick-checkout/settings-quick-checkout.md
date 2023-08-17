@@ -6,13 +6,13 @@ feature: Checkout, Services
 source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '265'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # [!DNL Quick Checkout] Impostazioni
 
-[!DNL Quick Checkout] per Adobe Commerce e Magenti Open Source fornisce una vista di configurazione con tutte le informazioni necessarie per impostare l’estensione.
+[!DNL Quick Checkout] per Adobe Commerce e Magento Open Source fornisce una vista di configurazione con tutte le informazioni necessarie per impostare l’estensione.
 
 Per accedere a queste impostazioni di configurazione:
 

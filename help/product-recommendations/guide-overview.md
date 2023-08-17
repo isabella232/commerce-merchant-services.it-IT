@@ -1,5 +1,5 @@
 ---
-title: '''[!DNL Product Recommendations] Panoramica della guida"'
+title: '[!DNL Product Recommendations] Panoramica della guida'
 description: Informazioni complete su [!DNL Product Recommendations] per gli amministratori di Adobe Commerce, incluse l’installazione e l’onboarding
 seo-title: Adobe Commerce [!DNL Product Recommendations] Guide
 seo-description: Describes how to use [!DNL Product Recommendations] with Adobe Commerce.
@@ -8,7 +8,7 @@ feature: Services, Recommendations
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '214'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -26,14 +26,14 @@ Questa guida tratta i seguenti argomenti:
 * Tutti [!DNL Product Recommendations]attività specifiche di che vengono eseguite nell’amministratore.
 * Tutti [!DNL Product Recommendations]attività specifiche eseguite utilizzando [!DNL Commerce] riga di comando
 
-Questa guida non descrive le funzionalità principali di Adobe Commerce e Magenti Open Source.
+Questa guida non descrive le funzionalità principali di Adobe Commerce e Magento Open Source.
 
 ## Documentazione aggiuntiva
 
-| Guida | Descrizione |
+| Guida  | Descrizione |
 |------ | ----------- |
-| [Guida utente di Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce.html) | Documentazione incentrata sui commercianti per Adobe Commerce e Magenti Open Source |
-| [Guida per gli sviluppatori di Adobe Commerce 2.4](https://developer.adobe.com/commerce/docs) | Documentazione incentrata sugli sviluppatori utilizzata per creare e personalizzare Adobe Commerce o Magenti Open Source |
+| [Guida utente di Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce.html) | Documentazione incentrata sui commercianti per Adobe Commerce e Magento Open Source |
+| [Guida per gli sviluppatori di Adobe Commerce 2.4](https://developer.adobe.com/commerce/docs) | Documentazione incentrata sugli sviluppatori utilizzata per creare e personalizzare Adobe Commerce o Magento Open Source |
 
 ## Supporto
 
