@@ -5,9 +5,9 @@ role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Communications, Configuration
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1233'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Configura i modelli e-mail per le vendite dall’Amministratore: **[!UICONTROL S
 </thead>
 <tbody><tr>
 <td><strong>Invio asincrono</strong></td>
-<td>Disattiva questa funzione. L’invio asincrono di e-mail non è supportato. Per velocizzare le comunicazioni e i tempi di risposta per il ritiro dello store, invia immediatamente le e-mail anziché raggrupparle in batch. </td>
+<td>Determina se le e-mail di vendita vengono inviate in modo asincrono. Opzioni: <br/>**`Disable`** - (Predefinito) Le e-mail di vendita vengono inviate quando attivate da un evento. Utilizza l’impostazione predefinita per ottenere i tempi di comunicazione e risposta più rapidi per il ritiro dello store. <br/>**`Abilita`** - L’abilitazione di questa opzione sposta in background i processi che gestiscono le notifiche e-mail di pagamento e di elaborazione dell’ordine, in modo che vengano inviati a intervalli regolari predeterminati.</td>
 <td>Visualizzazione store</td>
 <td>No</td>
 </tr>
