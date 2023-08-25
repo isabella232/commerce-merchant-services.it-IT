@@ -4,9 +4,9 @@ description: Scopri come creare eventi personalizzati per collegare i dati di Ad
 exl-id: 5a754106-c66a-4280-9896-6d065df8a841
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
+source-git-commit: 659dd2d1b298ec2a98bb4365a46b09d7468daaad
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,11 @@ ht-degree: 0%
 
 Gli eventi personalizzati sono supportati solo per Adobe Experience Platform. I dati personalizzati non vengono inoltrati alle dashboard di Adobe Commerce e ai tracker di metriche.
 
-Per qualsiasi `custom` , il raccoglitore aggiunge un `personId` (`ecid`) a `customContext` e racchiude un `xdm` intorno a esso prima dell&#39;inoltro al bordo.
+Per qualsiasi `custom` l&#39;agente di raccolta:
+
+- Aggiunte `identityMap` con `ECID` come identità primaria
+- Include `email` in `identityMap` come identità secondaria _se_ `personalEmail.address` è impostato nell’evento
+- Racchiude l&#39;evento completo in un `xdm` oggetto prima dell&#39;inoltro al server Edge
 
 Esempio:
 
@@ -27,7 +31,11 @@ Evento personalizzato pubblicato tramite SDK eventi di Adobe Commerce:
 
 ```javascript
 mse.publish.custom({
-    customContext: { customStrAttr: "cheetah", customNumAttr: 128 },
+    commerce: {
+        saveForLaters: {
+            value: 1,
+        },
+    },
 });
 ```
 
@@ -35,11 +43,27 @@ In Experienci Platform Edge:
 
 ```javascript
 {
-    xdm: {
-        personId: 'ecid1234',
-        customStrAttr: 'cheetah',
-        customNumAttr: 128
+  xdm: {
+    identityMap: {
+      ECID: [
+        {
+          id: 'ecid1234',
+          primary: true
+        }
+      ],
+      email: [
+        {
+          id: "runs@safari.ke",
+          primary: false
+        }
+      ]
+    },
+    commerce: {
+        saveForLaters: {
+            value: 1
+        }
     }
+  }
 }
 ```
 
@@ -51,7 +75,11 @@ In Experienci Platform Edge:
 
 Le sostituzioni di attributo per gli eventi standard sono supportate solo per l’Experience Platform. I dati personalizzati non vengono inoltrati alle dashboard di Commerce e ai tracker di metriche.
 
-Per qualsiasi evento con un set `customContext`, il raccoglitore sostituisce `personId` e Adobe Analytics e inoltra tutti gli altri attributi impostati in `customContext`.
+Per qualsiasi evento con `customContext`, il raccoglitore sostituisce i campi join impostati nei contesti rilevanti con i campi in `customContext`. Il caso d’uso per le sostituzioni si verifica quando uno sviluppatore desidera riutilizzare ed estendere i contesti impostati da altre parti della pagina in eventi già supportati.
+
+>[!NOTE]
+>
+>Quando si esegue l’override di eventi personalizzati, l’inoltro di eventi ad Experienci Platform deve essere disattivato per quel tipo di evento per evitare un doppio conteggio.
 
 Esempi:
 
@@ -59,7 +87,17 @@ Visualizzazione prodotto con sostituzioni pubblicate tramite SDK per eventi di A
 
 ```javascript
 mse.publish.productPageView({
-    customContext: { customCode: "okapi" },
+    productListItems: [
+        {
+            productCategories: [
+                {
+                    categoryID: "cat_15",
+                    categoryName: "summer pants",
+                    categoryPath: "pants/mens/summer",
+                },
+            ],
+        },
+    ],
 });
 ```
 
@@ -67,41 +105,31 @@ In Experienci Platform Edge:
 
 ```javascript
 {
-    xdm: {
-        eventType: 'commerce.productViews',
-        personId: 'ecid1234',
-        customCode: 'okapi',
-        commerce: {
-            productViews: {
-                value : 1
-            }
+  xdm: {
+    eventType: 'commerce.productViews',
+    identityMap: {
+      ECID: [
+        {
+          id: 'ecid1234',
+          primary: true,
         }
-    }
-}
-```
-
-La visualizzazione del prodotto con le sostituzioni di Adobe Commerce pubblicata tramite l’SDK degli eventi di Adobe Commerce:
-
-```javascript
-mse.publish.productPageView({
-    customContext: { commerce: { customCode: "mongoose" } },
-});
-```
-
-In Experienci Platform Edge:
-
-```javascript
-{
-    xdm: {
-        eventType: 'commerce.productViews',
-        personId: 'ecid1234',
-        commerce: {
-            customCode: 'mongoose',
-            productViews: {
-                value : 1
-            }
-        }
-    }
+      ]
+    },
+    commerce: {
+      productViews: {
+        value : 1,
+      }
+    },
+    productListItems: [{
+        SKU: "1234",
+        name: "leora summer pants",
+        productCategories: [{
+            categoryID: "cat_15",
+            categoryName: "summer pants",
+            categoryPath: "pants/mens/summer",
+        }],
+    }],
+  }
 }
 ```
 

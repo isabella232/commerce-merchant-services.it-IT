@@ -3,9 +3,9 @@ title: Connettere dati Commerce a Adobe Experience Platform
 description: Scopri come collegare i dati di Commerce a Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
+source-git-commit: 9717de31ee5545a33462776f3b2bc529ec9e08f2
 workflow-type: tm+mt
-source-wordcount: '1952'
+source-wordcount: '1951'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ Per ulteriori informazioni sugli eventi, consulta l’argomento [vetrina](events
 
 >[!NOTE]
 >
->Questa funzione è disponibile solo per gli utenti beta. Per partecipare alla versione beta, invia un’e-mail al seguente indirizzo: [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+>Questa funzione è disponibile solo per gli utenti beta. Per partecipare alla versione beta, invia un’e-mail al seguente indirizzo: `dataconnection@adobe.com`.
 
 Adobe Commerce raccoglie fino a cinque anni di dati cronologici sugli ordini e sullo stato. Puoi utilizzare il connettore Experienci Platform per inviare i dati storici all’Experience Platform per arricchire i profili dei clienti in base a tali ordini passati. I dati vengono memorizzati in un set di dati in Experienci Platform.
 
