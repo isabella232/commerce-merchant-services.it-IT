@@ -3,7 +3,7 @@ title: '[!DNL Product Recommendations] Note sulla versione'
 description: Informazioni aggiornate sulla versione di [!DNL Product Recommendations] da Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 91ad3b5f1fb9248685fc67071a7191dfbf6c2472
+source-git-commit: 1dc69bf92ce8c9105724dea0ce70c34afa25a091
 workflow-type: tm+mt
 source-wordcount: '1144'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Le note sulla versione includono:
 ![Correzione](../assets/fix.svg) Correzioni e miglioramenti
 ![Bug](../assets/bug.svg) Problemi noti
 
-Consulta la documentazione per gli sviluppatori per [informazioni sulla compatibilità dei prodotti](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+Consulta la documentazione per gli sviluppatori per [informazioni sul supporto del prodotto](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## Aggiornamenti dei servizi in hosting
 
@@ -47,7 +47,7 @@ _25 aprile 2023_
 
 ### 5.0.0 di magento/product-recommendations
 
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Nuovo](../assets/new.svg) Recommendations di prodotto aggiornato per supportare Adobe Commerce 2.4.6.
 ![Nuovo](../assets/new.svg) Questa è una versione principale. [Modifica](install-configure.md#update) la radice `composer.json` per il progetto.
@@ -62,13 +62,13 @@ _25 aprile 2023_
 
 ### 4.0.1 di magento/product-recommendations
 
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Correzione](../assets/fix.svg) In precedenza, in Product Recommendations veniva visualizzato un errore quando la valuta di visualizzazione veniva cambiata in una valuta non predefinita. Il cambio delle valute ora funziona correttamente.
 
 ### 4.0.0 di magento/product-recommendations
 
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Nuovo](../assets/new.svg) Aggiunto [indicatori di predisposizione](create.md) per aiutarti a visualizzare l’avanzamento della formazione di ciascun tipo di consiglio.
 ![Nuovo](../assets/new.svg) Questa è una versione principale. [Modifica](install-configure.md#update) la radice `composer.json` per il progetto. Questa versione richiede anche di fornire due chiavi API durante l’installazione e la configurazione di Product Recommendations: [una chiave di produzione e una chiave sandbox](../landing/saas.md).
@@ -79,27 +79,27 @@ _25 aprile 2023_
 
 ### 3.3.7 di magento/product-recommendations
 
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Nuovo](../assets/new.svg) Supporto PHP 8.1 aggiunto
 ![Nuovo](../assets/new.svg) È stato migliorato il ridimensionamento delle immagini in modo da gestirlo più correttamente nel modello di visualizzazione di riferimento
 
 ### 3.3.6 di magento/product-recommendations
 
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Nuovo](../assets/new.svg) Ottimizzato [!DNL Product Recommendations] metapackage elencando esplicitamente le dipendenze
 
 ### 3.3.5 di magento/product-recommendations
 
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Nuovo](../assets/new.svg) Aggiunto [Supporto B2B](onboarding.md#b2bsupport) nel Recommendations del prodotto
 ![Nuovo](../assets/new.svg) Sono stati aggiunti nuovi feed a [sincronizza dati catalogo](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) a Commerce Services tramite la riga di comando
 
 ### 3.3.3 di magento/product-recommendations
 
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Nuovo](../assets/new.svg) Aggiunto nuovo [tipi di consigli](type.md): Conversione (dalla vista al carrello), Conversione (dalla vista all’acquisto) e Visualizzato di recente. Questi nuovi tipi di consigli sono disponibili nel `magento/product-recommendations` modulo 3.2.2 e versioni successive.
 ![Correzione](../assets/fix.svg) È stato risolto un problema che causava il blocco errato di un cookie da parte di Web Application Firewall (WAF) di Fastly
@@ -108,44 +108,44 @@ _25 aprile 2023_
 
 ### 3.3.2 di magento/product-recommendations
 
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Correzione](../assets/fix.svg) È stata corretta una dipendenza mancante per il supporto B2B
 
 ### 3.3.1 di magento/product-recommendations
 
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Nuovo](../assets/new.svg) È stato aggiunto il supporto per i prezzi di gruppo dei clienti B2B. Quando si imposta un [filtro prezzi](filters.md) in un’unità di consigli, i clienti B2B che hanno effettuato l’accesso vedono i prezzi del gruppo di clienti impostati per i prodotti visualizzati.
 
 ### 3.3.0 di magento/product-recommendations
 
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Nuovo](../assets/new.svg) È stato aggiunto il supporto di Adobe Client Data Layer per standardizzare la raccolta di dati comportamentali tra le funzioni e i servizi di Adobe Commerce. Consulta la [leggimi](https://github.com/adobe/magento-storefront-event-collector/blob/main/README.md) per ulteriori informazioni.
 
 ### 3.2.6 di magento/product-recommendations
 
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Correzione](../assets/fix.svg) È stato corretto un errore modale JavaScript
 ![Correzione](../assets/fix.svg) È stato risolto un problema che causava il blocco errato di un cookie da parte di Web Application Firewall (WAF) di Fastly
 
 ### 3.2.5 di magento/product-recommendations
 
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Nuovo](../assets/new.svg) Servizi di Magento rinominati [Servizi Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) e una migliore usabilità in Admin
 
 ### 3.2.4 di magento/product-recommendations
 
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Correzione](../assets/fix.svg) È stato corretto l’errore &quot;Impossibile recuperare i dati delle opzioni di prodotto configurabili&quot; durante l’indicizzazione degli attributi del prodotto
 
 ### 3.2.3 di magento/product-recommendations
 
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Correzione](../assets/fix.svg) È stato corretto l’errore &quot;Impossibile recuperare i dati delle opzioni di prodotto configurabili&quot; durante la sincronizzazione del catalogo
 ![Correzione](../assets/fix.svg) È stato risolto un problema che impediva la corretta impostazione del codice store quando si abilitava la configurazione &quot;Aggiungi codice store a URL&quot;
@@ -153,7 +153,7 @@ _25 aprile 2023_
 
 ### 3.2.2 di magento/product-recommendations
 
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Nuovo](../assets/new.svg) Aggiunta la possibilità di [visualizzare in anteprima i risultati dei consigli](create.md) al momento della creazione. Potrebbe essere necessario aggiornare il modulo alla versione più recente.
 ![Nuovo](../assets/new.svg) Aggiunta la possibilità di [monitorare e gestire](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) il processo di sincronizzazione del catalogo dall’amministratore.
@@ -162,13 +162,13 @@ _25 aprile 2023_
 
 ### 1.2.1 di magento/module-page-builder-consigli-di-prodotto per Page Builder
 
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Nuovo](../assets/new.svg) È stato aggiunto il supporto per la versione 3.2.0+ di `magento/product-recommendations` modulo
 
 ### 3.1.0 di magento/product-recommendations
 
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Nuovo](../assets/new.svg) Aggiunta la possibilità di [risincronizza](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) il catalogo ai servizi SaaS tramite riga di comando.
 ![Nuovo](../assets/new.svg) È stato aggiunto il supporto per i prefissi delle tabelle del database
@@ -176,57 +176,57 @@ _25 aprile 2023_
 
 ### 3.0.8 di magento/product-recommendations
 
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Correzione](../assets/fix.svg) È stato risolto un problema a causa del quale gli eventi venivano inviati per la raccolta dati prima della configurazione del modulo, causando traffico non valido.
 
 ### 3.0.6 di magento/product-recommendations
 
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Nuovo](../assets/new.svg) **(Beta)** Include il supporto per i nuovi [Somiglianza visiva](type.md#visualsim) tipo di consiglio.
 
 ### 1.0.0 di magento/module-visual-product-recommendations
 
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Nuovo](../assets/new.svg) **(Beta)** [Somiglianza visiva](type.md#visualsim). Con il _Somiglianza visiva_ tipo di consiglio, puoi implementare un’unità di consigli nella pagina dei dettagli del prodotto che mostra prodotti visivamente simili al prodotto visualizzato.
 
 ### 3.0.5 di magento/product-recommendations
 
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Correzione](../assets/fix.svg) È stato corretto l’errore &quot;Impossibile recuperare i dati delle opzioni del prodotto&quot; che poteva verificarsi durante l’esportazione del catalogo.
 ![Correzione](../assets/fix.svg) Il simbolo di valuta nel _Ricavi_ colonna sulla _Recommendations del prodotto_ la dashboard ora riflette correttamente la valuta di base configurata.
 
 ### 3.0.4 di magento/product-recommendations
 
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Correzione](../assets/fix.svg) È stato aggiunto il supporto per Adobe Commerce 2.4.0
 
 ### 3.0.3 di magento/product-recommendations
 
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Correzione](../assets/fix.svg) Miglioramento dell’implementazione dei simboli nel modello storefront
 
 ### 1.0.4 di magento/module-page-builder-consigli-di-prodotto per Page Builder
 
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Nuovo](../assets/new.svg) È stato aggiunto il nome del consiglio di prodotto durante la modifica del tipo di contenuto Page Builder
 
 ### 3.0.2 magento/product-recommendations
 
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Nuovo](../assets/new.svg) È stata aggiunta una colonna di stato sulla griglia durante la selezione delle unità per i consigli in Page Builder
 ![Correzione](../assets/fix.svg) È stato risolto un problema relativo a protocolli http/https errati negli URL di prodotti e immagini.
 
 ### 3.0.1 di magento/product-recommendations
 
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 Questa è una versione principale. [Modifica](install-configure.md#update) file compositore.json principale del progetto.
 
@@ -237,13 +237,13 @@ Questa è una versione principale. [Modifica](install-configure.md#update) file 
 
 ### 1.0.3 di magento/module-page-builder-consigli-di-prodotto per Page Builder
 
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Nuovo](../assets/new.svg) Supporto di Page Builder. Con l’integrazione di Page Builder, puoi posizionare in modo accurato e dettagliato le unità di consigli in qualsiasi posizione arbitraria su contenuti creati da Page Builder. Puoi anche assegnare uno stile ai titoli e alle unità di consigli. Vai a [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) per ulteriori informazioni.
 
 ### 2.0.0 di magento/product-recommendations
 
-[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Nuovo](../assets/new.svg) Rilascio di disponibilità generale.
 
