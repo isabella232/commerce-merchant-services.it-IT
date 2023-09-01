@@ -3,9 +3,10 @@ title: Sicurezza e conformità
 description: Verifica i requisiti di sicurezza e conformità per il sito.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
+source-git-commit: fef972355565472f0d0851a2e3cace692fb2db67
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -61,3 +62,10 @@ Con i Pulsanti avanzati PayPal non vengono trasmessi dati regolamentati PCI ai s
 Per motivi di sicurezza, PayPal non passa l&#39;indirizzo di fatturazione durante il pagamento: paese, e-mail e nome sono le uniche informazioni di fatturazione utilizzate. Facoltativamente, puoi abilitare l&#39;estrazione PayPal del tuo sito per restituire l&#39;indirizzo di fatturazione completo contattando PayPal e completando un processo di verifica.
 
 PayPal ha anche la protezione integrata contro le frodi che utilizza l&#39;apprendimento automatico per aiutarti a combattere le frodi. Vedi PayPal [Documentazione sulla protezione del venditore](https://www.paypal.com/us/webapps/mpp/security/seller-protection) per ulteriori informazioni.
+
+## Protezione dalle frodi
+
+È possibile abilitare la protezione antifrode automatizzata per i servizi di pagamento con [Estensione Signifyd](https://commercemarketplace.adobe.com/signifyd-module-connect.html).
+
+Consulta [Protezione contro le frodi significative](fraud-protection.md) per ulteriori informazioni.
+

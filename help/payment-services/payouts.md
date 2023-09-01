@@ -5,16 +5,16 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1316'
 ht-degree: 0%
 
 ---
 
 # Rapporto Pagamenti
 
-[!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] offre una funzione di reporting completa che ti permette di avere una visione chiara degli ordini e dei pagamenti del tuo negozio.
+[!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] offre una funzione di reporting completa che consente di ottenere una chiara visualizzazione delle transazioni, degli ordini e dei pagamenti del negozio.
 
 Sono disponibili due visualizzazioni di reporting Pagamenti per consentirti di visualizzare informazioni approfondite su tutti i tuoi pagamenti:
 
@@ -22,6 +22,8 @@ Sono disponibili due visualizzazioni di reporting Pagamenti per consentirti di v
 * **[Visualizzazione report Pagamenti](#payouts-report-view)**- Report disponibile in Pagamenti che mostra informazioni dettagliate sui pagamenti per tutte le transazioni
 
 Le visualizzazioni Pagamenti mostrano immediatamente informazioni complete sui pagamenti, consentendo la completa trasparenza dell&#39;importo del pagamento, del volume elaborato e dei rapporti dettagliati a livello di transazione per la quadratura finanziaria.
+
+È possibile [scarica transazioni di pagamento](#download-transactions) in un formato di file .csv da utilizzare nel software di contabilità o di gestione degli ordini esistente.
 
 >[!NOTE]
 >
@@ -65,15 +67,15 @@ La visualizzazione dati Pagamenti include le seguenti informazioni.
 
 ## Visualizzazione report Pagamenti
 
-La visualizzazione del rapporto Pagamenti è disponibile nella visualizzazione Pagamenti di Servizi di pagamento. Include tutte le informazioni disponibili sui pagamenti per il/i tuo/i negozio/i. Il [Visualizzazione dati pagamenti](#payouts-data-visualization-view) in Payment Services Home è una rappresentazione visiva degli importi aggregati al giorno in questa visualizzazione di report più dettagliata.
+La visualizzazione del rapporto Pagamenti è disponibile nella visualizzazione Pagamenti di Servizi di pagamento. Include tutte le informazioni disponibili sui pagamenti per il/i tuo/i negozio/i.
 
-Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** per visualizzare la tabella dettagliata della visualizzazione del rapporto Pagamenti.
+Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**per visualizzare la tabella dettagliata della visualizzazione del rapporto Pagamenti.
 
 ![Transazioni di pagamento nell&#39;amministratore](assets/payouts-report-new.png){zoomable=yes}
 
 È possibile configurare questa visualizzazione in base alle sezioni di questo argomento per presentare al meglio i dati che si desidera visualizzare.
 
-Vedi gli ID di transazioni e ordini Commerce collegati, gli importi delle transazioni, il metodo di pagamento per transazione e altro ancora, tutto all’interno del rapporto Pagamenti in Admin.
+Vedi ID di ordini e transazioni commerciali collegati, importi delle transazioni, metodo di pagamento per transazione e altro all’interno di questo rapporto.
 
 È possibile [scarica transazioni di pagamento](#download-transactions) in un formato di file .csv da utilizzare nel software di contabilità o di gestione degli ordini esistente.
 
@@ -83,7 +85,7 @@ Vedi gli ID di transazioni e ordini Commerce collegati, gli importi delle transa
 
 ### Seleziona origine dati
 
-Nella visualizzazione del rapporto Pagamenti, è possibile selezionare l&#39;origine dati:_[!UICONTROL Live]_o_[!UICONTROL Sandbox]_- per il quale si desidera visualizzare i risultati del rapporto.
+Nella visualizzazione del rapporto Pagamenti, è possibile selezionare l&#39;origine dati:**[!UICONTROL Live]** o **[!UICONTROL Sandbox]**- per il quale si desidera visualizzare i risultati del rapporto.
 
 ![Selezione di origini dati](assets/datasource.png){width=400px}
 
@@ -97,8 +99,8 @@ Le selezioni delle origini dati funzionano come segue:
 
 Per selezionare l&#39;origine dati per il rapporto Stato pagamento ordine:
 
-1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
-1. Clic **[!UICONTROL Data source]** e seleziona _[!UICONTROL Live]_o_[!UICONTROL Sandbox]_.
+1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
+1. Clic **[!UICONTROL Data source]** e seleziona **[!UICONTROL Live]** o **[!UICONTROL Sandbox]**.
 
    I risultati del report vengono rigenerati in base all&#39;origine dati selezionata.
 
@@ -114,8 +116,8 @@ Scorri verso sinistra e destra per visualizzare [informazioni per ogni operazion
 
 Nella visualizzazione del rapporto Pagamenti è possibile personalizzare l&#39;intervallo di tempo per le transazioni di pagamento che si desidera visualizzare inserendo date specifiche o selezionando un intervallo di date dal selettore delle date:
 
-1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
-1. Fai clic sul filtro del selettore calendario Date transazione.
+1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
+1. Fai clic su _[!UICONTROL Transaction dates]_filtro selettore calendario.
 1. Scegli l’intervallo di date applicabile.
 1. Visualizza gli stati dei pagamenti nella griglia per le date specificate.
 
@@ -123,7 +125,7 @@ Nella visualizzazione del rapporto Pagamenti è possibile personalizzare l&#39;i
 
 La visualizzazione del rapporto Pagamenti mostra la maggior parte delle colonne di informazioni disponibili per impostazione predefinita. È tuttavia possibile personalizzare le colonne visualizzate nel rapporto.
 
-1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Payouts]**.
+1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. Fai clic su _Impostazioni colonna_ icona (![icona delle impostazioni delle colonne](assets/column-settings.png)).
 1. Per personalizzare le colonne visualizzate nel report, selezionare o deselezionare le colonne nell&#39;elenco.
 
@@ -133,7 +135,7 @@ La visualizzazione del rapporto Pagamenti mostra la maggior parte delle colonne 
 
 Puoi scaricare un file .csv contenente tutte le transazioni visibili nella griglia di visualizzazione Pagamenti.
 
-1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
+1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. [Personalizzare l’intervallo di date temporale per le transazioni](#customize-transactions-timeframe).
 1. Fai clic su _Scarica_ (![](assets/icon-download.png)).
 

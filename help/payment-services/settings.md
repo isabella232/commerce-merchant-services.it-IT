@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 4b70917ed09dcae72c3ec829db2e243fad7b14d3
 workflow-type: tm+mt
-source-wordcount: '2036'
+source-wordcount: '2387'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ Puoi aggiungere una [!UICONTROL Soft Descriptor] ai tuoi siti web o alla configu
 
 | Campo | Ambito | Descrizione |
 |---|---|---|
-| [!UICONTROL Enable] | sito web | Attiva o disattiva [!DNL Payment Services] per il tuo sito web. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Enable] | sito web | Attiva o disattiva [!DNL Payment Services] per il tuo sito web. Opzioni: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Payment mode] | visualizzazione store | Imposta il metodo o l’ambiente per lo store. Opzioni: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Sandbox Merchant ID] | visualizzazione store | L’ID venditore della sandbox, generato automaticamente durante l’onboarding della sandbox. |
 | [!UICONTROL Production Merchant ID] | visualizzazione store | L’ID esercente di produzione, generato automaticamente durante l’onboarding della sandbox. |
@@ -108,8 +108,9 @@ Consulta [Opzioni di pagamento](payments-options.md#credit-card-fields) per ulte
    ![Vista Home](assets/payment-services-menu-small.png)
 
 1. Selezionare la visualizzazione del punto vendita nella **[!UICONTROL Scope]** menu a discesa, per il quale si desidera attivare un metodo di pagamento.
-1. Per modificare il nome del metodo di pagamento visualizzato durante il pagamento, modificare il valore in **[!UICONTROL Checkout title]** campo.
+1. In **[!UICONTROL Credit card fields]** , modificare il valore nella sezione **[!UICONTROL Checkout title]** per modificare il nome del metodo di pagamento visualizzato durante l&#39;estrazione.
 1. A [imposta l&#39;azione di pagamento](production.md#set-payment-services-as-payment-method), attiva/disattiva **[!UICONTROL Payment action]** a `Authorize` o `Authorize and Capture`.
+1. Per assegnare la priorità a un metodo di pagamento nella pagina di pagamento, fornisci `Numeric Only` valore in **[!UICONTROL Sort order]** campo.
 1. Per abilitare [Autenticazione protetta 3DS](security.md#3ds) (`Off` per impostazione predefinita) **[!UICONTROL 3DS Secure authentication]** selettore su `Always` o `When required`.
 1. Per abilitare o disabilitare i campi della carta di credito nella pagina di pagamento, attiva/disattiva **[!UICONTROL Show on checkout page]** selettore.
 1. Per attivare o disattivare [vaulting delle carte](#card-vaulting), attiva/disattiva **[!UICONTROL Vault enabled]** selettore.
@@ -127,11 +128,47 @@ Consulta [Opzioni di pagamento](payments-options.md#credit-card-fields) per ulte
 |---|---|---|
 | [!UICONTROL Title] | visualizzazione store | Aggiungere il testo da visualizzare come titolo per questa opzione di pagamento nella vista Metodo di pagamento durante l&#39;estrazione. Opzioni: [!UICONTROL text field] |
 | [!UICONTROL Payment Action] | sito web | Il [azione di pagamento](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} per il metodo di pagamento specificato. Opzioni: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Sort order] | visualizzazione store | L&#39;ordinamento per il metodo di pagamento specificato nella pagina di pagamento. `Numeric Only` valore |
 | [!UICONTROL 3DS Secure authentication] | sito web | Attiva o disattiva [Autenticazione protetta 3DS](security.md#3ds). Opzioni: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
-| [!UICONTROL Show on checkout page] | sito web | Attiva o disattiva i campi della carta di credito da visualizzare nella pagina di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled] | visualizzazione store | Attiva o disattiva [vaulting con carta di credito](vaulting.md). Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show vaulted payment methods in Admin] | visualizzazione store | Abilita o disabilita la possibilità per l’esercente di completare gli ordini per i clienti nell’Admin [utilizzo di un metodo di pagamento a scaffale](vaulting.md). Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Debug Mode] | sito web | Attiva o disattiva la modalità di debug. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show on checkout page] | sito web | Attiva o disattiva i campi della carta di credito da visualizzare nella pagina di pagamento. Opzioni: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Vault enabled] | visualizzazione store | Attiva o disattiva [vaulting con carta di credito](vaulting.md). Opzioni: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show vaulted payment methods in Admin] | visualizzazione store | Abilita o disabilita la possibilità per l’esercente di completare gli ordini per i clienti nell’Admin [utilizzo di un metodo di pagamento a scaffale](vaulting.md). Opzioni: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Debug Mode] | sito web | Attiva o disattiva la modalità di debug. Opzioni: [!UICONTROL Off] / [!UICONTROL On] |
+
+### Apple Pay
+
+Il [!UICONTROL Apple Pay] l&#39;opzione di pagamento pulsante consente di fornire un [!UICONTROL Apple Pay] pulsante di pagamento nella cassa del tuo negozio.
+
+Consulta [Opzioni di pagamento](payments-options.md#apple-pay-buttob) per ulteriori informazioni.
+
+Puoi abilitare e configurare i [!UICONTROL Apple Pay] opzione di pagamento pulsante:
+
+1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. Selezionare la visualizzazione del punto vendita nella **[!UICONTROL Scope]** menu a discesa, per il quale si desidera attivare un metodo di pagamento.
+1. In **[!UICONTROL Apple Pay]** , modificare il valore nella sezione _[!UICONTROL Checkout title]_per modificare il nome del metodo di pagamento visualizzato durante l&#39;estrazione.
+1. A [imposta l&#39;azione di pagamento](production.md#set-payment-services-as-payment-method), attiva/disattiva **[!UICONTROL Payment action]** a `Authorize` o `Authorize and Capture`.
+1. Per attivare o disattivare Apple Pay nella pagina di pagamento, attiva **[!UICONTROL Show Apple Pay on checkout page]** selettore.
+1. Per abilitare o disabilitare Apple Pay nella pagina dei dettagli del prodotto, attiva **[!UICONTROL Show Apple Pay on product detail page]** selettore.
+1. Per attivare o disattivare Apple Pay nell’anteprima del mini carrello, attiva **[!UICONTROL Show Apple Pay on the mini cart preview]** selettore.
+1. Per abilitare o disabilitare Apple Pay nella pagina del carrello, attiva il **[!UICONTROL Show Apple Pay on cart page]** selettore.
+1. Per abilitare o disabilitare la modalità di debug, attiva/disattiva **[!UICONTROL Debug Mode]** selettore.
+1. Clic **[!UICONTROL Save]**.
+
+   Se si tenta di uscire da questa visualizzazione senza salvare le modifiche, viene visualizzata una finestra modale che richiede di ignorare le modifiche, di continuare a modificarle o di salvarle.
+
+1. [Svuota la cache](#flush-the-cache).
+
+#### Opzioni di configurazione
+
+| Campo | Ambito | Descrizione |
+|---|---|---|
+| [!UICONTROL Checkout title] | visualizzazione store | Aggiungere il testo da visualizzare come titolo per questa opzione di pagamento nella vista Metodo di pagamento durante l&#39;estrazione. Opzioni: [!UICONTROL text field] |
+| [!UICONTROL Payment Action] | sito web | Il [azione di pagamento](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions) per il metodo di pagamento specificato. Opzioni: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Show on checkout page] | sito web | Attiva o disattiva il pulsante Apple Pay da visualizzare nella pagina di pagamento. Opzioni: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show on checkout page] | sito web | Attiva o disattiva il pulsante Apple Pay per visualizzarlo nella pagina dei dettagli del prodotto. Opzioni: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show on mini cart preview] | sito web | Attiva o disattiva il pulsante Apple Pay per visualizzarlo nell’anteprima del mini carrello. Opzioni: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show on cart page] | sito web | Abilita o disabilita il pulsante Apple Pay per visualizzarlo nella pagina del carrello. Opzioni: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Debug Mode] | sito web | Attiva o disattiva la modalità di debug. Opzioni: [!UICONTROL Off] / [!UICONTROL On] |
 
 ### Pulsanti di pagamento
 
@@ -142,6 +179,7 @@ Puoi abilitare e configurare le opzioni di pagamento dei pulsanti avanzati PayPa
 1. Selezionare la visualizzazione del punto vendita nella **[!UICONTROL Scope]** menu a discesa, per il quale si desidera attivare un metodo di pagamento.
 1. Per modificare il nome del metodo di pagamento come mostrato durante il pagamento, modificare il valore in **[!UICONTROL Checkout Title]** campo.
 1. A [imposta l&#39;azione di pagamento](production.md#set-payment-services-as-payment-method), attiva/disattiva **[!UICONTROL Payment action]** a `Authorize` o `Authorize and Capture`.
+1. Per assegnare la priorità a un metodo di pagamento nella pagina di pagamento, fornisci `Numeric Only` valore in **[!UICONTROL Sort order]** campo.
 1. Utilizza i selettori per attivare o disattivare [!DNL PayPal smart button] funzioni di visualizzazione:
 
    - **[!UICONTROL Show PayPal buttons on product checkout page]**
@@ -173,26 +211,27 @@ Puoi abilitare e configurare le opzioni di pagamento dei pulsanti avanzati PayPa
 |---|---|---|
 | [!UICONTROL Title] | visualizzazione store | Aggiungere il testo da visualizzare come titolo per questa opzione di pagamento nella visualizzazione Metodo di pagamento durante l&#39;estrazione. Opzioni: campo di testo |
 | [!UICONTROL Payment Action] | sito web | Il [azione di pagamento](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} per il metodo di pagamento specificato. Opzioni: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Sort order] | visualizzazione store | L&#39;ordinamento per il metodo di pagamento specificato nella pagina di pagamento. `Numeric Only` valore |
 | [!UICONTROL Show PayPal buttons on checkout page] | visualizzazione store | Attiva o disattiva [!DNL PayPal Smart Buttons] nella pagina di pagamento. Opzioni: [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on product detail page] | visualizzazione store | Attiva o disattiva [!DNL PayPal Smart Buttons] nella pagina dei dettagli del prodotto. Opzioni: [!UICONTROL  Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal buttons in mini-cart preview] | visualizzazione store | Attiva o disattiva [!DNL PayPal Smart Buttons] nell’anteprima del mini-carrello. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal buttons on cart page] | visualizzazione store | Attiva o disattiva [!DNL PayPal Smart Buttons] sulla pagina del carrello. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal Pay Later button] | visualizzazione store | Abilita o disabilita l&#39;aspetto dell&#39;opzione di pagamento successivo in cui vengono visualizzati i pulsanti di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal Pay Later Message] | sito web | Abilita o disabilita la funzione di messaggistica Paga più tardi nel carrello, nella pagina del prodotto, nel mini-carrello e durante il flusso di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show Venmo button] | visualizzazione store | Abilita o disabilita l&#39;opzione di pagamento Venmo in cui sono visualizzati i pulsanti di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show Apple Pay button] | visualizzazione store | Abilita o disabilita l&#39;opzione di pagamento Apple Pay in cui sono visualizzati i pulsanti di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal Credit and Debit card button] | visualizzazione store | Abilita o disabilita l&#39;opzione di pagamento con carta di credito e debito in cui sono visualizzati i pulsanti di pagamento. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Debug Mode] | sito web | Attiva o disattiva la modalità di debug. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal buttons in mini-cart preview] | visualizzazione store | Attiva o disattiva [!DNL PayPal Smart Buttons] nell’anteprima del mini-carrello. Opzioni: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show PayPal buttons on cart page] | visualizzazione store | Attiva o disattiva [!DNL PayPal Smart Buttons] sulla pagina del carrello. Opzioni: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show PayPal Pay Later button] | visualizzazione store | Abilita o disabilita l&#39;aspetto dell&#39;opzione di pagamento successivo in cui vengono visualizzati i pulsanti di pagamento. Opzioni: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show PayPal Pay Later Message] | sito web | Abilita o disabilita la funzione di messaggistica Paga più tardi nel carrello, nella pagina del prodotto, nel mini-carrello e durante il flusso di pagamento. Opzioni: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show Venmo button] | visualizzazione store | Abilita o disabilita l&#39;opzione di pagamento Venmo in cui sono visualizzati i pulsanti di pagamento. Opzioni: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show Apple Pay button] | visualizzazione store | Abilita o disabilita l&#39;opzione di pagamento Apple Pay in cui sono visualizzati i pulsanti di pagamento. Opzioni: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show PayPal Credit and Debit card button] | visualizzazione store | Abilita o disabilita l&#39;opzione di pagamento con carta di credito e debito in cui sono visualizzati i pulsanti di pagamento. Opzioni: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Debug Mode] | sito web | Attiva o disattiva la modalità di debug. Opzioni: [!UICONTROL Off] / [!UICONTROL On] |
 
 ### Stile pulsante
 
-Puoi anche configurare il _[!UICONTROL Button style]_opzioni degli smart button PayPal:
+Puoi anche configurare il _[!UICONTROL Button style]_opzioni dei pulsanti di pagamento:
 
 1. Per modificare il **[!UICONTROL Layout]**, seleziona `Vertical` o `Horizontal`.
 
    >[!NOTE]
    >
-   > Se lo stile del pulsante è configurato come `Horizontal` e il tuo negozio è configurato per mostrare più pulsanti avanzati PayPal, puoi vedere solo due pulsanti visualizzati sulla pagina del prodotto, pagina di pagamento e mini-carrello, e un pulsante visualizzato nel carrello.
+   > Se lo stile del pulsante è configurato come `Horizontal` e il tuo negozio è configurato per mostrare più pulsanti di pagamento, potresti vedere solo due pulsanti visualizzati sulla pagina del prodotto, pagina di pagamento e mini-carrello, e un pulsante visualizzato nel carrello.
 
 1. Per attivare la tagline in un layout orizzontale, attiva **[!UICONTROL Show tagline]** selettore.
 1. Per modificare **[!UICONTROL Color]**, seleziona l’opzione di colore desiderata.
@@ -210,17 +249,17 @@ Puoi anche configurare il _[!UICONTROL Button style]_opzioni degli smart button 
 
 1. [Svuota la cache](#flush-the-cache).
 
-Puoi configurare [!DNL PayPal Smart Buttons] stile [nella configurazione legacy in Admin](configure-admin.md#configure-paypal-smart-buttons) o qui in [!DNL Payment Services Home]. Consulta [Guida allo stile Pulsanti di PayPal](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) per ulteriori informazioni sulle opzioni.
+Puoi configurare lo stile dei pulsanti di pagamento [nella configurazione legacy in Admin](configure-admin.md#configure-paypal-smart-buttons) o qui in [!DNL Payment Services Home]. Consulta [Guida allo stile Pulsanti di PayPal](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) per ulteriori informazioni sulla formattazione dei pulsanti di pagamento PayPal.
 
 #### Opzioni di configurazione
 
 | Campo | Ambito | Descrizione |
 |--- |--- |--- |
 | [!UICONTROL Layout] | Visualizzazione store | Consente di definire lo stile del layout dei pulsanti di pagamento. Opzioni: [!UICONTROL Vertical] / [!UICONTROL Horizontal] |
-| [!UICONTROL Tagline] | Visualizzazione store | Attiva/disattiva tagline. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Tagline] | Visualizzazione store | Attiva/disattiva tagline. Opzioni: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Color] | Visualizzazione store | Definire il colore dei pulsanti di pagamento. Opzioni: [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black] |
 | [!UICONTROL Shape] | Visualizzazione store | Definire la forma dei pulsanti di pagamento. Opzioni: [!UICONTROL Rectangular] / [!UICONTROL Pill] |
-| [!UICONTROL Responsive Button Height] | Visualizzazione store | Definisce se i pulsanti di pagamento utilizzano un&#39;altezza predefinita. Opzioni: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Responsive Button Height] | Visualizzazione store | Definisce se i pulsanti di pagamento utilizzano un&#39;altezza predefinita. Opzioni: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Height] | Visualizzazione store | Definire l&#39;altezza dei pulsanti di pagamento. Valore predefinito: nessuno |
 | [!UICONTROL Label] | Visualizzazione store | Definire l&#39;etichetta visualizzata nei pulsanti di pagamento. Opzioni: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
 
