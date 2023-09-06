@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders
-source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
-source-wordcount: '1868'
+source-wordcount: '1864'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ La visualizzazione dei dati sullo stato del pagamento dell&#39;ordine è disponi
 
 Il giorno _Amministratore_ barra laterale, vai a **Vendite** > **Servizi di pagamento** > _Ordini_ per visualizzare la visualizzazione dati [stati piano di pagamento](#statuses-information).
 
-![Visualizzazione dei dati di pagamento nell’Amministratore](assets/orderpayment-dataviz.png){zoomable=yes}
+![Visualizzazione dei dati di pagamento nell’Amministratore](assets/orderpayment-dataviz.png){width="800" zoomable="yes"}
 
 Clic **[!UICONTROL View Report]** per passare alla tabella dettagliata [Visualizzazione report stato pagamento ordine](#order-payment-status-report-view).
 
@@ -73,7 +73,7 @@ La vista del rapporto Stato pagamento ordine è disponibile nella vista Home di 
 
 Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**per visualizzare la tabella dettagliata relativa alla visualizzazione del rapporto Stato pagamento ordine.
 
-![Transazioni di stato pagamento ordine nell&#39;amministratore](assets/orders-report-data.png)
+![Transazioni di stato pagamento ordine nell&#39;amministratore](assets/orders-report-data.png){width="800" zoomable="yes"}
 
 È possibile configurare questa visualizzazione in base alle sezioni di questo argomento per presentare al meglio i dati che si desidera visualizzare.
 
@@ -115,7 +115,7 @@ Per informazioni su come configurare l’esportazione dei dati, consulta [Config
 
 Nella vista del rapporto Stato pagamento ordine è possibile selezionare l&#39;origine dati:**[!UICONTROL Live]** _ oppure **[!UICONTROL Sandbox]**- per il quale si desidera visualizzare i risultati del rapporto.
 
-![Selezione di origini dati](assets/datasource.png){width=400px}
+![Selezione di origini dati](assets/datasource.png){width="300" zoomable="yes"}
 
 Se _[!UICONTROL Live]_è l&#39;origine dati selezionata, è possibile visualizzare le informazioni del report per gli archivi che utilizzano [!DNL Payment Services] in modalità di produzione. Se_[!UICONTROL Sandbox]_ è l&#39;origine dati selezionata, è possibile visualizzare le informazioni del rapporto per la modalità sandbox.
 
@@ -156,7 +156,7 @@ Nella visualizzazione del rapporto Stato pagamento ordine è possibile filtrare 
 Il rapporto Stato pagamento ordine mostra tutte le colonne di informazioni disponibili per impostazione predefinita. È tuttavia possibile personalizzare le colonne visualizzate nel rapporto.
 
 1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
-1. Fai clic su _Impostazioni colonna_ icona (![icona delle impostazioni delle colonne](assets/column-settings.png)).
+1. Fai clic su _Impostazioni colonna_ icona (![icona delle impostazioni delle colonne](assets/column-settings.png){width="20" zoomable="yes"}).
 1. Per personalizzare le colonne visualizzate nel report, selezionare o deselezionare le colonne nell&#39;elenco.
 
    Il rapporto Stato pagamento ordine visualizza immediatamente le modifiche apportate nel menu Impostazioni colonna. Le preferenze delle colonne verranno salvate e rimarranno attive anche quando ci si allontana dalla vista del rapporto.
@@ -186,7 +186,7 @@ La vista del rapporto Stato pagamento ordine mostra un _[!UICONTROL Last updated
 È inoltre possibile forzare manualmente l&#39;aggiornamento dei dati del rapporto Stato pagamento ordine per visualizzare le informazioni più aggiornate.
 
 1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
-1. Fai clic su _Aggiorna_ icona (![icona di aggiornamento](assets/refresh-button-med.png)).
+1. Fai clic su _Aggiorna_ icona (![icona di aggiornamento](assets/refresh-button-med.png){width="20" zoomable="yes"}).
 
    I dati del rapporto sullo stato del pagamento dell&#39;ordine vengono aggiornati, *[!UICONTROL Update complete]* viene visualizzata la conferma e nella griglia sono presenti le informazioni più recenti.
 
@@ -208,7 +208,7 @@ Puoi visualizzare eventuali controversie sugli ordini del tuo Negozio e passare 
 
 1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Se desideri visualizzare gli stati per un intervallo di tempo diverso dagli ultimi 30 giorni, [personalizza l’intervallo di date temporale per i tuoi stati](#customize-dates-timeframe).
-1. Fai clic su _Scarica_ (![icona di download](assets/icon-download.png)).
+1. Fai clic su _Scarica_ (![icona di download](assets/icon-download.png){width="20" zoomable="yes"}).
 
 Gli stati di pagamento dell&#39;ordine vengono scaricati in formato .csv.
 

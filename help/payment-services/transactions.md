@@ -3,7 +3,7 @@ title: Rapporto Transazioni
 description: Utilizzare il rapporto Transazioni per ottenere visibilità sui tassi di autorizzazione delle transazioni e sulle relative tendenze.
 role: User
 level: Intermediate
-source-git-commit: dab47a7dcac5d32f4b10cd8b4ce1f7e5dc7fd6c9
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '1162'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] offre una funzione di reporting completa che consente di ottenere una chiara visualizzazione delle transazioni, degli ordini e dei pagamenti del negozio.
 
-![Rapporto Transazioni](assets/transactions-report.png){width="600" zoomable="yes"}
+![Rapporto Transazioni](assets/transactions-report.png){width="700" zoomable="yes"}
 
 Il rapporto Transazioni fornisce visibilità sui tassi di autorizzazione delle transazioni e sulle tendenze negative delle transazioni, consentendo di monitorare in modo efficace lo stato del tuo archivio e di identificare in modo preventivo e risolvere eventuali problemi relativi alle transazioni.
 
@@ -91,7 +91,7 @@ Dalla vista del rapporto Transazioni, è possibile filtrare i risultati degli st
 Il rapporto Transazioni mostra tutte le colonne di informazioni disponibili per impostazione predefinita. È tuttavia possibile personalizzare le colonne visualizzate nel rapporto.
 
 1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. Fai clic su **[!UICONTROL Column settings]** icona ![icona delle impostazioni delle colonne](assets/column-settings.png){width="25"}.
+1. Fai clic su **[!UICONTROL Column settings]** icona ![icona delle impostazioni delle colonne](assets/column-settings.png){width="20" zoomable="yes"}.
 1. Per personalizzare le colonne visualizzate nel report, selezionare o deselezionare le colonne nell&#39;elenco.
 
    Nel rapporto Transazioni vengono immediatamente visualizzate le modifiche apportate nel menu Impostazioni colonna. Le preferenze di colonna vengono salvate e rimangono attive se ci si sposta dalla vista del rapporto.
@@ -103,7 +103,7 @@ La vista del rapporto Transazioni mostra una _[!UICONTROL Last updated]_timestam
 Puoi anche forzare manualmente un aggiornamento dei dati del rapporto per visualizzare le informazioni più aggiornate.
 
 1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. Fai clic su _Aggiorna_ icona (![icona di aggiornamento](assets/refresh-button-med.png)).
+1. Fai clic su _Aggiorna_ icona (![icona di aggiornamento](assets/refresh-button-med.png){width="20" zoomable="yes"}).
 
    I dati del rapporto Transazioni vengono aggiornati, *[!UICONTROL Update complete]* viene visualizzata la conferma e nella griglia sono presenti le informazioni più recenti.
 
@@ -113,7 +113,7 @@ Puoi anche forzare manualmente un aggiornamento dei dati del rapporto per visual
 
 1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
 1. Se desideri visualizzare le transazioni per un arco temporale diverso dagli ultimi 30 giorni, [personalizza l’intervallo di date temporale per i tuoi stati](#customize-dates-timeframe).
-1. Fai clic su _Scarica_ ![icona di download](assets/icon-download.png){width="25"} icona.
+1. Fai clic su _Scarica_ ![icona di download](assets/icon-download.png){width="20" zoomable="yes"} icona.
 
 Le transazioni vengono scaricate in formato .csv.
 

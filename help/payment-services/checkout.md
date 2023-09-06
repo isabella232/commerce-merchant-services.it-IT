@@ -2,7 +2,7 @@
 title: Pagamento
 description: Personalizza il pagamento in base alle esigenze del cliente.
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -20,11 +20,11 @@ Se si verifica un errore durante l&#39;estrazione, [!DNL Payment Services] annul
 
 Nella pagina di pagamento viene visualizzato un messaggio di errore per l’acquirente. Il messaggio può variare.
 
-![Errore durante il controllo](assets/user-checkout-error.png "Errore durante l&#39;estrazione")
+![Errore durante il controllo](assets/user-checkout-error.png "Errore durante l&#39;estrazione"){width="600" zoomable="yes"}
 
 Un commento relativo all’ordine annullato viene visualizzato anche nell’Amministratore per un [ordine](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en).
 
-![Commento ordine annullato in Amministratore per ordine](assets/admin-checkout-error.png "Commento ordine annullato in Amministratore per ordine")
+![Commento ordine annullato in Amministratore per ordine](assets/admin-checkout-error.png "Commento ordine annullato in Amministratore per ordine"){width="600" zoomable="yes"}
 
 Se un acquirente ottiene l’autorizzazione per un ordine, ma l’ordine non è stato creato e convertito in un `Capture`, l’ordine viene annullato automaticamente. Questo processo assicura che non venga riservato alcun credito sulla carta di credito dell&#39;acquirente ed evita la commissione che si verifica quando l&#39;autorizzazione viene annullata al termine del periodo standard di 29 giorni.
 

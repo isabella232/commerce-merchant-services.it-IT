@@ -3,7 +3,7 @@ title: Abilita [!DNL Payment Services] per la produzione
 description: Completa il processo di onboarding abilitando [!DNL Payment Services] per la produzione.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Per abilitare l’onboarding in tempo reale, devi richiedere i pagamenti spettan
 1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Clic **[!UICONTROL Get Live Payments]** nel tuo [!DNL Payment Services] A casa.
 
-   ![Richiedi diritti](assets/request-entitlements.png)
+   ![Richiedi diritti](assets/request-entitlements.png){width="500" zoomable="yes"}
 
 1. Compila il modulo.
 1. Un membro del team vendite ti contatterà.

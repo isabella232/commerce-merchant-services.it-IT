@@ -3,7 +3,7 @@ title: Configurare la sandbox di prova
 description: Utilizza un conto PayPal sandbox per utilizzare [!DNL Payment Services] in modalità di test.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Per completare l’onboarding della sandbox:
    1. In _[!UICONTROL Sandbox Accounts]_, fare clic sui tre punti nella sezione_[!UICONTROL Manage accounts]_ per l’account sandbox creato.
    1. Clic **[!UICONTROL View/edit account]**.
 
-      ![PayPal - Visualizza/Modifica conto sandbox](assets/onboarding-viewedit-sandbox.png)
+      ![PayPal - Visualizza/Modifica conto sandbox](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}
 
    1. Copia e salva l&#39;ID e-mail e la password generata dal sistema per utilizzi futuri.
 
@@ -48,7 +48,7 @@ Per completare l’onboarding della sandbox:
 1. Immetti l&#39;e-mail e la password del conto sandbox PayPal generato al passaggio 3 (non le informazioni sul conto aziendale PayPal) e il paese o l&#39;area geografica.
 1. Clic **[!UICONTROL Next]**.
 
-   ![PayPal - Connetti conto PayPal per pagamenti](assets/paypal-connectacct.png)
+   ![PayPal - Connetti conto PayPal per pagamenti](assets/paypal-connectacct.png){width="300" zoomable="yes"}
 
 1. Continua a seguire il flusso PayPal, utilizzando le credenziali del tuo account sandbox salvate in precedenza.
 1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.

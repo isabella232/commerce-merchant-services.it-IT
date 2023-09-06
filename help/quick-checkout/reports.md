@@ -3,7 +3,7 @@ title: '''[!DNL Quick Checkout] reporting"'
 description: '''[!DNL Quick Checkout] offre informazioni complete sulla generazione dei rapporti."'
 exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 [!DNL Quick Checkout] per Adobe Commerce e Magento Open Source offre una funzione di reporting completa che ti permette di ottenere informazioni dettagliate sulle statistiche sull’esperienza di pagamento del tuo negozio.
 
-![Visualizzazione Rapporti](assets/reports-view-big-checkout.png)
+![Visualizzazione Rapporti](assets/reports-view-big-checkout.png){width="600" zoomable="yes"}
 
 >[!WARNING]
 >
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 I grafici nella sezione Panoramica mostrano informazioni dettagliate sulle prestazioni di pagamento del tuo negozio, tra cui il tempo medio di pagamento, i nuovi account creati durante il pagamento o l’abbandono dell’acquisto.
 
-![Panoramica sui rapporti](assets/overview-report-checkout.png)
+![Panoramica sui rapporti](assets/overview-report-checkout.png){width="600" zoomable="yes"}
 
 | Grafico | Descrizione |
 |---|---|
@@ -38,7 +38,7 @@ I grafici nella sezione Panoramica mostrano informazioni dettagliate sulle prest
 
 I grafici nella sezione Tendenze mostrano le tendenze dell’esperienza di pagamento filtrate per tipo di account o per i nuovi account creati durante il pagamento.
 
-![Tendenze dei rapporti](assets/trends-report-checkout.png)
+![Tendenze dei rapporti](assets/trends-report-checkout.png){width="600" zoomable="yes"}
 
 | Grafico | Descrizione |
 |---|---|
@@ -50,7 +50,7 @@ I grafici nella sezione Tendenze mostrano le tendenze dell’esperienza di pagam
 
 Puoi filtrare i risultati mostrati per data o i predefiniti esistenti, ad esempio **Ultimi 30 giorni**.
 
-![Visualizzazione filtro](assets/filter-view.png)
+![Visualizzazione filtro](assets/filter-view.png){width="300" zoomable="yes"}
 
 | Campo | Descrizione |
 |---|---|

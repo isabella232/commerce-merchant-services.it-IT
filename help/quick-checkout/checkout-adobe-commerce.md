@@ -3,7 +3,7 @@ title: "Flusso di cassa per un utente Adobe Commerce"
 description: "Panoramica della [!DNL Quick Checkout] per un utente di Adobe Commerce."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
 feature: Checkout, Services, Storefront
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Se un [!DNL Bolt] account trovato durante il pagamento, gli acquirenti possono c
 
 1. Immettere la password monouso (OTP) inviata a tale [!DNL Bolt] indirizzo e-mail dell’account o cellulare, a seconda di [preferenze dell&#39;utente in [!DNL Bolt] account](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
 
-![Popup](assets/new-logo-otp-email.png)
+![Popup](assets/new-logo-otp-email.png){width="300" zoomable="yes"}
 
 1. Una volta effettuato l’accesso con il tuo [!DNL Bolt] account, i dettagli vengono aggiunti automaticamente:
 
@@ -65,4 +65,4 @@ In caso negativo [!DNL Bolt] L’account viene trovato, gli acquirenti continuan
 - Verifica metodo di pagamento
 - Opzione per la registrazione [!DNL Bolt] consente di effettuare pagamenti più veloci prima di inoltrare l&#39;ordine. L&#39;acquirente può accettare i termini e le condizioni per creare il proprio [!DNL Bolt] account.
 
-  ![Ricorda [!DNL Bolt]](assets/checkbox-remember-bolt.png)
+  ![Ricorda [!DNL Bolt]](assets/checkbox-remember-bolt.png){width="300" zoomable="yes"}

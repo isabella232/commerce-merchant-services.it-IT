@@ -3,7 +3,7 @@ title: Configurare [!DNL Quick Checkout] per estensione Adobe Commerce
 description: Scopri le opzioni di configurazione per [!DNL Quick Checkout] e come integrare e configurare correttamente l’estensione.
 exl-id: 892e04dc-17d6-45e9-b2ab-c7a0735a75bc
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 1%
@@ -19,13 +19,13 @@ Per accedere a queste impostazioni di configurazione:
 1. Il giorno _Amministratore_ barra laterale, vai a **Negozi** > _Impostazioni_ > **Configurazione**.
 1. Nel pannello a sinistra, espandi **Vendite** e seleziona **Pagamento**.
 
-   ![Pagamento rapido](assets/config-new-logo-view.png)
+   ![Pagamento rapido](assets/config-new-logo-view.png){width="800" zoomable="yes"}
 
 Consulta la sezione [Onboarding](../quick-checkout/onboarding.md) per ulteriori informazioni su come configurare [!DNL Quick Checkout] per Adobe Commerce.
 
 ## Abilita estensione
 
-![Pagamento rapido](assets/enable-method.png)
+![Pagamento rapido](assets/enable-method.png){width="500" zoomable="yes"}
 
 | Campo | Ambito | Descrizione |
 |---|---|---|
@@ -36,7 +36,7 @@ Consulta la sezione [Onboarding](../quick-checkout/onboarding.md) per ulteriori 
 
 ## Credenziali account
 
-![Pagamento rapido](assets/account-creds.png)
+![Pagamento rapido](assets/account-creds.png){width="500" zoomable="yes"}
 
 | Campo | Ambito | Descrizione |
 |---|---|---|
@@ -48,7 +48,7 @@ Consulta la sezione [Onboarding](../quick-checkout/onboarding.md) per ulteriori 
 
 ## Impostazioni del servizio
 
-![Pagamento rapido](assets/service-settings.png)
+![Pagamento rapido](assets/service-settings.png){width="500" zoomable="yes"}
 
 | Campo | Ambito | Descrizione |
 |---|---|---|

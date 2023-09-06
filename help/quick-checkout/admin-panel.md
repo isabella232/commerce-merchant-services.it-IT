@@ -3,7 +3,7 @@ title: '''[!DNL Quick Checkout] per il pannello di amministrazione di Adobe Comm
 description: Scopri come [!DNL Quick Checkout] Il pannello di amministrazione può aiutarti a integrare, configurare e visualizzare correttamente l’estensione.
 exl-id: d91763ed-b4f6-4736-9503-0305edd77e91
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**:
 1. In questa visualizzazione, è possibile accedere al _Pannello di amministrazione_ panoramica, _Risorse_ informazioni su [!DNL Quick Checkout], get _Guida e supporto_, o configura l&#39;estensione tramite _Impostazioni_.
 
-   ![Menu Check-Out rapido](assets/admin-panel-view.png)
+   ![Menu Check-Out rapido](assets/admin-panel-view.png){width="600" zoomable="yes"}
 
 Verifica che all’utente siano concessi i ruoli e le autorizzazioni appropriati per il [!DNL Quick Checkout] Pannello di amministrazione da visualizzare. Consulta la [Ruoli utente e autorizzazioni](../quick-checkout/user-roles-setup.md) per ulteriori informazioni.
 

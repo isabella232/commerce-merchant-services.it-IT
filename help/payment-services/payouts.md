@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout
-source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1310'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ La visualizzazione dati Pagamenti è disponibile nella Home page di Payment Serv
 
 Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** per visualizzare il grafico con la visualizzazione dei dati relativo ai crediti rispetto ai debiti e alle medie mobili nel tempo.
 
-![Visualizzazione dei dati di pagamento nell’Amministratore](assets/payouts-report.png){zoomable=yes}
+![Visualizzazione dei dati di pagamento nell’Amministratore](assets/payouts-report.png){width="800" zoomable="yes"}
 
 Clic **[!UICONTROL View Report]** per passare alla tabella dettagliata [Visualizzazione report Pagamenti](#payouts-report-view).
 
@@ -71,7 +71,7 @@ La visualizzazione del rapporto Pagamenti è disponibile nella visualizzazione P
 
 Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**per visualizzare la tabella dettagliata della visualizzazione del rapporto Pagamenti.
 
-![Transazioni di pagamento nell&#39;amministratore](assets/payouts-report-new.png){zoomable=yes}
+![Transazioni di pagamento nell&#39;amministratore](assets/payouts-report-new.png){width="800" zoomable="yes"}
 
 È possibile configurare questa visualizzazione in base alle sezioni di questo argomento per presentare al meglio i dati che si desidera visualizzare.
 
@@ -87,7 +87,7 @@ Vedi ID di ordini e transazioni commerciali collegati, importi delle transazioni
 
 Nella visualizzazione del rapporto Pagamenti, è possibile selezionare l&#39;origine dati:**[!UICONTROL Live]** o **[!UICONTROL Sandbox]**- per il quale si desidera visualizzare i risultati del rapporto.
 
-![Selezione di origini dati](assets/datasource.png){width=400px}
+![Selezione di origini dati](assets/datasource.png){width="300" zoomable="yes"}
 
 Se _[!UICONTROL Live]_è l&#39;origine dati selezionata, è possibile visualizzare le informazioni del rapporto per i negozi in modalità di produzione. Se_[!UICONTROL Sandbox]_ è l’origine dati selezionata, puoi visualizzare gli archivi di informazioni sul rapporto in modalità sandbox.
 
@@ -126,7 +126,7 @@ Nella visualizzazione del rapporto Pagamenti è possibile personalizzare l&#39;i
 La visualizzazione del rapporto Pagamenti mostra la maggior parte delle colonne di informazioni disponibili per impostazione predefinita. È tuttavia possibile personalizzare le colonne visualizzate nel rapporto.
 
 1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
-1. Fai clic su _Impostazioni colonna_ icona (![icona delle impostazioni delle colonne](assets/column-settings.png)).
+1. Fai clic su _Impostazioni colonna_ icona (![icona delle impostazioni delle colonne](assets/column-settings.png){width="20" zoomable="yes"}).
 1. Per personalizzare le colonne visualizzate nel report, selezionare o deselezionare le colonne nell&#39;elenco.
 
    La visualizzazione del rapporto Pagamenti mostra immediatamente le modifiche apportate nel menu delle impostazioni delle colonne. Le preferenze delle colonne verranno salvate e rimarranno attive anche quando ci si allontana dalla vista del rapporto.
@@ -137,7 +137,7 @@ Puoi scaricare un file .csv contenente tutte le transazioni visibili nella grigl
 
 1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. [Personalizzare l’intervallo di date temporale per le transazioni](#customize-transactions-timeframe).
-1. Fai clic su _Scarica_ (![](assets/icon-download.png)).
+1. Fai clic su _Scarica_ (![](assets/icon-download.png){width="20" zoomable="yes"}).
 
 Le transazioni di pagamento vengono scaricate in formato .csv.
 

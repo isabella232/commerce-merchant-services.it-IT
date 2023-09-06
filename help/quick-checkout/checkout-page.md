@@ -3,7 +3,7 @@ title: "Pagina cassa"
 description: "Panoramica della pagina di pagamento in Adobe Commerce."
 exl-id: afe3a93d-8aba-428e-ac9d-0be8d23ceb47
 feature: Checkout, Services, Storefront
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 0%
@@ -16,7 +16,7 @@ La pagina di pagamento è il luogo in cui i clienti inseriscono le informazioni 
 
 Esempio di pagina di pagamento:
 
-![Pagina cassa](assets/checkout-page.png)
+![Pagina cassa](assets/checkout-page.png){width="600" zoomable="yes"}
 
 Per ulteriori informazioni sulla pagina di pagamento standard di Adobe Commerce, consulta [pagina di pagamento](https://docs.magento.com/user-guide/quick-tour/checkout-page.html) argomento.
 

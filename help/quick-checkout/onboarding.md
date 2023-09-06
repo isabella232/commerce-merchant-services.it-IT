@@ -3,7 +3,7 @@ title: "Onboarding [!DNL Quick Checkout] per estensione Adobe Commerce"
 description: '"Scopri come [!DNL Quick Checkout] potrebbero trarre vantaggio dalla tua istanza di Adobe Commerce e da come integrare e configurare correttamente l’estensione".'
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Per iniziare a utilizzare [!DNL Quick Checkout] per l’estensione Adobe Commerce, devi completare alcuni passaggi di onboarding per collegare la tua istanza con la nostra funzionalità di pagamento.
 
-![Pagamento rapido](assets/overview-admin-panel.png)
+![Pagamento rapido](assets/overview-admin-panel.png){width="800" zoomable="yes"}
 
 1. [Ottieni estensione](#get-extension).
 1. [Crea un account commerciante di produzione o sandbox con [!DNL Bolt]](#create-account-with-bolt). Fornisci tutte le informazioni necessarie per verificare la tua identità.
@@ -29,7 +29,7 @@ Se Gainsight è abilitato, attiva la **Fai il tour** pulsante nel [!DNL Quick Ch
 
 1. Il giorno _Amministratore_ barra laterale, vai a **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > Avanzate:
 
-   ![Pagamento rapido](assets/gainsight-admin.png)
+   ![Pagamento rapido](assets/gainsight-admin.png){width="500" zoomable="yes"}
 
 Se Gainsight non è abilitato, continua con i passaggi di onboarding.
 
@@ -69,7 +69,7 @@ Per utilizzare [!DNL Quick Checkout] hai bisogno di [!DNL Bolt] chiavi univoche 
 - [!DNL Publishable key]: chiave utilizzata dal front-end per interagire con [!DNL Bolt] API.
 - [!DNL Signing secret]: utilizzato per la verifica della firma sulle richieste ricevute da [!DNL Bolt].
 
-  ![Pagamento rapido](assets/account-credentials.png)
+  ![Pagamento rapido](assets/account-credentials.png){width="500" zoomable="yes"}
 
 Consulta la [[!DNL Bolt] dettagli dell’ambiente](https://help.bolt.com/developers/references/environment-details/#about-keys){target="_blank"} pagina per informazioni sulle chiavi e sul segreto per la firma da [!DNL Bolt] per [!DNL Quick Checkout] estensione.
 
@@ -87,7 +87,7 @@ Per connettere il provider di servizi di pagamento, eseguire le operazioni descr
 1. Nel pannello a sinistra, espandi **Vendite** e seleziona **Pagamento**.
 1. In [!DNL Quick Checkout] visualizza, imposta **Abilita** a `Yes`.
 
-![Pagamento rapido](assets/quick-checkout-view-no-enable.png)
+![Pagamento rapido](assets/quick-checkout-view-no-enable.png){width="500" zoomable="yes"}
 
 >[!CAUTION]
 >
@@ -100,7 +100,7 @@ Per connettere il provider di servizi di pagamento, eseguire le operazioni descr
 
 1. Convalida le credenziali dopo aver fornito l’API univoca e [!DNL Publishable keys].
 
-![Pagamento rapido](assets/quick-checkout-main-view.png)
+![Pagamento rapido](assets/quick-checkout-main-view.png){width="500" zoomable="yes"}
 
 Consulta la sezione [Impostazioni](../quick-checkout/settings-quick-checkout.md) per ulteriori informazioni sulle opzioni di configurazione per [!DNL Quick Checkout] per l’estensione Adobe Commerce.
 
@@ -141,7 +141,7 @@ Consulta la [Ambito sito, archivio e visualizzazione](https://experienceleague.a
 
 ## Configura impostazioni servizio
 
-![Pagamento rapido](assets/service-settings.png)
+![Pagamento rapido](assets/service-settings.png){width="500" zoomable="yes"}
 
 1. Imposta **Abilita tracciamento cassa** a `Yes`.
 

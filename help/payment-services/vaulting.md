@@ -3,7 +3,7 @@ title: Vaulting con carta di credito
 description: Gli acquirenti possono archiviare (salvare) i dati della carta di credito per acquisti futuri.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
@@ -14,15 +14,15 @@ ht-degree: 0%
 
 Converti i clienti occasionali in acquirenti fedeli con il vaulting delle carte di credito. Gli acquirenti possono salvare, o &quot;vaultare&quot;, le credenziali della loro carta di credito durante il pagamento per utilizzarle in un acquisto successivo per lo stesso, o un altro, archiviare all&#39;interno dello stesso account esercente.
 
-![Effettua il vaulting della carta di credito per un uso successivo](assets/save-card-for-later.png)
+![Effettua il vaulting della carta di credito per un uso successivo](assets/save-card-for-later.png){width="400" zoomable="yes"}
 
 Gli acquirenti utilizzano il token memorizzato per completare un pagamento futuro con le informazioni sulla carta di credito salvate.
 
-![Usa credenziali memorizzate per acquisti futuri](assets/use-stored-card.png)
+![Usa credenziali memorizzate per acquisti futuri](assets/use-stored-card.png){width="400" zoomable="yes"}
 
 Possono anche eliminare facilmente le loro carte di credito archiviate da [Metodi di pagamento memorizzati](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) nel loro My Account.
 
-![Metodi di pagamento memorizzati nel mio account](assets/stored-payment-methods.png)
+![Metodi di pagamento memorizzati nel mio account](assets/stored-payment-methods.png){width="400" zoomable="yes"}
 
 ## Abilita vaulting
 
@@ -41,7 +41,7 @@ Per creare un ordine nell’amministratore per un cliente utilizzando la sua car
 1. Seleziona il metodo di pagamento con carta di credito archiviata desiderato.
 1. Dopo aver completato tutti gli altri passaggi necessari per l&#39;ordine, [invia](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
 
-   ![Utilizza carta di credito in vaulting in Amministratore per cliente](assets/admin-vaultedcard.png)
+   ![Utilizza carta di credito in vaulting in Amministratore per cliente](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 
 ## Sicurezza
 

@@ -5,7 +5,7 @@ role: User
 level: Intermediate
 exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
 feature: Payments, Checkout, Data Import/Export
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Gli ID sono facilmente accessibili sia nei dettagli dell&#39;attività esercente
 
 Il `invoice_id` e `custom_id` sono visualizzati nella parte inferiore dei dettagli dell&#39;attività esercente per una vincita:
 
-![`custom_id` nei dettagli dell’attività di esercente](assets/merchant-activity-ids.png)
+![`custom_id` nei dettagli dell’attività di esercente](assets/merchant-activity-ids.png){width="600" zoomable="yes"}
 
 `custom_id` e `invoice_id` nei dettagli nel webhook di PayPal:
 
