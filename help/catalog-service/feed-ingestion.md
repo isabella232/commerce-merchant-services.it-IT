@@ -1,9 +1,9 @@
 ---
 title: Servizio di acquisizione feed
 description: Scopri il servizio di acquisizione di feed per Adobe Commerce
-source-git-commit: 12b1e89924a2eb89494bcb884fc3bc14e87b2b1c
+source-git-commit: b57fc43d23dbbcbcae31743fd0ab9c1b3d1c1084
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '404'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,11 @@ ht-degree: 0%
 >
 >Il servizio di acquisizione feed è attualmente in versione beta privata. Non è ancora disponibile per un uso generico.
 
+Il servizio di acquisizione dei feed consente ai clienti con cataloghi grandi e/o complessi di inviare direttamente i dati ai servizi Adobe Commerce.
+
 Il servizio di acquisizione dei feed riduce il tempo necessario per elaborare le modifiche ai prodotti (aggiornamenti dei prezzi, aggiunta di nuovi attributi) ignorando l’istanza di Adobe Commerce e spostando i dati del catalogo da un ERP (Enterprise Resource Planning) di terze parti direttamente nei servizi di Adobe Commerce.
 
-Questo servizio è destinato ai clienti che memorizzano e gestiscono il catalogo dei prodotti in un sistema esterno all’applicazione principale di Adobe Commerce.
+Questo servizio è destinato ai clienti che memorizzano e gestiscono il catalogo dei prodotti in un sistema esterno all’applicazione principale di Adobe Commerce. Viene fornito come API, in modo che i clienti possano integrarlo nei propri sistemi esistenti, fornendo maggiore flessibilità nelle modalità di implementazione.
 
 I clienti con cataloghi grandi e complessi o che ricevono aggiornamenti frequenti temono che i nuovi dati possano richiedere più tempo del previsto per essere visualizzati nello store live. Poiché Catalog Service sa di quali dati ha bisogno per elaborare questi aggiornamenti, non è necessario inviare i dati tramite il prodotto Commerce di base, ma solo per l’inoltro a Catalog Service. Se si rimuove questo passaggio intermedio, si ottengono miglioramenti in termini di efficienza.
 

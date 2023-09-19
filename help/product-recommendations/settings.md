@@ -2,9 +2,9 @@
 title: Impostazioni
 description: Scopri come modificare l’origine del [!DNL Product Recommendations] e come abilitare i consigli visivi.
 exl-id: 8c074e11-e0cb-4d55-b646-30279c79bbc2
-source-git-commit: 48e350167611a2737d79bf5decccd7f6f24c714c
+source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 0%
 Quando [configurare uno spazio dati SaaS](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) per Recommendations, lo spazio dati SaaS raccoglie dati di catalogo e dati comportamentali di vetrina. [Adobe Sensei](https://www.adobe.com/sensei.html) analizza i dati e calcola le associazioni di prodotto utilizzate per fornire Recommendations di prodotto.
 
 Gli ambienti non di produzione per il test o la gestione temporanea di solito non dispongono della quantità o della qualità dei dati comportamentali della vetrina per fornire consigli di prodotto realistici. Il comportamento effettivo degli acquirenti su larga scala può essere acquisito solo in un ambiente di produzione. Per risolvere questo problema, Adobe Commerce consente di utilizzare i consigli di prodotto dell’ambiente di produzione con altri spazi di dati SaaS non di produzione. L’utilizzo di dati vetrina reali in un ambiente non di produzione consente di visualizzare in anteprima i consigli visualizzati dagli acquirenti e di sperimentarli con diversi tipi di consigli e posizioni di posizionamento. Gli acquirenti possono visualizzare in anteprima i Recommendations provenienti da uno spazio dati SaaS diverso, ma non fare clic su di essi.
+
+Gli ordini di gestione temporanea vengono registrati utilizzando la gestione temporanea `environmentId`. Non influisce sui dati di produzione. I dati di produzione vengono recuperati utilizzando `alternateEnvironmentId`.
 
 >[!NOTE]
 >

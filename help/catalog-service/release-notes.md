@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] Note sulla versione'
 description: Informazioni aggiornate sulla versione di [!DNL Catalog Service] per Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 822108fb92b2cac7cc62d00db035faed81ae9e25
+source-git-commit: 232dce5db4a82fcec367dce04fb6fba5826b9733
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,14 @@ Gli aggiornamenti includono:
 
 ## Versione principale corrente
 
-### Versione V1.11
+### Versione V1.12
 
-_18 luglio 2023_
+_19 settembre 2023_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) Catalog Service ora supporta [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) Query GraphQL per Product Recommendations.
+![Nuovo](../assets/new.svg) Catalog Service ora utilizza [Indicizzazione dei prezzi SaaS](../price-index/index.md).
+![Correzione](../assets/fix.svg) Questa versione contiene correzioni di bug e miglioramenti sul lato servizio.
 
 #### Limitazioni note
 
@@ -45,13 +46,25 @@ Le seguenti limitazioni possono essere risolte utilizzando l’API Mesh e l’AP
 * [Prezzi a livelli](mesh.md)
 * Prodotti scaricabili e carte regalo
 
+## Versioni precedenti
+
++++ Versioni precedenti
+
+### Versione V1.11
+
+_18 luglio 2023_
+
+[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"}
+
+![Nuovo](../assets/new.svg) Catalog Service ora supporta [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) Query GraphQL per Product Recommendations.
+
 ### Versione V1.10
 
 _27 giugno 2023_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) Catalog Service ora può visualizzare i prodotti correlati nel widget Pagina dettagli prodotto.
+![Nuovo](../assets/new.svg) L’API di Catalog Service ora supporta i &quot;prodotti correlati&quot;.
 
 ### Versione V1.7
 
@@ -118,10 +131,6 @@ _4 ottobre 2022_
 ![Nuovo](../assets/new.svg) Ora supporta prodotti in bundle e raggruppati.
 ![Nuovo](../assets/new.svg) Sono state aggiunte sostituzioni di visibilità B2B. È ora possibile cercare i prodotti e aggiungerli al carrello per gruppi di clienti specifici.
 ![Correzione](../assets/fix.svg) Il servizio è ora più stabile e offre prestazioni migliori.
-
-## Versioni precedenti
-
-Versioni +++beta
 
 ### Versione 0.3 - Beta+
 

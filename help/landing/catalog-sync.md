@@ -3,9 +3,9 @@ title: Sincronizzazione catalogo
 description: Scopri come esportare i dati di prodotto da [!DNL Commerce] server a [!DNL Commerce Services] su base continuativa per mantenere aggiornati i servizi.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 4326daafecc08c758aa05bf2d59fc69eca913155
+source-git-commit: 1fd5f25b88fa129cc136b93fdf88b981624f0678
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '977'
 ht-degree: 0%
 
 ---
@@ -127,20 +127,36 @@ La tabella seguente descrive `saas:resync` parametri e descrizioni.
 
 Il nome del feed può essere uno dei seguenti:
 
-- `products`— Prodotti nel catalogo
 - `categories`— Categorie nel catalogo
-- `variants`— varianti di prodotto di un prodotto configurabile, ad esempio colore e dimensioni
+- `categoryPermissions` - Autorizzazioni per ciascuna categoria
+- `products`— Prodotti nel catalogo
 - `productattributes`— Attributi del prodotto come `activity`, `gender`, `tops`, `bottoms`, e così via
 - `productoverrides`regole specifiche per il cliente per la visibilità dei prezzi e dei cataloghi, ad esempio quelle basate sulle autorizzazioni per le categorie
+- `variants`— varianti di prodotto di un prodotto configurabile, ad esempio colore e dimensioni
 
 Quando si attiva la risincronizzazione dei dati dalla riga di comando, l&#39;aggiornamento dei dati potrebbe richiedere fino a un&#39;ora.
+
+### Sincronizzazione dell’indicizzazione dei prezzi SaaS
 
 Se sta usando [Indicizzazione dei prezzi SaaS](../price-index/index.md) e deve essere risincronizzato, esegui il seguente comando:
 
 ```bash
-bin/magento saas:resync --feed=scopesCustomerGroup
-bin/magento saas:resync --feed=scopesWebsite
-bin/magento saas:resync --feed=prices
+bin/magento saas:resync --feed scopesCustomerGroup
+bin/magento saas:resync --feed scopesWebsite
+bin/magento saas:resync --feed prices
+```
+
+### Sincronizzazione del servizio catalogo
+
+Per eseguire una risincronizzazione per Catalog Service, è importante eseguire i comandi in questo ordine:
+
+```bash
+bin/magento saas:resync --feed productattributes
+bin/magento saas:resync --feed products
+bin/magento saas:resync --feed productoverrides
+bin/magento saas:resync --feed variants
+bin/magento saas:resync --feed categories
+bin/magento saas:resync --feed categoryPermissions 
 ```
 
 ### Esempi
