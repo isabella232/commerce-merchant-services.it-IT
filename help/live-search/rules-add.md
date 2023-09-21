@@ -2,9 +2,9 @@
 title: "Aggiungi regole"
 description: "Scopri come creare [!DNL Live Search] regole."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 0b0e9a630162c4c98c6a3af969002def03155267
+source-git-commit: 8093cf72e9adf846f4c40d302d20c77142368c8e
 workflow-type: tm+mt
-source-wordcount: '1419'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Per creare una regola, il primo passaggio consiste nell’utilizzare l’editor 
 
 1. In Admin (Amministrazione), vai a **Marketing** > SEO e ricerca > **[!DNL Live Search]**.
 1. Imposta il **Ambito** per identificare [visualizzazione store](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) dove si applica la regola.
-1. Fai clic su **Regole** scheda.
+1. Fai clic su **Regole di ricerca** scheda.
 1. Clic **Aggiungi regola** per avviare l’editor di regole.
 
 ## Condizioni
@@ -70,9 +70,9 @@ Una regola può avere fino a dieci condizioni. L’operatore logico che unisce d
 
 1. Per aggiungere un’altra condizione, fai clic su **Aggiungi condizione** e ripetere il processo.
 
-## Tipo di classificazione
+## Classificazione intelligente
 
-La classificazione combina i comportamenti degli utenti e le statistiche del sito per determinare la classificazione del prodotto.
+La classificazione intelligente combina i comportamenti degli utenti e le statistiche del sito per determinare la classificazione del prodotto.
 I proprietari dei negozi possono impostare i seguenti tipi di strategie di classificazione:
 
 ![Regole - Corrisponde](assets/rules-ranking-type.png)
@@ -90,9 +90,9 @@ I proprietari dei negozi possono impostare i seguenti tipi di strategie di class
 >
 >Gli apostrofi e le citazioni nelle interrogazioni possono portare ad alcuni problemi minori di classificazione e rilevanza in alcune lingue.
 
-## Aggiunta di eventi
+## Classificazione manuale
 
-Gli eventi sono azioni che modificano i risultati della ricerca quando vengono soddisfatte le condizioni definite. Una singola regola può avere fino a 25 eventi.
+La Classificazione manuale (precedentemente nota come Eventi) è un’azione che modifica i risultati della ricerca quando vengono soddisfatte determinate condizioni. Una singola regola può avere fino a 25 eventi.
 
 * Incrementa: sposta un prodotto più in alto nei risultati di ricerca.
 * Intervallo: sposta una SKU in basso nei risultati di ricerca.
@@ -166,7 +166,7 @@ Le informazioni immesse vengono visualizzate nel [Dettagli regola](rules-workspa
 | Qualsiasi | Modifica tutti gli operatori logici nella regola in `OR` e restituisce il set di prodotti corrispondenti. |
 | Tutti | Modifica tutti gli operatori logici nella regola in `AND` e restituisce il set di prodotti corrispondenti. |
 
-### Eventi
+### Classificazione manuale
 
 | Evento | Descrizione |
 |--- |--- |

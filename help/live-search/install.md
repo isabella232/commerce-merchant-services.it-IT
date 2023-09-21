@@ -3,9 +3,9 @@ title: "Installa [!DNL Live Search]"
 description: "Scopri come installare, aggiornare e disinstallare [!DNL Live Search] da Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
+source-git-commit: 97a743b1f7162af01930a37db448432acb9f89d5
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1323'
 ht-degree: 0%
 
 ---
@@ -73,6 +73,9 @@ In questo scenario, le operazioni di storefront vengono interrotte mentre il [!D
    * Feed prodotto
    * Feed variante prodotto
    * Feed attributi catalogo
+   * Feed prezzi prodotto
+   * Feed dati del sito Web Ambiti
+   * Scopi Feed dati di gruppi di clienti
 
 1. Configurare [Chiavi API](#configure-api-keys) e verifica che i dati del catalogo siano [sincronizzato](#synchronize-catalog-data) con [!DNL Live Search] servizi.
 
@@ -121,6 +124,9 @@ In questo scenario, [!DNL Elasticsearch] gestisce temporaneamente le richieste d
    * Feed prodotto
    * Feed variante prodotto
    * Feed attributi catalogo
+   * Feed prezzi prodotto
+   * Feed dati del sito Web degli ambiti
+   * Ambiti feed dati di gruppi di clienti
 
 1. Configurare [Chiavi API](#configure-api-keys) e verifica che i dati del catalogo siano [sincronizzato](#synchronize-catalog-data) con [!DNL Live Search] servizi.
 
@@ -211,7 +217,7 @@ Da aggiornare [!DNL Live Search], esegui quanto segue dalla riga di comando:
 composer update magento/live-search --with-dependencies
 ```
 
-Per eseguire l’aggiornamento a una versione principale, ad esempio da 2.0.0 a 3.0.1, modifica la directory principale del progetto [!DNL Composer] `.json` file come segue:
+Per eseguire l’aggiornamento a una versione principale, ad esempio da 2.0.0 a 3.1.1, modifica la directory principale del progetto [!DNL Composer] `.json` file come segue:
 
 1. Se il programma di installazione `magento/live-search` versione è `2.0.3` o inferiore e si sta effettuando l&#39;aggiornamento alla versione `3.0.0` o versione successiva, eseguire il comando seguente prima dell&#39;aggiornamento:
 

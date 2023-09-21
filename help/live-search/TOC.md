@@ -4,9 +4,9 @@ user-guide-description: "Questa guida fornisce istruzioni dettagliate per l’ut
 breadcrumb-title: “Guida [!DNL Live Search]”
 role: Admin
 feature: Services, Search
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: cc921e7e5abe41998497fcd8a6bdcc146dd1acb0
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '98'
 ht-degree: 9%
 
 ---
@@ -25,8 +25,8 @@ ht-degree: 9%
    - [Vetrina [!DNL Popover]](storefront-popover.md)
    - [Stile [!DNL Popover] Elementi](storefront-popover-styling.md)
 - [!DNL Live Search] Amministratore{#live-search-admin}
-   - [Workspace](workspace.md)
-   - [Prestazioni](performance.md)
+   - [Merchandising categorie](category-merch.md)
+   - [Impostazioni configurazione Commerce](configuration.md)
    - Facet {#facets}
       - [Panoramica](facets.md)
       - [Area di lavoro di faceting](faceting-workspace.md)
@@ -34,19 +34,20 @@ ht-degree: 9%
       - [Aggiungi facet](facets-add.md)
       - [Gestisci facet](facets-manage.md)
       - [Note tecniche](facet-technical-notes.md)
-   - Sinonimi {#synonyms}
-      - [Panoramica](synonyms.md)
-      - [Tipi di sinonimi](synonyms-type.md)
-      - [Aggiungi sinonimi](synonyms-add.md)
-      - [Gestisci sinonimi](synonyms-manage.md)
+   - [Indicizzazione](indexing.md)
+   - [Prestazioni](performance.md)
    - Regole {#rules}
       - [Panoramica](rules.md)
       - [Area di lavoro regole](rules-workspace.md)
       - [Aggiungi regole](rules-add.md)
       - [Gestisci regole](rules-manage.md)
-   - [Impostazioni configurazione Commerce](configuration.md)
    - [Impostazioni](settings.md)
-   - [Indicizzazione](indexing.md)
+   - Sinonimi {#synonyms}
+      - [Panoramica](synonyms.md)
+      - [Tipi di sinonimi](synonyms-type.md)
+      - [Aggiungi sinonimi](synonyms-add.md)
+      - [Gestisci sinonimi](synonyms-manage.md)
+   - [Workspace](workspace.md)
 - Query GraphQL {#graphql}
    - [attributeMetadata](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/attribute-metadata/)
    - [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)

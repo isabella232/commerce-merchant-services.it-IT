@@ -1,17 +1,17 @@
 ---
-title: "Area di lavoro regole"
+title: "Area di lavoro regole di ricerca"
 description: "Scopri come utilizzare il [!DNL Live Search] area di lavoro delle regole."
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 91d0713a3e57a3748609b6b4bcb723c21a461519
+source-git-commit: 40bcae7a792660f02390f4d55967767b15c84f38
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '578'
 ht-degree: 1%
 
 ---
 
-# Area di lavoro regole
+# Area di lavoro regole di ricerca
 
-L&#39;area di lavoro regole elenca la selezione corrente delle regole e il relativo stato e fornisce l&#39;accesso agli strumenti necessari per creare e gestire le regole. Dall’area di lavoro puoi:
+L&#39;area di lavoro Regole di ricerca elenca la selezione corrente delle regole e il relativo stato e fornisce l&#39;accesso agli strumenti necessari per creare e gestire le regole. Dall’area di lavoro puoi:
 
 * Cerca regole
 * Visualizza dettagli regola
@@ -46,18 +46,18 @@ Le colonne visibili presentano un segno di spunta blu nel menu delle opzioni. Il
    * Inattivo
    * Pianificato
 
-## Cerca regole per nome
+## Trova regole di ricerca per nome
 
 Inizia a digitare il nome della regola o qualsiasi parola nel nome della regola.
 La ricerca trova le regole corrispondenti durante la digitazione. La stringa di caratteri corrispondenti viene evidenziata nel nome di ogni regola trovata.
 
-![Regole: ricerca per nome](assets/rules-workspace-search-name.png)
+![Regole: trova per nome](assets/rules-workspace-search-name.png)
 
 ## Visualizza dettagli
 
 Il pannello dei dettagli mostra il nome della regola, lo stato, le condizioni e gli eventi, la data di inizio e di fine, la descrizione e la data dell’ultima modifica. Le regole possono essere abilitate, modificate ed eliminate dal pannello dei dettagli.
 
-1. Il giorno *Regole* , individuare la regola nella griglia che si desidera visualizzare e fare clic su **Altro** (...).
+1. Il giorno *Regole di ricerca* , individuare la regola nella griglia che si desidera visualizzare e fare clic su **Altro** (...).
 1. Clic **Visualizza dettagli**.
 Dal pannello Visualizza dettagli potete effettuare una delle seguenti operazioni:
 

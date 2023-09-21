@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] Note sulla versione'
 description: Informazioni aggiornate sulla versione di [!DNL Product Recommendations] da Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 1dc69bf92ce8c9105724dea0ce70c34afa25a091
+source-git-commit: f3e94b20580fcd14b341b2b04a04966afd4be5ce
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1177'
 ht-degree: 0%
 
 ---
@@ -45,12 +45,12 @@ _25 aprile 2023_
 
 ## Versione principale corrente
 
-### 5.0.0 di magento/product-recommendations
+### 5.0.1 di magento/product-recommendations
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![Nuovo](../assets/new.svg) Recommendations di prodotto aggiornato per supportare Adobe Commerce 2.4.6.
-![Nuovo](../assets/new.svg) Questa è una versione principale. [Modifica](install-configure.md#update) la radice `composer.json` per il progetto.
+![Nuovo](../assets/new.svg) Sono stati aggiunti nuovi moduli per supportare [Indicizzatore prezzi Saas](../price-index/index.md).
+![Nuovo](../assets/new.svg) Sono stati aggiunti nuovi moduli di esportazione dati per supportare l’esportazione di più tipi di prodotto, inclusi prodotti in bundle e gift card.
 
 #### Limitazioni note
 
@@ -58,7 +58,14 @@ _25 aprile 2023_
 
 ### Versioni precedenti
 
-+++4.0.1 e versioni precedenti
++++5.0.0 e versioni precedenti
+
+### 5.0.0 di magento/product-recommendations
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
+
+![Nuovo](../assets/new.svg) Recommendations di prodotto aggiornato per supportare Adobe Commerce 2.4.6.
+![Nuovo](../assets/new.svg) Questa è una versione principale. [Modifica](install-configure.md#update) la radice `composer.json` per il progetto.
 
 ### 4.0.1 di magento/product-recommendations
 

@@ -1,15 +1,15 @@
 ---
-title: "Rules"
+title: "Regole di ricerca"
 description: "[!DNL Live Search] le regole combinano logica e azioni per modellare l’esperienza di acquisto."
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: 7307702a62a6b2c3e6c6083a59f2ac3587b0985e
+source-git-commit: 40bcae7a792660f02390f4d55967767b15c84f38
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
 
-# Regole
+# Regole di ricerca
 
 [!DNL Live Search] le regole combinano logica e azioni per modellare l’esperienza di ricerca di un acquirente nel tuo store. Puoi utilizzare le regole per promuovere, seppellire, fissare o nascondere i prodotti per calibrare i risultati della ricerca in tempo reale per supportare gli obiettivi aziendali.
 
@@ -23,7 +23,7 @@ Ogni regola ha tre componenti principali:
 
 ## Requisiti
 
-Una regola semplice può avere una singola condizione e un singolo evento, mentre una regola complessa può avere fino a dieci condizioni che attivano fino a 25 eventi.
+Una regola di ricerca semplice può avere una singola condizione e un singolo evento, mentre una regola complessa può avere fino a dieci condizioni che attivano fino a 25 eventi.
 Le regole possono avere:
 
 * Fino a dieci condizioni
@@ -49,7 +49,7 @@ Durante la composizione di una regola complessa, può essere utile scriverla con
 
 ## Ordine di precedenza con più regole
 
-A un termine di ricerca viene applicata una sola regola alla volta.
+A un termine di ricerca viene applicata una sola regola di ricerca alla volta.
 Se a una frase di ricerca sono applicabili più regole, vengono applicate tutte queste regole. In caso di conflitto tra due regole:`rule 1` che migliora sku1 ma `rule 2` nasconde lo stesso SKU, quindi la regola applicata più di recente (`rule 2`) ha la precedenza.
 
 * Le regole vengono ordinate in base alla marca temporale &quot;Ultima modifica&quot;. La regola modificata più di recente viene applicata per prima, e le regole precedenti vengono applicate in seguito, in ordine di marca temporale.
